@@ -16,8 +16,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          submodules: true
           persist-credentials: false
+
+      # - name: Checkout dist
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: main/
+      #     path: master
 
       # 生成静态文件
       - name: Build
