@@ -102,7 +102,7 @@ module.exports = {
       ]
     }
   ],
-  '/master/': [
-    '计算机科学'
+  '/master/computer-science/': [
+    ''
   ]
 }
