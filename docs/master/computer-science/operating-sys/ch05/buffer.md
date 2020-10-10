@@ -49,7 +49,7 @@
 
 为使诸进程能互斥访问缓冲队列，可为每个队列设置一个互斥信号量 MS(type)；为保证诸进程同步使用缓冲区，又为每个缓冲队列设置一个资源信号量 RS(type)。
 
-```C++
+```C
 void Getbuf(unsigned type){
     Wait(RS(type));
     Wait(MS(type));

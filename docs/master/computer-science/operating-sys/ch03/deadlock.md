@@ -106,7 +106,7 @@ S 为死锁状态的充分条件为：当且仅当 S 状态的资源分配图是
 
 #### 死锁检测数据结构
 
-```c++
+```C
 Work=Available;
 L={Li|Allocation_i=0 && Request_i=0};
 
