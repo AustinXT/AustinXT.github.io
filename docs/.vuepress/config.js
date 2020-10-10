@@ -2,7 +2,7 @@ const sidebar = require('./sidebar')
 const path = require('path')
 module.exports = {
   title: '夜航星',
-  description: '徒步穿越太阳系',
+  description: '我要徒步穿越太阳系',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
