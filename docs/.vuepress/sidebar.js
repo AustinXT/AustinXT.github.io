@@ -1,25 +1,48 @@
 module.exports = {
   '/topic/english-learning/': [
+    '',
+    'ch00/preface',
     {
-      title: '语音',
+      title: '第一部分：最小单元',
       collapsable: true,
       children: [
-        '2017-04-03-learning-American-english-1',
-        '2017-04-03-learning-American-english-2',
-        '2017-04-03-learning-American-english-3'
+        'ch01/',
+        {
+          collapsable: false,
+          children: [
+            'ch01/2017-04-03-learning-American-english-1',
+            'ch01/2017-04-03-learning-American-english-2',
+            'ch01/2017-04-03-learning-American-english-3'
+          ]
+        },
+        'ch02/',
+        {
+          collapsable: false,
+          children: [
+            'ch02/2017-06-11-learning-words-1',
+            'ch02/2017-06-11-learning-words-2',
+            'ch02/2017-06-11-learning-words-3',
+            'ch02/2017-06-11-learning-words-4',
+            'ch02/2017-12-06-anki-for-vocabulary'
+          ]
+        },
+        'ch03/',
+        {
+          collapsable: false,
+          children: [
+            'ch03/2018-09-16-simple-sentence',
+            'ch03/2018-09-16-complex-and-compound-sentence',
+            'ch03/2018-09-16-reduced-clause',
+            'ch03/2018-09-16-inverted-sentence',
+          ]
+        },
+        'ch04/'
       ]
     },
     {
-      title: '词汇',
+      title: '第二部分：你说我听',
       collapsable: true,
-      children: [
-        '2017-06-11-learning-words-1',
-        '2017-06-11-learning-words-2',
-        '2017-06-11-learning-words-3',
-        '2017-06-11-learning-words-4',
-        '2017-12-06-anki-for-vocabulary'
-      ]
-    },
+    }
   ],
   '/topic/algorithm/': [
     '',
