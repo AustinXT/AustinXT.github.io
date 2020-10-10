@@ -1,0 +1,26 @@
+{
+	"title": "Math Notebook",
+	"author": "MatrixXT",
+	"language": "zh-hans",
+    "plugins": [
+    	"mathjax",
+    	"anchor-navigation-ex",
+    	"-sharing"
+    ],
+    "pluginsConfig": {
+    	"theme-default": {
+            "showLevel": true
+        },
+    	"anchor-navigation-ex": {
+    		"multipleH1": false,
+    		"float": {
+    			"showLevelIcon": true,
+    			"level1Icon": "fa fa-hand-o-right",
+        		"level2Icon": "fa fa-hand-o-right",
+      			"level3Icon": "fa fa-hand-o-right"
+    		},
+    		"showLevel": true,
+    		"associatedWithSummary": false
+    	}
+    }
+}
