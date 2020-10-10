@@ -1,5 +1,5 @@
 ---
-title: 字符串
+title: 第八章：字符串
 date: 2018-09-09
 tags:
   - 算法
@@ -12,7 +12,7 @@ mathjax: true
 
 ## 顺序串
 
-定义
+#### 定义
 
 ```C
 #define MaxSzie 100
@@ -22,7 +22,7 @@ typedef struct{
 }SqString;
 ```
 
-创建串
+#### 创建串
 
 ```C
 void StrAssign(SqString &str, char cstr[])
@@ -34,7 +34,7 @@ void StrAssign(SqString &str, char cstr[])
 }
 ```
 
-复制串
+#### 复制串
 
 ```C
 void StrCopy(SqString &s, SqString t)
@@ -46,7 +46,7 @@ void StrCopy(SqString &s, SqString t)
 }
 ```
 
-求串长
+#### 求串长
 
 ```C
 int StrLength(SqString str)
@@ -55,7 +55,7 @@ int StrLength(SqString str)
 }
 ```
 
-串连接
+#### 串连接
 
 ```C
 // t 连接到 s 之后
@@ -72,7 +72,7 @@ SqString Concat(SqString s, SqString t)
 }
 ```
 
-求子串算法
+#### 求子串算法
 
 ```C
 // 返回 s 中从第 i 个字符开始的，有 j 个连续字符组成的字符串
@@ -90,7 +90,7 @@ SqString SubStr(SqString s, int i, int j)
 }
 ```
 
-串插入算法
+#### 串插入算法
 
 ```C
 // 将串 s2 插入串 s1 第 i 个字符中(即 s2 的第一个字符作为 s1 的第 i 个字符)
@@ -112,7 +112,7 @@ SqString InsStr(SqString s1, int i, SqString s2)
 }
 ```
 
-删除子串的算法
+#### 删除子串的算法
 
 ```C
 // 删去第 i 个字符起长度为 j 的子串
@@ -132,7 +132,7 @@ SqString DelStr(SqString s, int i, int j)
 }
 ```
 
-输出串的算法
+#### 输出串的算法
 
 ```C
 void DispStr(SqString s)
@@ -157,13 +157,13 @@ typedef struct snode{
 }LiString;
 ```
 
-创建链串、复制、连接均采用尾插法
+### 创建链串、复制、连接均采用尾插法
 
 ## 模式匹配
 
 设有主串 s 和子串 t ，子串 t 定位是指在主串 s 中找到一个与子串 t 相等的子串。通常称主串 s 为目标串，子串 t 为模式串，定位为模式匹配。
 
-#### Brute-Forces 算法
+### Brute-Forces 算法
 
 一种简单匹配算法，从第一个字符开始匹配，匹配失败则从第二个字符开始匹配。
 
@@ -205,7 +205,7 @@ int index2(SqString s, SqString t)
 }
 ```
 
-#### KMP（Knuth-Morris-Pratt） 算法
+### KMP（Knuth-Morris-Pratt） 算法
 
 假设主串 s 有 n 个字符，模式串 p 有 m 个字符。当主串第 i 个字符与模式中第 j 个字符失配时，主串的第 i 个字符应与模式串的哪个字符相配？
 
@@ -261,7 +261,7 @@ int KMPIndex(SqString s, SqString t)
 }
 ```
 
-#### 修正后的 KMP 算法
+### 修正后的 KMP 算法
 
 因为定义 next[j] = k，即模式串中有 $p_j=p_k$ ，则主串中字符 s_i 与 p_i 比较不等时，无需在和 p_k 比较，而直接和 $p_{next[k]}$ 比较，或者说此时 next[j] 应和 next[k] 相同。
 

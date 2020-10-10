@@ -121,13 +121,19 @@ module.exports = {
             'ch06/topological-sorting',
             'ch06/critical-path'
           ]
-        },
+        }
+      ]
+    },
+    {
+      title: 'Part3：拓展篇',
+      collapsable: true,
+      children: [
         'ch07/',
         'ch08/',
       ]
     }
   ],
-  '/topic/algorithm/': [],
+  '/topic/info-analysis/': [],
   '/master/computer-science/': [
     ''
   ]
