@@ -17,6 +17,8 @@ module.exports = {
           { text: '英语学习', link: '/topic/english-learning/' },
           { text: '算法笔记', link: '/topic/algorithm/' },
           { text: '信息分析', link: '/topic/info-analysis/' },
+          { text: '中国金融系统', link: '/topic/financial-sys/' },
+          { text: '前端', link: '/topic/frontend/' },
         ]
       },
       {
