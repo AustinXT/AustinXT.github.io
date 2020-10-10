@@ -16,6 +16,7 @@ module.exports = {
         text: '主题学习', items: [
           { text: '英语学习', link: '/topic/english-learning/' },
           { text: '算法笔记', link: '/topic/algorithm/' },
+          { text: '信息分析', link: '/topic/info-analysis/' },
         ]
       },
       {

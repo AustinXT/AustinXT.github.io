@@ -3,7 +3,6 @@ title: 最大公约数与最小公倍数
 date: 2018-09-09
 tags:
   - 算法
-publish: false
 mathjax: true
 ---
 

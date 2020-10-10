@@ -3,7 +3,6 @@ title: AOV 网和拓扑排序
 date: 2018-09-09
 tags:
   - 算法
-publish: false
 ---
 
 AOV（Activity On Vertex）网指用顶点表示活动，用边集表示活动间优先关系的有向无环图。

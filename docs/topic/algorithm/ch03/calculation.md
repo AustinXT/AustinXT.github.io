@@ -3,7 +3,6 @@ title: 特殊数计算
 date: 2018-09-09
 tags:
   - 算法
-publish: false
 ---
 
 ## 分数计算

@@ -121,10 +121,13 @@ module.exports = {
             'ch06/topological-sorting',
             'ch06/critical-path'
           ]
-        }
+        },
+        'ch07/',
+        'ch08/',
       ]
     }
   ],
+  '/topic/algorithm/': [],
   '/master/computer-science/': [
     ''
   ]

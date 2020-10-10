@@ -3,7 +3,6 @@ title: 树与二叉树
 date: 2018-09-09
 tags:
   - 算法
-publish: false
 mathjax: true
 ---
 
@@ -153,5 +152,3 @@ DataType fun(BTNode *b)
         return g(fun(b->lchild),fun(b->rchild),c1);
 }
 ```
-
-## 

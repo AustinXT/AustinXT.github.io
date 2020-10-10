@@ -3,7 +3,6 @@ title: 栈
 date: 2018-09-09
 tags:
   - 算法
-publish: false
 mathjax: true
 ---
 

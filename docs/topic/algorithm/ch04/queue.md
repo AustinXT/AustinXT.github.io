@@ -3,7 +3,6 @@ title: 队列
 date: 2018-09-09
 tags:
   - 算法
-publish: false
 ---
 
 队列主要有两种存储结构，顺序队和链队。

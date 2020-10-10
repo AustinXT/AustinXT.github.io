@@ -3,7 +3,6 @@ title: 图的最小生成树
 date: 2018-09-09
 tags:
   - 算法
-publish: false
 ---
 
 最小生成树（Minimum Spanning Tree）是在给定无向图 G(V,E) 中求一棵树 T，使得 T 包含所有 V，且 T 的所有边都来自 E，并且满足整棵树的边权之和最小。
