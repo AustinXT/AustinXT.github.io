@@ -86,19 +86,19 @@ description:
 
 勾选「启用AnkiConnect」
 
-![](http://images.stanine.top/扩展程序1.png)
+![](http://images.austinxt.com/扩展程序1.png)
 
 选择牌组和模板，区域映射对应的标签
 
-![](http://images.stanine.top/扩展程序2.png)
+![](http://images.austinxt.com/扩展程序2.png)
 
 现在就可以使用了，让**光标**停留在一个英语单词上，按「shift」，点击**绿色加号**，效果如下：
 
-![](http://images.stanine.top/Anki1.png)
+![](http://images.austinxt.com/Anki1.png)
 
 除了看释义，还能听发音增强记忆。到目前为止，『Anki划词制卡助手』已经是一款很贴心的划词词典插件了，然后切换到Anki窗口看看卡片效果如何。这下彻底怒了，竟然连**原句**都一并摘录下来，也就是说，我在复习单词的同时也能一并复习知识点，单词顺着大脑语义网络唤醒了与知识点相关的脑区，记忆更深刻，而且记住了应用情境。
 
-![](http://images.stanine.top/Anki2.png)
+![](http://images.austinxt.com/Anki2.png)
 
 [作者](https://ninja33.github.io/about/)是谁，赶紧膜拜一下。
 
@@ -120,7 +120,7 @@ kindle的使用方法是：kindle自带生词本功能+[KindleMate](http://kmate
 
 给单词添加发音如图：
 
-![](http://images.stanine.top/Item-0_和_Item-0_和_Item-0.png)
+![](http://images.austinxt.com/Item-0_和_Item-0_和_Item-0.png)
 
 此外，也可用kindle**标注佳句**，用导出笔记的方式导出KindleMate，编辑成**填空题**的格式导入Anki。
 

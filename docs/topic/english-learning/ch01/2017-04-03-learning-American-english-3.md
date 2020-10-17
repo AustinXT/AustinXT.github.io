@@ -66,7 +66,7 @@ description:
 
 到这里，学习路径走完了一遍：音标、语块、音乐、篇章，实则开了个头，以后的练习积累才是关键。
 
-![](http://images.stanine.top/WEBRESOURCEb6b045c7fc74ef5b7a1b087b832140bb.jpg)
+![](http://images.austinxt.com/WEBRESOURCEb6b045c7fc74ef5b7a1b087b832140bb.jpg)
 
 ## 复盘
 

@@ -73,7 +73,7 @@ description:
 
 * [骑行苏花公路视频](https://quik.gopro.com/v/0l3ZZjruQ3/?from=timeline) ：骑行断崖公路，摸黑过生死隧道（朋友拍的）
 * [小说——声螺](blog.austinxt.com/blog/2017/02/26/shengluo/) ：灵感来自清水断崖、出海赏鲸、台湾电影《听说》
-![](http://images.stanine.top/hualian.gif)
+![](http://images.austinxt.com/hualian.gif)
 
 ## ChangeLog
 

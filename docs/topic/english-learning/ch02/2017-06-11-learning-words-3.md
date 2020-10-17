@@ -44,7 +44,7 @@ description:
 
 怎样才算掌握一个单词，语言学家J.Richard在1976年给出一个比较权威的定义：
 
-![](http://images.stanine.top/2017-06-11_12-34-16.jpg)
+![](http://images.austinxt.com/2017-06-11_12-34-16.jpg)
 
 近年有关单词领域的研究成果导出了这样的结论：**单词的学习乃至语言学习本身，主要通过了解单词与其他单词的搭配使用方式，以及结合背景内容来学习实现的，而不是通过先学单词的独立含义，然后再去了解与其搭配使用的词汇。**
 
@@ -80,7 +80,7 @@ description:
 
 语义联络是通过绘制表达不同功能与类别的单词之间联系的示意图，来发现某段文字中关键单词与其他单词之间的有机联系，从而把单词按照语义、类别、功能等进行分组和衔接。比如一段对旅客到机场乘机的流程说明文章中关联词汇的语义联络：
 
-![](http://images.stanine.top/2017-06-11_15-05-55.jpg)
+![](http://images.austinxt.com/2017-06-11_15-05-55.jpg)
 
 这会导致同类单词的混淆吗？单词通过文字背景中的事件、流程、动作或逻辑串联起来的，同类单词的记忆互不干扰，而是相互支持。
 
@@ -88,7 +88,7 @@ description:
 
 随着接触更多的原文内容，大脑中会形成一个立体的分级词汇概念搭配连接网络。随着网络中外语词汇间的连接越来越强，网络中一个或一组单词的激活，会令最相关的一系列词汇都处在被激活的状态，此时对内容的理解会更深刻，也更快。
 
-![](http://images.stanine.top/2017-06-11_15-05-56.jpg)
+![](http://images.austinxt.com/2017-06-11_15-05-56.jpg)
 
 ### 背单词与深度学习的比较
 
@@ -96,7 +96,7 @@ description:
 
 ### 一语的作用
 
-![](http://images.stanine.top/english1.jpg)
+![](http://images.austinxt.com/english1.jpg)
 
 这是一张二语学习层级模式图，L1为一语，L2为二语，词汇概念和一语的双向连接通道很坚固，一语和二语的连接只是将二语翻译成一语的那条单向通道坚固。我们学习二语的目的是使L2和Concepts建立快速的通道，但是这一过程困难又缓慢。因此要善于借用一语来过渡，先用大量的输入建立**二语到一语再到概念的通道**，再用**输出练习强化其他通道**。此外，还有一部分的英语学习是不需要强化虚线部分的，比如需要深加工的数学（读懂意思后便可用一语来思考，思考完后再用二语表达）和比较不常见的青蒿素这种词汇，明白这些可以大大减轻学习量。
 
@@ -106,12 +106,12 @@ description:
 
 * 静态基本空间含义：在…之上，e.g. The clock is over the couch.
 
-  ![](http://images.stanine.top/2017-06-11_15-30-05.jpg)
+  ![](http://images.austinxt.com/2017-06-11_15-30-05.jpg)
 * 静态：在…另一侧，e.g. His father lives over the river.
 
   
 
-  ![](http://images.stanine.top/2017-06-11_15-30-06_115.jpg)
+  ![](http://images.austinxt.com/2017-06-11_15-30-06_115.jpg)
 
   
 
@@ -119,7 +119,7 @@ description:
 
   
 
-  ![](http://images.stanine.top/2017-06-11_15-30-06_183.jpg)
+  ![](http://images.austinxt.com/2017-06-11_15-30-06_183.jpg)
 
   
 
@@ -127,7 +127,7 @@ description:
 
   
 
-  ![](http://images.stanine.top/2017-06-11_15-30-06_286.jpg)
+  ![](http://images.austinxt.com/2017-06-11_15-30-06_286.jpg)
 
   
 
@@ -135,7 +135,7 @@ description:
 
   
 
-  ![](http://images.stanine.top/2017-06-11_15-30-06_293.jpg)
+  ![](http://images.austinxt.com/2017-06-11_15-30-06_293.jpg)
 
   
 
@@ -143,7 +143,7 @@ description:
 
   
 
-  ![](http://images.stanine.top/2017-06-11_15-30-06_335.jpg)
+  ![](http://images.austinxt.com/2017-06-11_15-30-06_335.jpg)
 
   
 
@@ -151,7 +151,7 @@ description:
 
   
 
-  ![](http://images.stanine.top/2017-06-11_15-30-06_377.jpg)
+  ![](http://images.austinxt.com/2017-06-11_15-30-06_377.jpg)
 
   
 

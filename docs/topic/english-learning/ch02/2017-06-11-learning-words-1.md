@@ -31,14 +31,14 @@ description:
 
 最常用的250个单词，覆盖了口语中60%的词汇，其他数据以此类推，因此只需少量词汇就能应付生活中大部分口语。高频词最常用，它的意思也更多，橙色圆圈中表示平均的意思个数，因此**记高频词要多记几个意思**。
 
-![](http://images.stanine.top/yuyidejieti.png)
+![](http://images.austinxt.com/yuyidejieti.png)
 
 ### 单词覆盖率&词频
 
 扩展词汇主要在四六级、考研英语、TOEFL 和 SAT 的阅读部分出现
 词频查询：[Wordcount · Tracking the Way We Use Language](http://www.wordcount.org/main.php)
 
-![](http://images.stanine.top/cipin.jpeg)
+![](http://images.austinxt.com/cipin.jpeg)
 
 ## 第一阶段：250词&介词
 
@@ -64,7 +64,7 @@ description:
    * 前者F对G的控制度高，表示主动自信地去找工作。
    * 后者F对G的控制度低，表示艰难地找工作。
 
-![](http://images.stanine.top/fangweijieci.jpeg)
+![](http://images.austinxt.com/fangweijieci.jpeg)
 
 ### 于刻天年里
 
@@ -80,7 +80,7 @@ description:
 * on time、in time：准时、及时，前者强调某一小段时间内，而后者强调在某个时间界限之前的任何时间都可以
 * at risk、at steak、on target、in trouble：这些用法可以类比空间尺度，小、中、大，at risk处于某一点的状态，on target按计划接近实现目标（中尺度），in trouble延伸到过去和将来的大尺度时间
 
-![](http://images.stanine.top/shijianjieci.png)
+![](http://images.austinxt.com/shijianjieci.png)
 
 ### 意象图式
 
@@ -96,13 +96,13 @@ description:
 
 语言是相互联系的，学习二语的时候注意语言迁移和意义迁移能更好地理解一语和二语。
 
-![](http://images.stanine.top/WEBRESOURCE86b4ed01782a8c9db1dd5733bf23bf3a.jpg)
+![](http://images.austinxt.com/WEBRESOURCE86b4ed01782a8c9db1dd5733bf23bf3a.jpg)
 
-![](http://images.stanine.top/32135165.jpg)
+![](http://images.austinxt.com/32135165.jpg)
 
 ### 造做使成赚
 
-![](http://images.stanine.top/make.png)
+![](http://images.austinxt.com/make.png)
 
 ## 参考
 

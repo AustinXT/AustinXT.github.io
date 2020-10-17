@@ -77,7 +77,7 @@ mathjax: true
 
 至今被公认的遗忘曲线统计式：$b=100k/((logt)^c+k)$, 其中k=1.48, c=1.25
 
-![](http://images.stanine.top/memory-remain.jpg)
+![](http://images.austinxt.com/memory-remain.jpg)
 
 #### 间隔学习VS分散学习
 
@@ -92,7 +92,7 @@ mathjax: true
 
 为了避免学习战线拉太长，可以一周复习一次单词，保持听说读写，让单词**在更多的情境中碰到**，编码多样化记得会更牢。
 
-![](http://images.stanine.top/forget-curve.png)
+![](http://images.austinxt.com/forget-curve.png)
 
 **重复记忆次数**
 

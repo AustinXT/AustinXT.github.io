@@ -144,7 +144,7 @@ module.exports = {
 
 运行 `$ npm run build` ，成功打包项目
 
-![](http://images.stanine.top/20190516112455.png)
+![](http://images.austinxt.com/20190516112455.png)
 
 ### 配置项目加载静态文件
 
@@ -1024,7 +1024,7 @@ else {
 
 生成文件如图，`app.b4ec117b.js` 比之前的 `index.js` 文件小了许多
 
-![](http://images.stanine.top/20190518221534.png)
+![](http://images.austinxt.com/20190518221534.png)
 
 ## 参考
 
