@@ -1,9 +1,13 @@
 ---
 title: 算法笔记
 date: 2018-09-09
+sidebar: 'auto'
+categories: 学习记录
+author: 夜航星
 tags:
   - 算法
-publish: false
+  - 技术
+publish: true
 ---
 
 ##  Part 1：入门篇

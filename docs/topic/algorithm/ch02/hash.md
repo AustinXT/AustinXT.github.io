@@ -1,8 +1,13 @@
 ---
 title: 散列
 date: 2018-09-09
+sidebar: 'auto'
+categories: 学习记录
+author: 夜航星
 tags:
   - 算法
+  - 技术
+publish: true
 ---
 
 将元素通过一个函数转化为一个整数，使得整数可以尽量唯一的代表这个元素。

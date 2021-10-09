@@ -1,8 +1,13 @@
 ---
 title: 图的遍历
 date: 2018-09-09
+sidebar: 'auto'
+categories: 学习记录
+author: 夜航星
 tags:
   - 算法
+  - 技术
+publish: true
 ---
 
 ## DFS 遍历法

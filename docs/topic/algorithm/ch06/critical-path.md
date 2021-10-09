@@ -1,8 +1,13 @@
 ---
 title: AOE 网和关键路径
 date: 2018-09-09
+sidebar: 'auto'
+categories: 学习记录
+author: 夜航星
 tags:
   - 算法
+  - 技术
+publish: true
 ---
 
 ## 概念

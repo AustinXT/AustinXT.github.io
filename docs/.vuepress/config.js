@@ -33,7 +33,7 @@ module.exports = {
     // 博客配置
     blogConfig: {
       category: {
-        location: 2,     // 在导航栏菜单中所占的位置，默认2
+        location: 2, // 在导航栏菜单中所占的位置，默认2
         text: '分类' // 默认文案 “分类”
       },
     },
@@ -57,7 +57,7 @@ module.exports = {
     valineConfig: {
       appId: 'MEPBEkRHgqXkjQJ7Pi0u1f0P-gzGzoHsz',// your appId
       appKey: '5gcDkRQSjKAfKS5iH85yaCDr', // your appKey
-      showComment: false
+      showComment: true
     },
     // 备案
     record: '浙ICP备19014045号-2',
@@ -81,4 +81,4 @@ module.exports = {
       },
     ]
   ]
-}  
+}

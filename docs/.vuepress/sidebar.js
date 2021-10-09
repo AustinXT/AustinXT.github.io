@@ -134,7 +134,6 @@ module.exports = {
     }
   ],
   '/topic/info-analysis/': [],
-  '/topic/financial-sys/': [],
   '/topic/frontend/': [],
   '/master/computer-science/': [
     ''

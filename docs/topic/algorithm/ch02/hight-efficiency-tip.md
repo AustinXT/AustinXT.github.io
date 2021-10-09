@@ -1,9 +1,13 @@
 ---
 title: 其他高效技巧
 date: 2018-09-09
+sidebar: 'auto'
+categories: 学习记录
+author: 夜航星
 tags:
   - 算法
-publish: false
+  - 技术
+publish: true
 ---
 
 ## two pointers

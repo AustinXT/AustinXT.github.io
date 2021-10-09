@@ -1,8 +1,13 @@
 ---
 title: 队列
 date: 2018-09-09
+sidebar: 'auto'
+categories: 学习记录
+author: 夜航星
 tags:
   - 算法
+  - 技术
+publish: true
 ---
 
 队列主要有两种存储结构，顺序队和链队。
