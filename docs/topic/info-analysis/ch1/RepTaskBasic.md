@@ -65,21 +65,21 @@
 
    4. 下载后拖入 Zotero 对应的目录
 
-      ![](http://oohkn7mnd.bkt.clouddn.com/Zotero237466892.png)
+      ![](http://images.austinxt.com/Zotero237466892.png)
 
 2. （耗时0.5h）下载硕博论文
 
    1. 在知网首页打开硕博论文的检索页，选择人工智能这一学科，直接点击检索。勾选需要的结果
 
-      ![](http://oohkn7mnd.bkt.clouddn.com/435234534523.png)
+      ![](http://images.austinxt.com/435234534523.png)
 
    2. 导出文献
 
-      ![](http://oohkn7mnd.bkt.clouddn.com/42532542345.png)
+      ![](http://images.austinxt.com/42532542345.png)
 
    3. 将下载下来的 txt 格式的文件导入 EndNote，注意从 Option 选择导入的文件格式
 
-   4. 从 Endnote 导出所有条目，格式为 XML，在从 Zotero 导入 XML 文件（不能拖入），得到![](http://oohkn7mnd.bkt.clouddn.com/92749083593.png)
+   4. 从 Endnote 导出所有条目，格式为 XML，在从 Zotero 导入 XML 文件（不能拖入），得到![](http://images.austinxt.com/92749083593.png)
 
    5. 挑选感兴趣的标题，读一下摘要，获取信息点
 
@@ -91,13 +91,13 @@
 
    3. 在[arXiv.org e-Print archive](https://arxiv.org/)的最下方，点击 Feeds
 
-      ![](http://oohkn7mnd.bkt.clouddn.com/73450972.png)
+      ![](http://images.austinxt.com/73450972.png)
 
    4. 获取订阅的 URL：http://export.arxiv.org/rss/cs.AI
 
    5. 在 Zotero 里订阅，点击方框-->新建订阅-->来自 URL，输入 URL，保存
 
-      ![](http://oohkn7mnd.bkt.clouddn.com/347985273.png)
+      ![](http://images.austinxt.com/347985273.png)
 
 4. 获取最小知识，待补充
 
@@ -115,7 +115,7 @@
 
 - 顶级期刊，论文数量远大于前两者，arxiv 等开发资源可借助网友提供的工具批量获取，例如[Arxiv Sanity Preserver](http://www.arxiv-sanity.com/)。但这么多的论文不知道怎么去管理，可能需要借助 Citespace 等知识图谱工具。人工智能领域与之前接触的财务管理领域不同，该领域顶级会议的论文似乎是最重要的，比期刊更加重要，因此要关注会议。从 [dblp: computer science bibliography](https://dblp.uni-trier.de/)获取的统计也证实了这一点。
 
-  ![](http://oohkn7mnd.bkt.clouddn.com/dblp__Distribution_of_publication_type.png)
+  ![](http://images.austinxt.com/dblp__Distribution_of_publication_type.png)
 
 ### 4.2 可优化的环节
 

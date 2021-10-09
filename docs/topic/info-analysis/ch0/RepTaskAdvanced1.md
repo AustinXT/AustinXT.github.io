@@ -38,7 +38,7 @@
 
    书籍是大头，以书籍为例：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/Zotero35345324.png)
+   ![](http://images.austinxt.com/Zotero35345324.png)
 
    之前有“tag教材”和“tag已购”两个标签，分别添加到对应目录下，将所有有PDF附件的条目添加到“Ebook”，剩下的手动处理。
 

@@ -62,13 +62,13 @@
 
    3. 在 Google 用`Munger site:focusinvestor.com`检索，有重大发现，第三条结果是想要的答案
 
-      ![](http://oohkn7mnd.bkt.clouddn.com/738957230945.png)
+      ![](http://images.austinxt.com/738957230945.png)
 
    4. (0.5h)点进去发现，Page not found，此时有一步很关键，就是用时光机 web.archive.org
 
    5. 找到了 The Munger Network of Mental Model，样本如下
 
-      ![](http://oohkn7mnd.bkt.clouddn.com/3954709238.png)
+      ![](http://images.austinxt.com/3954709238.png)
 
    6. (1h)第二次整理芒格的知识结构
 

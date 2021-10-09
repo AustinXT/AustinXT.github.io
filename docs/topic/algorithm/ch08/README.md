@@ -227,7 +227,7 @@ $$
 
 例如：
 
-![](http://oohkn7mnd.bkt.clouddn.com/download_resize_2.jpeg.jpg?imageView/2/w/300/q/90)
+![](http://images.austinxt.com/download_resize_2.jpeg.jpg?imageView/2/w/300/q/90)
 
 ```C
 void GetNext(SqString t, int next[])
@@ -267,7 +267,7 @@ int KMPIndex(SqString s, SqString t)
 
 例如：
 
-![](http://oohkn7mnd.bkt.clouddn.com/download_resize_1.jpeg?imageView/2/w/300/p/90)
+![](http://images.austinxt.com/download_resize_1.jpeg?imageView/2/w/300/p/90)
 
 ```C
 void GetNextval(SqString t, int nextval[])

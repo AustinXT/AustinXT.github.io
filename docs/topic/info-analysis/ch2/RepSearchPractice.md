@@ -49,43 +49,43 @@
 
 2. 点击 Papers --> Volume 18，到达页面如下，用Chrome 的插件 chrono 批量下载论文。
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/6598638534.png)
+   ![](http://images.austinxt.com/6598638534.png)
 
 3. 选择一篇能读懂摘要的论文：Automatic Diﬀerentiation in Machine Learning: a Survey，去[Acemap](http://acemap.sjtu.edu.cn/)搜索该篇论文的标题，得到搜索结果：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/394570932745.png)
+   ![](http://images.austinxt.com/394570932745.png)
 
 4. 信息不多，而且这篇在 JMLR 2018年发表的论文，在2015年就已经发表了（可见计算机领域，期刊论文会滞后）。去看一下四位作者，一次点击四位作者，其中有两位有较高的 Hindex，分别为23和16。其中一位作者的页面如下图，右侧的合作者关系图能找到该篇论文四位作者中的三位（Acemap也会遗漏信息）。
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/382639485.png)
+   ![](http://images.austinxt.com/382639485.png)
 
 5. 点击 Mentorship 右侧的 More，进入师徒关系的大图，调整后得到下图，其中一作和三作是四作的学生，是二作的徒孙，而二作是 Hinton 老先生的学生。 Hinton 是反向传播算法和对比散度算法的发明人之一，也是深度学习的积极推动者，领域中的顶级学者。此时将该篇论文归类到 Hinton 门下，我们对它就没那么陌生了。
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/590830984579.png)
+   ![](http://images.austinxt.com/590830984579.png)
 
 6. 该论文在 Acemap 的引用数为0，此时没有获取到所需的信息，再去 Google Scholar 查看它的引用数，如图：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/72345709374059.png)
+   ![](http://images.austinxt.com/72345709374059.png)
 
 7. 在[[1502.05767] Automatic differentiation in machine learning: a survey](https://arxiv.org/abs/1502.05767)点击 Almetric 书签，页面右上角出现下图，指数为75，有料！
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/34597345.png)
+   ![](http://images.austinxt.com/34597345.png)
 
 8. 点击 Click for more details，进入详情页，可以看出该论文的影响力蛮强的，排名在前5%-10%。
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/857347598234509.png)
+   ![](http://images.austinxt.com/857347598234509.png)
 
 9. 从详情页的左侧可看到，Twitter 提及该篇论文113次，点开查看。往下拉发现了一个信息点，一群人在转发同一条一条推特，跟 PyTorch 有关，这条推特是 Soumith Chintala 发出的，其关注人数达4万+，应该是重要的人物。
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/7394875932478.png)
+   ![](http://images.austinxt.com/7394875932478.png)
 
 10. 点击进入 Soumith 的推特主页，发现他是 PyTorch 的创始人，该篇论文应该有助于开发 PyTorch 的Automatic Diﬀerentiation 功能。
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/752309457235.png)
+   ![](http://images.austinxt.com/752309457235.png)
 
 11. 点击进入 Wikipedia 栏目，有一次引用如图。Automatic Diﬀerentiation 是评价 Deep Learning Software 的一项重要指标，而 Automatic Differentiation 概念来自气象学等领域， Automatic Diﬀerentiation in Machine Learning: a Survey 这篇论文清晰的阐述了机器学习中 the main differentiation techniques and their interrelationships。
 
-    ![](http://oohkn7mnd.bkt.clouddn.com/394579324.png)
+    ![](http://images.austinxt.com/394579324.png)
 
 #### 论文二：Information-Geometric Optimization Algorithms: A Unifying Picture via Invariance Principles 
 
@@ -104,17 +104,17 @@
 - Automatic Diﬀerentiation 是评价 Deep Learning Software 的一项重要指标，而 Automatic Differentiation 概念来自气象学等领域， Automatic Diﬀerentiation in Machine Learning: a Survey 这篇论文清晰的阐述了机器学习中 the main differentiation techniques and their interrelationships。PyTorch 的创始人推荐他的团队关注这篇论文，PyTorch 的 Automatic Diﬀerentiation 功能应该与这篇论文有关系。这篇论文的作者是 Hinton 的门徒。
 - 从 Zotero 导出论文条目数据，格式为 CSL JSON，用爬虫抓取 Google Scholar、 AceMap 和 Altmetric 三个网站的引用数据（只写了[ Jupyter Notebook](https://github.com/MatrixXT/IA001/blob/master/ch2/getCitations.ipynb)，待写成脚本），部分结果如下：
 
-| publish_year                                                 | gs_citation | acemap_citation | altmetric_score | top_all | top_journal | altmetric_url |                                                   |
-| ------------------------------------------------------------ | ----------- | --------------- | --------------- | ------- | ----------- | ------------- | ------------------------------------------------- |
-| title                                                        |             |                 |                 |         |             |               |                                                   |
-| Context based object categorization: a critical survey       | 2010        | 281             | 81              | 6       | 0.17        | 0.09          | http://www.altmetric.com/details.php?citation_... |
-| A review of machine learning for automated planning          | 2012        | 42              | 4               | None    | None        | None          | None                                              |
+| publish_year                                                                | gs_citation | acemap_citation | altmetric_score | top_all | top_journal | altmetric_url |                                                   |
+| --------------------------------------------------------------------------- | ----------- | --------------- | --------------- | ------- | ----------- | ------------- | ------------------------------------------------- |
+| title                                                                       |             |                 |                 |         |             |               |                                                   |
+| Context based object categorization: a critical survey                      | 2010        | 281             | 81              | 6       | 0.17        | 0.09          | http://www.altmetric.com/details.php?citation_... |
+| A review of machine learning for automated planning                         | 2012        | 42              | 4               | None    | None        | None          | None                                              |
 | Regret analysis of stochastic and nonstochastic multi-armed bandit problems | 2012        | 909             | None            | 3       | 0.27        | 0.81          | http://www.altmetric.com/details.php?citation_... |
-| Kernels for vector-valued functions: a review                | 2011        | 204             | 21              | 4.5     | 0.22        | 0.11          | http://www.altmetric.com/details.php?citation_... |
-| An introduction to conditional random fields                 | 2010        | 704             | 61              | 15.7    | 0.07        | 0.02          | http://www.altmetric.com/details.php?citation_... |
-| Randomized algorithms for matrices and data                  | 2011        | 440             | 37              | 41.5    | 0.03        | 0.01          | http://www.altmetric.com/details.php?citation_... |
-| A few useful things to know about machine learning           | 2012        | 1045            | 110             | 24.31   | 0.04        | 0.02          | http://www.altmetric.com/details.php?citation_... |
-| Translation techniques in cross-language information retrieval | 2012        | 45              | 77              | 9.064   | 0.12        | 0.09          | http://www.altmetric.com/details.php?             |
+| Kernels for vector-valued functions: a review                               | 2011        | 204             | 21              | 4.5     | 0.22        | 0.11          | http://www.altmetric.com/details.php?citation_... |
+| An introduction to conditional random fields                                | 2010        | 704             | 61              | 15.7    | 0.07        | 0.02          | http://www.altmetric.com/details.php?citation_... |
+| Randomized algorithms for matrices and data                                 | 2011        | 440             | 37              | 41.5    | 0.03        | 0.01          | http://www.altmetric.com/details.php?citation_... |
+| A few useful things to know about machine learning                          | 2012        | 1045            | 110             | 24.31   | 0.04        | 0.02          | http://www.altmetric.com/details.php?citation_... |
+| Translation techniques in cross-language information retrieval              | 2012        | 45              | 77              | 9.064   | 0.12        | 0.09          | http://www.altmetric.com/details.php?             |
 
 ## 4. 讨论
 
@@ -128,7 +128,7 @@
 
 步骤2，实践后得知，批量下载再导入 Zotero 的论文， 抓取 PDF 元数据时不能获取年份。更好的做法是获取左下角 RSS 的URL，在 Zotero 新建订阅，再批量添加到 Library 的对应目录下。
 
-![](http://oohkn7mnd.bkt.clouddn.com/759873045032.png)
+![](http://images.austinxt.com/759873045032.png)
 
 ### 4.3 收获：获取论文相关的实践
 

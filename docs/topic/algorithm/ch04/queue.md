@@ -78,7 +78,7 @@ int DeQueue(SqQueue &qu, ElemType &e)
 
 在单链表的表头进行出队操作，在表尾进行入队操作。
 
-![](http://oohkn7mnd.bkt.clouddn.com/IMG_20180322_110346.jpg)
+![](http://images.austinxt.com/IMG_20180322_110346.jpg)
 
 定义
 

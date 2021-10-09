@@ -39,7 +39,7 @@
 
 1. （0.5h）从福布斯官网获取2017年最大上市公司排行榜，[The World’s Biggest Public Companies List](https://www.forbes.com/global2000/list/#country:United%20States)，部分公司如图：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/534523634564.png)
+   ![](http://images.austinxt.com/534523634564.png)
 
 2. （1.5h）财团和公司的概念有区别，财团可能掌握上市公司以外的资产，因此需要检验一下以上数据的重要性。从获取[美国２０１７财年财政赤字创２０１３年来新高-新华网](http://www.xinhuanet.com/world/2017-10/21/c_1121836189.htm)获取美国政府的财政收入，用[收入爆表！美财政部2017财年前7个月税收创纪录 - 华尔街见闻](https://wallstreetcn.com/articles/3008862)交叉验证，美国联邦政府2017年财政收入约3.32万亿美元。而此排行榜前200名公司的平均年收入为 43.76 Billion Dollars，约为联邦政府财政收入的 1.32%，因此该榜单上的公司聚集了相当多的财富。
 
@@ -49,35 +49,35 @@
 
 5. Google：`BERKSHIRE HATHAWAY invest list`，找到[List of assets owned by Berkshire Hathaway - Wikiwand](https://www.wikiwand.com/en/List_of_assets_owned_by_Berkshire_Hathaway)，部分内容如下：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/4536464564.png)
+   ![](http://images.austinxt.com/4536464564.png)
 
 6. （0.5）Wikipedia 的表格只是并购清单，没有记录金额较小的投资记录。在 Wikipedia 的外部链接里找到 [BERKSHIRE HATHAWAY INC Top Holdings](https://whalewisdom.com/filer/berkshire-hathaway-inc#tabholdings_tab_link)，该网站可以查找 **13D、13G 和 13F三种表格**，投资者需要在以上表格披露重大投资（金额大于一亿或占投资公司5%以上的股权）。该网站尽可以获取2015年以后的数据，部分数据如下：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/6238468923.png)
+   ![](http://images.austinxt.com/6238468923.png)
 
    一般这种整理信息的网站会有一下统计图，例如一下的投资领域比例图：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/3243534.png)
+   ![](http://images.austinxt.com/3243534.png)
 
 7. （0.5）因此更完整的投资清单需要去官网[BERKSHIRE HATHAWAY INC.](http://www.berkshirehathaway.com/)找，点击如下链接：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/234234232342.png)
+   ![](http://images.austinxt.com/234234232342.png)
 
    跳转至如下页面，www.sec.gov：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/2343453245.png)
+   ![](http://images.austinxt.com/2343453245.png)
 
    挑选 BERKSHIRE HATHAWAY INC 查看，进去后的页面如下：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/35234535.png)
+   ![](http://images.austinxt.com/35234535.png)
 
 8. （0.5）点击第二条记录的 Document，进入详情页：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/39245793.png)
+   ![](http://images.austinxt.com/39245793.png)
 
    点击文件查看详情：
 
-   ![](http://oohkn7mnd.bkt.clouddn.com/5873597392045.png)
+   ![](http://images.austinxt.com/5873597392045.png)
 
 ## 3. 结论
 

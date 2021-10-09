@@ -40,9 +40,9 @@
 
 比较一下在下原来建立的 Zotero 分类和模板的分类：
 
-|      原来分类          | 模板分类    |
-| :--------------------------: | :---------------------: |
-| ![](http://oohkn7mnd.bkt.clouddn.com/ZoteroContents3.png) | ![](http://oohkn7mnd.bkt.clouddn.com/ZoteroContents5.png) |
+|                      原来分类                       |                      模板分类                       |
+| :-------------------------------------------------: | :-------------------------------------------------: |
+| ![](http://images.austinxt.com/ZoteroContents3.png) | ![](http://images.austinxt.com/ZoteroContents5.png) |
 
 差距在哪里：
 
@@ -95,7 +95,7 @@ Zotero 的云存储空间有限，需单独设置附件的同步。方法有两�
 
   在 Zotero 的首选项/偏好—>同步，设置：
 
-  ![](http://oohkn7mnd.bkt.clouddn.com/ZoteroAttachementFile.png)
+  ![](http://images.austinxt.com/ZoteroAttachementFile.png)
 
 ## 4. 参考文献
 
