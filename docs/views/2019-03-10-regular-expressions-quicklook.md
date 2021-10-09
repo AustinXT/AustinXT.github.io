@@ -8,6 +8,7 @@ tags:
   - 技术
   - 工具
   - 清单
+publish: true
 description:
 mathjax: true
 ---

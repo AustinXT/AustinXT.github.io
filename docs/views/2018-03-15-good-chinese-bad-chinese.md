@@ -8,6 +8,7 @@ tags:
   - 写作
   - 读书
   - 清单
+publish: true
 description: 《翻译乃大道》读书笔记
 ---
 
