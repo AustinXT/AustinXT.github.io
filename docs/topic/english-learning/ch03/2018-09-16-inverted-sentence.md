@@ -8,6 +8,7 @@ author: 夜航星
 tags:
   - 英语
 description: Inverted Sentences
+publish: false
 ---
 
 为强调语气、增强清楚性与简洁性，以及更流畅地衔接前后句子，可适当倒装。

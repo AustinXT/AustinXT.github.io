@@ -12,18 +12,16 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
+      { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       {
         text: '主题学习', items: [
           { text: '英语学习', link: '/topic/english-learning/' },
           { text: '算法笔记', link: '/topic/algorithm/' },
-          { text: '信息分析', link: '/topic/info-analysis/' },
-          { text: '中国金融系统', link: '/topic/financial-sys/' },
-          { text: '前端', link: '/topic/frontend/' },
+          { text: '操作系统', link: '/topic/operating-sys/' },
         ]
       },
       {
         text: '两年计划', items: [
-          { text: '计算机科学', link: '/master/computer-science/' },
         ]
       }
     ],
@@ -35,9 +33,10 @@ module.exports = {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
         text: '分类' // 默认文案 “分类”
-      },
+      }
     },
     authorAvatar: '/avatar.png',
+    logo: '/avatar.png',
     // 友情连接
     friendLink: [
       {
