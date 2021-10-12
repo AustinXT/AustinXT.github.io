@@ -133,142 +133,142 @@ module.exports = {
       ]
     }
   ],
-  '/topic/operating-sys/': [
-    '',
-    'ch00/',
-    {
-      title: '第一部分',
-      collapsable: true,
-      children: [
-        'ch01/',
-        'ch02/',
-        {
-          collapsable: false,
-          children: [
-            'ch02/process',
-            'ch02/process-synchronization',
-            'ch02/process-communication',
-            'ch02/threads',
-          ]
-        },
-        'ch03/',
-        {
-          collapsable: false,
-          children: [
-            'ch03/scheduling',
-            'ch03/deadlock',
-          ]
-        }
-      ]
-    },
-    {
-      title: '第二部分',
-      collapsable: true,
-      children: [
-        'ch04/',
-        {
-          collapsable: false,
-          children: [
-            'ch04/load-and-link',
-            'ch04/swapping',
-            'ch04/continuous-allocate-memory-management',
-            'ch04/paged-memory-management',
-            'ch04/segmented-memory-management',
-            'ch04/demand-paging-storage-management',
-            'ch04/page-replacement-algorithm',
-            'ch04/demand-segmented-storage-management',
-          ]
-        },
-        'ch05/',
-        {
-          collapsable: false,
-          children: [
-            'ch05/equipment-and-adapter',
-            'ch05/interrupt-handler',
-            'ch05/device-driver',
-            'ch05/independent-iosw',
-            'ch05/user-iosw',
-            'ch05/buffer',
-          ]
-        },
-        'ch06/',
-        {
-          collapsable: false,
-          children: [
-            'ch06/file-logical-structure',
-            'ch06/file-director',
-            'ch06/file-sharing',
-            'ch06/file-proctection',
-          ]
-        },
-        'ch07/',
-        {
-          collapsable: false,
-          children: [
-            'ch07/organization-of-disk',
-            'ch07/storage-management-for-file',
-            'ch07/improving-speed-of-disk',
-            'ch07/improving-reliability-of-disk',
-            'ch07/data-unison-control',
-          ]
-        },
-        'ch08/',
-        {
-          collapsable: false,
-          children: [
-            'ch08/user-port',
-            'ch08/system-call',
-            'ch08/system-call-realization',
-          ]
-        }
-      ]
-    },
-    {
-      title: '第三部分',
-      collapsable: true,
-      children: [
-        'ch09/',
-        {
-          collapsable: false,
-          children: [
-            'ch09/mps',
-            'ch09/mps-process-synchronization',
-            'ch09/mps-scheduling',
-            'ch09/network-os',
-            'ch09/distributed-file-system',
-          ]
-        },
-        'ch10/',
-        {
-          collapsable: false,
-          children: [
-            'ch10/media-process-management',
-            'ch10/media-scheduling',
-            'ch10/media-server',
-            'ch10/media-storage',
-            'ch10/media-io',
-          ]
-        },
-        'ch11/',
-        {
-          collapsable: false,
-          children: [
-            'ch11/data-encrypt',
-            'ch11/user-authentication',
-            'ch11/attack-inside',
-            'ch11/attack-outside',
-            'ch11/trusted-system',
-          ]
-        },
-      ]
-    },
-    {
-      title: '第四部分',
-      collapsable: true,
-      children: [
-        'ch12/',
-        'ps/'
-      ],
-    }
-  ]
+  // '/topic/operating-sys/': [
+  //   '',
+  //   'ch00/',
+  //   {
+  //     title: '第一部分',
+  //     collapsable: true,
+  //     children: [
+  //       'ch01/',
+  //       'ch02/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch02/process',
+  //           'ch02/process-synchronization',
+  //           'ch02/process-communication',
+  //           'ch02/threads',
+  //         ]
+  //       },
+  //       'ch03/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch03/scheduling',
+  //           'ch03/deadlock',
+  //         ]
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     title: '第二部分',
+  //     collapsable: true,
+  //     children: [
+  //       'ch04/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch04/load-and-link',
+  //           'ch04/swapping',
+  //           'ch04/continuous-allocate-memory-management',
+  //           'ch04/paged-memory-management',
+  //           'ch04/segmented-memory-management',
+  //           'ch04/demand-paging-storage-management',
+  //           'ch04/page-replacement-algorithm',
+  //           'ch04/demand-segmented-storage-management',
+  //         ]
+  //       },
+  //       'ch05/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch05/equipment-and-adapter',
+  //           'ch05/interrupt-handler',
+  //           'ch05/device-driver',
+  //           'ch05/independent-iosw',
+  //           'ch05/user-iosw',
+  //           'ch05/buffer',
+  //         ]
+  //       },
+  //       'ch06/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch06/file-logical-structure',
+  //           'ch06/file-director',
+  //           'ch06/file-sharing',
+  //           'ch06/file-proctection',
+  //         ]
+  //       },
+  //       'ch07/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch07/organization-of-disk',
+  //           'ch07/storage-management-for-file',
+  //           'ch07/improving-speed-of-disk',
+  //           'ch07/improving-reliability-of-disk',
+  //           'ch07/data-unison-control',
+  //         ]
+  //       },
+  //       'ch08/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch08/user-port',
+  //           'ch08/system-call',
+  //           'ch08/system-call-realization',
+  //         ]
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     title: '第三部分',
+  //     collapsable: true,
+  //     children: [
+  //       'ch09/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch09/mps',
+  //           'ch09/mps-process-synchronization',
+  //           'ch09/mps-scheduling',
+  //           'ch09/network-os',
+  //           'ch09/distributed-file-system',
+  //         ]
+  //       },
+  //       'ch10/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch10/media-process-management',
+  //           'ch10/media-scheduling',
+  //           'ch10/media-server',
+  //           'ch10/media-storage',
+  //           'ch10/media-io',
+  //         ]
+  //       },
+  //       'ch11/',
+  //       {
+  //         collapsable: false,
+  //         children: [
+  //           'ch11/data-encrypt',
+  //           'ch11/user-authentication',
+  //           'ch11/attack-inside',
+  //           'ch11/attack-outside',
+  //           'ch11/trusted-system',
+  //         ]
+  //       },
+  //     ]
+  //   },
+  //   {
+  //     title: '第四部分',
+  //     collapsable: true,
+  //     children: [
+  //       'ch12/',
+  //       'ps/'
+  //     ],
+  //   }
+  // ]
 }
