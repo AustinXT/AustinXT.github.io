@@ -1,89 +1,89 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>夜航星</title>
-        <link>http://austinxt.com/</link>
+        <link>https://austinxt.github.io/</link>
         <description>个人博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
             <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 27 Jul 2019 00:00:00 &#43;0800</lastBuildDate>
-            <atom:link href="http://austinxt.com/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="https://austinxt.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>如何形成人格全景？</title>
-    <link>http://austinxt.com/2019-07-27-decoding-personality-mysteries/</link>
+    <link>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</link>
     <pubDate>Sat, 27 Jul 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-07-27-decoding-personality-mysteries/</guid>
+    <guid>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</guid>
     <description><![CDATA[作者塞缪尔·巴伦德斯（Samuel Barondes），生于 1933 年，是美国神经病专家、神经科学家，加州大学（旧金山）心理学教授，美国科学院医学院]]></description>
 </item>
 <item>
     <title>一窥癌症：人类扭曲态</title>
-    <link>http://austinxt.com/2019-07-15-cancer-history/</link>
+    <link>https://austinxt.github.io/2019-07-15-cancer-history/</link>
     <pubDate>Mon, 15 Jul 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-07-15-cancer-history/</guid>
+    <guid>https://austinxt.github.io/2019-07-15-cancer-history/</guid>
     <description><![CDATA[你是谁，你来自何方？ 我来自于你，我是另一个你。 我是我，你怎么会是我？ 我是你的突变体，你们称之为「扭曲态」。 你为何会出现？ 一切事物都有偏差，我]]></description>
 </item>
 <item>
     <title>Django REST framework 搭建后端 API 接口记录</title>
-    <link>http://austinxt.com/2019-04-11-django-rest-framework/</link>
+    <link>https://austinxt.github.io/2019-04-11-django-rest-framework/</link>
     <pubDate>Thu, 11 Apr 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-04-11-django-rest-framework/</guid>
+    <guid>https://austinxt.github.io/2019-04-11-django-rest-framework/</guid>
     <description><![CDATA[REST framework 仓库：encode/django-rest-framework: Web APIs for Django. ⚡️ REST framework 文档：Django REST framework 中文文档 引入 REST framework：]]></description>
 </item>
 <item>
     <title>Git 使用指南</title>
-    <link>http://austinxt.com/2019-03-26-git/</link>
+    <link>https://austinxt.github.io/2019-03-26-git/</link>
     <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-03-26-git/</guid>
+    <guid>https://austinxt.github.io/2019-03-26-git/</guid>
     <description><![CDATA[Git 是目前世界上最先进的分布式文本文件版本控制系统 Git 快速上手 Cheat Sheet：workspace :: Git Cheatsheet 、常用 Git 命令清单 - 阮一峰的网络日志 Git 使用流程]]></description>
 </item>
 <item>
     <title>阿里云从零部署 Django</title>
-    <link>http://austinxt.com/2019-04-06-deploy-django/</link>
+    <link>https://austinxt.github.io/2019-04-06-deploy-django/</link>
     <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-04-06-deploy-django/</guid>
+    <guid>https://austinxt.github.io/2019-04-06-deploy-django/</guid>
     <description><![CDATA[阿里云快捷登录 在阿里云的控制台中复制服务器的公网 IP，我的是 47.102.121.213 免密登录 在本地执行命令（按提示输入密码），向服务器发送自己的公钥文件 1 ssh-copy-id -i 公钥]]></description>
 </item>
 <item>
     <title>正则表达式常用速查</title>
-    <link>http://austinxt.com/2019-03-10-regular-expressions-quicklook/</link>
+    <link>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</link>
     <pubDate>Sun, 10 Mar 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-03-10-regular-expressions-quicklook/</guid>
+    <guid>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</guid>
     <description><![CDATA[速查表 字符 描述 \ 将下一个字符标记为一个特殊字符、或一个原义字符、或一个 向后引用、或一个八进制转义符。例如，’n’ 匹配字符 “n”。’\n’ 匹配]]></description>
 </item>
 <item>
     <title>中文的常态与病态</title>
-    <link>http://austinxt.com/2018-03-15-good-chinese-bad-chinese/</link>
+    <link>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</link>
     <pubDate>Thu, 15 Mar 2018 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2018-03-15-good-chinese-bad-chinese/</guid>
+    <guid>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</guid>
     <description><![CDATA[《翻译乃大道》读书笔记 中文常态：措辞简洁，语法对称，句式灵活，声调铿锵。 中文病态：引入大量的英文表达，繁琐生硬。 中文最常见的常态和病态 项目 坏]]></description>
 </item>
 <item>
     <title>如何快速了解一个学术领域</title>
-    <link>http://austinxt.com/2018-01-07-quickenter-new-academic-realm/</link>
+    <link>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</link>
     <pubDate>Sun, 07 Jan 2018 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2018-01-07-quickenter-new-academic-realm/</guid>
+    <guid>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</guid>
     <description><![CDATA[如今社会，信息过载，领域丛生，我们常常需要接触一些陌生的知识，一些闻所未闻的领域。那以使用工具著称的人类，是否能借助软件快速了解一个领域呢？]]></description>
 </item>
 <item>
     <title>一个人的阅读史（二）</title>
-    <link>http://austinxt.com/2018-01-01-reading-history-2/</link>
+    <link>https://austinxt.github.io/2018-01-01-reading-history-2/</link>
     <pubDate>Mon, 01 Jan 2018 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2018-01-01-reading-history-2/</guid>
+    <guid>https://austinxt.github.io/2018-01-01-reading-history-2/</guid>
     <description><![CDATA[过往三年，迷茫、求索，仍然迷茫、接着求索……如今幡然醒悟，得一曲径，通向深林幽处。过往三年，如在迷宫中抱头鼠窜，有幸遇见些贵人、师友指点迷津]]></description>
 </item>
 <item>
     <title>登峰造极之路</title>
-    <link>http://austinxt.com/2017-12-14-mastery/</link>
+    <link>https://austinxt.github.io/2017-12-14-mastery/</link>
     <pubDate>Thu, 14 Dec 2017 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2017-12-14-mastery/</guid>
+    <guid>https://austinxt.github.io/2017-12-14-mastery/</guid>
     <description><![CDATA[登峰造极是一个过程而不是一个结果，在整个过程中间，过于目标导向只会使你失去长期进步的潜力。一旦选择了登峰造极的道路，你就必须放弃短期的利益，]]></description>
 </item>
 </channel>

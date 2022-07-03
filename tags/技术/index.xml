@@ -1,39 +1,39 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>技术 - Tag - 夜航星</title>
-        <link>http://austinxt.com/tags/%E6%8A%80%E6%9C%AF/</link>
+        <link>https://austinxt.github.io/tags/%E6%8A%80%E6%9C%AF/</link>
         <description>技术 - Tag - 夜航星</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Thu, 11 Apr 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="http://austinxt.com/tags/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Thu, 11 Apr 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E6%8A%80%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
     <title>Django REST framework 搭建后端 API 接口记录</title>
-    <link>http://austinxt.com/2019-04-11-django-rest-framework/</link>
+    <link>https://austinxt.github.io/2019-04-11-django-rest-framework/</link>
     <pubDate>Thu, 11 Apr 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-04-11-django-rest-framework/</guid>
+    <guid>https://austinxt.github.io/2019-04-11-django-rest-framework/</guid>
     <description><![CDATA[REST framework 仓库：encode/django-rest-framework: Web APIs for Django. ⚡️ REST framework 文档：Django REST framework 中文文档 引入 REST framework：]]></description>
 </item>
 <item>
     <title>Git 使用指南</title>
-    <link>http://austinxt.com/2019-03-26-git/</link>
+    <link>https://austinxt.github.io/2019-03-26-git/</link>
     <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-03-26-git/</guid>
+    <guid>https://austinxt.github.io/2019-03-26-git/</guid>
     <description><![CDATA[Git 是目前世界上最先进的分布式文本文件版本控制系统 Git 快速上手 Cheat Sheet：workspace :: Git Cheatsheet 、常用 Git 命令清单 - 阮一峰的网络日志 Git 使用流程]]></description>
 </item>
 <item>
     <title>阿里云从零部署 Django</title>
-    <link>http://austinxt.com/2019-04-06-deploy-django/</link>
+    <link>https://austinxt.github.io/2019-04-06-deploy-django/</link>
     <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-04-06-deploy-django/</guid>
+    <guid>https://austinxt.github.io/2019-04-06-deploy-django/</guid>
     <description><![CDATA[阿里云快捷登录 在阿里云的控制台中复制服务器的公网 IP，我的是 47.102.121.213 免密登录 在本地执行命令（按提示输入密码），向服务器发送自己的公钥文件 1 ssh-copy-id -i 公钥]]></description>
 </item>
 <item>
     <title>正则表达式常用速查</title>
-    <link>http://austinxt.com/2019-03-10-regular-expressions-quicklook/</link>
+    <link>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</link>
     <pubDate>Sun, 10 Mar 2019 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>http://austinxt.com/2019-03-10-regular-expressions-quicklook/</guid>
+    <guid>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</guid>
     <description><![CDATA[速查表 字符 描述 \ 将下一个字符标记为一个特殊字符、或一个原义字符、或一个 向后引用、或一个八进制转义符。例如，’n’ 匹配字符 “n”。’\n’ 匹配]]></description>
 </item>
 </channel>
