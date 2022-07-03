@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Python - Tag - 夜航星</title>
+        <link>http://austinxt.com/tags/python/</link>
+        <description>Python - Tag - 夜航星</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Thu, 11 Apr 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="http://austinxt.com/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>Django REST framework 搭建后端 API 接口记录</title>
+    <link>http://austinxt.com/2019-04-11-django-rest-framework/</link>
+    <pubDate>Thu, 11 Apr 2019 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>http://austinxt.com/2019-04-11-django-rest-framework/</guid>
+    <description><![CDATA[REST framework 仓库：encode/django-rest-framework: Web APIs for Django. ⚡️ REST framework 文档：Django REST framework 中文文档 引入 REST framework：]]></description>
+</item>
+<item>
+    <title>阿里云从零部署 Django</title>
+    <link>http://austinxt.com/2019-04-06-deploy-django/</link>
+    <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>http://austinxt.com/2019-04-06-deploy-django/</guid>
+    <description><![CDATA[阿里云快捷登录 在阿里云的控制台中复制服务器的公网 IP，我的是 47.102.121.213 免密登录 在本地执行命令（按提示输入密码），向服务器发送自己的公钥文件 1 ssh-copy-id -i 公钥]]></description>
+</item>
+</channel>
+</rss>
