@@ -24,7 +24,7 @@
 - 响辅音也可以构成音节，辅音中 /m/、/n/、/ŋ/、/l/ 四个是响辅音，它们和辅音音素结合也可以构成音节，一般出现在词尾，非重读。
 - 辅音是音节的分界线，两元音音素之间只有一个辅音时，辅音音素归后一个音节，例如，stu’dent，fa‘ther。有两个辅音音素相连时，前一个归前，后一个归后，例如，win’ter，sis‘ter（此处 t 不浊化，因为 /tə:r/ 是一个独立音节，前面一个音素 /s/ 为清辅音，根据同化原则此处是不浊化的）。
 
-![](http://images.stanine.top/WEBRESOURCE466444dd47f0e43908c89c52bad7fc8b.jpg?imageView/2/w/600/q/90)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/WEBRESOURCE466444dd47f0e43908c89c52bad7fc8b.jpg?imageView/2/w/600/q/90)
 
 #### 开音节与闭音节
 
@@ -45,7 +45,7 @@
 
 通过“复制”序列中音位的特征来使一个语音同化为另一个，从而使两个音素相似。例如，多数拼写中的 n 被同化为 m，inpossible > impossible（/m/和/p/更相似）。
 
-![](http://images.stanine.top/ipa_cons.gif)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/ipa_cons.gif)
 
 ### 发音要点清单
 

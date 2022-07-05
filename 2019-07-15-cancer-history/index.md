@@ -29,7 +29,7 @@
 
 本书作者悉达多·穆克吉（Siddhartha Mukherjee），是印度裔美籍肿瘤医生、生物学家，主要研究癌细胞的生理机制、白血病的免疫疗法和骨骼-软组织形成干细胞。此外，他还是科普作家，著有《众病之王》、《基因传》等，其中《众病之王》获得 2011 年非虚构类普利策奖。
 
-![](http://images.stanine.top/microbiology-163470_1280.jpg)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/microbiology-163470_1280.jpg)
 
 ## 癌症往事
 
@@ -65,7 +65,7 @@
 >
 > 6. 组织浸润和转移：癌细胞具有转移到其他器官、侵入其他组织并占据这些器官的能力，因此它们可以蔓延到身体各处。
 
-![](http://images.stanine.top/bacteria-163711_1280.jpg)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/bacteria-163711_1280.jpg)
 
 ## 带着癌症老去
 
@@ -107,7 +107,7 @@
 
 一些有明显弱点的癌症，如乳腺癌、慢性粒细胞白血病、霍奇金病和多数早期局部癌症，已经有了有效疗法。但晚期转移癌症，如转移性 Her-2 阴性乳腺癌和转移性胰腺癌，或者无法进行外科手术的癌症，如胆囊癌，目前疗效与 3000 年前没多少差别，癌症依旧是人类心口的刺。
 
-![](http://images.stanine.top/pink-ribbon-3715345_1280.jpg)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/pink-ribbon-3715345_1280.jpg)
 
 ## 提防死神
 

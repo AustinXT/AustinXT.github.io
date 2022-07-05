@@ -26,7 +26,7 @@
 
 ## 登峰造极五大要素
 
-![](http://images.stanine.top/Snowy-mountains.jpg)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Snowy-mountains.jpg)
 
 ### 好导师
 
@@ -56,7 +56,7 @@
 
 ## 若干高效方法
 
-![](http://images.stanine.top/StockSnap_B55A84FE19.jpg)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/StockSnap_B55A84FE19.jpg)
 
 ### 如何应对改变的艰难？
 

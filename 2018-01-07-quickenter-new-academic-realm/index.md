@@ -53,7 +53,7 @@ Zotero 是及其强大的知识管理软件，最大的亮点是：可以用 Zot
 
 利用 HistCite 软件对本地文献集进行分析，首先查看一下该领域的发展趋势（此处截取了 1985-2016 年的数据）。
 
-![](http://images.stanine.top/cy论文数统计.JPG)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/cy论文数统计.JPG)
 
 上图显示，财务危机预警领域在 2004 年开始蓬勃发展，而且发展热度总体呈上升趋势。由此可猜测，该领域在 2004 年左右发生重大变革，实际去考察文献发现，该项变革是人工智能方法被引入该领域。
 
@@ -61,23 +61,23 @@ Zotero 是及其强大的知识管理软件，最大的亮点是：可以用 Zot
 
 由领域总体发展的分析可得出，该领域值得关注的年份缩小到 2004-2017 年共 14 年的时间段里。然后从本地文献集筛选出发表于 2014 年之后的文献，统计这些文献各自被本地论文集引用的次数，对前 50 最高被引的文献，按照引用关系画出网络关系图。其中被引用次数越多的文献，其节点方框越大，节点按照引用文献指向被引用文献的方式连接。
 
-![](http://images.stanine.top/50afterlanguage&2004-.bmp)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/50afterlanguage&2004-.bmp)
 
 有图可见**222 号**、319 号、**353 号**、439 号、**442 号**、**581 号**、813 号、**868 号**、**1133 号**是重要的综述文献；而 30 号、39 号、**68 号**、72 号、**77 号**、87 号、88 号、94 号、95 号、**162 号**、207 号、**222 号**、225 号、305 号、**314 号**、**319 号**、330 号、436 号、442 号、552 号、548 号是取得重要进展的文献（其中加黑的文献又相对更重要）。
 
 用 Google scholar 搜索重要文献的 DOI ，并一键保存至 Zotero 。
 
-![](http://images.stanine.top/Predicting_financial_distress_and_corporate_failure__A_review_from_the_state-of-the-art_definitions__modeling__sampling__and_featuring_approaches_-_ScienceDirect.png)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Predicting_financial_distress_and_corporate_failure__A_review_from_the_state-of-the-art_definitions__modeling__sampling__and_featuring_approaches_-_ScienceDirect.png)
 
 在 Zotero 显示如下：
 
-![](http://images.stanine.top/Zotero.png)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Zotero.png)
 
 ### 寻找牛人
 
 重要文献太多了怎么办？根据人的记忆生存优势，按照学者来整理文献比较有利于记忆。领域内最靠谱的学者是那些呢？这里整理了领域内前 20 本地高被引的学者以及他们在本地文献集中所拥有的文献数和被本地文献集引用的次数总和。
 
-![](http://images.stanine.top/cy学者排名.JPG)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/cy学者排名.JPG)
 
 其中 Sun J 和 Li H 两位学者主要活跃于 2006 年至今，研究内容涉及领域的方方面面，Sun J 更是近 10 年只专注于该领域，而且两位学者的 H 指数也高达 20，因此两位学者是相当靠谱的；排在第三和第五的 Ravi V 和 Kumar PR 则主要活跃在 2006-2012 年，主要研究银行的财务危机预警； 排在第四的 Tsai CF 活跃在 2008 年至今，主要研究财务指标等数据特征的选择。
 
@@ -89,7 +89,7 @@ Zotero 是及其强大的知识管理软件，最大的亮点是：可以用 Zot
 
 以上分析会倾向于夸大 2008 年之前研究的重要性，因此需要在此按年份进行筛选。接下来筛选出 2008 年及以后的论文来分析，做前 40 最多被本地文献集引用的文献网络关系图。
 
-![](http://images.stanine.top/2008-.bmp)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/2008-.bmp)
 
 此图涌现出了一个难以回避的信息，912 号（原来的 1133 号，其作者是 Sun J 等人）是及其重要的综述文献，通过它可以快速理清整个领域截止至 2014 年的发展情况。
 
@@ -97,7 +97,7 @@ Zotero 是及其强大的知识管理软件，最大的亮点是：可以用 Zot
 
 前辈们做了这么多研究，那还剩什么可以做呢？
 
-![](http://images.stanine.top/2013-.bmp)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/2013-.bmp)
 
 结合 2013 年至今的文献网络关系图，可总结为如下几个方向：
 

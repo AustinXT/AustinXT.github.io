@@ -66,7 +66,7 @@
 
 至今被公认的遗忘曲线统计式：$b=100k/((logt)^c+k)$, 其中 k=1.48, c=1.25
 
-![](http://images.stanine.top/memory-remain.jpg)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/memory-remain.jpg)
 
 #### 间隔学习 VS 分散学习
 
@@ -81,7 +81,7 @@
 
 为了避免学习战线拉太长，可以一周复习一次单词，保持听说读写，让单词**在更多的情境中碰到**，编码多样化记得会更牢。
 
-![](http://images.stanine.top/forget-curve.png)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/forget-curve.png)
 
 **重复记忆次数**
 

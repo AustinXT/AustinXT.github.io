@@ -163,7 +163,7 @@ service nginx restart
 
 启动后，在浏览器输入 IP 地址 47.102.121.213，看到如下页面说明 Nginx 启动成功了。
 
-![](http://images.stanine.top/Nginx.png)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Nginx.png)
 
 ## 本地建立 Django 项目
 

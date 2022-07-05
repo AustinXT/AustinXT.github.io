@@ -23,7 +23,7 @@
 
 解决问题首先要界定问题，也就是问题是什么。可以根据以下界定问题的框架确定问题
 
-![](http://images.stanine.top/Minto Pyramid Principle.jpeg)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Minto Pyramid Principle.jpeg)
 
 1. 非期望结果是什么？
 2. 期望结果是什么？
