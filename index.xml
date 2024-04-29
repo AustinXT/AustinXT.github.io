@@ -4,9 +4,17 @@
         <link>https://austinxt.github.io/</link>
         <description>个人博客</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 27 Jul 2019 00:00:00 &#43;0800</lastBuildDate>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Mon, 25 Jul 2022 00:00:00 &#43;0800</lastBuildDate>
             <atom:link href="https://austinxt.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>金融工程知识体系</title>
+    <link>https://austinxt.github.io/2022-07-25-fe-knowledge/</link>
+    <pubDate>Mon, 25 Jul 2022 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2022-07-25-fe-knowledge/</guid>
+    <description><![CDATA[IAGF 根据每年对其应聘者的调查，整理了他们认为的不同课程对硕士毕业生的有用程度。这份调查虽然不是科学设计的，但是这些粗糙的指标仍然能够让我们一窥]]></description>
+</item>
+<item>
     <title>如何形成人格全景？</title>
     <link>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</link>
     <pubDate>Sat, 27 Jul 2019 00:00:00 &#43;0800</pubDate>
@@ -77,14 +85,6 @@
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2018-01-01-reading-history-2/</guid>
     <description><![CDATA[过往三年，迷茫、求索，仍然迷茫、接着求索……如今幡然醒悟，得一曲径，通向深林幽处。过往三年，如在迷宫中抱头鼠窜，有幸遇见些贵人、师友指点迷津]]></description>
-</item>
-<item>
-    <title>登峰造极之路</title>
-    <link>https://austinxt.github.io/2017-12-14-mastery/</link>
-    <pubDate>Thu, 14 Dec 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-12-14-mastery/</guid>
-    <description><![CDATA[登峰造极是一个过程而不是一个结果，在整个过程中间，过于目标导向只会使你失去长期进步的潜力。一旦选择了登峰造极的道路，你就必须放弃短期的利益，]]></description>
 </item>
 </channel>
 </rss>
