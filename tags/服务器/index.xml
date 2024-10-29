@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Python - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/python/</link>
-        <description>Python - Tag - 夜航星</description>
+        <title>服务器 - Tag - 夜航星</title>
+        <link>https://austinxt.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <description>服务器 - Tag - 夜航星</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="self" type="application/rss+xml" /><item>
     <title>阿里云从零部署 Django</title>
     <link>https://austinxt.github.io/2019-04-06-deploy-django/</link>
     <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
