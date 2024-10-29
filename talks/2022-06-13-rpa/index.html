@@ -4,33 +4,33 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>「实践策略」信息分析工具箱 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="「实践策略」信息分析工具箱" />
-<meta property="og:description" content="Google ngram Viewer 在 Google Books Ngram Viewer 里输入 ability, capacity, capability, genius, talent, competence, faculty, gift, aptitude 六个表示人的“能力，才能”之意的英文单词，得到如下结果 其中 genius 呈下降趋势；ability，capaci" />
+        <title>RPA 机器人流程自动化 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="RPA 机器人流程自动化" />
+<meta property="og:description" content="RPA 解决的问题是，企业已有软件可能没有数据接口、应用接口来跟其他系统集成，重新开发接口又任务量太大，RPA 能够以低成本的方式做到自动化跨系统沟" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://austinxt.github.io/draft/2018-05-29-infomation-analysis-toolbox/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="draft" />
-<meta property="article:published_time" content="2018-05-29T00:00:00+08:00" />
-<meta property="article:modified_time" content="2018-05-29T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
+<meta property="og:url" content="https://austinxt.github.io/talks/2022-06-13-rpa/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="talks" />
+<meta property="article:published_time" content="2022-06-13T00:00:00+08:00" />
+<meta property="article:modified_time" content="2022-06-13T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
 
-<meta name="twitter:title" content="「实践策略」信息分析工具箱"/>
-<meta name="twitter:description" content="Google ngram Viewer 在 Google Books Ngram Viewer 里输入 ability, capacity, capability, genius, talent, competence, faculty, gift, aptitude 六个表示人的“能力，才能”之意的英文单词，得到如下结果 其中 genius 呈下降趋势；ability，capaci"/>
+<meta name="twitter:title" content="RPA 机器人流程自动化"/>
+<meta name="twitter:description" content="RPA 解决的问题是，企业已有软件可能没有数据接口、应用接口来跟其他系统集成，重新开发接口又任务量太大，RPA 能够以低成本的方式做到自动化跨系统沟"/>
 <meta name="application-name" content="夜航星">
 <meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/draft/2018-05-29-infomation-analysis-toolbox/" /><link rel="prev" href="https://austinxt.github.io/draft/2018-05-29-smart-gadget/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/talks/2022-06-13-rpa/" /><link rel="prev" href="https://austinxt.github.io/talks/2022-05-16/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "「实践策略」信息分析工具箱",
+        "headline": "RPA 机器人流程自动化",
         "inLanguage": "zh-CN",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/austinxt.github.io\/draft\/2018-05-29-infomation-analysis-toolbox\/"
-        },"genre": "draft","wordcount":  160 ,
-        "url": "https:\/\/austinxt.github.io\/draft\/2018-05-29-infomation-analysis-toolbox\/","datePublished": "2018-05-29T00:00:00+08:00","dateModified": "2018-05-29T00:00:00+08:00","publisher": {
+            "@id": "https:\/\/austinxt.github.io\/talks\/2022-06-13-rpa\/"
+        },"genre": "talks","wordcount":  426 ,
+        "url": "https:\/\/austinxt.github.io\/talks\/2022-06-13-rpa\/","datePublished": "2022-06-13T00:00:00+08:00","dateModified": "2022-06-13T00:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
                 "@type": "Person",
@@ -99,21 +99,12 @@
     <div class="search-dropdown mobile">
         <div id="search-dropdown-mobile"></div>
     </div><main class="main">
-                <div class="container"><div class="page single"><h1 class="single-title animate__animated animate__pulse animate__faster">「实践策略」信息分析工具箱</h1><div class="content" id="content"><h2 id="google-ngram-viewer">Google ngram Viewer</h2>
-<p>在 Google Books Ngram Viewer 里输入 ability, capacity, capability, genius, talent, competence, faculty, gift, aptitude 六个表示人的“能力，才能”之意的英文单词，得到如下结果</p>
-<p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Snipaste_2019-04-25_12-32-14.png"
-        data-srcset="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Snipaste_2019-04-25_12-32-14.png, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Snipaste_2019-04-25_12-32-14.png 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Snipaste_2019-04-25_12-32-14.png 2x"
-        data-sizes="auto"
-        alt="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Snipaste_2019-04-25_12-32-14.png"
-        title="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/Snipaste_2019-04-25_12-32-14.png" /></p>
-<p>其中 genius 呈下降趋势；ability，capacity，competence，capability 呈上升趋势；gift，faculty 由于一词多义，变化不明显。由此可以提出一个猜测：人们越来越关注后天习得的能力而不是天赋。</p>
-<h2 id="changlog">ChangLog</h2>
-<ul>
-<li>2018-05-29 初稿</li>
-</ul>
+                <div class="container"><div class="page single"><h1 class="single-title animate__animated animate__pulse animate__faster">RPA 机器人流程自动化</h1><div class="content" id="content"><p>RPA 解决的问题是，企业已有软件可能没有数据接口、应用接口来跟其他系统集成，重新开发接口又任务量太大，RPA 能够以低成本的方式做到自动化跨系统沟通。</p>
+<p>最流行的框架是 UiPath，2018 年进入中国，它还提供了完整的习题教程和认证考试。</p>
+<p>国内随着需求的激发，也成长出一些本土 RPA 企业，例如艺赛旗、影刀 RPA、来也科技等。</p>
+<p>国内 RPA 年复合增长率高达 64%，发展很快，先进入先占据生态位。</p>
+<p>目前国内 RPA 市场，按照公司基因可以分为 5 类：一是纯 RPA 公司，如影刀 RPA、Cyclone 弘玑、云扩科技、九科信息、慧流科技，二是有丰富 to B 经验的软件行业老玩家，如艺赛旗。三是大公司孵化，阿里云、平安科技、兴业数金、用友网络、金蝶国际等相继推出 RPA 产品。四是其他行业切入 RPA，如英诺森、达观数据、来也科技、阿博茨科技。五是国外 RPA 厂商，Uipath、AutomationAnywhere、Blue Prism 等。</p>
+<p>UiPath 教程示范：<a href="https://www.bilibili.com/video/BV15p4y1C7tX/?spm_id_from=333.337.search-card.all.click&amp;vd_source=29f1687e877214e7a9450c300d455269" target="_blank" rel="noopener noreffer ">【RPA 之家】UiPath 基于状态机的流程实战案例_哔哩哔哩_bilibili</a></p>
 </div></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
