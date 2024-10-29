@@ -15,7 +15,7 @@
 
 ### 二
 
-在最初 1985 年设计的 NEO PI 人格量表基础上，美国人格心理学家罗伯特·麦克雷（Robert McCrae）与保罗·考斯塔（Paul Costa）一同研发出了 NEO PI-R（Revised NEO Personality Inventory） 人格量表。该问卷采用短句，从而消除了单个词汇所隐含的歧义；问卷对大五人格中的每个维度进行测量，把每个维度（domain）分为六个层面（facet），深入到具体的性格差异。NEO PI-R 在跨年龄、跨文化，以及采用不同测量方法都是有效的。
+在最初 1985 年设计的 NEO PI 人格量表基础上，美国人格心理学家罗伯特·麦克雷（Robert McCrae）与保罗·考斯塔（Paul Costa）一同研发出了 NEO PI-R（Revised NEO Personality Inventory）人格量表。该问卷采用短句，从而消除了单个词汇所隐含的歧义；问卷对大五人格中的每个维度进行测量，把每个维度（domain）分为六个层面（facet），深入到具体的性格差异。NEO PI-R 在跨年龄、跨文化，以及采用不同测量方法都是有效的。
 
 结合不同版本 NEO PI-R 的表述方式，大五人格的六个层面可以归纳为：
 

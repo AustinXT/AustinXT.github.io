@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Git - Tag - 夜航星</title>
+        <link>https://austinxt.github.io/tags/git/</link>
+        <description>Git - Tag - 夜航星</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
+    <title>Git 使用指南</title>
+    <link>https://austinxt.github.io/2019-03-26-git/</link>
+    <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2019-03-26-git/</guid>
+    <description><![CDATA[Git 是目前世界上最先进的分布式文本文件版本控制系统 Git 快速上手 Cheat Sheet：workspace :: Git Cheatsheet 、常用 Git 命令清单 - 阮一峰的网络日志 Git 使用流程]]></description>
+</item>
+</channel>
+</rss>

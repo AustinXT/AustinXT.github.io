@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/austinxt.github.io\/2019-04-06-deploy-django\/"
-        },"genre": "posts","keywords": "技术, Python","wordcount":  4134 ,
+        },"genre": "posts","keywords": "服务器，Python","wordcount":  4134 ,
         "url": "https:\/\/austinxt.github.io\/2019-04-06-deploy-django\/","datePublished": "2019-04-06T00:00:00+08:00","dateModified": "2019-04-06T00:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -46,8 +46,8 @@
             <a href="/" title="夜航星">夜航星</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
                             <i class="fas fa-search fa-fw" aria-hidden="true"></i>
                         </a>
@@ -75,7 +75,7 @@
         </div>
         <div class="menu" id="menu-mobile"><div class="search-wrapper">
                     <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
                             <i class="fas fa-search fa-fw" aria-hidden="true"></i>
                         </a>
@@ -89,7 +89,7 @@
                     <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
                         Cancel
                     </a>
-                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
@@ -103,7 +103,7 @@
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">阿里云从零部署 Django</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/tech/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>tech</a></span></div>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E5%AE%9E%E6%93%8D/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>实操</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2019-04-06">2019-04-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;4134 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
@@ -602,7 +602,7 @@
 <ol>
 <li>保证目前的 migration 文件与数据库同步，通过执行 <code>python manage.py makemigrations</code> ，若提示 <code>No changes detected</code> ，则可以继续</li>
 <li>通过执行 <code>python manage.py showmigrations</code> 查看所有 app 及对应的已生效的 migration 文件</li>
-<li>通过执行 <code>python manage.py migrate --fake stanineapi zero</code> 删除 stanineapi 这个 app 下的 migrations 模块中除了 <code>init.py</code> 的所有文件(程序会再次生成 <code>0001_intial.py</code> 之类的文件）</li>
+<li>通过执行 <code>python manage.py migrate --fake stanineapi zero</code> 删除 stanineapi 这个 app 下的 migrations 模块中除了 <code>init.py</code> 的所有文件 (程序会再次生成 <code>0001_intial.py</code> 之类的文件）</li>
 <li>执行 <code>python manage.py migrate --fake-initial</code> ，在数据库中的 migrations 表中记录当前这个 app 执行到 <code>0001_initial.py</code></li>
 </ol>
 <h3 id="视图">视图</h3>
@@ -813,7 +813,7 @@
 <ul>
 <li><a href="https://www.zmrenwu.com/courses/django-blog-tutorial/materials/15/" target="_blank" rel="noopener noreffer ">使用 Nginx 和 Gunicorn 部署 Django 博客_追梦人物的博客</a></li>
 <li><a href="https://www.pandaomeng.com/2018/09-26-aliyun-deploy-from-0/" target="_blank" rel="noopener noreffer ">阿里云服务器从零开始部署博客 | 无趣的小帕</a></li>
-<li><a href="http://www.cnblogs.com/ajianbeyourself/p/3885367.html#t1" target="_blank" rel="noopener noreffer ">linux 的 nohup &amp; 和 daemon 总结(转) - 平和的心 - 博客园</a></li>
+<li><a href="http://www.cnblogs.com/ajianbeyourself/p/3885367.html#t1" target="_blank" rel="noopener noreffer ">linux 的 nohup &amp; 和 daemon 总结 (转) - 平和的心 - 博客园</a></li>
 </ul>
 <h2 id="changlog">ChangLog</h2>
 <ul>
@@ -836,7 +836,7 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>,&nbsp;<a href="/tags/python/">Python</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8python/">服务器，Python</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>

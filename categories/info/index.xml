@@ -4,21 +4,21 @@
         <link>https://austinxt.github.io/categories/info/</link>
         <description>info - Category - 夜航星</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 10 Mar 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/categories/info/" rel="self" type="application/rss+xml" /><item>
-    <title>正则表达式常用速查</title>
-    <link>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</link>
-    <pubDate>Sun, 10 Mar 2019 00:00:00 &#43;0800</pubDate>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Tue, 29 May 2018 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/categories/info/" rel="self" type="application/rss+xml" /><item>
+    <title>「实践策略」信息分析工具箱</title>
+    <link>https://austinxt.github.io/_drafts/2018-05-29-infomation-analysis-toolbox/</link>
+    <pubDate>Tue, 29 May 2018 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</guid>
-    <description><![CDATA[速查表 字符 描述 \ 将下一个字符标记为一个特殊字符、或一个原义字符、或一个 向后引用、或一个八进制转义符。例如，’n’ 匹配字符 “n”。’\n’ 匹配]]></description>
+    <guid>https://austinxt.github.io/_drafts/2018-05-29-infomation-analysis-toolbox/</guid>
+    <description><![CDATA[Google ngram Viewer 在 Google Books Ngram Viewer 里输入 ability, capacity, capability, genius, talent, competence, faculty, gift, aptitude 六个表示人的“能力，才能”之意的英文单词，得到如下结果 其中 genius 呈下降趋势；ability，capaci]]></description>
 </item>
 <item>
-    <title>LaTeX 常用数学符号</title>
-    <link>https://austinxt.github.io/2017-11-30-latex-math/</link>
-    <pubDate>Thu, 30 Nov 2017 00:00:00 &#43;0800</pubDate>
+    <title>「实践策略」效率工具箱</title>
+    <link>https://austinxt.github.io/_drafts/2018-05-29-smart-gadget/</link>
+    <pubDate>Tue, 29 May 2018 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-11-30-latex-math/</guid>
-    <description><![CDATA[查 LaTeX 常用数学符号的时候，一开始去官网：LaTeX - A document preparation system找官方文档：LaTeX Documentation，然后又找了 CTEX 的在线文档]]></description>
+    <guid>https://austinxt.github.io/_drafts/2018-05-29-smart-gadget/</guid>
+    <description><![CDATA[Trello Google Drive：自动生成 Google slides Introducing Trello for Google Slides 一个 board 生成一个投影片 二级目录是 list card 是一张投影片，标题为 card 标题，左边文字是 description，右边图]]></description>
 </item>
 </channel>
 </rss>

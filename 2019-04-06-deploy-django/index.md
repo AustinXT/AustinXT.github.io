@@ -311,7 +311,7 @@ Tag.objects.all() # <QuerySet []>
 
 1. 保证目前的 migration 文件与数据库同步，通过执行 `python manage.py makemigrations` ，若提示 `No changes detected` ，则可以继续
 2. 通过执行 `python manage.py showmigrations` 查看所有 app 及对应的已生效的 migration 文件
-3. 通过执行 `python manage.py migrate --fake stanineapi zero` 删除 stanineapi 这个 app 下的 migrations 模块中除了 `init.py` 的所有文件(程序会再次生成 `0001_intial.py` 之类的文件）
+3. 通过执行 `python manage.py migrate --fake stanineapi zero` 删除 stanineapi 这个 app 下的 migrations 模块中除了 `init.py` 的所有文件 (程序会再次生成 `0001_intial.py` 之类的文件）
 4. 执行 `python manage.py migrate --fake-initial` ，在数据库中的 migrations 表中记录当前这个 app 执行到 `0001_initial.py`
 
 ### 视图
@@ -468,7 +468,7 @@ nohub python manage.py runserver &
 
 - [使用 Nginx 和 Gunicorn 部署 Django 博客\_追梦人物的博客](https://www.zmrenwu.com/courses/django-blog-tutorial/materials/15/)
 - [阿里云服务器从零开始部署博客 \| 无趣的小帕](https://www.pandaomeng.com/2018/09-26-aliyun-deploy-from-0/)
-- [linux 的 nohup & 和 daemon 总结(转) - 平和的心 - 博客园](http://www.cnblogs.com/ajianbeyourself/p/3885367.html#t1)
+- [linux 的 nohup & 和 daemon 总结 (转) - 平和的心 - 博客园](http://www.cnblogs.com/ajianbeyourself/p/3885367.html#t1)
 
 ## ChangLog
 
