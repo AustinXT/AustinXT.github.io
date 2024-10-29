@@ -2,9 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://austinxt.github.io/talks/</loc><lastmod>2024-02-16T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://austinxt.github.io/talks/2016-02-16/</loc><lastmod>2024-02-16T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://austinxt.github.io/</loc><lastmod>2024-02-16T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/talks/2016-09-11-minto-pyramid-principle/</loc><lastmod>2022-09-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/talks/</loc><lastmod>2022-09-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/</loc><lastmod>2022-09-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/talks/2022-05-16/</loc><lastmod>2022-05-16T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/categories/</loc><lastmod>2019-07-27T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/posts/</loc><lastmod>2019-07-27T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/tags/</loc><lastmod>2019-07-27T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -24,9 +25,9 @@
             <loc>https://austinxt.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc><lastmod>2019-03-10T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</loc><lastmod>2019-03-10T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/tags/%E9%80%9F%E6%9F%A5/</loc><lastmod>2019-03-10T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://austinxt.github.io/_drafts/</loc><lastmod>2018-05-29T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://austinxt.github.io/_drafts/2018-05-29-infomation-analysis-toolbox/</loc><lastmod>2018-05-29T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://austinxt.github.io/_drafts/2018-05-29-smart-gadget/</loc><lastmod>2018-05-29T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/draft/2018-05-29-infomation-analysis-toolbox/</loc><lastmod>2018-05-29T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/draft/2018-05-29-smart-gadget/</loc><lastmod>2018-05-29T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/draft/</loc><lastmod>2018-05-29T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</loc><lastmod>2018-03-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/tags/%E5%86%99%E4%BD%9C/</loc><lastmod>2018-03-15T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</loc><lastmod>2018-01-07T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drafts on 夜航星</title>
+    <link>https://austinxt.github.io/draft/</link>
+    <description>Recent content in Drafts on 夜航星</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>164640966@qq.com (夜航星)</managingEditor>
+    <webMaster>164640966@qq.com (夜航星)</webMaster>
+    <lastBuildDate>Tue, 29 May 2018 00:00:00 +0800</lastBuildDate><atom:link href="https://austinxt.github.io/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>「实践策略」信息分析工具箱</title>
+      <link>https://austinxt.github.io/draft/2018-05-29-infomation-analysis-toolbox/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/draft/2018-05-29-infomation-analysis-toolbox/</guid>
+      <description>Google ngram Viewer 在 Google Books Ngram Viewer 里输入 ability, capacity, capability, genius, talent, competence, faculty, gift, aptitude 六个表示人的“能力，才能”之意的英文单词，得到如下结果 其中 genius 呈下降趋势；ability，capaci</description>
+    </item>
+    
+    <item>
+      <title>「实践策略」效率工具箱</title>
+      <link>https://austinxt.github.io/draft/2018-05-29-smart-gadget/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/draft/2018-05-29-smart-gadget/</guid>
+      <description>Trello Google Drive：自动生成 Google slides Introducing Trello for Google Slides 一个 board 生成一个投影片 二级目录是 list card 是一张投影片，标题为 card 标题，左边文字是 description，右边图</description>
+    </item>
+    
+  </channel>
+</rss>

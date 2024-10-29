@@ -8,14 +8,23 @@
     <language>zh-CN</language>
     <managingEditor>164640966@qq.com (夜航星)</managingEditor>
     <webMaster>164640966@qq.com (夜航星)</webMaster>
-    <lastBuildDate>Fri, 16 Feb 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://austinxt.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Sep 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://austinxt.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>制度</title>
-      <link>https://austinxt.github.io/talks/2016-02-16/</link>
-      <pubDate>Fri, 16 Feb 2024 00:00:00 +0800</pubDate>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2016-09-11-minto-pyramid-principle/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 +0800</pubDate>
       <author>164640966@qq.com (夜航星)</author>
-      <guid>https://austinxt.github.io/talks/2016-02-16/</guid>
-      <description></description>
+      <guid>https://austinxt.github.io/talks/2016-09-11-minto-pyramid-principle/</guid>
+      <description>此书全名是《金字塔原理，思考、写作和解决问题的逻辑》，书名看似高大上，小编也是被它忽悠了。正如书名 XXX 原理一样，书的内容也很枯燥无味，小编强打</description>
+    </item>
+    
+    <item>
+      <title>毕业后，总感觉时间过得很快，像似</title>
+      <link>https://austinxt.github.io/talks/2022-05-16/</link>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2022-05-16/</guid>
+      <description>毕业后，总感觉时间过得很快，像似从指缝间流逝。直到遇见你，这一载，仿佛是一生一世。</description>
     </item>
     
   </channel>
