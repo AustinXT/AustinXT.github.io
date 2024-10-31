@@ -4,7 +4,15 @@
         <link>https://austinxt.github.io/tags/%E9%80%9F%E6%9F%A5/</link>
         <description>速查 - Tag - 夜航星</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 10 Mar 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E9%80%9F%E6%9F%A5/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 04 Aug 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E9%80%9F%E6%9F%A5/" rel="self" type="application/rss+xml" /><item>
+    <title>解读统计数字的行动清单</title>
+    <link>https://austinxt.github.io/2019-08-04-%E8%A7%A3%E8%AF%BB%E7%BB%9F%E8%AE%A1%E6%95%B0%E5%AD%97%E5%9B%9B%E6%AD%A5%E9%AA%A4/</link>
+    <pubDate>Sun, 04 Aug 2019 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2019-08-04-%E8%A7%A3%E8%AF%BB%E7%BB%9F%E8%AE%A1%E6%95%B0%E5%AD%97%E5%9B%9B%E6%AD%A5%E9%AA%A4/</guid>
+    <description><![CDATA[检查样本是否有偏差 检查样本分布是否合理（包括是否采用分层随机抽样、每层内部的样本分布情况如何）：例如是否刻意挑选容易与其他层区分开来的群体而]]></description>
+</item>
+<item>
     <title>正则表达式常用速查</title>
     <link>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</link>
     <pubDate>Sun, 10 Mar 2019 00:00:00 &#43;0800</pubDate>

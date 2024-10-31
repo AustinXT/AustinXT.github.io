@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>虚拟机 - Tag - 夜航星</title>
+        <link>https://austinxt.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+        <description>虚拟机 - Tag - 夜航星</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Wed, 30 Oct 2024 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="self" type="application/rss+xml" /><item>
+    <title>在 Mac（M2）上，使用 UTM 安装 Windows11 虚拟机</title>
+    <link>https://austinxt.github.io/2024-10-30-install-window11-in-utm/</link>
+    <pubDate>Wed, 30 Oct 2024 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2024-10-30-install-window11-in-utm/</guid>
+    <description><![CDATA[在 Mac（M2） 上，使用 UTM 安装 Windows11 虚拟机，大致步骤还是按照Windows 11 | UTM Documentation走，中间会遇到一些卡壳的步骤需要克服一]]></description>
+</item>
+</channel>
+</rss>
