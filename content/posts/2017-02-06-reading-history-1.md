@@ -3,7 +3,7 @@ layout: post
 title: 一个人的阅读史（一）
 date: 2017-02-06
 categories: [成长记录]
-tags: [读书笔记]
+tags: [阅读]
 description: 小学到大二的阅读记录
 ---
 
