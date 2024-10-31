@@ -8,7 +8,34 @@
     <language>zh-CN</language>
     <managingEditor>164640966@qq.com (夜航星)</managingEditor>
     <webMaster>164640966@qq.com (夜航星)</webMaster>
-    <lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0800</lastBuildDate><atom:link href="https://austinxt.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Apr 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://austinxt.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Open AI Args</title>
+      <link>https://austinxt.github.io/talks/2024-04-01-openai-args/</link>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2024-04-01-openai-args/</guid>
+      <description>max_tokens: 最大输出标记数 temperature: 输出随机性 frequency_penalty: 频率惩罚，[-2, 2]，奖励或者惩罚训练集中出现频率高的 token，负数表示模型倾向出现频率较高的词。 presence_penalty: 存在惩</description>
+    </item>
+    
+    <item>
+      <title>红顶商人胡雪岩的交际之道</title>
+      <link>https://austinxt.github.io/talks/2023-02-08/</link>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2023-02-08/</guid>
+      <description>利己可以，损人不行。 跟人谈事情之前，需要想清楚自己的决心。 有了钱和底气，念头才会更加通达，手脚展开。 不想和人打交道的时候，也不能敷衍，也要集</description>
+    </item>
+    
+    <item>
+      <title>商业模式画布</title>
+      <link>https://austinxt.github.io/talks/2022-07-05-%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E7%94%BB%E5%B8%83/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2022-07-05-%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E7%94%BB%E5%B8%83/</guid>
+      <description>Ref Strategyzer | Corporate Innovation Strategy, Tools &amp;amp; Training Business Model Canvas - Wikipedia</description>
+    </item>
+    
     <item>
       <title>RPA 机器人流程自动化</title>
       <link>https://austinxt.github.io/talks/2022-06-13-rpa/</link>
@@ -25,6 +52,276 @@
       <author>164640966@qq.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2022-05-16/</guid>
       <description>毕业后，总感觉时间过得很快，像似从指缝间流逝。直到遇见你，这一载，仿佛是一生一世。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2022-05-12-usa-lawyer/</link>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2022-05-12-usa-lawyer/</guid>
+      <description>美国法律行业有许多潜在客户获得（Lead Generation），例如Attention Required! | Cloudflare。 这类网站主要策略有Q&amp;amp</description>
+    </item>
+    
+    <item>
+      <title>公众号发布流程</title>
+      <link>https://austinxt.github.io/talks/2022-01-01/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2022-01-01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2021-12-30-design/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-12-30-design/</guid>
+      <description>设计思维能够应对日常很多问题，但是对于全局的、商业的、品牌整体问题，设计思维在体系性、框架性和有效性上会遭遇挑战。 问题的复杂来源于人与人以人</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2021-11-16/</link>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-11-16/</guid>
+      <description>套用冯·奥西茨基的话：一个民族到底要在精神上堕落到何种程度，才能从这些文盲的身上看出一个偶像的模子，看到令人追随的人格魅力。 ​​​</description>
+    </item>
+    
+    <item>
+      <title>银行财报阅读流程</title>
+      <link>https://austinxt.github.io/talks/2021-11-16-finacial-report/</link>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-11-16-finacial-report/</guid>
+      <description>审计意见 资产负债表，转换成百分比 存款结构和付息率，获取资金能力的情况 净利息差和净利息收益率 分析贷款质量，包括历史同行对比、贷款垫款构成、拨备</description>
+    </item>
+    
+    <item>
+      <title>预测指标：银行利润/产业利润</title>
+      <link>https://austinxt.github.io/talks/2021-11-16-predict/</link>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-11-16-predict/</guid>
+      <description>预测一个趋势，找到一个预测指标很重要。 例如，前东方证券银行业首席分析师王剑曾提出的，从银行利润/产业利润变化的角度预测银行股价走向（反向关系</description>
+    </item>
+    
+    <item>
+      <title>测量的信效度</title>
+      <link>https://austinxt.github.io/talks/2021-09-10-%E6%B5%8B%E9%87%8F%E7%9A%84%E4%BF%A1%E6%95%88%E5%BA%A6/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-09-10-%E6%B5%8B%E9%87%8F%E7%9A%84%E4%BF%A1%E6%95%88%E5%BA%A6/</guid>
+      <description>测验的效度 效度指测验的正确性和有效性，即测验能够测到被测量对象的真实水平的程度。 测验的信度 信度指测验的可靠性和多次测量结果的一致性程度。 Re</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2021-09-08-fiction/</link>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-09-08-fiction/</guid>
+      <description>《天之下》，一个武侠世界，这种写法还真是经济，跟之前看过的九州志、银河帝国、指环王一样，学习学习！</description>
+    </item>
+    
+    <item>
+      <title>认知心理学中，关于学习的实用策略就只有这几条</title>
+      <link>https://austinxt.github.io/talks/2021-05-19-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E7%AD%96%E7%95%A5/</link>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-05-19-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E7%AD%96%E7%95%A5/</guid>
+      <description>注重提取：测试效应；PQ4R；用自己话表述；写卡片；输出文章 必要难度：时间必要难度（间隔学习）；场景必要难度（换地点记笔记、穿插练习、多主题</description>
+    </item>
+    
+    <item>
+      <title>10 条创业者需要避免的数据圈套</title>
+      <link>https://austinxt.github.io/talks/2021-05-09-10%E6%9D%A1%E5%88%9B%E4%B8%9A%E8%80%85%E9%9C%80%E8%A6%81%E9%81%BF%E5%85%8D%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9C%88%E5%A5%97/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-05-09-10%E6%9D%A1%E5%88%9B%E4%B8%9A%E8%80%85%E9%9C%80%E8%A6%81%E9%81%BF%E5%85%8D%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9C%88%E5%A5%97/</guid>
+      <description>假设数据没有噪声：分析前要检查数据是否有效、实用 忘记归一化：例如要考虑基础概率的影响 排除异常点：需要先讨论 包括异常点：异常点可能不适合用于普</description>
+    </item>
+    
+    <item>
+      <title>《牛津通识读本：社会学的意识》笔记</title>
+      <link>https://austinxt.github.io/talks/2021-04-21-%E7%89%9B%E6%B4%A5%E9%80%9A%E8%AF%86%E8%AF%BB%E6%9C%AC%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%84%8F%E8%AF%86/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-04-21-%E7%89%9B%E6%B4%A5%E9%80%9A%E8%AF%86%E8%AF%BB%E6%9C%AC%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%84%8F%E8%AF%86/</guid>
+      <description>社会学是研究社会结构与社会制度的一门实证性学科。 第二章：社会结构 社会学的中心线 社会学的中心线由三部分构成，现实是在社会中构建的、我们的行为具</description>
+    </item>
+    
+    <item>
+      <title>社会资本理论模型</title>
+      <link>https://austinxt.github.io/talks/2021-04-05-%E7%A4%BE%E4%BC%9A%E8%B5%84%E6%9C%AC%E7%90%86%E8%AE%BA%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-04-05-%E7%A4%BE%E4%BC%9A%E8%B5%84%E6%9C%AC%E7%90%86%E8%AE%BA%E6%A8%A1%E5%9E%8B/</guid>
+      <description>反常识 1 常识：之前只是觉得桥很重要，它决定了最大连通图的节点数量。 反常识： 个体越靠近网络中的桥梁，他们在工具性行动中获取的社会资本越好。 书中</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2021-02-05-subway/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-02-05-subway/</guid>
+      <description>1931 年，亨利•贝克改进了伦敦地铁线路图（图二）。那时，伦敦地铁发达程度已经跟 2021 年深圳（图一）差不多了，太可怕了，跟发达国家的差距太大了。</description>
+    </item>
+    
+    <item>
+      <title>地球往事</title>
+      <link>https://austinxt.github.io/talks/2021-01-28-earth-story/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-01-28-earth-story/</guid>
+      <description>2121 年，污水沟边上，一女孩一边觅食，一边吸着人造蛋白液，发现了一条松花蛇。 2071 年，CO2 浓度超过 1200ppm。西伯利亚泥土吞噬了欧亚铁路，大西</description>
+    </item>
+    
+    <item>
+      <title>如何预防减肥过程中导致的身体损伤？</title>
+      <link>https://austinxt.github.io/talks/2021-01-28-fat-heat/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-01-28-fat-heat/</guid>
+      <description>避免过度节食，控制在 1200 千卡的热量摄入，营养均衡搭配。 适量运动，单词中高强度有氧运动不超过 2 小时，减肥控制在 1 小时左右，保健控制在 30 分钟。力量</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2021-01-27-fat/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2021-01-27-fat/</guid>
+      <description>人体一公斤脂肪什么概念，7700千卡，慢跑26小时（配速7，300千卡每小时）。 ​​​ 减脂运动如何选择？每个人都可按自己的需求配比持续性有氧</description>
+    </item>
+    
+    <item>
+      <title>《收缩的城市》读书笔记</title>
+      <link>https://austinxt.github.io/talks/2020-10-12-reduce-city/</link>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-10-12-reduce-city/</guid>
+      <description>之前读过《城市的胜利》，该书论证了大城市更节约能源、对生态影响更小。城市和乡村、大城市和小城市、不同城市都在竞争人口，人口在不同人为条件限制</description>
+    </item>
+    
+    <item>
+      <title>开发四件事情</title>
+      <link>https://austinxt.github.io/talks/2020-09-03-dev/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-09-03-dev/</guid>
+      <description>开发说白了就四件事情 知识（理论）：范围很广，但特定场景下用到的不到，或者说能落地的不多。一般学一些基本的，遇到了再补习一下。 编码：内隐的能力</description>
+    </item>
+    
+    <item>
+      <title>华强北游记</title>
+      <link>https://austinxt.github.io/talks/2020-08-22-huaqiangbei/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-08-22-huaqiangbei/</guid>
+      <description>今天是到深圳的第一个周末，刚好住在华强北旁边，就顺便逛了一下。其中一个数码市场，一楼是回收旧手机和以旧换新，二楼是手机的批发和电商，三楼是手</description>
+    </item>
+    
+    <item>
+      <title>《走出中东》读后感</title>
+      <link>https://austinxt.github.io/talks/2020-08-08-zhouyijun/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-08-08-zhouyijun/</guid>
+      <description>今天大致翻完了周轶君（此类女性太有吸引力了）这本中东记者笔记，副标题是全球民主浪潮的见证与省思。为何看这本书觉得特别混乱，可能是因为被民主浪</description>
+    </item>
+    
+    <item>
+      <title>《温铁军：中国要如何克服当下的全球化危机》观后感</title>
+      <link>https://austinxt.github.io/talks/2020-07-30-wen/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-07-30-wen/</guid>
+      <description>温老是我国著名的三农问题专家，是一位干部出身的学者，实地考察几十个国家，在国内多个地方试点实验。让人印象最深刻的是，共产主义阵营分裂时，温老</description>
+    </item>
+    
+    <item>
+      <title>了解伊朗的一个书单</title>
+      <link>https://austinxt.github.io/talks/2020-07-28-know-iran/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-07-28-know-iran/</guid>
+      <description>游记、旅行指南：《孤独星球：伊朗》、《伊朗零距离》 伊朗人讲述伊朗：《我在伊朗长大》、《在德黑兰读洛丽塔》、《The Cypress Trees: A Love Letter to Iran》、《</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2020-07-12-learn-chinese/</link>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-07-12-learn-chinese/</guid>
+      <description>给外国朋友写了一个学习中文的路书。</description>
+    </item>
+    
+    <item>
+      <title>非虚构类读物的阅读方法</title>
+      <link>https://austinxt.github.io/talks/2020-07-03-no-fiction/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-07-03-no-fiction/</guid>
+      <description>阅读非虚构类的读物，不管是论文、书，还是微博上的文章，其目的都是获取信息。当然，阅读过程中，除了信息还会获取到其他很多东西，例如愉悦、解惑等</description>
+    </item>
+    
+    <item>
+      <title>什么是幸福</title>
+      <link>https://austinxt.github.io/talks/2020-06-17-happiness/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-06-17-happiness/</guid>
+      <description>大部分人可能认为，幸福是快乐、满足、舒适的感觉，即包含当下的积极情绪，也包含生活美满，幸福是一个很难说清的概念。 相比于上述对幸福的抽象描述，</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2020-06-16-iran/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-06-16-iran/</guid>
+      <description>周末在 tandem 找了一个伊朗小姐姐聊天，小姐姐是医学院的大一学生，英语跟我这个过六级的差不多。聊天中发现国产智能手机在伊朗普及的同时，外卖在伊朗也普</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://austinxt.github.io/talks/2020-05-12/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-05-12/</guid>
+      <description>上课听讲重在理解，不同科目要融会贯通。 读书先快读，读大意；再慢读，读懂不明白的地方；最后选读，选出重点。 例子比数学更能帮助推理进行下去，举例</description>
+    </item>
+    
+    <item>
+      <title>增细加工</title>
+      <link>https://austinxt.github.io/talks/2020-02-07-elaborative-processing/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2020-02-07-elaborative-processing/</guid>
+      <description>为什么有些人记单词总是记不住？为什么记住了又很快忘记？ 这里涉及到一个认知心理学概念——增细加工（elaborative processing）</description>
+    </item>
+    
+    <item>
+      <title>《自私的基因》主要内容</title>
+      <link>https://austinxt.github.io/talks/2019-01-06-the-selfish-gene/</link>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2019-01-06-the-selfish-gene/</guid>
+      <description>自私不是个体道德意义上的自私，而是一种盲目的、无意识的行为本身。 基因是进化的单位，生物个体（生存机器）是承载基因复制子的载体。 减数分裂可解释</description>
+    </item>
+    
+    <item>
+      <title>霍兰德职业兴趣理论</title>
+      <link>https://austinxt.github.io/talks/2018-10-28-%E9%9C%8D%E5%85%B0%E5%BE%B7%E8%81%8C%E4%B8%9A%E5%85%B4%E8%B6%A3%E7%90%86%E8%AE%BA/</link>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0800</pubDate>
+      <author>164640966@qq.com (夜航星)</author>
+      <guid>https://austinxt.github.io/talks/2018-10-28-%E9%9C%8D%E5%85%B0%E5%BE%B7%E8%81%8C%E4%B8%9A%E5%85%B4%E8%B6%A3%E7%90%86%E8%AE%BA/</guid>
+      <description>1959 年霍兰德开始提出他的生涯理论，之后不断发展，并在 1973 年提出经典的霍兰德六角形模型（Hexagonal model）。 值得注意的是，霍兰德早期只</description>
     </item>
     
   </channel>
