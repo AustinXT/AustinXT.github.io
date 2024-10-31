@@ -1,0 +1,44 @@
+{{- $params := .Params | merge .Site.Params.page -}}
+
+<article
+	class="single summary"
+	itemscope
+	itemtype="http://schema.org/Article"
+	style="margin: 0.67em 0"
+>
+	{{- /* Title */ -}}
+	<div
+		style="
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-sizing: border-box;
+		"
+	>
+		<a
+			href="{{ .RelPermalink }}"
+			style="
+				font-weight: bold;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			"
+			>{{ .Title | emojify }}</a
+		>
+		{{- with .Site.Params.dateFormat | default "2006-01-02" |
+		.PublishDate.Format -}}
+		<span style="font-size: 0.875rem; color: #a9a9b3">
+			{{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
+		</span>
+		{{- end -}}
+	</div>
+
+	{{- /* Summary content */ -}}
+	<div>
+		<a href="{{ .RelPermalink }}">
+			{{- with .Summary -}} {{- dict "Content" . "Ruby" $params.ruby "Fraction"
+			$params.fraction "Fontawesome" $params.fontawesome | partial
+			"function/content.html" | safeHTML -}} {{- end -}}
+		</a>
+	</div>
+</article>
