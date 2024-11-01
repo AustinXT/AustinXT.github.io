@@ -4,7 +4,6 @@ title: 中文的常态与病态
 date: 2018-03-15
 categories: [读书笔记]
 tags: [写作, 速查]
-description:
 ---
 
 > [《翻译乃大道》](https://book.douban.com/subject/26279084/)读书笔记
