@@ -25,12 +25,15 @@
 			"
 			>{{ .Title | emojify }}</a
 		>
-		{{- with .Site.Params.dateFormat | default "2006-01-02" |
+		<span style="font-size: 0.875rem; color: #a9a9b3">
+			{{- .Site.Params.list.dateFormat | default "01-02" | .Date.Format -}}
+		</span>
+		<!-- {{- with .Site.Params.dateFormat | default "01-02" |
 		.PublishDate.Format -}}
 		<span style="font-size: 0.875rem; color: #a9a9b3">
 			{{- printf `<time datetime="%v">%v</time>` . . | safeHTML -}}
 		</span>
-		{{- end -}}
+		{{- end -}} -->
 	</div>
 
 	{{- /* Summary content */ -}}
