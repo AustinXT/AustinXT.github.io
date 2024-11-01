@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>命令行 - Tag - 夜航星</title>
+        <link>https://austinxt.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+        <description>命令行 - Tag - 夜航星</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 27 May 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="self" type="application/rss+xml" /><item>
+    <title>命令行环境使用指南</title>
+    <link>https://austinxt.github.io/2023-05-27-cmd-env/</link>
+    <pubDate>Sat, 27 May 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-05-27-cmd-env/</guid>
+    <description><![CDATA[无界面情况下的唯一选择 命令行环境的学习主要包括 任务控制：Shell 操作和进程的关系-&gt;需要了解进程信号 终端多路复用：如何在终端完成多面]]></description>
+</item>
+</channel>
+</rss>

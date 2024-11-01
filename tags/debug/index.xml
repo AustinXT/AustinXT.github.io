@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>debug - Tag - 夜航星</title>
+        <link>https://austinxt.github.io/tags/debug/</link>
+        <description>debug - Tag - 夜航星</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Tue, 13 Jun 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/debug/" rel="self" type="application/rss+xml" /><item>
+    <title>调试代码常用方法</title>
+    <link>https://austinxt.github.io/2023-06-13-debug/</link>
+    <pubDate>Tue, 13 Jun 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-06-13-debug/</guid>
+    <description><![CDATA[调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。 打印调试法与日志 最有]]></description>
+</item>
+</channel>
+</rss>

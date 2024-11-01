@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>调试代码常用方法 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="调试代码常用方法" />
+<meta property="og:description" content="调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。 打印调试法与日志 最有" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://austinxt.github.io/2023-06-13-debug/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-06-13T00:00:00+08:00" />
+<meta property="article:modified_time" content="2023-06-13T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="调试代码常用方法"/>
+<meta name="twitter:description" content="调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。 打印调试法与日志 最有"/>
+<meta name="application-name" content="夜航星">
+<meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2023-06-13-debug/" /><link rel="prev" href="https://austinxt.github.io/2023-05-31-make/" /><link rel="next" href="https://austinxt.github.io/2023-07-22-vim/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "调试代码常用方法",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/austinxt.github.io\/2023-06-13-debug\/"
+        },"genre": "posts","keywords": "debug","wordcount":  3485 ,
+        "url": "https:\/\/austinxt.github.io\/2023-06-13-debug\/","datePublished": "2023-06-13T00:00:00+08:00","dateModified": "2023-06-13T00:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "夜航星"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="夜航星">夜航星</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="夜航星">夜航星</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">调试代码常用方法</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-06-13">2023-06-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;3485 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;7 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#打印调试法与日志">打印调试法与日志</a></li>
+    <li><a href="#第三方日志系统">第三方日志系统</a></li>
+    <li><a href="#调试器">调试器</a>
+      <ul>
+        <li><a href="#python">python</a></li>
+        <li><a href="#c">C</a></li>
+        <li><a href="#可逆调试">可逆调试</a></li>
+      </ul>
+    </li>
+    <li><a href="#专门工具">专门工具</a>
+      <ul>
+        <li><a href="#操作系统内核">操作系统内核</a></li>
+        <li><a href="#网络数据包">网络数据包</a></li>
+        <li><a href="#web-开发">web 开发</a></li>
+      </ul>
+    </li>
+    <li><a href="#静态分析">静态分析</a>
+      <ul>
+        <li><a href="#python-1">python</a></li>
+        <li><a href="#shell">shell</a></li>
+        <li><a href="#工具集成">工具集成</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。</p>
+<h2 id="打印调试法与日志">打印调试法与日志</h2>
+<blockquote>
+<p>最有效的 debug 工具就是细致的分析，配合恰当位置的打印语句。
+— Brian Kernighan, <em>Unix 新手入门</em>。</p>
+</blockquote>
+<p>调试代码的第一种方法往往是在您发现问题的地方添加一些打印语句，然后不断重复此过程直到您获取了足够的信息并找到问题的根本原因。</p>
+<p>另外一个方法是使用日志，而不是临时添加打印语句。日志较普通的打印语句有如下的一些优势：</p>
+<ul>
+<li>您可以将日志写入文件、socket 或者甚至是发送到远端服务器而不仅仅是标准输出；</li>
+<li>日志可以支持严重等级（例如 INFO, DEBUG, WARN, ERROR 等)，这使您可以根据需要过滤日志；</li>
+<li>对于新发现的问题，很可能您的日志中已经包含了可以帮助您定位问题的足够的信息。</li>
+</ul>
+<p>有很多技巧可以使日志的可读性变得更好，我最喜欢的一个是技巧是对其进行着色。到目前为止，您应该已经知道，以彩色文本显示终端信息时可读性更好。但是应该如何设置呢？</p>
+<p><code>ls</code> 和 <code>grep</code> 这样的程序会使用 <a href="https://en.wikipedia.org/wiki/ANSI_escape_code" target="_blank" rel="noopener noreffer ">ANSI escape codes</a>，它是一系列的特殊字符，可以使您的 shell 改变输出结果的颜色。例如，执行 <code>echo -e &quot;\e[38;2;255;0;0mThis is red\e[0m&quot;</code> 会打印红色的字符串：<code>This is red</code> 。只要您的终端支持<a href="https://gist.github.com/XVilka/8346728#terminals--true-color" target="_blank" rel="noopener noreffer ">真彩色</a>。如果您的终端不支持真彩色（例如 MacOS 的 Terminal.app），您可以使用支持更加广泛的 16 色，例如：”\e[31;1mThis is red\e[0m”。</p>
+<p>下面这个脚本向您展示了如何在终端中打印多种颜色（只要您的终端支持真彩色）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/usr/bin/env bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">for</span> R in <span class="k">$(</span>seq <span class="m">0</span> <span class="m">20</span> 255<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> G in <span class="k">$(</span>seq <span class="m">0</span> <span class="m">20</span> 255<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> B in <span class="k">$(</span>seq <span class="m">0</span> <span class="m">20</span> 255<span class="k">)</span><span class="p">;</span> <span class="k">do</span> <span class="nb">printf</span> <span class="s2">&#34;\e[38;2;</span><span class="si">${</span><span class="nv">R</span><span class="si">}</span><span class="s2">;</span><span class="si">${</span><span class="nv">G</span><span class="si">}</span><span class="s2">;</span><span class="si">${</span><span class="nv">B</span><span class="si">}</span><span class="s2">m█\e[0m&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">done</span>
+</span></span><span class="line"><span class="cl">    <span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="第三方日志系统">第三方日志系统</h2>
+<p>如果您正在构建大型软件系统，您很可能会使用到一些依赖，有些依赖会作为程序单独运行。如 Web 服务器、数据库或消息代理都是此类常见的第三方依赖。</p>
+<p>和这些系统交互的时候，阅读它们的日志是非常必要的，因为仅靠客户端侧的错误信息可能并不足以定位问题。</p>
+<p>幸运的是，大多数的程序都会将日志保存在您的系统中的某个地方。对于 UNIX 系统来说，程序的日志通常存放在 <code>/var/log</code>。例如， <a href="https://www.nginx.com/" target="_blank" rel="noopener noreffer ">NGINX</a> web 服务器就将其日志存放于<code>/var/log/nginx</code>。</p>
+<p>目前，系统开始使用 <strong>system log</strong>，您所有的日志都会保存在这里。大多数（但不是全部的）Linux 系统都会使用 <code>systemd</code>，这是一个系统守护进程，它会控制您系统中的很多东西，例如哪些服务应该启动并运行。<code>systemd</code> 会将日志以某种特殊格式存放于<code>/var/log/journal</code>，您可以使用 <a href="http://man7.org/linux/man-pages/man1/journalctl.1.html" target="_blank" rel="noopener noreffer "><code>journalctl</code></a> 命令显示这些消息。</p>
+<p>类似地，在 macOS 系统中是 <code>/var/log/system.log</code>，但是有更多的工具会使用系统日志，它的内容可以使用 <a href="https://www.manpagez.com/man/1/log/" target="_blank" rel="noopener noreffer "><code>log show</code></a> 显示。</p>
+<p>对于大多数的 UNIX 系统，您也可以使用<a href="http://man7.org/linux/man-pages/man1/dmesg.1.html" target="_blank" rel="noopener noreffer "><code>dmesg</code></a> 命令来读取内核的日志。</p>
+<p>如果您希望将日志加入到系统日志中，您可以使用 <a href="http://man7.org/linux/man-pages/man1/logger.1.html" target="_blank" rel="noopener noreffer "><code>logger</code></a> 这个 shell 程序。下面这个例子显示了如何使用 <code>logger</code>并且如何找到能够将其存入系统日志的条目。</p>
+<p>不仅如此，大多数的编程语言都支持向系统日志中写日志。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">logger &#34;Hello Logs&#34;
+</span></span><span class="line"><span class="cl"># On macOS
+</span></span><span class="line"><span class="cl">log show --last 1m | grep Hello
+</span></span><span class="line"><span class="cl"># On Linux
+</span></span><span class="line"><span class="cl">journalctl --since &#34;1m ago&#34; | grep Hello
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>正如我们在数据整理那节课上看到的那样，日志的内容可以非常的多，我们需要对其进行处理和过滤才能得到我们想要的信息。</p>
+<p>如果您发现您需要对 <code>journalctl</code> 和 <code>log show</code> 的结果进行大量的过滤，那么此时可以考虑使用它们自带的选项对其结果先过滤一遍再输出。还有一些像 <a href="http://lnav.org/" target="_blank" rel="noopener noreffer "><code>lnav</code></a> 这样的工具，它为日志文件提供了更好的展现和浏览方式。</p>
+<h2 id="调试器">调试器</h2>
+<p>当通过打印已经不能满足您的调试需求时，您应该使用调试器。</p>
+<p>调试器是一种可以允许我们和正在执行的程序进行交互的程序，它可以做到：</p>
+<ul>
+<li>当到达某一行时将程序暂停；</li>
+<li>一次一条指令地逐步执行程序；</li>
+<li>程序崩溃后查看变量的值；</li>
+<li>满足特定条件时暂停程序；</li>
+<li>其他高级功能。</li>
+</ul>
+<h3 id="python">python</h3>
+<p>很多编程语言都有自己的调试器。Python 的调试器是<a href="https://docs.python.org/3/library/pdb.html" target="_blank" rel="noopener noreffer "><code>pdb</code></a>.</p>
+<p>下面对<code>pdb</code> 支持的命令进行简单的介绍：</p>
+<ul>
+<li><strong>l</strong>(ist) - 显示当前行附近的 11 行或继续执行之前的显示；</li>
+<li><strong>s</strong>(tep) - 执行当前行，并在第一个可能的地方停止；</li>
+<li><strong>n</strong>(ext) - 继续执行直到当前函数的下一条语句或者 return 语句；</li>
+<li><strong>b</strong>(reak) - 设置断点（基于传入的参数）；</li>
+<li><strong>p</strong>(rint) - 在当前上下文对表达式求值并打印结果。还有一个命令是<strong>pp</strong> ，它使用 <a href="https://docs.python.org/3/library/pprint.html" target="_blank" rel="noopener noreffer "><code>pprint</code></a> 打印；</li>
+<li><strong>r</strong>(eturn) - 继续执行直到当前函数返回；</li>
+<li><strong>q</strong>(uit) - 退出调试器。</li>
+</ul>
+<p>让我们使用<code>pdb</code> 来修复下面的 Python 代码（参考讲座视频）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def bubble_sort(arr):
+</span></span><span class="line"><span class="cl">    n = len(arr)
+</span></span><span class="line"><span class="cl">    for i in range(n):
+</span></span><span class="line"><span class="cl">        for j in range(n):
+</span></span><span class="line"><span class="cl">            if arr[j] &gt; arr[j+1]:
+</span></span><span class="line"><span class="cl">                arr[j] = arr[j+1]
+</span></span><span class="line"><span class="cl">                arr[j+1] = arr[j]
+</span></span><span class="line"><span class="cl">    return arr
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">print(bubble_sort([4, 2, 1, 8, 7, 6]))
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意，因为 Python 是一种解释型语言，所以我们可以通过 <code>pdb</code> shell 执行命令。 <a href="https://pypi.org/project/ipdb/" target="_blank" rel="noopener noreffer "><code>ipdb</code></a> 是一种增强型的 <code>pdb</code> ，它使用<a href="https://ipython.org" target="_blank" rel="noopener noreffer "><code>IPython</code></a> 作为 REPL 并开启了 tab 补全、语法高亮、更好的回溯和更好的内省，同时还保留了<code>pdb</code> 模块相同的接口。</p>
+<p>更多可以学习 <a href="https://github.com/spiside/pdb-tutorial" target="_blank" rel="noopener noreffer ">这份</a> <code>pdb</code> 实践教程并熟悉相关的命令。更深入的信息您可以参考<a href="https://realpython.com/python-debugging-pdb" target="_blank" rel="noopener noreffer ">这份</a>教程。</p>
+<h3 id="c">C</h3>
+<p>对于更底层的编程语言，您可能需要了解一下 <a href="https://www.gnu.org/software/gdb/" target="_blank" rel="noopener noreffer "><code>gdb</code></a> ( 以及它的改进版 <a href="https://github.com/pwndbg/pwndbg" target="_blank" rel="noopener noreffer "><code>pwndbg</code></a>) 和 <a href="https://lldb.llvm.org/" target="_blank" rel="noopener noreffer "><code>lldb</code></a>。</p>
+<p>它们都对类 C 语言的调试进行了优化，它允许您探索任意进程及其机器状态：寄存器、堆栈、程序计数器等。</p>
+<h3 id="可逆调试">可逆调试</h3>
+<p>这篇文章可了解 <a href="https://undo.io/resources/reverse-debugging-whitepaper/" target="_blank" rel="noopener noreffer ">可逆调试</a></p>
+<p>C 可以使用 <a href="https://rr-project.org/" target="_blank" rel="noopener noreffer "><code>rr</code></a> ，它基于 gdb.</p>
+<p>Python 可以使用<a href="https://app.pytrace.com/?open=v0.1-interactive-demo" target="_blank" rel="noopener noreffer ">pytrace</a></p>
+<h2 id="专门工具">专门工具</h2>
+<h3 id="操作系统内核">操作系统内核</h3>
+<p>即使您需要调试的程序是一个二进制的黑盒程序，仍然有一些工具可以帮助到您。当您的程序需要执行一些只有操作系统内核才能完成的操作时，它需要使用 <a href="https://en.wikipedia.org/wiki/System_call" target="_blank" rel="noopener noreffer ">系统调用</a>。有一些命令可以帮助您追踪您的程序执行的系统调用。在 Linux 中可以使用<a href="http://man7.org/linux/man-pages/man1/strace.1.html" target="_blank" rel="noopener noreffer "><code>strace</code></a> ，在 macOS 和 BSD 中可以使用 <a href="http://dtrace.org/blogs/about/" target="_blank" rel="noopener noreffer "><code>dtrace</code></a>。<code>dtrace</code> 用起来可能有些别扭，因为它使用的是它自有的 <code>D</code> 语言，但是我们可以使用一个叫做 <a href="https://www.manpagez.com/man/1/dtruss/" target="_blank" rel="noopener noreffer "><code>dtruss</code></a> 的封装使其具有和 <code>strace</code> (更多信息参考 <a href="https://8thlight.com/blog/colin-jones/2015/11/06/dtrace-even-better-than-strace-for-osx.html" target="_blank" rel="noopener noreffer ">这里</a>)类似的接口</p>
+<p>下面的例子展现来如何使用 <code>strace</code> 或 <code>dtruss</code> 来显示<code>ls</code> 执行时，对<a href="http://man7.org/linux/man-pages/man2/stat.2.html" target="_blank" rel="noopener noreffer "><code>stat</code></a> 系统调用进行追踪对结果。若需要深入了解 <code>strace</code>，<a href="https://blogs.oracle.com/linux/strace-the-sysadmins-microscope-v2" target="_blank" rel="noopener noreffer ">这篇文章</a> 值得一读。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># On Linux
+</span></span><span class="line"><span class="cl">sudo strace -e lstat ls -l &gt; /dev/null
+</span></span><span class="line"><span class="cl">4
+</span></span><span class="line"><span class="cl"># On macOS
+</span></span><span class="line"><span class="cl">sudo dtruss -t lstat64_extended ls -l &gt; /dev/null
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="网络数据包">网络数据包</h3>
+<p>有些情况下，我们需要查看网络数据包才能定位问题。像 <a href="http://man7.org/linux/man-pages/man1/tcpdump.1.html" target="_blank" rel="noopener noreffer "><code>tcpdump</code></a> 和 <a href="https://www.wireshark.org/" target="_blank" rel="noopener noreffer ">Wireshark</a> 这样的网络数据包分析工具可以帮助您获取网络数据包的内容并基于不同的条件进行过滤。</p>
+<h3 id="web-开发">web 开发</h3>
+<p>对于 web 开发， Chrome/Firefox 的开发者工具非常方便，功能也很强大：</p>
+<ul>
+<li>源码 -查看任意站点的 HTML/CSS/JS 源码；</li>
+<li>实时地修改 HTML, CSS, JS 代码 - 修改网站的内容、样式和行为用于测试（从这一点您也能看出来，网页截图是不可靠的）；</li>
+<li>Javascript shell - 在 JS REPL 中执行命令；</li>
+<li>网络 - 分析请求的时间线；</li>
+<li>存储 - 查看 Cookies 和本地应用存储。</li>
+</ul>
+<h2 id="静态分析">静态分析</h2>
+<p>有些问题是您不需要执行代码就能发现的。例如，仔细观察一段代码，您就能发现某个循环变量覆盖了某个已经存在的变量或函数名；或是有个变量在被读取之前并没有被定义。 这种情况下 <a href="https://en.wikipedia.org/wiki/Static_program_analysis" target="_blank" rel="noopener noreffer ">静态分析</a> 工具就可以帮我们找到问题。静态分析会将程序的源码作为输入然后基于编码规则对其进行分析并对代码的正确性进行推理。</p>
+<h3 id="python-1">python</h3>
+<p>下面这段 Python 代码中存在几个问题。 首先，我们的循环变量<code>foo</code> 覆盖了之前定义的函数<code>foo</code>。最后一行，我们还把 <code>bar</code> 错写成了<code>baz</code>，因此当程序完成<code>sleep</code> (一分钟)后，执行到这一行的时候便会崩溃。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import time
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def foo():
+</span></span><span class="line"><span class="cl">    return 42
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for foo in range(5):
+</span></span><span class="line"><span class="cl">    print(foo)
+</span></span><span class="line"><span class="cl">bar = 1
+</span></span><span class="line"><span class="cl">bar *= 0.2
+</span></span><span class="line"><span class="cl">time.sleep(60)
+</span></span><span class="line"><span class="cl">print(baz)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>静态分析工具可以发现此类的问题。当我们使用<a href="https://pypi.org/project/pyflakes" target="_blank" rel="noopener noreffer "><code>pyflakes</code></a> 分析代码的时候，我们会得到与这两处 bug 相关的错误信息。<a href="http://mypy-lang.org/" target="_blank" rel="noopener noreffer "><code>mypy</code></a> 则是另外一个工具，它可以对代码进行类型检查。这里，<code>mypy</code> 会经过我们<code>bar</code> 起初是一个 <code>int</code> ，然后变成了 <code>float</code>。这些问题都可以在不运行代码的情况下被发现。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-zed" data-lang="zed"><span class="line"><span class="cl"><span class="err">$</span><span class="w"> </span><span class="n">pyflakes</span><span class="w"> </span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">6</span><span class="o">:</span><span class="w"> </span><span class="n">redefinition</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">unused</span><span class="w"> </span><span class="err">&#39;</span><span class="n">foo</span><span class="err">&#39;</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="err">3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">11</span><span class="o">:</span><span class="w"> </span><span class="n">undefined</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="err">&#39;</span><span class="n">baz</span><span class="err">&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="w"> </span><span class="n">mypy</span><span class="w"> </span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">6</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">Incompatible</span><span class="w"> </span><span class="n">types</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">assignment</span><span class="w"> </span><span class="p">(</span><span class="n">expression</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="err">&#34;</span><span class="n">int</span><span class="err">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="err">&#34;</span><span class="n">Callable</span><span class="p">[[],</span><span class="w"> </span><span class="n">Any</span><span class="p">]</span><span class="err">&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">9</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">Incompatible</span><span class="w"> </span><span class="n">types</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">assignment</span><span class="w"> </span><span class="p">(</span><span class="n">expression</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="err">&#34;</span><span class="n">float</span><span class="err">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="err">&#34;</span><span class="n">int</span><span class="err">&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">11</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">Name</span><span class="w"> </span><span class="err">&#39;</span><span class="n">baz</span><span class="err">&#39;</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">defined</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Found</span><span class="w"> </span><span class="err">3</span><span class="w"> </span><span class="n">errors</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="err">1</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="p">(</span><span class="n">checked</span><span class="w"> </span><span class="err">1</span><span class="w"> </span><span class="n">source</span><span class="w"> </span><span class="n">file</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="shell">shell</h3>
+<p>在 shell 工具那一节课的时候，我们介绍了 <a href="https://www.shellcheck.net/" target="_blank" rel="noopener noreffer "><code>shellcheck</code></a>，这是一个类似的工具，但它是应用于 shell 脚本的。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1"># Exampl#e: a typical script with several problems</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> f in <span class="k">$(</span>ls *.m3u<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span> grep -qi hq.*mp3 <span class="nv">$f</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="o">&amp;&amp;</span> <span class="nb">echo</span> -e <span class="s1">&#39;Playlist $f contains a HQ file in mp3 format&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>也可以在 Vim 中可以通过 neomake 插件来集成 shellcheck</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone xxx.git ~/.vim/pack/vendor/start/xxx
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="工具集成">工具集成</h3>
+<p>大多数的编辑器和 IDE 都支持在编辑界面显示这些工具的分析结果、高亮有警告和错误的位置。 这个过程通常称为 <strong>code linting</strong> 。风格检查或安全检查的结果同样也可以进行相应的显示。</p>
+<p>在 vim 中，有 <a href="https://vimawesome.com/plugin/ale" target="_blank" rel="noopener noreffer "><code>ale</code></a> 或 <a href="https://vimawesome.com/plugin/syntastic" target="_blank" rel="noopener noreffer "><code>syntastic</code></a> 可以帮助您做同样的事情。 在 Python 中， <a href="https://www.pylint.org" target="_blank" rel="noopener noreffer "><code>pylint</code></a> 和 <a href="https://pypi.org/project/pep8/" target="_blank" rel="noopener noreffer "><code>pep8</code></a> 是两种用于进行风格检查的工具，而 <a href="https://pypi.org/project/bandit/" target="_blank" rel="noopener noreffer "><code>bandit</code></a> 工具则用于检查安全相关的问题。</p>
+<p>对于其他语言的开发者来说，静态分析工具可以参考这个列表：<a href="https://github.com/mre/awesome-static-analysis" target="_blank" rel="noopener noreffer ">Awesome Static Analysis</a> (您也许会对 <em>Writing</em> 一节感兴趣) 。对于 linters 则可以参考这个列表： <a href="https://github.com/caramelomartins/awesome-linters" target="_blank" rel="noopener noreffer ">Awesome Linters</a>。</p>
+<p>对于风格检查和代码格式化，还有以下一些工具可以作为补充：用于 Python 的 <a href="https://github.com/psf/black" target="_blank" rel="noopener noreffer "><code>black</code></a>、用于 Go 语言的 <code>gofmt</code>、用于 Rust 的 <code>rustfmt</code> 或是用于 JavaScript, HTML 和 CSS 的 <a href="https://prettier.io/" target="_blank" rel="noopener noreffer "><code>prettier</code></a> 。这些工具可以自动格式化您的代码，这样代码风格就可以与常见的风格保持一致。 尽管您可能并不想对代码进行风格控制，标准的代码风格有助于方便别人阅读您的代码，也可以方便您阅读它的代码。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-06-13</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2023-06-13-debug/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/debug/">debug</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2023-05-31-make/" class="prev" rel="prev" title="make 构建工具介绍"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>make 构建工具介绍</a>
+            <a href="/2023-07-22-vim/" class="next" rel="next" title="Vim 学习指南">Vim 学习指南<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">浙ICP备19014045号-2</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.cd0d0b6e50ff01ff2f3a9a70d7cfb66a7c6cb9acf7a566325568be6d3bd31fc4.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.ae2da1bd62c6469ee27770ad1cddf2e8296d8a7f6d85b091463e5200c5e320af.js" integrity="sha256-ri2hvWLGRp7id3CtHN3y6Cltin9thbCRRj5SAMXjIK8="></script><script type="text/javascript" src="/lib/lunr/lunr.min.08a93c0120364b01159db3c287f39b2180bb740334472bda0675bd3f18981676.js" integrity="sha256-CKk8ASA2SwEVnbPCh/ObIYC7dAM0RyvaBnW9PxiYFnY="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.e55842a856a6d829feca3c3ad736c136b6c7549e9247274f78aa296259e06e24.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

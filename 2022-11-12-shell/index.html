@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Shell 工具和脚本入门 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="Shell 工具和脚本入门" />
+<meta property="og:description" content="计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。 Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;工具，" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://austinxt.github.io/2022-11-12-shell/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-12T00:00:00+08:00" />
+<meta property="article:modified_time" content="2022-11-12T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="Shell 工具和脚本入门"/>
+<meta name="twitter:description" content="计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。 Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;工具，"/>
+<meta name="application-name" content="夜航星">
+<meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2022-11-12-shell/" /><link rel="prev" href="https://austinxt.github.io/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/" /><link rel="next" href="https://austinxt.github.io/2022-12-10-profile/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Shell 工具和脚本入门",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/austinxt.github.io\/2022-11-12-shell\/"
+        },"genre": "posts","keywords": "Shell","wordcount":  3528 ,
+        "url": "https:\/\/austinxt.github.io\/2022-11-12-shell\/","datePublished": "2022-11-12T00:00:00+08:00","dateModified": "2022-11-12T00:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "夜航星"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="夜航星">夜航星</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="夜航星">夜航星</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Shell 工具和脚本入门</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-11-12">2022-11-12</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;3528 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#shell-语言">Shell 语言</a>
+      <ul>
+        <li><a href="#词法">词法</a></li>
+        <li><a href="#语法">语法</a>
+          <ul>
+            <li><a href="#for-if">FOR-IF</a></li>
+          </ul>
+        </li>
+        <li><a href="#debug">Debug</a></li>
+        <li><a href="#tips">Tips</a>
+          <ul>
+            <li><a href="#常见命令行标志参数及模式">常见命令行标志参数及模式</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#shell-场景工具">Shell 场景&amp;工具</a>
+      <ul>
+        <li><a href="#查看命令行如何使用">查看命令行如何使用</a></li>
+        <li><a href="#在-shell-中导航">在 Shell 中导航</a></li>
+        <li><a href="#程序间创建链接">程序间创建链接</a></li>
+        <li><a href="#权限">权限</a></li>
+        <li><a href="#查找文件">查找文件</a></li>
+        <li><a href="#查找代码">查找代码</a></li>
+        <li><a href="#查找-shell-命令">查找 Shell 命令</a></li>
+      </ul>
+    </li>
+    <li><a href="#脚本">脚本</a>
+      <ul>
+        <li><a href="#tips-1">Tips</a>
+          <ul>
+            <li><a href="#使用-python-vs-bash-脚本-vs-其他语言">使用 Python VS Bash 脚本 VS 其他语言?</a></li>
+            <li><a href="#source-scriptsh-和-scriptsh-有什么区别"><code>source script.sh</code> 和 <code>./script.sh</code> 有什么区别?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#应用例子">应用例子</a>
+      <ul>
+        <li><a href="#对偶然出错的脚本调试">对偶然出错的脚本调试</a></li>
+        <li><a href="#查找文件并压缩">查找文件并压缩</a></li>
+        <li><a href="#最近使用的文件">最近使用的文件</a></li>
+        <li><a href="#简易数据库">简易数据库</a></li>
+      </ul>
+    </li>
+    <li><a href="#more">More</a>
+      <ul>
+        <li><a href="#todo">TODO</a></li>
+        <li><a href="#ref">Ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。</p>
+</blockquote>
+<p>Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;工具，以及脚本编写。</p>
+<ul>
+<li>Shell 语言编程，主要是词法、语法和应用，可以通过教程系统学习；</li>
+<li>Shell 场景&amp;工具，按照日常使用需要，积累在不同场景的工具和使用技巧，可以通过文档、man、tldr 等了解工具使用；</li>
+<li>脚本编写，主要是掌握流程，以及持续实践。</li>
+</ul>
+<h2 id="shell-语言">Shell 语言</h2>
+<h3 id="词法">词法</h3>
+<ul>
+<li><code>\</code> 转义字符，例如传递的参数包含空格的场景，<code>\ </code></li>
+<li>引号：<code>'</code> 包裹纯字符串，<code>&quot;</code> 包裹命令</li>
+<li>变量：<code>$PATH</code> ，变量赋值 <code>foo=bar</code>
+<ul>
+<li><code>$0</code> : 脚本名</li>
+<li><code>$1 $9</code> 脚本的参数。 $1 是第一个参数，依此类推。</li>
+<li><code>$@</code> : 所有参数</li>
+<li><code>$#</code> : 参数个数</li>
+<li><code>$?</code> : 前一个命令的返回值</li>
+<li><code>$$</code> : 当前脚本的进程识别码</li>
+<li><code>!!</code> : 完整的上一条命令，包括参数。常见应用：当你因为权限不足执行命令失败时，可以使用 sudo !!再尝试一次。</li>
+<li><code>$_</code> : 上一条命令的最后一个参数。如果你正在使用的是交互式 shell，你可以通过按下 Esc 之后键入 . 来获取这个值。</li>
+</ul>
+</li>
+<li><code>&amp;&amp;</code>（与操作符）和 <code>||</code>（或操作符）：命令通常使用 STDOUT 来返回输出值，使用 STDERR 来返回错误及错误码，返回值 0 表示正常执行，其他所有非 0 的返回值都表示有错误发生。程序 true 的返回码永远是 0，false 的返回码永远是 1。<code>false || echo &quot;Oops, fail&quot;</code></li>
+<li><code>;</code> ：分隔同一行的多个命令</li>
+<li>命令替换 <code>$( CMD )</code> ：被 CMD 输出结果替换掉</li>
+<li>进程替换 <code>&lt;( CMD )</code> ：执行 CMD 并将结果输出到一个临时文件中，并将 &lt;( CMD ) 替换成临时文件名。例如，<code>diff &lt;(ls foo) &lt;(ls bar)</code> 会显示文件夹 foo 和 bar 中文件的区别。</li>
+<li>通配符： ? 和 * 来匹配一个或任意个字符</li>
+<li>花括号{} - 当你有一系列的指令，其中包含一段公共子串时，可以用花括号来自动展开这些命令。例如，<code>{foo,bar}/{a..h}</code> 创建 foo/a, foo/b, &hellip; foo/h, bar/a, bar/b, &hellip; bar/h 这些文件</li>
+</ul>
+<h3 id="语法">语法</h3>
+<h4 id="for-if">FOR-IF</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="k">for</span> file in <span class="s2">&#34;</span><span class="nv">$@</span><span class="s2">&#34;</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    grep foobar <span class="s2">&#34;</span><span class="nv">$file</span><span class="s2">&#34;</span> &gt; /dev/null 2&gt; /dev/null
+</span></span><span class="line"><span class="cl">    <span class="c1"># 如果模式没有找到，则grep退出状态为 1</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 我们将标准输出流和标准错误流重定向到Null，因为我们并不关心这些信息</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="o">[[</span> <span class="nv">$?</span> -ne <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;File </span><span class="nv">$file</span><span class="s2"> does not have any foobar, adding one&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">echo</span> <span class="s2">&#34;# foobar&#34;</span> &gt;&gt; <span class="s2">&#34;</span><span class="nv">$file</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="debug">Debug</h3>
+<p><a href="https://github.com/koalaman/shellcheck" target="_blank" rel="noopener noreffer ">koalaman/shellcheck: ShellCheck, a static analysis tool for shell scripts</a> 定位 sh/bash 脚本中的错误。</p>
+<h3 id="tips">Tips</h3>
+<h4 id="常见命令行标志参数及模式">常见命令行标志参数及模式</h4>
+<p>命令行工具的用法千差万别，阅读 <code>man</code> 页面可以帮助你理解每种工具的用法。即便如此，下面我们将介绍一下命令行工具一些常见的共同功能。</p>
+<ul>
+<li>大部分工具支持 <code>--help</code> 或者类似的标志参数（flag）来显示它们的简略用法。</li>
+<li>会造成不可撤回操作的工具一般会提供“空运行”（dry run）标志参数，这样用户可以确认工具真实运行时会进行的操作。这些工具通常也会有“交互式”（interactive）标志参数，在执行每个不可撤回的操作前提示用户确认。</li>
+<li><code>--version</code> 或者 <code>-V</code> 标志参数可以让工具显示它的版本信息（对于提交软件问题报告非常重要）。</li>
+<li>基本所有的工具支持使用 <code>--verbose</code> 或者 <code>-v</code> 标志参数来输出详细的运行信息。多次使用这个标志参数，比如 <code>-vvv</code>，可以让工具输出更详细的信息（经常用于调试）。同样，很多工具支持 <code>--quiet</code> 标志参数来抑制除错误提示之外的其他输出。</li>
+<li>大多数工具中，使用 <code>-</code> 代替输入或者输出文件名意味着工具将从标准输入（standard input）获取所需内容，或者向标准输出（standard output）输出结果。</li>
+<li>会造成破坏性结果的工具一般默认进行非递归的操作，但是支持使用“递归”（recursive）标志函数（通常是 <code>-r</code>）。</li>
+<li>有的时候你可能需要向工具传入一个 <em>看上去</em> 像标志参数的普通参数，比如：
+<ul>
+<li>使用 <code>rm</code> 删除一个叫 <code>-r</code> 的文件；</li>
+<li>在通过一个程序运行另一个程序的时候（<code>ssh machine foo</code>），向内层的程序（<code>foo</code>）传递一个标志参数。
+这时候你可以使用特殊参数 <code>--</code> 让某个程序 <em>停止处理</em> <code>--</code> 后面出现的标志参数以及选项（以 <code>-</code> 开头的内容）：</li>
+<li><code>rm -- -r</code> 会让 <code>rm</code> 将 <code>-r</code> 当作文件名；</li>
+<li><code>ssh machine --for-ssh -- foo --for-foo</code> 的 <code>--</code> 会让 <code>ssh</code> 知道 <code>--for-foo</code> 不是 <code>ssh</code> 的标志参数。</li>
+</ul>
+</li>
+</ul>
+<h2 id="shell-场景工具">Shell 场景&amp;工具</h2>
+<h3 id="查看命令行如何使用">查看命令行如何使用</h3>
+<ol>
+<li><code>--help</code></li>
+<li>tldr：<a href="https://tldr.sh/" target="_blank" rel="noopener noreffer ">tldr pages</a></li>
+<li>man</li>
+</ol>
+<h3 id="在-shell-中导航">在 Shell 中导航</h3>
+<p>命令</p>
+<ul>
+<li><code>cd</code></li>
+<li><code>ls</code></li>
+<li><code>pwd</code></li>
+<li><code>mv</code>（用于重命名或移动文件）</li>
+<li><code>cp</code>（拷贝文件）</li>
+<li><code>mkdir</code>（新建文件夹）</li>
+<li>autojump/fasd: 查找最常用或最近使用的文件和目录</li>
+<li>tree/broot/nnn/ranger: 概览目录结构</li>
+</ul>
+<h3 id="程序间创建链接">程序间创建链接</h3>
+<ul>
+<li>重定向：<code> &lt; file</code> 从文件输入， <code>&gt; file</code> 输出到文件， <code>&gt;&gt; file</code> 来向文件追加内容</li>
+<li>管道 <code>a | b</code> ：将 a 程序的输出作为 b 程序的输入</li>
+</ul>
+<h3 id="权限">权限</h3>
+<p><code>ls -lht</code> 的第一列 <code>drwxr-xr-x	nv	staff	200B Feb  8 10:48 info.json</code> 一共有 10 个位置。</p>
+<ul>
+<li>第一个表示是否是目录，d 表示目录，-表示文件。</li>
+<li>后续每三个字符构成一组（rwx）， 文件所有者（nv），用户组（staff） 以及其他所有人具有的权限，其中 - 表示该用户不具备相应的权限。</li>
+</ul>
+<p>命令</p>
+<ul>
+<li><code>chmod</code></li>
+</ul>
+<h3 id="查找文件">查找文件</h3>
+<p>find</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查找所有名称为src的文件夹</span>
+</span></span><span class="line"><span class="cl">find . -name src -type d
+</span></span><span class="line"><span class="cl"><span class="c1"># 查找所有文件夹路径中包含test的python文件</span>
+</span></span><span class="line"><span class="cl">find . -path <span class="s1">&#39;*/test/*.py&#39;</span> -type f
+</span></span><span class="line"><span class="cl"><span class="c1"># 查找前一天修改的所有文件</span>
+</span></span><span class="line"><span class="cl">find . -mtime -1
+</span></span><span class="line"><span class="cl"><span class="c1"># 查找所有大小在500k至10M的tar.gz文件</span>
+</span></span><span class="line"><span class="cl">find . -size +500k -size -10M -name <span class="s1">&#39;*.tar.gz&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 删除全部扩展名为.tmp 的文件</span>
+</span></span><span class="line"><span class="cl">find . -name <span class="s1">&#39;*.tmp&#39;</span> -exec rm <span class="o">{}</span> <span class="se">\;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 查找全部的 PNG 文件并将其转换为 JPG</span>
+</span></span><span class="line"><span class="cl">find . -name <span class="s1">&#39;*.png&#39;</span> -exec convert <span class="o">{}</span> <span class="o">{}</span>.jpg <span class="se">\;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>fd</p>
+<p>以模式 PATTERN 搜索的语法是 fd PATTERN。</p>
+<p>locate</p>
+<p>locate 使用一个由 updatedb 负责更新的数据库，在大多数系统中 updatedb 都会通过 cron 每日更新。</p>
+<h3 id="查找代码">查找代码</h3>
+<p>grep</p>
+<ul>
+<li>-C：获取查找结果的上下文（Context），grep -C5 会输出匹配结果前后五行</li>
+<li>-v 将对结果进行反选</li>
+<li>-R 会递归地进入子目录并搜索所有的文本文件</li>
+</ul>
+<p>rg: ripgrep</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查找所有使用了 requests 库的文件</span>
+</span></span><span class="line"><span class="cl">rg -t py <span class="s1">&#39;import requests&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 查找所有没有写 shebang 的文件（包含隐藏文件）</span>
+</span></span><span class="line"><span class="cl">rg -u --files-without-match <span class="s2">&#34;^#!&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 查找所有的foo字符串，并打印其之后的5行</span>
+</span></span><span class="line"><span class="cl">rg foo -A <span class="m">5</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 打印匹配的统计信息（匹配的行和文件的数量）</span>
+</span></span><span class="line"><span class="cl">rg --stats PATTERN
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>类似还有：ack、ag</p>
+<h3 id="查找-shell-命令">查找 Shell 命令</h3>
+<ul>
+<li>Ctrl+R 对命令历史记录进行回溯搜索</li>
+<li>fzf 通用对模糊查找工具，多场景通用！</li>
+</ul>
+<h2 id="脚本">脚本</h2>
+<p>脚本应该指的是能够在开发环境下单独调用的程序，可以用 Shell 写，也可以用其他语言写。</p>
+<h3 id="tips-1">Tips</h3>
+<p><code>env</code> 命令，利用环境变量中的程序来解析该脚本。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/usr/bin/env python
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="使用-python-vs-bash-脚本-vs-其他语言">使用 Python VS Bash 脚本 VS 其他语言?</h4>
+<p>通常来说，Bash 脚本对于简短的一次性脚本有效，比如当你想要运行一系列的命令的时候。但是 Bash 脚本有一些比较奇怪的地方，这使得大型程序或脚本难以用 Bash 实现：</p>
+<ul>
+<li>Bash 对于简单的使用情形没什么问题，但是很难对于所有可能的输入都正确。例如，脚本参数中的空格会导致 Bash 脚本出错。</li>
+<li>Bash 对于代码重用并不友好。因此，重用你先前已经写好的代码很困难。通常 Bash 中没有软件库的概念。</li>
+<li>Bash 依赖于一些像 <code>$?</code> 或 <code>$@</code> 的特殊字符指代特殊的值。其他的语言却会显式地引用，比如 <code>exitCode</code> 或 <code>sys.args</code>。</li>
+</ul>
+<p>因此，对于大型或者更加复杂的脚本我们推荐使用更加成熟的脚本语言例如 Python 和 Ruby。 你可以找到很多用这些语言编写的，用来解决常见问题的在线库。 如果你发现某种语言实现了你所需要的特定功能库，最好的方式就是直接去使用那种语言。</p>
+<h4 id="source-scriptsh-和-scriptsh-有什么区别"><code>source script.sh</code> 和 <code>./script.sh</code> 有什么区别?</h4>
+<p>这两种情况 <code>script.sh</code> 都会在 bash 会话中被读取和执行，不同点在于哪个会话执行这个命令。 对于 <code>source</code> 命令来说，命令是在当前的 bash 会话中执行的，因此当 <code>source</code> 执行完毕，对当前环境的任何更改（例如更改目录或是定义函数）都会留存在当前会话中。 单独运行 <code>./script.sh</code> 时，当前的 bash 会话将启动新的 bash 会话（实例），并在新实例中运行命令 <code>script.sh</code>。 因此，如果 <code>script.sh</code> 更改目录，新的 bash 会话（实例）会更改目录，但是一旦退出并将控制权返回给父 bash 会话，父会话仍然留在先前的位置（不会有目录的更改）。 同样，如果 <code>script.sh</code> 定义了要在终端中访问的函数，需要用 <code>source</code> 命令在当前 bash 会话中定义这个函数。否则，如果你运行 <code>./script.sh</code>，只有新的 bash 会话（进程）才能执行定义的函数，而当前的 shell 不能。</p>
+<h2 id="应用例子">应用例子</h2>
+<h3 id="对偶然出错的脚本调试">对偶然出错的脚本调试</h3>
+<p>假设您有一个命令，它很少出错。因此为了在出错时能够对其进行调试，需要花费大量的时间重现错误并捕获输出。 编写一段 bash 脚本，运行如下的脚本直到它出错，将它的标准输出和标准错误流记录到文件，并在最后输出所有内容，以及在失败前共运行了多少次。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="nv">count</span><span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl">	./run.sh &gt;&gt; run.log 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="o">[[</span> <span class="nv">$?</span> -ne <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">		cat get42.log
+</span></span><span class="line"><span class="cl">		<span class="nb">echo</span> <span class="s2">&#34;fail after </span><span class="nv">$count</span><span class="s2"> times&#34;</span>
+</span></span><span class="line"><span class="cl">		<span class="nb">break</span>
+</span></span><span class="line"><span class="cl">	<span class="k">fi</span>
+</span></span><span class="line"><span class="cl">	<span class="o">((</span>count++<span class="o">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="查找文件并压缩">查找文件并压缩</h3>
+<p>编写一个命令，它可以递归地查找文件夹中所有的 HTML 文件，并将它们压缩成 zip 文件。注意，即使文件名中包含空格，您的命令也应该能够正确执行（提示：查看  xargs 的参数-d，译注：MacOS 上的  xargs 没有-d，查看这个<a href="https://github.com/sharkdp/fd" target="_blank" rel="noopener noreffer ">sharkdp/fd: A simple, fast and user-friendly alternative to &lsquo;find&rsquo;</a>）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># generate html files</span>
+</span></span><span class="line"><span class="cl">mkdir a b c
+</span></span><span class="line"><span class="cl">touch <span class="o">{</span>a,b,c<span class="o">}</span>/<span class="o">{</span>a..d<span class="o">}</span>.<span class="o">{</span>tmp,html<span class="o">}</span> <span class="o">{</span>a,b,c<span class="o">}</span>/<span class="s2">&#34;x Y&#34;</span>.html x.html y.html z.tmp
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># action</span>
+</span></span><span class="line"><span class="cl">find . -name <span class="s1">&#39;*.html&#39;</span> -print0 <span class="p">|</span> xargs -0 tar vcf html.zip
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="最近使用的文件">最近使用的文件</h3>
+<p>编写一个命令或脚本递归的查找文件夹中最近使用的文件，按照最近的使用时间列出。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">find . -type f -print0 <span class="p">|</span> xargs -0 ls -lt <span class="p">|</span> head -5
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 当文件数量较多时，上面的解答会得出错误结果，解决办法是增加 -mmin 条件</span>
+</span></span><span class="line"><span class="cl">find . -type f -mmin -60 -print0 <span class="p">|</span> xargs -0 ls -lt <span class="p">|</span> head -5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="简易数据库">简易数据库</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>db_set <span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">,</span><span class="nv">$2</span><span class="s2">&#34;</span> &gt;&gt; database
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">db_get <span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">  grep <span class="s2">&#34;^</span><span class="nv">$1</span><span class="s2">,&#34;</span> database <span class="p">|</span> sed -e <span class="s2">&#34;s/^</span><span class="nv">$1</span><span class="s2">,//&#34;</span> <span class="p">|</span> tail -n <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="more">More</h2>
+<h3 id="todo">TODO</h3>
+<ul>
+<li>系统学习 Shell 语言：<a href="https://wangdoc.com/bash/set" target="_blank" rel="noopener noreffer ">set 命令，shopt 命令 - Bash 脚本教程 - 网道</a></li>
+<li>思考 Shell 使用场景，把自己高频需求用新掌握的工具自动化</li>
+<li>掌握脚本使用最佳实践</li>
+</ul>
+<h3 id="ref">Ref</h3>
+<ul>
+<li><a href="https://www.gnu.org/software/bash/manual/html_node/index.html" target="_blank" rel="noopener noreffer ">Top (Bash Reference Manual)</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-11-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2022-11-12-shell/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shell/">Shell</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/" class="prev" rel="prev" title="硬派健身要点"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>硬派健身要点</a>
+            <a href="/2022-12-10-profile/" class="next" rel="next" title="常用性能分析工具">常用性能分析工具<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">浙ICP备19014045号-2</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.cd0d0b6e50ff01ff2f3a9a70d7cfb66a7c6cb9acf7a566325568be6d3bd31fc4.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.ae2da1bd62c6469ee27770ad1cddf2e8296d8a7f6d85b091463e5200c5e320af.js" integrity="sha256-ri2hvWLGRp7id3CtHN3y6Cltin9thbCRRj5SAMXjIK8="></script><script type="text/javascript" src="/lib/lunr/lunr.min.08a93c0120364b01159db3c287f39b2180bb740334472bda0675bd3f18981676.js" integrity="sha256-CKk8ASA2SwEVnbPCh/ObIYC7dAM0RyvaBnW9PxiYFnY="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.e55842a856a6d829feca3c3ad736c136b6c7549e9247274f78aa296259e06e24.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

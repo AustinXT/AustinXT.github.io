@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>密码学 - Tag - 夜航星</title>
+        <link>https://austinxt.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
+        <description>密码学 - Tag - 夜航星</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 09 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/" rel="self" type="application/rss+xml" /><item>
+    <title>密码学入门</title>
+    <link>https://austinxt.github.io/2023-09-09-encrypt/</link>
+    <pubDate>Sat, 09 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-09-09-encrypt/</guid>
+    <description><![CDATA[散列函数 密码散列函数 (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下： 1 hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Git 数据模型与命令行 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="Git 数据模型与命令行" />
+<meta property="og:description" content="学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。 概览 版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://austinxt.github.io/2023-09-10-git/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-10T00:00:00+08:00" />
+<meta property="article:modified_time" content="2023-09-10T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="Git 数据模型与命令行"/>
+<meta name="twitter:description" content="学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。 概览 版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件"/>
+<meta name="application-name" content="夜航星">
+<meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2023-09-10-git/" /><link rel="prev" href="https://austinxt.github.io/2023-09-09-encrypt/" /><link rel="next" href="https://austinxt.github.io/2024-08-08-friend-xh/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Git 数据模型与命令行",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/austinxt.github.io\/2023-09-10-git\/"
+        },"genre": "posts","keywords": "Git","wordcount":  4040 ,
+        "url": "https:\/\/austinxt.github.io\/2023-09-10-git\/","datePublished": "2023-09-10T00:00:00+08:00","dateModified": "2023-09-10T00:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "夜航星"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="夜航星">夜航星</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="夜航星">夜航星</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Git 数据模型与命令行</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-10">2023-09-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;4040 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#概览">概览</a></li>
+    <li><a href="#git-的数据模型">Git 的数据模型</a>
+      <ul>
+        <li><a href="#快照">快照</a></li>
+        <li><a href="#历史记录建模关联快照">历史记录建模：关联快照</a></li>
+        <li><a href="#数据模型及其伪代码表示">数据模型及其伪代码表示</a></li>
+        <li><a href="#对象和内存寻址">对象和内存寻址</a></li>
+        <li><a href="#引用">引用</a></li>
+        <li><a href="#仓库">仓库</a></li>
+      </ul>
+    </li>
+    <li><a href="#暂存区">暂存区</a></li>
+    <li><a href="#git-的命令行接口">Git 的命令行接口</a>
+      <ul>
+        <li><a href="#基础">基础</a></li>
+        <li><a href="#分支和合并">分支和合并</a></li>
+        <li><a href="#远端操作">远端操作</a></li>
+        <li><a href="#撤销">撤销</a></li>
+        <li><a href="#git-高级操作">Git 高级操作</a></li>
+      </ul>
+    </li>
+    <li><a href="#杂项">杂项</a>
+      <ul>
+        <li><a href="#图形用户界面">图形用户界面</a></li>
+        <li><a href="#集成">集成</a></li>
+        <li><a href="#工作流">工作流</a></li>
+        <li><a href="#git-提供商">Git 提供商</a></li>
+      </ul>
+    </li>
+    <li><a href="#more">More</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。</p>
+<h2 id="概览">概览</h2>
+<blockquote>
+<p>版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件、文件夹）改动的工具。顾名思义，这些工具可以帮助我们管理代码的修改历史；不仅如此，它还可以让协作编码变得更方便。VCS通过一系列的快照将某个文件夹及其内容保存了起来，每个快照都包含了文件或文件夹的完整状态。同时它还维护了快照创建者的信息以及每个快照的相关信息等等。</p>
+</blockquote>
+<p>尽管版本控制系统有很多， 其事实上的标准则是 <strong>Git</strong> 。</p>
+<p>但因为 Git 接口的抽象泄漏（leaky abstraction）问题，通过自顶向下的方式（从命令行接口开始）学习 Git 可能会让人感到非常困惑。</p>
+<p>尽管 Git 的接口有些丑陋，但是它的底层设计和思想却是非常优雅的。因此，我们将通过一种自底向上的方式向您介绍 Git，从数据模型开始，最后再学习它的接口。</p>
+<h2 id="git-的数据模型">Git 的数据模型</h2>
+<p>进行版本控制的方法很多。Git 拥有一个经过精心设计的模型，这使其能够支持版本控制所需的所有特性，例如维护历史记录、支持分支和促进协作。</p>
+<h3 id="快照">快照</h3>
+<p>Git 将顶级目录中的文件和文件夹作为集合，并通过一系列快照来管理其历史记录。在Git的术语里，文件被称作Blob对象（数据对象），也就是一组数据。目录则被称之为“树”，它将名字与 Blob 对象或树对象进行映射（使得目录中可以包含其他目录）。快照则是被追踪的最顶层的树。例如，一个树看起来可能是这样的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;root&gt; (tree)
+</span></span><span class="line"><span class="cl">|
+</span></span><span class="line"><span class="cl">+- foo (tree)
+</span></span><span class="line"><span class="cl">|  |
+</span></span><span class="line"><span class="cl">|  + bar.txt (blob, contents = &#34;hello world&#34;)
+</span></span><span class="line"><span class="cl">|
+</span></span><span class="line"><span class="cl">+- baz.txt (blob, contents = &#34;git is wonderful&#34;) 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="历史记录建模关联快照">历史记录建模：关联快照</h3>
+<p>在 Git 中，历史记录是一个由快照组成的有向无环图。</p>
+<p>下面是一个 ASCII 码构成的简图，其中的 <code>o</code> 表示一次提交（快照）。</p>
+<p>箭头指向了当前提交的父辈（这是一种“在…之前”，而不是“在…之后”的关系）。在第三次提交之后，历史记录分岔成了两条独立的分支。这可能因为此时需要同时开发两个不同的特性，它们之间是相互独立的。开发完成后，这些分支可能会被合并并创建一个新的提交，这个新的提交会同时包含这些特性。新的提交会创建一个新的历史记录，看上去像这样（最新的合并提交用粗体标记）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> `o &lt;-- o &lt;-- o &lt;-- o &lt;---- o
+</span></span><span class="line"><span class="cl">            ^            /
+</span></span><span class="line"><span class="cl">             \          v
+</span></span><span class="line"><span class="cl">              --- o &lt;-- o` 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Git 中的提交是不可改变的。但这并不代表错误不能被修改，只不过这种“修改”实际上是创建了一个全新的提交记录。而引用（参见下文）则被更新为指向这些新的提交。</p>
+<h3 id="数据模型及其伪代码表示">数据模型及其伪代码表示</h3>
+<p>以伪代码的形式来学习 Git 的数据模型，可能更加清晰：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 文件就是一组数据
+</span></span><span class="line"><span class="cl">type blob = array&lt;byte&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 一个包含文件和目录的目录
+</span></span><span class="line"><span class="cl">type tree = map&lt;string, tree | blob&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 每个提交都包含一个父辈，元数据和顶层树
+</span></span><span class="line"><span class="cl">type commit = struct {
+</span></span><span class="line"><span class="cl">    parent: array&lt;commit&gt;
+</span></span><span class="line"><span class="cl">    author: string
+</span></span><span class="line"><span class="cl">    message: string
+</span></span><span class="line"><span class="cl">    snapshot: tree
+</span></span><span class="line"><span class="cl">} 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这是一种简洁的历史模型。</p>
+<h3 id="对象和内存寻址">对象和内存寻址</h3>
+<p>Git 中的对象可以是 blob、树或提交：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">type object = blob | tree | commit 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Git 在储存数据时，所有的对象都会基于它们的 <a href="https://en.wikipedia.org/wiki/SHA-1" target="_blank" rel="noopener noreffer ">SHA-1 哈希</a> 进行寻址。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">objects = map&lt;string, object&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def store(object):
+</span></span><span class="line"><span class="cl">    id = sha1(object)
+</span></span><span class="line"><span class="cl">    objects[id] = object
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def load(id):
+</span></span><span class="line"><span class="cl">    return objects[id] 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Blobs、树和提交都一样，它们都是对象。当它们引用其他对象时，它们并没有真正的在硬盘上保存这些对象，而是仅仅保存了它们的哈希值作为引用。</p>
+<p>例如，上面例子中的树（可以通过 <code>git cat-file -p 698281bc680d1995c5f4caaf3359721a5a58d48d</code> 来进行可视化），看上去是这样的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">100644 blob 4448adbf7ecd394f42ae135bbeed9676e894af85    baz.txt
+</span></span><span class="line"><span class="cl">040000 tree c68d233a33c5c06e0340e4c224f0afca87c8ce87    foo 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>树本身会包含一些指向其他内容的指针，例如 <code>baz.txt</code> (blob) 和 <code>foo</code> (树)。如果我们用 <code>git cat-file -p 4448adbf7ecd394f42ae135bbeed9676e894af85</code>，即通过哈希值查看 baz.txt 的内容，会得到以下信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git is wonderful 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="引用">引用</h3>
+<p>现在，所有的快照都可以通过它们的 SHA-1 哈希值来标记了。但这也太不方便了，谁也记不住一串 40 位的十六进制字符。</p>
+<p>针对这一问题，Git 的解决方法是给这些哈希值赋予人类可读的名字，也就是引用（references）。引用是指向提交的指针。与对象不同的是，它是可变的（引用可以被更新，指向新的提交）。例如，<code>master</code> 引用通常会指向主分支的最新一次提交。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">references = map&lt;string, string&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def update_reference(name, id):
+</span></span><span class="line"><span class="cl">    references[name] = id
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def read_reference(name):
+</span></span><span class="line"><span class="cl">    return references[name]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def load_reference(name_or_id):
+</span></span><span class="line"><span class="cl">    if name_or_id in references:
+</span></span><span class="line"><span class="cl">        return load(references[name_or_id])
+</span></span><span class="line"><span class="cl">    else:
+</span></span><span class="line"><span class="cl">        return load(name_or_id) 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这样，Git 就可以使用诸如 “master” 这样人类可读的名称来表示历史记录中某个特定的提交，而不需要在使用一长串十六进制字符了。</p>
+<p>有一个细节需要我们注意， 通常情况下，我们会想要知道“我们当前所在位置”，并将其标记下来。这样当我们创建新的快照的时候，我们就可以知道它的相对位置（如何设置它的“父辈”）。在 Git 中，我们当前的位置有一个特殊的索引，它就是 “HEAD”。</p>
+<h3 id="仓库">仓库</h3>
+<p>最后，我们可以粗略地给出 Git 仓库的定义了：<code>对象</code> 和 <code>引用</code>。</p>
+<p>在硬盘上，Git 仅存储对象和引用：因为其数据模型仅包含这些东西。所有的 <code>git</code> 命令都对应着对提交树的操作，例如增加对象，增加或删除引用。</p>
+<p>当您输入某个指令时，请思考一下这条命令是如何对底层的图数据结构进行操作的。另一方面，如果您希望修改提交树，例如“丢弃未提交的修改和将 ‘master’ 引用指向提交 <code>5d83f9e</code> 时，有什么命令可以完成该操作（针对这个具体问题，您可以使用 <code>git checkout master; git reset --hard 5d83f9e</code>）</p>
+<h2 id="暂存区">暂存区</h2>
+<p>Git 中还包括一个和数据模型完全不相关的概念，但它确是创建提交的接口的一部分。</p>
+<p>就上面介绍的快照系统来说，您也许会期望它的实现里包括一个 “创建快照” 的命令，该命令能够基于当前工作目录的当前状态创建一个全新的快照。</p>
+<p>Git 使用一种叫做 “暂存区（staging area）”的机制，它允许您指定下次快照中要包括那些改动。</p>
+<h2 id="git-的命令行接口">Git 的命令行接口</h2>
+<p>为了避免重复信息，我们将不会详细解释以下命令行。强烈推荐您阅读 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener noreffer ">Pro Git 中文版</a>，同时完成<a href="https://learngitbranching.js.org/?locale=zh_CN" target="_blank" rel="noopener noreffer ">Learn Git Branching</a>练习。</p>
+<h3 id="基础">基础</h3>
+<ul>
+<li><code>git help &lt;command&gt;</code>: 获取 git 命令的帮助信息</li>
+<li><code>git init</code>: 创建一个新的 git 仓库，其数据会存放在一个名为 <code>.git</code> 的目录下</li>
+<li><code>git status</code>: 显示当前的仓库状态</li>
+<li><code>git add &lt;filename&gt;</code>: 添加文件到暂存区</li>
+<li><code>git commit</code>: 创建一个新的提交
+<ul>
+<li>如何编写 <a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" rel="noopener noreffer ">良好的提交信息</a>!</li>
+<li>为何要 <a href="https://chris.beams.io/posts/git-commit/" target="_blank" rel="noopener noreffer ">编写良好的提交信息</a></li>
+</ul>
+</li>
+<li><code>git log</code>: 显示历史日志</li>
+<li><code>git log --all --graph --decorate</code>: 可视化历史记录（有向无环图）</li>
+<li><code>git diff &lt;filename&gt;</code>: 显示与暂存区文件的差异</li>
+<li><code>git diff &lt;revision&gt; &lt;filename&gt;</code>: 显示某个文件两个版本之间的差异</li>
+<li><code>git checkout &lt;revision&gt;</code>: 更新 HEAD 和目前的分支</li>
+</ul>
+<h3 id="分支和合并">分支和合并</h3>
+<ul>
+<li><code>git branch</code>: 显示分支</li>
+<li><code>git branch &lt;name&gt;</code>: 创建分支</li>
+<li><code>git checkout -b &lt;name&gt;</code>: 创建分支并切换到该分支
+<ul>
+<li>相当于 <code>git branch &lt;name&gt;; git checkout &lt;name&gt;</code></li>
+</ul>
+</li>
+<li><code>git merge &lt;revision&gt;</code>: 合并到当前分支</li>
+<li><code>git mergetool</code>: 使用工具来处理合并冲突</li>
+<li><code>git rebase &lt;basebranch&gt; &lt;topicbranch&gt;</code>: 将一系列提交按照原有次序依次应用到另一分支上</li>
+</ul>
+<h3 id="远端操作">远端操作</h3>
+<ul>
+<li><code>git remote</code>: 列出远端</li>
+<li><code>git remote add &lt;name&gt; &lt;url&gt;</code>: 添加一个远端</li>
+<li><code>git push &lt;remote&gt; &lt;local branch&gt;:&lt;remote branch&gt;</code>: 将对象传送至远端并更新远端引用</li>
+<li><code>git branch --set-upstream-to=&lt;remote&gt;/&lt;remote branch&gt;</code>: 创建本地和远端分支的关联关系</li>
+<li><code>git fetch</code>: 从远端获取对象/索引</li>
+<li><code>git pull</code>: 相当于 <code>git fetch; git merge</code></li>
+<li><code>git clone</code>: 从远端下载仓库</li>
+</ul>
+<h3 id="撤销">撤销</h3>
+<ul>
+<li><code>git commit --amend</code>: 编辑提交的内容或信息，常用来追加修改到上次提交</li>
+<li><code>git reset HEAD &lt;file&gt;</code>: 恢复暂存的文件，将文件从暂存区（staging）移到工作区（working）</li>
+<li><code>git checkout -- &lt;file&gt;</code>: 丢弃工作区（working）修改，</li>
+<li><code>git restore</code>: git2.32版本后取代git reset 进行许多撤销操作</li>
+</ul>
+<h3 id="git-高级操作">Git 高级操作</h3>
+<ul>
+<li><code>git config</code>: Git 是一个 <a href="https://git-scm.com/docs/git-config" target="_blank" rel="noopener noreffer ">高度可定制的</a> 工具</li>
+<li><code>git clone --depth=1</code>: 浅克隆（shallow clone），不包括完整的版本历史信息</li>
+<li><code>git add -i /git add -p</code>: 交互式暂存、文件部分暂存，输入 ? 显示所有可以使用的命令列表</li>
+<li><code>git rebase -i</code>: 交互式变基</li>
+<li><code>git blame -L 33,17 &lt;ref/hash&gt;</code>: 查看最后修改某行的人</li>
+<li><code>git stash branch &lt;branch&gt;</code>: 贮藏工作目录下的修改内容</li>
+<li><code>git clean</code> ：清理工作目录</li>
+<li><code>git bisect</code>: 通过二分查找搜索历史记录</li>
+<li><code>.gitignore</code>: <a href="https://git-scm.com/docs/gitignore" target="_blank" rel="noopener noreffer ">指定</a> 故意不追踪的文件</li>
+<li><code>git log origin/master..HEAD</code> ，查看当前分支不在远程的提交</li>
+<li><code>--patch -p</code> :可以使用 <code>git reset --patch</code> 命令的补丁模式来部分重置文件， 通过 <code>git checkout --patch</code> 命令来部分检出文件， <code>git stash save --patch</code> 命令来部分暂存文件。</li>
+<li><code>git grep</code> ：查找工作目录的文件</li>
+<li><code>git log -S &lt;string&gt;</code> ：查找日志</li>
+<li><code>git reset [--soft,--mixed,--hard] HEAD~</code> :撤销修改</li>
+<li><code>git ls-files -o</code> : 列出没有被 git 追踪的文件</li>
+</ul>
+<h2 id="杂项">杂项</h2>
+<h3 id="图形用户界面">图形用户界面</h3>
+<p>Git 的 <a href="https://git-scm.com/downloads/guis" target="_blank" rel="noopener noreffer ">图形用户界面客户端</a> 有很多，但是我们自己并不使用这些图形用户界面的客户端，我们选择使用命令行接口</p>
+<h3 id="集成">集成</h3>
+<ul>
+<li><strong>Shell 集成</strong>: 将 Git 状态集成到您的 shell 中会非常方便。(<a href="https://github.com/olivierverdier/zsh-git-prompt" target="_blank" rel="noopener noreffer ">zsh</a>, <a href="https://github.com/magicmonty/bash-git-prompt" target="_blank" rel="noopener noreffer ">bash</a>)。<a href="https://github.com/ohmyzsh/ohmyzsh" target="_blank" rel="noopener noreffer ">Oh My Zsh</a>这样的框架中一般以及集成了这一功能</li>
+<li><strong>编辑器集成</strong>: 和上面一条类似，将 Git 集成到编辑器中好处多多。<a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="noopener noreffer ">fugitive.vim</a> 是 Vim 中集成 GIt 的常用插件</li>
+</ul>
+<h3 id="工作流">工作流</h3>
+<p>有一个创建优质提交信息的习惯会使 Git 的使用与协作容易的多。 一般情况下，信息应当以少于 50 个字符（25个汉字）的单行开始且简要地描述变更，接着是一个空白行，再接着是一个更详细的解释。 Git 项目要求一个更详细的解释，包括做改动的动机和它的实现与之前行为的对比——这是一个值得遵循的好规则。 使用指令式的语气来编写提交信息，比如使用“Fix bug”而非“Fixed bug”或“Fixes bug”。 这里是一份<a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" rel="noopener noreffer ">最初由 Tim Pope 写的模板</a>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">首字母大写的摘要（不多于 50 个字符或 25 个中文字符）
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果必要的话，加入更详细的解释文字。在大概 72 个字符的时候换行。在某些情形下，第一行被当作一封电子邮件的标题，剩下的文本作为正文。分隔摘要与正文的空行是必须的（除非你完全省略正文），如果你将两者混在一起，那么类似变基等工具无法正常工作。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">使用指令式的语气来编写提交信息：使用“Fix bug”而非“Fixed bug”或“Fixes bug”。
+</span></span><span class="line"><span class="cl">此约定与 git merge 和 git revert 命令生成提交说明相同。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">空行接着更进一步的段落。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 标号也是可以的。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 项目符号可以使用典型的连字符或星号，后跟一个空格，行之间用空行隔开，但是可以依据不同的惯例有所不同。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 使用悬挂式缩进
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你所有的提交信息都遵循此模版，那么对你和与你协作的其他开发者来说事情会变得非常容易。 Git 项目有一个良好格式化的提交信息——尝试在那儿运行 git log &ndash;no-merges 来看看漂亮的格式化的项目提交历史像什么样。</p>
+<p>进行大型项目时的一些惯例 ( 有<a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noopener noreffer ">很多</a> <a href="https://www.endoflineblog.com/gitflow-considered-harmful" target="_blank" rel="noopener noreffer ">不同的</a> <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank" rel="noopener noreffer ">处理方法</a>)</p>
+<h3 id="git-提供商">Git 提供商</h3>
+<p><strong>GitHub</strong>: Git 并不等同于 GitHub。 在 GitHub 中您需要使用一个被称作<a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests" target="_blank" rel="noopener noreffer ">拉取请求（pull request）</a>的方法来向其他项目贡献代码</p>
+<p><strong>其他 Git 提供商</strong>: GitHub 并不是唯一的。还有像 <a href="https://about.gitlab.com/" target="_blank" rel="noopener noreffer ">GitLab</a> 和 <a href="https://bitbucket.org/" target="_blank" rel="noopener noreffer ">BitBucket</a> 这样的平台。</p>
+<h2 id="more">More</h2>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener noreffer ">Pro Git</a> ，<strong>强烈推荐</strong>！学习前五章的内容可以教会您流畅使用 Git 的绝大多数技巧，因为您已经理解了 Git 的数据模型。后面的章节提供了很多有趣的高级主题。（<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener noreffer ">Pro Git 中文版</a>）；</li>
+<li><a href="https://ohshitgit.com/" target="_blank" rel="noopener noreffer ">Oh Shit, Git!?!</a> ，简短的介绍了如何从 Git 错误中恢复；</li>
+<li><a href="https://eagain.net/articles/git-for-computer-scientists/" target="_blank" rel="noopener noreffer ">Git for Computer Scientists</a> ，简短的介绍了 Git 的数据模型，与本文相比包含较少量的伪代码以及大量的精美图片；</li>
+<li><a href="https://jwiegley.github.io/git-from-the-bottom-up/" target="_blank" rel="noopener noreffer ">Git from the Bottom Up</a>详细的介绍了 Git 的实现细节，而不仅仅局限于数据模型。好奇的同学可以看看；</li>
+<li><a href="https://smusamashah.github.io/blog/2017/10/14/explain-git-in-simple-words" target="_blank" rel="noopener noreffer ">How to explain git in simple words</a>；</li>
+<li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer ">Learn Git Branching</a> 通过基于浏览器的游戏来学习 Git ；</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-09-10</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2023-09-10-git/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/git/">Git</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2023-09-09-encrypt/" class="prev" rel="prev" title="密码学入门"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>密码学入门</a>
+            <a href="/2024-08-08-friend-xh/" class="next" rel="next" title="和一个跟自己很不一样的人，吃饭聊天">和一个跟自己很不一样的人，吃饭聊天<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">浙ICP备19014045号-2</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.cd0d0b6e50ff01ff2f3a9a70d7cfb66a7c6cb9acf7a566325568be6d3bd31fc4.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.ae2da1bd62c6469ee27770ad1cddf2e8296d8a7f6d85b091463e5200c5e320af.js" integrity="sha256-ri2hvWLGRp7id3CtHN3y6Cltin9thbCRRj5SAMXjIK8="></script><script type="text/javascript" src="/lib/lunr/lunr.min.08a93c0120364b01159db3c287f39b2180bb740334472bda0675bd3f18981676.js" integrity="sha256-CKk8ASA2SwEVnbPCh/ObIYC7dAM0RyvaBnW9PxiYFnY="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.e55842a856a6d829feca3c3ad736c136b6c7549e9247274f78aa296259e06e24.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

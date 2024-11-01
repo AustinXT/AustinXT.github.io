@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Shell 命令行数据处理 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="Shell 命令行数据处理" />
+<meta property="og:description" content="Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。 学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://austinxt.github.io/2023-01-11-data-analysis/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-11T00:00:00+08:00" />
+<meta property="article:modified_time" content="2023-01-11T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="Shell 命令行数据处理"/>
+<meta name="twitter:description" content="Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。 学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并"/>
+<meta name="application-name" content="夜航星">
+<meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2023-01-11-data-analysis/" /><link rel="prev" href="https://austinxt.github.io/2022-12-10-profile/" /><link rel="next" href="https://austinxt.github.io/2023-05-27-cmd-env/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Shell 命令行数据处理",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/austinxt.github.io\/2023-01-11-data-analysis\/"
+        },"genre": "posts","keywords": "Shell, 数据处理","wordcount":  1556 ,
+        "url": "https:\/\/austinxt.github.io\/2023-01-11-data-analysis\/","datePublished": "2023-01-11T00:00:00+08:00","dateModified": "2023-01-11T00:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "夜航星"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="夜航星">夜航星</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="夜航星">夜航星</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Shell 命令行数据处理</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-01-11">2023-01-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1556 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#数据整理">数据整理</a>
+      <ul>
+        <li><a href="#sed">sed</a></li>
+        <li><a href="#awk">awk</a></li>
+      </ul>
+    </li>
+    <li><a href="#数据分析">数据分析</a>
+      <ul>
+        <li><a href="#计算">计算</a></li>
+        <li><a href="#统计">统计</a></li>
+        <li><a href="#绘图">绘图</a></li>
+        <li><a href="#整理二进制数据">整理二进制数据</a></li>
+        <li><a href="#其他类型文件处理">其他类型文件处理</a></li>
+      </ul>
+    </li>
+    <li><a href="#tip">Tip</a>
+      <ul>
+        <li><a href="#在远端处理大数据">在远端处理大数据</a></li>
+        <li><a href="#利用数据整理来确定参数">利用数据整理来确定参数</a></li>
+        <li><a href="#原地替换">原地替换</a></li>
+      </ul>
+    </li>
+    <li><a href="#例子">例子</a>
+      <ul>
+        <li><a href="#统计字典">统计字典</a></li>
+      </ul>
+    </li>
+    <li><a href="#more">More</a>
+      <ul>
+        <li><a href="#todo">TODO</a></li>
+        <li><a href="#ref">Ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。</p>
+<p>学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并且记录例子。</p>
+<h2 id="数据整理">数据整理</h2>
+<h3 id="sed">sed</h3>
+<p><code>sed</code> 的正则表达式有些时候是比较奇怪的，它需要你在这些模式前添加<code>\</code>才能使其具有特殊含义。或者，您也可以添加<code>-E</code>选项来支持这些匹配。</p>
+<p>查找碰撞服务器的用户</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh myserver journalctl
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> grep sshd
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> grep <span class="s2">&#34;Disconnected from&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> sed -E <span class="s1">&#39;s/.*Disconnected from (invalid |authenticating )?user (.*) [^ ]+ port [0-9]+( \[preauth\])?$/\2/&#39;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> sort <span class="p">|</span> uniq -c
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> sort -nk1,1 <span class="p">|</span> tail -n10
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span> <span class="p">|</span> paste -sd,
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>sort</code> 会对其输入数据进行排序，默认情况下是按照字典序排序</li>
+<li><code>uniq -c</code> 会把连续出现的行折叠为一行并使用出现次数作为前缀</li>
+<li><code>sort -k1,1</code> 则表示“仅基于以空格分割的第一列进行排序”。<code>,n</code> 部分表示“仅排序到第 n 个部分”，默认情况是到行尾</li>
+<li><code>awk '{print $2}'</code> 对于每一行文本，打印其第二个部分，也就是用户名</li>
+<li><code>paste</code>命令来合并行(<code>-s</code>)，并指定一个分隔符进行分割 (<code>-d</code>)</li>
+</ul>
+<h3 id="awk">awk</h3>
+<p><code>awk</code> 其实是一种编程语言，只不过它碰巧非常善于处理文本。</p>
+<p><code>awk</code> 程序接受一个模式串（可选），以及一个代码块，指定当模式匹配时应该做何种操作。默认当模式串即匹配所有行（上面命令中当用法）。 在代码块中，<code>$0</code> 表示整行的内容，<code>$1</code> 到 <code>$n</code> 为一行中的 n 个区域，区域的分割基于 <code>awk</code> 的域分隔符（默认是空格，可以通过<code>-F</code>来修改）。</p>
+<p>既然 <code>awk</code> 是一种编程语言，那么则可以这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">BEGIN { rows = 0 }
+</span></span><span class="line"><span class="cl">$1 == 1 &amp;&amp; $2 ~ /^c[^
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> ]*e$/ { rows += $1 }
+</span></span><span class="line"><span class="cl">END { print rows }
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>BEGIN</code> 也是一种模式，它会匹配输入的开头（ <code>END</code> 则匹配结尾）。然后，对每一行第一个部分进行累加，最后将结果输出。事实上，我们完全可以抛弃 <code>grep</code> 和 <code>sed</code> ，因为 <code>awk</code> 就可以<a href="https://backreference.org/2010/02/10/idiomatic-awk" target="_blank" rel="noopener noreffer ">解决所有问题</a>。</p>
+<h2 id="数据分析">数据分析</h2>
+<h3 id="计算">计算</h3>
+<p><code>paste</code> 将每行的数字加起来，<code>bc -l</code> 计算公式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> | paste -sd+ | bc -l
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="统计">统计</h3>
+<p>R 也是一种编程语言，它非常适合被用来进行数据分析和<a href="https://ggplot2.tidyverse.org/" target="_blank" rel="noopener noreffer ">绘制图表</a>。这里我们不会讲的特别详细， 您只需要知道<code>summary</code> 可以打印某个向量的统计结果。我们将输入的一系列数据存放在一个向量后，利用 R 语言就可以得到我们想要的统计数据。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh myserver journalctl
+</span></span><span class="line"><span class="cl"> | grep sshd
+</span></span><span class="line"><span class="cl"> | grep &#34;Disconnected from&#34;
+</span></span><span class="line"><span class="cl"> | sed -E &#39;s/.*Disconnected from (invalid |authenticating )?user (.*) [^ ]+ port [0-9]+( \[preauth\])?$/\2/&#39;
+</span></span><span class="line"><span class="cl"> | sort | uniq -c
+</span></span><span class="line"><span class="cl"> | awk &#39;{print $1}&#39; | R --slave -e &#39;x &lt;- scan(file=&#34;stdin&#34;, quiet=TRUE); summary(x)&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="绘图">绘图</h3>
+<h3 id="整理二进制数据">整理二进制数据</h3>
+<p>虽然到目前为止我们的讨论都是基于文本数据，但对于二进制文件其实同样有用。例如我们可以用 ffmpeg 从相机中捕获一张图片，将其转换成灰度图后通过 SSH 将压缩后的文件发送到远端服务器，并在那里解压、存档并显示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -loglevel panic -i /dev/video0 -frames 1 -f image2 -
+</span></span><span class="line"><span class="cl"> | convert - -colorspace gray -
+</span></span><span class="line"><span class="cl"> | gzip
+</span></span><span class="line"><span class="cl"> | ssh mymachine &#39;gzip -d | tee copy.jpg | env DISPLAY=:0 feh -&#39;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="其他类型文件处理">其他类型文件处理</h3>
+<p>如果获取的是 HTML 数据，那么<a href="https://github.com/EricChiang/pup" target="_blank" rel="noopener noreffer "><code>pup</code></a>可能会有帮助。</p>
+<p>对于 JSON 类型的数据，可以试试<a href="https://stedolan.github.io/jq/" target="_blank" rel="noopener noreffer "><code>jq</code></a>。</p>
+<h2 id="tip">Tip</h2>
+<h3 id="在远端处理大数据">在远端处理大数据</h3>
+<p>先在远端机器上过滤文本内容，然后再将结果传输到本机。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 分页器</span>
+</span></span><span class="line"><span class="cl">ssh myserver <span class="s1">&#39;journalctl | grep sshd | grep &#34;Disconnected from&#34;&#39;</span> <span class="p">|</span> less
+</span></span><span class="line"><span class="cl"><span class="c1"># 重定向</span>
+</span></span><span class="line"><span class="cl">ssh myserver <span class="s1">&#39;journalctl | grep sshd | grep &#34;Disconnected from&#34;&#39;</span> &gt; ssh.log
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="利用数据整理来确定参数">利用数据整理来确定参数</h3>
+<p>有时候您要利用数据整理技术从一长串列表里找出你所需要安装或移除的东西。我们之前讨论的相关技术配合 <code>xargs</code> 即可实现：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">rustup toolchain list | grep nightly | grep -vE &#34;nightly-x86&#34; | sed &#39;s/-x86.*//&#39; | xargs rustup toolchain uninstall
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="原地替换">原地替换</h3>
+<p>原地替换听上去很有诱惑力，例如： <code>sed s/REGEX/SUBSTITUTION/ input.txt &gt; input.txt</code>。但是这并不是一个明智的做法，为什么呢？还是说只有 <code>sed</code>是这样的? 查看 <code>man sed</code> 来完成这个问题。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 表达式中后一个 input.txt会首先被清空，而且是发生在前的。所以前面一个input.txt在还没有被 sed 处理时已经为空了。</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 先备份文件</span>
+</span></span><span class="line"><span class="cl">sed -i.bak s/REGEX/SUBSTITUTION/ input.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="例子">例子</h2>
+<h3 id="统计字典">统计字典</h3>
+<p>统计 words 文件 (<code>/usr/share/dict/words</code>) 中包含至少三个<code>a</code> 且不以<code>'s</code> 结尾的单词个数。这些单词中，出现频率前三的末尾两个字母是什么？ <code>sed</code>的 <code>y</code>命令，或者 <code>tr</code> 程序也许可以帮你解决大小写的问题。共存在多少种词尾两字母组合？还有一个很 有挑战性的问题：哪个组合从未出现过？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 共存在多少种字母组合</span>
+</span></span><span class="line"><span class="cl">cat /usr/share/dict/words <span class="p">|</span> grep -v <span class="s2">&#34;&#39;s</span>$<span class="s2">&#34;</span> <span class="p">|</span> grep -iE <span class="s2">&#34;^([^a]*a){3}.*</span>$<span class="s2">&#34;</span> <span class="p">|</span> wc -l
+</span></span><span class="line"><span class="cl"><span class="c1"># 哪些组合未出现过</span>
+</span></span><span class="line"><span class="cl">diff &lt;<span class="o">(</span>cat occurance.txt<span class="o">)</span> &lt;<span class="o">(</span>cat all.txt<span class="o">)</span> --unchanged-group-format<span class="o">=</span><span class="s1">&#39;&#39;</span> <span class="p">|</span> wc -l
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="more">More</h2>
+<h3 id="todo">TODO</h3>
+<ul>
+<li>在实际场景中多使用多思考，熟悉并扩充工具</li>
+<li>记录实践策略</li>
+</ul>
+<h3 id="ref">Ref</h3>
+<ul>
+<li><a href="https://regexone.com/" target="_blank" rel="noopener noreffer ">RegexOne - Learn Regular Expressions - Lesson 1: An Introduction, and the ABCs</a></li>
+<li><a href="https://regex101.com/r/qqbZqh/2" target="_blank" rel="noopener noreffer "><strong>regex101: build, test, and debug regex</strong></a></li>
+<li><a href="https://www.regular-expressions.info/email.html" target="_blank" rel="noopener noreffer ">How to Find or Validate an Email Address</a></li>
+<li><a href="https://mathiasbynens.be/demo/url-regex" target="_blank" rel="noopener noreffer ">In search of the perfect URL validation regex</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-01-11</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2023-01-11-data-analysis/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shell/">Shell</a>,&nbsp;<a href="/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/">数据处理</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2022-12-10-profile/" class="prev" rel="prev" title="常用性能分析工具"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>常用性能分析工具</a>
+            <a href="/2023-05-27-cmd-env/" class="next" rel="next" title="命令行环境使用指南">命令行环境使用指南<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">浙ICP备19014045号-2</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.cd0d0b6e50ff01ff2f3a9a70d7cfb66a7c6cb9acf7a566325568be6d3bd31fc4.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.ae2da1bd62c6469ee27770ad1cddf2e8296d8a7f6d85b091463e5200c5e320af.js" integrity="sha256-ri2hvWLGRp7id3CtHN3y6Cltin9thbCRRj5SAMXjIK8="></script><script type="text/javascript" src="/lib/lunr/lunr.min.08a93c0120364b01159db3c287f39b2180bb740334472bda0675bd3f18981676.js" integrity="sha256-CKk8ASA2SwEVnbPCh/ObIYC7dAM0RyvaBnW9PxiYFnY="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.e55842a856a6d829feca3c3ad736c136b6c7549e9247274f78aa296259e06e24.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

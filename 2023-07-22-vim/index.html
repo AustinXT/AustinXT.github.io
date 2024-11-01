@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Vim 学习指南 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="Vim 学习指南" />
+<meta property="og:description" content="Vim 是一个能跟上你思维速度的编辑器。 Vim 编辑器学习的步骤为： 理解编辑器的设计理念和基本原理； 学习命令，浏览教程，完成 vimtutor； 情景练习；" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://austinxt.github.io/2023-07-22-vim/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-22T00:00:00+08:00" />
+<meta property="article:modified_time" content="2023-07-22T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="Vim 学习指南"/>
+<meta name="twitter:description" content="Vim 是一个能跟上你思维速度的编辑器。 Vim 编辑器学习的步骤为： 理解编辑器的设计理念和基本原理； 学习命令，浏览教程，完成 vimtutor； 情景练习；"/>
+<meta name="application-name" content="夜航星">
+<meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2023-07-22-vim/" /><link rel="prev" href="https://austinxt.github.io/2023-06-13-debug/" /><link rel="next" href="https://austinxt.github.io/2023-09-09-encrypt/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Vim 学习指南",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/austinxt.github.io\/2023-07-22-vim\/"
+        },"genre": "posts","keywords": "Vim","wordcount":  3879 ,
+        "url": "https:\/\/austinxt.github.io\/2023-07-22-vim\/","datePublished": "2023-07-22T00:00:00+08:00","dateModified": "2023-07-22T00:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "夜航星"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="夜航星">夜航星</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="夜航星">夜航星</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Vim 学习指南</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-07-22">2023-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;3879 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#概况">概况</a>
+      <ul>
+        <li><a href="#vim-的哲学">Vim 的哲学</a></li>
+        <li><a href="#编辑模式">编辑模式</a></li>
+        <li><a href="#缓存-标签页-窗口">缓存， 标签页， 窗口</a></li>
+      </ul>
+    </li>
+    <li><a href="#vim-的接口其实是一种编程语言">Vim 的接口其实是一种编程语言</a>
+      <ul>
+        <li><a href="#移动">移动</a></li>
+        <li><a href="#选择">选择</a></li>
+        <li><a href="#编辑">编辑</a></li>
+        <li><a href="#计数">计数</a></li>
+        <li><a href="#修饰语">修饰语</a></li>
+        <li><a href="#命令行">命令行</a></li>
+        <li><a href="#搜索和替换">搜索和替换</a></li>
+        <li><a href="#多窗口">多窗口</a></li>
+        <li><a href="#宏">宏</a></li>
+      </ul>
+    </li>
+    <li><a href="#自定义-vim">自定义 Vim</a></li>
+    <li><a href="#还有更多的-vim-小窍门吗">还有更多的 Vim 小窍门吗？</a></li>
+    <li><a href="#扩展-vim">扩展 Vim</a></li>
+    <li><a href="#其他程序的-vim-模式">其他程序的 Vim 模式</a>
+      <ul>
+        <li><a href="#shell">Shell</a></li>
+        <li><a href="#readline">Readline</a></li>
+        <li><a href="#其他">其他</a></li>
+      </ul>
+    </li>
+    <li><a href="#例子">例子</a>
+      <ul>
+        <li><a href="#fizz_buzz">fizz_buzz</a></li>
+        <li><a href="#xml-转成-json">xml 转成 json</a></li>
+      </ul>
+    </li>
+    <li><a href="#more">More</a>
+      <ul>
+        <li><a href="#todo">TODO</a></li>
+        <li><a href="#ref">Ref</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>Vim 是一个能跟上你思维速度的编辑器。</p>
+</blockquote>
+<p>Vim 编辑器学习的步骤为：</p>
+<ol>
+<li>理解编辑器的设计理念和基本原理；</li>
+<li>学习命令，浏览教程，完成 <code>vimtutor</code>；</li>
+<li>情景练习；</li>
+<li>将编辑器替换成 Vim，持续使用；</li>
+<li>优化使用，自定义，安装扩展插件。</li>
+</ol>
+<h2 id="概况">概况</h2>
+<h3 id="vim-的哲学">Vim 的哲学</h3>
+<blockquote>
+<p>在编程的时候，你会把大量时间花在阅读/编辑而不是在写代码上。所以，Vim 是一个多模态编辑 器：它对于插入文字和操纵文字有不同的模式。Vim 是可编程的（可以使用 Vimscript 或者像 Python 一样的其他程序语言），Vim 的接口本身也是一个程序语言：键入操作（以及其助记名） 是命令，这些命令也是可组合的。Vim 避免了使用鼠标，因为那样太慢了；Vim 甚至避免用 上下左右键因为那样需要太多的手指移动。</p>
+</blockquote>
+<h3 id="编辑模式">编辑模式</h3>
+<p>Vim 的设计以大多数时间都花在阅读、浏览和进行少量编辑改动为基础，因此它具有多种操作模式：</p>
+<ul>
+<li>正常模式：在文件中四处移动光标进行修改</li>
+<li>插入模式：插入文本</li>
+<li>替换模式：替换文本</li>
+<li>可视化模式（一般，行，块）：选中文本块</li>
+<li>命令模式：用于执行命令</li>
+</ul>
+<p>在正常模式，键入 <code>i</code> 进入插入模式，<code>R</code> 进入替换模式，<code>v</code> 进入可视（一般）模式，<code>V</code> 进入可视（行）模式，<code>&lt;C-v&gt;</code> （<code>Ctrl-V</code>, 有时也写作 <code>^V</code>）进入可视（块）模式，<code>:</code> 进入命令模式。</p>
+<h3 id="缓存-标签页-窗口">缓存， 标签页， 窗口</h3>
+<blockquote>
+<p>Vim 会维护一系列打开的文件，称为“缓存”。一个 Vim 会话包含一系列标签页，每个标签页包含 一系列窗口（分隔面板）。每个窗口显示一个缓存。缓存和窗口不是一一对应的关系，窗口只是视角，一个缓存可以在多个窗口打开，比如在查看同一个文件的不同部分的时候。</p>
+</blockquote>
+<blockquote>
+<p>Vim 默认打开一个标签页，这个标签也包含一个窗口。</p>
+</blockquote>
+<h2 id="vim-的接口其实是一种编程语言">Vim 的接口其实是一种编程语言</h2>
+<blockquote>
+<p>Vim 最重要的设计思想是 Vim 的界面本身是一个程序语言。键入操作（以及他们的助记名） 本身是命令，这些命令可以组合使用。这使得移动和编辑更加高效，特别是一旦形成肌肉记忆。</p>
+</blockquote>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/vi-vim-cheat-sheet-sch.gif"
+        data-srcset="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/vi-vim-cheat-sheet-sch.gif, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/vi-vim-cheat-sheet-sch.gif 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/vi-vim-cheat-sheet-sch.gif 2x"
+        data-sizes="auto"
+        alt="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/vi-vim-cheat-sheet-sch.gif"
+        title="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/vi-vim-cheat-sheet-sch.gif" /></p>
+<h3 id="移动">移动</h3>
+<p>多数时候你会在正常模式下，使用移动命令在缓存中导航。在 Vim 里面移动也被称为 “名词”， 因为它们指向文字块。</p>
+<ul>
+<li>基本移动: <code>hjkl</code> （左， 下， 上， 右）</li>
+<li>词： <code>w</code> （下一个词）， <code>b</code> （词初）， <code>e</code> （词尾）</li>
+<li>行： <code>0</code> （行初）， <code>^</code> （第一个非空格字符）， <code>$</code> （行尾）</li>
+<li>屏幕： <code>H</code> （屏幕首行）， <code>M</code> （屏幕中间）， <code>L</code> （屏幕底部）</li>
+<li>翻页： <code>Ctrl-u</code> （上翻）， <code>Ctrl-d</code> （下翻）</li>
+<li>文件： <code>gg</code> （文件头）， <code>G</code> （文件尾）</li>
+<li>行数： <code>:{行数}&lt;CR&gt;</code> 或者 <code>{行数}G</code> ({行数}为行数)</li>
+<li>括号匹配： <code>%</code> （找到配对，比如括号或者 /* */ 之类的注释对）</li>
+<li>查找： <code>f{字符}</code>， <code>t{字符}</code>， <code>F{字符}</code>， <code>T{字符}</code>
+<ul>
+<li>查找/到 向前/向后 在本行的{字符}</li>
+<li><code>,</code> / <code>;</code> 用于导航匹配</li>
+</ul>
+</li>
+<li>搜索: <code>/{正则表达式}</code>, <code>n</code> / <code>N</code> 用于导航匹配</li>
+</ul>
+<h3 id="选择">选择</h3>
+<p>可视化模式:</p>
+<ul>
+<li>可视化：<code>v</code></li>
+<li>可视化行： <code>V</code></li>
+<li>可视化块：<code>Ctrl+v</code></li>
+</ul>
+<p>可以用移动命令来选中。</p>
+<h3 id="编辑">编辑</h3>
+<p>所有你需要用鼠标做的事， 你现在都可以用键盘：采用编辑命令和移动命令的组合来完成。 这就是 Vim 的界面开始看起来像一个程序语言的时候。Vim 的编辑命令也被称为 “动词”， 因为动词可以施动于名词。</p>
+<ul>
+<li><code>i</code> 进入插入模式
+<ul>
+<li>但是对于操纵/编辑文本，不单想用退格键完成</li>
+</ul>
+</li>
+<li><code>O</code> / <code>o</code> 在之上/之下插入行</li>
+<li><code>d{移动命令}</code> 删除 {移动命令}
+<ul>
+<li>例如，<code>dw</code> 删除词, <code>d$</code> 删除到行尾, <code>d0</code> 删除到行头。</li>
+</ul>
+</li>
+<li><code>c{移动命令}</code> 改变 {移动命令}
+<ul>
+<li>例如，<code>cw</code> 改变词</li>
+<li>比如 <code>d{移动命令}</code> 再 <code>i</code></li>
+</ul>
+</li>
+<li><code>x</code> 删除字符（等同于 <code>dl</code>）</li>
+<li><code>s</code> 替换字符（等同于 <code>xi</code>）</li>
+<li>可视化模式 + 操作
+<ul>
+<li>选中文字, <code>d</code> 删除 或者 <code>c</code> 改变</li>
+</ul>
+</li>
+<li><code>u</code> 撤销, <code>&lt;C-r&gt;</code> 重做</li>
+<li><code>y</code> 复制 / “yank” （其他一些命令比如 <code>d</code> 也会复制）</li>
+<li><code>p</code> 粘贴</li>
+<li>更多值得学习的: 比如 <code>~</code> 改变字符的大小写</li>
+</ul>
+<h3 id="计数">计数</h3>
+<p>你可以用一个计数来结合“名词”和“动词”，这会执行指定操作若干次。</p>
+<ul>
+<li><code>3w</code> 向前移动三个词</li>
+<li><code>5j</code> 向下移动 5 行</li>
+<li><code>7dw</code> 删除 7 个词</li>
+</ul>
+<h3 id="修饰语">修饰语</h3>
+<p>你可以用修饰语改变“名词”的意义。修饰语有 <code>i</code>，表示“内部”或者“在内“，和 <code>a</code>， 表示”周围“。</p>
+<ul>
+<li><code>ci(</code> 改变当前括号内的内容</li>
+<li><code>ci[</code> 改变当前方括号内的内容</li>
+<li><code>da'</code> 删除一个单引号字符串， 包括周围的单引号</li>
+</ul>
+<h3 id="命令行">命令行</h3>
+<ul>
+<li><code>:q</code> 退出（关闭窗口）</li>
+<li><code>:w</code> 保存（写）</li>
+<li><code>:wq</code> 保存然后退出</li>
+<li><code>:e {文件名}</code> 打开要编辑的文件</li>
+<li><code>:ls</code> 显示打开的缓存</li>
+<li><code>:help {标题}</code> 打开帮助文档
+<ul>
+<li><code>:help :w</code> 打开 <code>:w</code> 命令的帮助文档</li>
+<li><code>:help w</code> 打开 <code>w</code> 移动的帮助文档</li>
+</ul>
+</li>
+</ul>
+<h3 id="搜索和替换">搜索和替换</h3>
+<p><code>:s</code> （替换）命令（<a href="http://vim.wikia.com/wiki/Search_and_replace" target="_blank" rel="noopener noreffer ">文档</a>）。</p>
+<ul>
+<li><code>%s/foo/bar/g</code>
+<ul>
+<li>在整个文件中将 foo 全局替换成 bar</li>
+</ul>
+</li>
+<li><code>%s/\[.*\](https://missing-semester-cn.github.io/2020/editors/\(.*\))/\1/g</code>
+<ul>
+<li>将有命名的 Markdown 链接替换成简单 URLs</li>
+</ul>
+</li>
+</ul>
+<h3 id="多窗口">多窗口</h3>
+<ul>
+<li>用 <code>:sp</code> / <code>:vsp</code> 来分割窗口</li>
+<li>同一个缓存可以在多个窗口中显示。</li>
+</ul>
+<h3 id="宏">宏</h3>
+<ul>
+<li><code>q{字符}</code> 来开始在寄存器<code>{字符}</code>中录制宏</li>
+<li><code>q</code>停止录制</li>
+<li><code>@{字符}</code> 重放宏</li>
+<li>宏的执行遇错误会停止</li>
+<li><code>{计数}@{字符}</code>执行一个宏{计数}次</li>
+<li>宏可以递归
+<ul>
+<li>首先用<code>q{字符}q</code>清除宏</li>
+<li>录制该宏，用 <code>@{字符}</code> 来递归调用该宏 （在录制完成之前不会有任何操作）</li>
+</ul>
+</li>
+</ul>
+<h2 id="自定义-vim">自定义 Vim</h2>
+<p>Vim 由一个位于 <code>~/.vimrc</code> 的文本配置文件（包含 Vim 脚本命令）。你可能会启用很多基本 设置。</p>
+<p>我们提供一个文档详细的基本设置，你可以用它当作你的初始设置。我们推荐使用这个设置因为 它修复了一些 Vim 默认设置奇怪行为。 <strong>在<a href="https://missing-semester-cn.github.io/2020/files/vimrc" target="_blank" rel="noopener noreffer ">这儿</a> 下载我们的设置，然后将它保存成 <code>~/.vimrc</code>.</strong></p>
+<p>Vim 能够被重度自定义，花时间探索自定义选项是值得的。你可以参考其他人的在 GitHub 上共享的设置文件，比如，你的授课人的 Vim 设置 (<a href="https://github.com/anishathalye/dotfiles/blob/master/vimrc" target="_blank" rel="noopener noreffer ">Anish</a>, <a href="https://github.com/jonhoo/configs/blob/master/editor/.config/nvim/init.vim" target="_blank" rel="noopener noreffer ">Jon</a> (uses <a href="https://neovim.io/" target="_blank" rel="noopener noreffer ">neovim</a>), <a href="https://github.com/JJGO/dotfiles/blob/master/vim/.vimrc" target="_blank" rel="noopener noreffer ">Jose</a>)。 有很多好的博客文章也聊到了这个话题。尽量不要复制粘贴别人的整个设置文件， 而是阅读和理解它，然后采用对你有用的部分。</p>
+<h2 id="还有更多的-vim-小窍门吗">还有更多的 Vim 小窍门吗？</h2>
+<ul>
+<li>插件 - 花时间去探索插件。有很多不错的插件修复了 vim 的缺陷或者增加了能够与现有 vim 工作流结合的新功能。关于这部分内容，资源是<a href="https://vimawesome.com/" target="_blank" rel="noopener noreffer ">VimAwesome</a> 和其他程序员的 dotfiles。</li>
+<li>标记 - 在 vim 里你可以使用 <code>m&lt;X&gt;</code> 为字母 <code>X</code> 做标记，之后你可以通过 <code>'&lt;X&gt;</code> 回到标记位置。这可以让你快速定位到文件内或文件间的特定位置。</li>
+<li>导航 - <code>Ctrl+O</code> 和 <code>Ctrl+I</code> 命令可以使你在最近访问位置前后移动。</li>
+<li>撤销树 - vim 有不错的更改跟踪机制，不同于其他的编辑器，vim 存储变更树，因此即使你撤销后做了一些修改，你仍然可以通过撤销树的导航回到初始状态。一些插件比如 <a href="https://github.com/sjl/gundo.vim" target="_blank" rel="noopener noreffer ">gundo.vim</a> 和 <a href="https://github.com/mbbill/undotree" target="_blank" rel="noopener noreffer ">undotree</a> 通过图形化来展示撤销树。</li>
+<li>时间撤销 - <code>:earlier</code> 和 <code>:later</code> 命令使得你可以用时间而非某一时刻的更改来定位文件。</li>
+<li><a href="https://vim.fandom.com/wiki/Using_undo_branches#Persistent_undo" target="_blank" rel="noopener noreffer ">持续撤销</a> - 是一个默认未被开启的 vim 的内置功能，它在 vim 启动之间保存撤销历史，需要配置在 <code>.vimrc</code> 目录下的<code>undofile</code> 和 <code>undodir</code>，vim 会保存每个文件的修改历史。</li>
+<li>热键（Leader Key） - 热键是一个用于用户自定义配置命令的特殊按键。这种模式通常是按下后释放这个按键（通常是空格键）并与其他的按键组合去实现一个特殊的命令。插件也会用这些按键增加它们的功能，例如，插件 UndoTree 使用 <code>&lt;Leader&gt; U</code> 去打开撤销树。</li>
+<li>高级文本对象 - 文本对象比如搜索也可以用 vim 命令构成。例如，<code>d/&lt;pattern&gt;</code> 会删除下一处匹配 pattern 的字符串，<code>cgn</code> 可以用于更改上次搜索的关键字。</li>
+</ul>
+<h2 id="扩展-vim">扩展 Vim</h2>
+<p>Vim 有很多扩展插件。跟很多互联网上已经过时的建议相反，你<em>不</em>需要在 Vim 使用一个插件 管理器（从 Vim 8.0 开始）。你可以使用内置的插件管理系统。只需要创建一个 <code>~/.vim/pack/vendor/start/</code> 的文件夹，然后把插件放到这里（比如通过 <code>git clone</code>）。</p>
+<p>以下是一些推荐的插件：</p>
+<ul>
+<li><a href="https://github.com/ctrlpvim/ctrlp.vim" target="_blank" rel="noopener noreffer ">ctrlp.vim</a>: 模糊文件查找</li>
+<li><a href="https://github.com/mileszs/ack.vim" target="_blank" rel="noopener noreffer ">ack.vim</a>: 代码搜索</li>
+<li><a href="https://github.com/scrooloose/nerdtree" target="_blank" rel="noopener noreffer ">nerdtree</a>: 文件浏览器</li>
+<li><a href="https://github.com/easymotion/vim-easymotion" target="_blank" rel="noopener noreffer ">vim-easymotion</a>: 魔术操作</li>
+</ul>
+<p>我们尽量避免在这里提供一份冗长的插件列表。你可以查看讲师们的开源的配置文件 (<a href="https://github.com/anishathalye/dotfiles" target="_blank" rel="noopener noreffer ">Anish</a>, <a href="https://github.com/jonhoo/configs" target="_blank" rel="noopener noreffer ">Jon</a>, <a href="https://github.com/JJGO/dotfiles" target="_blank" rel="noopener noreffer ">Jose</a>) 来看看我们使用的其他插件。 浏览 <a href="https://vimawesome.com/" target="_blank" rel="noopener noreffer ">Vim Awesome</a> 来了解一些很棒的插件。 这个话题也有很多博客文章：搜索 “best Vim plugins”。</p>
+<h2 id="其他程序的-vim-模式">其他程序的 Vim 模式</h2>
+<p>很多工具提供了 Vim 模式。这些 Vim 模式的质量参差不齐；取决于具体工具，有的提供了 很多酷炫的 Vim 功能，但是大多数对基本功能支持的很好。</p>
+<h3 id="shell">Shell</h3>
+<p>如果你是一个 Bash 用户，用 <code>set -o vi</code>。如果你用 Zsh：<code>bindkey -v</code>，或者用插件<a href="https://github.com/jeffreytse/zsh-vi-mode" target="_blank" rel="noopener noreffer ">zsh-vi-mode</a>。Fish 用 <code>fish_vi_key_bindings</code>。另外，不管利用什么 shell，你可以 <code>export EDITOR=vim</code>。 这是一个用来决定当一个程序需要启动编辑时启动哪个的环境变量。 例如，<code>git</code> 会使用这个编辑器来编辑 commit 信息。</p>
+<h3 id="readline">Readline</h3>
+<p>很多程序使用 <a href="https://tiswww.case.edu/php/chet/readline/rltop.html" target="_blank" rel="noopener noreffer ">GNU Readline</a> 库来作为 它们的命令控制行界面。Readline 也支持基本的 Vim 模式， 可以通过在 <code>~/.inputrc</code> 添加如下行开启：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">set editing-mode vi
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>比如，在这个设置下，Python REPL 会支持 Vim 快捷键。</p>
+<h3 id="其他">其他</h3>
+<p>甚至有 Vim 的网页浏览快捷键 <a href="http://vim.wikia.com/wiki/Vim_key_bindings_for_web_browsers" target="_blank" rel="noopener noreffer ">browsers</a>, 受欢迎的有 用于 Google Chrome 的 <a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en" target="_blank" rel="noopener noreffer ">Vimium</a> 和用于 Firefox 的 <a href="https://github.com/tridactyl/tridactyl" target="_blank" rel="noopener noreffer ">Tridactyl</a>。 你甚至可以在 <a href="https://github.com/lambdalisue/jupyter-vim-binding" target="_blank" rel="noopener noreffer ">Jupyter notebooks</a> 中用 Vim 快捷键。 <a href="https://reversed.top/2016-08-13/big-list-of-vim-like-software" target="_blank" rel="noopener noreffer ">这个列表</a> 中列举了支持类 vim 键位绑定的软件。</p>
+<h2 id="例子">例子</h2>
+<h3 id="fizz_buzz">fizz_buzz</h3>
+<p>这里是一个有问题的 <a href="https://en.wikipedia.org/wiki/Fizz_buzz" target="_blank" rel="noopener noreffer ">fizz buzz</a> 实现：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def fizz_buzz(limit):
+</span></span><span class="line"><span class="cl">    for i in range(limit):
+</span></span><span class="line"><span class="cl">        if i % 3 == 0:
+</span></span><span class="line"><span class="cl">            print(&#39;fizz&#39;)
+</span></span><span class="line"><span class="cl">        if i % 5 == 0:
+</span></span><span class="line"><span class="cl">            print(&#39;fizz&#39;)
+</span></span><span class="line"><span class="cl">        if i % 3 and i % 5:
+</span></span><span class="line"><span class="cl">            print(i)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def main():
+</span></span><span class="line"><span class="cl">    fizz_buzz(10)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们会修复以下问题：</p>
+<ul>
+<li>主函数没有被调用</li>
+<li>从 0 而不是 1 开始</li>
+<li>在 15 的整数倍的时候在不用行打印 “fizz” 和 “buzz”</li>
+<li>在 5 的整数倍的时候打印 “fizz”</li>
+<li>采用硬编码的参数 10 而不是从命令控制行读取参数</li>
+<li>主函数没有被调用
+<ul>
+<li><code>G</code> 文件尾</li>
+<li><code>o</code> 向下打开一个新行</li>
+<li>输入 “if <strong>name</strong> …”</li>
+</ul>
+</li>
+<li>从 0 而不是 1 开始
+<ul>
+<li>搜索 <code>/range</code></li>
+<li><code>ww</code> 向前移动两个词</li>
+<li><code>i</code> 插入文字， “1, “</li>
+<li><code>ea</code> 在 limit 后插入， “+1”</li>
+</ul>
+</li>
+<li>在新的一行 “fizzbuzz”
+<ul>
+<li><code>jj$i</code> 插入文字到行尾</li>
+<li>加入 “, end=’’”</li>
+<li><code>jj.</code> 重复第二个打印</li>
+<li><code>jjo</code> 在 if 打开一行</li>
+<li>加入 “else: print()”</li>
+</ul>
+</li>
+<li>fizz fizz
+<ul>
+<li><code>ci'</code> 变到 fizz</li>
+</ul>
+</li>
+<li>命令控制行参数
+<ul>
+<li><code>ggO</code> 向上打开</li>
+<li>“import sys”</li>
+<li><code>/10</code></li>
+<li><code>ci(</code> to “int(sys.argv[1])”</li>
+</ul>
+</li>
+</ul>
+<h3 id="xml-转成-json">xml 转成 json</h3>
+<p>将 xml 转成 json (<a href="https://missing-semester-cn.github.io/2020/files/example-data.xml" target="_blank" rel="noopener noreffer ">file</a>)</p>
+<ul>
+<li>一个有 “name” / “email” 键对象的数组</li>
+<li>用一个 Python 程序？</li>
+<li>用 sed / 正则表达式
+<ul>
+<li><code>g/people/d</code></li>
+<li><code>%s/&lt;person&gt;/{/g</code></li>
+<li><code>%s/&lt;name&gt;\(.*\)&lt;\/name&gt;/&quot;name&quot;: &quot;\1&quot;,/g</code></li>
+<li>…</li>
+</ul>
+</li>
+<li>Vim 命令 / 宏
+<ul>
+<li><code>Gdd</code>, <code>ggdd</code> 删除第一行和最后一行</li>
+<li>格式化最后一个元素的宏 （寄存器 <code>e</code>）
+<ul>
+<li>跳转到有 <code>&lt;name&gt;</code> 的行</li>
+<li><code>qe^r&quot;f&gt;s&quot;: &quot;&lt;ESC&gt;f&lt;C&quot;&lt;ESC&gt;q</code></li>
+</ul>
+</li>
+<li>格式化一个的宏
+<ul>
+<li>跳转到有 <code>&lt;person&gt;</code> 的行</li>
+<li><code>qpS{&lt;ESC&gt;j@eA,&lt;ESC&gt;j@ejS},&lt;ESC&gt;q</code></li>
+</ul>
+</li>
+<li>格式化一个标签然后转到另外一个的宏
+<ul>
+<li>跳转到有 <code>&lt;person&gt;</code> 的行</li>
+<li><code>qq@pjq</code></li>
+</ul>
+</li>
+<li>执行宏到文件尾
+<ul>
+<li><code>999@q</code></li>
+</ul>
+</li>
+<li>手动移除最后的 <code>,</code> 然后加上 <code>[</code> 和 <code>]</code> 分隔符</li>
+</ul>
+</li>
+</ul>
+<h2 id="more">More</h2>
+<h3 id="todo">TODO</h3>
+<ul>
+<li>持续使用，遇到麻烦的时候，去探索优化一下。</li>
+<li>整理技巧、拓展和配置等</li>
+</ul>
+<h3 id="ref">Ref</h3>
+<ul>
+<li><code>vimtutor</code> 是一个 Vim 安装时自带的教程，80 列，24 行） 终端窗口看起来效果最好</li>
+<li><a href="https://vim-adventures.com/" target="_blank" rel="noopener noreffer ">Vim Adventures</a> 是一个学习使用 Vim 的游戏</li>
+<li><a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki" target="_blank" rel="noopener noreffer ">Vim Tips Wiki</a></li>
+<li><a href="https://vimways.org/2019/" target="_blank" rel="noopener noreffer ">Vim Advent Calendar</a> 有很多 Vim 小技巧</li>
+<li><a href="http://www.vimgolf.com/" target="_blank" rel="noopener noreffer ">Vim Golf</a> 是用 Vim 的用户界面作为程序语言的 <a href="https://en.wikipedia.org/wiki/Code_golf" target="_blank" rel="noopener noreffer ">code golf</a></li>
+<li><a href="https://vi.stackexchange.com/" target="_blank" rel="noopener noreffer ">Vi/Vim Stack Exchange</a></li>
+<li><a href="http://vimcasts.org/" target="_blank" rel="noopener noreffer ">Vim Screencasts</a></li>
+<li><a href="https://pragprog.com/titles/dnvim2/" target="_blank" rel="noopener noreffer ">Practical Vim</a>（书籍）</li>
+<li><a href="https://www.vim.org/" target="_blank" rel="noopener noreffer ">welcome home : vim online</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-07-22</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2023-07-22-vim/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/vim/">Vim</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2023-06-13-debug/" class="prev" rel="prev" title="调试代码常用方法"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>调试代码常用方法</a>
+            <a href="/2023-09-09-encrypt/" class="next" rel="next" title="密码学入门">密码学入门<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">浙ICP备19014045号-2</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.cd0d0b6e50ff01ff2f3a9a70d7cfb66a7c6cb9acf7a566325568be6d3bd31fc4.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.ae2da1bd62c6469ee27770ad1cddf2e8296d8a7f6d85b091463e5200c5e320af.js" integrity="sha256-ri2hvWLGRp7id3CtHN3y6Cltin9thbCRRj5SAMXjIK8="></script><script type="text/javascript" src="/lib/lunr/lunr.min.08a93c0120364b01159db3c287f39b2180bb740334472bda0675bd3f18981676.js" integrity="sha256-CKk8ASA2SwEVnbPCh/ObIYC7dAM0RyvaBnW9PxiYFnY="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.e55842a856a6d829feca3c3ad736c136b6c7549e9247274f78aa296259e06e24.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

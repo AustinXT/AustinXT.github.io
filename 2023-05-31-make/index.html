@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>make 构建工具介绍 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="make 构建工具介绍" />
+<meta property="og:description" content="构建工具通常需要定义依赖、目标和规则。 make 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。make并不完美，但是对于中" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://austinxt.github.io/2023-05-31-make/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-31T00:00:00+08:00" />
+<meta property="article:modified_time" content="2023-05-31T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
+
+<meta name="twitter:title" content="make 构建工具介绍"/>
+<meta name="twitter:description" content="构建工具通常需要定义依赖、目标和规则。 make 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。make并不完美，但是对于中"/>
+<meta name="application-name" content="夜航星">
+<meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2023-05-31-make/" /><link rel="prev" href="https://austinxt.github.io/2023-05-27-cmd-env/" /><link rel="next" href="https://austinxt.github.io/2023-06-13-debug/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "make 构建工具介绍",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/austinxt.github.io\/2023-05-31-make\/"
+        },"genre": "posts","keywords": "make","wordcount":  1478 ,
+        "url": "https:\/\/austinxt.github.io\/2023-05-31-make\/","datePublished": "2023-05-31T00:00:00+08:00","dateModified": "2023-05-31T00:00:00+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "夜航星"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="夜航星">夜航星</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="夜航星">夜航星</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">make 构建工具介绍</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-05-31">2023-05-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1478 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><p>构建工具通常需要定义<em>依赖</em>、<em>目标</em>和<em>规则</em>。</p>
+<p><code>make</code> 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。<code>make</code>并不完美，但是对于中小型项目来说，它已经足够好了。当您执行 <code>make</code> 时，它会去参考当前目录下名为 <code>Makefile</code> 的文件。所有构建目标、相关依赖和规则都需要在该文件中定义，它看上去是这样的：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nf">paper.pdf</span><span class="o">:</span> <span class="n">paper</span>.<span class="n">tex</span> <span class="n">plot</span>-<span class="n">data</span>.<span class="n">png</span>
+</span></span><span class="line"><span class="cl">	pdflatex paper.tex
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">plot-%.png</span><span class="o">:</span> %.<span class="n">dat</span> <span class="n">plot</span>.<span class="n">py</span>
+</span></span><span class="line"><span class="cl">	./plot.py -i <span class="nv">$*</span>.dat -o <span class="nv">$@</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">clean</span>
+</span></span><span class="line"><span class="cl"><span class="nf">clean</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	rm *.pdf *.aux *.log *.png
+</span></span><span class="line"><span class="cl">	<span class="c1">#git ls-files -o | xargs rm -f</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个文件中的指令，即如何使用右侧文件构建左侧文件的规则。或者，换句话说，冒号左侧的是构建目标，冒号右侧的是构建它所需的依赖。缩进的部分是从依赖构建目标时需要用到的一段程序。在 <code>make</code> 中，第一条指令还指明了构建的目的，如果您使用不带参数的 <code>make</code>，这便是我们最终的构建结果。或者，您可以使用这样的命令来构建其他目标：<code>make plot-data.png</code>。</p>
+<p>规则中的 <code>%</code> 是一种模式，它会匹配其左右两侧相同的字符串。例如，如果目标是 <code>plot-foo.png</code>， <code>make</code> 会去寻找 <code>foo.dat</code> 和 <code>plot.py</code> 作为依赖。现在，让我们看看如果在一个空的源码目录中执行<code>make</code> 会发生什么？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">make: *** No rule to make target <span class="s1">&#39;paper.tex&#39;</span>, needed by <span class="s1">&#39;paper.pdf&#39;</span>.  Stop.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>make</code> 会告诉我们，为了构建出<code>paper.pdf</code>，它需要 <code>paper.tex</code>，但是并没有一条规则能够告诉它如何构建该文件。让我们构建它吧！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$touch</span> paper.tex
+</span></span><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">make: *** No rule to make target <span class="s1">&#39;plot-data.png&#39;</span>, needed by <span class="s1">&#39;paper.pdf&#39;</span>.  Stop.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>哟，有意思，我们是<strong>有</strong>构建 <code>plot-data.png</code> 的规则的，但是这是一条模式规则。因为源文件<code>data.dat</code> 并不存在，因此 <code>make</code> 就会告诉您它不能构建 <code>plot-data.png</code>，让我们创建这些文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$cat</span> paper.tex
+</span></span><span class="line"><span class="cl"><span class="se">\d</span>ocumentclass<span class="o">{</span>article<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="se">\u</span>sepackage<span class="o">{</span>graphicx<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="se">\b</span>egin<span class="o">{</span>document<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="se">\i</span>ncludegraphics<span class="o">[</span><span class="nv">scale</span><span class="o">=</span>0.65<span class="o">]{</span>plot-data.png<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="se">\e</span>nd<span class="o">{</span>document<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$cat</span> plot.py
+</span></span><span class="line"><span class="cl"><span class="c1">#!/usr/bin/env python</span>
+</span></span><span class="line"><span class="cl">import matplotlib
+</span></span><span class="line"><span class="cl">import matplotlib.pyplot as plt
+</span></span><span class="line"><span class="cl">import numpy as np
+</span></span><span class="line"><span class="cl">import argparse
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">parser</span> <span class="o">=</span> argparse.ArgumentParser<span class="o">()</span>
+</span></span><span class="line"><span class="cl">parser.add_argument<span class="o">(</span><span class="s1">&#39;-i&#39;</span>, <span class="nv">type</span><span class="o">=</span>argparse.FileType<span class="o">(</span><span class="s1">&#39;r&#39;</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl">parser.add_argument<span class="o">(</span><span class="s1">&#39;-o&#39;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">args</span> <span class="o">=</span> parser.parse_args<span class="o">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">data</span> <span class="o">=</span> np.loadtxt<span class="o">(</span>args.i<span class="o">)</span>
+</span></span><span class="line"><span class="cl">plt.plot<span class="o">(</span>data<span class="o">[</span>:, 0<span class="o">]</span>, data<span class="o">[</span>:, 1<span class="o">])</span>
+</span></span><span class="line"><span class="cl">plt.savefig<span class="o">(</span>args.o<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$cat</span> data.dat
+</span></span><span class="line"><span class="cl"><span class="m">1</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="m">2</span> <span class="m">2</span>
+</span></span><span class="line"><span class="cl"><span class="m">3</span> <span class="m">3</span>
+</span></span><span class="line"><span class="cl"><span class="m">4</span> <span class="m">4</span>
+</span></span><span class="line"><span class="cl"><span class="m">5</span> <span class="m">8</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>当我们执行 <code>make</code> 时会发生什么？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">./plot.py -i data.dat -o plot-data.png
+</span></span><span class="line"><span class="cl">pdflatex paper.tex
+</span></span><span class="line"><span class="cl">... lots of output ...
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>看！PDF ！</p>
+<p>如果再次执行 <code>make</code> 会怎样？</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">make: <span class="s1">&#39;paper.pdf&#39;</span> is up to date.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>什么事情都没做！为什么？好吧，因为它什么都不需要做。**make 回去检查之前的构建是因其依赖改变而需要被更新。**让我们试试修改 <code>paper.tex</code> 在重新执行 <code>make</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$vim</span> paper.tex <span class="c1"># edit</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">pdflatex paper.tex ...
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意 <code>make</code> 并<strong>没有</strong>重新构建 <code>plot.py</code>，因为没必要；<code>plot-data.png</code> 的所有依赖都没有发生改变。</p>
+<p>更多用 make 构建目标参考 <a href="https://www.gnu.org/software/make/manual/html_node/Standard-Targets.html#Standard-Targets" target="_blank" rel="noopener noreffer ">Standard Targets (GNU make)</a>。</p>
+<ol>
+<li>大多数的 makefiles 都提供了 一个名为 <code>clean</code> 的构建目标，这并不是说我们会生成一个名为<code>clean</code>的文件，而是我们可以使用它清理文件，让 make 重新构建。您可以理解为它的作用是“撤销”所有构建步骤。在上面的 makefile 中为<code>paper.pdf</code>实现一个<code>clean</code> 目标。您需要将构建目标设置为<a href="https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html" target="_blank" rel="noopener noreffer ">phony</a>。您也许会发现 <a href="https://git-scm.com/docs/git-ls-files" target="_blank" rel="noopener noreffer "><code>git ls-files</code></a> 子命令很有用。其他一些有用的 make 构建目标可以在<a href="https://www.gnu.org/software/make/manual/html_node/Standard-Targets.html#Standard-Targets" target="_blank" rel="noopener noreffer ">这里</a>找到；</li>
+<li>指定版本要求的方法很多，让我们学习一下 <a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html" target="_blank" rel="noopener noreffer ">Rust 的构建系统</a>的依赖管理。大多数的包管理仓库都支持类似的语法。对于每种语法(尖号、波浪号、通配符、比较、乘积)，构建一种场景使其具有实际意义；</li>
+<li>Git 可以作为一个简单的 CI 系统来使用，在任何 git 仓库中的 <code>.git/hooks</code> 目录中，您可以找到一些文件（当前处于未激活状态），它们的作用和脚本一样，当某些事件发生时便可以自动执行。请编写一个<a href="https://git-scm.com/docs/githooks#_pre_commit" target="_blank" rel="noopener noreffer "><code>pre-commit</code></a> 钩子，它会在提交前执行 <code>make paper.pdf</code>并在出现构建失败的情况拒绝您的提交。这样做可以避免产生包含不可构建版本的提交信息；</li>
+<li>基于 <a href="https://pages.github.com/" target="_blank" rel="noopener noreffer ">GitHub Pages</a> 创建任意一个可以自动发布的页面。添加一个<a href="https://github.com/features/actions" target="_blank" rel="noopener noreffer ">GitHub Action</a> 到该仓库，对仓库中的所有 shell 文件执行 <code>shellcheck</code>(<a href="https://github.com/marketplace/actions/shellcheck" target="_blank" rel="noopener noreffer ">方法之一</a>)；</li>
+<li><a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/building-actions" target="_blank" rel="noopener noreffer ">构建属于您的</a> GitHub action，对仓库中所有的<code>.md</code>文件执行<a href="http://proselint.com/" target="_blank" rel="noopener noreffer "><code>proselint</code></a> 或 <a href="https://github.com/btford/write-good" target="_blank" rel="noopener noreffer "><code>write-good</code></a>，在您的仓库中开启这一功能，提交一个包含错误的文件看看该功能是否生效。</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-05-31</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2023-05-31-make/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/make/">make</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2023-05-27-cmd-env/" class="prev" rel="prev" title="命令行环境使用指南"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>命令行环境使用指南</a>
+            <a href="/2023-06-13-debug/" class="next" rel="next" title="调试代码常用方法">调试代码常用方法<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">浙ICP备19014045号-2</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.cd0d0b6e50ff01ff2f3a9a70d7cfb66a7c6cb9acf7a566325568be6d3bd31fc4.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.ae2da1bd62c6469ee27770ad1cddf2e8296d8a7f6d85b091463e5200c5e320af.js" integrity="sha256-ri2hvWLGRp7id3CtHN3y6Cltin9thbCRRj5SAMXjIK8="></script><script type="text/javascript" src="/lib/lunr/lunr.min.08a93c0120364b01159db3c287f39b2180bb740334472bda0675bd3f18981676.js" integrity="sha256-CKk8ASA2SwEVnbPCh/ObIYC7dAM0RyvaBnW9PxiYFnY="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.e55842a856a6d829feca3c3ad736c136b6c7549e9247274f78aa296259e06e24.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+</html>

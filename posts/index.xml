@@ -21,6 +21,78 @@
     <description><![CDATA[7 月末和 XH 约了八月底见面，没想到她还记得。之前聊天的印象是「自律、自由、洒脱的人，帮我坚定了坚持锻炼的决心。XH 是我以前不敢接触的那类人，很]]></description>
 </item>
 <item>
+    <title>Git 数据模型与命令行</title>
+    <link>https://austinxt.github.io/2023-09-10-git/</link>
+    <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-09-10-git/</guid>
+    <description><![CDATA[学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。 概览 版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件]]></description>
+</item>
+<item>
+    <title>密码学入门</title>
+    <link>https://austinxt.github.io/2023-09-09-encrypt/</link>
+    <pubDate>Sat, 09 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-09-09-encrypt/</guid>
+    <description><![CDATA[散列函数 密码散列函数 (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下： 1 hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;]]></description>
+</item>
+<item>
+    <title>Vim 学习指南</title>
+    <link>https://austinxt.github.io/2023-07-22-vim/</link>
+    <pubDate>Sat, 22 Jul 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-07-22-vim/</guid>
+    <description><![CDATA[Vim 是一个能跟上你思维速度的编辑器。 Vim 编辑器学习的步骤为： 理解编辑器的设计理念和基本原理； 学习命令，浏览教程，完成 vimtutor； 情景练习；]]></description>
+</item>
+<item>
+    <title>调试代码常用方法</title>
+    <link>https://austinxt.github.io/2023-06-13-debug/</link>
+    <pubDate>Tue, 13 Jun 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-06-13-debug/</guid>
+    <description><![CDATA[调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。 打印调试法与日志 最有]]></description>
+</item>
+<item>
+    <title>make 构建工具介绍</title>
+    <link>https://austinxt.github.io/2023-05-31-make/</link>
+    <pubDate>Wed, 31 May 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-05-31-make/</guid>
+    <description><![CDATA[构建工具通常需要定义依赖、目标和规则。 make 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。make并不完美，但是对于中]]></description>
+</item>
+<item>
+    <title>命令行环境使用指南</title>
+    <link>https://austinxt.github.io/2023-05-27-cmd-env/</link>
+    <pubDate>Sat, 27 May 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-05-27-cmd-env/</guid>
+    <description><![CDATA[无界面情况下的唯一选择 命令行环境的学习主要包括 任务控制：Shell 操作和进程的关系-&gt;需要了解进程信号 终端多路复用：如何在终端完成多面]]></description>
+</item>
+<item>
+    <title>Shell 命令行数据处理</title>
+    <link>https://austinxt.github.io/2023-01-11-data-analysis/</link>
+    <pubDate>Wed, 11 Jan 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
+    <description><![CDATA[Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。 学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并]]></description>
+</item>
+<item>
+    <title>常用性能分析工具</title>
+    <link>https://austinxt.github.io/2022-12-10-profile/</link>
+    <pubDate>Sat, 10 Dec 2022 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2022-12-10-profile/</guid>
+    <description><![CDATA[学习性能分析，最开始是查看执行时间，然后用工具帮助排查问题，用资源监控辅助。 即使您的代码能够像您期望的一样运行，但是如果它消耗了您全部的 CPU 和]]></description>
+</item>
+<item>
+    <title>Shell 工具和脚本入门</title>
+    <link>https://austinxt.github.io/2022-11-12-shell/</link>
+    <pubDate>Sat, 12 Nov 2022 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2022-11-12-shell/</guid>
+    <description><![CDATA[计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。 Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;工具，]]></description>
+</item>
+<item>
     <title>硬派健身要点</title>
     <link>https://austinxt.github.io/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/</link>
     <pubDate>Tue, 13 Sep 2022 00:00:00 &#43;0800</pubDate>
@@ -35,6 +107,14 @@
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</guid>
     <description><![CDATA[跨境电商与国际物流读后感。 跨境电商的含义和诞生？ 跨境电商，英文通常翻译为 Cross-border eCommerce（跨境网络零售）。广义上的跨境电商包括跨境贸易在]]></description>
+</item>
+<item>
+    <title>TCP 和 UDP 的区别？</title>
+    <link>https://austinxt.github.io/2022-03-23-tcp-udp/</link>
+    <pubDate>Wed, 23 Mar 2022 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2022-03-23-tcp-udp/</guid>
+    <description><![CDATA[tcp/udp的区别?tcp粘包是怎么回事，如何处理?udp有粘包吗? 什么是 TCP？ 全称 Transmission Control Protocol，是一种传输层协议（为两个主机中]]></description>
 </item>
 <item>
     <title>13F 数据分析</title>
@@ -323,46 +403,6 @@
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2017-04-03-learning-american-english-1/</guid>
     <description><![CDATA[回想初学英语那会儿，老师用方言版的英语领着读“Good morning”，我就在课本上记下“gu de mo ning”，还暗自庆幸找到了一个好方法。这]]></description>
-</item>
-<item>
-    <title>台大半年</title>
-    <link>https://austinxt.github.io/2017-03-06-half-year-in-ntu/</link>
-    <pubDate>Mon, 06 Mar 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-03-06-half-year-in-ntu/</guid>
-    <description><![CDATA[台大的这一学期，总的来说过得很充实。学期初的前四分之一，放了两回假，功课不太紧张，花点时间收尾暑假的学习，去了趟花莲。之后一直到期末都是不变]]></description>
-</item>
-<item>
-    <title>一个人的阅读史（一）</title>
-    <link>https://austinxt.github.io/2017-02-06-reading-history-1/</link>
-    <pubDate>Mon, 06 Feb 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-02-06-reading-history-1/</guid>
-    <description><![CDATA[史之为用，其利甚博，乃生人之急务，为国家之要到。——刘知几《史通》 从泥塘里起步 小学六年级搬到新教学楼，教室刚好跟图书室同一层，我的阅读便是从]]></description>
-</item>
-<item>
-    <title>看了五遍 3 Idiots</title>
-    <link>https://austinxt.github.io/2016-12-28-3-idiots/</link>
-    <pubDate>Wed, 28 Dec 2016 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2016-12-28-3-idiots/</guid>
-    <description><![CDATA[喜剧表色 《3 Idiots》首先是一部出色的喜剧，理想与现实相交错，还带有一点辛酸。影片在法汉挑起右眼的一刻一扫之前的沉闷和紧张，正式进入喜剧]]></description>
-</item>
-<item>
-    <title>明托金字塔原理</title>
-    <link>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</link>
-    <pubDate>Sun, 11 Sep 2016 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</guid>
-    <description><![CDATA[此书全名是《金字塔原理，思考、写作和解决问题的逻辑》，书名看似高大上，小编也是被它忽悠了。正如书名 XXX 原理一样，书的内容也很枯燥无味，小编强打]]></description>
-</item>
-<item>
-    <title>制度的得利益者</title>
-    <link>https://austinxt.github.io/2016-02-16-1587/</link>
-    <pubDate>Tue, 16 Feb 2016 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2016-02-16-1587/</guid>
-    <description><![CDATA[万历十五年，平平淡淡，毫不起眼的一年，却为最后一个汉人统治王朝的衰败拉开了序幕。 本书共七章，大致可以分为三部分：皇帝、首辅和突出人物。 万历皇]]></description>
 </item>
 </channel>
 </rss>

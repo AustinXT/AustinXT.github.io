@@ -4,7 +4,15 @@
         <link>https://austinxt.github.io/tags/git/</link>
         <description>Git - Tag - 夜航星</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 10 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
+    <title>Git 数据模型与命令行</title>
+    <link>https://austinxt.github.io/2023-09-10-git/</link>
+    <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-09-10-git/</guid>
+    <description><![CDATA[学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。 概览 版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件]]></description>
+</item>
+<item>
     <title>Git 使用指南</title>
     <link>https://austinxt.github.io/2019-03-26-git/</link>
     <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>

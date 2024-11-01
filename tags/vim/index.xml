@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Vim - Tag - 夜航星</title>
+        <link>https://austinxt.github.io/tags/vim/</link>
+        <description>Vim - Tag - 夜航星</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
+            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 22 Jul 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/vim/" rel="self" type="application/rss+xml" /><item>
+    <title>Vim 学习指南</title>
+    <link>https://austinxt.github.io/2023-07-22-vim/</link>
+    <pubDate>Sat, 22 Jul 2023 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2023-07-22-vim/</guid>
+    <description><![CDATA[Vim 是一个能跟上你思维速度的编辑器。 Vim 编辑器学习的步骤为： 理解编辑器的设计理念和基本原理； 学习命令，浏览教程，完成 vimtutor； 情景练习；]]></description>
+</item>
+</channel>
+</rss>
