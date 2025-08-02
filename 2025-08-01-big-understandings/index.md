@@ -223,4 +223,5 @@ quadrantChart
 ## ChangeLog
 
 - 2025-08-01 初稿
+- 2025-08-02 润色，处理 mermaid 问题
 
