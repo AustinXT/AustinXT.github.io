@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>积极心理学 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</link>
-        <description>积极心理学 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 11 Apr 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/" rel="self" type="application/rss+xml" /><item>
-    <title>初识积极心理学</title>
-    <link>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</link>
-    <pubDate>Sat, 11 Apr 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
-    <description><![CDATA[积极心理学是一门怎样的学科，主要研究的是哪些问题？ 定义 积极心理学是研究人的优势与幸福的一门心理学学科。积极心理学通过快乐、参与和意义来帮助人]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>积极心理学 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+    <description>Recent content in 积极心理学 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>初识积极心理学</title>
+      <link>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
+      <description>&lt;h2 id=&#34;积极心理学是一门怎样的学科主要研究的是哪些问题&#34;&gt;积极心理学是一门怎样的学科，主要研究的是哪些问题？&lt;/h2&gt;&#xA;&lt;h3 id=&#34;定义&#34;&gt;定义&lt;/h3&gt;&#xA;&lt;p&gt;积极心理学是研究人的优势与幸福的一门心理学学科。积极心理学通过快乐、参与和意义来帮助人们通往幸福和快乐。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;积极心理学（positive psychology）是一门研究如何正确把握人生的科学，关注从生到死亡的所有人生阶段，关注那些可以提升生命价值的事件。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

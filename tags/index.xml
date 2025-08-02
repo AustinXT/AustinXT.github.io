@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 夜航星</title>
+    <link>https://austinxt.github.io/tags/</link>
+    <description>Recent content in Tags on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>学习，全局认识</title>
+      <link>https://austinxt.github.io/tags/%E5%AD%A6%E4%B9%A0%E5%85%A8%E5%B1%80%E8%AE%A4%E8%AF%86/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%AD%A6%E4%B9%A0%E5%85%A8%E5%B1%80%E8%AE%A4%E8%AF%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>虚拟机</title>
+      <link>https://austinxt.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+      <pubDate>Wed, 30 Oct 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>朋友</title>
+      <link>https://austinxt.github.io/tags/%E6%9C%8B%E5%8F%8B/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%9C%8B%E5%8F%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>聊天</title>
+      <link>https://austinxt.github.io/tags/%E8%81%8A%E5%A4%A9/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%81%8A%E5%A4%A9/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>https://austinxt.github.io/tags/git/</link>
+      <pubDate>Sun, 10 Sep 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>密码学</title>
+      <link>https://austinxt.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
+      <pubDate>Sat, 09 Sep 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vim</title>
+      <link>https://austinxt.github.io/tags/vim/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Debug</title>
+      <link>https://austinxt.github.io/tags/debug/</link>
+      <pubDate>Tue, 13 Jun 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/debug/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Make</title>
+      <link>https://austinxt.github.io/tags/make/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/make/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>命令行</title>
+      <link>https://austinxt.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shell</title>
+      <link>https://austinxt.github.io/tags/shell/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>数据处理</title>
+      <link>https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>性能分析</title>
+      <link>https://austinxt.github.io/tags/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>健身</title>
+      <link>https://austinxt.github.io/tags/%E5%81%A5%E8%BA%AB/</link>
+      <pubDate>Tue, 13 Sep 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%81%A5%E8%BA%AB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>电商</title>
+      <link>https://austinxt.github.io/tags/%E7%94%B5%E5%95%86/</link>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E7%94%B5%E5%95%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>计算机网络</title>
+      <link>https://austinxt.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>金融</title>
+      <link>https://austinxt.github.io/tags/%E9%87%91%E8%9E%8D/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E9%87%91%E8%9E%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>图尔敏模型</title>
+      <link>https://austinxt.github.io/tags/%E5%9B%BE%E5%B0%94%E6%95%8F%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%9B%BE%E5%B0%94%E6%95%8F%E6%A8%A1%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>推理树</title>
+      <link>https://austinxt.github.io/tags/%E6%8E%A8%E7%90%86%E6%A0%91/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%8E%A8%E7%90%86%E6%A0%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>论证分析</title>
+      <link>https://austinxt.github.io/tags/%E8%AE%BA%E8%AF%81%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sat, 14 Aug 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%AE%BA%E8%AF%81%E5%88%86%E6%9E%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>认知偏差</title>
+      <link>https://austinxt.github.io/tags/%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE/</link>
+      <pubDate>Tue, 10 Aug 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>产品</title>
+      <link>https://austinxt.github.io/tags/%E4%BA%A7%E5%93%81/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E4%BA%A7%E5%93%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>法律</title>
+      <link>https://austinxt.github.io/tags/%E6%B3%95%E5%BE%8B/</link>
+      <pubDate>Wed, 23 Jun 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%B3%95%E5%BE%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>求职</title>
+      <link>https://austinxt.github.io/tags/%E6%B1%82%E8%81%8C/</link>
+      <pubDate>Sun, 23 May 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%B1%82%E8%81%8C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>信息检索</title>
+      <link>https://austinxt.github.io/tags/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E4%BF%A1%E6%81%AF%E6%A3%80%E7%B4%A2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>区块链</title>
+      <link>https://austinxt.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>社会学</title>
+      <link>https://austinxt.github.io/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E7%A4%BE%E4%BC%9A%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人性</title>
+      <link>https://austinxt.github.io/tags/%E4%BA%BA%E6%80%A7/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E4%BA%BA%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>故事</title>
+      <link>https://austinxt.github.io/tags/%E6%95%85%E4%BA%8B/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%95%85%E4%BA%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>数据</title>
+      <link>https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>积极心理学</title>
+      <link>https://austinxt.github.io/tags/%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>情报分析</title>
+      <link>https://austinxt.github.io/tags/%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sat, 04 Apr 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>写作</title>
+      <link>https://austinxt.github.io/tags/%E5%86%99%E4%BD%9C/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%86%99%E4%BD%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>卡片</title>
+      <link>https://austinxt.github.io/tags/%E5%8D%A1%E7%89%87/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%8D%A1%E7%89%87/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>学习</title>
+      <link>https://austinxt.github.io/tags/%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%AD%A6%E4%B9%A0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>统计</title>
+      <link>https://austinxt.github.io/tags/%E7%BB%9F%E8%AE%A1/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E7%BB%9F%E8%AE%A1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>速查</title>
+      <link>https://austinxt.github.io/tags/%E9%80%9F%E6%9F%A5/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E9%80%9F%E6%9F%A5/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>人格心理学</title>
+      <link>https://austinxt.github.io/tags/%E4%BA%BA%E6%A0%BC%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E4%BA%BA%E6%A0%BC%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>疾病</title>
+      <link>https://austinxt.github.io/tags/%E7%96%BE%E7%97%85/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E7%96%BE%E7%97%85/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://austinxt.github.io/tags/python/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>服务器</title>
+      <link>https://austinxt.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>正则表达式</title>
+      <link>https://austinxt.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>学术</title>
+      <link>https://austinxt.github.io/tags/%E5%AD%A6%E6%9C%AF/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%AD%A6%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>阅读</title>
+      <link>https://austinxt.github.io/tags/%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E9%98%85%E8%AF%BB/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>专业主义</title>
+      <link>https://austinxt.github.io/tags/%E4%B8%93%E4%B8%9A%E4%B8%BB%E4%B9%89/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E4%B8%93%E4%B8%9A%E4%B8%BB%E4%B9%89/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>达尔文信徒</title>
+      <link>https://austinxt.github.io/tags/%E8%BE%BE%E5%B0%94%E6%96%87%E4%BF%A1%E5%BE%92/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%BE%BE%E5%B0%94%E6%96%87%E4%BF%A1%E5%BE%92/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LaTeX</title>
+      <link>https://austinxt.github.io/tags/latex/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>认知心理学</title>
+      <link>https://austinxt.github.io/tags/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>英语</title>
+      <link>https://austinxt.github.io/tags/%E8%8B%B1%E8%AF%AD/</link>
+      <pubDate>Wed, 14 Jun 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%8B%B1%E8%AF%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>网络科学</title>
+      <link>https://austinxt.github.io/tags/%E7%BD%91%E7%BB%9C%E7%A7%91%E5%AD%A6/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E7%BD%91%E7%BB%9C%E7%A7%91%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>讲座</title>
+      <link>https://austinxt.github.io/tags/%E8%AE%B2%E5%BA%A7/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E8%AE%B2%E5%BA%A7/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>台湾</title>
+      <link>https://austinxt.github.io/tags/%E5%8F%B0%E6%B9%BE/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%8F%B0%E6%B9%BE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>电影</title>
+      <link>https://austinxt.github.io/tags/%E7%94%B5%E5%BD%B1/</link>
+      <pubDate>Wed, 28 Dec 2016 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E7%94%B5%E5%BD%B1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>笛卡尔信徒</title>
+      <link>https://austinxt.github.io/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E4%BF%A1%E5%BE%92/</link>
+      <pubDate>Sun, 11 Sep 2016 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E4%BF%A1%E5%BE%92/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>历史</title>
+      <link>https://austinxt.github.io/tags/%E5%8E%86%E5%8F%B2/</link>
+      <pubDate>Tue, 16 Feb 2016 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/tags/%E5%8E%86%E5%8F%B2/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>笛卡尔信徒 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E4%BF%A1%E5%BE%92/</link>
-        <description>笛卡尔信徒 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 11 Sep 2016 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E4%BF%A1%E5%BE%92/" rel="self" type="application/rss+xml" /><item>
-    <title>明托金字塔原理</title>
-    <link>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</link>
-    <pubDate>Sun, 11 Sep 2016 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</guid>
-    <description><![CDATA[此书全名是《金字塔原理，思考、写作和解决问题的逻辑》，书名看似高大上，小编也是被它忽悠了。正如书名 XXX 原理一样，书的内容也很枯燥无味，小编强打]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>笛卡尔信徒 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E4%BF%A1%E5%BE%92/</link>
+    <description>Recent content in 笛卡尔信徒 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sun, 11 Sep 2016 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E7%AC%9B%E5%8D%A1%E5%B0%94%E4%BF%A1%E5%BE%92/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>明托金字塔原理</title>
+      <link>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</link>
+      <pubDate>Sun, 11 Sep 2016 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</guid>
+      <description>&lt;p&gt;此书全名是《金字塔原理，思考、写作和解决问题的逻辑》，书名看似高大上，小编也是被它忽悠了。正如书名 XXX 原理一样，书的内容也很枯燥无味，小编强打着精神把前三篇看完了，希望能在这本极负盛名的书中能再发现一点金子（最后一篇是讲形式上的金字塔结构，不如一般的设计书介绍的好）。虽然书中的例子需要背景知识，方法需要不断的练习，但全书的内容可以分为思维、写作和解决问题三块，用一张纸就可以讲明白。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

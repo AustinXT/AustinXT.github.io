@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>旅行游记 - Category - 夜航星</title>
-        <link>https://austinxt.github.io/categories/%E6%97%85%E8%A1%8C%E6%B8%B8%E8%AE%B0/</link>
-        <description>旅行游记 - Category - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Mon, 06 Mar 2017 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/categories/%E6%97%85%E8%A1%8C%E6%B8%B8%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
-    <title>台大半年</title>
-    <link>https://austinxt.github.io/2017-03-06-half-year-in-ntu/</link>
-    <pubDate>Mon, 06 Mar 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-03-06-half-year-in-ntu/</guid>
-    <description><![CDATA[台大的这一学期，总的来说过得很充实。学期初的前四分之一，放了两回假，功课不太紧张，花点时间收尾暑假的学习，去了趟花莲。之后一直到期末都是不变]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>旅行游记 on 夜航星</title>
+    <link>https://austinxt.github.io/categories/%E6%97%85%E8%A1%8C%E6%B8%B8%E8%AE%B0/</link>
+    <description>Recent content in 旅行游记 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Mon, 06 Mar 2017 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/categories/%E6%97%85%E8%A1%8C%E6%B8%B8%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>台大半年</title>
+      <link>https://austinxt.github.io/2017-03-06-half-year-in-ntu/</link>
+      <pubDate>Mon, 06 Mar 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-03-06-half-year-in-ntu/</guid>
+      <description>&lt;p&gt;台大的这一学期，总的来说过得很充实。学期初的前四分之一，放了两回假，功课不太紧张，花点时间收尾暑假的学习，去了趟花莲。之后一直到期末都是不变的作息，不分节假日：八点多起床，要么去上课要么去图书馆做作业、看论文、看书，下午接着上课、做作业、看论文、看书（有时会去周边逛逛吃点美食或坐捷运去逛逛台北），晚上要么练拳、和社友聊天要么还是老四项，十一点至十二点吃个夜宵，回公寓后看会儿 YouTube 便去睡。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

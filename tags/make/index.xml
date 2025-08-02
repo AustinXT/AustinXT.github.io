@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>make - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/make/</link>
-        <description>make - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Wed, 31 May 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/make/" rel="self" type="application/rss+xml" /><item>
-    <title>make 构建工具介绍</title>
-    <link>https://austinxt.github.io/2023-05-31-make/</link>
-    <pubDate>Wed, 31 May 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-05-31-make/</guid>
-    <description><![CDATA[构建工具通常需要定义依赖、目标和规则。 make 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。make并不完美，但是对于中]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Make on 夜航星</title>
+    <link>https://austinxt.github.io/tags/make/</link>
+    <description>Recent content in Make on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>make 构建工具介绍</title>
+      <link>https://austinxt.github.io/2023-05-31-make/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-05-31-make/</guid>
+      <description>&lt;p&gt;构建工具通常需要定义&lt;em&gt;依赖&lt;/em&gt;、&lt;em&gt;目标&lt;/em&gt;和&lt;em&gt;规则&lt;/em&gt;。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;make&lt;/code&gt; 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。&lt;code&gt;make&lt;/code&gt;并不完美，但是对于中小型项目来说，它已经足够好了。当您执行 &lt;code&gt;make&lt;/code&gt; 时，它会去参考当前目录下名为 &lt;code&gt;Makefile&lt;/code&gt; 的文件。所有构建目标、相关依赖和规则都需要在该文件中定义，它看上去是这样的：&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

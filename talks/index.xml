@@ -4,550 +4,431 @@
     <title>Talks on 夜航星</title>
     <link>https://austinxt.github.io/talks/</link>
     <description>Recent content in Talks on 夜航星</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-CN</language>
-    <managingEditor>164640966@qq.com (夜航星)</managingEditor>
-    <webMaster>164640966@qq.com (夜航星)</webMaster>
-    <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://austinxt.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>rag 流程和优化点</title>
       <link>https://austinxt.github.io/talks/2024-08-24-rag/</link>
-      <pubDate>Sat, 24 Aug 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-08-24-rag/</guid>
-      <description>http://arxiv.org/abs/2312.10997</description>
+      <description>&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/RAG%e7%b3%bb%e7%bb%9f%e7%9a%84%e6%9e%84%e6%88%90%e5%92%8c%e4%bc%98%e5%8c%96%e7%82%b9_1_%e6%99%ba%e8%83%bd%e6%97%b6%e4%bb%a3%e8%9b%ae%e5%ad%90_%e6%9d%a5%e8%87%aa%e5%b0%8f%e7%ba%a2%e4%b9%a6%e7%bd%91%e9%a1%b5%e7%89%88.jpg&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/RAG%e7%b3%bb%e7%bb%9f%e7%9a%84%e6%9e%84%e6%88%90%e5%92%8c%e4%bc%98%e5%8c%96%e7%82%b9_1_%e6%99%ba%e8%83%bd%e6%97%b6%e4%bb%a3%e8%9b%ae%e5%ad%90_%e6%9d%a5%e8%87%aa%e5%b0%8f%e7%ba%a2%e4%b9%a6%e7%bd%91%e9%a1%b5%e7%89%88.jpg, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/RAG%e7%b3%bb%e7%bb%9f%e7%9a%84%e6%9e%84%e6%88%90%e5%92%8c%e4%bc%98%e5%8c%96%e7%82%b9_1_%e6%99%ba%e8%83%bd%e6%97%b6%e4%bb%a3%e8%9b%ae%e5%ad%90_%e6%9d%a5%e8%87%aa%e5%b0%8f%e7%ba%a2%e4%b9%a6%e7%bd%91%e9%a1%b5%e7%89%88.jpg 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/RAG%e7%b3%bb%e7%bb%9f%e7%9a%84%e6%9e%84%e6%88%90%e5%92%8c%e4%bc%98%e5%8c%96%e7%82%b9_1_%e6%99%ba%e8%83%bd%e6%97%b6%e4%bb%a3%e8%9b%ae%e5%ad%90_%e6%9d%a5%e8%87%aa%e5%b0%8f%e7%ba%a2%e4%b9%a6%e7%bd%91%e9%a1%b5%e7%89%88.jpg 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/RAG系统的构成和优化点_1_智能时代蛮子_来自小红书网页版.jpg&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/RAG系统的构成和优化点_1_智能时代蛮子_来自小红书网页版.jpg&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://arxiv.org/abs/2312.10997&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;http://arxiv.org/abs/2312.10997&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>为什么要时不时认识些新朋友？</title>
       <link>https://austinxt.github.io/talks/2024-08-01-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%97%B6%E4%B8%8D%E6%97%B6%E8%AE%A4%E8%AF%86%E4%BA%9B%E6%96%B0%E6%9C%8B%E5%8F%8B/</link>
-      <pubDate>Thu, 01 Aug 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 01 Aug 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-08-01-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%97%B6%E4%B8%8D%E6%97%B6%E8%AE%A4%E8%AF%86%E4%BA%9B%E6%96%B0%E6%9C%8B%E5%8F%8B/</guid>
-      <description>原来的生活圈待久了，大家很容易达成很多共识，习惯彼此的行为。而新朋友比较容易看见双方的差异，反思自己的状态。 下面是最近认识的三位朋友和收获：</description>
+      <description>&lt;p&gt;原来的生活圈待久了，大家很容易达成很多共识，习惯彼此的行为。而新朋友比较容易看见双方的差异，反思自己的状态。&lt;/p&gt;&#xA;&lt;p&gt;下面是最近认识的三位朋友和收获：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A 一起约玩飞盘，教会我正手直线飞，那天玩得很开心，天气、环境都恰到好处，彻底放松了。朋友在一起就是应该很放松，并好好对在在一起的时光。&lt;/li&gt;&#xA;&lt;li&gt;B 工作很用心，让我深刻反思了自己的状态。之前受 X 影响，把时间切的很碎。现在觉得一定要回到以前熟悉的状态，关闭社交软件，长时间专心工作，把一项项工作都好好完成掉。&lt;/li&gt;&#xA;&lt;li&gt;C 自律、自由、洒脱的人，帮我坚定了坚持锻炼的决心。C 是我以前不敢接触的那类人，很独立，让我内心很深处燃起了动力，保持自律，持续做有意义的事，把大目标一步步做成了。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;感谢各位朋友，谢谢你们给我行动的力量！&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>《秀出你的工作》读书笔记</title>
       <link>https://austinxt.github.io/talks/2024-07-30-%E7%A7%80%E5%87%BA%E4%BD%A0%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Tue, 30 Jul 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-07-30-%E7%A7%80%E5%87%BA%E4%BD%A0%E7%9A%84%E5%B7%A5%E4%BD%9C%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description>你不必是天才 过程比结果更重要 每天分享一点点 打开你的百宝箱 第一点讲的是，把你正在学习、热爱、想法，及时分享出来，及时跟别人碰撞思想💥。不用等到</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;你不必是天才&lt;/li&gt;&#xA;&lt;li&gt;过程比结果更重要&lt;/li&gt;&#xA;&lt;li&gt;每天分享一点点&lt;/li&gt;&#xA;&lt;li&gt;打开你的百宝箱&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;第一点讲的是，把你正在学习、热爱、想法，及时分享出来，及时跟别人碰撞思想💥。不用等到满意了再分享，也不用觉得分享“平淡”会丢脸。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>诉讼过程到底遵循什么逻辑</title>
       <link>https://austinxt.github.io/talks/2024-04-18-%E8%AF%89%E8%AE%BC%E8%BF%87%E7%A8%8B%E5%88%B0%E5%BA%95%E9%81%B5%E5%BE%AA%E4%BB%80%E4%B9%88%E9%80%BB%E8%BE%91/</link>
-      <pubDate>Thu, 18 Apr 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 18 Apr 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-04-18-%E8%AF%89%E8%AE%BC%E8%BF%87%E7%A8%8B%E5%88%B0%E5%BA%95%E9%81%B5%E5%BE%AA%E4%BB%80%E4%B9%88%E9%80%BB%E8%BE%91/</guid>
-      <description>最近密集跟踪了一位优秀诉讼律师的办案过程，发现诉讼过程中似乎可以归于三件事情，构建证据树、调查取证、寻找法律依据。 证据树，它以客观事实和法律</description>
+      <description>&lt;p&gt;最近密集跟踪了一位优秀诉讼律师的办案过程，发现诉讼过程中似乎可以归于三件事情，构建证据树、调查取证、寻找法律依据。&lt;/p&gt;&#xA;&lt;p&gt;证据树，它以客观事实和法律事实为节点，以法律关系和论证关系为边，以最终欲达成的违法犯罪结果为根节点。它也是原被告和法官在证据面前，谈论是否构成违法犯罪的前提共识。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Open AI Args</title>
       <link>https://austinxt.github.io/talks/2024-04-01-openai-args/</link>
-      <pubDate>Mon, 01 Apr 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-04-01-openai-args/</guid>
-      <description>max_tokens: 最大输出标记数 temperature: 输出随机性 frequency_penalty: 频率惩罚，[-2, 2]，奖励或者惩罚训练集中出现频率高的 token，负数表示模型倾向出现频率较高的词。 presence_penalty: 存在惩</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;max_tokens: 最大输出标记数&lt;/li&gt;&#xA;&lt;li&gt;temperature: 输出随机性&lt;/li&gt;&#xA;&lt;li&gt;frequency_penalty: 频率惩罚，[-2, 2]，奖励或者惩罚训练集中出现频率高的 token，负数表示模型倾向出现频率较高的词。&lt;/li&gt;&#xA;&lt;li&gt;presence_penalty: 存在惩罚，[-2, 2]，奖励或者惩罚新出现的 token，即话题新鲜度，负数表示模型倾向已经在文本中出现较高的词。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>CRM软件各个价格段的产品都有哪些?</title>
       <link>https://austinxt.github.io/talks/2024-03-16-crm%E8%BD%AF%E4%BB%B6%E5%90%84%E4%B8%AA%E4%BB%B7%E6%A0%BC%E6%AE%B5%E7%9A%84%E4%BA%A7%E5%93%81%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-03-16-crm%E8%BD%AF%E4%BB%B6%E5%90%84%E4%B8%AA%E4%BB%B7%E6%A0%BC%E6%AE%B5%E7%9A%84%E4%BA%A7%E5%93%81%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B/</guid>
-      <description>采购市面上开箱即用的产品，这种情况只需要付一个咨询费【千把来块】，然后按月支付给软件厂商几百到一千多的月租费用；之前有一个客户，是做心理咨询</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;采购市面上开箱即用的产品，这种情况只需要付一个咨询费【千把来块】，然后按月支付给软件厂商几百到一千多的月租费用；之前有一个客户，是做心理咨询的，他的预算是 50 万，也是要开发一套销售管理系统，侧重的是客户后续跟踪和内容管理这一块的需求，最后我给他配了一套市面上的产品，他只要每月交 1000 块左右的软件使用费用就可以了。&lt;/li&gt;&#xA;&lt;li&gt;带有少量定制的产品，【几千到小几万】，这种大概类似向工厂下单有模具的产品，生产出来之后再在产品上增加一些定制化的装饰，然后包装好交给客户；一般向专⻔的 CRM 厂商或者独立开发者采购，交付周期一般在两三个月以内；基于标准模板开发，费用 3-5K；独立开发 3-5W；&lt;/li&gt;&#xA;&lt;li&gt;大量定制的产品，比如需要自己的 OA 或者 ERP，类似需要将许多模具生产出来的产品，经过较多加工之后组装在一起；一般向专⻔的 CRM 厂商或者独立开发者采购，交付周期一般在半年左右；定制开发 6-10W。&lt;/li&gt;&#xA;&lt;li&gt;完全定制的产品，比如需要符合自身业务特点的管理，比如我的第一个东家，是家央企，做建筑工程的，它的销售系统涉及到按工程进度汇款这种比较特殊的需求，这种一般自己研发或者让外包团队驻在公司开发，有点手工制造 的性质，当时整个软件包括需求梳理、开发、实施，一共花了三百多万。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>独立开发者和专业厂商有什么区别?</title>
       <link>https://austinxt.github.io/talks/2024-03-16-%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E8%80%85%E5%92%8C%E4%B8%93%E4%B8%9A%E5%8E%82%E5%95%86%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Sat, 16 Mar 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sat, 16 Mar 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-03-16-%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E8%80%85%E5%92%8C%E4%B8%93%E4%B8%9A%E5%8E%82%E5%95%86%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/</guid>
-      <description>两者在费用上差不多，差别是专业厂商的产品是经过验证的，用起来比较稳定，对需求也比较了解。 缺点是来服务的人只是公司员工，服务会差一些；如果涉及</description>
+      <description>&lt;p&gt;两者在费用上差不多，差别是专业厂商的产品是经过验证的，用起来比较稳定，对需求也比较了解。 缺点是来服务的人只是公司员工，服务会差一些；如果涉及到它们比较陌生的定制化需求，费用会比较高；后续的产品升级迭代，也没有独立开发者灵活。 我们从商家的成本⻆度考虑一下也清楚，厂商的整体供应能力是强一点(说白了就是模具会更多一点)，但他分给员工的钱大概只是你付的 30%，相当于只 有 30% 左右的钱变成了服务；但给独立开发者基本上每一块钱都能变成服务， 而且基本上独立开发者的个人能力会比厂商的员工强一些。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>谈判小技巧</title>
       <link>https://austinxt.github.io/talks/2024-02-20-%E8%B0%88%E5%88%A4%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Tue, 20 Feb 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-02-20-%E8%B0%88%E5%88%A4%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
-      <description>认清谈判中的让步 不要轻易亮底牌，让步要选择好时机和方法。如何把握时机？让步前要问自己两个问题，这个阶段适合让步吗？自己对对方有价值吗？如果对</description>
+      <description>&lt;h2 id=&#34;认清谈判中的让步&#34;&gt;认清谈判中的让步&lt;/h2&gt;&#xA;&lt;p&gt;不要轻易亮底牌，让步要选择好时机和方法。如何把握时机？让步前要问自己两个问题，这个阶段适合让步吗？自己对对方有价值吗？如果对方已经有了成交的意愿，仅仅因为价格不合适，这个时候才可以谈让步。否则，善意只会让对方看到你的虚弱和底牌。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>毛真是一个战略大家</title>
       <link>https://austinxt.github.io/talks/2024-02-29-mao/</link>
-      <pubDate>Mon, 19 Feb 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Mon, 19 Feb 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-02-29-mao/</guid>
-      <description>《毛泽东传》读书笔记。 身在农村长在农村，让他对农村有了切身理解，中国革命的主力军应该是农民。 在带着起义军上井冈山之前，毛主要扮演了共产党员和</description>
+      <description>&lt;p&gt;《毛泽东传》读书笔记。&lt;/p&gt;&#xA;&lt;p&gt;身在农村长在农村，让他对农村有了切身理解，中国革命的主力军应该是农民。&lt;/p&gt;&#xA;&lt;p&gt;在带着起义军上井冈山之前，毛主要扮演了共产党员和农民工人教师这两个角色，实践让他对中国革命路径有了深刻且经过反馈的认识。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2024-01-23/</link>
-      <pubDate>Tue, 23 Jan 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 23 Jan 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-01-23/</guid>
-      <description>《卓有成效的管理者》这本书已经摆放在书架上很久了。今天，终于开始阅读它。 先翻开目录部分，第一个推荐序是海尔的创始人张瑞敏所写。他在海尔创立初</description>
+      <description>&lt;p&gt;《卓有成效的管理者》这本书已经摆放在书架上很久了。今天，终于开始阅读它。&lt;/p&gt;&#xA;&lt;p&gt;先翻开目录部分，第一个推荐序是海尔的创始人张瑞敏所写。他在海尔创立初期就已经阅读过此书。可以说，这些商业领袖确实有值得我们学习和追随的地方。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>诗人与精神病患者</title>
       <link>https://austinxt.github.io/talks/2024-01-21-%E8%AF%97%E4%BA%BA%E4%B8%8E%E7%B2%BE%E7%A5%9E%E7%97%85%E6%82%A3%E8%80%85/</link>
-      <pubDate>Sun, 21 Jan 2024 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 21 Jan 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2024-01-21-%E8%AF%97%E4%BA%BA%E4%B8%8E%E7%B2%BE%E7%A5%9E%E7%97%85%E6%82%A3%E8%80%85/</guid>
-      <description>“诗人在某种意义上与精神病患者类似，大脑中会同时浮现无数个意向，但是诗人与精神病患者的区别在于，诗人将纷杂的意象约束在同一套时空系统中。” 读</description>
+      <description>&lt;p&gt;“诗人在某种意义上与精神病患者类似，大脑中会同时浮现无数个意向，但是诗人与精神病患者的区别在于，诗人将纷杂的意象约束在同一套时空系统中。”&lt;/p&gt;&#xA;&lt;p&gt;读到第四章文本细读的美感型文本的篇章结构理解，作者提示我们要重点关注篇章呈现的意象或形象。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>客户粘度思考</title>
       <link>https://austinxt.github.io/talks/2023-11-30-%E5%AE%A2%E6%88%B7%E7%B2%98%E5%BA%A6%E6%80%9D%E8%80%83/</link>
-      <pubDate>Thu, 30 Nov 2023 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2023-11-30-%E5%AE%A2%E6%88%B7%E7%B2%98%E5%BA%A6%E6%80%9D%E8%80%83/</guid>
-      <description>通常卖给客户的东西可以分为产品和服务，产品通常跟设备、物品等商品挂钩，服务跟人绑定。客户跟人更多的是建立信任的链路，客户信赖这个人，所以找这</description>
+      <description>&lt;p&gt;通常卖给客户的东西可以分为产品和服务，产品通常跟设备、物品等商品挂钩，服务跟人绑定。客户跟人更多的是建立信任的链路，客户信赖这个人，所以找这个人去购买服务，特别是流程复杂一点、周期更长的服务。客户通常依靠信息，或者是信任的人的推荐去购买商品，客户跟商品之间建立的是信息的链路。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>独立开发者最简洁的赚钱路径是什么？</title>
       <link>https://austinxt.github.io/talks/2023-11-02-%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E8%80%85%E6%9C%80%E7%AE%80%E6%B4%81%E7%9A%84%E8%B5%9A%E9%92%B1%E8%B7%AF%E5%BE%84%E6%98%AF%E4%BB%80%E4%B9%88/</link>
-      <pubDate>Thu, 02 Nov 2023 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2023-11-02-%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91%E8%80%85%E6%9C%80%E7%AE%80%E6%B4%81%E7%9A%84%E8%B5%9A%E9%92%B1%E8%B7%AF%E5%BE%84%E6%98%AF%E4%BB%80%E4%B9%88/</guid>
-      <description>从身边的朋友出发，看看大家都有什么需求 在这些需求中，针对 3-10 个需求，埋头苦干，马上做出一版 从 3-10 个需求测试出其中相对广泛一点相对没那么激烈的需求</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;从身边的朋友出发，看看大家都有什么需求&lt;/li&gt;&#xA;&lt;li&gt;在这些需求中，针对 3-10 个需求，埋头苦干，马上做出一版&lt;/li&gt;&#xA;&lt;li&gt;从 3-10 个需求测试出其中相对广泛一点相对没那么激烈的需求&lt;/li&gt;&#xA;&lt;li&gt;针对这些需求，做出一些更正式的产品，不用管公司、发票&lt;/li&gt;&#xA;&lt;li&gt;注册公司，产品朝相关领域泛化，设定不同价格&lt;/li&gt;&#xA;&lt;li&gt;测试出一个最优价位，所有宣传中心都集中在最优利润的产品形态&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;—阳老师&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>红顶商人胡雪岩的交际之道</title>
       <link>https://austinxt.github.io/talks/2023-02-08/</link>
-      <pubDate>Wed, 08 Feb 2023 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2023-02-08/</guid>
-      <description>利己可以，损人不行。 跟人谈事情之前，需要想清楚自己的决心。 有了钱和底气，念头才会更加通达，手脚展开。 不想和人打交道的时候，也不能敷衍，也要集</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;利己可以，损人不行。&lt;/li&gt;&#xA;&lt;li&gt;跟人谈事情之前，需要想清楚自己的决心。&lt;/li&gt;&#xA;&lt;li&gt;有了钱和底气，念头才会更加通达，手脚展开。&lt;/li&gt;&#xA;&lt;li&gt;不想和人打交道的时候，也不能敷衍，也要集中精力对付。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>商业模式画布</title>
       <link>https://austinxt.github.io/talks/2022-07-05-%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E7%94%BB%E5%B8%83/</link>
-      <pubDate>Tue, 05 Jul 2022 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2022-07-05-%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E7%94%BB%E5%B8%83/</guid>
-      <description>Ref Strategyzer | Corporate Innovation Strategy, Tools &amp;amp; Training Business Model Canvas - Wikipedia</description>
+      <description>&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/1024px-Business_Model_Canvas.png&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/1024px-Business_Model_Canvas.png, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/1024px-Business_Model_Canvas.png 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/1024px-Business_Model_Canvas.png 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/1024px-Business_Model_Canvas.png&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/1024px-Business_Model_Canvas.png&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;Ref&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.strategyzer.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Strategyzer | Corporate Innovation Strategy, Tools &amp;amp; Training&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Business_Model_Canvas&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Business Model Canvas - Wikipedia&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>RPA 机器人流程自动化</title>
       <link>https://austinxt.github.io/talks/2022-06-13-rpa/</link>
-      <pubDate>Mon, 13 Jun 2022 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Mon, 13 Jun 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2022-06-13-rpa/</guid>
-      <description>RPA 解决的问题是，企业已有软件可能没有数据接口、应用接口来跟其他系统集成，重新开发接口又任务量太大，RPA 能够以低成本的方式做到自动化跨系统沟</description>
+      <description>&lt;p&gt;RPA 解决的问题是，企业已有软件可能没有数据接口、应用接口来跟其他系统集成，重新开发接口又任务量太大，RPA 能够以低成本的方式做到自动化跨系统沟通。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2022-05-16/</link>
-      <pubDate>Mon, 16 May 2022 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Mon, 16 May 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2022-05-16/</guid>
-      <description>毕业后，总感觉时间过得很快，像似从指缝间流逝。直到遇见你，这一载，仿佛是一生一世。</description>
+      <description>&lt;p&gt;毕业后，总感觉时间过得很快，像似从指缝间流逝。直到遇见你，这一载，仿佛是一生一世。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2022-05-12-usa-lawyer/</link>
-      <pubDate>Thu, 12 May 2022 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 12 May 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2022-05-12-usa-lawyer/</guid>
-      <description>美国法律行业有许多潜在客户获得（Lead Generation），例如Attention Required! | Cloudflare。 这类网站主要策略有Q&amp;amp</description>
+      <description>&lt;p&gt;美国法律行业有许多潜在客户获得（Lead Generation），例如&lt;a href=&#34;https://www.avvo.com/?continueFlag=b3657a332cce9d740ac6d3980b4a1d97&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Attention Required! | Cloudflare&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;p&gt;这类网站主要策略有Q&amp;amp;A、法律内容、新媒体、特殊定价、法律自助产品、及时响应（参考：&lt;a href=&#34;https://www.clio.com/blog/best-lead-generation-services-lawyers-reviews/?continueFlag=b3657a332cce9d740ac6d3980b4a1d97&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;10 Best Lead Generation Services for Lawyers | Clio&lt;/a&gt;）。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>公众号发布流程</title>
       <link>https://austinxt.github.io/talks/2022-01-01/</link>
-      <pubDate>Sat, 01 Jan 2022 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2022-01-01/</guid>
-      <description></description>
+      <description>&lt;div class=&#34;mermaid&#34; id=&#34;id-1&#34;&gt;&lt;/div&gt;&#xA;&lt;script type=&#34;text/plain&#34; class=&#34;mermaid-data&#34; data-id=&#34;id-1&#34;&gt;sequenceDiagram&#xA;    participant T as Typora&#xA;    participant C as Chrome&#xA;    participant P as PicGo&#xA;    loop 写作&#xA;        T--&gt;&gt;T: 写作&#xA;        C--&gt;&gt;P: 图片上传图床&#xA;        P--&gt;&gt;T: 插图图片&#xA;    end&#xA;    opt 发布文章&#xA;        T-&gt;&gt;C: 复制Markdown源码至公众号&#xA;        C-&gt;&gt;C: Markdown Here 插件，一键格式化&#xA;        C-&gt;&gt;C: 发布文章&#xA;    end&#xA;    opt 导出&#xA;        T-&gt;&gt;T: pandoc 导出docs/pdf/png&#xA;    end&lt;/script&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2021-12-30-design/</link>
-      <pubDate>Thu, 30 Dec 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-12-30-design/</guid>
-      <description>设计思维能够应对日常很多问题，但是对于全局的、商业的、品牌整体问题，设计思维在体系性、框架性和有效性上会遭遇挑战。 问题的复杂来源于人与人以人</description>
+      <description>&lt;p&gt;设计思维能够应对日常很多问题，但是对于全局的、商业的、品牌整体问题，设计思维在体系性、框架性和有效性上会遭遇挑战。&lt;/p&gt;&#xA;&lt;p&gt;问题的复杂来源于人与人以人与周围环境的交互的复杂，人的需求多层次多场景且动态变化。设计在解决不同问题时往往难以定义视角，需要引入更底层的心理学人类学，将意义需求与具体需求、痒点与痛点等区分剖析，进而解决不同问题；还需要整合相应的方法和思路去面对具体问题，例如快速试验迭代的互联网公司需要产品思维和设计思维相融合。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2021-11-16/</link>
-      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-11-16/</guid>
-      <description>套用冯·奥西茨基的话：一个民族到底要在精神上堕落到何种程度，才能从这些文盲的身上看出一个偶像的模子，看到令人追随的人格魅力。 ​​​</description>
+      <description>&lt;p&gt;套用冯·奥西茨基的话：一个民族到底要在精神上堕落到何种程度，才能从这些文盲的身上看出一个偶像的模子，看到令人追随的人格魅力。 ​​​&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>银行财报阅读流程</title>
       <link>https://austinxt.github.io/talks/2021-11-16-finacial-report/</link>
-      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-11-16-finacial-report/</guid>
-      <description>审计意见 资产负债表，转换成百分比 存款结构和付息率，获取资金能力的情况 净利息差和净利息收益率 分析贷款质量，包括历史同行对比、贷款垫款构成、拨备</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;审计意见&lt;/li&gt;&#xA;&lt;li&gt;资产负债表，转换成百分比&lt;/li&gt;&#xA;&lt;li&gt;存款结构和付息率，获取资金能力的情况&lt;/li&gt;&#xA;&lt;li&gt;净利息差和净利息收益率&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;分析贷款质量&lt;/em&gt;，包括历史同行对比、贷款垫款构成、拨备，主要关注指标不良贷款率、拨备覆盖率、拨贷比、当年计提/贷款余额、拨备前利润、（逾期+重组）/贷款余额、当期新增逾期&amp;amp;重组、当期新增不良（报表新增不良+当期核销转出）、当期新增关注、90天以上逾期/不良贷款、公司贷个人贷占比变化、公司贷行业地区分布。&lt;/li&gt;&#xA;&lt;li&gt;利润表，把「营业利润」之前的会计科目转换成百分比&lt;/li&gt;&#xA;&lt;li&gt;财报开头「财务概要」里的相关监管指标，重点是总资产回报率、资本充足率、风险加权资产/总资产&lt;/li&gt;&#xA;&lt;li&gt;拷问思考&lt;/li&gt;&#xA;&lt;li&gt;估值，银行经营状况和未来预期与当初买入时相比如何&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Ref: 《手把手教你读财报2》&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>预测指标：银行利润/产业利润</title>
       <link>https://austinxt.github.io/talks/2021-11-16-predict/</link>
-      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-11-16-predict/</guid>
-      <description>预测一个趋势，找到一个预测指标很重要。 例如，前东方证券银行业首席分析师王剑曾提出的，从银行利润/产业利润变化的角度预测银行股价走向（反向关系</description>
+      <description>&lt;p&gt;预测一个趋势，找到一个预测指标很重要。&lt;/p&gt;&#xA;&lt;p&gt;例如，前东方证券银行业首席分析师王剑曾提出的，从银行利润/产业利润变化的角度预测银行股价走向（反向关系）。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>测量的信效度</title>
       <link>https://austinxt.github.io/talks/2021-09-10-%E6%B5%8B%E9%87%8F%E7%9A%84%E4%BF%A1%E6%95%88%E5%BA%A6/</link>
-      <pubDate>Fri, 10 Sep 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-09-10-%E6%B5%8B%E9%87%8F%E7%9A%84%E4%BF%A1%E6%95%88%E5%BA%A6/</guid>
-      <description>测验的效度 效度指测验的正确性和有效性，即测验能够测到被测量对象的真实水平的程度。 测验的信度 信度指测验的可靠性和多次测量结果的一致性程度。 Re</description>
+      <description>&lt;h3 id=&#34;测验的效度&#34;&gt;测验的效度&lt;/h3&gt;&#xA;&lt;p&gt;效度指测验的正确性和有效性，即测验能够测到被测量对象的真实水平的程度。&lt;/p&gt;&#xA;&lt;h3 id=&#34;测验的信度&#34;&gt;测验的信度&lt;/h3&gt;&#xA;&lt;p&gt;信度指测验的可靠性和多次测量结果的一致性程度。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/B7C361B7-B287-4979-82A6-D1697E4B5975.jpg&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/B7C361B7-B287-4979-82A6-D1697E4B5975.jpg, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/B7C361B7-B287-4979-82A6-D1697E4B5975.jpg 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/B7C361B7-B287-4979-82A6-D1697E4B5975.jpg 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/B7C361B7-B287-4979-82A6-D1697E4B5975.jpg&#34;&#xA;        title=&#34;B7C361B7-B287-4979-82A6-D1697E4B5975&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;Ref：《教育心理学》&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2021-09-08-fiction/</link>
-      <pubDate>Wed, 08 Sep 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Wed, 08 Sep 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-09-08-fiction/</guid>
-      <description>《天之下》，一个武侠世界，这种写法还真是经济，跟之前看过的九州志、银河帝国、指环王一样，学习学习！</description>
+      <description>&lt;p&gt;《天之下》，一个武侠世界，这种写法还真是经济，跟之前看过的九州志、银河帝国、指环王一样，学习学习！&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>认知心理学中，关于学习的实用策略就只有这几条</title>
       <link>https://austinxt.github.io/talks/2021-05-19-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E7%AD%96%E7%95%A5/</link>
-      <pubDate>Wed, 19 May 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Wed, 19 May 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-05-19-%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%AE%9E%E7%94%A8%E7%AD%96%E7%95%A5/</guid>
-      <description>注重提取：测试效应；PQ4R；用自己话表述；写卡片；输出文章 必要难度：时间必要难度（间隔学习）；场景必要难度（换地点记笔记、穿插练习、多主题</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;注重提取：测试效应；PQ4R；用自己话表述；写卡片；输出文章&lt;/li&gt;&#xA;&lt;li&gt;必要难度：时间必要难度（间隔学习）；场景必要难度（换地点记笔记、穿插练习、多主题并行）&lt;/li&gt;&#xA;&lt;li&gt;增细加工：和已知知识关联；主动获取更详细的拓展知识（出处、作者、他人对该知识的评价等）；社交媒体分享（赋予社交意义）；记忆技巧（联想记忆、记忆宫殿）&lt;/li&gt;&#xA;&lt;li&gt;复盘迭代（不断记录和迭代自己的学习方法）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ref: &lt;a href=&#34;https://book.douban.com/subject/30353486/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;认知天性&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>10 条创业者需要避免的数据圈套</title>
       <link>https://austinxt.github.io/talks/2021-05-09-10%E6%9D%A1%E5%88%9B%E4%B8%9A%E8%80%85%E9%9C%80%E8%A6%81%E9%81%BF%E5%85%8D%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9C%88%E5%A5%97/</link>
-      <pubDate>Sun, 09 May 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-05-09-10%E6%9D%A1%E5%88%9B%E4%B8%9A%E8%80%85%E9%9C%80%E8%A6%81%E9%81%BF%E5%85%8D%E7%9A%84%E6%95%B0%E6%8D%AE%E5%9C%88%E5%A5%97/</guid>
-      <description>假设数据没有噪声：分析前要检查数据是否有效、实用 忘记归一化：例如要考虑基础概率的影响 排除异常点：需要先讨论 包括异常点：异常点可能不适合用于普</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;假设数据没有噪声：分析前要检查数据是否有效、实用&lt;/li&gt;&#xA;&lt;li&gt;忘记归一化：例如要考虑基础概率的影响&lt;/li&gt;&#xA;&lt;li&gt;排除异常点：需要先讨论&lt;/li&gt;&#xA;&lt;li&gt;包括异常点：异常点可能不适合用于普世模型中&lt;/li&gt;&#xA;&lt;li&gt;忽视季节性：考虑变化背后的周期变化&lt;/li&gt;&#xA;&lt;li&gt;抛开基数奢谈增长&lt;/li&gt;&#xA;&lt;li&gt;数据呕吐：找到重要数据&lt;/li&gt;&#xA;&lt;li&gt;谎报军情的指标：数据指标预警不可过于敏感&lt;/li&gt;&#xA;&lt;li&gt;「不是在这收集的」综合症：参考不同数据源可能会带来独到的见解&lt;/li&gt;&#xA;&lt;li&gt;关注噪音：人类容易从噪音中无中生有出模式&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Ref：数据科学家 Monica Rogati&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>《牛津通识读本：社会学的意识》笔记</title>
       <link>https://austinxt.github.io/talks/2021-04-21-%E7%89%9B%E6%B4%A5%E9%80%9A%E8%AF%86%E8%AF%BB%E6%9C%AC%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%84%8F%E8%AF%86/</link>
-      <pubDate>Wed, 21 Apr 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-04-21-%E7%89%9B%E6%B4%A5%E9%80%9A%E8%AF%86%E8%AF%BB%E6%9C%AC%E7%A4%BE%E4%BC%9A%E5%AD%A6%E7%9A%84%E6%84%8F%E8%AF%86/</guid>
-      <description>社会学是研究社会结构与社会制度的一门实证性学科。 第二章：社会结构 社会学的中心线 社会学的中心线由三部分构成，现实是在社会中构建的、我们的行为具</description>
+      <description>&lt;p&gt;社会学是研究社会结构与社会制度的一门实证性学科。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第二章社会结构&#34;&gt;第二章：社会结构&lt;/h2&gt;&#xA;&lt;h3 id=&#34;社会学的中心线&#34;&gt;社会学的中心线&lt;/h3&gt;&#xA;&lt;p&gt;社会学的中心线由三部分构成，现实是在社会中构建的、我们的行为具有隐蔽的社会原因、大部分的社会生活具有深刻的讽刺意味（不曾预料的后果），在中心线之外悬挂着许多主题，诸如阶级结构、家庭、教育等。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>社会资本理论模型</title>
       <link>https://austinxt.github.io/talks/2021-04-05-%E7%A4%BE%E4%BC%9A%E8%B5%84%E6%9C%AC%E7%90%86%E8%AE%BA%E6%A8%A1%E5%9E%8B/</link>
-      <pubDate>Mon, 05 Apr 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-04-05-%E7%A4%BE%E4%BC%9A%E8%B5%84%E6%9C%AC%E7%90%86%E8%AE%BA%E6%A8%A1%E5%9E%8B/</guid>
-      <description>反常识 1 常识：之前只是觉得桥很重要，它决定了最大连通图的节点数量。 反常识： 个体越靠近网络中的桥梁，他们在工具性行动中获取的社会资本越好。 书中</description>
+      <description>&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/IMG_0039.jpg&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/IMG_0039.jpg, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/IMG_0039.jpg 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/IMG_0039.jpg 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/IMG_0039.jpg&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/IMG_0039.jpg&#34; /&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;反常识-1&#34;&gt;反常识 1&lt;/h3&gt;&#xA;&lt;p&gt;常识：之前只是觉得桥很重要，它决定了最大连通图的节点数量。&lt;/p&gt;&#xA;&lt;p&gt;反常识：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;个体越靠近网络中的桥梁，他们在工具性行动中获取的社会资本越好。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2021-02-05-subway/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-02-05-subway/</guid>
-      <description>1931 年，亨利•贝克改进了伦敦地铁线路图（图二）。那时，伦敦地铁发达程度已经跟 2021 年深圳（图一）差不多了，太可怕了，跟发达国家的差距太大了。</description>
+      <description>&lt;p&gt;1931 年，亨利•贝克改进了伦敦地铁线路图（图二）。那时，伦敦地铁发达程度已经跟 2021 年深圳（图一）差不多了，太可怕了，跟发达国家的差距太大了。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gnczpjo06wj31400u0wku.jpg&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gnczpjo06wj31400u0wku.jpg, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gnczpjo06wj31400u0wku.jpg 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gnczpjo06wj31400u0wku.jpg 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gnczpjo06wj31400u0wku.jpg&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gnczpjo06wj31400u0wku.jpg&#34; /&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>地球往事</title>
       <link>https://austinxt.github.io/talks/2021-01-28-earth-story/</link>
-      <pubDate>Thu, 28 Jan 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-01-28-earth-story/</guid>
-      <description>2121 年，污水沟边上，一女孩一边觅食，一边吸着人造蛋白液，发现了一条松花蛇。 2071 年，CO2 浓度超过 1200ppm。西伯利亚泥土吞噬了欧亚铁路，大西</description>
+      <description>&lt;p&gt;2121 年，污水沟边上，一女孩一边觅食，一边吸着人造蛋白液，发现了一条松花蛇。&lt;/p&gt;&#xA;&lt;p&gt;2071 年，CO2 浓度超过 1200ppm。西伯利亚泥土吞噬了欧亚铁路，大西洋湿气吹绿了中亚大草原，密西西比河、长江、恒河、刚果河洪水泛滥，人类栖息地重新洗牌。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>如何预防减肥过程中导致的身体损伤？</title>
       <link>https://austinxt.github.io/talks/2021-01-28-fat-heat/</link>
-      <pubDate>Thu, 28 Jan 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-01-28-fat-heat/</guid>
-      <description>避免过度节食，控制在 1200 千卡的热量摄入，营养均衡搭配。 适量运动，单词中高强度有氧运动不超过 2 小时，减肥控制在 1 小时左右，保健控制在 30 分钟。力量</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;避免过度节食，控制在 1200 千卡的热量摄入，营养均衡搭配。&lt;/li&gt;&#xA;&lt;li&gt;适量运动，单词中高强度有氧运动不超过 2 小时，减肥控制在 1 小时左右，保健控制在 30 分钟。力量训练单次不超过 35 组。&lt;/li&gt;&#xA;&lt;li&gt;锻炼时放轻松，不要有心理压力。&lt;/li&gt;&#xA;&lt;li&gt;不要饿肚子运动，持续 1 小时的中高强度运动后适量补糖，运动后正常饮食。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2021-01-27-fat/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2021-01-27-fat/</guid>
-      <description>人体一公斤脂肪什么概念，7700千卡，慢跑26小时（配速7，300千卡每小时）。 ​​​ 减脂运动如何选择？每个人都可按自己的需求配比持续性有氧</description>
+      <description>&lt;p&gt;人体一公斤脂肪什么概念，7700千卡，慢跑26小时（配速7，300千卡每小时）。 ​​​&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gn2mxbjhw5j30u01swdzk.jpg&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gn2mxbjhw5j30u01swdzk.jpg, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gn2mxbjhw5j30u01swdzk.jpg 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gn2mxbjhw5j30u01swdzk.jpg 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gn2mxbjhw5j30u01swdzk.jpg&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Igy1gn2mxbjhw5j30u01swdzk.jpg&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;减脂运动如何选择？每个人都可按自己的需求配比持续性有氧运动、HIIT和力量训练。之前断断续续有过慢跑的尝试，现在想来似乎不太适合我，耗时长，不易坚持，两个缺点都很致命，看来我需要尝试一下更有趣的其他两项了。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>伟大程序员</title>
       <link>https://austinxt.github.io/talks/2020-11-20-%E4%BC%9F%E5%A4%A7%E7%A8%8B%E5%BA%8F%E5%91%98/</link>
-      <pubDate>Fri, 20 Nov 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-11-20-%E4%BC%9F%E5%A4%A7%E7%A8%8B%E5%BA%8F%E5%91%98/</guid>
-      <description>Tim Berners-Lee：万维网发明者 Brendan Eich：Javascript 作者 Bjarne Stroustrup：C++ 之父 Alan Kay：面向对象编程和窗口式用</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Tim Berners-Lee：万维网发明者&lt;/li&gt;&#xA;&lt;li&gt;Brendan Eich：Javascript 作者&lt;/li&gt;&#xA;&lt;li&gt;Bjarne Stroustrup：C++ 之父&lt;/li&gt;&#xA;&lt;li&gt;Alan Kay：面向对象编程和窗口式用户界面的开创者&lt;/li&gt;&#xA;&lt;li&gt;Anders Hejlsberg：Delphi、C#、.NET 和 TypeScript 之父&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>iPad 游戏精选</title>
       <link>https://austinxt.github.io/talks/2020-11-18-ipad-%E6%B8%B8%E6%88%8F%E7%B2%BE%E9%80%89/</link>
-      <pubDate>Wed, 18 Nov 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-11-18-ipad-%E6%B8%B8%E6%88%8F%E7%B2%BE%E9%80%89/</guid>
-      <description>策略类 文明 6 卡卡颂 塌方 Bad North RPG 晶体管 设备 6 在弗雷迪家住五晚 框架 超光速航行：拼图和叙事胜 她的故事 隐藏的人 推理类 Ghost Trick 动作类 GTA 独立游戏 INSIDE 新类型游戏 隐</description>
+      <description>&lt;h3 id=&#34;策略类&#34;&gt;策略类&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;文明 6&lt;/li&gt;&#xA;&lt;li&gt;卡卡颂&lt;/li&gt;&#xA;&lt;li&gt;塌方&lt;/li&gt;&#xA;&lt;li&gt;Bad North&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;rpg&#34;&gt;RPG&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;晶体管&lt;/li&gt;&#xA;&lt;li&gt;设备 6&lt;/li&gt;&#xA;&lt;li&gt;在弗雷迪家住五晚&lt;/li&gt;&#xA;&lt;li&gt;框架&lt;/li&gt;&#xA;&lt;li&gt;超光速航行：拼图和叙事胜&lt;/li&gt;&#xA;&lt;li&gt;她的故事&lt;/li&gt;&#xA;&lt;li&gt;隐藏的人&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;推理类&#34;&gt;推理类&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ghost Trick&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;动作类&#34;&gt;动作类&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;GTA&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;独立游戏&#34;&gt;独立游戏&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;INSIDE&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;新类型游戏&#34;&gt;新类型游戏&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;隐形守护者：互动电影游戏&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;ref&#34;&gt;Ref&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://www.marstranslator.com/f/zh-CN/5327/the-50-best-ipad-games&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;http://www.marstranslator.com/f/zh-CN/5327/the-50-best-ipad-games&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>外贸货物编码</title>
       <link>https://austinxt.github.io/talks/2020-11-17-%E5%A4%96%E8%B4%B8%E8%B4%A7%E7%89%A9%E7%BC%96%E7%A0%81/</link>
-      <pubDate>Tue, 17 Nov 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 17 Nov 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-11-17-%E5%A4%96%E8%B4%B8%E8%B4%A7%E7%89%A9%E7%BC%96%E7%A0%81/</guid>
-      <description>国际贸易标准分类（SITC） 国际贸易标准分类（Standard International Trade Classification，简称：SITC）为用于国际贸易商品的统计和对</description>
+      <description>&lt;h2 id=&#34;国际贸易标准分类sitc&#34;&gt;国际贸易标准分类（SITC）&lt;/h2&gt;&#xA;&lt;p&gt;国际贸易标准分类（Standard International Trade Classification，简称：SITC）为用于国际贸易商品的统计和对比的标准分类方法。&lt;/p&gt;&#xA;&lt;p&gt;该分类法将商品分为为 10 大类：&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>《收缩的城市》读书笔记</title>
       <link>https://austinxt.github.io/talks/2020-10-12-reduce-city/</link>
-      <pubDate>Mon, 12 Oct 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Mon, 12 Oct 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-10-12-reduce-city/</guid>
-      <description>之前读过《城市的胜利》，该书论证了大城市更节约能源、对生态影响更小。城市和乡村、大城市和小城市、不同城市都在竞争人口，人口在不同人为条件限制</description>
+      <description>&lt;p&gt;之前读过《城市的胜利》，该书论证了大城市更节约能源、对生态影响更小。城市和乡村、大城市和小城市、不同城市都在竞争人口，人口在不同人为条件限制下，逐渐向经济效率更高的地方流动。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>开发四件事情</title>
       <link>https://austinxt.github.io/talks/2020-09-03-dev/</link>
-      <pubDate>Thu, 03 Sep 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-09-03-dev/</guid>
-      <description>开发说白了就四件事情 知识（理论）：范围很广，但特定场景下用到的不到，或者说能落地的不多。一般学一些基本的，遇到了再补习一下。 编码：内隐的能力</description>
+      <description>&lt;p&gt;开发说白了就四件事情&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;知识（理论）：范围很广，但特定场景下用到的不到，或者说能落地的不多。一般学一些基本的，遇到了再补习一下。&lt;/li&gt;&#xA;&lt;li&gt;编码：内隐的能力，程序员核心能力，影响开发速度和解决问题的能力。提升比较，需要刻意练习，例如参加算法比赛。&lt;/li&gt;&#xA;&lt;li&gt;工程：用于解决规模、效率、质量问题，公司做大必须要解决的问题，也是程序员最常拿来晋升的工具。靠经验积累，容易提升，但需要环境去经历。&lt;/li&gt;&#xA;&lt;li&gt;业务：行业知识、业务知识、精益管理啥的，是程序员的弱项。容易入门，难以精通，通常需要在全局认识的基础上，深入调研，才能知道别人不知道的密码。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;明白了这点，如何提升就一目了然了。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>华强北游记</title>
       <link>https://austinxt.github.io/talks/2020-08-22-huaqiangbei/</link>
-      <pubDate>Sat, 22 Aug 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-08-22-huaqiangbei/</guid>
-      <description>今天是到深圳的第一个周末，刚好住在华强北旁边，就顺便逛了一下。其中一个数码市场，一楼是回收旧手机和以旧换新，二楼是手机的批发和电商，三楼是手</description>
+      <description>&lt;p&gt;今天是到深圳的第一个周末，刚好住在华强北旁边，就顺便逛了一下。其中一个数码市场，一楼是回收旧手机和以旧换新，二楼是手机的批发和电商，三楼是手机配件、钢化膜的批发和电商。按照一楼到三楼店铺租金逐次下降的规律，回收旧手机的利润率应该很高，而且一楼交易规模明显小于楼上，因此需要的利润率更高。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>《走出中东》读后感</title>
       <link>https://austinxt.github.io/talks/2020-08-08-zhouyijun/</link>
-      <pubDate>Sat, 08 Aug 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-08-08-zhouyijun/</guid>
-      <description>今天大致翻完了周轶君（此类女性太有吸引力了）这本中东记者笔记，副标题是全球民主浪潮的见证与省思。为何看这本书觉得特别混乱，可能是因为被民主浪</description>
+      <description>&lt;p&gt;今天大致翻完了周轶君（此类女性太有吸引力了）这本中东记者笔记，副标题是全球民主浪潮的见证与省思。为何看这本书觉得特别混乱，可能是因为被民主浪潮席卷的中东就是如此混乱，最典型的例子就是土耳其一家子人，政治见解分歧巨大。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>《温铁军：中国要如何克服当下的全球化危机》观后感</title>
       <link>https://austinxt.github.io/talks/2020-07-30-wen/</link>
-      <pubDate>Thu, 30 Jul 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-07-30-wen/</guid>
-      <description>温老是我国著名的三农问题专家，是一位干部出身的学者，实地考察几十个国家，在国内多个地方试点实验。让人印象最深刻的是，共产主义阵营分裂时，温老</description>
+      <description>&lt;p&gt;温老是我国著名的三农问题专家，是一位干部出身的学者，实地考察几十个国家，在国内多个地方试点实验。让人印象最深刻的是，共产主义阵营分裂时，温老背起包就去东欧走访，颇具传奇色彩，让人羡慕。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>了解伊朗的一个书单</title>
       <link>https://austinxt.github.io/talks/2020-07-28-know-iran/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-07-28-know-iran/</guid>
-      <description>游记、旅行指南：《孤独星球：伊朗》、《伊朗零距离》 伊朗人讲述伊朗：《我在伊朗长大》、《在德黑兰读洛丽塔》、《The Cypress Trees: A Love Letter to Iran》、《</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;游记、旅行指南：《孤独星球：伊朗》、《伊朗零距离》&lt;/li&gt;&#xA;&lt;li&gt;伊朗人讲述伊朗：《我在伊朗长大》、《在德黑兰读洛丽塔》、《The Cypress Trees: A Love Letter to Iran》、《欲望德黑兰》、《纳瑟·阿里先生的最后八天》、《大巴扎》、《一个心碎的伊朗女人》&lt;/li&gt;&#xA;&lt;li&gt;西方人讲述的伊斯兰革命后的伊朗：《Neither East Nor West》、《Persian Mirrors》和《Honeymoon in Purdah》&lt;/li&gt;&#xA;&lt;li&gt;伊朗史：美国人和伊朗人各写了本《波斯帝国史》，补充李零老师的《波斯笔记》&lt;/li&gt;&#xA;&lt;li&gt;诗歌和电影：《樱桃的滋味》、《一只狼在放哨》、《蔷薇园》、《随风而行》&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ref: &lt;a href=&#34;https://book.douban.com/tag/%E4%BC%8A%E6%9C%97&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;豆瓣图书标签: 伊朗&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2020-07-12-learn-chinese/</link>
-      <pubDate>Sun, 12 Jul 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 12 Jul 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-07-12-learn-chinese/</guid>
-      <description>给外国朋友写了一个学习中文的路书。</description>
+      <description>&lt;p&gt;给外国朋友写了一个学习中文的路书。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Ily1ggofb54fulj30u01401ky.jpg&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Ily1ggofb54fulj30u01401ky.jpg, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Ily1ggofb54fulj30u01401ky.jpg 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Ily1ggofb54fulj30u01401ky.jpg 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/007yO51Ily1ggofb54fulj30u01401ky.jpg&#34;&#xA;        title=&#34;书架&#34; /&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>非虚构类读物的阅读方法</title>
       <link>https://austinxt.github.io/talks/2020-07-03-no-fiction/</link>
-      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-07-03-no-fiction/</guid>
-      <description>阅读非虚构类的读物，不管是论文、书，还是微博上的文章，其目的都是获取信息。当然，阅读过程中，除了信息还会获取到其他很多东西，例如愉悦、解惑等</description>
+      <description>&lt;p&gt;阅读非虚构类的读物，不管是论文、书，还是微博上的文章，其目的都是获取信息。当然，阅读过程中，除了信息还会获取到其他很多东西，例如愉悦、解惑等等，但这些都源自信息，源自对信息对理解和思考。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>什么是幸福</title>
       <link>https://austinxt.github.io/talks/2020-06-17-happiness/</link>
-      <pubDate>Wed, 17 Jun 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-06-17-happiness/</guid>
-      <description>大部分人可能认为，幸福是快乐、满足、舒适的感觉，即包含当下的积极情绪，也包含生活美满，幸福是一个很难说清的概念。 相比于上述对幸福的抽象描述，</description>
+      <description>&lt;p&gt;大部分人可能认为，幸福是快乐、满足、舒适的感觉，即包含当下的积极情绪，也包含生活美满，幸福是一个很难说清的概念。&lt;/p&gt;&#xA;&lt;p&gt;相比于上述对幸福的抽象描述，积极心理学家更喜欢用具体的语言定义它，以便研究。《打开积极心理学之门》第四章中，塞利格曼和罗兹曼（2003）区分了三种传统的幸福理论，每种理论都有对测量幸福的测量方法。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2020-06-16-iran/</link>
-      <pubDate>Tue, 16 Jun 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-06-16-iran/</guid>
-      <description>周末在 tandem 找了一个伊朗小姐姐聊天，小姐姐是医学院的大一学生，英语跟我这个过六级的差不多。聊天中发现国产智能手机在伊朗普及的同时，外卖在伊朗也普</description>
+      <description>&lt;p&gt;周末在 tandem 找了一个伊朗小姐姐聊天，小姐姐是医学院的大一学生，英语跟我这个过六级的差不多。聊天中发现国产智能手机在伊朗普及的同时，外卖在伊朗也普及开来了。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title></title>
       <link>https://austinxt.github.io/talks/2020-05-12/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-05-12/</guid>
-      <description>上课听讲重在理解，不同科目要融会贯通。 读书先快读，读大意；再慢读，读懂不明白的地方；最后选读，选出重点。 例子比数学更能帮助推理进行下去，举例</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;上课听讲重在理解，不同科目要融会贯通。&lt;/li&gt;&#xA;&lt;li&gt;读书先快读，读大意；再慢读，读懂不明白的地方；最后选读，选出重点。&lt;/li&gt;&#xA;&lt;li&gt;例子比数学更能帮助推理进行下去，举例子一要简单贴切，需要包含全部重要特征而忽略枝节；二要分真假，实例最佳；三要新奇，容易引起新的启发；四要一般化，使理论更一般化。&lt;/li&gt;&#xA;&lt;li&gt;学习要从假设大师是对的入手。&lt;/li&gt;&#xA;&lt;li&gt;读书要一堆一堆读，同类的一堆书，相互比较，选出最好的读。&lt;/li&gt;&#xA;&lt;li&gt;对于一流之作，要细读，反复读，在精不在多。&lt;/li&gt;&#xA;&lt;li&gt;不管中英文，文章都讲文气，文气最容易从经典中习得。英文坚持背经典，中文多背《古诗源》。&lt;/li&gt;&#xA;&lt;li&gt;不把思想写出来，不可能清楚自己想的是什么，这就是写作的重大公用之一。&lt;/li&gt;&#xA;&lt;li&gt;读书可以不读就不要读，要去读那些非读不可的书。&lt;/li&gt;&#xA;&lt;li&gt;天才三步走：把有关的技术和只是搞的融会贯通；在思想上能够走进四顾无人的原野；来无影、去无踪的创意层出不穷（不可强求）。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>非暴力沟通四要素</title>
       <link>https://austinxt.github.io/talks/2020-05-12-%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A%E5%9B%9B%E8%A6%81%E7%B4%A0/</link>
-      <pubDate>Tue, 12 May 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-05-12-%E9%9D%9E%E6%9A%B4%E5%8A%9B%E6%B2%9F%E9%80%9A%E5%9B%9B%E8%A6%81%E7%B4%A0/</guid>
-      <description>观察，客观陈述具体我/你的行为，例如「我/你看到/听到/想到。。。」的句式 感受，我/你对这事有什么感受（而不是有什么想法），例如「我感到。。</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;观察，客观陈述具体我/你的行为，例如「我/你看到/听到/想到。。。」的句式&lt;/li&gt;&#xA;&lt;li&gt;感受，我/你对这事有什么感受（而不是有什么想法），例如「我感到。。。」、「你感到。。吗？」的句式&lt;/li&gt;&#xA;&lt;li&gt;需求，是什么样的需求/价值（而不是偏好或某种具体行为）导致我/你的感受，例如「因为我/你需要/看重。。。」的句式&lt;/li&gt;&#xA;&lt;li&gt;请求，清楚地请求（而不是命令）/关切倾听那些有帮助的具体行为，例如「你是否愿意。。。」、「所以你想。。。」的句式&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ref：《非暴力沟通》&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>《自控力》实操技巧</title>
       <link>https://austinxt.github.io/talks/2020-05-11-%E8%87%AA%E6%8E%A7%E5%8A%9B%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Mon, 11 May 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-05-11-%E8%87%AA%E6%8E%A7%E5%8A%9B%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>实操上有几点值得借鉴： 通过饱满对睡眠、低血糖饮食、加入社群、WOOP等策略，提高整体意志力； 利用冥想、运动（离开原有对状态就算）、小睡、洗澡</description>
+      <description>&lt;p&gt;实操上有几点值得借鉴：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;通过饱满对睡眠、低血糖饮食、加入社群、WOOP等策略，提高整体意志力；&lt;/li&gt;&#xA;&lt;li&gt;利用冥想、运动（离开原有对状态就算）、小睡、洗澡、有创意的爱好等放松大脑等方法，调节意志力；&lt;/li&gt;&#xA;&lt;li&gt;想象长远目标、原谅自己，挽救崩溃后等恶循环；&lt;/li&gt;&#xA;&lt;li&gt;认识无效的减压方式，「真正缓解压力的不是释放多巴胺或依赖奖励的承诺，而是增加大脑中改善情绪的化学物质」，所以玩游戏、上网、喝酒无法减压，瑜伽、散步、听歌才是减压的正确姿势。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>如何应对黑天鹅事件</title>
       <link>https://austinxt.github.io/talks/2020-05-10-%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E9%BB%91%E5%A4%A9%E9%B9%85%E4%BA%8B%E4%BB%B6/</link>
-      <pubDate>Sun, 10 May 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 10 May 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-05-10-%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E9%BB%91%E5%A4%A9%E9%B9%85%E4%BA%8B%E4%BB%B6/</guid>
-      <description>黑天鹅事件的三个特点：稀有性、极大的冲击性和事后可预测性。 如何应对黑天鹅事件呢？ 拆分事件的颗粒度，区分事件的影响是正面的还是负面的，事件影响</description>
+      <description>&lt;p&gt;黑天鹅事件的三个特点：稀有性、极大的冲击性和事后可预测性。&lt;/p&gt;&#xA;&lt;p&gt;如何应对黑天鹅事件呢？&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;拆分事件的颗粒度，区分事件的影响是正面的还是负面的，事件影响的量级。&lt;/li&gt;&#xA;&lt;li&gt;不要尝试去预测。&lt;/li&gt;&#xA;&lt;li&gt;抓住一切可能的机会，让自己成为黑天鹅事件。&lt;/li&gt;&#xA;&lt;li&gt;允许勇于存在，追求广义理性，而非工具理性。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;出处：《黑天鹅》&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>增细加工</title>
       <link>https://austinxt.github.io/talks/2020-02-07-elaborative-processing/</link>
-      <pubDate>Fri, 07 Feb 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-02-07-elaborative-processing/</guid>
-      <description>为什么有些人记单词总是记不住？为什么记住了又很快忘记？ 这里涉及到一个认知心理学概念——增细加工（elaborative processing）</description>
+      <description>&lt;p&gt;为什么有些人记单词总是记不住？为什么记住了又很快忘记？&lt;/p&gt;&#xA;&lt;p&gt;这里涉及到一个认知心理学概念——增细加工（elaborative processing），即补充和拓展相关的信息，无论补充的信息是否帮助理解所需记忆的事物，都有助于记忆。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>PQ4R 学习法</title>
       <link>https://austinxt.github.io/talks/2020-01-27-pq4r%E5%AD%A6%E4%B9%A0%E6%B3%95/</link>
-      <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2020-01-27-pq4r%E5%AD%A6%E4%B9%A0%E6%B3%95/</guid>
-      <description>Preview（预习）——Question（提问）——Read（阅读）——Reflect（反思）——Recite（复述）——Review（复</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Preview（预习）——Question（提问）——Read（阅读）——Reflect（反思）——Recite（复述）——Review（复习）&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>正确站立和走路</title>
       <link>https://austinxt.github.io/talks/2019-06-28-%E6%AD%A3%E7%A1%AE%E7%AB%99%E7%AB%8B%E5%92%8C%E8%B5%B0%E8%B7%AF/</link>
-      <pubDate>Fri, 28 Jun 2019 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2019-06-28-%E6%AD%A3%E7%A1%AE%E7%AB%99%E7%AB%8B%E5%92%8C%E8%B5%B0%E8%B7%AF/</guid>
-      <description>如何站直 站直：把头、肩、臀和脚后跟都紧贴墙壁站立 加紧肩胛骨：在腰部扣一把雨伞 如何用躯干站立 夹紧肩胛骨：容易实现上下半身的联动 肩部放松站立 举起</description>
+      <description>&lt;h2 id=&#34;如何站直&#34;&gt;如何站直&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;站直：把头、肩、臀和脚后跟都紧贴墙壁站立&lt;/li&gt;&#xA;&lt;li&gt;加紧肩胛骨：在腰部扣一把雨伞&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;如何用躯干站立&#34;&gt;如何用躯干站立&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;夹紧肩胛骨：容易实现上下半身的联动&#xA;&lt;ol&gt;&#xA;&lt;li&gt;肩部放松站立&lt;/li&gt;&#xA;&lt;li&gt;举起胜利欢呼的双臂&lt;/li&gt;&#xA;&lt;li&gt;肘部弯曲，打开胸部是同时迅速放下双臂，有意识的用背部肌肉使肩胛骨夹紧&lt;/li&gt;&#xA;&lt;li&gt;保持肩胛骨夹紧的状态，手臂自然下垂&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;使盆骨前倾：使盆骨活动充分，实现上下半身联动&#xA;&lt;ol&gt;&#xA;&lt;li&gt;自然笔直站立，脚肩同宽，肩部放松&lt;/li&gt;&#xA;&lt;li&gt;盆骨使劲向前倾，臀部向后牵引，腹部不要突出，将双手放在腰部更容易做到&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;将重心置于丹田：使轴心处于稳定状态&#xA;&lt;ol&gt;&#xA;&lt;li&gt;自然笔直站立，感知胸口存在&lt;/li&gt;&#xA;&lt;li&gt;感知下移，感知丹田（肚脐下 4CM），在丹田处稍用力，用手触摸更容易做到&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;躯干走路&#34;&gt;躯干走路&lt;/h2&gt;&#xA;&lt;p&gt;走路前的躯干唤醒&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>合理引用的规范</title>
       <link>https://austinxt.github.io/talks/2019-05-19-%E5%90%88%E7%90%86%E5%BC%95%E7%94%A8%E4%B8%8E%E6%8A%84%E8%A2%AD%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2019-05-19-%E5%90%88%E7%90%86%E5%BC%95%E7%94%A8%E4%B8%8E%E6%8A%84%E8%A2%AD%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-      <description>一般来说，法律判定「合理引用」与「抄袭」的规范是： 没有对外公开发表的内容，没有经过作者同意，不能引用且对外公开。 引用对外公开发表的内容，按照</description>
+      <description>&lt;p&gt;一般来说，法律判定「合理引用」与「抄袭」的规范是：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;没有对外公开发表的内容，没有经过作者同意，不能引用且对外公开。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;引用对外公开发表的内容，按照法律规定与业界通用规范，需要符合以下标准：&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>提问模板</title>
       <link>https://austinxt.github.io/talks/2019-05-19-%E6%8F%90%E9%97%AE%E6%A8%A1%E6%9D%BF/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2019-05-19-%E6%8F%90%E9%97%AE%E6%A8%A1%E6%9D%BF/</guid>
-      <description>Title：简要描述你的问题 背景 我期待实现的效果/欲达成的目的是： 我的系统、版本等环境配置是：（非技术问题请删掉这行） 现象 我想实现上述效果/</description>
+      <description>&lt;p&gt;Title：简要描述你的问题&lt;/p&gt;&#xA;&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;我期待实现的效果/欲达成的目的是：&lt;/li&gt;&#xA;&lt;li&gt;我的系统、版本等环境配置是：（非技术问题请删掉这行）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;现象&#34;&gt;现象&lt;/h2&gt;&#xA;&lt;p&gt;我想实现上述效果/目的时，遇到了这样的情况：&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>《自私的基因》主要内容</title>
       <link>https://austinxt.github.io/talks/2019-01-06-the-selfish-gene/</link>
-      <pubDate>Sun, 06 Jan 2019 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 06 Jan 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2019-01-06-the-selfish-gene/</guid>
-      <description>自私不是个体道德意义上的自私，而是一种盲目的、无意识的行为本身。 基因是进化的单位，生物个体（生存机器）是承载基因复制子的载体。 减数分裂可解释</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;自私不是个体道德意义上的自私，而是一种盲目的、无意识的行为本身。&lt;/li&gt;&#xA;&lt;li&gt;基因是进化的单位，生物个体（生存机器）是承载基因复制子的载体。&lt;/li&gt;&#xA;&lt;li&gt;减数分裂可解释为，基因之间相互拷贝有利的基因。&lt;/li&gt;&#xA;&lt;li&gt;分析亮点是，用博弈论解释自然界中各种稳态的生存策略。&lt;/li&gt;&#xA;&lt;li&gt;人类是承载基因和模因的机器人，人类需要用理性维护人类自身的利益（即便与基因和模因的利益有出入），人类也可根据自己的意愿创造基因和模因。&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>重塑职业身份的策略</title>
       <link>https://austinxt.github.io/talks/2018-12-27-%E9%87%8D%E5%A1%91%E8%81%8C%E4%B8%9A%E8%BA%AB%E4%BB%BD%E7%9A%84%E7%AD%96%E7%95%A5/</link>
-      <pubDate>Thu, 27 Dec 2018 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2018-12-27-%E9%87%8D%E5%A1%91%E8%81%8C%E4%B8%9A%E8%BA%AB%E4%BB%BD%E7%9A%84%E7%AD%96%E7%95%A5/</guid>
-      <description>进行实验性的尝试：在确定转型的主要方向之前，先小范围尝试新职业的工作和新的职业角色。 建立新的人际关系：认识可以为我们提供帮助的人，找到新的职</description>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;进行实验性的尝试：在确定转型的主要方向之前，先小范围尝试新职业的工作和新的职业角色。&lt;/li&gt;&#xA;&lt;li&gt;建立新的人际关系：认识可以为我们提供帮助的人，找到新的职业角色的榜样和新的同行作为标杆，指导我们进步。&lt;/li&gt;&#xA;&lt;li&gt;找出转型的意义：找出或创造出让你改变职业的诱因，讲一个好故事作为转型的果，并以此为理由推动新职业的发展。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>霍兰德职业兴趣理论</title>
       <link>https://austinxt.github.io/talks/2018-10-28-%E9%9C%8D%E5%85%B0%E5%BE%B7%E8%81%8C%E4%B8%9A%E5%85%B4%E8%B6%A3%E7%90%86%E8%AE%BA/</link>
-      <pubDate>Sun, 28 Oct 2018 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2018-10-28-%E9%9C%8D%E5%85%B0%E5%BE%B7%E8%81%8C%E4%B8%9A%E5%85%B4%E8%B6%A3%E7%90%86%E8%AE%BA/</guid>
-      <description>1959 年霍兰德开始提出他的生涯理论，之后不断发展，并在 1973 年提出经典的霍兰德六角形模型（Hexagonal model）。 值得注意的是，霍兰德早期只</description>
+      <description>&lt;p&gt;1959 年霍兰德开始提出他的生涯理论，之后不断发展，并在 1973 年提出经典的霍兰德六角形模型（Hexagonal model）。&lt;/p&gt;&#xA;&lt;p&gt;值得注意的是，霍兰德早期只提出 6 种类型论，之后才借助《职业自我探索量表》（Self-Directed Search；简称 SDS）将六种类型与相应职业关联在一起，试图解答个人心理特质如何与职业因素更好地匹配（有时这个问题被简称为「人职匹配」）。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>柳比歇夫的时间统计方法与时间管理有本质区别</title>
       <link>https://austinxt.github.io/talks/2018-03-10-%E5%A5%87%E7%89%B9%E7%9A%84%E4%B8%80%E7%94%9F%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2018-03-10-%E5%A5%87%E7%89%B9%E7%9A%84%E4%B8%80%E7%94%9F%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>前者只是客观记录自己的时间花销，以供反馈改进，促使行动更有利于实现理想，而在行动时无需考虑到时间，只管专注于当前工作，根据柳比歇夫的睡眠习惯</description>
+      <description>&lt;p&gt;前者只是客观记录自己的时间花销，以供反馈改进，促使行动更有利于实现理想，而在行动时无需考虑到时间，只管专注于当前工作，根据柳比歇夫的睡眠习惯，时间统计更像是精力管理；后者是更多为经理人处理繁多任务服务。时间统计方法的关键是：每月每年五年的小结、计划；把时间作为容器，去装在导向理想的一次次学习、练习、心流、改进，仅在月以上的时间单位调整日常作息，使得每天无需重新计划任务；用于记录评判登峰造极，甚至实现理想的全过程；检测健康和情绪。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>整体性学习有 5 个步骤</title>
       <link>https://austinxt.github.io/talks/2017-07-30-%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 30 Jul 2017 00:00:00 +0800</pubDate>
-      <author>164640966@qq.com (夜航星)</author>
+      <pubDate>Sun, 30 Jul 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
       <guid>https://austinxt.github.io/talks/2017-07-30-%E5%A6%82%E4%BD%95%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description>并非按部就班，只是大体按此顺序进行，不能拘泥于这种顺序。 获取 ── 通过感官获取信息。 理解 ── 明白信息的表面意思。 拓展 ── 与其他信息建立联系，拓</description>
+      <description>&lt;p&gt;并非按部就班，只是大体按此顺序进行，不能拘泥于这种顺序。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;获取 ── 通过感官获取信息。&lt;/li&gt;&#xA;&lt;li&gt;理解 ── 明白信息的表面意思。&lt;/li&gt;&#xA;&lt;li&gt;拓展 ── 与其他信息建立联系，拓展有三种主要方式。&#xA;&lt;ul&gt;&#xA;&lt;li&gt;深度拓展 ── 探究知识的背景。怎么来的&lt;/li&gt;&#xA;&lt;li&gt;横向拓展 ── 探究知识的关系。类似的知识，同一作者的其他知识&lt;/li&gt;&#xA;&lt;li&gt;纵向拓展 ── 与其他结构联系后，从其他结构的角度探究知识。远距离联想&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;纠错 ── 剔除错误联系。&lt;/li&gt;&#xA;&lt;li&gt;应用 ── 将知识应用到各种情境中去，包括现实生活。 具体怎么做，还得具体学习。&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
   </channel>
 </rss>

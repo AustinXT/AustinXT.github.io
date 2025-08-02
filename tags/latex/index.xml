@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>LaTeX - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/latex/</link>
-        <description>LaTeX - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Thu, 30 Nov 2017 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/latex/" rel="self" type="application/rss+xml" /><item>
-    <title>LaTeX 常用数学符号</title>
-    <link>https://austinxt.github.io/2017-11-30-latex-math/</link>
-    <pubDate>Thu, 30 Nov 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-11-30-latex-math/</guid>
-    <description><![CDATA[查 LaTeX 常用数学符号的时候，一开始去官网：LaTeX - A document preparation system找官方文档：LaTeX Documentation，然后又找了 CTEX 的在线文档]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on 夜航星</title>
+    <link>https://austinxt.github.io/tags/latex/</link>
+    <description>Recent content in LaTeX on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LaTeX 常用数学符号</title>
+      <link>https://austinxt.github.io/2017-11-30-latex-math/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-11-30-latex-math/</guid>
+      <description>&lt;p&gt;查 LaTeX 常用数学符号的时候，一开始去&lt;a href=&#34;https://www.latex-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;官网：LaTeX - A document preparation system&lt;/a&gt;找&lt;a href=&#34;https://www.latex-project.org/help/documentation/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;官方文档：LaTeX Documentation&lt;/a&gt;，然后又找了 CTEX 的&lt;a href=&#34;http://www.ctex.org/documents/latex/graphics/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;在线文档：LATEX2e 插图指南&lt;/a&gt;，内容都太丰富了。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>命令行 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
-        <description>命令行 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 27 May 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="self" type="application/rss+xml" /><item>
-    <title>命令行环境使用指南</title>
-    <link>https://austinxt.github.io/2023-05-27-cmd-env/</link>
-    <pubDate>Sat, 27 May 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-05-27-cmd-env/</guid>
-    <description><![CDATA[无界面情况下的唯一选择 命令行环境的学习主要包括 任务控制：Shell 操作和进程的关系-&gt;需要了解进程信号 终端多路复用：如何在终端完成多面]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>命令行 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+    <description>Recent content in 命令行 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sat, 27 May 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>命令行环境使用指南</title>
+      <link>https://austinxt.github.io/2023-05-27-cmd-env/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-05-27-cmd-env/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;无界面情况下的唯一选择&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;命令行环境的学习主要包括&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;任务控制：Shell 操作和进程的关系-&amp;gt;需要了解进程信号&lt;/li&gt;&#xA;&lt;li&gt;终端多路复用：如何在终端完成多面板、多窗口的任务-&amp;gt;需要会使用相关工具&lt;/li&gt;&#xA;&lt;li&gt;dotfiles 管理-&amp;gt;需要管理起来dotfiles&lt;/li&gt;&#xA;&lt;li&gt;ssh 应用：命令行工具和 ssh 工具的使用-&amp;gt;需要掌握一套高效的操作远端设备的流程&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;任务控制&#34;&gt;任务控制&lt;/h2&gt;&#xA;&lt;p&gt;Shell 会使用 UNIX 提供的信号机制执行进程间通信。当一个进程接收到信号时，它会停止执行、处理该信号并基于信号传递的信息来改变其执行。就这一点而言，信号是一种&lt;em&gt;软件中断&lt;/em&gt;。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

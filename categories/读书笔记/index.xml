@@ -1,120 +1,119 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>读书笔记 - Category - 夜航星</title>
-        <link>https://austinxt.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
-        <description>读书笔记 - Category - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 30 Jul 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
-    <title>从四个问题理解跨境电商</title>
-    <link>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</link>
-    <pubDate>Sat, 30 Jul 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</guid>
-    <description><![CDATA[跨境电商与国际物流读后感。 跨境电商的含义和诞生？ 跨境电商，英文通常翻译为 Cross-border eCommerce（跨境网络零售）。广义上的跨境电商包括跨境贸易在]]></description>
-</item>
-<item>
-    <title>初识社会学</title>
-    <link>https://austinxt.github.io/2021-04-21-%E5%88%9D%E8%AF%86%E7%A4%BE%E4%BC%9A%E5%AD%A6/</link>
-    <pubDate>Wed, 21 Apr 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-04-21-%E5%88%9D%E8%AF%86%E7%A4%BE%E4%BC%9A%E5%AD%A6/</guid>
-    <description><![CDATA[什么是社会学 默顿的具体论点是，我们可以把社会理解为两个相对独立的领域：文化和社会结构。文化告诉我们两件事：我们应向往什么和我们应如何表现。结]]></description>
-</item>
-<item>
-    <title>《用数据讲故事》读书笔记</title>
-    <link>https://austinxt.github.io/2020-09-20-data-for-story/</link>
-    <pubDate>Sun, 20 Sep 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2020-09-20-data-for-story/</guid>
-    <description><![CDATA[本书最精彩的地方就是书里面提供的案例，循序渐进的一步步优化一个杂乱的图表：除去杂乱的图示，将次要的信息融入背景，突出重点关注的数据，顺着视觉]]></description>
-</item>
-<item>
-    <title>你认为最大的荒谬是什么</title>
-    <link>https://austinxt.github.io/2021-03-14-the-myth-of-sisyphus/</link>
-    <pubDate>Sun, 20 Sep 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-03-14-the-myth-of-sisyphus/</guid>
-    <description><![CDATA[加缪一开始明确了论证起点——世界是荒诞的，人生本没有意义。其中的论述是通过一层层的逻辑推理，不过在 21 世纪的今天，我们已经有了更好的证据，而且]]></description>
-</item>
-<item>
-    <title>初识积极心理学</title>
-    <link>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</link>
-    <pubDate>Sat, 11 Apr 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
-    <description><![CDATA[积极心理学是一门怎样的学科，主要研究的是哪些问题？ 定义 积极心理学是研究人的优势与幸福的一门心理学学科。积极心理学通过快乐、参与和意义来帮助人]]></description>
-</item>
-<item>
-    <title>如何做情报分析？</title>
-    <link>https://austinxt.github.io/2020-04-04-%E5%A6%82%E4%BD%95%E5%81%9A%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90/</link>
-    <pubDate>Sat, 04 Apr 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2020-04-04-%E5%A6%82%E4%BD%95%E5%81%9A%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90/</guid>
-    <description><![CDATA[情报分析心理学 如何做情报分析？要点是什么？ 情报分析有特定的步骤，其中竞争性假设分析法（ACH）最为关键。 情报分析四步走 界定问题提出假设 分析质]]></description>
-</item>
-<item>
-    <title>《如何教聪明人学会学习？》笔记</title>
-    <link>https://austinxt.github.io/2019-12-22-%E5%A6%82%E4%BD%95%E6%95%99%E8%81%AA%E6%98%8E%E4%BA%BA%E5%AD%A6%E4%BC%9A%E5%AD%A6%E4%B9%A0/</link>
-    <pubDate>Mon, 23 Dec 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-12-22-%E5%A6%82%E4%BD%95%E6%95%99%E8%81%AA%E6%98%8E%E4%BA%BA%E5%AD%A6%E4%BC%9A%E5%AD%A6%E4%B9%A0/</guid>
-    <description><![CDATA[克里斯·阿吉里斯（Chris Argyris）曾在 1991 年的《哈佛商业评论》上发表了《如何教聪明人学会学习？》，原标题为《Teaching Smart People How to]]></description>
-</item>
-<item>
-    <title>如何形成人格全景？</title>
-    <link>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</link>
-    <pubDate>Sat, 27 Jul 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</guid>
-    <description><![CDATA[作者塞缪尔·巴伦德斯（Samuel Barondes），生于 1933 年，是美国神经病专家、神经科学家，加州大学（旧金山）心理学教授，美国科学院医学院]]></description>
-</item>
-<item>
-    <title>一窥癌症：人类扭曲态</title>
-    <link>https://austinxt.github.io/2019-07-15-cancer-history/</link>
-    <pubDate>Mon, 15 Jul 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-07-15-cancer-history/</guid>
-    <description><![CDATA[你是谁，你来自何方？ 我来自于你，我是另一个你。 我是我，你怎么会是我？ 我是你的突变体，你们称之为「扭曲态」。 你为何会出现？ 一切事物都有偏差，我]]></description>
-</item>
-<item>
-    <title>中文的常态与病态</title>
-    <link>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</link>
-    <pubDate>Thu, 15 Mar 2018 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</guid>
-    <description><![CDATA[《翻译乃大道》读书笔记 中文常态：措辞简洁，语法对称，句式灵活，声调铿锵。 中文病态：引入大量的英文表达，繁琐生硬。 中文最常见的常态和病态 项目 坏]]></description>
-</item>
-<item>
-    <title>登峰造极之路</title>
-    <link>https://austinxt.github.io/2017-12-14-mastery/</link>
-    <pubDate>Thu, 14 Dec 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-12-14-mastery/</guid>
-    <description><![CDATA[登峰造极是一个过程而不是一个结果，在整个过程中间，过于目标导向只会使你失去长期进步的潜力。一旦选择了登峰造极的道路，你就必须放弃短期的利益，]]></description>
-</item>
-<item>
-    <title>《超越智商》读书笔记</title>
-    <link>https://austinxt.github.io/2017-07-25-what-intelligence-tests-miss/</link>
-    <pubDate>Tue, 25 Jul 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-07-25-what-intelligence-tests-miss/</guid>
-    <description><![CDATA[一、聪明人也会做傻事 前两章，作者从“智力”中分离出理性这一概念，认知科学家把理性分成工具理性和知识理性。工具理性被定义为以最优化的方式实现个]]></description>
-</item>
-<item>
-    <title>明托金字塔原理</title>
-    <link>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</link>
-    <pubDate>Sun, 11 Sep 2016 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</guid>
-    <description><![CDATA[此书全名是《金字塔原理，思考、写作和解决问题的逻辑》，书名看似高大上，小编也是被它忽悠了。正如书名 XXX 原理一样，书的内容也很枯燥无味，小编强打]]></description>
-</item>
-<item>
-    <title>制度的得利益者</title>
-    <link>https://austinxt.github.io/2016-02-16-1587/</link>
-    <pubDate>Tue, 16 Feb 2016 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2016-02-16-1587/</guid>
-    <description><![CDATA[万历十五年，平平淡淡，毫不起眼的一年，却为最后一个汉人统治王朝的衰败拉开了序幕。 本书共七章，大致可以分为三部分：皇帝、首辅和突出人物。 万历皇]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>读书笔记 on 夜航星</title>
+    <link>https://austinxt.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 读书笔记 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Fri, 01 Aug 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>什么知识值得学习？</title>
+      <link>https://austinxt.github.io/2025-08-01-big-understandings/</link>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2025-08-01-big-understandings/</guid>
+      <description>&lt;p&gt;「什么知识值得学习？」是&lt;a href=&#34;https://book.douban.com/subject/26586892/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;《为未知而教，为未来而学》&lt;/a&gt;这本书最重要的元问题，也是本书作者试图回答的问题。&lt;/p&gt;&#xA;&lt;p&gt;珀金斯把答案归结为一类「真知识」（Lifeready Learning）：它们既解决现实问题，又能随时间沉淀并扩展，如同滚雪球般汇聚力量。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>从四个问题理解跨境电商</title>
+      <link>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</link>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</guid>
+      <description>&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/27013701/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;跨境电商与国际物流&lt;/a&gt;读后感。&lt;/p&gt;&#xA;&lt;h3 id=&#34;跨境电商的含义和诞生&#34;&gt;跨境电商的含义和诞生？&lt;/h3&gt;&#xA;&lt;p&gt;跨境电商，英文通常翻译为 Cross-border eCommerce（跨境网络零售）。广义上的跨境电商包括跨境贸易在线交易（B2C 和 B2B）和相关服务（供应链、物流、通关、支付、结汇、运营等）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>初识社会学</title>
+      <link>https://austinxt.github.io/2021-04-21-%E5%88%9D%E8%AF%86%E7%A4%BE%E4%BC%9A%E5%AD%A6/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2021-04-21-%E5%88%9D%E8%AF%86%E7%A4%BE%E4%BC%9A%E5%AD%A6/</guid>
+      <description>&lt;h2 id=&#34;什么是社会学&#34;&gt;什么是社会学&lt;/h2&gt;&#xA;&lt;p&gt;默顿的具体论点是，我们可以把社会理解为两个相对独立的领域：文化和社会结构。文化告诉我们两件事：我们应向往什么和我们应如何表现。结构描述着权利、财富和地位的分配。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>《用数据讲故事》读书笔记</title>
+      <link>https://austinxt.github.io/2020-09-20-data-for-story/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2020-09-20-data-for-story/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;本书最精彩的地方就是书里面提供的案例，循序渐进的一步步优化一个杂乱的图表：除去杂乱的图示，将次要的信息融入背景，突出重点关注的数据，顺着视觉移动，将需要传递的信息展现给受众。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>你认为最大的荒谬是什么</title>
+      <link>https://austinxt.github.io/2021-03-14-the-myth-of-sisyphus/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2021-03-14-the-myth-of-sisyphus/</guid>
+      <description>&lt;p&gt;加缪一开始明确了论证起点——世界是荒诞的，人生本没有意义。其中的论述是通过一层层的逻辑推理，不过在 21 世纪的今天，我们已经有了更好的证据，而且不用刻意去顾及宗教。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>初识积极心理学</title>
+      <link>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
+      <description>&lt;h2 id=&#34;积极心理学是一门怎样的学科主要研究的是哪些问题&#34;&gt;积极心理学是一门怎样的学科，主要研究的是哪些问题？&lt;/h2&gt;&#xA;&lt;h3 id=&#34;定义&#34;&gt;定义&lt;/h3&gt;&#xA;&lt;p&gt;积极心理学是研究人的优势与幸福的一门心理学学科。积极心理学通过快乐、参与和意义来帮助人们通往幸福和快乐。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;积极心理学（positive psychology）是一门研究如何正确把握人生的科学，关注从生到死亡的所有人生阶段，关注那些可以提升生命价值的事件。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何做情报分析？</title>
+      <link>https://austinxt.github.io/2020-04-04-%E5%A6%82%E4%BD%95%E5%81%9A%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90/</link>
+      <pubDate>Sat, 04 Apr 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2020-04-04-%E5%A6%82%E4%BD%95%E5%81%9A%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26335793/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;情报分析心理学&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;如何做情报分析？要点是什么？&lt;/p&gt;&#xA;&lt;p&gt;情报分析有特定的步骤，其中竞争性假设分析法（ACH）最为关键。&lt;/p&gt;&#xA;&lt;h2 id=&#34;情报分析四步走&#34;&gt;情报分析四步走&lt;/h2&gt;&#xA;&lt;h3 id=&#34;界定问题提出假设&#34;&gt;界定问题提出假设&lt;/h3&gt;&#xA;&lt;p&gt;分析质量和时间两者不可兼得，与其分析一个质量较低的大问题，不如缩小命题，获得一个质量更高的信息分析。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>《如何教聪明人学会学习？》笔记</title>
+      <link>https://austinxt.github.io/2019-12-22-%E5%A6%82%E4%BD%95%E6%95%99%E8%81%AA%E6%98%8E%E4%BA%BA%E5%AD%A6%E4%BC%9A%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2019-12-22-%E5%A6%82%E4%BD%95%E6%95%99%E8%81%AA%E6%98%8E%E4%BA%BA%E5%AD%A6%E4%BC%9A%E5%AD%A6%E4%B9%A0/</guid>
+      <description>&lt;p&gt;克里斯·阿吉里斯（Chris Argyris）曾在 1991 年的《哈佛商业评论》上发表了《如何教聪明人学会学习？》，原标题为《Teaching Smart People How to Learn》。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>如何形成人格全景？</title>
+      <link>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</guid>
+      <description>&lt;p&gt;作者塞缪尔·巴伦德斯（Samuel Barondes），生于 1933 年，是美国神经病专家、神经科学家，加州大学（旧金山）心理学教授，美国科学院医学院士、美国艺术与科学研究院院士。巴伦德斯主要研究分子神经病学（molecular psychiatry），曾发表过 200 多篇论文，H 指数高达 80+。著有通俗读物《人格解码》、《分子和心理疾病》、《情绪基因》、《胜过百忧解》等。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>一窥癌症：人类扭曲态</title>
+      <link>https://austinxt.github.io/2019-07-15-cancer-history/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2019-07-15-cancer-history/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;你是谁，你来自何方？&lt;/p&gt;&#xA;&lt;p&gt;我来自于你，我是另一个你。&lt;/p&gt;&#xA;&lt;p&gt;我是我，你怎么会是我？&lt;/p&gt;&#xA;&lt;p&gt;我是你的突变体，你们称之为「扭曲态」。&lt;/p&gt;&#xA;&lt;p&gt;你为何会出现？&lt;/p&gt;&#xA;&lt;p&gt;一切事物都有偏差，我是你犯下的错误。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>中文的常态与病态</title>
+      <link>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26279084/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;《翻译乃大道》&lt;/a&gt;读书笔记&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;中文常态：措辞简洁，语法对称，句式灵活，声调铿锵。&lt;/p&gt;&#xA;&lt;p&gt;中文病态：引入大量的英文表达，繁琐生硬。&lt;/p&gt;&#xA;&lt;h2 id=&#34;中文最常见的常态和病态&#34;&gt;中文最常见的常态和病态&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;项目&lt;/th&gt;&#xA;          &lt;th&gt;坏例子&lt;/th&gt;&#xA;          &lt;th&gt;好例子&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免英式抽象名词作主语&lt;/td&gt;&#xA;          &lt;td&gt;他的收入的减少改变了他的生活方式&lt;/td&gt;&#xA;          &lt;td&gt;他收入减少，于是改变生活方式&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;中文主语可以是一件事情&lt;/td&gt;&#xA;          &lt;td&gt;国语的推行，要靠大家努力&lt;/td&gt;&#xA;          &lt;td&gt;推行国语，要靠大家努力&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免文字义肢，动词变为万能动词 + 抽象名词，对「作出」、「进行」滥用&lt;/td&gt;&#xA;          &lt;td&gt;听众对访问教授作出了十分热烈的反应&lt;/td&gt;&#xA;          &lt;td&gt;听众对访问教授反应十分热烈&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免学术术语滥用，「性、型、度」&lt;/td&gt;&#xA;          &lt;td&gt;这本书可读性颇高。他是热情型的人。前瞻性等等&lt;/td&gt;&#xA;          &lt;td&gt;这本书引人入胜。他是个热情的人。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免……之一&lt;/td&gt;&#xA;          &lt;td&gt;李广乃汉朝名将之一&lt;/td&gt;&#xA;          &lt;td&gt;李广乃汉朝名将。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免「与、及、和、而」过多使用&lt;/td&gt;&#xA;          &lt;td&gt;台北显然比曼谷起步更早及迈步更快&lt;/td&gt;&#xA;          &lt;td&gt;台北显然比曼谷起步更早、迈步更快。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免介词乱用，「关于、有关、中间、由于、使得」&lt;/td&gt;&#xA;          &lt;td&gt;由于他家境贫寒，使得他只好休学。&lt;/td&gt;&#xA;          &lt;td&gt;他家境贫寒，只好休学。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免动词降副词&lt;/td&gt;&#xA;          &lt;td&gt;他苦心孤诣地想出一套好办法来。&lt;/td&gt;&#xA;          &lt;td&gt;他苦心孤诣，想出一套好办法。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免过多使用「的」&lt;/td&gt;&#xA;          &lt;td&gt;参差的斑驳的黑影。&lt;/td&gt;&#xA;          &lt;td&gt;参差而斑驳的黑影。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;中文可以后置形容词，避免前修饰太长。&lt;/td&gt;&#xA;          &lt;td&gt;我看见一个长得像你兄弟的男人&lt;/td&gt;&#xA;          &lt;td&gt;我看见一个男人，长得像你兄弟。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免被动，中文多主动语气&lt;/td&gt;&#xA;          &lt;td&gt;他这意见不被大家接受。他不被获准入学。糖都被吃完了。&lt;/td&gt;&#xA;          &lt;td&gt;他这意见大家都不接受。他未获准入学。糖都吃完了。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;词性被带偏&#34;&gt;词性被带偏&lt;/h2&gt;&#xA;&lt;p&gt;下面按照词性，分别介绍中文中各种词的用法被英文带偏的情况。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>登峰造极之路</title>
+      <link>https://austinxt.github.io/2017-12-14-mastery/</link>
+      <pubDate>Thu, 14 Dec 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-12-14-mastery/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;登峰造极是一个过程而不是一个结果，在整个过程中间，过于目标导向只会使你失去长期进步的潜力。一旦选择了登峰造极的道路，你就必须放弃短期的利益，放弃对目标的过于执著，和整个追求速效药的世界作对抗。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>《超越智商》读书笔记</title>
+      <link>https://austinxt.github.io/2017-07-25-what-intelligence-tests-miss/</link>
+      <pubDate>Tue, 25 Jul 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-07-25-what-intelligence-tests-miss/</guid>
+      <description>&lt;h2 id=&#34;一聪明人也会做傻事&#34;&gt;一、聪明人也会做傻事&lt;/h2&gt;&#xA;&lt;p&gt;前两章，作者从“智力”中分离出理性这一概念，认知科学家把理性分成工具理性和知识理性。工具理性被定义为以最优化的方式实现个人目标；知识理性关注的是个体信念与真实世界的一致程度。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>明托金字塔原理</title>
+      <link>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</link>
+      <pubDate>Sun, 11 Sep 2016 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2016-09-11-minto-pyramid-principle/</guid>
+      <description>&lt;p&gt;此书全名是《金字塔原理，思考、写作和解决问题的逻辑》，书名看似高大上，小编也是被它忽悠了。正如书名 XXX 原理一样，书的内容也很枯燥无味，小编强打着精神把前三篇看完了，希望能在这本极负盛名的书中能再发现一点金子（最后一篇是讲形式上的金字塔结构，不如一般的设计书介绍的好）。虽然书中的例子需要背景知识，方法需要不断的练习，但全书的内容可以分为思维、写作和解决问题三块，用一张纸就可以讲明白。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>制度的得利益者</title>
+      <link>https://austinxt.github.io/2016-02-16-1587/</link>
+      <pubDate>Tue, 16 Feb 2016 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2016-02-16-1587/</guid>
+      <description>&lt;p&gt;万历十五年，平平淡淡，毫不起眼的一年，却为最后一个汉人统治王朝的衰败拉开了序幕。&lt;/p&gt;&#xA;&lt;p&gt;本书共七章，大致可以分为三部分：皇帝、首辅和突出人物。&lt;/p&gt;&#xA;&lt;h2 id=&#34;万历皇帝&#34;&gt;万历皇帝&lt;/h2&gt;&#xA;&lt;p&gt;从小接受正规的太学教育，以冯保和张居正为主要老师，学习经史、礼仪。九岁登基，可以说是完全在文官体制中长大。成年后，万历皇帝励精图治，想有一番作为，但几次与文官对抗之后，失望不已，自己家事被臣子们粗暴干预，也厌倦了在各种典礼上充当木偶，于是怠政三十多年，使明王朝再无可能复兴。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

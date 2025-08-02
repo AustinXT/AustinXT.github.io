@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>卡片 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E5%8D%A1%E7%89%87/</link>
-        <description>卡片 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Mon, 23 Dec 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E5%8D%A1%E7%89%87/" rel="self" type="application/rss+xml" /><item>
-    <title>卡片大法</title>
-    <link>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</link>
-    <pubDate>Mon, 23 Dec 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</guid>
-    <description><![CDATA[卡片就是对单一事件的完整记录，一卡一事，包括标题、来源引用、自己的理解和日期。卡片可供任意组织，不断生发，创造作品。 为何卡片是知识积累和创造]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>卡片 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E5%8D%A1%E7%89%87/</link>
+    <description>Recent content in 卡片 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Mon, 23 Dec 2019 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E5%8D%A1%E7%89%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>卡片大法</title>
+      <link>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</guid>
+      <description>&lt;p&gt;卡片就是对&lt;strong&gt;单一&lt;/strong&gt;事件的&lt;strong&gt;完整&lt;/strong&gt;记录，一卡一事，包括&lt;strong&gt;标题&lt;/strong&gt;、&lt;strong&gt;来源&lt;/strong&gt;引用、自己的理解和&lt;strong&gt;日期&lt;/strong&gt;。卡片可供任意组织，不断生发，创造作品。&lt;/p&gt;&#xA;&lt;h3 id=&#34;为何卡片是知识积累和创造的神器&#34;&gt;为何卡片是知识积累和创造的神器？&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;卡片改变了大脑注意、储存、提取和加工的全过程。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

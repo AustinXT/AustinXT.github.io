@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>金融 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E9%87%91%E8%9E%8D/</link>
-        <description>金融 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Wed, 16 Feb 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E9%87%91%E8%9E%8D/" rel="self" type="application/rss+xml" /><item>
-    <title>13F 数据分析</title>
-    <link>https://austinxt.github.io/2022-02-16-13f/</link>
-    <pubDate>Wed, 16 Feb 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-02-16-13f/</guid>
-    <description><![CDATA[单一机构分析 一个公司在一个投资机构的持仓历史变化 以 SOROS FUND MANAGEMENT LLC 持有 LIBERTY_BROADBAND_CORP 为例 一个机构持仓总市值和总标的数 新浪财经有现成的统计 个股被机构持仓的总市值和]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>金融 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E9%87%91%E8%9E%8D/</link>
+    <description>Recent content in 金融 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Wed, 16 Feb 2022 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E9%87%91%E8%9E%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>13F 数据分析</title>
+      <link>https://austinxt.github.io/2022-02-16-13f/</link>
+      <pubDate>Wed, 16 Feb 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2022-02-16-13f/</guid>
+      <description>&lt;h2 id=&#34;单一机构分析&#34;&gt;单一机构分析&lt;/h2&gt;&#xA;&lt;h3 id=&#34;一个公司在一个投资机构的持仓历史变化&#34;&gt;一个公司在一个投资机构的持仓历史变化&lt;/h3&gt;&#xA;&lt;p&gt;以 SOROS FUND MANAGEMENT LLC 持有 LIBERTY_BROADBAND_CORP 为例&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/LIBERTY_BROADBAND_CORP.png&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/LIBERTY_BROADBAND_CORP.png, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/LIBERTY_BROADBAND_CORP.png 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/LIBERTY_BROADBAND_CORP.png 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/LIBERTY_BROADBAND_CORP.png&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/LIBERTY_BROADBAND_CORP.png&#34; /&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;一个机构持仓总市值和总标的数&#34;&gt;一个机构持仓总市值和总标的数&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://global.finance.sina.com.cn/clues/13f?nav13f_id=AgencyStats&amp;amp;searchInputName=Vanguard%20Group%20%28%E5%85%88%E9%94%8B%E9%9B%86%E5%9B%A2%29&amp;amp;searchInputValue=102909&amp;amp;searchInputFlag=2&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;新浪财经有现成的统计&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181325.png&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181325.png, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181325.png 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181325.png 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181325.png&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181325.png&#34; /&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;个股被机构持仓的总市值和机构数&#34;&gt;个股被机构持仓的总市值和机构数&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://global.finance.sina.com.cn/clues/13f?nav13f_id=SymbolStats&amp;amp;searchInputName=%e5%be%ae%e8%bd%af&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;新浪财经有现成的统计&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181905.png&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181905.png, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181905.png 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181905.png 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181905.png&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/20210627181905.png&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

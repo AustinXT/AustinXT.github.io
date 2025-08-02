@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>区块链 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
-        <description>区块链 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Fri, 23 Apr 2021 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" rel="self" type="application/rss+xml" /><item>
-    <title>「区块链」30 分钟检索报告</title>
-    <link>https://austinxt.github.io/2021-04-23-%E5%8C%BA%E5%9D%97%E9%93%BE30%E5%88%86%E9%92%9F%E6%A3%80%E7%B4%A2%E6%8A%A5%E5%91%8A/</link>
-    <pubDate>Fri, 23 Apr 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-04-23-%E5%8C%BA%E5%9D%97%E9%93%BE30%E5%88%86%E9%92%9F%E6%A3%80%E7%B4%A2%E6%8A%A5%E5%91%8A/</guid>
-    <description><![CDATA[检索：30 分钟 整理：44 分钟 开智信息分析九期 CH0 必修作业，要求在 30 分钟内获取任意话题的优质信息源，刚好公司最近有开展区块链技术的动向，花 30 分钟]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>区块链 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
+    <description>Recent content in 区块链 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Fri, 23 Apr 2021 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>「区块链」30 分钟检索报告</title>
+      <link>https://austinxt.github.io/2021-04-23-%E5%8C%BA%E5%9D%97%E9%93%BE30%E5%88%86%E9%92%9F%E6%A3%80%E7%B4%A2%E6%8A%A5%E5%91%8A/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2021-04-23-%E5%8C%BA%E5%9D%97%E9%93%BE30%E5%88%86%E9%92%9F%E6%A3%80%E7%B4%A2%E6%8A%A5%E5%91%8A/</guid>
+      <description>&lt;p&gt;检索：30 分钟 整理：44 分钟&lt;/p&gt;&#xA;&lt;p&gt;开智信息分析九期 CH0 必修作业，要求在 30 分钟内获取任意话题的优质信息源，刚好公司最近有开展区块链技术的动向，花 30 分钟查一下，看自己能做到什么程度。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

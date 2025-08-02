@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>学术 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E5%AD%A6%E6%9C%AF/</link>
-        <description>学术 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 07 Jan 2018 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E5%AD%A6%E6%9C%AF/" rel="self" type="application/rss+xml" /><item>
-    <title>如何快速了解一个学术领域</title>
-    <link>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</link>
-    <pubDate>Sun, 07 Jan 2018 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</guid>
-    <description><![CDATA[如今社会，信息过载，领域丛生，我们常常需要接触一些陌生的知识，一些闻所未闻的领域。那以使用工具著称的人类，是否能借助软件快速了解一个领域呢？]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学术 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E5%AD%A6%E6%9C%AF/</link>
+    <description>Recent content in 学术 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E5%AD%A6%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何快速了解一个学术领域</title>
+      <link>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;如今社会，信息过载，领域丛生，我们常常需要接触一些陌生的知识，一些闻所未闻的领域。那以使用工具著称的人类，是否能借助软件快速了解一个领域呢？那些每天都需要看论文的学者早已发明了快速进入一个领域的方法，在下学些皮毛，稍作实践，特来分享一下。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,24 +1,28 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Git - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/git/</link>
-        <description>Git - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 10 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
-    <title>Git 数据模型与命令行</title>
-    <link>https://austinxt.github.io/2023-09-10-git/</link>
-    <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-09-10-git/</guid>
-    <description><![CDATA[学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。 概览 版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件]]></description>
-</item>
-<item>
-    <title>Git 使用指南</title>
-    <link>https://austinxt.github.io/2019-03-26-git/</link>
-    <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-03-26-git/</guid>
-    <description><![CDATA[Git 是目前世界上最先进的分布式文本文件版本控制系统 Git 快速上手 Cheat Sheet：workspace :: Git Cheatsheet 、常用 Git 命令清单 - 阮一峰的网络日志 Git 使用流程]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on 夜航星</title>
+    <link>https://austinxt.github.io/tags/git/</link>
+    <description>Recent content in Git on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sun, 10 Sep 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 数据模型与命令行</title>
+      <link>https://austinxt.github.io/2023-09-10-git/</link>
+      <pubDate>Sun, 10 Sep 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-09-10-git/</guid>
+      <description>&lt;p&gt;学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。&lt;/p&gt;&#xA;&lt;h2 id=&#34;概览&#34;&gt;概览&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件、文件夹）改动的工具。顾名思义，这些工具可以帮助我们管理代码的修改历史；不仅如此，它还可以让协作编码变得更方便。VCS通过一系列的快照将某个文件夹及其内容保存了起来，每个快照都包含了文件或文件夹的完整状态。同时它还维护了快照创建者的信息以及每个快照的相关信息等等。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Git 使用指南</title>
+      <link>https://austinxt.github.io/2019-03-26-git/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2019-03-26-git/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Git 是目前世界上最先进的分布式文本文件版本控制系统&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;git-快速上手&#34;&gt;Git 快速上手&lt;/h2&gt;&#xA;&lt;p&gt;Cheat Sheet：&lt;a href=&#34;http://ndpsoftware.com/git-cheatsheet.html#loc=workspace;&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;workspace :: Git Cheatsheet&lt;/a&gt; 、&lt;a href=&#34;http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;常用 Git 命令清单 - 阮一峰的网络日志&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Git 使用流程：&lt;a href=&#34;http://www.ruanyifeng.com/blog/2015/08/git-use-process.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Git 使用规范流程 - 阮一峰的网络日志&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

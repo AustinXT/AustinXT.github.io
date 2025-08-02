@@ -1,24 +1,28 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Shell - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/shell/</link>
-        <description>Shell - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Wed, 11 Jan 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/shell/" rel="self" type="application/rss+xml" /><item>
-    <title>Shell 命令行数据处理</title>
-    <link>https://austinxt.github.io/2023-01-11-data-analysis/</link>
-    <pubDate>Wed, 11 Jan 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
-    <description><![CDATA[Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。 学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并]]></description>
-</item>
-<item>
-    <title>Shell 工具和脚本入门</title>
-    <link>https://austinxt.github.io/2022-11-12-shell/</link>
-    <pubDate>Sat, 12 Nov 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-11-12-shell/</guid>
-    <description><![CDATA[计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。 Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;工具，]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on 夜航星</title>
+    <link>https://austinxt.github.io/tags/shell/</link>
+    <description>Recent content in Shell on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell 命令行数据处理</title>
+      <link>https://austinxt.github.io/2023-01-11-data-analysis/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
+      <description>&lt;p&gt;Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。&lt;/p&gt;&#xA;&lt;p&gt;学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并且记录例子。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shell 工具和脚本入门</title>
+      <link>https://austinxt.github.io/2022-11-12-shell/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2022-11-12-shell/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;amp;工具，以及脚本编写。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -2,17 +2,27 @@
     <channel>
         <title>夜航星</title>
         <link>https://austinxt.github.io/</link>
-        <description>个人博客</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Wed, 30 Oct 2024 00:00:00 &#43;0800</lastBuildDate>
+        <description>做一个智能时代的蛮子</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+            <webMaster>dougxieting4@gmail.com (夜航星)</webMaster><lastBuildDate>Fri, 01 Aug 2025 00:00:00 &#43;0800</lastBuildDate>
             <atom:link href="https://austinxt.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>什么知识值得学习？</title>
+    <link>https://austinxt.github.io/2025-08-01-big-understandings/</link>
+    <pubDate>Fri, 01 Aug 2025 00:00:00 &#43;0800</pubDate>
+    <author>夜航星</author>
+    <guid>https://austinxt.github.io/2025-08-01-big-understandings/</guid>
+    <description><![CDATA[<p>「什么知识值得学习？」是<a href="https://book.douban.com/subject/26586892/" target="_blank" rel="noopener noreffer ">《为未知而教，为未来而学》</a>这本书最重要的元问题，也是本书作者试图回答的问题。</p>
+<p>珀金斯把答案归结为一类「真知识」（Lifeready Learning）：它们既解决现实问题，又能随时间沉淀并扩展，如同滚雪球般汇聚力量。</p>]]></description>
+</item>
+<item>
     <title>在 Mac（M2）上，使用 UTM 安装 Windows11 虚拟机</title>
     <link>https://austinxt.github.io/2024-10-30-install-window11-in-utm/</link>
     <pubDate>Wed, 30 Oct 2024 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2024-10-30-install-window11-in-utm/</guid>
-    <description><![CDATA[在 Mac（M2） 上，使用 UTM 安装 Windows11 虚拟机，大致步骤还是按照Windows 11 | UTM Documentation走，中间会遇到一些卡壳的步骤需要克服一]]></description>
+    <description><![CDATA[<p></p>
+<p>在 Mac（M2） 上，使用 UTM 安装 Windows11 虚拟机，大致步骤还是按照<a href="https://docs.getutm.app/guides/windows/" target="_blank" rel="noopener noreffer ">Windows 11 | UTM Documentation</a>走，中间会遇到一些卡壳的步骤需要克服一下。</p>]]></description>
 </item>
 <item>
     <title>和一个跟自己很不一样的人，吃饭聊天</title>
@@ -20,7 +30,7 @@
     <pubDate>Thu, 08 Aug 2024 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2024-08-08-friend-xh/</guid>
-    <description><![CDATA[7 月末和 XH 约了八月底见面，没想到她还记得。之前聊天的印象是「自律、自由、洒脱的人，帮我坚定了坚持锻炼的决心。XH 是我以前不敢接触的那类人，很]]></description>
+    <description><![CDATA[<p>7 月末和 XH 约了八月底见面，没想到她还记得。之前聊天的印象是「自律、自由、洒脱的人，帮我坚定了坚持锻炼的决心。XH 是我以前不敢接触的那类人，很独立，让我内心很深处燃起了动力，保持自律，持续做有意义的事，把大目标一步步做成了。」</p>]]></description>
 </item>
 <item>
     <title>Git 数据模型与命令行</title>
@@ -28,7 +38,10 @@
     <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-09-10-git/</guid>
-    <description><![CDATA[学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。 概览 版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件]]></description>
+    <description><![CDATA[<p>学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。</p>
+<h2 id="概览">概览</h2>
+<blockquote>
+<p>版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件、文件夹）改动的工具。顾名思义，这些工具可以帮助我们管理代码的修改历史；不仅如此，它还可以让协作编码变得更方便。VCS通过一系列的快照将某个文件夹及其内容保存了起来，每个快照都包含了文件或文件夹的完整状态。同时它还维护了快照创建者的信息以及每个快照的相关信息等等。</p>]]></description>
 </item>
 <item>
     <title>密码学入门</title>
@@ -36,7 +49,15 @@
     <pubDate>Sat, 09 Sep 2023 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-09-09-encrypt/</guid>
-    <description><![CDATA[散列函数 密码散列函数 (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下： 1 hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;]]></description>
+    <description><![CDATA[<h2 id="散列函数">散列函数</h2>
+<p><a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener noreffer ">密码散列函数</a> (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;  (N对于该函数固定) </span></span></code></pre></div></div>
+<p>下面我们用<code>sha3sum</code>命令来测试SHA1对几个字符串的输出：</p>]]></description>
 </item>
 <item>
     <title>Vim 学习指南</title>
@@ -44,7 +65,20 @@
     <pubDate>Sat, 22 Jul 2023 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-07-22-vim/</guid>
-    <description><![CDATA[Vim 是一个能跟上你思维速度的编辑器。 Vim 编辑器学习的步骤为： 理解编辑器的设计理念和基本原理； 学习命令，浏览教程，完成 vimtutor； 情景练习；]]></description>
+    <description><![CDATA[<blockquote>
+<p>Vim 是一个能跟上你思维速度的编辑器。</p></blockquote>
+<p>Vim 编辑器学习的步骤为：</p>
+<ol>
+<li>理解编辑器的设计理念和基本原理；</li>
+<li>学习命令，浏览教程，完成 <code>vimtutor</code>；</li>
+<li>情景练习；</li>
+<li>将编辑器替换成 Vim，持续使用；</li>
+<li>优化使用，自定义，安装扩展插件。</li>
+</ol>
+<h2 id="概况">概况</h2>
+<h3 id="vim-的哲学">Vim 的哲学</h3>
+<blockquote>
+<p>在编程的时候，你会把大量时间花在阅读/编辑而不是在写代码上。所以，Vim 是一个多模态编辑 器：它对于插入文字和操纵文字有不同的模式。Vim 是可编程的（可以使用 Vimscript 或者像 Python 一样的其他程序语言），Vim 的接口本身也是一个程序语言：键入操作（以及其助记名） 是命令，这些命令也是可组合的。Vim 避免了使用鼠标，因为那样太慢了；Vim 甚至避免用 上下左右键因为那样需要太多的手指移动。</p>]]></description>
 </item>
 <item>
     <title>调试代码常用方法</title>
@@ -52,7 +86,11 @@
     <pubDate>Tue, 13 Jun 2023 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-06-13-debug/</guid>
-    <description><![CDATA[调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。 打印调试法与日志 最有]]></description>
+    <description><![CDATA[<p>调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。</p>
+<h2 id="打印调试法与日志">打印调试法与日志</h2>
+<blockquote>
+<p>最有效的 debug 工具就是细致的分析，配合恰当位置的打印语句。
+— Brian Kernighan, <em>Unix 新手入门</em>。</p>]]></description>
 </item>
 <item>
     <title>make 构建工具介绍</title>
@@ -60,7 +98,8 @@
     <pubDate>Wed, 31 May 2023 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-05-31-make/</guid>
-    <description><![CDATA[构建工具通常需要定义依赖、目标和规则。 make 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。make并不完美，但是对于中]]></description>
+    <description><![CDATA[<p>构建工具通常需要定义<em>依赖</em>、<em>目标</em>和<em>规则</em>。</p>
+<p><code>make</code> 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。<code>make</code>并不完美，但是对于中小型项目来说，它已经足够好了。当您执行 <code>make</code> 时，它会去参考当前目录下名为 <code>Makefile</code> 的文件。所有构建目标、相关依赖和规则都需要在该文件中定义，它看上去是这样的：</p>]]></description>
 </item>
 <item>
     <title>命令行环境使用指南</title>
@@ -68,7 +107,17 @@
     <pubDate>Sat, 27 May 2023 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-05-27-cmd-env/</guid>
-    <description><![CDATA[无界面情况下的唯一选择 命令行环境的学习主要包括 任务控制：Shell 操作和进程的关系-&gt;需要了解进程信号 终端多路复用：如何在终端完成多面]]></description>
+    <description><![CDATA[<blockquote>
+<p>无界面情况下的唯一选择</p></blockquote>
+<p>命令行环境的学习主要包括</p>
+<ul>
+<li>任务控制：Shell 操作和进程的关系-&gt;需要了解进程信号</li>
+<li>终端多路复用：如何在终端完成多面板、多窗口的任务-&gt;需要会使用相关工具</li>
+<li>dotfiles 管理-&gt;需要管理起来dotfiles</li>
+<li>ssh 应用：命令行工具和 ssh 工具的使用-&gt;需要掌握一套高效的操作远端设备的流程</li>
+</ul>
+<h2 id="任务控制">任务控制</h2>
+<p>Shell 会使用 UNIX 提供的信号机制执行进程间通信。当一个进程接收到信号时，它会停止执行、处理该信号并基于信号传递的信息来改变其执行。就这一点而言，信号是一种<em>软件中断</em>。</p>]]></description>
 </item>
 <item>
     <title>Shell 命令行数据处理</title>
@@ -76,335 +125,8 @@
     <pubDate>Wed, 11 Jan 2023 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
-    <description><![CDATA[Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。 学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并]]></description>
-</item>
-<item>
-    <title>常用性能分析工具</title>
-    <link>https://austinxt.github.io/2022-12-10-profile/</link>
-    <pubDate>Sat, 10 Dec 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-12-10-profile/</guid>
-    <description><![CDATA[学习性能分析，最开始是查看执行时间，然后用工具帮助排查问题，用资源监控辅助。 即使您的代码能够像您期望的一样运行，但是如果它消耗了您全部的 CPU 和]]></description>
-</item>
-<item>
-    <title>Shell 工具和脚本入门</title>
-    <link>https://austinxt.github.io/2022-11-12-shell/</link>
-    <pubDate>Sat, 12 Nov 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-11-12-shell/</guid>
-    <description><![CDATA[计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。 Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;工具，]]></description>
-</item>
-<item>
-    <title>硬派健身要点</title>
-    <link>https://austinxt.github.io/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/</link>
-    <pubDate>Tue, 13 Sep 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/</guid>
-    <description><![CDATA[人体肌肉＝大肌群＋小肌群。大肌群：胸、背、臀、腿；小肌群：肩、胳膊、腹、小腿。塑形健身以大肌群练习为主，搭配小肌群（包括核心肌群）练习。 简易]]></description>
-</item>
-<item>
-    <title>从四个问题理解跨境电商</title>
-    <link>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</link>
-    <pubDate>Sat, 30 Jul 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</guid>
-    <description><![CDATA[跨境电商与国际物流读后感。 跨境电商的含义和诞生？ 跨境电商，英文通常翻译为 Cross-border eCommerce（跨境网络零售）。广义上的跨境电商包括跨境贸易在]]></description>
-</item>
-<item>
-    <title>TCP 和 UDP 的区别？</title>
-    <link>https://austinxt.github.io/2022-03-23-tcp-udp/</link>
-    <pubDate>Wed, 23 Mar 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-03-23-tcp-udp/</guid>
-    <description><![CDATA[tcp/udp的区别?tcp粘包是怎么回事，如何处理?udp有粘包吗? 什么是 TCP？ 全称 Transmission Control Protocol，是一种传输层协议（为两个主机中]]></description>
-</item>
-<item>
-    <title>13F 数据分析</title>
-    <link>https://austinxt.github.io/2022-02-16-13f/</link>
-    <pubDate>Wed, 16 Feb 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-02-16-13f/</guid>
-    <description><![CDATA[单一机构分析 一个公司在一个投资机构的持仓历史变化 以 SOROS FUND MANAGEMENT LLC 持有 LIBERTY_BROADBAND_CORP 为例 一个机构持仓总市值和总标的数 新浪财经有现成的统计 个股被机构持仓的总市值和]]></description>
-</item>
-<item>
-    <title>图尔敏模型分析两性沟通异同</title>
-    <link>https://austinxt.github.io/2021-09-11-%E8%AE%BA%E8%AF%81%E5%88%86%E6%9E%90-ch4-%E8%BF%9B%E9%98%B6%E4%BD%9C%E4%B8%9A/</link>
-    <pubDate>Sat, 11 Sep 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-09-11-%E8%AE%BA%E8%AF%81%E5%88%86%E6%9E%90-ch4-%E8%BF%9B%E9%98%B6%E4%BD%9C%E4%B8%9A/</guid>
-    <description><![CDATA[背景 非形式逻辑是“一种发展能够用于评估、分析和改进非形式推理的逻辑尝试，这些非形式推理不仅出现于人际交流、广告、政治辩论、法律论证之中，而且]]></description>
-</item>
-<item>
-    <title>《婚姻制度会消亡吗》推理树分析</title>
-    <link>https://austinxt.github.io/2021-08-14-%E5%A9%9A%E5%A7%BB%E5%88%B6%E5%BA%A6%E4%BC%9A%E6%B6%88%E4%BA%A1%E5%90%97/</link>
-    <pubDate>Sat, 14 Aug 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-08-14-%E5%A9%9A%E5%A7%BB%E5%88%B6%E5%BA%A6%E4%BC%9A%E6%B6%88%E4%BA%A1%E5%90%97/</guid>
-    <description><![CDATA[原文分析 原文：婚姻制度正在走向消亡？这一代人的围城 按照推理树中序遍历的顺序依次列举不好的论证。 论点 A-&gt;O，相关因果混淆。适婚人群总数]]></description>
-</item>
-<item>
-    <title>《1993 年国际大专辩论赛决赛》论证分析</title>
-    <link>https://austinxt.github.io/2021-08-10-1993%E5%B9%B4%E5%9B%BD%E9%99%85%E5%A4%A7%E4%B8%93%E8%BE%A9%E8%AE%BA%E8%B5%9B%E5%86%B3%E8%B5%9B/</link>
-    <pubDate>Tue, 10 Aug 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-08-10-1993%E5%B9%B4%E5%9B%BD%E9%99%85%E5%A4%A7%E4%B8%93%E8%BE%A9%E8%AE%BA%E8%B5%9B%E5%86%B3%E8%B5%9B/</guid>
-    <description><![CDATA[资料 1993 年国际大专辩论赛决赛：人性本善还是本恶？ 视频 文字稿 我方立场是：人性本恶。 第一 ，人性是由社会属性和自然属性组成的，自然属性指的就是无节制]]></description>
-</item>
-<item>
-    <title>《2012 讨论男女薪酬不平等现象》认知偏差</title>
-    <link>https://austinxt.github.io/2021-08-10-2012%E8%AE%A8%E8%AE%BA%E7%94%B7%E5%A5%B3%E8%96%AA%E9%85%AC%E4%B8%8D%E5%B9%B3%E7%AD%89%E7%8E%B0%E8%B1%A1/</link>
-    <pubDate>Tue, 10 Aug 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-08-10-2012%E8%AE%A8%E8%AE%BA%E7%94%B7%E5%A5%B3%E8%96%AA%E9%85%AC%E4%B8%8D%E5%B9%B3%E7%AD%89%E7%8E%B0%E8%B1%A1/</guid>
-    <description><![CDATA[零、背景 分析识别两方候选人在说服选民过程中，哪些地方运用了认知偏差的把戏？分别属于哪一类认知偏差呢？ 2012 年奥巴马 VS 罗姆尼：讨论男女薪酬不平等现]]></description>
-</item>
-<item>
-    <title>法律检索调研</title>
-    <link>https://austinxt.github.io/2021-06-23-%E6%B3%95%E5%BE%8B%E6%A3%80%E7%B4%A2%E5%B7%A5%E5%85%B7%E5%88%86%E6%9E%90/</link>
-    <pubDate>Wed, 23 Jun 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-06-23-%E6%B3%95%E5%BE%8B%E6%A3%80%E7%B4%A2%E5%B7%A5%E5%85%B7%E5%88%86%E6%9E%90/</guid>
-    <description><![CDATA[此调研旨在发掘法律检索领域的现状及其入场可能性，包括法律行业发展分布状况、现有法律工具状况、法律检索相关技术，最后探讨法律检索入场的可能性和]]></description>
-</item>
-<item>
-    <title>算法工程师和前端工程师的社招求职分析</title>
-    <link>https://austinxt.github.io/2021-05-23-%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%92%8C%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E6%B1%82%E8%81%8C%E5%88%86%E6%9E%90%E7%8E%A9%E5%85%B7%E7%89%88/</link>
-    <pubDate>Sun, 23 May 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-05-23-%E7%AE%97%E6%B3%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%92%8C%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E6%B1%82%E8%81%8C%E5%88%86%E6%9E%90%E7%8E%A9%E5%85%B7%E7%89%88/</guid>
-    <description><![CDATA[背景 从自身职业发展的角度出发，想了解一下算法工程师和前端工程师的薪酬分布情况，包括工作年限、学历、公司融资情况、公司规模、城市，以及工作岗位]]></description>
-</item>
-<item>
-    <title>「区块链」30 分钟检索报告</title>
-    <link>https://austinxt.github.io/2021-04-23-%E5%8C%BA%E5%9D%97%E9%93%BE30%E5%88%86%E9%92%9F%E6%A3%80%E7%B4%A2%E6%8A%A5%E5%91%8A/</link>
-    <pubDate>Fri, 23 Apr 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-04-23-%E5%8C%BA%E5%9D%97%E9%93%BE30%E5%88%86%E9%92%9F%E6%A3%80%E7%B4%A2%E6%8A%A5%E5%91%8A/</guid>
-    <description><![CDATA[检索：30 分钟 整理：44 分钟 开智信息分析九期 CH0 必修作业，要求在 30 分钟内获取任意话题的优质信息源，刚好公司最近有开展区块链技术的动向，花 30 分钟]]></description>
-</item>
-<item>
-    <title>信息检索：寻找建筑师</title>
-    <link>https://austinxt.github.io/2021-04-23-%E5%AF%BB%E6%89%BE%E5%BB%BA%E7%AD%91%E5%B8%88/</link>
-    <pubDate>Fri, 23 Apr 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-04-23-%E5%AF%BB%E6%89%BE%E5%BB%BA%E7%AD%91%E5%B8%88/</guid>
-    <description><![CDATA[0. 摘要 Google 检索 American top 30 university map ，在地图上筛选出波士顿，并用照片交叉验证；接着 Google Boston buildings ，用照片确定蓝色建筑，进而得出建筑师贝聿铭，Google贝聿铭 AND 成]]></description>
-</item>
-<item>
-    <title>初识社会学</title>
-    <link>https://austinxt.github.io/2021-04-21-%E5%88%9D%E8%AF%86%E7%A4%BE%E4%BC%9A%E5%AD%A6/</link>
-    <pubDate>Wed, 21 Apr 2021 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-04-21-%E5%88%9D%E8%AF%86%E7%A4%BE%E4%BC%9A%E5%AD%A6/</guid>
-    <description><![CDATA[什么是社会学 默顿的具体论点是，我们可以把社会理解为两个相对独立的领域：文化和社会结构。文化告诉我们两件事：我们应向往什么和我们应如何表现。结]]></description>
-</item>
-<item>
-    <title>《用数据讲故事》读书笔记</title>
-    <link>https://austinxt.github.io/2020-09-20-data-for-story/</link>
-    <pubDate>Sun, 20 Sep 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2020-09-20-data-for-story/</guid>
-    <description><![CDATA[本书最精彩的地方就是书里面提供的案例，循序渐进的一步步优化一个杂乱的图表：除去杂乱的图示，将次要的信息融入背景，突出重点关注的数据，顺着视觉]]></description>
-</item>
-<item>
-    <title>你认为最大的荒谬是什么</title>
-    <link>https://austinxt.github.io/2021-03-14-the-myth-of-sisyphus/</link>
-    <pubDate>Sun, 20 Sep 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2021-03-14-the-myth-of-sisyphus/</guid>
-    <description><![CDATA[加缪一开始明确了论证起点——世界是荒诞的，人生本没有意义。其中的论述是通过一层层的逻辑推理，不过在 21 世纪的今天，我们已经有了更好的证据，而且]]></description>
-</item>
-<item>
-    <title>初识积极心理学</title>
-    <link>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</link>
-    <pubDate>Sat, 11 Apr 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2020-04-11-%E5%88%9D%E8%AF%86%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
-    <description><![CDATA[积极心理学是一门怎样的学科，主要研究的是哪些问题？ 定义 积极心理学是研究人的优势与幸福的一门心理学学科。积极心理学通过快乐、参与和意义来帮助人]]></description>
-</item>
-<item>
-    <title>如何做情报分析？</title>
-    <link>https://austinxt.github.io/2020-04-04-%E5%A6%82%E4%BD%95%E5%81%9A%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90/</link>
-    <pubDate>Sat, 04 Apr 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2020-04-04-%E5%A6%82%E4%BD%95%E5%81%9A%E6%83%85%E6%8A%A5%E5%88%86%E6%9E%90/</guid>
-    <description><![CDATA[情报分析心理学 如何做情报分析？要点是什么？ 情报分析有特定的步骤，其中竞争性假设分析法（ACH）最为关键。 情报分析四步走 界定问题提出假设 分析质]]></description>
-</item>
-<item>
-    <title>《如何教聪明人学会学习？》笔记</title>
-    <link>https://austinxt.github.io/2019-12-22-%E5%A6%82%E4%BD%95%E6%95%99%E8%81%AA%E6%98%8E%E4%BA%BA%E5%AD%A6%E4%BC%9A%E5%AD%A6%E4%B9%A0/</link>
-    <pubDate>Mon, 23 Dec 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-12-22-%E5%A6%82%E4%BD%95%E6%95%99%E8%81%AA%E6%98%8E%E4%BA%BA%E5%AD%A6%E4%BC%9A%E5%AD%A6%E4%B9%A0/</guid>
-    <description><![CDATA[克里斯·阿吉里斯（Chris Argyris）曾在 1991 年的《哈佛商业评论》上发表了《如何教聪明人学会学习？》，原标题为《Teaching Smart People How to]]></description>
-</item>
-<item>
-    <title>卡片大法</title>
-    <link>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</link>
-    <pubDate>Mon, 23 Dec 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</guid>
-    <description><![CDATA[卡片就是对单一事件的完整记录，一卡一事，包括标题、来源引用、自己的理解和日期。卡片可供任意组织，不断生发，创造作品。 为何卡片是知识积累和创造]]></description>
-</item>
-<item>
-    <title>解读统计数字的行动清单</title>
-    <link>https://austinxt.github.io/2019-08-04-%E8%A7%A3%E8%AF%BB%E7%BB%9F%E8%AE%A1%E6%95%B0%E5%AD%97%E5%9B%9B%E6%AD%A5%E9%AA%A4/</link>
-    <pubDate>Sun, 04 Aug 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-08-04-%E8%A7%A3%E8%AF%BB%E7%BB%9F%E8%AE%A1%E6%95%B0%E5%AD%97%E5%9B%9B%E6%AD%A5%E9%AA%A4/</guid>
-    <description><![CDATA[检查样本是否有偏差 检查样本分布是否合理（包括是否采用分层随机抽样、每层内部的样本分布情况如何）：例如是否刻意挑选容易与其他层区分开来的群体而]]></description>
-</item>
-<item>
-    <title>如何形成人格全景？</title>
-    <link>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</link>
-    <pubDate>Sat, 27 Jul 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-07-27-decoding-personality-mysteries/</guid>
-    <description><![CDATA[作者塞缪尔·巴伦德斯（Samuel Barondes），生于 1933 年，是美国神经病专家、神经科学家，加州大学（旧金山）心理学教授，美国科学院医学院]]></description>
-</item>
-<item>
-    <title>一窥癌症：人类扭曲态</title>
-    <link>https://austinxt.github.io/2019-07-15-cancer-history/</link>
-    <pubDate>Mon, 15 Jul 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-07-15-cancer-history/</guid>
-    <description><![CDATA[你是谁，你来自何方？ 我来自于你，我是另一个你。 我是我，你怎么会是我？ 我是你的突变体，你们称之为「扭曲态」。 你为何会出现？ 一切事物都有偏差，我]]></description>
-</item>
-<item>
-    <title>Git 使用指南</title>
-    <link>https://austinxt.github.io/2019-03-26-git/</link>
-    <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-03-26-git/</guid>
-    <description><![CDATA[Git 是目前世界上最先进的分布式文本文件版本控制系统 Git 快速上手 Cheat Sheet：workspace :: Git Cheatsheet 、常用 Git 命令清单 - 阮一峰的网络日志 Git 使用流程]]></description>
-</item>
-<item>
-    <title>阿里云从零部署 Django</title>
-    <link>https://austinxt.github.io/2019-04-06-deploy-django/</link>
-    <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-04-06-deploy-django/</guid>
-    <description><![CDATA[阿里云快捷登录 在阿里云的控制台中复制服务器的公网 IP，我的是 47.102.121.213 免密登录 在本地执行命令（按提示输入密码），向服务器发送自己的公钥文件 1 ssh-copy-id -i 公钥]]></description>
-</item>
-<item>
-    <title>正则表达式常用速查</title>
-    <link>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</link>
-    <pubDate>Sun, 10 Mar 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</guid>
-    <description><![CDATA[速查表 字符 描述 \ 将下一个字符标记为一个特殊字符、或一个原义字符、或一个 向后引用、或一个八进制转义符。例如，’n’匹配字符“n”。’\n’匹配]]></description>
-</item>
-<item>
-    <title>中文的常态与病态</title>
-    <link>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</link>
-    <pubDate>Thu, 15 Mar 2018 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</guid>
-    <description><![CDATA[《翻译乃大道》读书笔记 中文常态：措辞简洁，语法对称，句式灵活，声调铿锵。 中文病态：引入大量的英文表达，繁琐生硬。 中文最常见的常态和病态 项目 坏]]></description>
-</item>
-<item>
-    <title>如何快速了解一个学术领域</title>
-    <link>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</link>
-    <pubDate>Sun, 07 Jan 2018 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2018-01-07-quickenter-new-academic-realm/</guid>
-    <description><![CDATA[如今社会，信息过载，领域丛生，我们常常需要接触一些陌生的知识，一些闻所未闻的领域。那以使用工具著称的人类，是否能借助软件快速了解一个领域呢？]]></description>
-</item>
-<item>
-    <title>一个人的阅读史（二）</title>
-    <link>https://austinxt.github.io/2018-01-01-reading-history-2/</link>
-    <pubDate>Mon, 01 Jan 2018 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2018-01-01-reading-history-2/</guid>
-    <description><![CDATA[过往三年，迷茫、求索，仍然迷茫、接着求索……如今幡然醒悟，得一曲径，通向深林幽处。过往三年，如在迷宫中抱头鼠窜，有幸遇见些贵人、师友指点迷津]]></description>
-</item>
-<item>
-    <title>登峰造极之路</title>
-    <link>https://austinxt.github.io/2017-12-14-mastery/</link>
-    <pubDate>Thu, 14 Dec 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-12-14-mastery/</guid>
-    <description><![CDATA[登峰造极是一个过程而不是一个结果，在整个过程中间，过于目标导向只会使你失去长期进步的潜力。一旦选择了登峰造极的道路，你就必须放弃短期的利益，]]></description>
-</item>
-<item>
-    <title>LaTeX 常用数学符号</title>
-    <link>https://austinxt.github.io/2017-11-30-latex-math/</link>
-    <pubDate>Thu, 30 Nov 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-11-30-latex-math/</guid>
-    <description><![CDATA[查 LaTeX 常用数学符号的时候，一开始去官网：LaTeX - A document preparation system找官方文档：LaTeX Documentation，然后又找了 CTEX 的在线文档]]></description>
-</item>
-<item>
-    <title>《超越智商》读书笔记</title>
-    <link>https://austinxt.github.io/2017-07-25-what-intelligence-tests-miss/</link>
-    <pubDate>Tue, 25 Jul 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-07-25-what-intelligence-tests-miss/</guid>
-    <description><![CDATA[一、聪明人也会做傻事 前两章，作者从“智力”中分离出理性这一概念，认知科学家把理性分成工具理性和知识理性。工具理性被定义为以最优化的方式实现个]]></description>
-</item>
-<item>
-    <title>单词（四）</title>
-    <link>https://austinxt.github.io/2017-06-11-learning-words-4/</link>
-    <pubDate>Wed, 14 Jun 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-06-11-learning-words-4/</guid>
-    <description><![CDATA[飞跃 5000 词&amp;形容词 这部分还在摸索 形容词的分类 结构（单个、复合） 功能（普通、定语、表语） 词义（静态、动态、等级、非等级） 这些分类中，有些]]></description>
-</item>
-<item>
-    <title>学单词（三）</title>
-    <link>https://austinxt.github.io/2017-06-11-learning-words-3/</link>
-    <pubDate>Tue, 13 Jun 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-06-11-learning-words-3/</guid>
-    <description><![CDATA[5000 词&amp;名词 从单词频率覆盖率来说，你听到别人正常讲话中几乎有 90% 会在 2000 以内的词汇，但剩下的 10% 足以令你完全不理解对方表达的意思。词汇学专家]]></description>
-</item>
-<item>
-    <title>学单词（二）</title>
-    <link>https://austinxt.github.io/2017-06-11-learning-words-2/</link>
-    <pubDate>Mon, 12 Jun 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-06-11-learning-words-2/</guid>
-    <description><![CDATA[第二阶段：2000 词&amp;动词 英语对话中基本上只有 2000 个常用单词，用好这 2000 个单词要建立它们与概念的直接联系。方法是多听，先从慢速、标准音听]]></description>
-</item>
-<item>
-    <title>学单词（一）</title>
-    <link>https://austinxt.github.io/2017-06-11-learning-words-1/</link>
-    <pubDate>Sun, 11 Jun 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-06-11-learning-words-1/</guid>
-    <description><![CDATA[如果要评选一个「我的人生最大的干扰项」，目前为止，非英语莫属。初高中一直赖在班级倒数前五的位子上，每回英语考试前夕都心慌不已，考前一定要拿一]]></description>
-</item>
-<item>
-    <title>讲座记录：零基础网络数据分析入门</title>
-    <link>https://austinxt.github.io/2017-05-20-network-data-analysis-introduction/</link>
-    <pubDate>Sat, 20 May 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-05-20-network-data-analysis-introduction/</guid>
-    <description><![CDATA[讲师介绍 刘勇，Gephi 官方认证讲师，数据可视化实践者，《网络数据可视化与分析利器：Gephi 中文教程》作者。 什么是网络数据 我们先来了解一下]]></description>
-</item>
-<item>
-    <title>学美语（三）：进阶</title>
-    <link>https://austinxt.github.io/2017-04-03-learning-american-english-3/</link>
-    <pubDate>Wed, 05 Apr 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-04-03-learning-american-english-3/</guid>
-    <description><![CDATA[音乐的音 唱的比说的好听 学音标的音面对的是固定的 44 个音标；学语块的音要去寻找零星散落的发音要点；但从音乐的音开始，要学的内容变成了一个面，一个]]></description>
-</item>
-<item>
-    <title>学美语（二）：语块的音</title>
-    <link>https://austinxt.github.io/2017-04-03-learning-american-english-2/</link>
-    <pubDate>Tue, 04 Apr 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-04-03-learning-american-english-2/</guid>
-    <description><![CDATA[音标在此组装成语言 音标练习到自我感觉良好的程度便转向语块练习，大概花了十天的时间，一边听何老师的课，一边学习 Lisa 的视频、读 coca 词表，A Course in Phonetics: Home 和]]></description>
-</item>
-<item>
-    <title>学美语（一）：音标的音</title>
-    <link>https://austinxt.github.io/2017-04-03-learning-american-english-1/</link>
-    <pubDate>Mon, 03 Apr 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-04-03-learning-american-english-1/</guid>
-    <description><![CDATA[回想初学英语那会儿，老师用方言版的英语领着读“Good morning”，我就在课本上记下“gu de mo ning”，还暗自庆幸找到了一个好方法。这]]></description>
+    <description><![CDATA[<p>Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。</p>
+<p>学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并且记录例子。</p>]]></description>
 </item>
 </channel>
 </rss>

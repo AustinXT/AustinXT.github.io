@@ -4,23 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>密码学入门 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="密码学入门" />
-<meta property="og:description" content="散列函数 密码散列函数 (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下： 1 hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://austinxt.github.io/2023-09-09-encrypt/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-09-09T00:00:00+08:00" />
-<meta property="article:modified_time" content="2023-09-09T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
+        <title>密码学入门 - 夜航星</title><meta name="Description" content="做一个智能时代的蛮子"><meta property="og:url" content="https://austinxt.github.io/2023-09-09-encrypt/">
+  <meta property="og:site_name" content="夜航星">
+  <meta property="og:title" content="密码学入门">
+  <meta property="og:description" content="散列函数 密码散列函数 (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下：
+hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt; (N对于该函数固定) 下面我们用sha3sum命令来测试SHA1对几个字符串的输出：">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-09-09T00:00:00+08:00">
+    <meta property="article:modified_time" content="2023-09-09T00:00:00+08:00">
+    <meta property="article:tag" content="密码学">
 
-<meta name="twitter:title" content="密码学入门"/>
-<meta name="twitter:description" content="散列函数 密码散列函数 (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下： 1 hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="密码学入门">
+  <meta name="twitter:description" content="散列函数 密码散列函数 (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下：
+hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt; (N对于该函数固定) 下面我们用sha3sum命令来测试SHA1对几个字符串的输出：">
 <meta name="application-name" content="夜航星">
-<meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="夜航星">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2023-09-09-encrypt/" /><link rel="prev" href="https://austinxt.github.io/2023-07-22-vim/" /><link rel="next" href="https://austinxt.github.io/2023-09-10-git/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2023-09-09-encrypt/" /><link rel="prev" href="https://austinxt.github.io/2023-07-22-vim/" /><link rel="next" href="https://austinxt.github.io/2023-09-10-git/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/austinxt.github.io\/2023-09-09-encrypt\/"
-        },"genre": "posts","keywords": "密码学","wordcount":  4013 ,
+        },"genre": "posts","keywords": "密码学","wordcount":  3948 ,
         "url": "https:\/\/austinxt.github.io\/2023-09-09-encrypt\/","datePublished": "2023-09-09T00:00:00+08:00","dateModified": "2023-09-09T00:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -38,7 +44,7 @@
             },"description": ""
     }
     </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
@@ -46,21 +52,9 @@
             <a href="/" title="夜航星">夜航星</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
+                </a></div>
         </div>
     </div>
 </header><header class="mobile" id="header-mobile">
@@ -73,39 +67,18 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
+</header><main class="main">
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">密码学入门</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-09">2023-09-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;4013 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
+            <div class="post-meta-line"><span class="post-author"><a href="https://blog.nightvoyager.top/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-09-09">2023-09-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;3948 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -162,26 +135,21 @@
 </nav></div>
             </div><div class="content" id="content"><h2 id="散列函数">散列函数</h2>
 <p><a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function" target="_blank" rel="noopener noreffer ">密码散列函数</a> (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;  (N对于该函数固定) 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>下面我们用<code>sha3sum</code>命令来测试SHA1对几个字符串的输出：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;xianxian&#39;</span> <span class="p">|</span> sha3sum
-</span></span><span class="line"><span class="cl">e6d649cf2c1ff81dbfd2650af677ee0acf9bb716fb8b3b1405260e42  -
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>抽象地讲，散列函数可以被认为是一个不可逆，且看上去随机（但具确定性）的函数 （这就是<a href="https://en.wikipedia.org/wiki/Random_oracle" target="_blank" rel="noopener noreffer ">散列函数的理想模型</a>）。 一个散列函数拥有以下特性：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;  (N对于该函数固定) </span></span></code></pre></div></div>
+<p>下面我们用<code>sha3sum</code>命令来测试SHA1对几个字符串的输出：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;xianxian&#39;</span> <span class="p">|</span> sha3sum
+</span></span><span class="line"><span class="cl">e6d649cf2c1ff81dbfd2650af677ee0acf9bb716fb8b3b1405260e42  -</span></span></code></pre></div></div>
+<p>抽象地讲，散列函数可以被认为是一个不可逆，且看上去随机（但具确定性）的函数 （这就是<a href="https://en.wikipedia.org/wiki/Random_oracle" target="_blank" rel="noopener noreffer ">散列函数的理想模型</a>）。 一个散列函数拥有以下特性：</p>
 <ul>
 <li>确定性：对于不变的输入永远有相同的输出。</li>
 <li>不可逆性：对于<code>hash(m) = h</code>，难以通过已知的输出<code>h</code>来计算出原始输入<code>m</code>。</li>
@@ -196,27 +164,19 @@
 <h4 id="文件的信息摘要message-digest">文件的信息摘要(Message digest)</h4>
 <p>像Linux ISO这样的软件可以从非官方的（有时不太可信的）镜像站下载，所以需要设法确认下载的软件和官方一致。 官方网站一般会在（指向镜像站的）下载链接旁边备注安装文件的哈希值。 用户从镜像站下载安装文件后可以对照公布的哈希值来确定安装文件没有被篡改。</p>
 <p>例如验证 ubuntu 镜像，<a href="https://help.ubuntu.com/community/HowToSHA256SUM" target="_blank" rel="noopener noreffer ">HowToSHA256SUM - Community Help Wiki</a></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 获取本地镜像的哈希值</span>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 获取本地镜像的哈希值</span>
 </span></span><span class="line"><span class="cl">$ shasum -a <span class="m">256</span> ~/Downloads/ubuntu-22.04.1-live-server-arm64.iso
 </span></span><span class="line"><span class="cl">bc5a8015651c6f8699ab262d333375d3930b824f03d14ae51e551d89d9bb571c  /Users/nv/Downloads/ubuntu-22.04.1-live-server-arm64.iso
 </span></span><span class="line"><span class="cl"><span class="c1"># 下载远程官方公布的哈希值</span>
 </span></span><span class="line"><span class="cl">$ curl http://cdimage.ubuntu.com/releases/22.04/release/SHA256SUMS --output ~/Downloads/SHA256SUMS
 </span></span><span class="line"><span class="cl"><span class="c1"># 比较两者</span>
-</span></span><span class="line"><span class="cl">$ diff ~/Downloads/SHA256SUMS &lt;<span class="o">(</span>shasum -a <span class="m">256</span> ~/Downloads/ubuntu-22.04.1-live-server-arm64.iso<span class="o">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="承诺机制">承诺机制</h4>
+</span></span><span class="line"><span class="cl">$ diff ~/Downloads/SHA256SUMS &lt;<span class="o">(</span>shasum -a <span class="m">256</span> ~/Downloads/ubuntu-22.04.1-live-server-arm64.iso<span class="o">)</span></span></span></code></pre></div></div>
+<h4 id="承诺机制">承诺机制</h4>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Commitment_scheme" target="_blank" rel="noopener noreffer ">承诺机制</a>(Commitment scheme)： 假设我希望承诺一个值，但之后再透露它—— 比如在没有一个可信的、双方可见的硬币的情况下在我的脑海中公平的“扔一次硬币”。 我可以选择一个值<code>r = random()</code>，并和你分享它的哈希值<code>h = sha256(r)</code>。 这时你可以开始猜硬币的正反：我们一致同意偶数<code>r</code>代表正面，奇数<code>r</code>代表反面。 你猜完了以后，我告诉你值<code>r</code>的内容，得出胜负。同时你可以使用<code>sha256(r)</code>来检查我分享的哈希值<code>h</code>以确认我没有作弊。</li>
 </ul>
@@ -230,43 +190,30 @@
 在验证登录请求时，使用输入的密码连接存储的盐重新计算哈希值<code>KDF(input + salt)</code>，并与存储的哈希值对比。</li>
 </ul>
 <p>例如，使用 <a href="https://www.openssl.org/" target="_blank" rel="noopener noreffer ">OpenSSL</a>的AES模式加密一个文件</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s2">&#34;hello world&#34;</span> &gt; afile <span class="c1">#创建一个文件</span>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s2">&#34;hello world&#34;</span> &gt; afile <span class="c1">#创建一个文件</span>
 </span></span><span class="line"><span class="cl">$ openssl aes-256-cbc -salt -in afile -out secfile <span class="c1">#加密文件</span>
 </span></span><span class="line"><span class="cl">enter aes-256-cbc encryption password:***
 </span></span><span class="line"><span class="cl">Verifying - enter aes-256-cbc encryption password:***
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">#解密</span>
-</span></span><span class="line"><span class="cl">$ openssl aes-256-cbc -d -in secfile -out notsafefile
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="对称加密">对称加密</h2>
+</span></span><span class="line"><span class="cl">$ openssl aes-256-cbc -d -in secfile -out notsafefile</span></span></code></pre></div></div>
+<h2 id="对称加密">对称加密</h2>
 <p>说到加密，可能你会首先想到隐藏明文信息。对称加密使用以下几个方法来实现这个功能：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">keygen() -&gt; key  (这是一个随机方法)
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">keygen() -&gt; key  (这是一个随机方法)
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">encrypt(plaintext: array&lt;byte&gt;, key) -&gt; array&lt;byte&gt;  (输出密文)
-</span></span><span class="line"><span class="cl">decrypt(ciphertext: array&lt;byte&gt;, key) -&gt; array&lt;byte&gt;  (输出明文) 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>加密方法<code>encrypt()</code>输出的密文<code>ciphertext</code>很难在不知道<code>key</code>的情况下得出明文<code>plaintext</code>。</p>
+</span></span><span class="line"><span class="cl">decrypt(ciphertext: array&lt;byte&gt;, key) -&gt; array&lt;byte&gt;  (输出明文) </span></span></code></pre></div></div>
+<p>加密方法<code>encrypt()</code>输出的密文<code>ciphertext</code>很难在不知道<code>key</code>的情况下得出明文<code>plaintext</code>。</p>
 <p>解密方法<code>decrypt()</code>有明显的正确性。因为功能要求给定密文及其密钥，解密方法必须输出明文：<code>decrypt(encrypt(m, k), k) = m</code>。</p>
 <p><a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank" rel="noopener noreffer ">AES</a> 是现在常用的一种对称加密系统。</p>
 <h3 id="对称加密的应用">对称加密的应用</h3>
@@ -275,53 +222,37 @@
 <h2 id="非对称加密">非对称加密</h2>
 <p>非对称加密的“非对称”代表在其环境中，使用两个具有不同功能的密钥： 一个是私钥(private key)，不向外公布；另一个是公钥(public key)，公布公钥不像公布对称加密的共享密钥那样可能影响加密体系的安全性。
 非对称加密使用以下几个方法来实现加密/解密(encrypt/decrypt)，以及签名/验证(sign/verify)：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">keygen() -&gt; (public key, private key)  (这是一个随机方法)
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">keygen() -&gt; (public key, private key)  (这是一个随机方法)
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">encrypt(plaintext: array&lt;byte&gt;, public key) -&gt; array&lt;byte&gt;  (输出密文)
 </span></span><span class="line"><span class="cl">decrypt(ciphertext: array&lt;byte&gt;, private key) -&gt; array&lt;byte&gt;  (输出明文)
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sign(message: array&lt;byte&gt;, private key) -&gt; array&lt;byte&gt;  (生成签名)
-</span></span><span class="line"><span class="cl">verify(message: array&lt;byte&gt;, signature: array&lt;byte&gt;, public key) -&gt; bool  (验证签名是否是由和这个公钥相关的私钥生成的) 
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>信息在非对称加密中使用 <em>公钥</em> 加密， 且输出的密文很难在不知道 <em>私钥</em> 的情况下得出明文。</p>
+</span></span><span class="line"><span class="cl">verify(message: array&lt;byte&gt;, signature: array&lt;byte&gt;, public key) -&gt; bool  (验证签名是否是由和这个公钥相关的私钥生成的) </span></span></code></pre></div></div>
+<p>信息在非对称加密中使用 <em>公钥</em> 加密， 且输出的密文很难在不知道 <em>私钥</em> 的情况下得出明文。</p>
 <p>解密方法<code>decrypt()</code>有明显的正确性。 给定密文及私钥，解密方法一定会输出明文： <code>decrypt(encrypt(m, public key), private key) = m</code>。</p>
 <p>签名/验证方法具有和书面签名类似的特征。</p>
 <p>在不知道 <em>私钥</em> 的情况下，不管需要签名的信息为何，很难计算出一个可以使 <code>verify(message, signature, public key)</code> 返回为真的签名。</p>
 <p>对于使用私钥签名的信息，验证方法验证和私钥相对应的公钥时一定返回为真： <code>verify(message, sign(message, private key), public key) = true</code>。</p>
 <p>例如，使用<a href="https://wiki.archlinux.org/index.php/SSH_keys#Ed25519" target="_blank" rel="noopener noreffer ">ED25519算法</a>生成一组<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2" target="_blank" rel="noopener noreffer ">SSH 密钥对</a>。为了确保私钥不使用时的安全，一定使用密码加密你的私钥。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ssh-keygen -t ed25519
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ssh-keygen -t ed25519
 </span></span><span class="line"><span class="cl">Generating public/private ed25519 key pair.
 </span></span><span class="line"><span class="cl">Enter file in which to save the key <span class="o">(</span>/Users/nv/.ssh/id_ed25519<span class="o">)</span>: ./key
 </span></span><span class="line"><span class="cl">Enter passphrase <span class="o">(</span>empty <span class="k">for</span> no passphrase<span class="o">)</span>:
 </span></span><span class="line"><span class="cl">Enter same passphrase again:
 </span></span><span class="line"><span class="cl">Your identification has been saved in ./key
-</span></span><span class="line"><span class="cl">Your public key has been saved in ./key.pub
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="非对称加密的应用">非对称加密的应用</h3>
+</span></span><span class="line"><span class="cl">Your public key has been saved in ./key.pub</span></span></code></pre></div></div>
+<h3 id="非对称加密的应用">非对称加密的应用</h3>
 <h4 id="电子邮件加密">电子邮件加密</h4>
 <p><a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank" rel="noopener noreffer ">PGP电子邮件加密</a>：用户可以将所使用的公钥在线发布，比如：PGP密钥服务器或 <a href="https://keybase.io/" target="_blank" rel="noopener noreffer ">Keybase</a>。任何人都可以向他们发送加密的电子邮件。</p>
 <h4 id="聊天加密">聊天加密</h4>
@@ -329,67 +260,36 @@
 <h4 id="软件签名">软件签名</h4>
 <p>Git 支持用户对提交(commit)和标签(tag)进行 GPG(GNU Privacy Guard) 签名。任何人都可以使用软件开发者公布的签名公钥验证下载的已签名软件。</p>
 <p>Linux 配置 GPG 可参考<a href="https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages" target="_blank" rel="noopener noreffer ">配置 GPG 可参考</a>，下面是 Mac 下的操作</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ gpg --gen-key
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ gpg --gen-key
 </span></span><span class="line"><span class="cl"><span class="c1"># 导入 [anish](https://keybase.io/anish) pgp 共钥</span>
 </span></span><span class="line"><span class="cl">$ curl https://keybase.io/anish/pgp_keys.asc <span class="p">|</span> gpg --import
 </span></span><span class="line"><span class="cl"><span class="c1"># 加密文件</span>
-</span></span><span class="line"><span class="cl">$ gpg --encrypt --sign --armor -r me@anishathalye.com hi
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>使用<code>git commit -S</code>命令签名一个Git提交，并使用<code>git show --show-signature</code>命令验证这个提交的签名。或者，使用<code>git tag -s</code>命令签名一个Git标签，并使用<code>git tag -v</code>命令验证标签的签名。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git commit -S -m <span class="s2">&#34;sign a commit&#34;</span>
+</span></span><span class="line"><span class="cl">$ gpg --encrypt --sign --armor -r me@anishathalye.com hi</span></span></code></pre></div></div>
+<p>使用<code>git commit -S</code>命令签名一个Git提交，并使用<code>git show --show-signature</code>命令验证这个提交的签名。或者，使用<code>git tag -s</code>命令签名一个Git标签，并使用<code>git tag -v</code>命令验证标签的签名。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git commit -S -m <span class="s2">&#34;sign a commit&#34;</span>
 </span></span><span class="line"><span class="cl">error: gpg failed to sign the data
-</span></span><span class="line"><span class="cl"> fatal: failed to write commit object
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>这个问题网上有一些解决方案可供参考：</p>
+</span></span><span class="line"><span class="cl"> fatal: failed to write commit object</span></span></code></pre></div></div>
+<p>这个问题网上有一些解决方案可供参考：</p>
 <ul>
 <li><a href="https://stackoverflow.com/questions/41052538/git-error-gpg-failed-to-sign-data" target="_blank" rel="noopener noreffer ">gnupg - Git error - gpg failed to sign data - Stack Overflow</a></li>
 <li><a href="https://github.com/pstadler/keybase-gpg-github" target="_blank" rel="noopener noreffer ">pstadler/keybase-gpg-github: Step-by-step guide on how to create a GPG key on keybase.io, adding it to a local GPG setup and using it with Git and GitHub.</a></li>
 </ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 如果遇到</span>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 如果遇到</span>
 </span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s2">&#34;test&#34;</span> <span class="p">|</span> gpg --clearsign
 </span></span><span class="line"><span class="cl">gpg: <span class="o">[</span>stdin<span class="o">]</span>: clear-sign failed: Inappropriate ioctl <span class="k">for</span> device
 </span></span><span class="line"><span class="cl"><span class="c1"># 则执行</span>
@@ -410,10 +310,8 @@
 </span></span><span class="line"><span class="cl">$ git commit -S -m <span class="s2">&#34;scripts&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="o">[</span>master 0c77ec5<span class="o">]</span> scripts
 </span></span><span class="line"><span class="cl"> <span class="m">12</span> files changed, <span class="m">144</span> insertions<span class="o">(</span>+<span class="o">)</span>
-</span></span><span class="line"><span class="cl"> ...
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="密钥分发">密钥分发</h3>
+</span></span><span class="line"><span class="cl"> ...</span></span></code></pre></div></div>
+<h3 id="密钥分发">密钥分发</h3>
 <p>非对称加密面对的主要挑战是，如何分发公钥并对应现实世界中存在的人或组织。</p>
 <p>Signal的信任模型是，信任用户第一次使用时给出的身份(trust on first use)，同时支持用户线下(out-of-band)、面对面交换公钥（Signal里的safety number）。</p>
 <p>PGP使用的是<a href="https://en.wikipedia.org/wiki/Web_of_trust" target="_blank" rel="noopener noreffer ">信任网络</a>。简单来说，如果我想加入一个信任网络，则必须让已经在信任网络中的成员对我进行线下验证，比如对比证件。验证无误后，信任网络的成员使用私钥对我的公钥进行签名。这样我就成为了信任网络的一部分。只要我使用签名过的公钥所对应的私钥就可以证明“我是我”。</p>
@@ -445,7 +343,7 @@
                             <a class="link-to-markdown" href="/2023-09-09-encrypt/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span></span>
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="https://austinxt.github.io/2023-09-09-encrypt/" data-title="密码学入门" data-hashtags="密码学"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="https://austinxt.github.io/2023-09-09-encrypt/" data-title="密码学入门"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://austinxt.github.io/2023-09-09-encrypt/" data-hashtag="密码学"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://austinxt.github.io/2023-09-09-encrypt/" data-title="密码学入门"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://austinxt.github.io/2023-09-09-encrypt/" data-title="密码学入门"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@14.9.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://austinxt.github.io/2023-09-09-encrypt/" data-title="密码学入门"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="https://austinxt.github.io/2023-09-09-encrypt/" data-title="密码学入门" data-description=""><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=https%3a%2f%2faustinxt.github.io%2f2023-09-09-encrypt%2f&amp;text=%e5%af%86%e7%a0%81%e5%ad%a6%e5%85%a5%e9%97%a8" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -462,16 +360,18 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
-                    <span class="icp">浙ICP备19014045号-2</span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.148.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://blog.nightvoyager.top/" target="_blank">夜航星</a></span></div>
         </div>
     </footer></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.cd0d0b6e50ff01ff2f3a9a70d7cfb66a7c6cb9acf7a566325568be6d3bd31fc4.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.ae2da1bd62c6469ee27770ad1cddf2e8296d8a7f6d85b091463e5200c5e320af.js" integrity="sha256-ri2hvWLGRp7id3CtHN3y6Cltin9thbCRRj5SAMXjIK8="></script><script type="text/javascript" src="/lib/lunr/lunr.min.08a93c0120364b01159db3c287f39b2180bb740334472bda0675bd3f18981676.js" integrity="sha256-CKk8ASA2SwEVnbPCh/ObIYC7dAM0RyvaBnW9PxiYFnY="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.e55842a856a6d829feca3c3ad736c136b6c7549e9247274f78aa296259e06e24.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+        </div><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.min.js"></script></body>
 </html>

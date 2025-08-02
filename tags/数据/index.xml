@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>数据 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE/</link>
-        <description>数据 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 20 Sep 2020 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE/" rel="self" type="application/rss+xml" /><item>
-    <title>《用数据讲故事》读书笔记</title>
-    <link>https://austinxt.github.io/2020-09-20-data-for-story/</link>
-    <pubDate>Sun, 20 Sep 2020 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2020-09-20-data-for-story/</guid>
-    <description><![CDATA[本书最精彩的地方就是书里面提供的案例，循序渐进的一步步优化一个杂乱的图表：除去杂乱的图示，将次要的信息融入背景，突出重点关注的数据，顺着视觉]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE/</link>
+    <description>Recent content in 数据 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《用数据讲故事》读书笔记</title>
+      <link>https://austinxt.github.io/2020-09-20-data-for-story/</link>
+      <pubDate>Sun, 20 Sep 2020 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2020-09-20-data-for-story/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;本书最精彩的地方就是书里面提供的案例，循序渐进的一步步优化一个杂乱的图表：除去杂乱的图示，将次要的信息融入背景，突出重点关注的数据，顺着视觉移动，将需要传递的信息展现给受众。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

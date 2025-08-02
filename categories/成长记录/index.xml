@@ -1,32 +1,35 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>成长记录 - Category - 夜航星</title>
-        <link>https://austinxt.github.io/categories/%E6%88%90%E9%95%BF%E8%AE%B0%E5%BD%95/</link>
-        <description>成长记录 - Category - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Thu, 08 Aug 2024 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/categories/%E6%88%90%E9%95%BF%E8%AE%B0%E5%BD%95/" rel="self" type="application/rss+xml" /><item>
-    <title>和一个跟自己很不一样的人，吃饭聊天</title>
-    <link>https://austinxt.github.io/2024-08-08-friend-xh/</link>
-    <pubDate>Thu, 08 Aug 2024 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2024-08-08-friend-xh/</guid>
-    <description><![CDATA[7 月末和 XH 约了八月底见面，没想到她还记得。之前聊天的印象是「自律、自由、洒脱的人，帮我坚定了坚持锻炼的决心。XH 是我以前不敢接触的那类人，很]]></description>
-</item>
-<item>
-    <title>一个人的阅读史（二）</title>
-    <link>https://austinxt.github.io/2018-01-01-reading-history-2/</link>
-    <pubDate>Mon, 01 Jan 2018 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2018-01-01-reading-history-2/</guid>
-    <description><![CDATA[过往三年，迷茫、求索，仍然迷茫、接着求索……如今幡然醒悟，得一曲径，通向深林幽处。过往三年，如在迷宫中抱头鼠窜，有幸遇见些贵人、师友指点迷津]]></description>
-</item>
-<item>
-    <title>一个人的阅读史（一）</title>
-    <link>https://austinxt.github.io/2017-02-06-reading-history-1/</link>
-    <pubDate>Mon, 06 Feb 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-02-06-reading-history-1/</guid>
-    <description><![CDATA[史之为用，其利甚博，乃生人之急务，为国家之要到。——刘知几《史通》 从泥塘里起步 小学六年级搬到新教学楼，教室刚好跟图书室同一层，我的阅读便是从]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>成长记录 on 夜航星</title>
+    <link>https://austinxt.github.io/categories/%E6%88%90%E9%95%BF%E8%AE%B0%E5%BD%95/</link>
+    <description>Recent content in 成长记录 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Thu, 08 Aug 2024 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/categories/%E6%88%90%E9%95%BF%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>和一个跟自己很不一样的人，吃饭聊天</title>
+      <link>https://austinxt.github.io/2024-08-08-friend-xh/</link>
+      <pubDate>Thu, 08 Aug 2024 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2024-08-08-friend-xh/</guid>
+      <description>&lt;p&gt;7 月末和 XH 约了八月底见面，没想到她还记得。之前聊天的印象是「自律、自由、洒脱的人，帮我坚定了坚持锻炼的决心。XH 是我以前不敢接触的那类人，很独立，让我内心很深处燃起了动力，保持自律，持续做有意义的事，把大目标一步步做成了。」&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>一个人的阅读史（二）</title>
+      <link>https://austinxt.github.io/2018-01-01-reading-history-2/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2018-01-01-reading-history-2/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;过往三年，迷茫、求索，仍然迷茫、接着求索……如今幡然醒悟，得一曲径，通向深林幽处。过往三年，如在迷宫中抱头鼠窜，有幸遇见些贵人、师友指点迷津，万分感谢！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>一个人的阅读史（一）</title>
+      <link>https://austinxt.github.io/2017-02-06-reading-history-1/</link>
+      <pubDate>Mon, 06 Feb 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-02-06-reading-history-1/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;史之为用，其利甚博，乃生人之急务，为国家之要到。——刘知几《史通》&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;从泥塘里起步&#34;&gt;从泥塘里起步&lt;/h2&gt;&#xA;&lt;p&gt;小学六年级搬到新教学楼，教室刚好跟图书室同一层，我的阅读便是从这个契机开始。这是小学的第一个图书室，学校里的图书馆不允许小学生借书，有时候周末无聊会和小伙伴去逛一下，只是翻翻书，没有真的去读。寄宿生总有一大把的时间要打发，新图书室恰巧又近，自然会常去逛逛。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

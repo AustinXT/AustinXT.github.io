@@ -4,23 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>常用性能分析工具 - 夜航星</title><meta name="Description" content="个人博客"><meta property="og:title" content="常用性能分析工具" />
-<meta property="og:description" content="学习性能分析，最开始是查看执行时间，然后用工具帮助排查问题，用资源监控辅助。 即使您的代码能够像您期望的一样运行，但是如果它消耗了您全部的 CPU 和" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://austinxt.github.io/2022-12-10-profile/" /><meta property="og:image" content="https://austinxt.github.io/images/avatar.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-12-10T00:00:00+08:00" />
-<meta property="article:modified_time" content="2022-12-10T00:00:00+08:00" /><meta property="og:site_name" content="夜航星" />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://austinxt.github.io/images/avatar.png"/>
+        <title>常用性能分析工具 - 夜航星</title><meta name="Description" content="做一个智能时代的蛮子"><meta property="og:url" content="https://austinxt.github.io/2022-12-10-profile/">
+  <meta property="og:site_name" content="夜航星">
+  <meta property="og:title" content="常用性能分析工具">
+  <meta property="og:description" content="学习性能分析，最开始是查看执行时间，然后用工具帮助排查问题，用资源监控辅助。
+即使您的代码能够像您期望的一样运行，但是如果它消耗了您全部的 CPU 和内存，那么它显然也不是个好程序。算法课上我们通常会介绍大 O 标记法，但却没教给我们如何找到程序中的热点。 鉴于 过早的优化是万恶之源，您需要学习性能分析和监控工具，它们会帮助您找到程序中最耗时、最耗资源的部分，这样您就可以有针对性的进行性能优化。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-12-10T00:00:00+08:00">
+    <meta property="article:modified_time" content="2022-12-10T00:00:00+08:00">
+    <meta property="article:tag" content="性能分析">
 
-<meta name="twitter:title" content="常用性能分析工具"/>
-<meta name="twitter:description" content="学习性能分析，最开始是查看执行时间，然后用工具帮助排查问题，用资源监控辅助。 即使您的代码能够像您期望的一样运行，但是如果它消耗了您全部的 CPU 和"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="常用性能分析工具">
+  <meta name="twitter:description" content="学习性能分析，最开始是查看执行时间，然后用工具帮助排查问题，用资源监控辅助。
+即使您的代码能够像您期望的一样运行，但是如果它消耗了您全部的 CPU 和内存，那么它显然也不是个好程序。算法课上我们通常会介绍大 O 标记法，但却没教给我们如何找到程序中的热点。 鉴于 过早的优化是万恶之源，您需要学习性能分析和监控工具，它们会帮助您找到程序中最耗时、最耗资源的部分，这样您就可以有针对性的进行性能优化。">
 <meta name="application-name" content="夜航星">
-<meta name="apple-mobile-web-app-title" content="夜航星"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="夜航星">
+<meta name="referrer" content="no-referrer" /><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2022-12-10-profile/" /><link rel="prev" href="https://austinxt.github.io/2022-11-12-shell/" /><link rel="next" href="https://austinxt.github.io/2023-01-11-data-analysis/" /><link rel="stylesheet" href="/css/style.min.87bf1911dd101ec4f361dc638848b84bc1cdf6bfede2bce9f7291cbf99fdcc4d.css" integrity="sha256-h78ZEd0QHsTzYdxjiEi4S8HN9r/t4rzp9ykcv5n9zE0="><link rel="preload" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.0df5a33710e433de1f5415b1d47e4130ca7466aee5b81955f1045c4844bbb3ed.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0="></noscript><link rel="preload" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.5fbaeb9f8e25d7e0143bae61d4b1802c16ce7390b96ceb2d498b0d96ff4c853f.css" integrity="sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8="></noscript><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://austinxt.github.io/2022-12-10-profile/" /><link rel="prev" href="https://austinxt.github.io/2022-11-12-shell/" /><link rel="next" href="https://austinxt.github.io/2023-01-11-data-analysis/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/austinxt.github.io\/2022-12-10-profile\/"
-        },"genre": "posts","keywords": "性能分析","wordcount":  4149 ,
+        },"genre": "posts","keywords": "性能分析","wordcount":  4006 ,
         "url": "https:\/\/austinxt.github.io\/2022-12-10-profile\/","datePublished": "2022-12-10T00:00:00+08:00","dateModified": "2022-12-10T00:00:00+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -38,7 +44,7 @@
             },"description": ""
     }
     </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
         <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
     <div class="header-wrapper">
@@ -46,21 +52,9 @@
             <a href="/" title="夜航星">夜航星</a>
         </div>
         <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
-                        <input type="text" placeholder="搜索标题或内容" id="search-input-desktop">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-desktop">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+            <div class="menu-inner"><a class="menu-item" href="/talks/"> 呓语 </a><a class="menu-item" href="/posts/" title="文章"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a>
-            </div>
+                </a></div>
         </div>
     </div>
 </header><header class="mobile" id="header-mobile">
@@ -73,39 +67,18 @@
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><div class="search-wrapper">
-                    <div class="search mobile" id="search-mobile">
-                        <input type="text" placeholder="搜索标题或内容" id="search-input-mobile">
-                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
-                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
-                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
-                        </a>
-                        <span class="search-button search-loading" id="search-loading-mobile">
-                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
-                        Cancel
-                    </a>
-                </div><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/talks/" title="">呓语</a><a class="menu-item" href="/posts/" title="文章">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
             </a></div>
     </div>
-</header><div class="search-dropdown desktop">
-        <div id="search-dropdown-desktop"></div>
-    </div>
-    <div class="search-dropdown mobile">
-        <div id="search-dropdown-mobile"></div>
-    </div><main class="main">
+</header><main class="main">
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">常用性能分析工具</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-10">2022-12-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;4149 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;9 minutes&nbsp;</div>
+            <div class="post-meta-line"><span class="post-author"><a href="https://blog.nightvoyager.top/" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>夜航星</a></span>&nbsp;<span class="post-category">included in <a href="/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>知识整理</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-12-10">2022-12-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;4006 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -186,24 +159,12 @@
 </ul>
 <h3 id="python">Python</h3>
 <p>下面这个例子中，我们使用了 Python 的 <a href="https://docs.python.org/3/library/time.html" target="_blank" rel="noopener noreffer "><code>time</code></a>模块。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import time, random
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import time, random
 </span></span><span class="line"><span class="cl">n = random.randint(1, 10) * 100
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"># 获取当前时间 start = time.time()
@@ -215,55 +176,38 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"># Output
 </span></span><span class="line"><span class="cl"># Sleeping for 500 ms
-</span></span><span class="line"><span class="cl"># 0.5713930130004883
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>也可以用 [<code>timeit</code>](<a href="https://docs.python.org/zh-cn/3/library/timeit.html" target="_blank" rel="noopener noreffer ">timeit &mdash; 测量小代码片段的执行时间 — Python 3.11.2 文档</a>) 计算一小段 Python 代码的耗时，它有   命令行接口以及一个   可调用方法。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m timeit -r <span class="m">10</span> -vp -n <span class="m">1000</span> -s <span class="s1">&#39;flag=&#34;-&#34;&#39;</span> <span class="s1">&#39;l=[str(i) for i in range(100)]&#39;</span> <span class="s1">&#39;flag.join(l)&#39;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl"># 0.5713930130004883</span></span></code></pre></div></div>
+<p>也可以用 [<code>timeit</code>](<a href="https://docs.python.org/zh-cn/3/library/timeit.html" target="_blank" rel="noopener noreffer ">timeit &mdash; 测量小代码片段的执行时间 — Python 3.11.2 文档</a>) 计算一小段 Python 代码的耗时，它有   命令行接口以及一个   可调用方法。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m timeit -r <span class="m">10</span> -vp -n <span class="m">1000</span> -s <span class="s1">&#39;flag=&#34;-&#34;&#39;</span> <span class="s1">&#39;l=[str(i) for i in range(100)]&#39;</span> <span class="s1">&#39;flag.join(l)&#39;</span></span></span></code></pre></div></div>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-python">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">test</span><span class="p">():</span>
 </span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Stupid test function&#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="kn">import</span> <span class="nn">timeit</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="s2">&#34;test()&#34;</span><span class="p">,</span> <span class="n">setup</span><span class="o">=</span><span class="s2">&#34;from __main__ import test&#34;</span><span class="p">))</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="shell">shell</h4>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">timeit</span><span class="o">.</span><span class="n">timeit</span><span class="p">(</span><span class="s2">&#34;test()&#34;</span><span class="p">,</span> <span class="n">setup</span><span class="o">=</span><span class="s2">&#34;from __main__ import test&#34;</span><span class="p">))</span></span></span></code></pre></div></div>
+<h4 id="shell">shell</h4>
 <p>例如，试着执行一个用于发起 HTTP 请求的命令并在其前面添加 <a href="http://man7.org/linux/man-pages/man1/time.1.html" target="_blank" rel="noopener noreffer "><code>time</code></a> 前缀。网络不好的情况下您可能会看到下面的输出结果。请求花费了 2s 才完成，但是进程仅花费了 15ms 的 CPU 用户时间和 12ms 的 CPU 内核时间。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ time curl https://missing.csail.mit.edu &amp;&gt; /dev/null
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ time curl https://missing.csail.mit.edu &amp;&gt; /dev/null
 </span></span><span class="line"><span class="cl">real    0m2.561s
 </span></span><span class="line"><span class="cl">user    0m0.015s
-</span></span><span class="line"><span class="cl">sys     0m0.012s
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="性能分析工具profilers">性能分析工具（profilers）</h2>
+</span></span><span class="line"><span class="cl">sys     0m0.012s</span></span></code></pre></div></div>
+<h2 id="性能分析工具profilers">性能分析工具（profilers）</h2>
 <h3 id="cpu">CPU</h3>
 <p>大多数情况下，当人们提及性能分析工具的时候，通常指的是 CPU 性能分析工具。 CPU 性能分析工具有两种： 追踪分析器（<em>tracing</em>）及采样分析器（<em>sampling</em>）。 追踪分析器 会记录程序的每一次函数调用，而采样分析器则只会周期性的监测（通常为每毫秒）您的程序并记录程序堆栈。它们使用这些记录来生成统计信息，显示程序在哪些事情上花费了最多的时间。</p>
 <p>另外还有，Valgrind 的 <a href="http://valgrind.org/docs/manual/cl-manual.html" target="_blank" rel="noopener noreffer ">Callgrind</a>可让你运行程序并计算所有的时间花费以及所有调用堆栈（即哪个函数调用了另一个函数）。然后，它会生成带注释的代码版本，其中包含每行花费的时间。但是，它会使程序运行速度降低一个数量级，并且不支持线程。</p>
@@ -271,70 +215,36 @@
 <h4 id="python-1">Python</h4>
 <h5 id="按函数分析">按函数分析</h5>
 <p>在 Python 中，我们使用 <code>cProfile</code> 模块来分析每次函数调用所消耗的时间。 在下面的例子中，我们实现了一个基础的 grep 命令：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#!/usr/bin/env python
-</span></span><span class="line"><span class="cl">import sys, re
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">#!/usr/bin/env python</span>
+</span></span><span class="line"><span class="cl"><span class="n">import</span> <span class="n">sys</span><span class="p">,</span> <span class="n">re</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">def grep(pattern, file):
-</span></span><span class="line"><span class="cl">    with open(file, &#39;r&#39;) as f:
-</span></span><span class="line"><span class="cl">        print(file)
-</span></span><span class="line"><span class="cl">        for i, line in enumerate(f.readlines()):
-</span></span><span class="line"><span class="cl">            pattern = re.compile(pattern)
-</span></span><span class="line"><span class="cl">            match = pattern.search(line)
-</span></span><span class="line"><span class="cl">            if match is not None:
-</span></span><span class="line"><span class="cl">                print(&#34;{}: {}&#34;.format(i, line), end=&#34;&#34;)
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">grep</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">file</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">with</span> <span class="n">open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="n">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">enumerate</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">match</span> <span class="o">=</span> <span class="n">pattern</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">match</span> <span class="n">is</span> <span class="ow">not</span> <span class="n">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;{}: {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">line</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">if __name__ == &#39;__main__&#39;:
-</span></span><span class="line"><span class="cl">    times = int(sys.argv[1])
-</span></span><span class="line"><span class="cl">    pattern = sys.argv[2]
-</span></span><span class="line"><span class="cl">    for i in range(times):
-</span></span><span class="line"><span class="cl">        for file in sys.argv[3:]:
-</span></span><span class="line"><span class="cl">            grep(pattern, file)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>我们可以使用下面的命令来对这段代码进行分析。通过它的输出我们可以知道，IO 消耗了大量的时间，编译正则表达式也比较耗费时间。因为正则表达式只需要编译一次，我们可以将其移动到 for 循环外面来改进性能。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ python -m cProfile -s tottime grep.py 1000 &#39;^(import|\s*def)[^,]*$&#39; *.py
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">times</span> <span class="o">=</span> <span class="ne">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pattern</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">times</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">:]:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">grep</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">file</span><span class="p">)</span></span></span></code></pre></div></div>
+<p>我们可以使用下面的命令来对这段代码进行分析。通过它的输出我们可以知道，IO 消耗了大量的时间，编译正则表达式也比较耗费时间。因为正则表达式只需要编译一次，我们可以将其移动到 for 循环外面来改进性能。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ python -m cProfile -s tottime grep.py 1000 &#39;^(import|\s*def)[^,]*$&#39; *.py
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">[omitted program output]
 </span></span><span class="line"><span class="cl">
@@ -349,31 +259,15 @@
 </span></span><span class="line"><span class="cl">  17000    0.019    0.000    0.029    0.000 codecs.py:318(decode)
 </span></span><span class="line"><span class="cl">      1    0.017    0.017    0.911    0.911 grep.py:3(&lt;module&gt;)
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[omitted lines]
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>关于 Python 的 <code>cProfile</code> 分析器（以及其他一些类似的分析器），需要注意的是它显示的是每次函数调用的时间。看上去可能快到反直觉，尤其是如果您在代码里面使用了第三方的函数库，因为内部函数调用也会被看作函数调用。</p>
+</span></span><span class="line"><span class="cl">[omitted lines]</span></span></code></pre></div></div>
+<p>关于 Python 的 <code>cProfile</code> 分析器（以及其他一些类似的分析器），需要注意的是它显示的是每次函数调用的时间。看上去可能快到反直觉，尤其是如果您在代码里面使用了第三方的函数库，因为内部函数调用也会被看作函数调用。</p>
 <h5 id="按行分析">按行分析</h5>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#!/usr/bin/env python import requests
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#!/usr/bin/env python import requests
 </span></span><span class="line"><span class="cl">from bs4 import BeautifulSoup
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"># 这个装饰器会告诉行分析器
@@ -387,32 +281,14 @@
 </span></span><span class="line"><span class="cl">        urls.append(url[&#39;href&#39;])
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">if __name__ == &#39;__main__&#39;:
-</span></span><span class="line"><span class="cl">    get_urls()
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>如果我们使用 Python 的 <code>cProfile</code> 分析器，我们会得到超过 2500 行的输出结果，即使对其进行排序，我仍然搞不懂时间到底都花在哪了。如果我们使用 <a href="https://github.com/pyutils/line_profiler" target="_blank" rel="noopener noreffer "><code>line_profiler</code></a>，它会基于行来显示时间：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ kernprof -l -v a.py
+</span></span><span class="line"><span class="cl">    get_urls()</span></span></code></pre></div></div>
+<p>如果我们使用 Python 的 <code>cProfile</code> 分析器，我们会得到超过 2500 行的输出结果，即使对其进行排序，我仍然搞不懂时间到底都花在哪了。如果我们使用 <a href="https://github.com/pyutils/line_profiler" target="_blank" rel="noopener noreffer "><code>line_profiler</code></a>，它会基于行来显示时间：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ kernprof -l -v a.py
 </span></span><span class="line"><span class="cl">Wrote profile results to urls.py.lprof
 </span></span><span class="line"><span class="cl">Timer unit: 1e-06 s
 </span></span><span class="line"><span class="cl">
@@ -428,10 +304,8 @@
 </span></span><span class="line"><span class="cl"> 8         1      21559.0  21559.0      3.4      s = BeautifulSoup(response.content, &#39;lxml&#39;)
 </span></span><span class="line"><span class="cl"> 9         1          2.0      2.0      0.0      urls = []
 </span></span><span class="line"><span class="cl">10        25        685.0     27.4      0.1      for url in s.find_all(&#39;a&#39;):
-</span></span><span class="line"><span class="cl">11        24         33.0      1.4      0.0          urls.append(url[&#39;href&#39;])
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>如果您希望了解更多相关信息，可以参考<a href="https://jvns.ca/blog/2017/12/17/how-do-ruby---python-profilers-work-" target="_blank" rel="noopener noreffer ">这篇</a> 介绍性的文章。</p>
+</span></span><span class="line"><span class="cl">11        24         33.0      1.4      0.0          urls.append(url[&#39;href&#39;])</span></span></code></pre></div></div>
+<p>如果您希望了解更多相关信息，可以参考<a href="https://jvns.ca/blog/2017/12/17/how-do-ruby---python-profilers-work-" target="_blank" rel="noopener noreffer ">这篇</a> 介绍性的文章。</p>
 <p>profilehooks 是一个性能测试装饰器集合。</p>
 <h3 id="内存">内存</h3>
 <h4 id="c">C</h4>
@@ -439,20 +313,12 @@
 <h4 id="python-2">Python</h4>
 <p>对于 Python 这类具有垃圾回收机制的语言，内存分析器也是很有用的，因为对于某个对象来说，只要有指针还指向它，那它就不会被回收。</p>
 <p>下面这个例子及其输出，展示了 <a href="https://pypi.org/project/memory-profiler/" target="_blank" rel="noopener noreffer ">memory-profiler</a> 是如何工作的（注意装饰器和 <code>line-profiler</code> 类似）。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@profile
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@profile
 </span></span><span class="line"><span class="cl">def my_func():
 </span></span><span class="line"><span class="cl">    a = [1] * (10 ** 6)
 </span></span><span class="line"><span class="cl">    b = [2] * (2 * 10 ** 7)
@@ -460,23 +326,13 @@
 </span></span><span class="line"><span class="cl">    return a
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">if __name__ == &#39;__main__&#39;:
-</span></span><span class="line"><span class="cl">    my_func()
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ python -m memory_profiler example.py
+</span></span><span class="line"><span class="cl">    my_func()</span></span></code></pre></div></div>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ python -m memory_profiler example.py
 </span></span><span class="line"><span class="cl">Line #    Mem usage  Increment   Line Contents
 </span></span><span class="line"><span class="cl">==============================================
 </span></span><span class="line"><span class="cl">     3                           @profile
@@ -484,10 +340,8 @@
 </span></span><span class="line"><span class="cl">     5     13.61 MB    7.64 MB       a = [1] * (10 ** 6)
 </span></span><span class="line"><span class="cl">     6    166.20 MB  152.59 MB       b = [2] * (2 * 10 ** 7)
 </span></span><span class="line"><span class="cl">     7     13.61 MB -152.59 MB       del b
-</span></span><span class="line"><span class="cl">     8     13.61 MB    0.00 MB       return a
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="事件分析">事件分析</h3>
+</span></span><span class="line"><span class="cl">     8     13.61 MB    0.00 MB       return a</span></span></code></pre></div></div>
+<h3 id="事件分析">事件分析</h3>
 <p>在我们使用<code>strace</code>调试代码的时候，您可能会希望忽略一些特殊的代码并希望在分析时将其当作黑盒处理。<a href="http://man7.org/linux/man-pages/man1/perf.1.html" target="_blank" rel="noopener noreffer "><code>perf</code></a> 命令将 CPU 的区别进行了抽象，它不会报告时间和内存的消耗，而是报告与您的程序相关的系统事件。</p>
 <p>例如，<code>perf</code> 可以报告不佳的缓存局部性（poor cache locality）、大量的页错误（page faults）或活锁（livelocks）。下面是关于常见命令的简介：</p>
 <ul>
@@ -519,41 +373,26 @@
         alt="https://xieting-img.oss-cn-hangzhou.aliyuncs.com/A_Call_Graph_generated_by_pycallgraph.png"
         title="Call Graph" /></p>
 <p>计算斐波那契数列 Python 代码，它为计算每个数字都定义了一个函数：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#!/usr/bin/env python def fib0(): return 0
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">#!/usr/bin/env python def fib0(): return 0</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">def fib1(): return 1
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">fib1</span><span class="p">():</span> <span class="k">return</span> <span class="mi">1</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">s = &#34;&#34;&#34;def fib{}(): return fib{}() + fib{}()&#34;&#34;&#34;
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;&#34;&#34;def fib{}(): return fib{}() + fib{}()&#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">if __name__ == &#39;__main__&#39;:
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	for n in range(2, 10):
-</span></span><span class="line"><span class="cl">		exec(s.format(n, n-1, n-2))
-</span></span><span class="line"><span class="cl">	# from functools import lru_cache
-</span></span><span class="line"><span class="cl">	# for n in range(10):
-</span></span><span class="line"><span class="cl">	#     exec(&#34;fib{} = lru_cache(1)(fib{})&#34;.format(n, n))
-</span></span><span class="line"><span class="cl">	print(eval(&#34;fib9()&#34;))
-</span></span></code></pre></td></tr></table>
-</div>
-</div><ol>
+</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">		<span class="n">exec</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># from functools import lru_cache</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># for n in range(10):</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">#     exec(&#34;fib{} = lru_cache(1)(fib{})&#34;.format(n, n))</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">print</span><span class="p">(</span><span class="n">eval</span><span class="p">(</span><span class="s2">&#34;fib9()&#34;</span><span class="p">))</span></span></span></code></pre></div></div>
+<ol>
 <li>安装<a href="http://graphviz.org/" target="_blank" rel="noopener noreffer "><code>graphviz</code></a>，<code>brew install graphviz</code> ，(如果您能够执行<code>dot</code>, 则说明已经安装了 GraphViz.)</li>
 <li>安装 <a href="http://pycallgraph.slowchop.com/en/master/" target="_blank" rel="noopener noreffer "><code>pycallgraph</code></a>，<code>pip install pycallgraph</code></li>
 <li>使用 <code>pycallgraph graphviz -- ./fib.py</code> 来执行代码并查看<code>pycallgraph.png</code> 这个文件。</li>
@@ -589,23 +428,12 @@
 <h3 id="基准测试">基准测试</h3>
 <p>有时候，您只需要对黑盒程序进行基准测试，并依此对软件选择进行评估。 类似 <a href="https://github.com/sharkdp/hyperfine" target="_blank" rel="noopener noreffer "><code>hyperfine</code></a> 这样的命令行可以帮您快速进行基准测试。例如，我们在 shell 工具和脚本那一节课中我们推荐使用 <code>fd</code> 来代替 <code>find</code>。我们这里可以用<code>hyperfine</code>来比较一下它们。</p>
 <p>例如，下面的例子中，我们可以看到<code>fd</code> 比 <code>find</code> 要快 20 倍。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ hyperfine --warmup 3 &#39;fd -e jpg&#39; &#39;find . -iname &#34;*.jpg&#34;&#39;
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ hyperfine --warmup 3 &#39;fd -e jpg&#39; &#39;find . -iname &#34;*.jpg&#34;&#39;
 </span></span><span class="line"><span class="cl">Benchmark #1: fd -e jpg
 </span></span><span class="line"><span class="cl">  Time (mean ± σ):      51.4 ms ±   2.9 ms    [User: 121.0 ms, System: 160.5 ms]
 </span></span><span class="line"><span class="cl">  Range (min … max):    44.2 ms …  60.1 ms    56 runs
@@ -616,38 +444,27 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Summary
 </span></span><span class="line"><span class="cl">  &#39;fd -e jpg&#39; ran
-</span></span><span class="line"><span class="cl">   21.89 ± 2.33 times faster than &#39;find . -iname &#34;*.jpg&#34;&#39;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="浏览器">浏览器</h3>
+</span></span><span class="line"><span class="cl">   21.89 ± 2.33 times faster than &#39;find . -iname &#34;*.jpg&#34;&#39;</span></span></code></pre></div></div>
+<h3 id="浏览器">浏览器</h3>
 <p>和 debug 一样，浏览器也包含了很多不错的性能分析工具，可以用来分析页面加载，让我们可以搞清楚时间都消耗在什么地方（加载、渲染、脚本等等）。 更多关于 <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Profiling_with_the_Built-in_Profiler" target="_blank" rel="noopener noreffer ">Firefox</a> 和 <a href="https://developers.google.com/web/tools/chrome-devtools/rendering-tools" target="_blank" rel="noopener noreffer ">Chrome</a>的信息可以点击链接。</p>
 <h3 id="抓包工具">抓包工具</h3>
 <h4 id="wireshark">Wireshark</h4>
 <p>让 <a href="https://www.wireshark.org/" target="_blank" rel="noopener noreffer ">Wireshark</a> 解密以 RSA 为密钥交换算法的 ssl 流量，需要给 wireshark 设置 ssl 证书私钥。 RSA 交换算法已经普遍被禁用了, 对于主流的 DH 或者 ECDH 交换算法, wireshark 无法解密。但是, 工业上的一个实际标准可以使 wireshark 解密这些 ssl 链接。</p>
 <p>设置 SSLKEYLOGFILE 环境变量解密 HTTPS 流量</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 设置环境变量</span>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 设置环境变量</span>
 </span></span><span class="line"><span class="cl">touch ~/.sslkey.log
 </span></span><span class="line"><span class="cl">sudo chmod <span class="m">777</span> ~/.sslkey.log
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;export SSLKEYLOGFILE=~/.sslkey.log&#34;</span> &gt;&gt; ~/.zshrc
 </span></span><span class="line"><span class="cl"><span class="nb">source</span> ~/.zshrc
 </span></span><span class="line"><span class="cl"><span class="c1"># 保存私钥，运行curl会检测这个环境变量SSLKEYLOGFILE, 它指向一个文件, curl会把 DH 交换的私钥保存到这个文件里面</span>
 </span></span><span class="line"><span class="cl">curl --resolve www.baidu.com:443:183.232.231.174 https://www.baidu.com
-</span></span><span class="line"><span class="cl">cat ~/.sslkey.log
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>配置 wireshark，打开 perferences -&gt; Protocols -&gt; TSL。配置 (Pre)-Master-Secret log filename，路径为上述 .sslkey.log 的全路径。</p>
+</span></span><span class="line"><span class="cl">cat ~/.sslkey.log</span></span></code></pre></div></div>
+<p>配置 wireshark，打开 perferences -&gt; Protocols -&gt; TSL。配置 (Pre)-Master-Secret log filename，路径为上述 .sslkey.log 的全路径。</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
@@ -659,7 +476,7 @@
                             <a class="link-to-markdown" href="/2022-12-10-profile/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span></span>
+                <span><a href="javascript:void(0);" title="Share on X" data-sharer="x" data-url="https://austinxt.github.io/2022-12-10-profile/" data-title="常用性能分析工具" data-hashtags="性能分析"><i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Threads" data-sharer="threads" data-url="https://austinxt.github.io/2022-12-10-profile/" data-title="常用性能分析工具"><i class="fab fa-threads fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://austinxt.github.io/2022-12-10-profile/" data-hashtag="性能分析"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://austinxt.github.io/2022-12-10-profile/" data-title="常用性能分析工具"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://austinxt.github.io/2022-12-10-profile/" data-title="常用性能分析工具"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@14.9.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://austinxt.github.io/2022-12-10-profile/" data-title="常用性能分析工具"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Diaspora" data-sharer="diaspora" data-url="https://austinxt.github.io/2022-12-10-profile/" data-title="常用性能分析工具" data-description=""><i class="fab fa-diaspora fa-fw" aria-hidden="true"></i></a><a href="https://t.me/share/url?url=https%3a%2f%2faustinxt.github.io%2f2022-12-10-profile%2f&amp;text=%e5%b8%b8%e7%94%a8%e6%80%a7%e8%83%bd%e5%88%86%e6%9e%90%e5%b7%a5%e5%85%b7" target="_blank" title="Share on Telegram"><i class="fab fa-telegram fa-fw" aria-hidden="true"></i></a></span>
             </div>
         </div>
     </div>
@@ -676,16 +493,18 @@
 </div>
 </article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2017 - 2024</span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
-                    <span class="icp">浙ICP备19014045号-2</span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.148.2">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.3.1-DEV"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://blog.nightvoyager.top/" target="_blank">夜航星</a></span></div>
         </div>
     </footer></div>
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            </a>
+        </div>
+
+        <div id="fixed-buttons-hidden"><a href="#" id="view-comments" class="fixed-button" title="View Comments">
                 <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
             </a>
-        </div><link rel="stylesheet" href="/lib/katex/katex.min.76e39bd605d45b2d1944123c66608b0c8bb9baeb70720b212571531c7cf9bc2a.css" integrity="sha256-duOb1gXUWy0ZRBI8ZmCLDIu5uutwcgshJXFTHHz5vCo="><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.cd0d0b6e50ff01ff2f3a9a70d7cfb66a7c6cb9acf7a566325568be6d3bd31fc4.css" integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q="><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.ae2da1bd62c6469ee27770ad1cddf2e8296d8a7f6d85b091463e5200c5e320af.js" integrity="sha256-ri2hvWLGRp7id3CtHN3y6Cltin9thbCRRj5SAMXjIK8="></script><script type="text/javascript" src="/lib/lunr/lunr.min.08a93c0120364b01159db3c287f39b2180bb740334472bda0675bd3f18981676.js" integrity="sha256-CKk8ASA2SwEVnbPCh/ObIYC7dAM0RyvaBnW9PxiYFnY="></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg+mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys="></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9.js" integrity="sha256-4XodgW4TwIJuDtf+v6vDJ39FVxI0veC/kSCCmnFp7ck="></script><script type="text/javascript" src="/lib/katex/katex.min.eb18207487161674e717087c317db14ac1a62dadaecccb802499ce173bfeb739.js" integrity="sha256-6xggdIcWFnTnFwh8MX2xSsGmLa2uzMuAJJnOFzv+tzk="></script><script type="text/javascript" src="/lib/katex/contrib/auto-render.min.cb7f4ca60ed5dc3e258415f8c7a3b46d4a93578a52adf83011f18a7f190e7602.js" integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="></script><script type="text/javascript" src="/lib/katex/contrib/copy-tex.min.52ce78fab4860d24ef22128a52ce24ca01368a9034457a565a1d3fccbab0ddbb.js" integrity="sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="></script><script type="text/javascript" src="/lib/katex/contrib/mhchem.min.5c0a121a8b490afc85860a522347aeb34fb508c6b23044e5d29f6b2194227b51.js" integrity="sha256-XAoSGotJCvyFhgpSI0eus0+1CMayMETl0p9rIZQie1E="></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.e55842a856a6d829feca3c3ad736c136b6c7549e9247274f78aa296259e06e24.js" integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ="></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.b0df51c2c57145081cc73960e9aa780e6f5f56d06cf4ef0f96da8ce1619d1e12.js" integrity="sha256-sN9RwsVxRQgcxzlg6ap4Dm9fVtBs9O8PltqM4WGdHhI="></script></body>
+        </div><script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script><script>window.config={"comment":{}};</script><script src="/js/theme.min.js"></script></body>
 </html>

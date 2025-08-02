@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>电商 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E7%94%B5%E5%95%86/</link>
-        <description>电商 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sat, 30 Jul 2022 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E7%94%B5%E5%95%86/" rel="self" type="application/rss+xml" /><item>
-    <title>从四个问题理解跨境电商</title>
-    <link>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</link>
-    <pubDate>Sat, 30 Jul 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</guid>
-    <description><![CDATA[跨境电商与国际物流读后感。 跨境电商的含义和诞生？ 跨境电商，英文通常翻译为 Cross-border eCommerce（跨境网络零售）。广义上的跨境电商包括跨境贸易在]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>电商 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E7%94%B5%E5%95%86/</link>
+    <description>Recent content in 电商 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E7%94%B5%E5%95%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从四个问题理解跨境电商</title>
+      <link>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</link>
+      <pubDate>Sat, 30 Jul 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2022-07-30-cross-border-e-commerce/</guid>
+      <description>&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/s29419054.jpg&#34; /&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/27013701/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;跨境电商与国际物流&lt;/a&gt;读后感。&lt;/p&gt;&#xA;&lt;h3 id=&#34;跨境电商的含义和诞生&#34;&gt;跨境电商的含义和诞生？&lt;/h3&gt;&#xA;&lt;p&gt;跨境电商，英文通常翻译为 Cross-border eCommerce（跨境网络零售）。广义上的跨境电商包括跨境贸易在线交易（B2C 和 B2B）和相关服务（供应链、物流、通关、支付、结汇、运营等）。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

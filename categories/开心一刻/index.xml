@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>开心一刻 - Category - 夜航星</title>
-        <link>https://austinxt.github.io/categories/%E5%BC%80%E5%BF%83%E4%B8%80%E5%88%BB/</link>
-        <description>开心一刻 - Category - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Wed, 28 Dec 2016 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/categories/%E5%BC%80%E5%BF%83%E4%B8%80%E5%88%BB/" rel="self" type="application/rss+xml" /><item>
-    <title>看了五遍 3 Idiots</title>
-    <link>https://austinxt.github.io/2016-12-28-3-idiots/</link>
-    <pubDate>Wed, 28 Dec 2016 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2016-12-28-3-idiots/</guid>
-    <description><![CDATA[喜剧表色 《3 Idiots》首先是一部出色的喜剧，理想与现实相交错，还带有一点辛酸。影片在法汉挑起右眼的一刻一扫之前的沉闷和紧张，正式进入喜剧]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开心一刻 on 夜航星</title>
+    <link>https://austinxt.github.io/categories/%E5%BC%80%E5%BF%83%E4%B8%80%E5%88%BB/</link>
+    <description>Recent content in 开心一刻 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Wed, 28 Dec 2016 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/categories/%E5%BC%80%E5%BF%83%E4%B8%80%E5%88%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>看了五遍 3 Idiots</title>
+      <link>https://austinxt.github.io/2016-12-28-3-idiots/</link>
+      <pubDate>Wed, 28 Dec 2016 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2016-12-28-3-idiots/</guid>
+      <description>&lt;p&gt;&lt;img&#xA;        class=&#34;lazyload&#34;&#xA;        src=&#34;https://austinxt.github.io/svg/loading.min.svg&#34;&#xA;        data-src=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/3-idiot0.webp&#34;&#xA;        data-srcset=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/3-idiot0.webp, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/3-idiot0.webp 1.5x, https://xieting-img.oss-cn-hangzhou.aliyuncs.com/3-idiot0.webp 2x&#34;&#xA;        data-sizes=&#34;auto&#34;&#xA;        alt=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/3-idiot0.webp&#34;&#xA;        title=&#34;https://xieting-img.oss-cn-hangzhou.aliyuncs.com/3-idiot0.webp&#34; /&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;喜剧表色&#34;&gt;喜剧表色&lt;/h2&gt;&#xA;&lt;p&gt;《3 Idiots》首先是一部出色的喜剧，理想与现实相交错，还带有一点辛酸。影片在法汉挑起右眼的一刻一扫之前的沉闷和紧张，正式进入喜剧的主调。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

@@ -1,24 +1,28 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>写作 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E5%86%99%E4%BD%9C/</link>
-        <description>写作 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Mon, 23 Dec 2019 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E5%86%99%E4%BD%9C/" rel="self" type="application/rss+xml" /><item>
-    <title>卡片大法</title>
-    <link>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</link>
-    <pubDate>Mon, 23 Dec 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</guid>
-    <description><![CDATA[卡片就是对单一事件的完整记录，一卡一事，包括标题、来源引用、自己的理解和日期。卡片可供任意组织，不断生发，创造作品。 为何卡片是知识积累和创造]]></description>
-</item>
-<item>
-    <title>中文的常态与病态</title>
-    <link>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</link>
-    <pubDate>Thu, 15 Mar 2018 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</guid>
-    <description><![CDATA[《翻译乃大道》读书笔记 中文常态：措辞简洁，语法对称，句式灵活，声调铿锵。 中文病态：引入大量的英文表达，繁琐生硬。 中文最常见的常态和病态 项目 坏]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>写作 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E5%86%99%E4%BD%9C/</link>
+    <description>Recent content in 写作 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Mon, 23 Dec 2019 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>卡片大法</title>
+      <link>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2019-12-23-%E5%8D%A1%E7%89%87%E5%AD%A6%E4%B9%A0%E5%BF%83%E5%BE%97/</guid>
+      <description>&lt;p&gt;卡片就是对&lt;strong&gt;单一&lt;/strong&gt;事件的&lt;strong&gt;完整&lt;/strong&gt;记录，一卡一事，包括&lt;strong&gt;标题&lt;/strong&gt;、&lt;strong&gt;来源&lt;/strong&gt;引用、自己的理解和&lt;strong&gt;日期&lt;/strong&gt;。卡片可供任意组织，不断生发，创造作品。&lt;/p&gt;&#xA;&lt;h3 id=&#34;为何卡片是知识积累和创造的神器&#34;&gt;为何卡片是知识积累和创造的神器？&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;卡片改变了大脑注意、储存、提取和加工的全过程。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>中文的常态与病态</title>
+      <link>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2018-03-15-good-chinese-bad-chinese/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/26279084/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;《翻译乃大道》&lt;/a&gt;读书笔记&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;中文常态：措辞简洁，语法对称，句式灵活，声调铿锵。&lt;/p&gt;&#xA;&lt;p&gt;中文病态：引入大量的英文表达，繁琐生硬。&lt;/p&gt;&#xA;&lt;h2 id=&#34;中文最常见的常态和病态&#34;&gt;中文最常见的常态和病态&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;项目&lt;/th&gt;&#xA;          &lt;th&gt;坏例子&lt;/th&gt;&#xA;          &lt;th&gt;好例子&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免英式抽象名词作主语&lt;/td&gt;&#xA;          &lt;td&gt;他的收入的减少改变了他的生活方式&lt;/td&gt;&#xA;          &lt;td&gt;他收入减少，于是改变生活方式&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;中文主语可以是一件事情&lt;/td&gt;&#xA;          &lt;td&gt;国语的推行，要靠大家努力&lt;/td&gt;&#xA;          &lt;td&gt;推行国语，要靠大家努力&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免文字义肢，动词变为万能动词 + 抽象名词，对「作出」、「进行」滥用&lt;/td&gt;&#xA;          &lt;td&gt;听众对访问教授作出了十分热烈的反应&lt;/td&gt;&#xA;          &lt;td&gt;听众对访问教授反应十分热烈&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免学术术语滥用，「性、型、度」&lt;/td&gt;&#xA;          &lt;td&gt;这本书可读性颇高。他是热情型的人。前瞻性等等&lt;/td&gt;&#xA;          &lt;td&gt;这本书引人入胜。他是个热情的人。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免……之一&lt;/td&gt;&#xA;          &lt;td&gt;李广乃汉朝名将之一&lt;/td&gt;&#xA;          &lt;td&gt;李广乃汉朝名将。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免「与、及、和、而」过多使用&lt;/td&gt;&#xA;          &lt;td&gt;台北显然比曼谷起步更早及迈步更快&lt;/td&gt;&#xA;          &lt;td&gt;台北显然比曼谷起步更早、迈步更快。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免介词乱用，「关于、有关、中间、由于、使得」&lt;/td&gt;&#xA;          &lt;td&gt;由于他家境贫寒，使得他只好休学。&lt;/td&gt;&#xA;          &lt;td&gt;他家境贫寒，只好休学。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免动词降副词&lt;/td&gt;&#xA;          &lt;td&gt;他苦心孤诣地想出一套好办法来。&lt;/td&gt;&#xA;          &lt;td&gt;他苦心孤诣，想出一套好办法。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免过多使用「的」&lt;/td&gt;&#xA;          &lt;td&gt;参差的斑驳的黑影。&lt;/td&gt;&#xA;          &lt;td&gt;参差而斑驳的黑影。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;中文可以后置形容词，避免前修饰太长。&lt;/td&gt;&#xA;          &lt;td&gt;我看见一个长得像你兄弟的男人&lt;/td&gt;&#xA;          &lt;td&gt;我看见一个男人，长得像你兄弟。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;避免被动，中文多主动语气&lt;/td&gt;&#xA;          &lt;td&gt;他这意见不被大家接受。他不被获准入学。糖都被吃完了。&lt;/td&gt;&#xA;          &lt;td&gt;他这意见大家都不接受。他未获准入学。糖都吃完了。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;词性被带偏&#34;&gt;词性被带偏&lt;/h2&gt;&#xA;&lt;p&gt;下面按照词性，分别介绍中文中各种词的用法被英文带偏的情况。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

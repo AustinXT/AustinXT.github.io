@@ -1,16 +1,21 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>数据处理 - Tag - 夜航星</title>
-        <link>https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</link>
-        <description>数据处理 - Tag - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Wed, 11 Jan 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" rel="self" type="application/rss+xml" /><item>
-    <title>Shell 命令行数据处理</title>
-    <link>https://austinxt.github.io/2023-01-11-data-analysis/</link>
-    <pubDate>Wed, 11 Jan 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
-    <description><![CDATA[Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。 学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据处理 on 夜航星</title>
+    <link>https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</link>
+    <description>Recent content in 数据处理 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Wed, 11 Jan 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/tags/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell 命令行数据处理</title>
+      <link>https://austinxt.github.io/2023-01-11-data-analysis/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
+      <description>&lt;p&gt;Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。&lt;/p&gt;&#xA;&lt;p&gt;学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并且记录例子。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>

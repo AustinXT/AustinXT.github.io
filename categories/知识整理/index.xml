@@ -1,184 +1,168 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>知识整理 - Category - 夜航星</title>
-        <link>https://austinxt.github.io/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</link>
-        <description>知识整理 - Category - 夜航星</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>164640966@qq.com (夜航星)</managingEditor>
-            <webMaster>164640966@qq.com (夜航星)</webMaster><lastBuildDate>Sun, 10 Sep 2023 00:00:00 &#43;0800</lastBuildDate><atom:link href="https://austinxt.github.io/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/" rel="self" type="application/rss+xml" /><item>
-    <title>Git 数据模型与命令行</title>
-    <link>https://austinxt.github.io/2023-09-10-git/</link>
-    <pubDate>Sun, 10 Sep 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-09-10-git/</guid>
-    <description><![CDATA[学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。 概览 版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件]]></description>
-</item>
-<item>
-    <title>密码学入门</title>
-    <link>https://austinxt.github.io/2023-09-09-encrypt/</link>
-    <pubDate>Sat, 09 Sep 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-09-09-encrypt/</guid>
-    <description><![CDATA[散列函数 密码散列函数 (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下： 1 hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;]]></description>
-</item>
-<item>
-    <title>Vim 学习指南</title>
-    <link>https://austinxt.github.io/2023-07-22-vim/</link>
-    <pubDate>Sat, 22 Jul 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-07-22-vim/</guid>
-    <description><![CDATA[Vim 是一个能跟上你思维速度的编辑器。 Vim 编辑器学习的步骤为： 理解编辑器的设计理念和基本原理； 学习命令，浏览教程，完成 vimtutor； 情景练习；]]></description>
-</item>
-<item>
-    <title>调试代码常用方法</title>
-    <link>https://austinxt.github.io/2023-06-13-debug/</link>
-    <pubDate>Tue, 13 Jun 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-06-13-debug/</guid>
-    <description><![CDATA[调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。 打印调试法与日志 最有]]></description>
-</item>
-<item>
-    <title>make 构建工具介绍</title>
-    <link>https://austinxt.github.io/2023-05-31-make/</link>
-    <pubDate>Wed, 31 May 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-05-31-make/</guid>
-    <description><![CDATA[构建工具通常需要定义依赖、目标和规则。 make 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。make并不完美，但是对于中]]></description>
-</item>
-<item>
-    <title>命令行环境使用指南</title>
-    <link>https://austinxt.github.io/2023-05-27-cmd-env/</link>
-    <pubDate>Sat, 27 May 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-05-27-cmd-env/</guid>
-    <description><![CDATA[无界面情况下的唯一选择 命令行环境的学习主要包括 任务控制：Shell 操作和进程的关系-&gt;需要了解进程信号 终端多路复用：如何在终端完成多面]]></description>
-</item>
-<item>
-    <title>Shell 命令行数据处理</title>
-    <link>https://austinxt.github.io/2023-01-11-data-analysis/</link>
-    <pubDate>Wed, 11 Jan 2023 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
-    <description><![CDATA[Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。 学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并]]></description>
-</item>
-<item>
-    <title>常用性能分析工具</title>
-    <link>https://austinxt.github.io/2022-12-10-profile/</link>
-    <pubDate>Sat, 10 Dec 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-12-10-profile/</guid>
-    <description><![CDATA[学习性能分析，最开始是查看执行时间，然后用工具帮助排查问题，用资源监控辅助。 即使您的代码能够像您期望的一样运行，但是如果它消耗了您全部的 CPU 和]]></description>
-</item>
-<item>
-    <title>Shell 工具和脚本入门</title>
-    <link>https://austinxt.github.io/2022-11-12-shell/</link>
-    <pubDate>Sat, 12 Nov 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-11-12-shell/</guid>
-    <description><![CDATA[计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。 Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;工具，]]></description>
-</item>
-<item>
-    <title>硬派健身要点</title>
-    <link>https://austinxt.github.io/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/</link>
-    <pubDate>Tue, 13 Sep 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/</guid>
-    <description><![CDATA[人体肌肉＝大肌群＋小肌群。大肌群：胸、背、臀、腿；小肌群：肩、胳膊、腹、小腿。塑形健身以大肌群练习为主，搭配小肌群（包括核心肌群）练习。 简易]]></description>
-</item>
-<item>
-    <title>TCP 和 UDP 的区别？</title>
-    <link>https://austinxt.github.io/2022-03-23-tcp-udp/</link>
-    <pubDate>Wed, 23 Mar 2022 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2022-03-23-tcp-udp/</guid>
-    <description><![CDATA[tcp/udp的区别?tcp粘包是怎么回事，如何处理?udp有粘包吗? 什么是 TCP？ 全称 Transmission Control Protocol，是一种传输层协议（为两个主机中]]></description>
-</item>
-<item>
-    <title>Git 使用指南</title>
-    <link>https://austinxt.github.io/2019-03-26-git/</link>
-    <pubDate>Sat, 06 Apr 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-03-26-git/</guid>
-    <description><![CDATA[Git 是目前世界上最先进的分布式文本文件版本控制系统 Git 快速上手 Cheat Sheet：workspace :: Git Cheatsheet 、常用 Git 命令清单 - 阮一峰的网络日志 Git 使用流程]]></description>
-</item>
-<item>
-    <title>正则表达式常用速查</title>
-    <link>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</link>
-    <pubDate>Sun, 10 Mar 2019 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</guid>
-    <description><![CDATA[速查表 字符 描述 \ 将下一个字符标记为一个特殊字符、或一个原义字符、或一个 向后引用、或一个八进制转义符。例如，’n’匹配字符“n”。’\n’匹配]]></description>
-</item>
-<item>
-    <title>LaTeX 常用数学符号</title>
-    <link>https://austinxt.github.io/2017-11-30-latex-math/</link>
-    <pubDate>Thu, 30 Nov 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-11-30-latex-math/</guid>
-    <description><![CDATA[查 LaTeX 常用数学符号的时候，一开始去官网：LaTeX - A document preparation system找官方文档：LaTeX Documentation，然后又找了 CTEX 的在线文档]]></description>
-</item>
-<item>
-    <title>单词（四）</title>
-    <link>https://austinxt.github.io/2017-06-11-learning-words-4/</link>
-    <pubDate>Wed, 14 Jun 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-06-11-learning-words-4/</guid>
-    <description><![CDATA[飞跃 5000 词&amp;形容词 这部分还在摸索 形容词的分类 结构（单个、复合） 功能（普通、定语、表语） 词义（静态、动态、等级、非等级） 这些分类中，有些]]></description>
-</item>
-<item>
-    <title>学单词（三）</title>
-    <link>https://austinxt.github.io/2017-06-11-learning-words-3/</link>
-    <pubDate>Tue, 13 Jun 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-06-11-learning-words-3/</guid>
-    <description><![CDATA[5000 词&amp;名词 从单词频率覆盖率来说，你听到别人正常讲话中几乎有 90% 会在 2000 以内的词汇，但剩下的 10% 足以令你完全不理解对方表达的意思。词汇学专家]]></description>
-</item>
-<item>
-    <title>学单词（二）</title>
-    <link>https://austinxt.github.io/2017-06-11-learning-words-2/</link>
-    <pubDate>Mon, 12 Jun 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-06-11-learning-words-2/</guid>
-    <description><![CDATA[第二阶段：2000 词&amp;动词 英语对话中基本上只有 2000 个常用单词，用好这 2000 个单词要建立它们与概念的直接联系。方法是多听，先从慢速、标准音听]]></description>
-</item>
-<item>
-    <title>学单词（一）</title>
-    <link>https://austinxt.github.io/2017-06-11-learning-words-1/</link>
-    <pubDate>Sun, 11 Jun 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-06-11-learning-words-1/</guid>
-    <description><![CDATA[如果要评选一个「我的人生最大的干扰项」，目前为止，非英语莫属。初高中一直赖在班级倒数前五的位子上，每回英语考试前夕都心慌不已，考前一定要拿一]]></description>
-</item>
-<item>
-    <title>讲座记录：零基础网络数据分析入门</title>
-    <link>https://austinxt.github.io/2017-05-20-network-data-analysis-introduction/</link>
-    <pubDate>Sat, 20 May 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-05-20-network-data-analysis-introduction/</guid>
-    <description><![CDATA[讲师介绍 刘勇，Gephi 官方认证讲师，数据可视化实践者，《网络数据可视化与分析利器：Gephi 中文教程》作者。 什么是网络数据 我们先来了解一下]]></description>
-</item>
-<item>
-    <title>学美语（三）：进阶</title>
-    <link>https://austinxt.github.io/2017-04-03-learning-american-english-3/</link>
-    <pubDate>Wed, 05 Apr 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-04-03-learning-american-english-3/</guid>
-    <description><![CDATA[音乐的音 唱的比说的好听 学音标的音面对的是固定的 44 个音标；学语块的音要去寻找零星散落的发音要点；但从音乐的音开始，要学的内容变成了一个面，一个]]></description>
-</item>
-<item>
-    <title>学美语（二）：语块的音</title>
-    <link>https://austinxt.github.io/2017-04-03-learning-american-english-2/</link>
-    <pubDate>Tue, 04 Apr 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-04-03-learning-american-english-2/</guid>
-    <description><![CDATA[音标在此组装成语言 音标练习到自我感觉良好的程度便转向语块练习，大概花了十天的时间，一边听何老师的课，一边学习 Lisa 的视频、读 coca 词表，A Course in Phonetics: Home 和]]></description>
-</item>
-<item>
-    <title>学美语（一）：音标的音</title>
-    <link>https://austinxt.github.io/2017-04-03-learning-american-english-1/</link>
-    <pubDate>Mon, 03 Apr 2017 00:00:00 &#43;0800</pubDate>
-    <author>夜航星</author>
-    <guid>https://austinxt.github.io/2017-04-03-learning-american-english-1/</guid>
-    <description><![CDATA[回想初学英语那会儿，老师用方言版的英语领着读“Good morning”，我就在课本上记下“gu de mo ning”，还暗自庆幸找到了一个好方法。这]]></description>
-</item>
-</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>知识整理 on 夜航星</title>
+    <link>https://austinxt.github.io/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/</link>
+    <description>Recent content in 知识整理 on 夜航星</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
+    <webMaster>dougxieting4@gmail.com (夜航星)</webMaster>
+    <lastBuildDate>Sun, 10 Sep 2023 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://austinxt.github.io/categories/%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 数据模型与命令行</title>
+      <link>https://austinxt.github.io/2023-09-10-git/</link>
+      <pubDate>Sun, 10 Sep 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-09-10-git/</guid>
+      <description>&lt;p&gt;学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。&lt;/p&gt;&#xA;&lt;h2 id=&#34;概览&#34;&gt;概览&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件、文件夹）改动的工具。顾名思义，这些工具可以帮助我们管理代码的修改历史；不仅如此，它还可以让协作编码变得更方便。VCS通过一系列的快照将某个文件夹及其内容保存了起来，每个快照都包含了文件或文件夹的完整状态。同时它还维护了快照创建者的信息以及每个快照的相关信息等等。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>密码学入门</title>
+      <link>https://austinxt.github.io/2023-09-09-encrypt/</link>
+      <pubDate>Sat, 09 Sep 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-09-09-encrypt/</guid>
+      <description>&lt;h2 id=&#34;散列函数&#34;&gt;散列函数&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Cryptographic_hash_function&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;密码散列函数&lt;/a&gt; (Cryptographic hash function) 可以将任意大小的数据映射为一个固定大小的输出。除此之外，还有一些其他特性。 一个散列函数的大概规范如下：&lt;/p&gt;&#xA;&lt;div class=&#34;code-block code-line-numbers open&#34; style=&#34;counter-reset: code-block 0&#34;&gt;&#xA;    &lt;div class=&#34;code-header language-&#34;&gt;&#xA;        &lt;span class=&#34;code-title&#34;&gt;&lt;i class=&#34;arrow fas fa-angle-right fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/span&gt;&#xA;        &lt;span class=&#34;ellipses&#34;&gt;&lt;i class=&#34;fas fa-ellipsis-h fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/span&gt;&#xA;        &lt;span class=&#34;copy&#34; title=&#34;Copy to clipboard&#34;&gt;&lt;i class=&#34;far fa-copy fa-fw&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&lt;/span&gt;&#xA;    &lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hash(value: array&amp;lt;byte&amp;gt;) -&amp;gt; vector&amp;lt;byte, N&amp;gt;  (N对于该函数固定) &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&#xA;&lt;p&gt;下面我们用&lt;code&gt;sha3sum&lt;/code&gt;命令来测试SHA1对几个字符串的输出：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vim 学习指南</title>
+      <link>https://austinxt.github.io/2023-07-22-vim/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-07-22-vim/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Vim 是一个能跟上你思维速度的编辑器。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Vim 编辑器学习的步骤为：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;理解编辑器的设计理念和基本原理；&lt;/li&gt;&#xA;&lt;li&gt;学习命令，浏览教程，完成 &lt;code&gt;vimtutor&lt;/code&gt;；&lt;/li&gt;&#xA;&lt;li&gt;情景练习；&lt;/li&gt;&#xA;&lt;li&gt;将编辑器替换成 Vim，持续使用；&lt;/li&gt;&#xA;&lt;li&gt;优化使用，自定义，安装扩展插件。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;概况&#34;&gt;概况&lt;/h2&gt;&#xA;&lt;h3 id=&#34;vim-的哲学&#34;&gt;Vim 的哲学&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;在编程的时候，你会把大量时间花在阅读/编辑而不是在写代码上。所以，Vim 是一个多模态编辑 器：它对于插入文字和操纵文字有不同的模式。Vim 是可编程的（可以使用 Vimscript 或者像 Python 一样的其他程序语言），Vim 的接口本身也是一个程序语言：键入操作（以及其助记名） 是命令，这些命令也是可组合的。Vim 避免了使用鼠标，因为那样太慢了；Vim 甚至避免用 上下左右键因为那样需要太多的手指移动。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>调试代码常用方法</title>
+      <link>https://austinxt.github.io/2023-06-13-debug/</link>
+      <pubDate>Tue, 13 Jun 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-06-13-debug/</guid>
+      <description>&lt;p&gt;调试代码的学习，需要了解它的构成，有静态代码、打印、日志、第三方日志、调试器和专用工具，然后利用合适的工具和方法去实践。&lt;/p&gt;&#xA;&lt;h2 id=&#34;打印调试法与日志&#34;&gt;打印调试法与日志&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;最有效的 debug 工具就是细致的分析，配合恰当位置的打印语句。&#xA;— Brian Kernighan, &lt;em&gt;Unix 新手入门&lt;/em&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>make 构建工具介绍</title>
+      <link>https://austinxt.github.io/2023-05-31-make/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-05-31-make/</guid>
+      <description>&lt;p&gt;构建工具通常需要定义&lt;em&gt;依赖&lt;/em&gt;、&lt;em&gt;目标&lt;/em&gt;和&lt;em&gt;规则&lt;/em&gt;。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;make&lt;/code&gt; 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。&lt;code&gt;make&lt;/code&gt;并不完美，但是对于中小型项目来说，它已经足够好了。当您执行 &lt;code&gt;make&lt;/code&gt; 时，它会去参考当前目录下名为 &lt;code&gt;Makefile&lt;/code&gt; 的文件。所有构建目标、相关依赖和规则都需要在该文件中定义，它看上去是这样的：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>命令行环境使用指南</title>
+      <link>https://austinxt.github.io/2023-05-27-cmd-env/</link>
+      <pubDate>Sat, 27 May 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-05-27-cmd-env/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;无界面情况下的唯一选择&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;命令行环境的学习主要包括&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;任务控制：Shell 操作和进程的关系-&amp;gt;需要了解进程信号&lt;/li&gt;&#xA;&lt;li&gt;终端多路复用：如何在终端完成多面板、多窗口的任务-&amp;gt;需要会使用相关工具&lt;/li&gt;&#xA;&lt;li&gt;dotfiles 管理-&amp;gt;需要管理起来dotfiles&lt;/li&gt;&#xA;&lt;li&gt;ssh 应用：命令行工具和 ssh 工具的使用-&amp;gt;需要掌握一套高效的操作远端设备的流程&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;任务控制&#34;&gt;任务控制&lt;/h2&gt;&#xA;&lt;p&gt;Shell 会使用 UNIX 提供的信号机制执行进程间通信。当一个进程接收到信号时，它会停止执行、处理该信号并基于信号传递的信息来改变其执行。就这一点而言，信号是一种&lt;em&gt;软件中断&lt;/em&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shell 命令行数据处理</title>
+      <link>https://austinxt.github.io/2023-01-11-data-analysis/</link>
+      <pubDate>Wed, 11 Jan 2023 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
+      <description>&lt;p&gt;Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。&lt;/p&gt;&#xA;&lt;p&gt;学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并且记录例子。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>常用性能分析工具</title>
+      <link>https://austinxt.github.io/2022-12-10-profile/</link>
+      <pubDate>Sat, 10 Dec 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2022-12-10-profile/</guid>
+      <description>&lt;p&gt;学习性能分析，最开始是查看执行时间，然后用工具帮助排查问题，用资源监控辅助。&lt;/p&gt;&#xA;&lt;p&gt;即使您的代码能够像您期望的一样运行，但是如果它消耗了您全部的 CPU 和内存，那么它显然也不是个好程序。算法课上我们通常会介绍大 O 标记法，但却没教给我们如何找到程序中的热点。 鉴于 &lt;a href=&#34;http://wiki.c2.com/?PrematureOptimization&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;过早的优化是万恶之源&lt;/a&gt;，您需要学习性能分析和监控工具，它们会帮助您找到程序中最耗时、最耗资源的部分，这样您就可以有针对性的进行性能优化。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shell 工具和脚本入门</title>
+      <link>https://austinxt.github.io/2022-11-12-shell/</link>
+      <pubDate>Sat, 12 Nov 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2022-11-12-shell/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;计算机的文字接口 Shell 处理 GUI 接口无法应对的剩下 20% 使用场景。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Shell 工具和脚本的学习，其实是三块内容，Shell 语言编程、Shell 场景&amp;amp;工具，以及脚本编写。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>硬派健身要点</title>
+      <link>https://austinxt.github.io/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/</link>
+      <pubDate>Tue, 13 Sep 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2022-09-13-%E7%A1%AC%E6%B4%BE%E5%81%A5%E8%BA%AB%E8%A6%81%E7%82%B9/</guid>
+      <description>&lt;p&gt;人体肌肉＝大肌群＋小肌群。大肌群：胸、背、臀、腿；小肌群：肩、胳膊、腹、小腿。塑形健身以大肌群练习为主，搭配小肌群（包括核心肌群）练习。&lt;/p&gt;&#xA;&lt;h2 id=&#34;简易-hiit&#34;&gt;简易 HIIT&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;燃脂大法：爬楼梯（背挺直＋膝盖不超过脚尖＋步子尽量大），发力部位：臀部。&lt;/li&gt;&#xA;&lt;li&gt;翘臀大法：侧弓步（热身）＋沙发深蹲跳（臀大肌）＋臀桥（髋关节、臀大肌）&lt;/li&gt;&#xA;&lt;li&gt;超速减脂大法：跳跃拍手（热身）＋直膝前踢（热身）＋俯卧登山（核心肌群）&lt;/li&gt;&#xA;&lt;li&gt;胸大腰细大法：俯卧撑（胸肌、肱二头肌）＋俯卧撑跳＋平板支撑（核心肌群）&lt;/li&gt;&#xA;&lt;li&gt;美好身姿大法：十字挺身（腰椎）＋俯卧撑跳＋平板支撑&lt;/li&gt;&#xA;&lt;li&gt;全面与细节：直膝前踢（大腿）＋哑铃深蹲推举（臀、肩）＋卷腹（腹）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;抗阻训练塑形进阶&#34;&gt;抗阻训练（塑形进阶）&lt;/h2&gt;&#xA;&lt;h3 id=&#34;胸肌&#34;&gt;胸肌&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;俯卧撑：发力方式为夹胸＋身体绷成直线＋快起缓落&#xA;宽距更多练胸肌，窄距更多练肱三头肌&#xA;练上胸：下斜窄距俯卧撑&#xA;练下胸：上斜宽距俯卧撑&lt;/li&gt;&#xA;&lt;li&gt;哑铃卧推（上身倾斜度不超过 60 度、沉肩夹胸）&lt;/li&gt;&#xA;&lt;li&gt;龙门架拉索夹胸&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;臀肌&#34;&gt;臀肌&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;热身（半蹲激活臀大肌、侧向行走激活臀中肌）&lt;/li&gt;&#xA;&lt;li&gt;深蹲（大腿前部酸，练到了股四头肌；大腿后部酸，练到了股二头肌；屁股酸，练到了臀大肌）&#xA;初级：沙发深蹲——中级：拉力深蹲——高级：面壁深蹲&lt;/li&gt;&#xA;&lt;li&gt;臀桥（只移动髋关节，快起缓降）&lt;/li&gt;&#xA;&lt;li&gt;罗马尼亚硬拉/俯身提拉（练臀大肌、臀中肌、下背部肌群、预防闪腰、腿后部肌群）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;腹肌力量传递轴对抗腰痛保护脊柱和骨盆&#34;&gt;腹肌（力量传递轴、对抗腰痛、保护脊柱和骨盆）&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;平板支撑（核心肌群）&lt;/li&gt;&#xA;&lt;li&gt;卷腹（手放耳侧，背阔肌协助——收放胸前，单独腹肌发力）&lt;/li&gt;&#xA;&lt;li&gt;十字挺身（下背部核心肌群）&lt;/li&gt;&#xA;&lt;li&gt;反向卷腹（腹肌带动下身躯干，预防骨盆前倾）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;肩肌&#34;&gt;肩肌&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;侧平举（三角肌中束，力量不要太大，缓起缓落）&#xA;热身（本体感觉训练）：举一臂，另一臂做 5 次侧平举起；交换。&lt;/li&gt;&#xA;&lt;li&gt;俯身侧平举（俯身飞鸟，三角肌后束，改善圆肩、驼背）&lt;/li&gt;&#xA;&lt;li&gt;L 侧平举（肩袖四肌）&lt;/li&gt;&#xA;&lt;li&gt;颈后臂屈伸（肱三头肌，须先空手做以热身）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;小腿三头肌&#34;&gt;小腿三头肌&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;坐姿提踵&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ref：《硬派健身》&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TCP 和 UDP 的区别？</title>
+      <link>https://austinxt.github.io/2022-03-23-tcp-udp/</link>
+      <pubDate>Wed, 23 Mar 2022 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2022-03-23-tcp-udp/</guid>
+      <description>&lt;p&gt;tcp/udp的区别?tcp粘包是怎么回事，如何处理?udp有粘包吗?&lt;/p&gt;&#xA;&lt;h2 id=&#34;什么是-tcp&#34;&gt;什么是 TCP？&lt;/h2&gt;&#xA;&lt;p&gt;全称 Transmission Control Protocol，是一种传输层协议（为两个主机中进程之间的通信提供服务）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Git 使用指南</title>
+      <link>https://austinxt.github.io/2019-03-26-git/</link>
+      <pubDate>Sat, 06 Apr 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2019-03-26-git/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Git 是目前世界上最先进的分布式文本文件版本控制系统&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;git-快速上手&#34;&gt;Git 快速上手&lt;/h2&gt;&#xA;&lt;p&gt;Cheat Sheet：&lt;a href=&#34;http://ndpsoftware.com/git-cheatsheet.html#loc=workspace;&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;workspace :: Git Cheatsheet&lt;/a&gt; 、&lt;a href=&#34;http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;常用 Git 命令清单 - 阮一峰的网络日志&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Git 使用流程：&lt;a href=&#34;http://www.ruanyifeng.com/blog/2015/08/git-use-process.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Git 使用规范流程 - 阮一峰的网络日志&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>正则表达式常用速查</title>
+      <link>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2019-03-10-regular-expressions-quicklook/</guid>
+      <description>&lt;h2 id=&#34;速查表&#34;&gt;速查表&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;字符&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;描述&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;\&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;将下一个字符标记为一个特殊字符、或一个原义字符、或一个 向后引用、或一个八进制转义符。例如，’n’匹配字符“n”。’\n’匹配一个换行符。序列‘\’匹配“\”而“(”则匹配“(“。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;^&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配输入字符串的开始位置。如果设置了 RegExp 对象的 Multiline 属性，^ 也匹配‘\n’或‘\r’之后的位置。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;$&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配输入字符串的结束位置。如果设置了 RegExp 对象的 Multiline 属性，$ 也匹配‘\n’或‘\r’之前的位置。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配前面的子表达式零次或多次。例如，&lt;code&gt;zo*&lt;/code&gt;能匹配 z 以及 zoo。&lt;code&gt;*&lt;/code&gt;等价于{0,}。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;+&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配前面的子表达式一次或多次。例如，’zo+’能匹配 zo 以及 zoo，但不能匹配 z。+ 等价于 {1,}。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;?&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配前面的子表达式零次或一次。例如，do(es)?可以匹配 do 或 does 中的 do。? 等价于 {0,1}。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;{n}&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;n 是一个非负整数。匹配确定的 n 次。例如，’o{2}’不能匹配 Bob 中的 o，但是能匹配 food 中的两个 o。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;{n,}&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;n 是一个非负整数。至少匹配 n 次。例如，’o{2,}’不能匹配“Bob”中的‘o’，但能匹配“foooood”中的所有 o。’o{1,}’等价于‘o+’。’o{0,}’则等价于‘o*’。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;{n,m}&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;m 和 n 均为非负整数，其中 n&amp;lt;=m。最少匹配 n 次且最多匹配 m 次。例如，o{1,3}将匹配 fooooood 中的前三个 o。’o{0,1}’等价于‘o?’。请注意在逗号和两个数之间不能有空格。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;?&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;当该字符紧跟在任何一个其他限制符后面时，匹配模式是非贪婪的。非贪婪模式尽可能少的匹配所搜索的字符串，而默认的贪婪模式则尽可能多的匹配所搜索的字符串。例如，对于字符串 oooo，’o+?’将匹配单个 o，而 o+ 将匹配所有 o。.匹配除\n 之外的任何单个字符。要匹配包括\n 在内的任何字符，请使用像 (.|\n) 的模式。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;(pattern)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配 pattern 并获取这一匹配。所获取的匹配可以从产生的 Matches 集合得到，在 VBScript 中使用 SubMatches 集合，在 JScript 中则使用 $0…$9 属性。要匹配圆括号字符，请使用‘(’或‘)’。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;(?:pattern)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配 pattern 但不获取匹配结果，也就是说这是一个非获取匹配，不进行存储供以后使用。这在使用“或”字符 (|) 来组合一个模式的各个部分是很有用。例如， ‘industr(?:y|ies) 就是一个比‘industry|industries’更简略的表达式。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;(?=pattern)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;正向预查，在任何匹配 pattern 的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如，’Windows (?=95|98|NT|2000)’能匹配“Windows 2000”中的“Windows” ，但不能匹配“Windows 3.1”中的“Windows”。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;(?!pattern)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;负向预查，在任何不匹配 pattern 的字符串开始处匹配查找字符串。这是一个非获取匹配，也就是说，该匹配不需要获取供以后使用。例如’Windows (?!95|98|NT|2000)’能匹配“Windows 3.1”中的“Windows”，但不能匹配“Windows 2000”中的“Windows”。预查不消耗字符，也就是说，在一个匹配发生后，在最后一次匹配之后立即开始下一次匹配的搜索，而不是从包含预查的字符之后开始。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;x|y&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配 x 或 y。例如，’z|food’能匹配“z”或“food”。&amp;rsquo;(z|f)ood’则匹配“zood”或“food”。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;[xyz]&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;字符集合。匹配所包含的任意一个字符。例如， ‘[abc]’可以匹配“plain”中的‘a’。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;[^xyz]&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;负值字符集合。匹配未包含的任意字符。例如， ‘[^abc]’可以匹配“plain”中的’p’、’l’、’i’、’n’。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;[a-z]&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;字符范围。匹配指定范围内的任意字符。例如，&amp;rsquo;[a-z]’可以匹配‘a’到‘z’范围内的任意小写字母字符。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;[^a-z]&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;负值字符范围。匹配任何不在指定范围内的任意字符。例如，&amp;rsquo;[^a-z]’可以匹配任何不在‘a’到‘z’范围内的任意字符。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\b&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配一个单词边界，也就是指单词和空格间的位置。例如， ‘er\b’可以匹配”never”中的‘er’，但不能匹配“verb”中的‘er’。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\B&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配非单词边界。’er\B’能匹配“verb”中的‘er’，但不能匹配“never”中的‘er’。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\cx&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配由 x 指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的‘c’字符。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\d&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配一个数字字符。等价于 [0-9]。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\D&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配一个非数字字符。等价于 [^0-9]。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\f&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配一个换页符。等价于 \x0c 和 \cL。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\n&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配一个换行符。等价于 \x0a 和 \cJ。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\r&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配一个回车符。等价于 \x0d 和 \cM。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\s&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\S&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\t&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配一个制表符。等价于 \x09 和 \cI。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\v&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配一个垂直制表符。等价于 \x0b 和 \cK。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\w&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配包括下划线的任何单词字符。等价于&amp;rsquo;[A-Za-z0-9_]’。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\W&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配任何非单词字符。等价于‘[^A-Za-z0-9_]’。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\xn&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配 n，其中 n 为十六进制转义值。十六进制转义值必须为确定的两个数字长。例如，’\x41′ 匹配“A”。’\x041′ 则等价于‘\x04’ &amp;amp; “1”。正则表达式中可以使用 ASCII 编码。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\num&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配 num，其中 num 是一个正整数。对所获取的匹配的引用。例如，&amp;rsquo;(.)\1′ 匹配两个连续的相同字符。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\n&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;标识一个八进制转义值或一个向后引用。如果 \n 之前至少 n 个获取的子表达式，则 n 为向后引用。否则，如果 n 为八进制数字 (0-7)，则 n 为一个八进制转义值。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\nm&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;标识一个八进制转义值或一个向后引用。如果 \nm 之前至少有 nm 个获得子表达式，则 nm 为向后引用。如果 \nm 之前至少有 n 个获取，则 n 为一个后跟文字 m 的向后引用。如果前面的条件都不满足，若 n 和 m 均为八进制数字 (0-7)，则 \nm 将匹配八进制转义值 nm。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\nml&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;如果 n 为八进制数字 (0-3)，且 m 和 l 均为八进制数字 (0-7)，则匹配八进制转义值 nml。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;\un&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;匹配 n，其中 n 是一个用四个十六进制数字表示的 Unicode 字符。例如， \u00A9 匹配版权符号 (?)。&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;中文字符&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;[\u4e00-\u9fa5]&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;双字节字符&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;[^\x00-\xff]&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;email&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;\w+([-+.]\w+)&lt;em&gt;@\w+([-.]\w+)&lt;/em&gt;.\w+([-.]\w+)*&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;javascript-replace&#34;&gt;JavaScript replace()&lt;/h2&gt;&#xA;&lt;p&gt;语法：&lt;code&gt;str.replace(regexp|substr, newSubStr|function)&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LaTeX 常用数学符号</title>
+      <link>https://austinxt.github.io/2017-11-30-latex-math/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-11-30-latex-math/</guid>
+      <description>&lt;p&gt;查 LaTeX 常用数学符号的时候，一开始去&lt;a href=&#34;https://www.latex-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;官网：LaTeX - A document preparation system&lt;/a&gt;找&lt;a href=&#34;https://www.latex-project.org/help/documentation/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;官方文档：LaTeX Documentation&lt;/a&gt;，然后又找了 CTEX 的&lt;a href=&#34;http://www.ctex.org/documents/latex/graphics/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;在线文档：LATEX2e 插图指南&lt;/a&gt;，内容都太丰富了。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>单词（四）</title>
+      <link>https://austinxt.github.io/2017-06-11-learning-words-4/</link>
+      <pubDate>Wed, 14 Jun 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-06-11-learning-words-4/</guid>
+      <description>&lt;h2 id=&#34;飞跃-5000-词形容词&#34;&gt;飞跃 5000 词&amp;amp;形容词&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;这部分还在摸索&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;形容词的分类&#34;&gt;形容词的分类&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;结构（单个、复合）&lt;/li&gt;&#xA;&lt;li&gt;功能（普通、定语、表语）&lt;/li&gt;&#xA;&lt;li&gt;词义（静态、动态、等级、非等级）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这些分类中，有些能够帮助我们学习形容词。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学单词（三）</title>
+      <link>https://austinxt.github.io/2017-06-11-learning-words-3/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-06-11-learning-words-3/</guid>
+      <description>&lt;h2 id=&#34;5000-词名词&#34;&gt;5000 词&amp;amp;名词&lt;/h2&gt;&#xA;&lt;p&gt;从单词频率覆盖率来说，你听到别人正常讲话中几乎有 90% 会在 2000 以内的词汇，但&lt;strong&gt;剩下的 10% 足以令你完全不理解对方表达的意思&lt;/strong&gt;。词汇学专家 Nation 博士认为，只要语言中有 5% 的词汇不理解，就会对理解整句或者整段话造成非常严重的影响（后来他还把这个数字进一步调整为 &lt;strong&gt;2%&lt;/strong&gt;，但这个跟阅读的舒适区有点不一致）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学单词（二）</title>
+      <link>https://austinxt.github.io/2017-06-11-learning-words-2/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-06-11-learning-words-2/</guid>
+      <description>&lt;h2 id=&#34;第二阶段2000-词动词&#34;&gt;第二阶段：2000 词&amp;amp;动词&lt;/h2&gt;&#xA;&lt;p&gt;英语对话中基本上只有 2000 个常用单词，用好这 2000 个单词&lt;strong&gt;要建立它们与概念的直接联系&lt;/strong&gt;。方法是多听，先从慢速、标准音听起，再反复听，各种听。&lt;a href=&#34;http://learningenglish.voanews.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;VOA - Voice of America English News&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学单词（一）</title>
+      <link>https://austinxt.github.io/2017-06-11-learning-words-1/</link>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-06-11-learning-words-1/</guid>
+      <description>&lt;p&gt;如果要评选一个「我的人生最大的干扰项」，目前为止，非英语莫属。初高中一直赖在班级倒数前五的位子上，每回英语考试前夕都心慌不已，考前一定要拿一个下午背作文，不然很难凑齐字数；到了大学虽然不再倒数，但绝对拉低了浙江学生的平均分，心态依旧，几回六级考试都如临大敌，考前怯场。于是，去年开始就将英语列为最高优先级的待解决问题。可是一朝被蛇咬，一生都怕草绳，因此常常弃英语而寻他欢。究其原因，大概是我学习英语的整个思路都是错的，急需一场脱胎换骨的大手术。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>讲座记录：零基础网络数据分析入门</title>
+      <link>https://austinxt.github.io/2017-05-20-network-data-analysis-introduction/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-05-20-network-data-analysis-introduction/</guid>
+      <description>&lt;h2 id=&#34;讲师介绍&#34;&gt;讲师介绍&lt;/h2&gt;&#xA;&lt;p&gt;刘勇，Gephi 官方认证讲师，数据可视化实践者，《网络数据可视化与分析利器：Gephi 中文教程》作者。&lt;/p&gt;&#xA;&lt;h2 id=&#34;什么是网络数据&#34;&gt;什么是网络数据&lt;/h2&gt;&#xA;&lt;p&gt;我们先来了解一下研究网络的学科——网络科学是什么。美国国家科研委员会（National Research Council）将网络科学定义为“研究物理，生物，和社会现象的网络化表达，建立针对这些象限具有预测效果的模型”的学科。网络数据则是对网络进行一种数字化的记录。网络科学的研究是以图论 (数学的分支) 为基础，在数据的记录上，也是以图论中图的数字化记录方式记录的。顶点和边是图论中最重要的两种元素，顶点的集合称作点集，边的集合称作边集，我们可以用点集和边集对图进行数字化记录。讲座介绍的 Gephi 也是基于这种方式，用节点表和边表来记录网络数据。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学美语（三）：进阶</title>
+      <link>https://austinxt.github.io/2017-04-03-learning-american-english-3/</link>
+      <pubDate>Wed, 05 Apr 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-04-03-learning-american-english-3/</guid>
+      <description>&lt;h2 id=&#34;音乐的音&#34;&gt;音乐的音&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;唱的比说的好听&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;学音标的音面对的是固定的 44 个音标；学语块的音要去寻找零星散落的发音要点；但从音乐的音开始，要学的内容变成了一个面，一个句子，一段文字，到处都是发音要点，需要慢慢积累。这个阶段不便集中学习，日常中听到喜欢的歌兴起而学，或是放松的时候学首歌更为合适。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学美语（二）：语块的音</title>
+      <link>https://austinxt.github.io/2017-04-03-learning-american-english-2/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-04-03-learning-american-english-2/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;音标在此组装成语言&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;音标练习到自我感觉良好的程度便转向语块练习，大概花了十天的时间，一边听何老师的课，一边学习 Lisa 的视频、读 coca 词表，&lt;a href=&#34;https://corpus.linguistics.berkeley.edu/acip/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;A Course in Phonetics: Home&lt;/a&gt;  和 American Accent Training APP（太贵）还没开始使用，等下一轮的学习再用，毕竟这段时间的学习只是美语学习的一个开始。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>学美语（一）：音标的音</title>
+      <link>https://austinxt.github.io/2017-04-03-learning-american-english-1/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 +0800</pubDate><author>dougxieting4@gmail.com (夜航星)</author>
+      <guid>https://austinxt.github.io/2017-04-03-learning-american-english-1/</guid>
+      <description>&lt;p&gt;回想初学英语那会儿，老师用方言版的英语领着读“Good morning”，我就在课本上记下“gu de mo ning”，还暗自庆幸找到了一个好方法。这个记发音的方法一直沿用到去宁波上高中，期间上千单词的发音得到了巩固，也形成了错误的英语内语。上高中后，英语课上经常被老师纠音，却总改不过来，有时听不出自己的发音哪里不对劲，有时就算听出来了也不知道正确的音要怎么发。老师反复强调“背新概念或课文要先听磁带”，那时当英语是夜叉，心里一百个不情愿，就想着赶紧背完了事。就这样错过了最好的英语老师和最好的英语学习机会，后来偶尔说英语，因为不确定音到底怎么发，都不敢说出口。&lt;/p&gt;</description>
+    </item>
+  </channel>
 </rss>
