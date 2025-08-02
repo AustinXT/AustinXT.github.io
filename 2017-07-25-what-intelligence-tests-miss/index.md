@@ -45,11 +45,11 @@
 
     贝叶斯思维：
 
-    ![P(B|A)=\frac{P(A|B)P(B)}{P(A)}](<https://chart.googleapis.com/chart?cht=tx&chl=P(B%7CA)%3D%5Cfrac%7BP(A%7CB)P(B)%7D%7BP(A)%7D>)
+    $P(B|A)=\frac{P(A|B)P(B)}{P(A)}$
 
     变形：焦点假设的后验概率=相似率\*先验概率
 
-    ![\frac{P(H|D)}{P(\bar H|D)}=\frac{P(D|H)}{P(D|\bar H)}*\frac{P(H)}{P(\bar H)}](<https://chart.googleapis.com/chart?cht=tx&chl=%5Cfrac%7BP(H%7CD)%7D%7BP(%5Cbar%20H%7CD)%7D%3D%5Cfrac%7BP(D%7CH)%7D%7BP(D%7C%5Cbar%20H)%7D*%5Cfrac%7BP(H)%7D%7BP(%5Cbar%20H)%7D>)
+    $\frac{P(H|D)}{P(\bar H|D)}=\frac{P(D|H)}{P(D|\bar H)}*\frac{P(H)}{P(\bar H)}$
 
   - 不知备择假设的重要性
 
