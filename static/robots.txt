@@ -1,0 +1,33 @@
+# robots.txt for https://austinxt.github.io
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://austinxt.github.io/sitemap.xml
+
+# 百度爬虫（允许）
+User-agent: Baiduspider
+Allow: /
+
+# 百度图片爬虫
+User-agent: Baiduspider-image
+Allow: /
+
+# 搜狗爬虫
+User-agent: Sogou web spider
+Allow: /
+
+# 360爬虫
+User-agent: 360Spider
+Allow: /
+
+# 谷歌爬虫
+User-agent: Googlebot
+Allow: /
+
+# 必应爬虫
+User-agent: Bingbot
+Allow: /
