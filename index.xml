@@ -2,7 +2,7 @@
     <channel>
         <title>夜航星</title>
         <link>https://austinxt.github.io/</link>
-        <description>做一个智能时代的蛮子</description>
+        <description>夜航星的个人博客，分享认知心理学、学习方法、数据分析、编程技术等内容</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>dougxieting4@gmail.com (夜航星)</managingEditor>
             <webMaster>dougxieting4@gmail.com (夜航星)</webMaster><lastBuildDate>Fri, 01 Aug 2025 00:00:00 &#43;0800</lastBuildDate>
             <atom:link href="https://austinxt.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,164 @@
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2025-08-01-big-understandings/</guid>
     <description><![CDATA[<p>「什么知识值得学习？」是<a href="https://book.douban.com/subject/26586892/" target="_blank" rel="noopener noreffer ">《为未知而教，为未来而学》</a>这本书最重要的元问题，也是本书作者试图回答的问题。</p>
-<p>珀金斯把答案归结为一类「真知识」（Lifeready Learning）：它们既解决现实问题，又能随时间沉淀并扩展，如同滚雪球般汇聚力量。</p>]]></description>
+<p>珀金斯把答案归结为一类「真知识」（Lifeready Learning）：它们既解决现实问题，又能随时间沉淀并扩展，如同滚雪球般汇聚力量。</p>
+<p>作者戴维·珀金斯（David Perkins），是哈佛大学教育研究生院的资深教授，美国著名教育心理学家。</p>
+<p>珀金斯还是哈佛大学「零点项目」创始人之一，与霍华德·加德纳一起，作为「零点项目」的负责人，工作超过 25 年。从最初成立至今，50 年来，零点项目致力于研究智力、理解、思考、创意与人类的学习等相关议题，吸引了来自全球近 20 个国家和地区的研究者、老师，尤其是美国诸多专业人士、国际学校的教师等参与，并定期举办研讨会和工作坊，推广研究成果。</p>
+<p>珀金斯认为，基础教育应当培养“业余专家”（expert amateurs），而非急于推进狭窄的专业化。</p>
+<p>什么是业余的专家呢？</p>
+<p>业余的专家就是能够自信地、正确地、灵活地理解和运用基础知识，去解决日常生活问题的人。</p>
+<p>例如，业余的专家或许不太了解多元线性回归或因素分析之类的高级内容，但却很清楚平均数和标准差意味着什么、它们在什么情况下能够或不能很好地描述总体；如何用小样本数据来测谎；依据什么样的比值比和回归率可以作出有效推测；如何用饼状图和柱状图来描述分布情况等问题。统计与概率学中的这些知识几乎已经涵盖了日常生活中的所有运用需求。</p>
+<h2 id="01-全局认识-big-understandings">01 全局认识 Big Understandings</h2>
+<p>「全局认识」是本书中最重要的概念，其他知识点都是从这里展开的。</p>
+<p>全局认识，又称全局理解（Big Understandings），指的是那些能够帮我们理解世界，与生活息息相关的「业余专家知识」。换言之，如果知识是一张网络，全局认识便是打通最多节点的主干通路。</p>
+<p>想象走在大街上的芸芸众生都是业余的专家，都能够灵活而敏捷地处理个人健康护理、经济行为、人际社会交往等问题，那么，我们的社会该多么不一样。</p>
+<p>那什么样的知识算全局认识？什么样的知识有不算呢？</p>
+<p>为此，珀金斯提出「四维标准」：Insight、Action、Ethics、Opportunity。</p>
+<ul>
+<li>深刻见解：全局认识应该有助于呈现物理、社会、艺术等不同世界的运转机制。</li>
+<li>行动：全局认识应当能够指导我们采取有效的专业行动、社会行动、政治行动等。</li>
+<li>伦理道德：全局认识应当能够敦促我们变得更有道德观、更有人性、更有同情心、更愿意规范自己的行动。</li>
+<li>机会：全局认识可能出现在各种场合中，表现为多种不同的重要形式。</li>
+</ul>
+<h3 id="以民主为例">以「民主」为例</h3>
+<p>引用一个来自阳志平老师的经典例子。</p>
+<blockquote>
+<p>比如你可以直接告诉孩子一个固定的答案，什么是民主。但是，你还有另一种教育方法，问孩子在发生冲突的时候，由谁来调节，怎样仲裁？什么时候会调节失败？失败了我们该如何应对？这么一来，小朋友对民主就有了初步概念。不仅仅教会小朋友直接的答案，而是教会理解概念的正向思维、逆向思维等多种认知方式——这就是「全局认识」的深刻见解维度。</p>
+<p>回到家，假设爸妈有争议，让小朋友来做仲裁——这就是「全局认识」的行动维度与机会维度。</p>
+<p>当他安家立业，和他老婆、孩子发生争议，他会不知不觉地按照之前习得的知识来应对——这就是「全局认识」导向的伦理道德维度。</p></blockquote>
+<h3 id="全局认知的反面利基知识">全局认知的反面：利基知识</h3>
+<p>利基知识（niche understanding），指在特定的技术背景下非常重要，但在学习者可能的生活中不太有用的理解。可以用四大判断标准去判断一个知识是不是利基知识。例如：二次方程、有丝分裂。</p>
+<ul>
+<li>深刻见解方面：无疑，「二次方程」和「有丝分裂」分别是数学和生物领域内技术性理解的基础部分。我们可以通过参与性的方式来教授它们，支持学生的理解，虽然这一点通常很难实现。</li>
+<li>行动方面：「二次方程」尚能为学习者提供解决有限的几类特定问题的工具；「有丝分裂」几乎不能支持学生为任何事情做好准备。</li>
+<li>伦理道德方面：无论是关于「二次方程」还是「有丝分裂」，伦理道德方面都无甚可言。</li>
+<li>机会方面：对于大部分人来说，「二次方程」和「有丝分裂」仅仅是一种了解性的知识，只需要粗略地了解，或者在你需要跟上某个人的话题或论点时有用处，除此之外，它们几乎就没有任何出场的机会了。</li>
+</ul>
+<h3 id="全局认识的贡献">全局认识的贡献</h3>
+<p>生活中大部分情况下，我们都是按照熟悉的行为模式活动。就像按熟悉的配方炒菜一样，配方怎么说我们就怎么做，而且能够轻易地作出调整：多放些糖，味道更甜。</p>
+<p>「配方知识」不一定会带来深刻的概念理解，但它们却包含了丰富、细致的行为模式，在关键时刻指引人们采取恰当之举。</p>
+<p>那么，全局性理解的作用体现在哪里呢？</p>
+<p>我们可以说，全局性理解提供了剩下 10% 的解决方案。当新的情况发生，而熟悉的「配方知识」已经不起作用的时候，全局性理解就能帮助我们思考并采取行动。也许，它只提供了 8%、5% 或 2% 的办法，但这几个百分点却至关重要，它可以支持我们深刻地理解问题、采取行动、进行道德判断，在芜杂的公私事宜中找到自己的出路，并且在需要作出重大的人生抉择或承诺时发挥关键作用。</p>
+<p>全局性认识能为我们指引方向、促使慎思与深化学习，使人既能识破打着「民主」旗号的谬论，又能正确评估旅行中车祸远胜恐袭的风险，并在雪球般累积中不断拓宽理解。</p>
+<h2 id="02-开放性问题-big-questions">02 开放性问题 Big Questions</h2>
+<p>传统教育中，问题常被归结为方法，而答案被归结为内容。而开放性问题（Big Questions）改变了这个局面：问题也可以是内容，并且具有独特的生活价值。</p>
+<p>开放性问题也同样遵循全局认识的判断标准，另外还要能够激发人的好奇心，有生命力。开放性问题可以看作全局认识的一个互补。</p>
+<p>例如，「工业革命有哪三个原因？」——此问锁定唯一答案，难以激起好奇。</p>
+<p>稍好一些的提问方式是：「你认为，引发工业革命的原因可能有哪些？」这种问法更有引导性，但鼓舞性还不够。</p>
+<p>或者，我们可以通过更长的问题，增加一些好奇的感觉来完善它：「全世界上下几千年的历史中，有许多文明的成熟程度令人印象深刻，它们也有高度发达的经济体系、突出的科学成果，甚至产生了大量巧妙的装置。那么，为什么工业革命没有发生在那些文明之中，而是出现在这个特定的时期、特定的地区呢？」</p>
+<h3 id="如何提出一个有生命力的问题">如何提出一个有生命力的问题</h3>
+<p>一个有生命力的问题，需要兼具两种好奇：Wonder about，理性探究、寻求解释；Wonder at：带有惊奇、敬畏、情感震撼的体验。</p>
+<p>可以围绕中心线索，包含一系列广泛的探究主题。</p>
+<p>例如，围绕殖民史上人们如何理解「土地」概念的问题。</p>
+<ul>
+<li>人们如何看待土地？</li>
+<li>人们如何改变土地？</li>
+<li>土地如何塑造了人类文化？</li>
+</ul>
+<p>也可以围绕着大概念（即题干本身已包含答案的各类问题）而非答案来组织各个层面的要素式问题，起到提纲挈领的作用。</p>
+<p>例如，针对植物学单元的问题：</p>
+<ul>
+<li>总：植物不同于动物，它们没有感觉系统。那么，植物的各个部分怎么「知道」应该往哪里生长呢？</li>
+<li>分：
+<ul>
+<li>幼苗发芽后，茎干是否始终向上生长、根部向下生长？设计一个实验来验证你的答案。（什么是植物的向性运动？）</li>
+<li>种子发芽需要具备哪些环境要素？植物如何感知这些要素？（提前选好一些参考资料备用。）</li>
+<li>这是不是导致幼苗茎干产生反应的唯一因素？（设计一个实验，证实答案是否有效。）</li>
+<li>茎干的哪个部分接收刺激？哪个部分对刺激作出反应？根部是否也对这一刺激有所反应？</li>
+</ul>
+</li>
+</ul>
+<p>又或者可以给问题一个有焦点。例如，参与第一次世界大战（所谓「结束所有战争之战」）的那一代人为何在 20 年内又发动了第二次世界大战？（历史）。</p>
+<h2 id="03-活的知识lifeready-learning">03 活的知识：Lifeready Learning</h2>
+<p>回到最初的问题。什么样的全局认识（或开放性问题）有助于我们为生活做好准备？</p>
+<p>「用得上」的全局认识才「值得学」，活的知识才是真知识（Lifeready Learning）。</p>
+<p>什么才叫“用得上”？珀金斯提供了 Think–Apply–Notice–Care 四维度：</p>
+<ul>
+<li>会引发思考：知识不是背在脑里，而是能用来分析、推理、解释。例如，真正理解分数，不只是算得对，还能说明「把 ½ ÷ ¼ 改写成 ½ × 4 的道理」。</li>
+<li>会应用甚至迁移：把所学当作「工具箱」而非「展示柜」。例如，用欧姆定律的「推力 ÷ 阻力」逻辑，去分析暖气管道、交通拥堵甚至政治腐败。</li>
+<li>会引起注意：养成「看到钉子就想到锤子」的敏锐，而非反过来「手握锤子却看不见钉子」。例如，读新闻时自动联想到民主陷阱、历史类比，购物时本能地用概率与风险思维。</li>
+<li>会去关心：对知识有情感认同和现实关切，否则再好的工具也懒得拿出来。例如，了解民主不仅为了考试，而是出于对公共参与、公平正义的热情。</li>
+</ul>
+<p>什么样的教学能够使全局性理解（或开放性问题）为生活做好准备？</p>
+<p>不在滑雪场上迈出第一步，就永远学不会滑雪；不爬上峭壁，就永远学不会攀岩。相应的，如果你不在学习的过程中真正地尝试一下，就永远学不会思考、运用、注意某个主题内容或对它产生兴趣。</p>
+<h2 id="真知识何处取材如何学习">真知识何处取材？如何学习？</h2>
+<p>哪些主题可以作为全局认识的对象呢？我们从「诗歌」可以窥见一二。</p>
+<p>想象一下，一个出生在 21 世纪的人，吟诵着 19 世纪的诗歌会有什么实际用处？对我们找到好工作、修理漏水的龙头、发射宇宙飞船、商定合约都没有一点帮助。</p>
+<p>但是，这首诗歌可能加深了他对「我是谁」的理解，也可能激发了他奋发上进的动力，更可能是给他的内心带来清明。似乎，诗歌或许也符合 4 条判断标准。</p>
+<p>文学这类的全局认识不同于数学和大多数学科，他不成体系，一般用抽样的方式去获取全局认识。</p>
+<p>当然也不是随便抽样的，要丰富、多样。</p>
+<p>丰富的个体选择</p>
+<ul>
+<li>典型——选择本领域内具有典型代表性的作品、范例、概念或技能。</li>
+<li>通俗易懂、能够激发共鸣——选择易于理解的、有意义的、相关的内容，以及能够激发追问的思想。</li>
+<li>从特殊到一般——选择其自身有价值，而且能够以有意义的方式呈现包罗万象的跨领域主题的内容。</li>
+</ul>
+<p>在总体范围内选择</p>
+<ul>
+<li>风格类型、体裁——选择不同风格类型和体裁的内容。</li>
+<li>贴近出发点、向远处拓展——从选择熟悉的、标准的内容开始，过渡到选择比较少见的内容。</li>
+<li>不同观点——选择不同的声音、观点和思想倾向。</li>
+</ul>
+<h3 id="知识海洋">知识海洋</h3>
+<p>除了诗歌，还有哪些主题可以作为全局认识的备选呢？</p>
+<p>珀金斯做了一件非常有意思的事情：按照字母表顺序，从 A 到 Z 跳跃穿梭，挑选出各个不同学科中广泛存在的、具有生活价值的学习主题。</p>
+<blockquote>
+<p>&hellip;
+D 来代表达尔文主义（Darwinian）的进化观，即：在自然选择的过程中，低级的生命形式逐渐进化为复杂的高级生命形式，比如人类（相关学科：生物）。这种思维方式已经远远超出了单纯地理解「有机体发展」的范围，而且变异、选择、遗传的总体模式也正是千百年来人类语言发展、风尚传播以及政治和实践革新普遍化的重要机制。进化论者理查德·道金斯（Richard Dawkins）在《自私的基因》（The Selfish Gene）一书中创造了一个术语来描绘在人类社会中传播和进化的思想，不是基因（genes），而是「模因」（memes）。当前出现的「人群搜索（众包）」（crowdsourcing），例如，发动各方力量搜寻有效的药物等，都与所谓「工程版」的达尔文主义范式有关。
+&hellip;
+M 如果是指数学（Mathematics），未免太过宽泛——这就不是一种全局性理解了，而是无数种全局性理解的集合。所以，我们可以再一次选择数学建模（Mathematical Modeling）的基本循环（相关学科：数学）。我们还可以增加一些建模的方法，例如，制图法、模拟法、心理运算模型等。我们所拥有的最伟大的能力之一，就是建构各种不同形式的数学模型。M 还可以是比喻（Metaphors）：什么是比喻，作为想象力的引擎，它如何发挥作用（相关学科：文学）。但是，仔细想来，在科学和其他学科中，比喻也很常见，它也可以被视为一种模型。
+&hellip;</p></blockquote>
+<h3 id="认知方式">认知方式</h3>
+<p>我们也从思维方式的角度探究各类具有生活价值的学习，这称为「认知方式」（Ways of Knowing）。</p>
+<p>认知方式因学科而异：欧几里得式认知，从定义、公理和已证实的定理出发的形式演绎；培根式认知，从假设开始，基于观察和思考提出一个概括性的命题；牛顿式认知，对具体情境（水资源需求、车流量与交通拥堵等），建构数学模型来描述现实情境，并通过数学推理得出各种含义及预测，最后再回归现实生活（如创设一份水资源管理计划、验证交通状况是否符合预期等）；又或者是修昔底德式认知，解释原始资料、批判性地探讨其中可能的偏见、拼接多元资料，进而建构历史叙事。</p>
+<p>审视这些认知方式，它们都能发挥的 4 种重要作用：描述、论证、解释、应用。</p>
+<ul>
+<li>依据特定的规则、使用特定的语言来描述事物，强调其特定的性质和表现。</li>
+<li>通过其偏好的特定争论、证据和直觉判断来论证一些主张、理论和观点。</li>
+<li>以同样独特的方式解释其所面临的问题。</li>
+<li>拥有特定的应用范围和形式。</li>
+</ul>
+<p>某个学科的认知方式及其所有表现形式，构成了全局认识和开放性问题，这是学习的重中之重。认知方式提供了一种学科视角，远远超出了简单地掌握学科事实、学科规则或者理解关键概念。在考虑生活意义的前提下，运用和领会学科知识、灵活地在其典型范围之内和之外利用学科知识，学习者需要掌握学科认知方式的诀窍。</p>
+<p>了解多种认知方式能够培养更广泛的人类知识观，包括知识的起源、知识的归宿。最重要的是，能够为将来的学习做好准备。多种多样的认知方式彼此交织，共同帮助我们了解当前的情况。</p>
+<h3 id="单元体系">单元体系</h3>
+<p>为了避免陷入学科枝节而错过其广阔视野，珀金斯提出「单元体系」构想。</p>
+<p>一个满意的单元体系遵循 4 条原则：</p>
+<ul>
+<li>不同形式的常见学科十分重要。它们是全局性理解和开放性问题的宝库，不能因为现代性的某些曲解就将它们完全摒弃。</li>
+<li>更新学科。常见学科需要更新，补充当前的新思想、综合学科、新兴学科，才能充分发挥学科的作用。</li>
+<li>重构学科。重构常见学科能够为我们带来新的视角和活力，更清晰地体现出它们在学习者将来生活中的作用。</li>
+<li>交叉主题。孤立的学科哪怕有所更新或重构，但这仍然不够。我们需要适当地采用交叉主题，因为这类主题与日常生活中的问题和机遇相一致，并且能够促进「学习主题」到「学习工具」的转变，从而使学习为生活做好准备。</li>
+</ul>
+<p>实际运用中，我们给自己建立学习的单元体系还是要根据自身需求，要具有生活价值。例如，我们可以给自己量身定制一个两年的硕士项目，把领域中的重要学科放进去，把实践环节也放进去，最后再加一个类似毕业论文的大作品。</p>
+<h2 id="行动指南">行动指南</h2>
+<p>珀金斯提出了一个发人深思问题，也提供了一个极富洞察的分析框架。但是他没有给出明确的答案，还需要读者自己去寻找答案。</p>
+<h3 id="阳志平老师的答案">阳志平老师的答案</h3>
+<p>阳志平老师对「什么知识值得学习？」这个问题做了一个让人眼前一亮的回答。</p>
+<p>他在《聪明的阅读者》中提出了「通识千书」，用 1000 本书去初步了解人类基本知识谱系。「通识千书」采取「大问题」—「学科或领域」—「智者」—「代表作」的组织逻辑。</p>
+<p>「大问题」是与每一个人的人生发展息息相关，是人类文明历史基本命题。一共有 10 个：知识的知识、如何理解世界、如何理解历史、如何理解时代、如何理解社会、如何理解组织、如何理解家庭、如何理解人性、如何理解身体、如何理解信仰。</p>
+<p>对一个大问题，将学科或领域约束成「总论」+「四个方向」的结构。「总论」从整体层面回答「大问题」，「四个方向」从侧面回答「大问题」，每个方向涉及若干学科或领域。</p>
+<p>任何一个学科或领域的历史都是由人写就的，那些远超学科或领域平均水准以上的人被称为「智者」，他们或是某个学科的创始人，或是某个领域的集大成者。「智者」用作品说话，直面人类文明基本命题。在每个主题下，挑选约 7~10 位智者。</p>
+<p>而每位智者，则挑选 1~5 本代表作或传记，了解他们的主要思想和人生轨迹，让习得知识获得一个大号的居住容器。</p>
+<p>对于珀金斯特别强调的认知方式，阳老师总结为九种主流认知方式。</p>
+<div class="mermaid" id="id-1"></div>
+<script type="text/plain" class="mermaid-data" data-id="id-1">quadrantChart
+  x-axis "具体事物" --> "抽象概念"
+  y-axis "与人接触" --> "与物接触"
+  "思想实验": [0.8, 0.6]
+  "符号思考": [0.65, 0.8]
+  "实验科学": [0.2, 0.6]
+  "计算模拟": [0.35, 0.8]
+  "田野调查": [0.5, 0.5]
+  "幽默叙事": [0.2, 0.4]
+  "故事叙事": [0.35, 0.2]
+  "文采美感": [0.8, 0.4]
+  "视觉美感": [0.65, 0.2]</script>
+<h2 id="changelog">ChangeLog</h2>
+<ul>
+<li>2025-08-01 初稿</li>
+<li>2025-08-02 润色，处理 mermaid 问题</li>
+</ul>
+]]></description>
 </item>
 <item>
     <title>在 Mac（M2）上，使用 UTM 安装 Windows11 虚拟机</title>
@@ -22,7 +179,86 @@
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2024-10-30-install-window11-in-utm/</guid>
     <description><![CDATA[<p></p>
-<p>在 Mac（M2） 上，使用 UTM 安装 Windows11 虚拟机，大致步骤还是按照<a href="https://docs.getutm.app/guides/windows/" target="_blank" rel="noopener noreffer ">Windows 11 | UTM Documentation</a>走，中间会遇到一些卡壳的步骤需要克服一下。</p>]]></description>
+<p>在 Mac（M2） 上，使用 UTM 安装 Windows11 虚拟机，大致步骤还是按照<a href="https://docs.getutm.app/guides/windows/" target="_blank" rel="noopener noreffer ">Windows 11 | UTM Documentation</a>走，中间会遇到一些卡壳的步骤需要克服一下。</p>
+<h2 id="挂载-ios-文件配置-utm">挂载 IOS 文件，配置 UTM</h2>
+<h3 id="crystalfetch-获取-ios-文件">CrystalFetch 获取 IOS 文件</h3>
+<p>在 macOS 上获取 Windows 安装 ISO 的最简单方法是使用 CrystalFetch，这是一款基于 <a href="https://uupdump.net/" target="_blank" rel="noopener noreffer ">UUP dump</a> 的免费工具。</p>
+<p>您可以在 <a href="https://apps.apple.com/us/app/crystalfetch-iso-downloader/id6454431289?mt=12" target="_blank" rel="noopener noreffer ">App Store 下载</a>，也可以 <a href="https://github.com/TuringSoftware/CrystalFetch/releases/latest/download/CrystalFetch.dmg" target="_blank" rel="noopener noreffer ">Download from GitHub</a>。</p>
+<p>默认情况下，CrystalFetch 会选择与主机架构对应的最新正式版或发布预览版。您可以更改筛选条件，以包括预发布版本以及服务器版本。</p>
+<h3 id="配置-utm">配置 UTM</h3>
+<ol>
+<li>打开 UTM，并点击“+”按钮进入虚拟机创建向导。</li>
+<li>选择“Virtualize”。</li>
+<li>选择“Windows”。</li>
+<li>确保“Import VHDX Image”未选中，并勾选“Install Windows 10 or higher”。同时确保“Install drivers and SPICE tools”已勾选。点击“Browse”按钮并选择下载好的 ISO 文件。</li>
+<li>选择要分配给虚拟机的 RAM 和 CPU 核心数量。点击“Next”继续。</li>
+<li>指定要分配的最大磁盘空间。点击“Next”继续。</li>
+<li>如果有要在虚拟机中挂载的目录，可以在此选择。或者可以跳过此步骤，稍后在虚拟机窗口工具栏中选择要共享的目录。在安装 SPICE 工具后（见下文），该共享目录将可用。点击“Next”继续。</li>
+<li>点击“Save”保存并创建虚拟机。等待来宾工具下载完成，然后点击“Run”按钮启动虚拟机。</li>
+</ol>
+<h2 id="装机setup过程">装机（Setup）过程</h2>
+<p>从 ISO 启动后，我们进入 Windows Setup 过程。Setup 过程可能会遇到一些问题，下面是常见问题的解答。</p>
+<h3 id="进入-efi-shell-而非-windows-安装程序">进入 EFI Shell 而非 Windows 安装程序</h3>
+<p>首先，确保在启动时按下了任意键以进入安装程序，并确认生成的 ISO 文件与架构匹配。请注意，arm64 是针对 Apple Silicon 芯片的，而 amd64 是针对 Intel 芯片的。</p>
+<h3 id="安装程序崩溃并出现蓝屏错误-system_thread_exception_not_handled">安装程序崩溃并出现蓝屏错误 SYSTEM_THREAD_EXCEPTION_NOT_HANDLED</h3>
+<p>这是由于 Windows 版本过旧。构建版本号应为 21390 或更高。</p>
+<h3 id="解决this-pc-doesnt-currently-meet-the-minimum-system-requirements-to-run-windows-11">解决&quot;This PC doesn&rsquo;t currently meet the minimum system requirements to run Windows 11&quot;</h3>
+<p>如果不是默认 RAM、CPU、磁盘空间等配置，可能会出现上述提示，可以参考<a href="https://www.microsoft.com/en-us/windows/windows-11-specifications?r=1" target="_blank" rel="noopener noreffer ">Windows 11 Specs and System Requirements</a>调整配置。</p>
+<h3 id="解决this-pc-cant-run-windows-11">解决“This PC can’t run Windows 11”</h3>
+<p>如果出现“This PC can’t run Windows 11”，怎么解决？</p>
+<p></p>
+<p>解决方案是，绕过“This PC can’t run Windows 11”提示。</p>
+<p>要绕过提示，可以在注册表编辑器中添加三个 DWORD 值来跳过检查。以下是分步骤的具体操作方法：</p>
+<h4 id="步骤-1返回-windows-设置上一步">步骤 1：返回 Windows 设置上一步</h4>
+<p>点击左上角的“上一步”按钮。</p>
+<p></p>
+<h4 id="步骤-2打开命令提示符">步骤 2：打开命令提示符</h4>
+<p>按下键盘上的 Shift + F10 打开命令提示符窗口。</p>
+<p></p>
+<h4 id="步骤-3打开注册表编辑器">步骤 3：打开注册表编辑器</h4>
+<p>在命令提示符窗口中输入 regedit，打开注册表编辑器。</p>
+<p></p>
+<h4 id="步骤-4创建注册表键值">步骤 4：创建注册表键值</h4>
+<p>进入 HKEY_LOCAL_MACHINE\SYSTEM\Setup 路径。在该路径下创建一个名为 LabConfig 的新键。然后添加以下五个 DWORD（32 位）值，并将每个值的数据设置为 1.</p>
+<ul>
+<li>BypassCPUCheck</li>
+<li>BypassRAMCheck</li>
+<li>BypassSecureBootCheck</li>
+<li>BypassStorageCheck</li>
+<li>BypassTPMCheck</li>
+</ul>
+<p></p>
+<h4 id="步骤-5关闭窗口">步骤 5：关闭窗口</h4>
+<p>点击关闭按钮关闭注册表编辑器和命令提示符窗口，返回 Windows 设置屏幕，开始安装 Windows 11。</p>
+<p>完成以上步骤后，可以继续安装 Windows 11，不会再出现“This PC can’t run Windows 11”的提示。</p>
+<h3 id="spice-guest-tools-未自动安装">SPICE Guest Tools 未自动安装</h3>
+<p>手动下载 SPICE Guest Tools <a href="https://github.com/utmapp/qemu/releases/download/v7.0.0-utm/spice-guest-tools-0.164.4.iso" target="_blank" rel="noopener noreffer ">IOS</a>，将其挂在到 USB。</p>
+<p></p>
+<p>重新启动 Windows11，进入刚刚挂载的 Drive，双击 spice-guest-tools-xxx.exe 文件安装 SPICE Guest Tools。</p>
+<h3 id="如何配置网络">如何配置网络</h3>
+<p></p>
+<p>确保安装了 SPICE Guest Tools，它包含网络驱动程序。</p>
+<p>如果由于缺少网络连接，Windows 11 安装程序卡住，请按以下步骤操作：</p>
+<ol>
+<li>返回语言选择屏幕（如果已经跳过该屏幕，可能需要重新启动安装程序）。</li>
+<li>按 Shift + F10 启动命令提示符。</li>
+<li>输入 <code>OOBE\BYPASSNRO</code> 并按 Enter。</li>
+<li>虚拟机将重新启动，在设置屏幕上应显示“I don’t have internet.”的选项。</li>
+<li>完成 Windows 安装后，确保安装 SPICE Guest Tools 以获取网络驱动。</li>
+</ol>
+<h2 id="ref">Ref</h2>
+<ul>
+<li><a href="https://docs.getutm.app/guides/windows/" target="_blank" rel="noopener noreffer ">Windows 11 | UTM Documentation</a></li>
+<li><a href="https://www.alitajran.com/this-pc-cant-run-windows-11/" target="_blank" rel="noopener noreffer ">This PC can&rsquo;t run Windows 11 - Bypass/Fix - ALI TAJRAN</a></li>
+<li><a href="https://www.alitajran.com/turn-off-windows-defender-windows-11-permanently/" target="_blank" rel="noopener noreffer ">Turn off Windows Defender in Windows 11 permanently - ALI TAJRAN</a></li>
+<li><a href="https://www.microsoft.com/en-us/windows/windows-11-specifications?r=1" target="_blank" rel="noopener noreffer ">Windows 11 Specs and System Requirements | Microsoft</a></li>
+<li><a href="https://docs.getutm.app/guest-support/windows/#windows-xp-and-higher" target="_blank" rel="noopener noreffer ">Windows | UTM Documentation</a></li>
+</ul>
+<h2 id="changelog">ChangeLog</h2>
+<ul>
+<li>2024-10-30 初稿</li>
+</ul>
+]]></description>
 </item>
 <item>
     <title>和一个跟自己很不一样的人，吃饭聊天</title>
@@ -30,7 +266,16 @@
     <pubDate>Thu, 08 Aug 2024 00:00:00 &#43;0800</pubDate>
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2024-08-08-friend-xh/</guid>
-    <description><![CDATA[<p>7 月末和 XH 约了八月底见面，没想到她还记得。之前聊天的印象是「自律、自由、洒脱的人，帮我坚定了坚持锻炼的决心。XH 是我以前不敢接触的那类人，很独立，让我内心很深处燃起了动力，保持自律，持续做有意义的事，把大目标一步步做成了。」</p>]]></description>
+    <description><![CDATA[<p>7 月末和 XH 约了八月底见面，没想到她还记得。之前聊天的印象是「自律、自由、洒脱的人，帮我坚定了坚持锻炼的决心。XH 是我以前不敢接触的那类人，很独立，让我内心很深处燃起了动力，保持自律，持续做有意义的事，把大目标一步步做成了。」</p>
+<p>这次见面聊了好久，从 7 点 10 点，又进一步认识了她（我聊天的时候很跳跃，还好她没怎么在意），也收获了许多感悟。</p>
+<p>她的经历大概是从高中开始就是学校的“风云人物”，交际很广的那种，然后开始做代购赚钱；然后在杭州读的大学，大学期间应该去过好多城市，各种疯玩；工作后，做的是自媒体运营（教客户做自媒体）。整体上感受最深的是她的成熟，毕竟十六七岁开始独立赚钱（而我可能快 30 了才开始思考），而且读过一些书（比如林徽因），有自己的思考；其次是对抗孤独的能力，她关注自己的生活，可以一整周慢悠悠地生活不用和人讲话（健身、捯饬自己、工作、看剧）；然后是很酷，有纹身、抽烟、喝酒，身材打扮都很潮，有国际范，毫不掩饰的物质追求（喜欢奢侈品和精致的生活）；还有就是很擅长聊天，兼容性很强，能跟不同风格的人聊天，人际关系很广。这段经历的记忆可能有错误，但上面描写呈现出来的感觉应该跟我心中的人物形象还比较一致。</p>
+<p>这样一个跟我风格差异极大、分化程度相近的人，确实触发了我好多思考。第一次面聊 XH 确实很大方，我私底下怀着两个目的（想了解她的经历，以及如何对抗孤独）去找她面聊的，她竟然也很坦诚地告诉了我。</p>
+<p>她对我的评价是不够勇敢，其实我一开始理解不了，觉得在自己所处的群体里面，已经算是比较勇敢的了。但是跟她的经历一比较，才明白“不够勇敢”的含义是什么。被身边的人、环境、价值共识束缚住，不敢放开手脚去尝试自己的想法，确实就是不够勇敢。不够勇敢带来的后果也很明显，实践少了，或成功或失败的经历少了，人生体验上的经验少了，对人生的感受不够深刻，对人性的理解不够透彻。</p>
+<p>另一个话题——对抗孤独，聊的时候有点不够礼貌了，好多次追问了，试图比较出自己跟她的不同。她是享受孤独的那类人，合群外向但又没有太多跟人相处的需求，可以自娱自乐。而我，比较忽视自己开不开心，比较在意自己做的事情是否有意义，追求知识密度，追求大理想，追求人生复杂度。所以，常常要克服新知识的不适，常常要求自己高强度工作，常常计划排的很满以至于难以执行，而且简化了衣食住行，认知过载和效率都带来了深深的“孤独感”，饥渴又乏味。写到这里，发现了两种孤独的区别，我的“孤独”更多是<strong>认知过载</strong>，学习新知识或者做有挑战的工作，动机容易受损，想去做更容易的事情，或者找人交流，寻求支持。</p>
+<p>还有一个话题是自然发生的，大概关于事业、爱情和人生的关系。她曾经有很重的事业心（虽然现在有点佛系），竟然也把投资作为人生的终极形态，能赚钱，又有生活。事业&gt;爱情，这一点要我时刻提醒自己。在上一段感情中，我把爱情看的太重了（毕竟人生第一段真正意义上的爱情），以至于个性、习惯、事业都受到影响，自己也慢慢变成不喜欢的自己，最后也导致了无数争吵，没法继续在一起。爱情只能作为人生的一部分（唯一的人，不完全的精力），人生还是要坚持自己为核心，不能丢失了个性、偏好、事业，不能变成自己也不喜欢的样子。从后果考虑，丢失自己，可能会幽怨、无措、患得患失、念头混沌，要么积压伤害自己，要么爆发伤害爱人。</p>
+<p>最后是没聊到，但是自己在聊天之后产生了一点感受，一点对自己现有状态的认识。简单讲就是学习太多，实践太少。目前专业或者准专业的领域还挺多的：编程、经济学、财会、法律、写作、阅读、心理学、设计、创新。不是说要我的技能去匹配想做的事情，而是遇到想做的事情，我应该要更自信一点，自信自己的认知和技能已经很大程度上达到任务的要求了，剩下部分也完全可以通过学习或者找人合作去解决。</p>
+<p>夜已深，庆幸自己复盘了，记录了聊天感悟，也生发了新的认识。</p>
+]]></description>
 </item>
 <item>
     <title>Git 数据模型与命令行</title>
@@ -41,7 +286,242 @@
     <description><![CDATA[<p>学习 Git 需要自顶向下学习，先了解数据模型，再去学习命令行，思考命令行对数据模型做了哪些操作。</p>
 <h2 id="概览">概览</h2>
 <blockquote>
-<p>版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件、文件夹）改动的工具。顾名思义，这些工具可以帮助我们管理代码的修改历史；不仅如此，它还可以让协作编码变得更方便。VCS通过一系列的快照将某个文件夹及其内容保存了起来，每个快照都包含了文件或文件夹的完整状态。同时它还维护了快照创建者的信息以及每个快照的相关信息等等。</p>]]></description>
+<p>版本控制系统 (VCSs) 是一类用于追踪源代码（或其他文件、文件夹）改动的工具。顾名思义，这些工具可以帮助我们管理代码的修改历史；不仅如此，它还可以让协作编码变得更方便。VCS通过一系列的快照将某个文件夹及其内容保存了起来，每个快照都包含了文件或文件夹的完整状态。同时它还维护了快照创建者的信息以及每个快照的相关信息等等。</p></blockquote>
+<p>尽管版本控制系统有很多， 其事实上的标准则是 <strong>Git</strong> 。</p>
+<p>但因为 Git 接口的抽象泄漏（leaky abstraction）问题，通过自顶向下的方式（从命令行接口开始）学习 Git 可能会让人感到非常困惑。</p>
+<p>尽管 Git 的接口有些丑陋，但是它的底层设计和思想却是非常优雅的。因此，我们将通过一种自底向上的方式向您介绍 Git，从数据模型开始，最后再学习它的接口。</p>
+<h2 id="git-的数据模型">Git 的数据模型</h2>
+<p>进行版本控制的方法很多。Git 拥有一个经过精心设计的模型，这使其能够支持版本控制所需的所有特性，例如维护历史记录、支持分支和促进协作。</p>
+<h3 id="快照">快照</h3>
+<p>Git 将顶级目录中的文件和文件夹作为集合，并通过一系列快照来管理其历史记录。在Git的术语里，文件被称作Blob对象（数据对象），也就是一组数据。目录则被称之为“树”，它将名字与 Blob 对象或树对象进行映射（使得目录中可以包含其他目录）。快照则是被追踪的最顶层的树。例如，一个树看起来可能是这样的：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;root&gt; (tree)
+</span></span><span class="line"><span class="cl">|
+</span></span><span class="line"><span class="cl">+- foo (tree)
+</span></span><span class="line"><span class="cl">|  |
+</span></span><span class="line"><span class="cl">|  + bar.txt (blob, contents = &#34;hello world&#34;)
+</span></span><span class="line"><span class="cl">|
+</span></span><span class="line"><span class="cl">+- baz.txt (blob, contents = &#34;git is wonderful&#34;) </span></span></code></pre></div></div>
+<h3 id="历史记录建模关联快照">历史记录建模：关联快照</h3>
+<p>在 Git 中，历史记录是一个由快照组成的有向无环图。</p>
+<p>下面是一个 ASCII 码构成的简图，其中的 <code>o</code> 表示一次提交（快照）。</p>
+<p>箭头指向了当前提交的父辈（这是一种“在…之前”，而不是“在…之后”的关系）。在第三次提交之后，历史记录分岔成了两条独立的分支。这可能因为此时需要同时开发两个不同的特性，它们之间是相互独立的。开发完成后，这些分支可能会被合并并创建一个新的提交，这个新的提交会同时包含这些特性。新的提交会创建一个新的历史记录，看上去像这样（最新的合并提交用粗体标记）：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> `o &lt;-- o &lt;-- o &lt;-- o &lt;---- o
+</span></span><span class="line"><span class="cl">            ^            /
+</span></span><span class="line"><span class="cl">             \          v
+</span></span><span class="line"><span class="cl">              --- o &lt;-- o` </span></span></code></pre></div></div>
+<p>Git 中的提交是不可改变的。但这并不代表错误不能被修改，只不过这种“修改”实际上是创建了一个全新的提交记录。而引用（参见下文）则被更新为指向这些新的提交。</p>
+<h3 id="数据模型及其伪代码表示">数据模型及其伪代码表示</h3>
+<p>以伪代码的形式来学习 Git 的数据模型，可能更加清晰：</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 文件就是一组数据
+</span></span><span class="line"><span class="cl">type blob = array&lt;byte&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 一个包含文件和目录的目录
+</span></span><span class="line"><span class="cl">type tree = map&lt;string, tree | blob&gt;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 每个提交都包含一个父辈，元数据和顶层树
+</span></span><span class="line"><span class="cl">type commit = struct {
+</span></span><span class="line"><span class="cl">    parent: array&lt;commit&gt;
+</span></span><span class="line"><span class="cl">    author: string
+</span></span><span class="line"><span class="cl">    message: string
+</span></span><span class="line"><span class="cl">    snapshot: tree
+</span></span><span class="line"><span class="cl">} </span></span></code></pre></div></div>
+<p>这是一种简洁的历史模型。</p>
+<h3 id="对象和内存寻址">对象和内存寻址</h3>
+<p>Git 中的对象可以是 blob、树或提交：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">type object = blob | tree | commit </span></span></code></pre></div></div>
+<p>Git 在储存数据时，所有的对象都会基于它们的 <a href="https://en.wikipedia.org/wiki/SHA-1" target="_blank" rel="noopener noreffer ">SHA-1 哈希</a> 进行寻址。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">objects</span> <span class="o">=</span> <span class="n">map</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">object</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">store</span><span class="p">(</span><span class="n">object</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">id</span> <span class="o">=</span> <span class="n">sha1</span><span class="p">(</span><span class="n">object</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">objects</span><span class="p">[</span><span class="n">id</span><span class="p">]</span> <span class="o">=</span> <span class="n">object</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">id</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">objects</span><span class="p">[</span><span class="n">id</span><span class="p">]</span> </span></span></code></pre></div></div>
+<p>Blobs、树和提交都一样，它们都是对象。当它们引用其他对象时，它们并没有真正的在硬盘上保存这些对象，而是仅仅保存了它们的哈希值作为引用。</p>
+<p>例如，上面例子中的树（可以通过 <code>git cat-file -p 698281bc680d1995c5f4caaf3359721a5a58d48d</code> 来进行可视化），看上去是这样的：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">100644 blob 4448adbf7ecd394f42ae135bbeed9676e894af85    baz.txt
+</span></span><span class="line"><span class="cl">040000 tree c68d233a33c5c06e0340e4c224f0afca87c8ce87    foo </span></span></code></pre></div></div>
+<p>树本身会包含一些指向其他内容的指针，例如 <code>baz.txt</code> (blob) 和 <code>foo</code> (树)。如果我们用 <code>git cat-file -p 4448adbf7ecd394f42ae135bbeed9676e894af85</code>，即通过哈希值查看 baz.txt 的内容，会得到以下信息：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git is wonderful </span></span></code></pre></div></div>
+<h3 id="引用">引用</h3>
+<p>现在，所有的快照都可以通过它们的 SHA-1 哈希值来标记了。但这也太不方便了，谁也记不住一串 40 位的十六进制字符。</p>
+<p>针对这一问题，Git 的解决方法是给这些哈希值赋予人类可读的名字，也就是引用（references）。引用是指向提交的指针。与对象不同的是，它是可变的（引用可以被更新，指向新的提交）。例如，<code>master</code> 引用通常会指向主分支的最新一次提交。</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">references</span> <span class="o">=</span> <span class="n">map</span><span class="o">&lt;</span><span class="n">string</span><span class="p">,</span> <span class="n">string</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_reference</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">id</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">references</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">id</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">read_reference</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">references</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">load_reference</span><span class="p">(</span><span class="n">name_or_id</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">name_or_id</span> <span class="ow">in</span> <span class="n">references</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">load</span><span class="p">(</span><span class="n">references</span><span class="p">[</span><span class="n">name_or_id</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nb">load</span><span class="p">(</span><span class="n">name_or_id</span><span class="p">)</span> </span></span></code></pre></div></div>
+<p>这样，Git 就可以使用诸如 “master” 这样人类可读的名称来表示历史记录中某个特定的提交，而不需要在使用一长串十六进制字符了。</p>
+<p>有一个细节需要我们注意， 通常情况下，我们会想要知道“我们当前所在位置”，并将其标记下来。这样当我们创建新的快照的时候，我们就可以知道它的相对位置（如何设置它的“父辈”）。在 Git 中，我们当前的位置有一个特殊的索引，它就是 “HEAD”。</p>
+<h3 id="仓库">仓库</h3>
+<p>最后，我们可以粗略地给出 Git 仓库的定义了：<code>对象</code> 和 <code>引用</code>。</p>
+<p>在硬盘上，Git 仅存储对象和引用：因为其数据模型仅包含这些东西。所有的 <code>git</code> 命令都对应着对提交树的操作，例如增加对象，增加或删除引用。</p>
+<p>当您输入某个指令时，请思考一下这条命令是如何对底层的图数据结构进行操作的。另一方面，如果您希望修改提交树，例如“丢弃未提交的修改和将 ‘master’ 引用指向提交 <code>5d83f9e</code> 时，有什么命令可以完成该操作（针对这个具体问题，您可以使用 <code>git checkout master; git reset --hard 5d83f9e</code>）</p>
+<h2 id="暂存区">暂存区</h2>
+<p>Git 中还包括一个和数据模型完全不相关的概念，但它确是创建提交的接口的一部分。</p>
+<p>就上面介绍的快照系统来说，您也许会期望它的实现里包括一个 “创建快照” 的命令，该命令能够基于当前工作目录的当前状态创建一个全新的快照。</p>
+<p>Git 使用一种叫做 “暂存区（staging area）”的机制，它允许您指定下次快照中要包括那些改动。</p>
+<h2 id="git-的命令行接口">Git 的命令行接口</h2>
+<p>为了避免重复信息，我们将不会详细解释以下命令行。强烈推荐您阅读 <a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener noreffer ">Pro Git 中文版</a>，同时完成<a href="https://learngitbranching.js.org/?locale=zh_CN" target="_blank" rel="noopener noreffer ">Learn Git Branching</a>练习。</p>
+<h3 id="基础">基础</h3>
+<ul>
+<li><code>git help &lt;command&gt;</code>: 获取 git 命令的帮助信息</li>
+<li><code>git init</code>: 创建一个新的 git 仓库，其数据会存放在一个名为 <code>.git</code> 的目录下</li>
+<li><code>git status</code>: 显示当前的仓库状态</li>
+<li><code>git add &lt;filename&gt;</code>: 添加文件到暂存区</li>
+<li><code>git commit</code>: 创建一个新的提交
+<ul>
+<li>如何编写 <a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" rel="noopener noreffer ">良好的提交信息</a>!</li>
+<li>为何要 <a href="https://chris.beams.io/posts/git-commit/" target="_blank" rel="noopener noreffer ">编写良好的提交信息</a></li>
+</ul>
+</li>
+<li><code>git log</code>: 显示历史日志</li>
+<li><code>git log --all --graph --decorate</code>: 可视化历史记录（有向无环图）</li>
+<li><code>git diff &lt;filename&gt;</code>: 显示与暂存区文件的差异</li>
+<li><code>git diff &lt;revision&gt; &lt;filename&gt;</code>: 显示某个文件两个版本之间的差异</li>
+<li><code>git checkout &lt;revision&gt;</code>: 更新 HEAD 和目前的分支</li>
+</ul>
+<h3 id="分支和合并">分支和合并</h3>
+<ul>
+<li><code>git branch</code>: 显示分支</li>
+<li><code>git branch &lt;name&gt;</code>: 创建分支</li>
+<li><code>git checkout -b &lt;name&gt;</code>: 创建分支并切换到该分支
+<ul>
+<li>相当于 <code>git branch &lt;name&gt;; git checkout &lt;name&gt;</code></li>
+</ul>
+</li>
+<li><code>git merge &lt;revision&gt;</code>: 合并到当前分支</li>
+<li><code>git mergetool</code>: 使用工具来处理合并冲突</li>
+<li><code>git rebase &lt;basebranch&gt; &lt;topicbranch&gt;</code>: 将一系列提交按照原有次序依次应用到另一分支上</li>
+</ul>
+<h3 id="远端操作">远端操作</h3>
+<ul>
+<li><code>git remote</code>: 列出远端</li>
+<li><code>git remote add &lt;name&gt; &lt;url&gt;</code>: 添加一个远端</li>
+<li><code>git push &lt;remote&gt; &lt;local branch&gt;:&lt;remote branch&gt;</code>: 将对象传送至远端并更新远端引用</li>
+<li><code>git branch --set-upstream-to=&lt;remote&gt;/&lt;remote branch&gt;</code>: 创建本地和远端分支的关联关系</li>
+<li><code>git fetch</code>: 从远端获取对象/索引</li>
+<li><code>git pull</code>: 相当于 <code>git fetch; git merge</code></li>
+<li><code>git clone</code>: 从远端下载仓库</li>
+</ul>
+<h3 id="撤销">撤销</h3>
+<ul>
+<li><code>git commit --amend</code>: 编辑提交的内容或信息，常用来追加修改到上次提交</li>
+<li><code>git reset HEAD &lt;file&gt;</code>: 恢复暂存的文件，将文件从暂存区（staging）移到工作区（working）</li>
+<li><code>git checkout -- &lt;file&gt;</code>: 丢弃工作区（working）修改，</li>
+<li><code>git restore</code>: git2.32版本后取代git reset 进行许多撤销操作</li>
+</ul>
+<h3 id="git-高级操作">Git 高级操作</h3>
+<ul>
+<li><code>git config</code>: Git 是一个 <a href="https://git-scm.com/docs/git-config" target="_blank" rel="noopener noreffer ">高度可定制的</a> 工具</li>
+<li><code>git clone --depth=1</code>: 浅克隆（shallow clone），不包括完整的版本历史信息</li>
+<li><code>git add -i /git add -p</code>: 交互式暂存、文件部分暂存，输入 ? 显示所有可以使用的命令列表</li>
+<li><code>git rebase -i</code>: 交互式变基</li>
+<li><code>git blame -L 33,17 &lt;ref/hash&gt;</code>: 查看最后修改某行的人</li>
+<li><code>git stash branch &lt;branch&gt;</code>: 贮藏工作目录下的修改内容</li>
+<li><code>git clean</code> ：清理工作目录</li>
+<li><code>git bisect</code>: 通过二分查找搜索历史记录</li>
+<li><code>.gitignore</code>: <a href="https://git-scm.com/docs/gitignore" target="_blank" rel="noopener noreffer ">指定</a> 故意不追踪的文件</li>
+<li><code>git log origin/master..HEAD</code> ，查看当前分支不在远程的提交</li>
+<li><code>--patch -p</code> :可以使用 <code>git reset --patch</code> 命令的补丁模式来部分重置文件， 通过 <code>git checkout --patch</code> 命令来部分检出文件， <code>git stash save --patch</code> 命令来部分暂存文件。</li>
+<li><code>git grep</code> ：查找工作目录的文件</li>
+<li><code>git log -S &lt;string&gt;</code> ：查找日志</li>
+<li><code>git reset [--soft,--mixed,--hard] HEAD~</code> :撤销修改</li>
+<li><code>git ls-files -o</code> : 列出没有被 git 追踪的文件</li>
+</ul>
+<h2 id="杂项">杂项</h2>
+<h3 id="图形用户界面">图形用户界面</h3>
+<p>Git 的 <a href="https://git-scm.com/downloads/guis" target="_blank" rel="noopener noreffer ">图形用户界面客户端</a> 有很多，但是我们自己并不使用这些图形用户界面的客户端，我们选择使用命令行接口</p>
+<h3 id="集成">集成</h3>
+<ul>
+<li><strong>Shell 集成</strong>: 将 Git 状态集成到您的 shell 中会非常方便。(<a href="https://github.com/olivierverdier/zsh-git-prompt" target="_blank" rel="noopener noreffer ">zsh</a>, <a href="https://github.com/magicmonty/bash-git-prompt" target="_blank" rel="noopener noreffer ">bash</a>)。<a href="https://github.com/ohmyzsh/ohmyzsh" target="_blank" rel="noopener noreffer ">Oh My Zsh</a>这样的框架中一般以及集成了这一功能</li>
+<li><strong>编辑器集成</strong>: 和上面一条类似，将 Git 集成到编辑器中好处多多。<a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="noopener noreffer ">fugitive.vim</a> 是 Vim 中集成 GIt 的常用插件</li>
+</ul>
+<h3 id="工作流">工作流</h3>
+<p>有一个创建优质提交信息的习惯会使 Git 的使用与协作容易的多。 一般情况下，信息应当以少于 50 个字符（25个汉字）的单行开始且简要地描述变更，接着是一个空白行，再接着是一个更详细的解释。 Git 项目要求一个更详细的解释，包括做改动的动机和它的实现与之前行为的对比——这是一个值得遵循的好规则。 使用指令式的语气来编写提交信息，比如使用“Fix bug”而非“Fixed bug”或“Fixes bug”。 这里是一份<a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html" target="_blank" rel="noopener noreffer ">最初由 Tim Pope 写的模板</a>：</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">首字母大写的摘要（不多于 50 个字符或 25 个中文字符）
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">如果必要的话，加入更详细的解释文字。在大概 72 个字符的时候换行。在某些情形下，第一行被当作一封电子邮件的标题，剩下的文本作为正文。分隔摘要与正文的空行是必须的（除非你完全省略正文），如果你将两者混在一起，那么类似变基等工具无法正常工作。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">使用指令式的语气来编写提交信息：使用“Fix bug”而非“Fixed bug”或“Fixes bug”。
+</span></span><span class="line"><span class="cl">此约定与 git merge 和 git revert 命令生成提交说明相同。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">空行接着更进一步的段落。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 标号也是可以的。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 项目符号可以使用典型的连字符或星号，后跟一个空格，行之间用空行隔开，但是可以依据不同的惯例有所不同。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">- 使用悬挂式缩进</span></span></code></pre></div></div>
+<p>如果你所有的提交信息都遵循此模版，那么对你和与你协作的其他开发者来说事情会变得非常容易。 Git 项目有一个良好格式化的提交信息——尝试在那儿运行 git log &ndash;no-merges 来看看漂亮的格式化的项目提交历史像什么样。</p>
+<p>进行大型项目时的一些惯例 ( 有<a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noopener noreffer ">很多</a> <a href="https://www.endoflineblog.com/gitflow-considered-harmful" target="_blank" rel="noopener noreffer ">不同的</a> <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank" rel="noopener noreffer ">处理方法</a>)</p>
+<h3 id="git-提供商">Git 提供商</h3>
+<p><strong>GitHub</strong>: Git 并不等同于 GitHub。 在 GitHub 中您需要使用一个被称作<a href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests" target="_blank" rel="noopener noreffer ">拉取请求（pull request）</a>的方法来向其他项目贡献代码</p>
+<p><strong>其他 Git 提供商</strong>: GitHub 并不是唯一的。还有像 <a href="https://about.gitlab.com/" target="_blank" rel="noopener noreffer ">GitLab</a> 和 <a href="https://bitbucket.org/" target="_blank" rel="noopener noreffer ">BitBucket</a> 这样的平台。</p>
+<h2 id="more">More</h2>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener noreffer ">Pro Git</a> ，<strong>强烈推荐</strong>！学习前五章的内容可以教会您流畅使用 Git 的绝大多数技巧，因为您已经理解了 Git 的数据模型。后面的章节提供了很多有趣的高级主题。（<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener noreffer ">Pro Git 中文版</a>）；</li>
+<li><a href="https://ohshitgit.com/" target="_blank" rel="noopener noreffer ">Oh Shit, Git!?!</a> ，简短的介绍了如何从 Git 错误中恢复；</li>
+<li><a href="https://eagain.net/articles/git-for-computer-scientists/" target="_blank" rel="noopener noreffer ">Git for Computer Scientists</a> ，简短的介绍了 Git 的数据模型，与本文相比包含较少量的伪代码以及大量的精美图片；</li>
+<li><a href="https://jwiegley.github.io/git-from-the-bottom-up/" target="_blank" rel="noopener noreffer ">Git from the Bottom Up</a>详细的介绍了 Git 的实现细节，而不仅仅局限于数据模型。好奇的同学可以看看；</li>
+<li><a href="https://smusamashah.github.io/blog/2017/10/14/explain-git-in-simple-words" target="_blank" rel="noopener noreffer ">How to explain git in simple words</a>；</li>
+<li><a href="https://learngitbranching.js.org/" target="_blank" rel="noopener noreffer ">Learn Git Branching</a> 通过基于浏览器的游戏来学习 Git ；</li>
+</ul>
+]]></description>
 </item>
 <item>
     <title>密码学入门</title>
@@ -57,7 +537,198 @@
         <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
         <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
     </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hash(value: array&lt;byte&gt;) -&gt; vector&lt;byte, N&gt;  (N对于该函数固定) </span></span></code></pre></div></div>
-<p>下面我们用<code>sha3sum</code>命令来测试SHA1对几个字符串的输出：</p>]]></description>
+<p>下面我们用<code>sha3sum</code>命令来测试SHA1对几个字符串的输出：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;xianxian&#39;</span> <span class="p">|</span> sha3sum
+</span></span><span class="line"><span class="cl">e6d649cf2c1ff81dbfd2650af677ee0acf9bb716fb8b3b1405260e42  -</span></span></code></pre></div></div>
+<p>抽象地讲，散列函数可以被认为是一个不可逆，且看上去随机（但具确定性）的函数 （这就是<a href="https://en.wikipedia.org/wiki/Random_oracle" target="_blank" rel="noopener noreffer ">散列函数的理想模型</a>）。 一个散列函数拥有以下特性：</p>
+<ul>
+<li>确定性：对于不变的输入永远有相同的输出。</li>
+<li>不可逆性：对于<code>hash(m) = h</code>，难以通过已知的输出<code>h</code>来计算出原始输入<code>m</code>。</li>
+<li>目标碰撞抵抗性/弱无碰撞：对于一个给定输入<code>m_1</code>，难以找到<code>m_2 != m_1</code>且<code>hash(m_1) = hash(m_2)</code>。</li>
+<li>碰撞抵抗性/强无碰撞：难以找到一组满足<code>hash(m_1) = hash(m_2)</code>的输入<code>m_1, m_2</code>（该性质严格强于目标碰撞抵抗性）。</li>
+</ul>
+<p><a href="https://valerieaurora.org/hash.html" target="_blank" rel="noopener noreffer ">密码散列函数的生命周期</a>列举了一些散列函数是何时被发现弱点及破解的。</p>
+<h3 id="密码散列函数的应用">密码散列函数的应用</h3>
+<ul>
+<li>Git中的内容寻址存储(Content addressed storage)</li>
+</ul>
+<h4 id="文件的信息摘要message-digest">文件的信息摘要(Message digest)</h4>
+<p>像Linux ISO这样的软件可以从非官方的（有时不太可信的）镜像站下载，所以需要设法确认下载的软件和官方一致。 官方网站一般会在（指向镜像站的）下载链接旁边备注安装文件的哈希值。 用户从镜像站下载安装文件后可以对照公布的哈希值来确定安装文件没有被篡改。</p>
+<p>例如验证 ubuntu 镜像，<a href="https://help.ubuntu.com/community/HowToSHA256SUM" target="_blank" rel="noopener noreffer ">HowToSHA256SUM - Community Help Wiki</a></p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 获取本地镜像的哈希值</span>
+</span></span><span class="line"><span class="cl">$ shasum -a <span class="m">256</span> ~/Downloads/ubuntu-22.04.1-live-server-arm64.iso
+</span></span><span class="line"><span class="cl">bc5a8015651c6f8699ab262d333375d3930b824f03d14ae51e551d89d9bb571c  /Users/nv/Downloads/ubuntu-22.04.1-live-server-arm64.iso
+</span></span><span class="line"><span class="cl"><span class="c1"># 下载远程官方公布的哈希值</span>
+</span></span><span class="line"><span class="cl">$ curl http://cdimage.ubuntu.com/releases/22.04/release/SHA256SUMS --output ~/Downloads/SHA256SUMS
+</span></span><span class="line"><span class="cl"><span class="c1"># 比较两者</span>
+</span></span><span class="line"><span class="cl">$ diff ~/Downloads/SHA256SUMS &lt;<span class="o">(</span>shasum -a <span class="m">256</span> ~/Downloads/ubuntu-22.04.1-live-server-arm64.iso<span class="o">)</span></span></span></code></pre></div></div>
+<h4 id="承诺机制">承诺机制</h4>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Commitment_scheme" target="_blank" rel="noopener noreffer ">承诺机制</a>(Commitment scheme)： 假设我希望承诺一个值，但之后再透露它—— 比如在没有一个可信的、双方可见的硬币的情况下在我的脑海中公平的“扔一次硬币”。 我可以选择一个值<code>r = random()</code>，并和你分享它的哈希值<code>h = sha256(r)</code>。 这时你可以开始猜硬币的正反：我们一致同意偶数<code>r</code>代表正面，奇数<code>r</code>代表反面。 你猜完了以后，我告诉你值<code>r</code>的内容，得出胜负。同时你可以使用<code>sha256(r)</code>来检查我分享的哈希值<code>h</code>以确认我没有作弊。</li>
+</ul>
+<h2 id="密钥生成函数">密钥生成函数</h2>
+<p><a href="https://en.wikipedia.org/wiki/Key_derivation_function" target="_blank" rel="noopener noreffer ">密钥生成函数</a> (Key Derivation Functions) 作为密码散列函数的相关概念，被应用于包括生成固定长度，可以使用在其他密码算法中的密钥等方面。 为了对抗穷举法攻击，密钥生成函数通常较慢。</p>
+<h3 id="密钥生成函数的应用">密钥生成函数的应用</h3>
+<ul>
+<li>从密码生成可以在其他加密算法中使用的密钥，比如对称加密算法。</li>
+<li>存储登录凭证时不可直接存储明文密码。
+正确的方法是针对每个用户随机生成一个<a href="https://en.wikipedia.org/wiki/Salt_%28cryptography%29" target="_blank" rel="noopener noreffer ">盐</a> <code>salt = random()</code>， 并存储盐，以及密钥生成函数对连接了盐的明文密码生成的哈希值<code>KDF(password + salt)</code>。
+在验证登录请求时，使用输入的密码连接存储的盐重新计算哈希值<code>KDF(input + salt)</code>，并与存储的哈希值对比。</li>
+</ul>
+<p>例如，使用 <a href="https://www.openssl.org/" target="_blank" rel="noopener noreffer ">OpenSSL</a>的AES模式加密一个文件</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s2">&#34;hello world&#34;</span> &gt; afile <span class="c1">#创建一个文件</span>
+</span></span><span class="line"><span class="cl">$ openssl aes-256-cbc -salt -in afile -out secfile <span class="c1">#加密文件</span>
+</span></span><span class="line"><span class="cl">enter aes-256-cbc encryption password:***
+</span></span><span class="line"><span class="cl">Verifying - enter aes-256-cbc encryption password:***
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#解密</span>
+</span></span><span class="line"><span class="cl">$ openssl aes-256-cbc -d -in secfile -out notsafefile</span></span></code></pre></div></div>
+<h2 id="对称加密">对称加密</h2>
+<p>说到加密，可能你会首先想到隐藏明文信息。对称加密使用以下几个方法来实现这个功能：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">keygen() -&gt; key  (这是一个随机方法)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">encrypt(plaintext: array&lt;byte&gt;, key) -&gt; array&lt;byte&gt;  (输出密文)
+</span></span><span class="line"><span class="cl">decrypt(ciphertext: array&lt;byte&gt;, key) -&gt; array&lt;byte&gt;  (输出明文) </span></span></code></pre></div></div>
+<p>加密方法<code>encrypt()</code>输出的密文<code>ciphertext</code>很难在不知道<code>key</code>的情况下得出明文<code>plaintext</code>。</p>
+<p>解密方法<code>decrypt()</code>有明显的正确性。因为功能要求给定密文及其密钥，解密方法必须输出明文：<code>decrypt(encrypt(m, k), k) = m</code>。</p>
+<p><a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_blank" rel="noopener noreffer ">AES</a> 是现在常用的一种对称加密系统。</p>
+<h3 id="对称加密的应用">对称加密的应用</h3>
+<h4 id="加密云服务上存储的文件">加密云服务上存储的文件</h4>
+<p>加密不信任的云服务上存储的文件。对称加密和密钥生成函数配合起来，就可以使用密码加密文件： 将密码输入密钥生成函数生成密钥 <code>key = KDF(passphrase)</code>，然后存储<code>encrypt(file, key)</code>。</p>
+<h2 id="非对称加密">非对称加密</h2>
+<p>非对称加密的“非对称”代表在其环境中，使用两个具有不同功能的密钥： 一个是私钥(private key)，不向外公布；另一个是公钥(public key)，公布公钥不像公布对称加密的共享密钥那样可能影响加密体系的安全性。
+非对称加密使用以下几个方法来实现加密/解密(encrypt/decrypt)，以及签名/验证(sign/verify)：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">keygen() -&gt; (public key, private key)  (这是一个随机方法)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">encrypt(plaintext: array&lt;byte&gt;, public key) -&gt; array&lt;byte&gt;  (输出密文)
+</span></span><span class="line"><span class="cl">decrypt(ciphertext: array&lt;byte&gt;, private key) -&gt; array&lt;byte&gt;  (输出明文)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sign(message: array&lt;byte&gt;, private key) -&gt; array&lt;byte&gt;  (生成签名)
+</span></span><span class="line"><span class="cl">verify(message: array&lt;byte&gt;, signature: array&lt;byte&gt;, public key) -&gt; bool  (验证签名是否是由和这个公钥相关的私钥生成的) </span></span></code></pre></div></div>
+<p>信息在非对称加密中使用 <em>公钥</em> 加密， 且输出的密文很难在不知道 <em>私钥</em> 的情况下得出明文。</p>
+<p>解密方法<code>decrypt()</code>有明显的正确性。 给定密文及私钥，解密方法一定会输出明文： <code>decrypt(encrypt(m, public key), private key) = m</code>。</p>
+<p>签名/验证方法具有和书面签名类似的特征。</p>
+<p>在不知道 <em>私钥</em> 的情况下，不管需要签名的信息为何，很难计算出一个可以使 <code>verify(message, signature, public key)</code> 返回为真的签名。</p>
+<p>对于使用私钥签名的信息，验证方法验证和私钥相对应的公钥时一定返回为真： <code>verify(message, sign(message, private key), public key) = true</code>。</p>
+<p>例如，使用<a href="https://wiki.archlinux.org/index.php/SSH_keys#Ed25519" target="_blank" rel="noopener noreffer ">ED25519算法</a>生成一组<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2" target="_blank" rel="noopener noreffer ">SSH 密钥对</a>。为了确保私钥不使用时的安全，一定使用密码加密你的私钥。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ ssh-keygen -t ed25519
+</span></span><span class="line"><span class="cl">Generating public/private ed25519 key pair.
+</span></span><span class="line"><span class="cl">Enter file in which to save the key <span class="o">(</span>/Users/nv/.ssh/id_ed25519<span class="o">)</span>: ./key
+</span></span><span class="line"><span class="cl">Enter passphrase <span class="o">(</span>empty <span class="k">for</span> no passphrase<span class="o">)</span>:
+</span></span><span class="line"><span class="cl">Enter same passphrase again:
+</span></span><span class="line"><span class="cl">Your identification has been saved in ./key
+</span></span><span class="line"><span class="cl">Your public key has been saved in ./key.pub</span></span></code></pre></div></div>
+<h3 id="非对称加密的应用">非对称加密的应用</h3>
+<h4 id="电子邮件加密">电子邮件加密</h4>
+<p><a href="https://en.wikipedia.org/wiki/Pretty_Good_Privacy" target="_blank" rel="noopener noreffer ">PGP电子邮件加密</a>：用户可以将所使用的公钥在线发布，比如：PGP密钥服务器或 <a href="https://keybase.io/" target="_blank" rel="noopener noreffer ">Keybase</a>。任何人都可以向他们发送加密的电子邮件。</p>
+<h4 id="聊天加密">聊天加密</h4>
+<p>像 <a href="https://signal.org/" target="_blank" rel="noopener noreffer ">Signal</a> 和 <a href="https://keybase.io/" target="_blank" rel="noopener noreffer ">Keybase</a> 使用非对称密钥来建立私密聊天。</p>
+<h4 id="软件签名">软件签名</h4>
+<p>Git 支持用户对提交(commit)和标签(tag)进行 GPG(GNU Privacy Guard) 签名。任何人都可以使用软件开发者公布的签名公钥验证下载的已签名软件。</p>
+<p>Linux 配置 GPG 可参考<a href="https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages" target="_blank" rel="noopener noreffer ">配置 GPG 可参考</a>，下面是 Mac 下的操作</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ gpg --gen-key
+</span></span><span class="line"><span class="cl"><span class="c1"># 导入 [anish](https://keybase.io/anish) pgp 共钥</span>
+</span></span><span class="line"><span class="cl">$ curl https://keybase.io/anish/pgp_keys.asc <span class="p">|</span> gpg --import
+</span></span><span class="line"><span class="cl"><span class="c1"># 加密文件</span>
+</span></span><span class="line"><span class="cl">$ gpg --encrypt --sign --armor -r me@anishathalye.com hi</span></span></code></pre></div></div>
+<p>使用<code>git commit -S</code>命令签名一个Git提交，并使用<code>git show --show-signature</code>命令验证这个提交的签名。或者，使用<code>git tag -s</code>命令签名一个Git标签，并使用<code>git tag -v</code>命令验证标签的签名。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git commit -S -m <span class="s2">&#34;sign a commit&#34;</span>
+</span></span><span class="line"><span class="cl">error: gpg failed to sign the data
+</span></span><span class="line"><span class="cl"> fatal: failed to write commit object</span></span></code></pre></div></div>
+<p>这个问题网上有一些解决方案可供参考：</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/41052538/git-error-gpg-failed-to-sign-data" target="_blank" rel="noopener noreffer ">gnupg - Git error - gpg failed to sign data - Stack Overflow</a></li>
+<li><a href="https://github.com/pstadler/keybase-gpg-github" target="_blank" rel="noopener noreffer ">pstadler/keybase-gpg-github: Step-by-step guide on how to create a GPG key on keybase.io, adding it to a local GPG setup and using it with Git and GitHub.</a></li>
+</ul>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 如果遇到</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s2">&#34;test&#34;</span> <span class="p">|</span> gpg --clearsign
+</span></span><span class="line"><span class="cl">gpg: <span class="o">[</span>stdin<span class="o">]</span>: clear-sign failed: Inappropriate ioctl <span class="k">for</span> device
+</span></span><span class="line"><span class="cl"><span class="c1"># 则执行</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">export</span> <span class="nv">GPG_TTY</span><span class="o">=</span><span class="k">$(</span>tty<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 要注意~/.gitconfig里面的 name，email 要和生成秘钥时使用的一样，签名算法也是一样</span>
+</span></span><span class="line"><span class="cl">$ gpg -K --keyid-format SHORT
+</span></span><span class="line"><span class="cl">/Users/nv/.gnupg/pubring.kbx
+</span></span><span class="line"><span class="cl">----------------------------
+</span></span><span class="line"><span class="cl">sec   ed25519/5491C890 2023-02-19 <span class="o">[</span>SC<span class="o">]</span> <span class="o">[</span>expires: 2025-02-18<span class="o">]</span>
+</span></span><span class="line"><span class="cl">      1774700098943C0579420DD2726DAF385491C890
+</span></span><span class="line"><span class="cl">uid         <span class="o">[</span>ultimate<span class="o">]</span> xieting &lt;nightvoyager@qq.com&gt;
+</span></span><span class="line"><span class="cl">ssb   cv25519/77194118 2023-02-19 <span class="o">[</span>E<span class="o">]</span> <span class="o">[</span>expires: 2025-02-18<span class="o">]</span>
+</span></span><span class="line"><span class="cl">$ vim ~/.gitconfig
+</span></span><span class="line"><span class="cl"><span class="o">[</span>user<span class="o">]</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">name</span> <span class="o">=</span> xieting
+</span></span><span class="line"><span class="cl">    <span class="nv">email</span> <span class="o">=</span> nightvoyager@qq.com
+</span></span><span class="line"><span class="cl">    <span class="nv">signingKey</span> <span class="o">=</span> <span class="m">77194118</span>
+</span></span><span class="line"><span class="cl">$ git commit -S -m <span class="s2">&#34;scripts&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>master 0c77ec5<span class="o">]</span> scripts
+</span></span><span class="line"><span class="cl"> <span class="m">12</span> files changed, <span class="m">144</span> insertions<span class="o">(</span>+<span class="o">)</span>
+</span></span><span class="line"><span class="cl"> ...</span></span></code></pre></div></div>
+<h3 id="密钥分发">密钥分发</h3>
+<p>非对称加密面对的主要挑战是，如何分发公钥并对应现实世界中存在的人或组织。</p>
+<p>Signal的信任模型是，信任用户第一次使用时给出的身份(trust on first use)，同时支持用户线下(out-of-band)、面对面交换公钥（Signal里的safety number）。</p>
+<p>PGP使用的是<a href="https://en.wikipedia.org/wiki/Web_of_trust" target="_blank" rel="noopener noreffer ">信任网络</a>。简单来说，如果我想加入一个信任网络，则必须让已经在信任网络中的成员对我进行线下验证，比如对比证件。验证无误后，信任网络的成员使用私钥对我的公钥进行签名。这样我就成为了信任网络的一部分。只要我使用签名过的公钥所对应的私钥就可以证明“我是我”。</p>
+<p>Keybase主要使用<a href="https://keybase.io/blog/chat-apps-softer-than-tofu" target="_blank" rel="noopener noreffer ">社交网络证明 (social proof)</a>，和一些别的精巧设计。</p>
+<h2 id="案例分析">案例分析</h2>
+<h3 id="密码管理器">密码管理器</h3>
+<p>每个人都应该尝试使用密码管理器，比如<a href="https://keepassxc.org/" target="_blank" rel="noopener noreffer ">KeePassXC</a>、<a href="https://www.passwordstore.org/" target="_blank" rel="noopener noreffer ">pass</a> 和 <a href="https://1password.com" target="_blank" rel="noopener noreffer ">1Password</a>)。</p>
+<p>密码管理器会帮助你对每个网站生成随机且复杂（表现为高熵）的密码，并使用你指定的主密码配合密钥生成函数来对称加密它们。</p>
+<p>你只需要记住一个复杂的主密码，密码管理器就可以生成很多复杂度高且不会重复使用的密码。密码管理器通过这种方式降低密码被猜出的可能，并减少网站信息泄露后对其他网站密码的威胁。</p>
+<h3 id="两步验证双因子验证">两步验证（双因子验证）</h3>
+<p><a href="https://en.wikipedia.org/wiki/Multi-factor_authentication" target="_blank" rel="noopener noreffer ">两步验证</a>(2FA)要求用户同时使用密码（“你知道的信息”）和一个身份验证器（“你拥有的物品”，比如<a href="https://www.yubico.com/" target="_blank" rel="noopener noreffer ">YubiKey</a>）来消除密码泄露或者<a href="https://en.wikipedia.org/wiki/Phishing" target="_blank" rel="noopener noreffer ">钓鱼攻击</a>的威胁。</p>
+<p>最简单的情形是可以通过接收手机的 SMS 来实现（尽管 SMS 2FA 存在 <a href="https://www.kaspersky.com/blog/2fa-practical-guide/24219/" target="_blank" rel="noopener noreffer ">已知问题</a>）。我们推荐使用<a href="https://www.yubico.com/" target="_blank" rel="noopener noreffer ">YubiKey</a>之类的<a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor" target="_blank" rel="noopener noreffer ">U2F</a>方案。</p>
+<h3 id="全盘加密">全盘加密</h3>
+<p>对笔记本电脑的硬盘进行全盘加密是防止因设备丢失而信息泄露的简单且有效方法。 Linux的<a href="https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_a_non-root_file_system" target="_blank" rel="noopener noreffer ">cryptsetup + LUKS</a>， Windows的<a href="https://fossbytes.com/enable-full-disk-encryption-windows-10/" target="_blank" rel="noopener noreffer ">BitLocker</a>，或者macOS的<a href="https://support.apple.com/en-us/HT204837" target="_blank" rel="noopener noreffer ">FileVault</a>都使用一个由密码保护的对称密钥来加密盘上的所有信息。</p>
+<h3 id="聊天加密-1">聊天加密</h3>
+<p><a href="https://signal.org/" target="_blank" rel="noopener noreffer ">Signal</a>和<a href="https://keybase.io/" target="_blank" rel="noopener noreffer ">Keybase</a>使用非对称加密对用户提供端到端(End-to-end)安全性。</p>
+<p>获取联系人的公钥非常关键。为了保证安全性，应使用线下方式验证Signal或者Keybase的用户公钥，或者信任Keybase用户提供的社交网络证明。</p>
+<h3 id="ssh">SSH</h3>
+<p>当你运行<code>ssh-keygen</code>命令，它会生成一个非对称密钥对：公钥和私钥<code>(public_key, private_key)</code>。 生成过程中使用的随机数由系统提供的熵决定。这些熵可以来源于硬件事件(hardware events)等。 公钥最终会被分发，它可以直接明文存储。 但是为了防止泄露，私钥必须加密存储。<code>ssh-keygen</code>命令会提示用户输入一个密码，并将它输入密钥生成函数 产生一个密钥。最终，<code>ssh-keygen</code>使用对称加密算法和这个密钥加密私钥。</p>
+<p>在实际运用中，当服务器已知用户的公钥（存储在<code>.ssh/authorized_keys</code>文件中，一般在用户HOME目录下），尝试连接的客户端可以使用非对称签名来证明用户的身份——这便是<a href="https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication" target="_blank" rel="noopener noreffer ">挑战应答方式</a>。 简单来说，服务器选择一个随机数字发送给客户端。客户端使用用户私钥对这个数字信息签名后返回服务器。 服务器随后使用<code>.ssh/authorized_keys</code>文件中存储的用户公钥来验证返回的信息是否由所对应的私钥所签名。这种验证方式可以有效证明试图登录的用户持有所需的私钥。</p>
+]]></description>
 </item>
 <item>
     <title>Vim 学习指南</title>
@@ -78,7 +749,312 @@
 <h2 id="概况">概况</h2>
 <h3 id="vim-的哲学">Vim 的哲学</h3>
 <blockquote>
-<p>在编程的时候，你会把大量时间花在阅读/编辑而不是在写代码上。所以，Vim 是一个多模态编辑 器：它对于插入文字和操纵文字有不同的模式。Vim 是可编程的（可以使用 Vimscript 或者像 Python 一样的其他程序语言），Vim 的接口本身也是一个程序语言：键入操作（以及其助记名） 是命令，这些命令也是可组合的。Vim 避免了使用鼠标，因为那样太慢了；Vim 甚至避免用 上下左右键因为那样需要太多的手指移动。</p>]]></description>
+<p>在编程的时候，你会把大量时间花在阅读/编辑而不是在写代码上。所以，Vim 是一个多模态编辑 器：它对于插入文字和操纵文字有不同的模式。Vim 是可编程的（可以使用 Vimscript 或者像 Python 一样的其他程序语言），Vim 的接口本身也是一个程序语言：键入操作（以及其助记名） 是命令，这些命令也是可组合的。Vim 避免了使用鼠标，因为那样太慢了；Vim 甚至避免用 上下左右键因为那样需要太多的手指移动。</p></blockquote>
+<h3 id="编辑模式">编辑模式</h3>
+<p>Vim 的设计以大多数时间都花在阅读、浏览和进行少量编辑改动为基础，因此它具有多种操作模式：</p>
+<ul>
+<li>正常模式：在文件中四处移动光标进行修改</li>
+<li>插入模式：插入文本</li>
+<li>替换模式：替换文本</li>
+<li>可视化模式（一般，行，块）：选中文本块</li>
+<li>命令模式：用于执行命令</li>
+</ul>
+<p>在正常模式，键入 <code>i</code> 进入插入模式，<code>R</code> 进入替换模式，<code>v</code> 进入可视（一般）模式，<code>V</code> 进入可视（行）模式，<code>&lt;C-v&gt;</code> （<code>Ctrl-V</code>, 有时也写作 <code>^V</code>）进入可视（块）模式，<code>:</code> 进入命令模式。</p>
+<h3 id="缓存-标签页-窗口">缓存， 标签页， 窗口</h3>
+<blockquote>
+<p>Vim 会维护一系列打开的文件，称为“缓存”。一个 Vim 会话包含一系列标签页，每个标签页包含 一系列窗口（分隔面板）。每个窗口显示一个缓存。缓存和窗口不是一一对应的关系，窗口只是视角，一个缓存可以在多个窗口打开，比如在查看同一个文件的不同部分的时候。</p></blockquote>
+<blockquote>
+<p>Vim 默认打开一个标签页，这个标签也包含一个窗口。</p></blockquote>
+<h2 id="vim-的接口其实是一种编程语言">Vim 的接口其实是一种编程语言</h2>
+<blockquote>
+<p>Vim 最重要的设计思想是 Vim 的界面本身是一个程序语言。键入操作（以及他们的助记名） 本身是命令，这些命令可以组合使用。这使得移动和编辑更加高效，特别是一旦形成肌肉记忆。</p></blockquote>
+<p></p>
+<h3 id="移动">移动</h3>
+<p>多数时候你会在正常模式下，使用移动命令在缓存中导航。在 Vim 里面移动也被称为 “名词”， 因为它们指向文字块。</p>
+<ul>
+<li>基本移动: <code>hjkl</code> （左， 下， 上， 右）</li>
+<li>词： <code>w</code> （下一个词）， <code>b</code> （词初）， <code>e</code> （词尾）</li>
+<li>行： <code>0</code> （行初）， <code>^</code> （第一个非空格字符）， <code>$</code> （行尾）</li>
+<li>屏幕： <code>H</code> （屏幕首行）， <code>M</code> （屏幕中间）， <code>L</code> （屏幕底部）</li>
+<li>翻页： <code>Ctrl-u</code> （上翻）， <code>Ctrl-d</code> （下翻）</li>
+<li>文件： <code>gg</code> （文件头）， <code>G</code> （文件尾）</li>
+<li>行数： <code>:{行数}&lt;CR&gt;</code> 或者 <code>{行数}G</code> ({行数}为行数)</li>
+<li>括号匹配： <code>%</code> （找到配对，比如括号或者 /* */ 之类的注释对）</li>
+<li>查找： <code>f{字符}</code>， <code>t{字符}</code>， <code>F{字符}</code>， <code>T{字符}</code>
+<ul>
+<li>查找/到 向前/向后 在本行的{字符}</li>
+<li><code>,</code> / <code>;</code> 用于导航匹配</li>
+</ul>
+</li>
+<li>搜索: <code>/{正则表达式}</code>, <code>n</code> / <code>N</code> 用于导航匹配</li>
+</ul>
+<h3 id="选择">选择</h3>
+<p>可视化模式:</p>
+<ul>
+<li>可视化：<code>v</code></li>
+<li>可视化行： <code>V</code></li>
+<li>可视化块：<code>Ctrl+v</code></li>
+</ul>
+<p>可以用移动命令来选中。</p>
+<h3 id="编辑">编辑</h3>
+<p>所有你需要用鼠标做的事， 你现在都可以用键盘：采用编辑命令和移动命令的组合来完成。 这就是 Vim 的界面开始看起来像一个程序语言的时候。Vim 的编辑命令也被称为 “动词”， 因为动词可以施动于名词。</p>
+<ul>
+<li><code>i</code> 进入插入模式
+<ul>
+<li>但是对于操纵/编辑文本，不单想用退格键完成</li>
+</ul>
+</li>
+<li><code>O</code> / <code>o</code> 在之上/之下插入行</li>
+<li><code>d{移动命令}</code> 删除 {移动命令}
+<ul>
+<li>例如，<code>dw</code> 删除词, <code>d$</code> 删除到行尾, <code>d0</code> 删除到行头。</li>
+</ul>
+</li>
+<li><code>c{移动命令}</code> 改变 {移动命令}
+<ul>
+<li>例如，<code>cw</code> 改变词</li>
+<li>比如 <code>d{移动命令}</code> 再 <code>i</code></li>
+</ul>
+</li>
+<li><code>x</code> 删除字符（等同于 <code>dl</code>）</li>
+<li><code>s</code> 替换字符（等同于 <code>xi</code>）</li>
+<li>可视化模式 + 操作
+<ul>
+<li>选中文字, <code>d</code> 删除 或者 <code>c</code> 改变</li>
+</ul>
+</li>
+<li><code>u</code> 撤销, <code>&lt;C-r&gt;</code> 重做</li>
+<li><code>y</code> 复制 / “yank” （其他一些命令比如 <code>d</code> 也会复制）</li>
+<li><code>p</code> 粘贴</li>
+<li>更多值得学习的: 比如 <code>~</code> 改变字符的大小写</li>
+</ul>
+<h3 id="计数">计数</h3>
+<p>你可以用一个计数来结合“名词”和“动词”，这会执行指定操作若干次。</p>
+<ul>
+<li><code>3w</code> 向前移动三个词</li>
+<li><code>5j</code> 向下移动 5 行</li>
+<li><code>7dw</code> 删除 7 个词</li>
+</ul>
+<h3 id="修饰语">修饰语</h3>
+<p>你可以用修饰语改变“名词”的意义。修饰语有 <code>i</code>，表示“内部”或者“在内“，和 <code>a</code>， 表示”周围“。</p>
+<ul>
+<li><code>ci(</code> 改变当前括号内的内容</li>
+<li><code>ci[</code> 改变当前方括号内的内容</li>
+<li><code>da'</code> 删除一个单引号字符串， 包括周围的单引号</li>
+</ul>
+<h3 id="命令行">命令行</h3>
+<ul>
+<li><code>:q</code> 退出（关闭窗口）</li>
+<li><code>:w</code> 保存（写）</li>
+<li><code>:wq</code> 保存然后退出</li>
+<li><code>:e {文件名}</code> 打开要编辑的文件</li>
+<li><code>:ls</code> 显示打开的缓存</li>
+<li><code>:help {标题}</code> 打开帮助文档
+<ul>
+<li><code>:help :w</code> 打开 <code>:w</code> 命令的帮助文档</li>
+<li><code>:help w</code> 打开 <code>w</code> 移动的帮助文档</li>
+</ul>
+</li>
+</ul>
+<h3 id="搜索和替换">搜索和替换</h3>
+<p><code>:s</code> （替换）命令（<a href="http://vim.wikia.com/wiki/Search_and_replace" target="_blank" rel="noopener noreffer ">文档</a>）。</p>
+<ul>
+<li><code>%s/foo/bar/g</code>
+<ul>
+<li>在整个文件中将 foo 全局替换成 bar</li>
+</ul>
+</li>
+<li><code>%s/\[.*\](https://missing-semester-cn.github.io/2020/editors/\(.*\))/\1/g</code>
+<ul>
+<li>将有命名的 Markdown 链接替换成简单 URLs</li>
+</ul>
+</li>
+</ul>
+<h3 id="多窗口">多窗口</h3>
+<ul>
+<li>用 <code>:sp</code> / <code>:vsp</code> 来分割窗口</li>
+<li>同一个缓存可以在多个窗口中显示。</li>
+</ul>
+<h3 id="宏">宏</h3>
+<ul>
+<li><code>q{字符}</code> 来开始在寄存器<code>{字符}</code>中录制宏</li>
+<li><code>q</code>停止录制</li>
+<li><code>@{字符}</code> 重放宏</li>
+<li>宏的执行遇错误会停止</li>
+<li><code>{计数}@{字符}</code>执行一个宏{计数}次</li>
+<li>宏可以递归
+<ul>
+<li>首先用<code>q{字符}q</code>清除宏</li>
+<li>录制该宏，用 <code>@{字符}</code> 来递归调用该宏 （在录制完成之前不会有任何操作）</li>
+</ul>
+</li>
+</ul>
+<h2 id="自定义-vim">自定义 Vim</h2>
+<p>Vim 由一个位于 <code>~/.vimrc</code> 的文本配置文件（包含 Vim 脚本命令）。你可能会启用很多基本 设置。</p>
+<p>我们提供一个文档详细的基本设置，你可以用它当作你的初始设置。我们推荐使用这个设置因为 它修复了一些 Vim 默认设置奇怪行为。 <strong>在<a href="https://missing-semester-cn.github.io/2020/files/vimrc" target="_blank" rel="noopener noreffer ">这儿</a> 下载我们的设置，然后将它保存成 <code>~/.vimrc</code>.</strong></p>
+<p>Vim 能够被重度自定义，花时间探索自定义选项是值得的。你可以参考其他人的在 GitHub 上共享的设置文件，比如，你的授课人的 Vim 设置 (<a href="https://github.com/anishathalye/dotfiles/blob/master/vimrc" target="_blank" rel="noopener noreffer ">Anish</a>, <a href="https://github.com/jonhoo/configs/blob/master/editor/.config/nvim/init.vim" target="_blank" rel="noopener noreffer ">Jon</a> (uses <a href="https://neovim.io/" target="_blank" rel="noopener noreffer ">neovim</a>), <a href="https://github.com/JJGO/dotfiles/blob/master/vim/.vimrc" target="_blank" rel="noopener noreffer ">Jose</a>)。 有很多好的博客文章也聊到了这个话题。尽量不要复制粘贴别人的整个设置文件， 而是阅读和理解它，然后采用对你有用的部分。</p>
+<h2 id="还有更多的-vim-小窍门吗">还有更多的 Vim 小窍门吗？</h2>
+<ul>
+<li>插件 - 花时间去探索插件。有很多不错的插件修复了 vim 的缺陷或者增加了能够与现有 vim 工作流结合的新功能。关于这部分内容，资源是<a href="https://vimawesome.com/" target="_blank" rel="noopener noreffer ">VimAwesome</a> 和其他程序员的 dotfiles。</li>
+<li>标记 - 在 vim 里你可以使用 <code>m&lt;X&gt;</code> 为字母 <code>X</code> 做标记，之后你可以通过 <code>'&lt;X&gt;</code> 回到标记位置。这可以让你快速定位到文件内或文件间的特定位置。</li>
+<li>导航 - <code>Ctrl+O</code> 和 <code>Ctrl+I</code> 命令可以使你在最近访问位置前后移动。</li>
+<li>撤销树 - vim 有不错的更改跟踪机制，不同于其他的编辑器，vim 存储变更树，因此即使你撤销后做了一些修改，你仍然可以通过撤销树的导航回到初始状态。一些插件比如 <a href="https://github.com/sjl/gundo.vim" target="_blank" rel="noopener noreffer ">gundo.vim</a> 和 <a href="https://github.com/mbbill/undotree" target="_blank" rel="noopener noreffer ">undotree</a> 通过图形化来展示撤销树。</li>
+<li>时间撤销 - <code>:earlier</code> 和 <code>:later</code> 命令使得你可以用时间而非某一时刻的更改来定位文件。</li>
+<li><a href="https://vim.fandom.com/wiki/Using_undo_branches#Persistent_undo" target="_blank" rel="noopener noreffer ">持续撤销</a> - 是一个默认未被开启的 vim 的内置功能，它在 vim 启动之间保存撤销历史，需要配置在 <code>.vimrc</code> 目录下的<code>undofile</code> 和 <code>undodir</code>，vim 会保存每个文件的修改历史。</li>
+<li>热键（Leader Key） - 热键是一个用于用户自定义配置命令的特殊按键。这种模式通常是按下后释放这个按键（通常是空格键）并与其他的按键组合去实现一个特殊的命令。插件也会用这些按键增加它们的功能，例如，插件 UndoTree 使用 <code>&lt;Leader&gt; U</code> 去打开撤销树。</li>
+<li>高级文本对象 - 文本对象比如搜索也可以用 vim 命令构成。例如，<code>d/&lt;pattern&gt;</code> 会删除下一处匹配 pattern 的字符串，<code>cgn</code> 可以用于更改上次搜索的关键字。</li>
+</ul>
+<h2 id="扩展-vim">扩展 Vim</h2>
+<p>Vim 有很多扩展插件。跟很多互联网上已经过时的建议相反，你<em>不</em>需要在 Vim 使用一个插件 管理器（从 Vim 8.0 开始）。你可以使用内置的插件管理系统。只需要创建一个 <code>~/.vim/pack/vendor/start/</code> 的文件夹，然后把插件放到这里（比如通过 <code>git clone</code>）。</p>
+<p>以下是一些推荐的插件：</p>
+<ul>
+<li><a href="https://github.com/ctrlpvim/ctrlp.vim" target="_blank" rel="noopener noreffer ">ctrlp.vim</a>: 模糊文件查找</li>
+<li><a href="https://github.com/mileszs/ack.vim" target="_blank" rel="noopener noreffer ">ack.vim</a>: 代码搜索</li>
+<li><a href="https://github.com/scrooloose/nerdtree" target="_blank" rel="noopener noreffer ">nerdtree</a>: 文件浏览器</li>
+<li><a href="https://github.com/easymotion/vim-easymotion" target="_blank" rel="noopener noreffer ">vim-easymotion</a>: 魔术操作</li>
+</ul>
+<p>我们尽量避免在这里提供一份冗长的插件列表。你可以查看讲师们的开源的配置文件 (<a href="https://github.com/anishathalye/dotfiles" target="_blank" rel="noopener noreffer ">Anish</a>, <a href="https://github.com/jonhoo/configs" target="_blank" rel="noopener noreffer ">Jon</a>, <a href="https://github.com/JJGO/dotfiles" target="_blank" rel="noopener noreffer ">Jose</a>) 来看看我们使用的其他插件。 浏览 <a href="https://vimawesome.com/" target="_blank" rel="noopener noreffer ">Vim Awesome</a> 来了解一些很棒的插件。 这个话题也有很多博客文章：搜索 “best Vim plugins”。</p>
+<h2 id="其他程序的-vim-模式">其他程序的 Vim 模式</h2>
+<p>很多工具提供了 Vim 模式。这些 Vim 模式的质量参差不齐；取决于具体工具，有的提供了 很多酷炫的 Vim 功能，但是大多数对基本功能支持的很好。</p>
+<h3 id="shell">Shell</h3>
+<p>如果你是一个 Bash 用户，用 <code>set -o vi</code>。如果你用 Zsh：<code>bindkey -v</code>，或者用插件<a href="https://github.com/jeffreytse/zsh-vi-mode" target="_blank" rel="noopener noreffer ">zsh-vi-mode</a>。Fish 用 <code>fish_vi_key_bindings</code>。另外，不管利用什么 shell，你可以 <code>export EDITOR=vim</code>。 这是一个用来决定当一个程序需要启动编辑时启动哪个的环境变量。 例如，<code>git</code> 会使用这个编辑器来编辑 commit 信息。</p>
+<h3 id="readline">Readline</h3>
+<p>很多程序使用 <a href="https://tiswww.case.edu/php/chet/readline/rltop.html" target="_blank" rel="noopener noreffer ">GNU Readline</a> 库来作为 它们的命令控制行界面。Readline 也支持基本的 Vim 模式， 可以通过在 <code>~/.inputrc</code> 添加如下行开启：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">set editing-mode vi</span></span></code></pre></div></div>
+<p>比如，在这个设置下，Python REPL 会支持 Vim 快捷键。</p>
+<h3 id="其他">其他</h3>
+<p>甚至有 Vim 的网页浏览快捷键 <a href="http://vim.wikia.com/wiki/Vim_key_bindings_for_web_browsers" target="_blank" rel="noopener noreffer ">browsers</a>, 受欢迎的有 用于 Google Chrome 的 <a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en" target="_blank" rel="noopener noreffer ">Vimium</a> 和用于 Firefox 的 <a href="https://github.com/tridactyl/tridactyl" target="_blank" rel="noopener noreffer ">Tridactyl</a>。 你甚至可以在 <a href="https://github.com/lambdalisue/jupyter-vim-binding" target="_blank" rel="noopener noreffer ">Jupyter notebooks</a> 中用 Vim 快捷键。 <a href="https://reversed.top/2016-08-13/big-list-of-vim-like-software" target="_blank" rel="noopener noreffer ">这个列表</a> 中列举了支持类 vim 键位绑定的软件。</p>
+<h2 id="例子">例子</h2>
+<h3 id="fizz_buzz">fizz_buzz</h3>
+<p>这里是一个有问题的 <a href="https://en.wikipedia.org/wiki/Fizz_buzz" target="_blank" rel="noopener noreffer ">fizz buzz</a> 实现：</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def fizz_buzz(limit):
+</span></span><span class="line"><span class="cl">    for i in range(limit):
+</span></span><span class="line"><span class="cl">        if i % 3 == 0:
+</span></span><span class="line"><span class="cl">            print(&#39;fizz&#39;)
+</span></span><span class="line"><span class="cl">        if i % 5 == 0:
+</span></span><span class="line"><span class="cl">            print(&#39;fizz&#39;)
+</span></span><span class="line"><span class="cl">        if i % 3 and i % 5:
+</span></span><span class="line"><span class="cl">            print(i)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def main():
+</span></span><span class="line"><span class="cl">    fizz_buzz(10)</span></span></code></pre></div></div>
+<p>我们会修复以下问题：</p>
+<ul>
+<li>主函数没有被调用</li>
+<li>从 0 而不是 1 开始</li>
+<li>在 15 的整数倍的时候在不用行打印 “fizz” 和 “buzz”</li>
+<li>在 5 的整数倍的时候打印 “fizz”</li>
+<li>采用硬编码的参数 10 而不是从命令控制行读取参数</li>
+<li>主函数没有被调用
+<ul>
+<li><code>G</code> 文件尾</li>
+<li><code>o</code> 向下打开一个新行</li>
+<li>输入 “if <strong>name</strong> …”</li>
+</ul>
+</li>
+<li>从 0 而不是 1 开始
+<ul>
+<li>搜索 <code>/range</code></li>
+<li><code>ww</code> 向前移动两个词</li>
+<li><code>i</code> 插入文字， “1, “</li>
+<li><code>ea</code> 在 limit 后插入， “+1”</li>
+</ul>
+</li>
+<li>在新的一行 “fizzbuzz”
+<ul>
+<li><code>jj$i</code> 插入文字到行尾</li>
+<li>加入 “, end=’’”</li>
+<li><code>jj.</code> 重复第二个打印</li>
+<li><code>jjo</code> 在 if 打开一行</li>
+<li>加入 “else: print()”</li>
+</ul>
+</li>
+<li>fizz fizz
+<ul>
+<li><code>ci'</code> 变到 fizz</li>
+</ul>
+</li>
+<li>命令控制行参数
+<ul>
+<li><code>ggO</code> 向上打开</li>
+<li>“import sys”</li>
+<li><code>/10</code></li>
+<li><code>ci(</code> to “int(sys.argv[1])”</li>
+</ul>
+</li>
+</ul>
+<h3 id="xml-转成-json">xml 转成 json</h3>
+<p>将 xml 转成 json (<a href="https://missing-semester-cn.github.io/2020/files/example-data.xml" target="_blank" rel="noopener noreffer ">file</a>)</p>
+<ul>
+<li>一个有 “name” / “email” 键对象的数组</li>
+<li>用一个 Python 程序？</li>
+<li>用 sed / 正则表达式
+<ul>
+<li><code>g/people/d</code></li>
+<li><code>%s/&lt;person&gt;/{/g</code></li>
+<li><code>%s/&lt;name&gt;\(.*\)&lt;\/name&gt;/&quot;name&quot;: &quot;\1&quot;,/g</code></li>
+<li>…</li>
+</ul>
+</li>
+<li>Vim 命令 / 宏
+<ul>
+<li><code>Gdd</code>, <code>ggdd</code> 删除第一行和最后一行</li>
+<li>格式化最后一个元素的宏 （寄存器 <code>e</code>）
+<ul>
+<li>跳转到有 <code>&lt;name&gt;</code> 的行</li>
+<li><code>qe^r&quot;f&gt;s&quot;: &quot;&lt;ESC&gt;f&lt;C&quot;&lt;ESC&gt;q</code></li>
+</ul>
+</li>
+<li>格式化一个的宏
+<ul>
+<li>跳转到有 <code>&lt;person&gt;</code> 的行</li>
+<li><code>qpS{&lt;ESC&gt;j@eA,&lt;ESC&gt;j@ejS},&lt;ESC&gt;q</code></li>
+</ul>
+</li>
+<li>格式化一个标签然后转到另外一个的宏
+<ul>
+<li>跳转到有 <code>&lt;person&gt;</code> 的行</li>
+<li><code>qq@pjq</code></li>
+</ul>
+</li>
+<li>执行宏到文件尾
+<ul>
+<li><code>999@q</code></li>
+</ul>
+</li>
+<li>手动移除最后的 <code>,</code> 然后加上 <code>[</code> 和 <code>]</code> 分隔符</li>
+</ul>
+</li>
+</ul>
+<h2 id="more">More</h2>
+<h3 id="todo">TODO</h3>
+<ul>
+<li>持续使用，遇到麻烦的时候，去探索优化一下。</li>
+<li>整理技巧、拓展和配置等</li>
+</ul>
+<h3 id="ref">Ref</h3>
+<ul>
+<li><code>vimtutor</code> 是一个 Vim 安装时自带的教程，80 列，24 行） 终端窗口看起来效果最好</li>
+<li><a href="https://vim-adventures.com/" target="_blank" rel="noopener noreffer ">Vim Adventures</a> 是一个学习使用 Vim 的游戏</li>
+<li><a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki" target="_blank" rel="noopener noreffer ">Vim Tips Wiki</a></li>
+<li><a href="https://vimways.org/2019/" target="_blank" rel="noopener noreffer ">Vim Advent Calendar</a> 有很多 Vim 小技巧</li>
+<li><a href="http://www.vimgolf.com/" target="_blank" rel="noopener noreffer ">Vim Golf</a> 是用 Vim 的用户界面作为程序语言的 <a href="https://en.wikipedia.org/wiki/Code_golf" target="_blank" rel="noopener noreffer ">code golf</a></li>
+<li><a href="https://vi.stackexchange.com/" target="_blank" rel="noopener noreffer ">Vi/Vim Stack Exchange</a></li>
+<li><a href="http://vimcasts.org/" target="_blank" rel="noopener noreffer ">Vim Screencasts</a></li>
+<li><a href="https://pragprog.com/titles/dnvim2/" target="_blank" rel="noopener noreffer ">Practical Vim</a>（书籍）</li>
+<li><a href="https://www.vim.org/" target="_blank" rel="noopener noreffer ">welcome home : vim online</a></li>
+</ul>
+]]></description>
 </item>
 <item>
     <title>调试代码常用方法</title>
@@ -90,7 +1066,183 @@
 <h2 id="打印调试法与日志">打印调试法与日志</h2>
 <blockquote>
 <p>最有效的 debug 工具就是细致的分析，配合恰当位置的打印语句。
-— Brian Kernighan, <em>Unix 新手入门</em>。</p>]]></description>
+— Brian Kernighan, <em>Unix 新手入门</em>。</p></blockquote>
+<p>调试代码的第一种方法往往是在您发现问题的地方添加一些打印语句，然后不断重复此过程直到您获取了足够的信息并找到问题的根本原因。</p>
+<p>另外一个方法是使用日志，而不是临时添加打印语句。日志较普通的打印语句有如下的一些优势：</p>
+<ul>
+<li>您可以将日志写入文件、socket 或者甚至是发送到远端服务器而不仅仅是标准输出；</li>
+<li>日志可以支持严重等级（例如 INFO, DEBUG, WARN, ERROR 等)，这使您可以根据需要过滤日志；</li>
+<li>对于新发现的问题，很可能您的日志中已经包含了可以帮助您定位问题的足够的信息。</li>
+</ul>
+<p>有很多技巧可以使日志的可读性变得更好，我最喜欢的一个是技巧是对其进行着色。到目前为止，您应该已经知道，以彩色文本显示终端信息时可读性更好。但是应该如何设置呢？</p>
+<p><code>ls</code> 和 <code>grep</code> 这样的程序会使用 <a href="https://en.wikipedia.org/wiki/ANSI_escape_code" target="_blank" rel="noopener noreffer ">ANSI escape codes</a>，它是一系列的特殊字符，可以使您的 shell 改变输出结果的颜色。例如，执行 <code>echo -e &quot;\e[38;2;255;0;0mThis is red\e[0m&quot;</code> 会打印红色的字符串：<code>This is red</code> 。只要您的终端支持<a href="https://gist.github.com/XVilka/8346728#terminals--true-color" target="_blank" rel="noopener noreffer ">真彩色</a>。如果您的终端不支持真彩色（例如 MacOS 的 Terminal.app），您可以使用支持更加广泛的 16 色，例如：”\e[31;1mThis is red\e[0m”。</p>
+<p>下面这个脚本向您展示了如何在终端中打印多种颜色（只要您的终端支持真彩色）</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/usr/bin/env bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="k">for</span> R in <span class="k">$(</span>seq <span class="m">0</span> <span class="m">20</span> 255<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> G in <span class="k">$(</span>seq <span class="m">0</span> <span class="m">20</span> 255<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> B in <span class="k">$(</span>seq <span class="m">0</span> <span class="m">20</span> 255<span class="k">)</span><span class="p">;</span> <span class="k">do</span> <span class="nb">printf</span> <span class="s2">&#34;\e[38;2;</span><span class="si">${</span><span class="nv">R</span><span class="si">}</span><span class="s2">;</span><span class="si">${</span><span class="nv">G</span><span class="si">}</span><span class="s2">;</span><span class="si">${</span><span class="nv">B</span><span class="si">}</span><span class="s2">m█\e[0m&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">done</span>
+</span></span><span class="line"><span class="cl">    <span class="k">done</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span></span></span></code></pre></div></div>
+<h2 id="第三方日志系统">第三方日志系统</h2>
+<p>如果您正在构建大型软件系统，您很可能会使用到一些依赖，有些依赖会作为程序单独运行。如 Web 服务器、数据库或消息代理都是此类常见的第三方依赖。</p>
+<p>和这些系统交互的时候，阅读它们的日志是非常必要的，因为仅靠客户端侧的错误信息可能并不足以定位问题。</p>
+<p>幸运的是，大多数的程序都会将日志保存在您的系统中的某个地方。对于 UNIX 系统来说，程序的日志通常存放在 <code>/var/log</code>。例如， <a href="https://www.nginx.com/" target="_blank" rel="noopener noreffer ">NGINX</a> web 服务器就将其日志存放于<code>/var/log/nginx</code>。</p>
+<p>目前，系统开始使用 <strong>system log</strong>，您所有的日志都会保存在这里。大多数（但不是全部的）Linux 系统都会使用 <code>systemd</code>，这是一个系统守护进程，它会控制您系统中的很多东西，例如哪些服务应该启动并运行。<code>systemd</code> 会将日志以某种特殊格式存放于<code>/var/log/journal</code>，您可以使用 <a href="http://man7.org/linux/man-pages/man1/journalctl.1.html" target="_blank" rel="noopener noreffer "><code>journalctl</code></a> 命令显示这些消息。</p>
+<p>类似地，在 macOS 系统中是 <code>/var/log/system.log</code>，但是有更多的工具会使用系统日志，它的内容可以使用 <a href="https://www.manpagez.com/man/1/log/" target="_blank" rel="noopener noreffer "><code>log show</code></a> 显示。</p>
+<p>对于大多数的 UNIX 系统，您也可以使用<a href="http://man7.org/linux/man-pages/man1/dmesg.1.html" target="_blank" rel="noopener noreffer "><code>dmesg</code></a> 命令来读取内核的日志。</p>
+<p>如果您希望将日志加入到系统日志中，您可以使用 <a href="http://man7.org/linux/man-pages/man1/logger.1.html" target="_blank" rel="noopener noreffer "><code>logger</code></a> 这个 shell 程序。下面这个例子显示了如何使用 <code>logger</code>并且如何找到能够将其存入系统日志的条目。</p>
+<p>不仅如此，大多数的编程语言都支持向系统日志中写日志。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">logger &#34;Hello Logs&#34;
+</span></span><span class="line"><span class="cl"># On macOS
+</span></span><span class="line"><span class="cl">log show --last 1m | grep Hello
+</span></span><span class="line"><span class="cl"># On Linux
+</span></span><span class="line"><span class="cl">journalctl --since &#34;1m ago&#34; | grep Hello</span></span></code></pre></div></div>
+<p>正如我们在数据整理那节课上看到的那样，日志的内容可以非常的多，我们需要对其进行处理和过滤才能得到我们想要的信息。</p>
+<p>如果您发现您需要对 <code>journalctl</code> 和 <code>log show</code> 的结果进行大量的过滤，那么此时可以考虑使用它们自带的选项对其结果先过滤一遍再输出。还有一些像 <a href="http://lnav.org/" target="_blank" rel="noopener noreffer "><code>lnav</code></a> 这样的工具，它为日志文件提供了更好的展现和浏览方式。</p>
+<h2 id="调试器">调试器</h2>
+<p>当通过打印已经不能满足您的调试需求时，您应该使用调试器。</p>
+<p>调试器是一种可以允许我们和正在执行的程序进行交互的程序，它可以做到：</p>
+<ul>
+<li>当到达某一行时将程序暂停；</li>
+<li>一次一条指令地逐步执行程序；</li>
+<li>程序崩溃后查看变量的值；</li>
+<li>满足特定条件时暂停程序；</li>
+<li>其他高级功能。</li>
+</ul>
+<h3 id="python">python</h3>
+<p>很多编程语言都有自己的调试器。Python 的调试器是<a href="https://docs.python.org/3/library/pdb.html" target="_blank" rel="noopener noreffer "><code>pdb</code></a>.</p>
+<p>下面对<code>pdb</code> 支持的命令进行简单的介绍：</p>
+<ul>
+<li><strong>l</strong>(ist) - 显示当前行附近的 11 行或继续执行之前的显示；</li>
+<li><strong>s</strong>(tep) - 执行当前行，并在第一个可能的地方停止；</li>
+<li><strong>n</strong>(ext) - 继续执行直到当前函数的下一条语句或者 return 语句；</li>
+<li><strong>b</strong>(reak) - 设置断点（基于传入的参数）；</li>
+<li><strong>p</strong>(rint) - 在当前上下文对表达式求值并打印结果。还有一个命令是<strong>pp</strong> ，它使用 <a href="https://docs.python.org/3/library/pprint.html" target="_blank" rel="noopener noreffer "><code>pprint</code></a> 打印；</li>
+<li><strong>r</strong>(eturn) - 继续执行直到当前函数返回；</li>
+<li><strong>q</strong>(uit) - 退出调试器。</li>
+</ul>
+<p>让我们使用<code>pdb</code> 来修复下面的 Python 代码（参考讲座视频）</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def bubble_sort(arr):
+</span></span><span class="line"><span class="cl">    n = len(arr)
+</span></span><span class="line"><span class="cl">    for i in range(n):
+</span></span><span class="line"><span class="cl">        for j in range(n):
+</span></span><span class="line"><span class="cl">            if arr[j] &gt; arr[j+1]:
+</span></span><span class="line"><span class="cl">                arr[j] = arr[j+1]
+</span></span><span class="line"><span class="cl">                arr[j+1] = arr[j]
+</span></span><span class="line"><span class="cl">    return arr
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">print(bubble_sort([4, 2, 1, 8, 7, 6]))</span></span></code></pre></div></div>
+<p>注意，因为 Python 是一种解释型语言，所以我们可以通过 <code>pdb</code> shell 执行命令。 <a href="https://pypi.org/project/ipdb/" target="_blank" rel="noopener noreffer "><code>ipdb</code></a> 是一种增强型的 <code>pdb</code> ，它使用<a href="https://ipython.org" target="_blank" rel="noopener noreffer "><code>IPython</code></a> 作为 REPL 并开启了 tab 补全、语法高亮、更好的回溯和更好的内省，同时还保留了<code>pdb</code> 模块相同的接口。</p>
+<p>更多可以学习 <a href="https://github.com/spiside/pdb-tutorial" target="_blank" rel="noopener noreffer ">这份</a> <code>pdb</code> 实践教程并熟悉相关的命令。更深入的信息您可以参考<a href="https://realpython.com/python-debugging-pdb" target="_blank" rel="noopener noreffer ">这份</a>教程。</p>
+<h3 id="c">C</h3>
+<p>对于更底层的编程语言，您可能需要了解一下 <a href="https://www.gnu.org/software/gdb/" target="_blank" rel="noopener noreffer "><code>gdb</code></a> ( 以及它的改进版 <a href="https://github.com/pwndbg/pwndbg" target="_blank" rel="noopener noreffer "><code>pwndbg</code></a>) 和 <a href="https://lldb.llvm.org/" target="_blank" rel="noopener noreffer "><code>lldb</code></a>。</p>
+<p>它们都对类 C 语言的调试进行了优化，它允许您探索任意进程及其机器状态：寄存器、堆栈、程序计数器等。</p>
+<h3 id="可逆调试">可逆调试</h3>
+<p>这篇文章可了解 <a href="https://undo.io/resources/reverse-debugging-whitepaper/" target="_blank" rel="noopener noreffer ">可逆调试</a></p>
+<p>C 可以使用 <a href="https://rr-project.org/" target="_blank" rel="noopener noreffer "><code>rr</code></a> ，它基于 gdb.</p>
+<p>Python 可以使用<a href="https://app.pytrace.com/?open=v0.1-interactive-demo" target="_blank" rel="noopener noreffer ">pytrace</a></p>
+<h2 id="专门工具">专门工具</h2>
+<h3 id="操作系统内核">操作系统内核</h3>
+<p>即使您需要调试的程序是一个二进制的黑盒程序，仍然有一些工具可以帮助到您。当您的程序需要执行一些只有操作系统内核才能完成的操作时，它需要使用 <a href="https://en.wikipedia.org/wiki/System_call" target="_blank" rel="noopener noreffer ">系统调用</a>。有一些命令可以帮助您追踪您的程序执行的系统调用。在 Linux 中可以使用<a href="http://man7.org/linux/man-pages/man1/strace.1.html" target="_blank" rel="noopener noreffer "><code>strace</code></a> ，在 macOS 和 BSD 中可以使用 <a href="http://dtrace.org/blogs/about/" target="_blank" rel="noopener noreffer "><code>dtrace</code></a>。<code>dtrace</code> 用起来可能有些别扭，因为它使用的是它自有的 <code>D</code> 语言，但是我们可以使用一个叫做 <a href="https://www.manpagez.com/man/1/dtruss/" target="_blank" rel="noopener noreffer "><code>dtruss</code></a> 的封装使其具有和 <code>strace</code> (更多信息参考 <a href="https://8thlight.com/blog/colin-jones/2015/11/06/dtrace-even-better-than-strace-for-osx.html" target="_blank" rel="noopener noreffer ">这里</a>)类似的接口</p>
+<p>下面的例子展现来如何使用 <code>strace</code> 或 <code>dtruss</code> 来显示<code>ls</code> 执行时，对<a href="http://man7.org/linux/man-pages/man2/stat.2.html" target="_blank" rel="noopener noreffer "><code>stat</code></a> 系统调用进行追踪对结果。若需要深入了解 <code>strace</code>，<a href="https://blogs.oracle.com/linux/strace-the-sysadmins-microscope-v2" target="_blank" rel="noopener noreffer ">这篇文章</a> 值得一读。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># On Linux
+</span></span><span class="line"><span class="cl">sudo strace -e lstat ls -l &gt; /dev/null
+</span></span><span class="line"><span class="cl">4
+</span></span><span class="line"><span class="cl"># On macOS
+</span></span><span class="line"><span class="cl">sudo dtruss -t lstat64_extended ls -l &gt; /dev/null</span></span></code></pre></div></div>
+<h3 id="网络数据包">网络数据包</h3>
+<p>有些情况下，我们需要查看网络数据包才能定位问题。像 <a href="http://man7.org/linux/man-pages/man1/tcpdump.1.html" target="_blank" rel="noopener noreffer "><code>tcpdump</code></a> 和 <a href="https://www.wireshark.org/" target="_blank" rel="noopener noreffer ">Wireshark</a> 这样的网络数据包分析工具可以帮助您获取网络数据包的内容并基于不同的条件进行过滤。</p>
+<h3 id="web-开发">web 开发</h3>
+<p>对于 web 开发， Chrome/Firefox 的开发者工具非常方便，功能也很强大：</p>
+<ul>
+<li>源码 -查看任意站点的 HTML/CSS/JS 源码；</li>
+<li>实时地修改 HTML, CSS, JS 代码 - 修改网站的内容、样式和行为用于测试（从这一点您也能看出来，网页截图是不可靠的）；</li>
+<li>Javascript shell - 在 JS REPL 中执行命令；</li>
+<li>网络 - 分析请求的时间线；</li>
+<li>存储 - 查看 Cookies 和本地应用存储。</li>
+</ul>
+<h2 id="静态分析">静态分析</h2>
+<p>有些问题是您不需要执行代码就能发现的。例如，仔细观察一段代码，您就能发现某个循环变量覆盖了某个已经存在的变量或函数名；或是有个变量在被读取之前并没有被定义。 这种情况下 <a href="https://en.wikipedia.org/wiki/Static_program_analysis" target="_blank" rel="noopener noreffer ">静态分析</a> 工具就可以帮我们找到问题。静态分析会将程序的源码作为输入然后基于编码规则对其进行分析并对代码的正确性进行推理。</p>
+<h3 id="python-1">python</h3>
+<p>下面这段 Python 代码中存在几个问题。 首先，我们的循环变量<code>foo</code> 覆盖了之前定义的函数<code>foo</code>。最后一行，我们还把 <code>bar</code> 错写成了<code>baz</code>，因此当程序完成<code>sleep</code> (一分钟)后，执行到这一行的时候便会崩溃。</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">import time
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">def foo():
+</span></span><span class="line"><span class="cl">    return 42
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for foo in range(5):
+</span></span><span class="line"><span class="cl">    print(foo)
+</span></span><span class="line"><span class="cl">bar = 1
+</span></span><span class="line"><span class="cl">bar *= 0.2
+</span></span><span class="line"><span class="cl">time.sleep(60)
+</span></span><span class="line"><span class="cl">print(baz)</span></span></code></pre></div></div>
+<p>静态分析工具可以发现此类的问题。当我们使用<a href="https://pypi.org/project/pyflakes" target="_blank" rel="noopener noreffer "><code>pyflakes</code></a> 分析代码的时候，我们会得到与这两处 bug 相关的错误信息。<a href="http://mypy-lang.org/" target="_blank" rel="noopener noreffer "><code>mypy</code></a> 则是另外一个工具，它可以对代码进行类型检查。这里，<code>mypy</code> 会经过我们<code>bar</code> 起初是一个 <code>int</code> ，然后变成了 <code>float</code>。这些问题都可以在不运行代码的情况下被发现。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-zed" data-lang="zed"><span class="line"><span class="cl"><span class="err">$</span><span class="w"> </span><span class="n">pyflakes</span><span class="w"> </span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">6</span><span class="o">:</span><span class="w"> </span><span class="n">redefinition</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">unused</span><span class="w"> </span><span class="err">&#39;</span><span class="n">foo</span><span class="err">&#39;</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="err">3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">11</span><span class="o">:</span><span class="w"> </span><span class="n">undefined</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="err">&#39;</span><span class="n">baz</span><span class="err">&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">$</span><span class="w"> </span><span class="n">mypy</span><span class="w"> </span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">6</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">Incompatible</span><span class="w"> </span><span class="n">types</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">assignment</span><span class="w"> </span><span class="p">(</span><span class="n">expression</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="err">&#34;</span><span class="n">int</span><span class="err">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="err">&#34;</span><span class="n">Callable</span><span class="p">[[],</span><span class="w"> </span><span class="n">Any</span><span class="p">]</span><span class="err">&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">9</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">Incompatible</span><span class="w"> </span><span class="n">types</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">assignment</span><span class="w"> </span><span class="p">(</span><span class="n">expression</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="err">&#34;</span><span class="n">float</span><span class="err">&#34;</span><span class="p">,</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="err">&#34;</span><span class="n">int</span><span class="err">&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">foobar</span><span class="p">.</span><span class="n">py</span><span class="o">:</span><span class="err">11</span><span class="o">:</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">Name</span><span class="w"> </span><span class="err">&#39;</span><span class="n">baz</span><span class="err">&#39;</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">not</span><span class="w"> </span><span class="n">defined</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Found</span><span class="w"> </span><span class="err">3</span><span class="w"> </span><span class="n">errors</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="err">1</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="p">(</span><span class="n">checked</span><span class="w"> </span><span class="err">1</span><span class="w"> </span><span class="n">source</span><span class="w"> </span><span class="n">file</span><span class="p">)</span></span></span></code></pre></div></div>
+<h3 id="shell">shell</h3>
+<p>在 shell 工具那一节课的时候，我们介绍了 <a href="https://www.shellcheck.net/" target="_blank" rel="noopener noreffer "><code>shellcheck</code></a>，这是一个类似的工具，但它是应用于 shell 脚本的。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1"># Exampl#e: a typical script with several problems</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> f in <span class="k">$(</span>ls *.m3u<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span> grep -qi hq.*mp3 <span class="nv">$f</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>	<span class="o">&amp;&amp;</span> <span class="nb">echo</span> -e <span class="s1">&#39;Playlist $f contains a HQ file in mp3 format&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span></span></span></code></pre></div></div>
+<p>也可以在 Vim 中可以通过 neomake 插件来集成 shellcheck</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone xxx.git ~/.vim/pack/vendor/start/xxx</span></span></code></pre></div></div>
+<h3 id="工具集成">工具集成</h3>
+<p>大多数的编辑器和 IDE 都支持在编辑界面显示这些工具的分析结果、高亮有警告和错误的位置。 这个过程通常称为 <strong>code linting</strong> 。风格检查或安全检查的结果同样也可以进行相应的显示。</p>
+<p>在 vim 中，有 <a href="https://vimawesome.com/plugin/ale" target="_blank" rel="noopener noreffer "><code>ale</code></a> 或 <a href="https://vimawesome.com/plugin/syntastic" target="_blank" rel="noopener noreffer "><code>syntastic</code></a> 可以帮助您做同样的事情。 在 Python 中， <a href="https://www.pylint.org" target="_blank" rel="noopener noreffer "><code>pylint</code></a> 和 <a href="https://pypi.org/project/pep8/" target="_blank" rel="noopener noreffer "><code>pep8</code></a> 是两种用于进行风格检查的工具，而 <a href="https://pypi.org/project/bandit/" target="_blank" rel="noopener noreffer "><code>bandit</code></a> 工具则用于检查安全相关的问题。</p>
+<p>对于其他语言的开发者来说，静态分析工具可以参考这个列表：<a href="https://github.com/mre/awesome-static-analysis" target="_blank" rel="noopener noreffer ">Awesome Static Analysis</a> (您也许会对 <em>Writing</em> 一节感兴趣) 。对于 linters 则可以参考这个列表： <a href="https://github.com/caramelomartins/awesome-linters" target="_blank" rel="noopener noreffer ">Awesome Linters</a>。</p>
+<p>对于风格检查和代码格式化，还有以下一些工具可以作为补充：用于 Python 的 <a href="https://github.com/psf/black" target="_blank" rel="noopener noreffer "><code>black</code></a>、用于 Go 语言的 <code>gofmt</code>、用于 Rust 的 <code>rustfmt</code> 或是用于 JavaScript, HTML 和 CSS 的 <a href="https://prettier.io/" target="_blank" rel="noopener noreffer "><code>prettier</code></a> 。这些工具可以自动格式化您的代码，这样代码风格就可以与常见的风格保持一致。 尽管您可能并不想对代码进行风格控制，标准的代码风格有助于方便别人阅读您的代码，也可以方便您阅读它的代码。</p>
+]]></description>
 </item>
 <item>
     <title>make 构建工具介绍</title>
@@ -99,7 +1251,114 @@
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-05-31-make/</guid>
     <description><![CDATA[<p>构建工具通常需要定义<em>依赖</em>、<em>目标</em>和<em>规则</em>。</p>
-<p><code>make</code> 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。<code>make</code>并不完美，但是对于中小型项目来说，它已经足够好了。当您执行 <code>make</code> 时，它会去参考当前目录下名为 <code>Makefile</code> 的文件。所有构建目标、相关依赖和规则都需要在该文件中定义，它看上去是这样的：</p>]]></description>
+<p><code>make</code> 是最常用的构建系统之一，您会发现它通常被安装到了几乎所有基于 UNIX 的系统中。<code>make</code>并不完美，但是对于中小型项目来说，它已经足够好了。当您执行 <code>make</code> 时，它会去参考当前目录下名为 <code>Makefile</code> 的文件。所有构建目标、相关依赖和规则都需要在该文件中定义，它看上去是这样的：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-make">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-make" data-lang="make"><span class="line"><span class="cl"><span class="nf">paper.pdf</span><span class="o">:</span> <span class="n">paper</span>.<span class="n">tex</span> <span class="n">plot</span>-<span class="n">data</span>.<span class="n">png</span>
+</span></span><span class="line"><span class="cl">	pdflatex paper.tex
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">plot-%.png</span><span class="o">:</span> %.<span class="n">dat</span> <span class="n">plot</span>.<span class="n">py</span>
+</span></span><span class="line"><span class="cl">	./plot.py -i <span class="nv">$*</span>.dat -o <span class="nv">$@</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">.PHONY</span><span class="o">:</span> <span class="n">clean</span>
+</span></span><span class="line"><span class="cl"><span class="nf">clean</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">	rm *.pdf *.aux *.log *.png
+</span></span><span class="line"><span class="cl">	<span class="c1">#git ls-files -o | xargs rm -f</span>
+</span></span></code></pre></div></div>
+<p>这个文件中的指令，即如何使用右侧文件构建左侧文件的规则。或者，换句话说，冒号左侧的是构建目标，冒号右侧的是构建它所需的依赖。缩进的部分是从依赖构建目标时需要用到的一段程序。在 <code>make</code> 中，第一条指令还指明了构建的目的，如果您使用不带参数的 <code>make</code>，这便是我们最终的构建结果。或者，您可以使用这样的命令来构建其他目标：<code>make plot-data.png</code>。</p>
+<p>规则中的 <code>%</code> 是一种模式，它会匹配其左右两侧相同的字符串。例如，如果目标是 <code>plot-foo.png</code>， <code>make</code> 会去寻找 <code>foo.dat</code> 和 <code>plot.py</code> 作为依赖。现在，让我们看看如果在一个空的源码目录中执行<code>make</code> 会发生什么？</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">make: *** No rule to make target <span class="s1">&#39;paper.tex&#39;</span>, needed by <span class="s1">&#39;paper.pdf&#39;</span>.  Stop.</span></span></code></pre></div></div>
+<p><code>make</code> 会告诉我们，为了构建出<code>paper.pdf</code>，它需要 <code>paper.tex</code>，但是并没有一条规则能够告诉它如何构建该文件。让我们构建它吧！</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$touch</span> paper.tex
+</span></span><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">make: *** No rule to make target <span class="s1">&#39;plot-data.png&#39;</span>, needed by <span class="s1">&#39;paper.pdf&#39;</span>.  Stop.</span></span></code></pre></div></div>
+<p>哟，有意思，我们是<strong>有</strong>构建 <code>plot-data.png</code> 的规则的，但是这是一条模式规则。因为源文件<code>data.dat</code> 并不存在，因此 <code>make</code> 就会告诉您它不能构建 <code>plot-data.png</code>，让我们创建这些文件：</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$cat</span> paper.tex
+</span></span><span class="line"><span class="cl"><span class="se">\d</span>ocumentclass<span class="o">{</span>article<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="se">\u</span>sepackage<span class="o">{</span>graphicx<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="se">\b</span>egin<span class="o">{</span>document<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="se">\i</span>ncludegraphics<span class="o">[</span><span class="nv">scale</span><span class="o">=</span>0.65<span class="o">]{</span>plot-data.png<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="se">\e</span>nd<span class="o">{</span>document<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$cat</span> plot.py
+</span></span><span class="line"><span class="cl"><span class="c1">#!/usr/bin/env python</span>
+</span></span><span class="line"><span class="cl">import matplotlib
+</span></span><span class="line"><span class="cl">import matplotlib.pyplot as plt
+</span></span><span class="line"><span class="cl">import numpy as np
+</span></span><span class="line"><span class="cl">import argparse
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">parser</span> <span class="o">=</span> argparse.ArgumentParser<span class="o">()</span>
+</span></span><span class="line"><span class="cl">parser.add_argument<span class="o">(</span><span class="s1">&#39;-i&#39;</span>, <span class="nv">type</span><span class="o">=</span>argparse.FileType<span class="o">(</span><span class="s1">&#39;r&#39;</span><span class="o">))</span>
+</span></span><span class="line"><span class="cl">parser.add_argument<span class="o">(</span><span class="s1">&#39;-o&#39;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nv">args</span> <span class="o">=</span> parser.parse_args<span class="o">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">data</span> <span class="o">=</span> np.loadtxt<span class="o">(</span>args.i<span class="o">)</span>
+</span></span><span class="line"><span class="cl">plt.plot<span class="o">(</span>data<span class="o">[</span>:, 0<span class="o">]</span>, data<span class="o">[</span>:, 1<span class="o">])</span>
+</span></span><span class="line"><span class="cl">plt.savefig<span class="o">(</span>args.o<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">$cat</span> data.dat
+</span></span><span class="line"><span class="cl"><span class="m">1</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="m">2</span> <span class="m">2</span>
+</span></span><span class="line"><span class="cl"><span class="m">3</span> <span class="m">3</span>
+</span></span><span class="line"><span class="cl"><span class="m">4</span> <span class="m">4</span>
+</span></span><span class="line"><span class="cl"><span class="m">5</span> <span class="m">8</span></span></span></code></pre></div></div>
+<p>当我们执行 <code>make</code> 时会发生什么？</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">./plot.py -i data.dat -o plot-data.png
+</span></span><span class="line"><span class="cl">pdflatex paper.tex
+</span></span><span class="line"><span class="cl">... lots of output ...</span></span></code></pre></div></div>
+<p>看！PDF ！</p>
+<p>如果再次执行 <code>make</code> 会怎样？</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">make: <span class="s1">&#39;paper.pdf&#39;</span> is up to date.</span></span></code></pre></div></div>
+<p>什么事情都没做！为什么？好吧，因为它什么都不需要做。**make 回去检查之前的构建是因其依赖改变而需要被更新。**让我们试试修改 <code>paper.tex</code> 在重新执行 <code>make</code>：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nv">$vim</span> paper.tex <span class="c1"># edit</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$make</span>
+</span></span><span class="line"><span class="cl">pdflatex paper.tex ...</span></span></code></pre></div></div>
+<p>注意 <code>make</code> 并<strong>没有</strong>重新构建 <code>plot.py</code>，因为没必要；<code>plot-data.png</code> 的所有依赖都没有发生改变。</p>
+<p>更多用 make 构建目标参考 <a href="https://www.gnu.org/software/make/manual/html_node/Standard-Targets.html#Standard-Targets" target="_blank" rel="noopener noreffer ">Standard Targets (GNU make)</a>。</p>
+<ol>
+<li>大多数的 makefiles 都提供了 一个名为 <code>clean</code> 的构建目标，这并不是说我们会生成一个名为<code>clean</code>的文件，而是我们可以使用它清理文件，让 make 重新构建。您可以理解为它的作用是“撤销”所有构建步骤。在上面的 makefile 中为<code>paper.pdf</code>实现一个<code>clean</code> 目标。您需要将构建目标设置为<a href="https://www.gnu.org/software/make/manual/html_node/Phony-Targets.html" target="_blank" rel="noopener noreffer ">phony</a>。您也许会发现 <a href="https://git-scm.com/docs/git-ls-files" target="_blank" rel="noopener noreffer "><code>git ls-files</code></a> 子命令很有用。其他一些有用的 make 构建目标可以在<a href="https://www.gnu.org/software/make/manual/html_node/Standard-Targets.html#Standard-Targets" target="_blank" rel="noopener noreffer ">这里</a>找到；</li>
+<li>指定版本要求的方法很多，让我们学习一下 <a href="https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html" target="_blank" rel="noopener noreffer ">Rust 的构建系统</a>的依赖管理。大多数的包管理仓库都支持类似的语法。对于每种语法(尖号、波浪号、通配符、比较、乘积)，构建一种场景使其具有实际意义；</li>
+<li>Git 可以作为一个简单的 CI 系统来使用，在任何 git 仓库中的 <code>.git/hooks</code> 目录中，您可以找到一些文件（当前处于未激活状态），它们的作用和脚本一样，当某些事件发生时便可以自动执行。请编写一个<a href="https://git-scm.com/docs/githooks#_pre_commit" target="_blank" rel="noopener noreffer "><code>pre-commit</code></a> 钩子，它会在提交前执行 <code>make paper.pdf</code>并在出现构建失败的情况拒绝您的提交。这样做可以避免产生包含不可构建版本的提交信息；</li>
+<li>基于 <a href="https://pages.github.com/" target="_blank" rel="noopener noreffer ">GitHub Pages</a> 创建任意一个可以自动发布的页面。添加一个<a href="https://github.com/features/actions" target="_blank" rel="noopener noreffer ">GitHub Action</a> 到该仓库，对仓库中的所有 shell 文件执行 <code>shellcheck</code>(<a href="https://github.com/marketplace/actions/shellcheck" target="_blank" rel="noopener noreffer ">方法之一</a>)；</li>
+<li><a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/building-actions" target="_blank" rel="noopener noreffer ">构建属于您的</a> GitHub action，对仓库中所有的<code>.md</code>文件执行<a href="http://proselint.com/" target="_blank" rel="noopener noreffer "><code>proselint</code></a> 或 <a href="https://github.com/btford/write-good" target="_blank" rel="noopener noreffer "><code>write-good</code></a>，在您的仓库中开启这一功能，提交一个包含错误的文件看看该功能是否生效。</li>
+</ol>
+]]></description>
 </item>
 <item>
     <title>命令行环境使用指南</title>
@@ -117,7 +1376,364 @@
 <li>ssh 应用：命令行工具和 ssh 工具的使用-&gt;需要掌握一套高效的操作远端设备的流程</li>
 </ul>
 <h2 id="任务控制">任务控制</h2>
-<p>Shell 会使用 UNIX 提供的信号机制执行进程间通信。当一个进程接收到信号时，它会停止执行、处理该信号并基于信号传递的信息来改变其执行。就这一点而言，信号是一种<em>软件中断</em>。</p>]]></description>
+<p>Shell 会使用 UNIX 提供的信号机制执行进程间通信。当一个进程接收到信号时，它会停止执行、处理该信号并基于信号传递的信息来改变其执行。就这一点而言，信号是一种<em>软件中断</em>。</p>
+<h2 id="结束进程">结束进程</h2>
+<p>当我们输入 <code>Ctrl-C</code> 时，shell 会发送一个<code>SIGINT</code> 信号到进程。</p>
+<p>下面这个 Python 程序向您展示了捕获信号<code>SIGINT</code> 并忽略它的基本操作，它并不会让程序停止。为了停止这个程序，我们需要使用<code>SIGQUIT</code> 信号，通过输入<code>Ctrl-\</code>可以发送该信号。</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-python">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/env python import signal, time</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">handler</span><span class="p">(</span><span class="n">signum</span><span class="p">,</span> <span class="n">time</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">I got a SIGINT, but I am not stopping&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">signal</span><span class="o">.</span><span class="n">signal</span><span class="p">(</span><span class="n">signal</span><span class="o">.</span><span class="n">SIGINT</span><span class="p">,</span> <span class="n">handler</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">.1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;</span><span class="se">\r</span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span> </span></span></code></pre></div></div>
+<p>如果我们向这个程序发送两次 <code>SIGINT</code> ，然后再发送一次 <code>SIGQUIT</code>，程序会有什么反应？注意 <code>^</code> 是我们在终端输入<code>Ctrl</code> 时的表示形式：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ python sigint.py
+</span></span><span class="line"><span class="cl">24^C
+</span></span><span class="line"><span class="cl">I got a SIGINT, but I am not stopping
+</span></span><span class="line"><span class="cl">26^C
+</span></span><span class="line"><span class="cl">I got a SIGINT, but I am not stopping
+</span></span><span class="line"><span class="cl">30^\[1]    39913 quit       python sigint.pyƒ </span></span></code></pre></div></div>
+<p>尽管 <code>SIGINT</code> 和 <code>SIGQUIT</code> 都常常用来发出和终止程序相关的请求。<code>SIGTERM</code> 则是一个更加通用的、也更加优雅地退出信号。为了发出这个信号我们需要使用 <a href="https://www.man7.org/linux/man-pages/man1/kill.1.html" target="_blank" rel="noopener noreffer "><code>kill</code></a> 命令, 它的语法是： <code>kill -TERM &lt;PID&gt;</code>。</p>
+<h2 id="暂停和后台执行进程">暂停和后台执行进程</h2>
+<p>信号可以让进程做其他的事情，而不仅仅是终止它们。例如，<code>SIGSTOP</code> 会让进程暂停。在终端中，键入 <code>Ctrl-Z</code> 会让 shell 发送 <code>SIGTSTP</code> 信号，<code>SIGTSTP</code>是 Terminal Stop 的缩写（即<code>terminal</code>版本的SIGSTOP）。</p>
+<p>我们可以使用 <a href="https://www.man7.org/linux/man-pages/man1/fg.1p.html" target="_blank" rel="noopener noreffer "><code>fg</code></a> 或 <a href="http://man7.org/linux/man-pages/man1/bg.1p.html" target="_blank" rel="noopener noreffer "><code>bg</code></a> 命令恢复暂停的工作。它们分别表示在前台继续或在后台继续。</p>
+<p><a href="http://man7.org/linux/man-pages/man1/jobs.1p.html" target="_blank" rel="noopener noreffer "><code>jobs</code></a> 命令会列出当前终端会话中尚未完成的全部任务。您可以使用 pid 引用这些任务（也可以用 <a href="https://www.man7.org/linux/man-pages/man1/pgrep.1.html" target="_blank" rel="noopener noreffer "><code>pgrep</code></a> 找出 pid）。更加符合直觉的操作是您可以使用百分号 + 任务编号（<code>jobs</code> 会打印任务编号）来选取该任务。如果要选择最近的一个任务，可以使用 <code>$!</code> 这一特殊参数。</p>
+<p>还有一件事情需要掌握，那就是命令中的 <code>&amp;</code> 后缀可以让命令在直接在后台运行，这使得您可以直接在 shell 中继续做其他操作，不过它此时还是会使用 shell 的标准输出，这一点有时会比较恼人（这种情况可以使用 shell 重定向处理）。</p>
+<p>后台的进程仍然是您的终端进程的子进程，一旦您关闭终端（会发送另外一个信号<code>SIGHUP</code>），这些后台的进程也会终止。您可以使用 <a href="https://www.man7.org/linux/man-pages/man1/nohup.1.html" target="_blank" rel="noopener noreffer "><code>nohup</code></a> (一个用来忽略 <code>SIGHUP</code> 的封装) 来运行程序防止终端关闭的时候连同子进程一起关闭。</p>
+<p>针对已经运行的程序，可以使用<code>disown</code> 。</p>
+<p>除此之外，您可以使用终端多路复用器来实现，下一章节我们会进行详细地探讨。</p>
+<h3 id="例子">例子</h3>
+<p>下面这个简单的会话中展示来了些概念的应用。</p>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ sleep <span class="m">1000</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 让已经在运行的进程转到后台运行，您可以键入`Ctrl-Z`</span>
+</span></span><span class="line"><span class="cl">^Z
+</span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">]</span>  + <span class="m">18653</span> suspended  sleep <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 在后台运行，且终端关闭不受影响</span>
+</span></span><span class="line"><span class="cl">$ nohup sleep <span class="m">2000</span> <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2<span class="o">]</span> <span class="m">18745</span>
+</span></span><span class="line"><span class="cl">appending output to nohup.out
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 列出当前终端会话中尚未完成的全部任务</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">jobs</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">]</span>  + suspended  sleep <span class="m">1000</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2<span class="o">]</span>  - running    nohup sleep <span class="m">2000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 继续执行子进程1</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">bg</span> %1
+</span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">]</span>  - <span class="m">18653</span> continued  sleep <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="nb">jobs</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">]</span>  - running    sleep <span class="m">1000</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2<span class="o">]</span>  + running    nohup sleep <span class="m">2000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 停止进程1</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">kill</span> -STOP %1
+</span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">]</span>  + <span class="m">18653</span> suspended <span class="o">(</span>signal<span class="o">)</span>  sleep <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="nb">jobs</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">]</span>  + suspended <span class="o">(</span>signal<span class="o">)</span>  sleep <span class="m">1000</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2<span class="o">]</span>  - running    nohup sleep <span class="m">2000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 终止进程1</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">kill</span> -SIGHUP %1
+</span></span><span class="line"><span class="cl"><span class="o">[</span>1<span class="o">]</span>  + <span class="m">18653</span> hangup     sleep <span class="m">1000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="nb">jobs</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2<span class="o">]</span>  + running    nohup sleep <span class="m">2000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 终止进程2，不受影响</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">kill</span> -SIGHUP %2
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="nb">jobs</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2<span class="o">]</span>  + running    nohup sleep <span class="m">2000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># kill -SIGTERM</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">kill</span> %2
+</span></span><span class="line"><span class="cl"><span class="o">[</span>2<span class="o">]</span>  + <span class="m">18745</span> terminated  nohup sleep <span class="m">2000</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ <span class="nb">jobs</span> </span></span></code></pre></div></div>
+<h2 id="信号">信号</h2>
+<p><code>SIGKILL</code> 是一个特殊的信号，它不能被进程捕获并且它会马上结束该进程。不过这样做会有一些副作用，例如留下孤儿进程。</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Signal_%28IPC%29" target="_blank" rel="noopener noreffer ">wiki-Signal</a></li>
+<li><a href="https://www.man7.org/linux/man-pages/man7/signal.7.html" target="_blank" rel="noopener noreffer "><code>man signal</code></a></li>
+<li><code>kill -l</code> 来获取更多关于信号的信息。</li>
+</ul>
+<h2 id="终端多路复用">终端多路复用</h2>
+<p>当您在使用命令行时，您通常会希望同时执行多个任务。举例来说，您可以想要同时运行您的编辑器，并在终端的另外一侧执行程序。尽管再打开一个新的终端窗口也能达到目的，使用终端多路复用器则是一种更好的办法。</p>
+<p>像 <a href="https://www.man7.org/linux/man-pages/man1/tmux.1.html" target="_blank" rel="noopener noreffer "><code>tmux</code></a> 这类的终端多路复用器可以允许我们基于面板和标签分割出多个终端窗口，这样您便可以同时与多个 shell 会话进行交互。</p>
+<p>不仅如此，终端多路复用使我们可以分离当前终端会话并在将来重新连接。</p>
+<h2 id="tmux">tmux</h2>
+<p>现在最流行的终端多路器是 <a href="https://www.man7.org/linux/man-pages/man1/tmux.1.html" target="_blank" rel="noopener noreffer "><code>tmux</code></a>。<code>tmux</code> 是一个高度可定制的工具，您可以使用相关快捷键创建多个标签页并在它们间导航。</p>
+<p><code>tmux</code> 的快捷键需要我们掌握，它们都是类似 <code>&lt;C-b&gt; x</code> 这样的组合，即需要先按下<code>Ctrl+b</code>，松开后再按下 <code>x</code>。<code>tmux</code> 中对象的继承结构如下：</p>
+<ul>
+<li><strong>会话</strong> - 每个会话都是一个独立的工作区，其中包含一个或多个窗口
+<ul>
+<li><code>tmux</code> 开始一个新的会话</li>
+<li><code>tmux new -s NAME</code> 以指定名称开始一个新的会话</li>
+<li><code>tmux ls</code> 列出当前所有会话</li>
+<li>在 <code>tmux</code> 中输入 <code>&lt;C-b&gt; d</code> ，将当前会话分离</li>
+<li><code>tmux a</code> 重新连接最后一个会话。您也可以通过 <code>-t</code> 来指定具体的会话</li>
+</ul>
+</li>
+<li><strong>窗口</strong> - 相当于编辑器或是浏览器中的标签页，从视觉上将一个会话分割为多个部分
+<ul>
+<li><code>&lt;C-b&gt; c</code> 创建一个新的窗口，使用 <code>&lt;C-d&gt;</code>关闭</li>
+<li><code>&lt;C-b&gt; N</code> 跳转到第 <em>N</em> 个窗口，注意每个窗口都是有编号的</li>
+<li><code>&lt;C-b&gt; p</code> 切换到前一个窗口</li>
+<li><code>&lt;C-b&gt; n</code> 切换到下一个窗口</li>
+<li><code>&lt;C-b&gt; ,</code> 重命名当前窗口</li>
+<li><code>&lt;C-b&gt; w</code> 列出当前所有窗口</li>
+</ul>
+</li>
+<li><strong>面板</strong> - 像 vim 中的分屏一样，面板使我们可以在一个屏幕里显示多个 shell
+<ul>
+<li><code>&lt;C-b&gt; &quot;</code> 水平分割</li>
+<li><code>&lt;C-b&gt; %</code> 垂直分割</li>
+<li><code>&lt;C-b&gt; &lt;方向&gt;</code> 切换到指定方向的面板，&lt;方向&gt; 指的是键盘上的方向键</li>
+<li><code>&lt;C-b&gt; z</code> 切换当前面板的缩放</li>
+<li><code>&lt;C-b&gt; [</code> 开始往回卷动屏幕。您可以按下空格键来开始选择，回车键复制选中的部分</li>
+<li><code>&lt;C-b&gt; &lt;空格&gt;</code> 在不同的面板排布间切换</li>
+</ul>
+</li>
+</ul>
+<h2 id="扩展阅读">扩展阅读</h2>
+<ul>
+<li><a href="https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/" target="_blank" rel="noopener noreffer ">tmux 快速入门教程</a> 是一份 <code>tmux</code> 快速入门教程</li>
+<li><a href="https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/" target="_blank" rel="noopener noreffer ">自定义 <code>tmux</code></a></li>
+<li><a href="http://linuxcommand.org/lc3_adv_termmux.php" target="_blank" rel="noopener noreffer ">advance tmux</a> 文章则更加详细，它包含了 <code>screen</code> 命令</li>
+<li><a href="https://www.man7.org/linux/man-pages/man1/screen.1.html" target="_blank" rel="noopener noreffer "><code>screen</code></a> 大多数 UNIX 系统中都默认安装有screen。</li>
+</ul>
+<h2 id="配置文件dotfiles">配置文件（Dotfiles）</h2>
+<p>很多程序的配置都是通过纯文本格式的被称作<em>点文件</em>的配置文件来完成的。</p>
+<p>实际上，很多程序都要求您在 shell 的配置文件中包含一行类似 <code>export PATH=&quot;$PATH:/path/to/program/bin&quot;</code> 的命令，这样才能确保这些程序能够被 shell 找到。</p>
+<p>还有一些其他的工具也可以通过<em>点文件</em>进行配置：</p>
+<ul>
+<li><code>bash</code> - <code>~/.bashrc</code>, <code>~/.bash_profile</code></li>
+<li><code>git</code> - <code>~/.gitconfig</code></li>
+<li><code>vim</code> - <code>~/.vimrc</code> 和 <code>~/.vim</code> 目录</li>
+<li><code>ssh</code> - <code>~/.ssh/config</code></li>
+<li><code>tmux</code> - <code>~/.tmux.conf</code></li>
+</ul>
+<p>我们应该如何管理这些配置文件呢，它们应该在它们的文件夹下，并使用版本控制系统进行管理，然后通过脚本将其 <strong>符号链接</strong> 到需要的地方。</p>
+<p>配置文件中需要放些什么？</p>
+<p>您可以通过在线文档和<a href="https://en.wikipedia.org/wiki/Man_page" target="_blank" rel="noopener noreffer ">帮助手册</a>了解所使用工具的设置项。</p>
+<p>另一个方法是在网上搜索有关特定程序的文章，作者们在文章中会分享他们的配置。</p>
+<p>还有一种方法就是直接浏览其他人的配置文件：您可以在这里找到无数的<a href="https://github.com/search?o=desc&amp;q=dotfiles&amp;s=stars&amp;type=Repositories" target="_blank" rel="noopener noreffer ">dotfiles 仓库</a> —— 其中最受欢迎的那些可以在<a href="https://github.com/mathiasbynens/dotfiles" target="_blank" rel="noopener noreffer ">这里</a>找到（我们建议您不要直接复制别人的配置）。<a href="https://dotfiles.github.io/" target="_blank" rel="noopener noreffer ">这里</a> 也有一些非常有用的资源。</p>
+<h2 id="可移植性">可移植性</h2>
+<p>配置文件的一个常见的痛点是它可能并不能在多种设备、多种Shell上生效。一下一些技巧可以轻松达成这些目的。</p>
+<h3 id="配置文件-if-语句">配置文件 if 语句</h3>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">if [[ &#34;$(uname)&#34; == &#34;Linux&#34; ]]; then {do_something}; fi
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 使用和 shell 相关的配置时先检查当前 shell 类型
+</span></span><span class="line"><span class="cl">if [[ &#34;$SHELL&#34; == &#34;zsh&#34; ]]; then {do_something}; fi
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 您也可以针对特定的设备进行配置
+</span></span><span class="line"><span class="cl">if [[ &#34;$(hostname)&#34; == &#34;myServer&#34; ]]; then {do_something}; fi </span></span></code></pre></div></div>
+<h3 id="配置文件支持-include-功能">配置文件支持 include 功能</h3>
+<p>。例如：<code>~/.gitconfig</code> 可以这样编写：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[include]
+</span></span><span class="line"><span class="cl">    path = ~/.gitconfig_local </span></span></code></pre></div></div>
+<p>然后我们可以在日常使用的设备上创建配置文件 <code>~/.gitconfig_local</code> 来包含与该设备相关的特定配置。</p>
+<p>在不同的程序之间共享某些配置。例如，在 <code>bash</code> 和 <code>zsh</code> 中同时启用一些别名，您可以把它们写在 <code>.aliases</code> 里，然后在这两个 shell 里应用：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># Test if ~/.aliases exists and source it
+</span></span><span class="line"><span class="cl">if [ -f ~/.aliases ]; then source ~/.aliases
+</span></span><span class="line"><span class="cl">fi </span></span></code></pre></div></div>
+<h2 id="别名">别名</h2>
+<p>输入一长串包含许多选项的命令会非常麻烦。因此，大多数 shell 都支持设置别名。shell 的别名相当于一个长命令的缩写，shell 会自动将其替换成原本的命令。例如，bash 中的别名语法如下：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">alias alias_name=&#34;command_to_alias arg1 arg2&#34; </span></span></code></pre></div></div>
+<p>注意， <code>=</code>两边是没有空格的，因为 <a href="https://www.man7.org/linux/man-pages/man1/alias.1p.html" target="_blank" rel="noopener noreffer "><code>alias</code></a> 是一个 shell 命令，它只接受一个参数。</p>
+<h3 id="例子-1">例子</h3>
+<div class="code-block code-line-numbers" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># 创建常用命令的缩写
+</span></span><span class="line"><span class="cl">alias ll=&#34;ls -lh&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 能够少输入很多
+</span></span><span class="line"><span class="cl">alias gs=&#34;git status&#34;
+</span></span><span class="line"><span class="cl">alias gc=&#34;git commit&#34;
+</span></span><span class="line"><span class="cl">alias v=&#34;vim&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 手误打错命令也没关系
+</span></span><span class="line"><span class="cl">alias sl=ls
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 重新定义一些命令行的默认行为
+</span></span><span class="line"><span class="cl">alias mv=&#34;mv -i&#34;           # -i prompts before overwrite
+</span></span><span class="line"><span class="cl">alias mkdir=&#34;mkdir -p&#34;     # -p make parent dirs as needed
+</span></span><span class="line"><span class="cl">alias df=&#34;df -h&#34;           # -h prints human readable format
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 别名可以组合使用
+</span></span><span class="line"><span class="cl">alias la=&#34;ls -A&#34;
+</span></span><span class="line"><span class="cl">alias lla=&#34;la -l&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 在忽略某个别名
+</span></span><span class="line"><span class="cl">\ls
+</span></span><span class="line"><span class="cl"># 或者禁用别名
+</span></span><span class="line"><span class="cl">unalias la
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># 获取别名的定义
+</span></span><span class="line"><span class="cl">alias ll
+</span></span><span class="line"><span class="cl"># 会打印 ll=&#39;ls -lh&#39; </span></span></code></pre></div></div>
+<p>值得注意的是，在默认情况下 shell 并不会保存别名。为了让别名持续生效，您需要将配置放进 shell 的启动文件里，像是<code>.bashrc</code> 或 <code>.zshrc</code>。</p>
+<h2 id="远端设备">远端设备</h2>
+<p>对于程序员来说，在他们的日常工作中通过安全 shell（SSH）使用远程服务器已经非常普遍了。</p>
+<h2 id="执行命令">执行命令</h2>
+<p><code>ssh</code> 的一个经常被忽视的特性是它可以直接远程执行命令。 <code>ssh foobar@server ls</code> 可以直接在用foobar的命令下执行 <code>ls</code> 命令。</p>
+<p>想要配合管道来使用也可以， <code>ssh foobar@server ls | grep PATTERN</code> 会在本地查询远端 <code>ls</code> 的输出而 <code>ls | ssh foobar@server grep PATTERN</code> 会在远端对本地 <code>ls</code> 输出的结果进行查询。</p>
+<h2 id="ssh-密钥">SSH 密钥</h2>
+<p>基于密钥的验证机制使用了密码学中的公钥，我们只需要向服务器证明客户端持有对应的私钥，而不需要公开其私钥。这样您就可以避免每次登录都输入密码的麻烦了秘密就可以登录。不过，私钥(通常是 <code>~/.ssh/id_rsa</code> 或者 <code>~/.ssh/id_ed25519</code>) 等效于您的密码，所以一定要好好保存它。</p>
+<h3 id="密钥生成">密钥生成</h3>
+<p>使用 <a href="http://man7.org/linux/man-pages/man1/ssh-keygen.1.html" target="_blank" rel="noopener noreffer "><code>ssh-keygen</code></a> 命令可以生成一对密钥：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 </span></span></code></pre></div></div>
+<p>如果您曾经配置过使用 SSH 密钥推送到 GitHub，那么可能您已经完成了<a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="noopener noreffer ">这里</a> 介绍的这些步骤，并且已经有了一个可用的密钥对。要检查您是否持有密码并验证它，您可以运行 <code>ssh-keygen -y -f /path/to/key</code>.</p>
+<h3 id="基于密钥的认证机制">基于密钥的认证机制</h3>
+<p><code>ssh</code> 会查询 <code>.ssh/authorized_keys</code> 来确认那些用户可以被允许登录。您可以通过下面的命令将一个公钥拷贝到这里：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cat .ssh/id_ed25519 | ssh foobar@remote &#39;cat &gt;&gt; ~/.ssh/authorized_keys&#39; </span></span></code></pre></div></div>
+<p>如果支持 <code>ssh-copy-id</code> 的话，可以使用下面这种更简单的解决方案：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-copy-id -i .ssh/id_ed25519.pub foobar@remote </span></span></code></pre></div></div>
+<h2 id="通过-ssh-复制文件">通过 SSH 复制文件</h2>
+<p>使用 ssh 复制文件有很多方法：</p>
+<ul>
+<li><code>ssh+tee</code>, 最简单的方法是执行 <code>ssh</code> 命令，然后通过这样的方法利用标准输入实现 <code>cat localfile | ssh remote_server tee serverfile</code>。回忆一下，<a href="https://www.man7.org/linux/man-pages/man1/tee.1.html" target="_blank" rel="noopener noreffer "><code>tee</code></a> 命令会将标准输出写入到一个文件；</li>
+<li><a href="https://www.man7.org/linux/man-pages/man1/scp.1.html" target="_blank" rel="noopener noreffer "><code>scp</code></a> ：当需要拷贝大量的文件或目录时，使用<code>scp</code> 命令则更加方便，因为它可以方便的遍历相关路径。语法如下：<code>scp path/to/local_file remote_host:path/to/remote_file</code>；</li>
+<li><a href="https://www.man7.org/linux/man-pages/man1/rsync.1.html" target="_blank" rel="noopener noreffer "><code>rsync</code></a> 对 <code>scp</code> 进行了改进，它可以检测本地和远端的文件以防止重复拷贝。它还可以提供一些诸如符号连接、权限管理等精心打磨的功能。甚至还可以基于 <code>--partial</code>标记实现断点续传。<code>rsync</code> 的语法和<code>scp</code>类似；</li>
+</ul>
+<h2 id="端口转发">端口转发</h2>
+<p>很多情况下我们都会遇到软件需要监听特定设备的端口。如果是在您的本机，可以使用 <code>localhost:PORT</code> 或 <code>127.0.0.1:PORT</code>。但是如果需要监听远程服务器的端口该如何操作呢？这种情况下远端的端口并不会直接通过网络暴露给您。</p>
+<p>此时就需要进行 <em>端口转发</em>。端口转发有两种，一种是本地端口转发和远程端口转发（参见下图，该图片引用自这篇<a href="https://unix.stackexchange.com/questions/115897/whats-ssh-port-forwarding-and-whats-the-difference-between-ssh-local-and-remot" target="_blank" rel="noopener noreffer ">StackOverflow 文章</a>）中的图片。</p>
+<p><strong>本地端口转发</strong> </p>
+<p><strong>远程端口转发</strong> </p>
+<p>常见的情景是使用本地端口转发，即远端设备上的服务监听一个端口，而您希望在本地设备上的一个端口建立连接并转发到远程端口上。例如，我们在远端服务器上运行 Jupyter notebook 并监听 <code>8888</code> 端口。 然后，建立从本地端口 <code>9999</code> 的转发，使用 <code>ssh -L 9999:localhost:8888 foobar@remote_server</code> 。这样只需要访问本地的 <code>localhost:9999</code> 即可。</p>
+<h2 id="ssh-配置">SSH 配置</h2>
+<p>我们已经介绍了很多参数。为它们创建一个别名是个好想法，我们可以这样做：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">alias my_server=&#34;ssh -i ~/.id_ed25519 --port 2222 -L 9999:localhost:8888 foobar@remote_server </span></span></code></pre></div></div>
+<p>不过，更好的方法是使用 <code>~/.ssh/config</code>.</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Host vm
+</span></span><span class="line"><span class="cl">    User foobar
+</span></span><span class="line"><span class="cl">    HostName 172.16.174.141
+</span></span><span class="line"><span class="cl">    Port 2222
+</span></span><span class="line"><span class="cl">    IdentityFile ~/.ssh/id_ed25519
+</span></span><span class="line"><span class="cl">    LocalForward 9999 localhost:8888
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">## 在配置文件中也可以使用通配符
+</span></span><span class="line"><span class="cl">Host *.mit.edu
+</span></span><span class="line"><span class="cl">    User foobaz </span></span></code></pre></div></div>
+<p>这么做的好处是，使用 <code>~/.ssh/config</code> 文件来创建别名，类似 <code>scp</code>、<code>rsync</code>和<code>mosh</code>的这些命令都可以读取这个配置并将设置转换为对应的命令行选项。</p>
+<p>注意，<code>~/.ssh/config</code> 文件也可以被当作配置文件，而且一般情况下也是可以被导入其他配置文件的。不过，如果您将其公开到互联网上，那么其他人都将会看到您的服务器地址、用户名、开放端口等等。这些信息可能会帮助到那些企图攻击您系统的黑客，所以请务必三思。</p>
+<p>服务器侧的配置通常放在 <code>/etc/ssh/sshd_config</code>。您可以在这里配置免密认证、修改 ssh 端口、开启 X11 转发等等。 您也可以为每个用户单独指定配置。</p>
+<h2 id="杂项">杂项</h2>
+<p>连接远程服务器的一个常见痛点是遇到由关机、休眠或网络环境变化导致的掉线。如果连接的延迟很高也很让人讨厌。<a href="https://mosh.org/" target="_blank" rel="noopener noreffer ">Mosh</a>（即 mobile shell ）对 ssh 进行了改进，它允许连接漫游、间歇连接及智能本地回显。</p>
+<p>有时将一个远端文件夹挂载到本地会比较方便， <a href="https://github.com/libfuse/sshfs" target="_blank" rel="noopener noreffer ">sshfs</a> 可以将远端服务器上的一个文件夹挂载到本地，然后您就可以使用本地的编辑器了。</p>
+<h2 id="shell--框架--模拟器">Shell &amp; 框架 &amp; 模拟器</h2>
+<h2 id="shell">Shell</h2>
+<p>在 shell 工具和脚本那节课中我们已经介绍了 <code>bash</code> shell，因为它是目前最通用的 shell，大多数的系统都将其作为默认 shell。但是，它并不是唯一的选项。</p>
+<p>例如，<code>zsh</code> shell 是 <code>bash</code> 的超集并提供了一些方便的功能：</p>
+<ul>
+<li>智能替换, <code>**</code></li>
+<li>行内替换/通配符扩展</li>
+<li>拼写纠错</li>
+<li>更好的 tab 补全和选择</li>
+<li>路径展开 (<code>cd /u/lo/b</code> 会被展开为 <code>/usr/local/bin</code>)</li>
+</ul>
+<h2 id="框架">框架</h2>
+<p><strong>框架</strong> 也可以改进您的 shell。比较流行的通用框架包括<a href="https://github.com/sorin-ionescu/prezto" target="_blank" rel="noopener noreffer ">prezto</a> 或 <a href="https://ohmyz.sh/" target="_blank" rel="noopener noreffer ">oh-my-zsh</a>。还有一些更精简的框架，它们往往专注于某一个特定功能，例如<a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="noopener noreffer ">zsh 语法高亮</a> 或 <a href="https://github.com/zsh-users/zsh-history-substring-search" target="_blank" rel="noopener noreffer ">zsh 历史子串查询</a>。 像 <a href="https://fishshell.com/" target="_blank" rel="noopener noreffer ">fish</a> 这样的 shell 包含了很多用户友好的功能，其中一些特性包括：</p>
+<ul>
+<li>向右对齐</li>
+<li>命令语法高亮</li>
+<li>历史子串查询</li>
+<li>基于手册页面的选项补全</li>
+<li>更智能的自动补全</li>
+<li>提示符主题</li>
+</ul>
+<p>需要注意的是，使用这些框架可能会降低您 shell 的性能，尤其是如果这些框架的代码没有优化或者代码过多。您随时可以测试其性能或禁用某些不常用的功能来实现速度与功能的平衡。</p>
+<h2 id="终端模拟器">终端模拟器</h2>
+<p>和自定义 shell 一样，花点时间选择适合您的 <strong>终端模拟器</strong>并进行设置是很有必要的。有许多终端模拟器（例如iTerm2）可供您选择（这里有一些关于它们之间<a href="https://anarc.at/blog/2018-04-12-terminal-emulators-1/" target="_blank" rel="noopener noreffer ">比较</a>的信息）</p>
+<p>您会花上很多时间在使用终端上，因此研究一下终端的设置是很有必要的，您可以从下面这些方面来配置您的终端：</p>
+<ul>
+<li>字体选择</li>
+<li>彩色主题</li>
+<li>快捷键</li>
+<li>标签页/面板支持</li>
+<li>回退配置</li>
+<li>性能（像 <a href="https://github.com/jwilm/alacritty" target="_blank" rel="noopener noreffer ">Alacritty</a> 或者 <a href="https://sw.kovidgoyal.net/kitty/" target="_blank" rel="noopener noreffer ">kitty</a> 这种比较新的终端，它们支持GPU加速）。</li>
+</ul>
+<h2 id="more">More</h2>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>开始使用多路复用</li>
+<li>继续维护dotfiles</li>
+<li>总结一套操作远端设备的流程，并不断优化升级</li>
+</ul>
+]]></description>
 </item>
 <item>
     <title>Shell 命令行数据处理</title>
@@ -126,7 +1742,139 @@
     <author>夜航星</author>
     <guid>https://austinxt.github.io/2023-01-11-data-analysis/</guid>
     <description><![CDATA[<p>Shell 命令行数据处理是在 Unix 系统处理大数据绕不过去的技能。</p>
-<p>学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并且记录例子。</p>]]></description>
+<p>学习需要和场景相结合，在熟悉 awk、paste 等工具的基础上，根据实际需求迭代工具集，并且记录例子。</p>
+<h2 id="数据整理">数据整理</h2>
+<h3 id="sed">sed</h3>
+<p><code>sed</code> 的正则表达式有些时候是比较奇怪的，它需要你在这些模式前添加<code>\</code>才能使其具有特殊含义。或者，您也可以添加<code>-E</code>选项来支持这些匹配。</p>
+<p>查找碰撞服务器的用户</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh myserver journalctl
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> grep sshd
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> grep <span class="s2">&#34;Disconnected from&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> sed -E <span class="s1">&#39;s/.*Disconnected from (invalid |authenticating )?user (.*) [^ ]+ port [0-9]+( \[preauth\])?$/\2/&#39;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> sort <span class="p">|</span> uniq -c
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> sort -nk1,1 <span class="p">|</span> tail -n10
+</span></span><span class="line"><span class="cl"> <span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span> <span class="p">|</span> paste -sd,</span></span></code></pre></div></div>
+<ul>
+<li><code>sort</code> 会对其输入数据进行排序，默认情况下是按照字典序排序</li>
+<li><code>uniq -c</code> 会把连续出现的行折叠为一行并使用出现次数作为前缀</li>
+<li><code>sort -k1,1</code> 则表示“仅基于以空格分割的第一列进行排序”。<code>,n</code> 部分表示“仅排序到第 n 个部分”，默认情况是到行尾</li>
+<li><code>awk '{print $2}'</code> 对于每一行文本，打印其第二个部分，也就是用户名</li>
+<li><code>paste</code>命令来合并行(<code>-s</code>)，并指定一个分隔符进行分割 (<code>-d</code>)</li>
+</ul>
+<h3 id="awk">awk</h3>
+<p><code>awk</code> 其实是一种编程语言，只不过它碰巧非常善于处理文本。</p>
+<p><code>awk</code> 程序接受一个模式串（可选），以及一个代码块，指定当模式匹配时应该做何种操作。默认当模式串即匹配所有行（上面命令中当用法）。 在代码块中，<code>$0</code> 表示整行的内容，<code>$1</code> 到 <code>$n</code> 为一行中的 n 个区域，区域的分割基于 <code>awk</code> 的域分隔符（默认是空格，可以通过<code>-F</code>来修改）。</p>
+<p>既然 <code>awk</code> 是一种编程语言，那么则可以这样：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">BEGIN { rows = 0 }
+</span></span><span class="line"><span class="cl">$1 == 1 &amp;&amp; $2 ~ /^c[^
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> ]*e$/ { rows += $1 }
+</span></span><span class="line"><span class="cl">END { print rows }</span></span></code></pre></div></div>
+<p><code>BEGIN</code> 也是一种模式，它会匹配输入的开头（ <code>END</code> 则匹配结尾）。然后，对每一行第一个部分进行累加，最后将结果输出。事实上，我们完全可以抛弃 <code>grep</code> 和 <code>sed</code> ，因为 <code>awk</code> 就可以<a href="https://backreference.org/2010/02/10/idiomatic-awk" target="_blank" rel="noopener noreffer ">解决所有问题</a>。</p>
+<h2 id="数据分析">数据分析</h2>
+<h3 id="计算">计算</h3>
+<p><code>paste</code> 将每行的数字加起来，<code>bc -l</code> 计算公式</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> | paste -sd+ | bc -l</span></span></code></pre></div></div>
+<h3 id="统计">统计</h3>
+<p>R 也是一种编程语言，它非常适合被用来进行数据分析和<a href="https://ggplot2.tidyverse.org/" target="_blank" rel="noopener noreffer ">绘制图表</a>。这里我们不会讲的特别详细， 您只需要知道<code>summary</code> 可以打印某个向量的统计结果。我们将输入的一系列数据存放在一个向量后，利用 R 语言就可以得到我们想要的统计数据。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh myserver journalctl
+</span></span><span class="line"><span class="cl"> | grep sshd
+</span></span><span class="line"><span class="cl"> | grep &#34;Disconnected from&#34;
+</span></span><span class="line"><span class="cl"> | sed -E &#39;s/.*Disconnected from (invalid |authenticating )?user (.*) [^ ]+ port [0-9]+( \[preauth\])?$/\2/&#39;
+</span></span><span class="line"><span class="cl"> | sort | uniq -c
+</span></span><span class="line"><span class="cl"> | awk &#39;{print $1}&#39; | R --slave -e &#39;x &lt;- scan(file=&#34;stdin&#34;, quiet=TRUE); summary(x)&#39;</span></span></code></pre></div></div>
+<h3 id="绘图">绘图</h3>
+<h3 id="整理二进制数据">整理二进制数据</h3>
+<p>虽然到目前为止我们的讨论都是基于文本数据，但对于二进制文件其实同样有用。例如我们可以用 ffmpeg 从相机中捕获一张图片，将其转换成灰度图后通过 SSH 将压缩后的文件发送到远端服务器，并在那里解压、存档并显示。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -loglevel panic -i /dev/video0 -frames 1 -f image2 -
+</span></span><span class="line"><span class="cl"> | convert - -colorspace gray -
+</span></span><span class="line"><span class="cl"> | gzip
+</span></span><span class="line"><span class="cl"> | ssh mymachine &#39;gzip -d | tee copy.jpg | env DISPLAY=:0 feh -&#39;</span></span></code></pre></div></div>
+<h3 id="其他类型文件处理">其他类型文件处理</h3>
+<p>如果获取的是 HTML 数据，那么<a href="https://github.com/EricChiang/pup" target="_blank" rel="noopener noreffer "><code>pup</code></a>可能会有帮助。</p>
+<p>对于 JSON 类型的数据，可以试试<a href="https://stedolan.github.io/jq/" target="_blank" rel="noopener noreffer "><code>jq</code></a>。</p>
+<h2 id="tip">Tip</h2>
+<h3 id="在远端处理大数据">在远端处理大数据</h3>
+<p>先在远端机器上过滤文本内容，然后再将结果传输到本机。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 分页器</span>
+</span></span><span class="line"><span class="cl">ssh myserver <span class="s1">&#39;journalctl | grep sshd | grep &#34;Disconnected from&#34;&#39;</span> <span class="p">|</span> less
+</span></span><span class="line"><span class="cl"><span class="c1"># 重定向</span>
+</span></span><span class="line"><span class="cl">ssh myserver <span class="s1">&#39;journalctl | grep sshd | grep &#34;Disconnected from&#34;&#39;</span> &gt; ssh.log</span></span></code></pre></div></div>
+<h3 id="利用数据整理来确定参数">利用数据整理来确定参数</h3>
+<p>有时候您要利用数据整理技术从一长串列表里找出你所需要安装或移除的东西。我们之前讨论的相关技术配合 <code>xargs</code> 即可实现：</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">rustup</span> <span class="n">toolchain</span> <span class="n">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">nightly</span> <span class="o">|</span> <span class="n">grep</span> <span class="o">-</span><span class="n">vE</span> <span class="s2">&#34;nightly-x86&#34;</span> <span class="o">|</span> <span class="n">sed</span> <span class="s1">&#39;s/-x86.*//&#39;</span> <span class="o">|</span> <span class="n">xargs</span> <span class="n">rustup</span> <span class="n">toolchain</span> <span class="n">uninstall</span></span></span></code></pre></div></div>
+<h3 id="原地替换">原地替换</h3>
+<p>原地替换听上去很有诱惑力，例如： <code>sed s/REGEX/SUBSTITUTION/ input.txt &gt; input.txt</code>。但是这并不是一个明智的做法，为什么呢？还是说只有 <code>sed</code>是这样的? 查看 <code>man sed</code> 来完成这个问题。</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 表达式中后一个 input.txt会首先被清空，而且是发生在前的。所以前面一个input.txt在还没有被 sed 处理时已经为空了。</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 先备份文件</span>
+</span></span><span class="line"><span class="cl">sed -i.bak s/REGEX/SUBSTITUTION/ input.txt</span></span></code></pre></div></div>
+<h2 id="例子">例子</h2>
+<h3 id="统计字典">统计字典</h3>
+<p>统计 words 文件 (<code>/usr/share/dict/words</code>) 中包含至少三个<code>a</code> 且不以<code>'s</code> 结尾的单词个数。这些单词中，出现频率前三的末尾两个字母是什么？ <code>sed</code>的 <code>y</code>命令，或者 <code>tr</code> 程序也许可以帮你解决大小写的问题。共存在多少种词尾两字母组合？还有一个很 有挑战性的问题：哪个组合从未出现过？</p>
+<div class="code-block code-line-numbers open" style="counter-reset: code-block 0">
+    <div class="code-header language-bash">
+        <span class="code-title"><i class="arrow fas fa-angle-right fa-fw" aria-hidden="true"></i></span>
+        <span class="ellipses"><i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i></span>
+        <span class="copy" title="Copy to clipboard"><i class="far fa-copy fa-fw" aria-hidden="true"></i></span>
+    </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 共存在多少种字母组合</span>
+</span></span><span class="line"><span class="cl">cat /usr/share/dict/words <span class="p">|</span> grep -v <span class="s2">&#34;&#39;s</span>$<span class="s2">&#34;</span> <span class="p">|</span> grep -iE <span class="s2">&#34;^([^a]*a){3}.*</span>$<span class="s2">&#34;</span> <span class="p">|</span> wc -l
+</span></span><span class="line"><span class="cl"><span class="c1"># 哪些组合未出现过</span>
+</span></span><span class="line"><span class="cl">diff &lt;<span class="o">(</span>cat occurance.txt<span class="o">)</span> &lt;<span class="o">(</span>cat all.txt<span class="o">)</span> --unchanged-group-format<span class="o">=</span><span class="s1">&#39;&#39;</span> <span class="p">|</span> wc -l</span></span></code></pre></div></div>
+<h2 id="more">More</h2>
+<h3 id="todo">TODO</h3>
+<ul>
+<li>在实际场景中多使用多思考，熟悉并扩充工具</li>
+<li>记录实践策略</li>
+</ul>
+<h3 id="ref">Ref</h3>
+<ul>
+<li><a href="https://regexone.com/" target="_blank" rel="noopener noreffer ">RegexOne - Learn Regular Expressions - Lesson 1: An Introduction, and the ABCs</a></li>
+<li><a href="https://regex101.com/r/qqbZqh/2" target="_blank" rel="noopener noreffer "><strong>regex101: build, test, and debug regex</strong></a></li>
+<li><a href="https://www.regular-expressions.info/email.html" target="_blank" rel="noopener noreffer ">How to Find or Validate an Email Address</a></li>
+<li><a href="https://mathiasbynens.be/demo/url-regex" target="_blank" rel="noopener noreffer ">In search of the perfect URL validation regex</a></li>
+</ul>
+]]></description>
 </item>
 </channel>
 </rss>

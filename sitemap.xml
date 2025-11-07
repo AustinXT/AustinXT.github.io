@@ -2,13 +2,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://austinxt.github.io/categories/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://austinxt.github.io/posts/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://austinxt.github.io/tags/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://austinxt.github.io/2025-08-01-big-understandings/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://austinxt.github.io/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://austinxt.github.io/tags/%E5%AD%A6%E4%B9%A0%E5%85%A8%E5%B1%80%E8%AE%A4%E8%AF%86/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://austinxt.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://austinxt.github.io/categories/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/posts/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/tags/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/2025-08-01-big-understandings/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/tags/%E5%AD%A6%E4%B9%A0%E5%85%A8%E5%B1%80%E8%AE%A4%E8%AF%86/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://austinxt.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc><lastmod>2025-08-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/2024-10-30-install-window11-in-utm/</loc><lastmod>2024-10-30T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/categories/%E5%AE%9E%E6%93%8D%E8%AE%B0%E5%BD%95/</loc><lastmod>2024-10-30T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://austinxt.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc><lastmod>2024-10-30T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
