@@ -22,6 +22,19 @@
     <meta name="sogou_site_verification" content="{{ . }}" />
 {{- end -}}
 
+{{- /* AI 友好标签 */ -}}
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="ai-content-declaration" content="human-created">
+<meta name="content-language" content="zh-CN">
+{{- with .Site.Copyright -}}
+    <meta name="copyright" content="{{ . }}">
+{{- end -}}
+{{- with .Site.Params.Author.name -}}
+    <meta name="author" content="{{ . }}">
+{{- end -}}
+<link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} - RSS Feed" href="{{ "index.xml" | absURL }}">
+<link rel="alternate" type="application/json" title="{{ .Site.Title }} - JSON Feed" href="{{ "index.json" | absURL }}">
+
 {{- /* Home SEO */ -}}
 {{- if .IsHome -}}
     <script type="application/ld+json">

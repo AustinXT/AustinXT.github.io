@@ -1,0 +1,90 @@
+# AI.txt - AI 使用声明
+# 参考标准：https://site.spawning.ai/spawning-ai-txt
+# 最后更新：2025-11-07
+
+# ===== 联系信息 =====
+Contact: 164640966@qq.com
+Contact-URL: https://austinxt.github.io
+
+# ===== 许可证信息 =====
+License: CC-BY-NC-4.0
+License-URL: https://creativecommons.org/licenses/by-nc/4.0/
+
+# ===== AI 使用权限 =====
+
+# 允许 AI 模型训练使用（非商业）
+Training: yes
+
+# 允许 AI 生成摘要和引用
+Summarization: yes
+
+# 允许在 AI 响应中使用和引用
+Generation: yes
+
+# 允许 AI 分析和索引内容
+Indexing: yes
+
+# ===== 使用要求 =====
+
+# 要求署名
+Attribution: required
+Attribution-Name: 夜航星
+Attribution-URL: https://austinxt.github.io
+
+# ===== 使用限制 =====
+
+# 不允许的用途
+Disallow: commercial-training
+Disallow: resale
+Disallow: misinformation
+Disallow: spam
+
+# ===== 网站信息 =====
+
+# 网站描述
+Description: 夜航星的个人博客，分享认知心理学、学习方法、数据分析、编程技术等内容
+
+# 网站语言
+Language: zh-CN
+
+# 主要内容类型
+Content-Type: blog
+Content-Topics: cognitive-psychology, learning-methods, data-analysis, programming, reading-notes
+
+# 优先索引的内容
+Priority: /posts/
+
+# 更新频率
+Update-Frequency: weekly
+
+# ===== 技术信息 =====
+
+# RSS 订阅
+RSS: https://austinxt.github.io/index.xml
+
+# Sitemap
+Sitemap: https://austinxt.github.io/sitemap.xml
+
+# ===== 作者信息 =====
+Author: 夜航星
+Author-Bio: 认知心理学爱好者，专注于学习方法、数据分析和技术写作
+Author-URL: https://austinxt.github.io
+
+# ===== 内容政策 =====
+
+# 内容创作方式
+Content-Creation: human-created
+
+# 内容质量承诺
+Content-Quality: original, researched, cited
+
+# 更新政策
+Content-Updates: regular
+
+# ===== 备注 =====
+# 本网站欢迎 AI 引擎索引和引用内容
+# 要求：
+# 1. 保持原文链接和作者署名
+# 2. 尊重 CC BY-NC 4.0 许可证
+# 3. 不得用于商业训练或转售
+# 4. 引用时提供准确的来源信息
