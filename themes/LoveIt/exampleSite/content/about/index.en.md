@@ -13,7 +13,7 @@ math:
 
 {{< style "img { height: 1.25rem; }" >}}
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/releases)
-[![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.128.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/dillonzq/LoveIt?style=social)](https://github.com/dillonzq/LoveIt)
 [![GitHub forks](https://img.shields.io/github/forks/dillonzq/LoveIt?style=social)](https://github.com/dillonzq/LoveIt/fork)
@@ -25,9 +25,9 @@ math:
 
 ![Hugo Theme LoveIt](/images/Apple-Devices-Preview.png "Hugo Theme LoveIt")
 
-### Features
+## Features
 
-#### Performance and SEO
+### Performance and SEO
 
 * :(fas fa-rocket fa-fw): Optimized for **performance**: [99]/[100] on mobile and [100]/[100] on desktop in [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights)
 * :(fab fa-searchengin fa-fw): Optimized SEO performance with a correct **SEO SCHEMA** based on JSON-LD
@@ -39,7 +39,7 @@ math:
 * :(fas fa-tachometer-alt fa-fw): **CDN** for third-party libraries supported
 * :(fas fa-cloud-download-alt fa-fw): Automatically converted images with **Lazy Load** by [lazysizes](https://github.com/aFarkas/lazysizes)
 
-#### Appearance and Layout
+### Appearance and Layout
 
 * :(fas fa-mobile-screen fa-fw): **[Desktop]/[Mobile] responsive** layout
 * :(fas fa-circle-half-stroke fa-rotate-180 fa-fw): **[Light]/[Dark]** mode
@@ -49,12 +49,12 @@ math:
 * :(fas fa-language fa-fw): **Multilanguage** supported and i18n ready
 * :(fab fa-css3-alt fa-fw): Beautiful **CSS animation**
 
-#### Social and Comment Systems
+### Social and Comment Systems
 
 * :(far fa-user fa-fw): **Gravatar** supported by [Gravatar](https://gravatar.com)
 * :(fas fa-user-circle fa-fw): Local **Avatar** supported
-* :(far fa-id-card fa-fw): Up to **73** social links supported
-* :(fas fa-share-square fa-fw): Up to **24** share sites supported
+* :(far fa-id-card fa-fw): Up to **81** social links supported
+* :(fas fa-share-square fa-fw): Up to **27** share sites supported
 * :(far fa-comment fa-fw): **Disqus** comment system supported by [Disqus](https://disqus.com)
 * :(far fa-comment-dots fa-fw): **Gitalk** comment system supported by [Gitalk](https://github.com/gitalk/gitalk)
 * :(far fa-comment-alt fa-fw): **Valine** comment system supported by [Valine](https://valine.js.org/)
@@ -64,7 +64,7 @@ math:
 * :(fas fa-comment-alt fa-fw): **utterances** comment system supported by [utterances](https://utteranc.es/)
 * :(fas fa-comments fa-fw): **giscus** comment system supported by [giscus](https://giscus.app/)
 
-#### Extended Features
+### Extended Features
 
 * :(fas fa-search fa-fw): **Search** supported by [Lunr.js](https://lunrjs.com/) or [algolia](https://www.algolia.com/)
 * :(far fa-grin-tongue-wink fa-fw): **Twemoji** supported
@@ -88,17 +88,17 @@ math:
 * :(far fa-user-circle fa-fw): **Person** shortcode
 * ...
 
-### License
+## License
 
 LoveIt is licensed under the **MIT** license.
 
 Check the [LICENSE file](https://github.com/dillonzq/LoveIt/blob/master/LICENSE) for details.
 
-### Special Thanks
+## Special Thanks
 
 Thanks to the authors of following resources included in the theme:
 
-* [normalize.css](https://github.com/necolas/normalize.css)
+* [modern-normalize](https://github.com/sindresorhus/modern-normalize)
 * [Font Awesome](https://fontawesome.com/)
 * [Simple Icons](https://github.com/simple-icons/simple-icons)
 * [Animate.css](https://daneden.github.io/animate.css/)

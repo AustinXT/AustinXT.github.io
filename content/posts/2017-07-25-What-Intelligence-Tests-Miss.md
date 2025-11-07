@@ -4,6 +4,7 @@ title: 《超越智商》读书笔记
 date: 2017-07-25
 categories: [读书笔记]
 tags: [认知心理学]
+mathjax: true
 ---
 
 ## 一、聪明人也会做傻事
@@ -18,7 +19,7 @@ tags: [认知心理学]
 
 我把书中概念关系图结合到一张图里，并用例子简要得说明了各个心智过程。
 
-![](http://xieting-img.oss-cn-hangzhou.aliyuncs.com/三重加工模型.png)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/三重加工模型.png)
 
 - A，类型二制止类型一加工即将触发个体反应，并以更优化的反应取而代之（例如：吃中药）
 - B，反省心智的倾向性认知功能（例如：自律）
@@ -32,7 +33,7 @@ tags: [认知心理学]
 
 作者在书的第十二章总结了思维谬误的基本分类，我结合书中六至十二章的内容进行了简要的说明。
 
-![](http://xieting-img.oss-cn-hangzhou.aliyuncs.com/思维谬误的基本分类_1.png)
+![](https://xieting-img.oss-cn-hangzhou.aliyuncs.com/思维谬误的基本分类_1.png)
 
 我们都知道，大脑喜欢偷懒，能不思考就不思考，书中称这种惰性为“认知吝啬鬼”。认知吝啬鬼有三个层次，依据认知卷入排列前后顺序如下：
 
@@ -50,11 +51,11 @@ tags: [认知心理学]
 
     贝叶斯思维：
 
-    ![P(B|A)=\frac{P(A|B)P(B)}{P(A)}](<https://chart.googleapis.com/chart?cht=tx&chl=P(B%7CA)%3D%5Cfrac%7BP(A%7CB)P(B)%7D%7BP(A)%7D>)
+    $P(B|A)=\frac{P(A|B)P(B)}{P(A)}$
 
     变形：焦点假设的后验概率=相似率\*先验概率
 
-    ![\frac{P(H|D)}{P(\bar H|D)}=\frac{P(D|H)}{P(D|\bar H)}*\frac{P(H)}{P(\bar H)}](<https://chart.googleapis.com/chart?cht=tx&chl=%5Cfrac%7BP(H%7CD)%7D%7BP(%5Cbar%20H%7CD)%7D%3D%5Cfrac%7BP(D%7CH)%7D%7BP(D%7C%5Cbar%20H)%7D*%5Cfrac%7BP(H)%7D%7BP(%5Cbar%20H)%7D>)
+    $\frac{P(H|D)}{P(\bar H|D)}=\frac{P(D|H)}{P(D|\bar H)}*\frac{P(H)}{P(\bar H)}$
 
   - 不知备择假设的重要性
 

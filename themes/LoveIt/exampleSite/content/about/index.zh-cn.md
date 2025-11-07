@@ -13,7 +13,7 @@ math:
 
 {{< style "img { height: 1.25rem; }" >}}
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/releases)
-[![Hugo](https://img.shields.io/badge/Hugo-%5E0.62.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.128.0-ff4088?style=flat-square&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/dillonzq/LoveIt?style=flat-square)](https://github.com/dillonzq/LoveIt/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/dillonzq/LoveIt?style=social)](https://github.com/dillonzq/LoveIt)
 [![GitHub forks](https://img.shields.io/github/forks/dillonzq/LoveIt?style=social)](https://github.com/dillonzq/LoveIt/fork)
@@ -25,9 +25,9 @@ math:
 
 ![Hugo 主题 LoveIt](/images/Apple-Devices-Preview.png "Hugo 主题 LoveIt")
 
-### 特性
+## 特性
 
-#### 性能和 SEO
+### 性能和 SEO
 
 * :(fas fa-rocket fa-fw): **性能**优化：在 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights) 中， [99]/[100] 的移动设备得分和 [100]/[100] 的桌面设备得分
 * :(fab fa-searchengin fa-fw): 使用基于 JSON-LD 格式 的 **SEO SCHEMA** 文件进行 SEO 优化
@@ -35,11 +35,11 @@ math:
 * :(far fa-chart-bar fa-fw): 支持 **[Fathom Analytics](https://usefathom.com/)**
 * :(fas fa-chart-column fa-fw): 支持 **[Plausible Analytics](https://plausible.io/)**
 * :(fab fa-yandex-international fa-fw): 支持 **[Yandex Metrica](https://metrica.yandex.com/)**
-* :(fas fa-sitemap fa-fw): 支持搜索引擎的**网站验证** (Google, Bind, Yandex and Baidu)
+* :(fas fa-sitemap fa-fw): 支持搜索引擎的**网站验证** (Google, Bind, Yandex 和 Baidu)
 * :(fas fa-tachometer-alt fa-fw): 支持所有第三方库的 **CDN**
 * :(fas fa-cloud-download-alt fa-fw): 基于 [lazysizes](https://github.com/aFarkas/lazysizes) 自动转换图片为**懒加载**
 
-#### 外观和布局
+### 外观和布局
 
 * :(fas fa-mobile-screen fa-fw): **[桌面端]/[移动端] 响应式**布局
 * :(fas fa-circle-half-stroke fa-rotate-180 fa-fw): **[浅色]/[深色]** 主题模式
@@ -53,8 +53,8 @@ math:
 
 * :(far fa-user fa-fw): 支持 **[Gravatar](https://gravatar.com)** 头像
 * :(fas fa-user-circle fa-fw): 支持本地**头像**
-* :(far fa-id-card fa-fw): 支持多达 **73** 种社交链接
-* :(fas fa-share-square fa-fw): 支持多达 **24** 种网站分享
+* :(far fa-id-card fa-fw): 支持多达 **81** 种社交链接
+* :(fas fa-share-square fa-fw): 支持多达 **27** 种网站分享
 * :(far fa-comment fa-fw): 支持 **[Disqus](https://disqus.com)** 评论系统
 * :(far fa-comment-dots fa-fw): 支持 **[Gitalk](https://github.com/gitalk/gitalk)** 评论系统
 * :(far fa-comment-alt fa-fw): 支持 **[Valine](https://valine.js.org/)** 评论系统
@@ -64,7 +64,7 @@ math:
 * :(far fa-comment-alt fa-fw): 支持 **[utterances](https://utteranc.es/)** 评论系统
 * :(fas fa-comments fa-fw): 支持 **[giscus](https://giscus.app/)** 评论系统
 
-#### 扩展功能
+### 扩展功能
 
 * :(fas fa-search fa-fw): 支持基于 [Lunr.js](https://lunrjs.com/) 或 [algolia](https://www.algolia.com/) 的**搜索**
 * :(far fa-grin-tongue-wink fa-fw): 支持 **Twemoji**
@@ -88,17 +88,17 @@ math:
 * :(far fa-user-circle fa-fw): 支持**人物标签**的 shortcode
 * ...
 
-### 许可协议
+## 许可协议
 
 LoveIt 根据 **MIT** 许可协议授权。
 
 更多信息请查看 [LICENSE 文件](https://github.com/dillonzq/LoveIt/blob/master/LICENSE)。
 
-### 特别感谢
+## 特别感谢
 
 LoveIt 主题中用到了以下项目，感谢它们的作者：
 
-* [normalize.css](https://github.com/necolas/normalize.css)
+* [modern-normalize](https://github.com/sindresorhus/modern-normalize)
 * [Font Awesome](https://fontawesome.com/)
 * [Simple Icons](https://github.com/simple-icons/simple-icons)
 * [Animate.css](https://daneden.github.io/animate.css/)

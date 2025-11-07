@@ -29,11 +29,12 @@ rssFullText: false
 toc:
   enable: true
   auto: true
+  keepStatic: false
 code:
   copy: true
   maxShownLines: 50
 math:
-  enable: true
+  enable: false
   # ...
 mapbox:
   # ...

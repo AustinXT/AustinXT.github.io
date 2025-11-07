@@ -1,0 +1,8 @@
+{{- if ge hugo.Version "0.142.0" -}}
+    {{- partial "internal/x_simple.html" . -}}
+{{- else -}}
+    {{- $PC := .Page.Site.Config.Privacy.Twitter -}}
+    {{- $SCF := .Page.Site.Config.Services.Twitter.DisableInlineCSS -}}
+    {{- /* template "_internal/shortcodes/twitter_simple.html" . */ -}}
+    {{- /* X/Twitter simple shortcode is no longer available in Hugo 0.120+ */ -}}
+{{- end -}}

@@ -96,14 +96,14 @@ hasCJKLanguage = true
 # Permalinks config
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = ":filename"
+  posts = ":contentbasename"
 
 # Privacy config
 [privacy]
   # LoveIt DELETED | 0.2.0 privacy of the Google Analytics (replaced by params.analytics.google)
   [privacy.googleAnalytics]
     # ...
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
@@ -126,4 +126,13 @@ hasCJKLanguage = true
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+
+# 页面全局配置
+[params]
+  [params.page]
+    [params.page.code]
+      [params.page.code.render]
+        # 启用 mermaid 图表渲染
+        mermaid = true
+        # 启用 goat ASCII 图表渲染  
+        goat = true
