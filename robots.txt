@@ -31,3 +31,55 @@ Allow: /
 # 必应爬虫
 User-agent: Bingbot
 Allow: /
+
+# ===== AI 搜索引擎爬虫 =====
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+# OpenAI 搜索
+User-agent: ChatGPT-User
+Allow: /
+
+# Google AI (Bard/Gemini)
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl (被很多 AI 使用)
+User-agent: CCBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# 字节跳动 AI
+User-agent: Bytespider
+Allow: /
+
+# 阿里巴巴 AI
+User-agent: AliBot
+Allow: /
+
+# 腾讯 AI
+User-agent: TencentBot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
