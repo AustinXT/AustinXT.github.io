@@ -1,0 +1,126 @@
+{{- /*
+  TTS Audio Player for FixIt Theme
+  Usage: Add `ttsAudio: /audio/your-file.mp3` to post front matter
+*/ -}}
+{{- $audio := .Params.ttsAudio -}}
+{{- if $audio -}}
+  {{- /* Get next/prev posts for continuous playback */ -}}
+  {{- $nextPost := "" -}}
+  {{- $prevPost := "" -}}
+  {{- $nextAudio := "" -}}
+  {{- $prevAudio := "" -}}
+
+  {{- with .NextInSection -}}
+    {{- $nextPost = .RelPermalink -}}
+    {{- $nextAudio = .Params.ttsAudio -}}
+  {{- end -}}
+
+  {{- with .PrevInSection -}}
+    {{- $prevPost = .RelPermalink -}}
+    {{- $prevAudio = .Params.ttsAudio -}}
+  {{- end -}}
+
+  <div class="article-audio-player" id="article-audio-player">
+    <div class="audio-player-header">
+      <span class="audio-player-icon">
+        <i class="fa-solid fa-headphones"></i>
+      </span>
+      <span class="audio-player-title">{{ T "audioPlayer.title" | default "Listen to this article" }}</span>
+      <button class="audio-player-close" id="audio-player-close" title="{{ T "audioPlayer.close" | default "Close" }}">
+        <i class="fa-solid fa-times"></i>
+      </button>
+    </div>
+
+    <div class="audio-player-body">
+      <audio id="article-audio" preload="metadata">
+        <source src="{{ $audio }}" type="audio/mpeg">
+        {{ T "audioPlayer.notSupported" | default "Your browser does not support the audio element." }}
+      </audio>
+
+      <div class="audio-controls">
+        {{- /* Previous button */ -}}
+        <button class="audio-btn audio-btn-prev" id="audio-prev"
+          {{ if not $prevAudio }}disabled{{ end }}
+          data-prev-url="{{ $prevPost }}"
+          data-prev-audio="{{ $prevAudio }}"
+          title="{{ T "audioPlayer.prev" | default "Previous article" }}">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+
+        {{- /* Rewind 10s */ -}}
+        <button class="audio-btn audio-btn-rewind" id="audio-rewind" title="{{ T "audioPlayer.rewind" | default "Rewind 10s" }}">
+          <i class="fa-solid fa-rotate-left"></i>
+          <span class="audio-btn-label">10</span>
+        </button>
+
+        {{- /* Play/Pause */ -}}
+        <button class="audio-btn audio-btn-play" id="audio-play" title="{{ T "audioPlayer.play" | default "Play" }}">
+          <i class="fa-solid fa-play" id="play-icon"></i>
+        </button>
+
+        {{- /* Forward 10s */ -}}
+        <button class="audio-btn audio-btn-forward" id="audio-forward" title="{{ T "audioPlayer.forward" | default "Forward 10s" }}">
+          <i class="fa-solid fa-rotate-right"></i>
+          <span class="audio-btn-label">10</span>
+        </button>
+
+        {{- /* Next button */ -}}
+        <button class="audio-btn audio-btn-next" id="audio-next"
+          {{ if not $nextAudio }}disabled{{ end }}
+          data-next-url="{{ $nextPost }}"
+          data-next-audio="{{ $nextAudio }}"
+          title="{{ T "audioPlayer.next" | default "Next article" }}">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+      </div>
+
+      {{- /* Progress bar */ -}}
+      <div class="audio-progress-container">
+        <span class="audio-time" id="audio-current-time">0:00</span>
+        <div class="audio-progress" id="audio-progress">
+          <div class="audio-progress-bar" id="audio-progress-bar"></div>
+          <div class="audio-progress-handle" id="audio-progress-handle"></div>
+        </div>
+        <span class="audio-time" id="audio-duration">0:00</span>
+      </div>
+
+      {{- /* Speed and auto-play controls */ -}}
+      <div class="audio-extra-controls">
+        <div class="audio-speed">
+          <label for="audio-speed-select">{{ T "audioPlayer.speed" | default "Speed" }}:</label>
+          <select id="audio-speed-select">
+            <option value="0.5">0.5x</option>
+            <option value="0.75">0.75x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+          </select>
+        </div>
+
+        <div class="audio-autoplay">
+          <input type="checkbox" id="audio-autoplay-next" {{ if $nextAudio }}{{ end }}>
+          <label for="audio-autoplay-next">{{ T "audioPlayer.autoplayNext" | default "Auto-play next" }}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{- /* Floating mini player (shown when scrolled past main player) */ -}}
+  <div class="audio-mini-player" id="audio-mini-player">
+    <button class="mini-player-btn" id="mini-play">
+      <i class="fa-solid fa-play" id="mini-play-icon"></i>
+    </button>
+    <div class="mini-player-progress" id="mini-progress">
+      <div class="mini-player-progress-bar" id="mini-progress-bar"></div>
+    </div>
+    <span class="mini-player-time" id="mini-current-time">0:00</span>
+    <button class="mini-player-btn mini-player-expand" id="mini-expand" title="{{ T "audioPlayer.expand" | default "Show player" }}">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+
+  {{- /* Load audio player script */ -}}
+  <script src="/js/audio-player.js" defer></script>
+  <link rel="stylesheet" href="/css/audio-player.css">
+{{- end -}}
