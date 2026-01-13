@@ -1,0 +1,19 @@
+{{- if .Params.repost -}}
+<div class="repost-source" style="margin-top: 2rem; padding: 1rem; background-color: var(--code-background-color); border-radius: 6px; border-left: 4px solid var(--global-font-color);">
+  <span style="font-size: 0.9rem; color: var(--global-font-secondary-color);">
+    {{- if .Params.source -}}
+      转载自：
+      {{- if .Params.source.url -}}
+        <a href="{{ .Params.source.url }}" target="_blank" rel="noopener noreferrer">{{ .Params.source.name | default .Params.source.url }}</a>
+      {{- else -}}
+        {{ .Params.source.name }}
+      {{- end -}}
+      {{- if .Params.source.author -}}
+        <span style="margin-left: 0.5rem;">| 作者：{{ .Params.source.author }}</span>
+      {{- end -}}
+    {{- else -}}
+      本文为转载内容
+    {{- end -}}
+  </span>
+</div>
+{{- end -}}

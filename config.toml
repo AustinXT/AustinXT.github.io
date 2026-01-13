@@ -34,13 +34,13 @@ hasCJKLanguage = true
     title = "文章"
   [[menu.main]]
     weight = 1
-    identifier = "talks"
+    identifier = "briefing"
     pre = ""
     post = ""
-    name = "呓语"
-    url = "/talks/"
+    name = "简报"
+    url = "/briefing/"
     # title will be shown when you hover on this menu link
-    title = ""
+    title = "简报"
   [[menu.main]]
     weight = 2
     identifier = "tags"
@@ -367,6 +367,8 @@ hasCJKLanguage = true
   [params.customPartials]
     # 在文章内容前插入音频播放器
     postContentBefore = ["audio-player.html"]
+    # 在文章内容后显示转载来源
+    postContentAfter = ["repost-source.html"]
 
   # 搜索配置
   [params.search]
