@@ -96,7 +96,7 @@ hasCJKLanguage = true
 # Permalinks config
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = ":contentbasename"
+  posts = "/:slug/"
 
 # Privacy config
 [privacy]
