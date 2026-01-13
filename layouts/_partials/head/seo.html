@@ -35,6 +35,63 @@
 <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} - RSS Feed" href="{{ "index.xml" | absURL }}">
 <link rel="alternate" type="application/json" title="{{ .Site.Title }} - JSON Feed" href="{{ "index.json" | absURL }}">
 
+{{- /* Open Graph 标签 */ -}}
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="zh_CN">
+{{- with .Description | default .Site.Params.description -}}
+    <meta property="og:description" content="{{ . }}">
+{{- end -}}
+{{- $images := .Params.featuredImage | default .Site.Params.images -}}
+{{- with $images -}}
+    {{- if reflect.IsSlice . -}}
+        <meta property="og:image" content="{{ index . 0 | absURL }}">
+    {{- else -}}
+        <meta property="og:image" content="{{ . | absURL }}">
+    {{- end -}}
+{{- end -}}
+{{- if .IsPage -}}
+    {{- if not .PublishDate.IsZero -}}
+        <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+    {{- else if not .Date.IsZero -}}
+        <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+    {{- end -}}
+    {{- with .Lastmod -}}
+        <meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+    {{- end -}}
+    <meta property="article:author" content="{{ .Params.author | default .Site.Params.Author.name }}">
+    {{- with .Params.categories -}}
+        {{- range . -}}
+            <meta property="article:section" content="{{ . }}">
+        {{- end -}}
+    {{- end -}}
+    {{- with .Params.tags -}}
+        {{- range . -}}
+            <meta property="article:tag" content="{{ . }}">
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+
+{{- /* Twitter Cards 标签 */ -}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+{{- with .Description | default .Site.Params.description -}}
+    <meta name="twitter:description" content="{{ . }}">
+{{- end -}}
+{{- with $images -}}
+    {{- if reflect.IsSlice . -}}
+        <meta name="twitter:image" content="{{ index . 0 | absURL }}">
+    {{- else -}}
+        <meta name="twitter:image" content="{{ . | absURL }}">
+    {{- end -}}
+{{- end -}}
+{{- with .Site.Params.social.Twitter -}}
+    <meta name="twitter:site" content="@{{ . }}">
+    <meta name="twitter:creator" content="@{{ . }}">
+{{- end -}}
+
 {{- /* Home SEO */ -}}
 {{- if .IsHome -}}
     <script type="application/ld+json">

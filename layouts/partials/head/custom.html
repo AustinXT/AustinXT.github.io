@@ -1,0 +1,17 @@
+{{- /* 自定义头部扩展 - 会被 FixIt 主题自动引入 */ -}}
+
+{{- /* 引入安全头部配置 */ -}}
+{{ partial "head/security.html" . }}
+
+{{- /* 预连接优化 */ -}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+{{- if .Site.Params.analytics.google.id -}}
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+{{- end -}}
+
+{{- /* DNS 预获取 */ -}}
+<link rel="dns-prefetch" href="https://xieting-img.oss-cn-hangzhou.aliyuncs.com">
+<link rel="dns-prefetch" href="https://giscus.app">

@@ -1,2 +1,47 @@
 .claude/
 .SynologyWorkingDirectory/
+
+# Hugo default output directory
+/public/
+/resources/
+
+# Temporary lock file while building
+.hugo_build.lock
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editor directories and files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Node modules (if using npm/yarn for tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Local netlify folder (if using Netlify)
+.netlify
+
+# Hugo server cache
+hugo_stats.json
