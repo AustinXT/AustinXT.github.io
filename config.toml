@@ -129,6 +129,8 @@ hasCJKLanguage = true
 
 # 页面全局配置
 [params]
+  # 主页显示的内容 section
+  mainSections = ["posts"]
   # 网站描述（用于 SEO）
   description = "夜航星的个人博客，分享认知心理学、学习方法、数据分析、编程技术等内容"
   # 网站关键词（用于 SEO）
@@ -303,10 +305,10 @@ hasCJKLanguage = true
       [params.page.comment.giscus]
         enable = true
         # owner/repo
-        repo = "AustinXT/austinxt.github.io"
-        repoId = "R_kgDOGHvQeQ"
+        repo = "AustinXT/AustinXT.github.io"
+        repoId = ""
         category = "Announcements"
-        categoryId = "DIC_kwDOGHvQec4CZxYg"
+        categoryId = ""
         mapping = "pathname"
         strict = "0"
         reactionsEnabled = "1"
