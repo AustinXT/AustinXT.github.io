@@ -10,8 +10,13 @@
 | `python3 -I scripts/check-manifests.py .` | 两份插件清单 | 不安装、打包或外发 |
 | `python3 -I scripts/check-system.py` | 初始化文件、方法命名、实体登记、独立 Git 与原件忽略 | 不遍历原件、不判网站构建和人审 |
 | `python3 -I scripts/test-check-system.py` | 自建临时夹具上的规则回归 | 不修改实际作品或参考原件 |
+| `bash src/reading/check.sh src/reading/*.html src/reading/prototype.css` | 八页与共享样式的字面闸，打印人工清单 | 不判 HTML 结构或人验收 |
+| `python3 -I scripts/check-reading-prototype.py` | 指定八页与 CSS、4／6预览上限、全部非空年、数据同源、图标详情及既有护栏 | 不执行页面脚本、不判视觉、手机体验或真实构建 |
+| `python3 -I scripts/test-reading-prototype.py` | 实际样本上的内存破坏与临时夹具，含失败退出码 | 不修改样本或参考原件 |
 
-网站构建、内容和 URL 检查待选型后补；新规则需带反例回归。移动脚本是本次忽略过程材料，不是可无条件重跑的项目命令。
+页面检查器默认模块目录为 `src/reading/`，可传其他自建夹具目录；旧单 HTML 参数及 `check(text)` 已退休并报错。只读取指定文件，不沿链接读取任意路径；不冻结生产 URL。Hugo 真实构建与已整理正文检查仍待后续获准实现；新规则需带反例回归。移动脚本是本次忽略过程材料，不是可无条件重跑的项目命令。
+
+索引纯函数在 `reading-index.py`：接收已解析详情或人工内存记录，返回分类／标签、年份及 HTML 片段，不读路径、不默认覆盖原件。标题、日期与原型分类／标签数组仍只维护在已登记详情；后续生产格式依框架原生约定，不将本 helper 当长期内容系统。
 
 ## 什么该写成脚本
 

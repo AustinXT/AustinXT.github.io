@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页 · 智能时代蛮子</title>
+  <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+  <div class="lab">
+    <div class="shell"><p class="lab-title">首页定标样本 / 栏目独立跳转 / 内容待确认</p></div>
+  </div>
+  <div class="shell">
+    <header class="site-header">
+      <a class="site-name" href="prototype.html">智能时代蛮子</a>
+      <nav id="main-menu" aria-label="主导航">
+        <a href="prototype.html" aria-current="page">首页</a>
+        <a href="essays.html">随笔</a>
+        <a href="works.html">作品</a>
+        <a href="about.html">简介</a>
+      </nav>
+    </header>
+    <main>
+      <section id="home" data-page="home" aria-label="首页">
+        <div class="home-sections" id="home-blocks">
+          <section class="overview-section" id="intro" aria-labelledby="intro-title">
+            <h1 class="overview-title" id="intro-title">简介</h1>
+            <p class="intro-copy">一个关于学习、认知与实践的个人博客。<br>简介文案为草稿，待你改定。</p>
+            <div class="overview-links"><a data-entry="about" href="about.html">查看简介 <span aria-hidden="true">→</span></a></div>
+          </section>
+          <section class="overview-section" id="recent" aria-labelledby="recent-title">
+            <h2 class="overview-title" id="recent-title">随笔</h2>
+            <a class="article-entry" data-entry="recent" href="article.html">
+              <h3>卡片大法</h3>
+              <span class="entry-meta">候选原始日期 2019-12-23 · 学习与写作</span>
+            </a>
+            <p class="entry-note">首篇整理候选，目前仅有阅读页排版占位。</p>
+            <div class="overview-links" id="explore" aria-label="随笔索引">
+              <a data-entry="archive" href="essays.html">全部随笔 <span aria-hidden="true">→</span></a>
+              <a data-entry="categories" href="categories.html">浏览专栏 <span aria-hidden="true">→</span></a>
+              <a data-entry="tags" href="tags.html">浏览专题 <span aria-hidden="true">→</span></a>
+            </div>
+          </section>
+          <section class="overview-section" id="works" aria-labelledby="works-title">
+            <h2 class="overview-title" id="works-title">作品</h2>
+            <p class="pending-copy" data-pending="works">作品条目待提供，确认后展示名称、简介与入口。</p>
+            <div class="overview-links"><a data-entry="works" href="works.html">查看作品 <span aria-hidden="true">→</span></a></div>
+          </section>
+          <section class="overview-section" id="contact" aria-labelledby="contact-title">
+            <h2 class="overview-title" id="contact-title">联系</h2>
+            <p class="pending-copy" data-pending="contact">公开联系方式待确认，暂不填写邮箱或社交账号。</p>
+            <div class="overview-links"><a data-entry="contact" href="about.html#contact">查看联系信息 <span aria-hidden="true">→</span></a></div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">本地布局样本 · 待你改定 · 非公开站点</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>随笔 · 智能时代蛮子</title>
+  <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+  <div class="lab"><div class="shell"><p class="lab-title">独立页面定标样本 / 内容待确认 / 非公开站点</p></div></div>
+  <div class="shell">
+    <header class="site-header">
+      <a class="site-name" href="prototype.html">智能时代蛮子</a>
+      <nav id="main-menu" aria-label="主导航">
+        <a href="prototype.html">首页</a>
+        <a href="essays.html" aria-current="page">随笔</a>
+        <a href="works.html">作品</a>
+        <a href="about.html">简介</a>
+      </nav>
+    </header>
+    <main>
+      <section id="essays" data-page="essays" aria-labelledby="essays-title">
+        <h1 class="page-title" id="essays-title">随笔</h1>
+        <p class="page-note">分类、标签与时间分别索引同一份正文。当前一篇排版样本，分类／标签归属待确认。</p>
+        <!-- 派生索引：元数据在已登记详情；修改排版前保留原件，不整页再生。 -->
+        <section id="featured-categories" class="essay-section" data-reading-section="categories" aria-labelledby="categories-heading">
+          <h2 class="overview-title" id="categories-heading">精选专栏</h2>
+          <p class="section-note">分类，预览前 4 个；不足四个不强凑。</p>
+          <p class="empty-note" data-index-empty>尚无已登记分类，待你确认名称与文章归属；不补造条目。</p>
+          <a class="more-link" href="categories.html">全部专栏 →</a>
+        </section>
+        <section id="featured-tags" class="essay-section" data-reading-section="tags" aria-labelledby="tags-heading">
+          <h2 class="overview-title" id="tags-heading">精选专题</h2>
+          <p class="section-note">标签，预览前 6 个；名称与归属以登记元数据为准。</p>
+          <p class="empty-note" data-index-empty>尚无已登记标签，待你确认名称与文章归属；不补造条目。</p>
+          <a class="more-link" href="tags.html">全部专题 →</a>
+        </section>
+        <section id="timeline" class="essay-section" data-reading-section="timeline" aria-labelledby="timeline-heading">
+          <h2 class="overview-title" id="timeline-heading">时间线</h2>
+          <p class="section-note">所有有条目的年份，按候选原始日期倒序；不是全部旧博客统计。</p>
+          <section id="year-2019" data-year="2019">
+            <h3 class="year-heading">2019</h3>
+            <ul class="article-list">
+              <li data-article="article.html"><time datetime="2019-12-23">12-23</time><a href="article.html" data-index-title>卡片大法</a></li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer">本地布局样本 · 待你改定 · 非公开站点</footer>
+  </div>
+</body>
+</html>

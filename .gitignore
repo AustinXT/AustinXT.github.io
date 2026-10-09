@@ -30,6 +30,9 @@ resources/**
 .env
 .env.*
 
+# 并行工作副本与临时核查材料：不把嵌套 Git 仓库纳入本仓库
+/.claude/worktrees/
+
 # 系统
 .DS_Store
 __pycache__/
