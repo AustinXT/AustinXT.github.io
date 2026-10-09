@@ -8,3 +8,4 @@
 | 001 | 2026-10-09 | [旧博客参考原件与完整移动](001_reference-source.md) |
 | 002 | 2026-10-09 | [博客首轮取舍卡：内容、首篇、技术与旧 URL](002_blog-direction-decision.md) |
 | 003 | 2026-10-09 | [三站对照：归档、主题与合辑](003_blog-navigation-reference.md) |
+| 004 | 2026-10-09 | [阳志平网站现网技术栈取证](004_yangzhiping-stack/decision.md) |
