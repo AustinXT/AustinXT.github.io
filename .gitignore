@@ -19,6 +19,7 @@ resources/**
 
 # 大件（本地 + 云盘，绝不入库；按需加例外）
 *.key
+*.pem
 *.pptx
 *.pdf
 *.mp4

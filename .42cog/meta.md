@@ -8,7 +8,7 @@
 - 本地目录：`/Users/nv/proj.xt.com/manzi-blog`。
 - 作品区：`src/`；作品单位与实体关系见 `cog.md`。
 - 方向唯一正本：`intent.md`；方向草稿尚待负责人确认。
-- 本项目远程仓库：未提供、未配置；不自动沿用旧博客地址。
+- 本项目远程仓库：用户于 2026-10-09 明确指定 https://github.com/AustinXT/AustinXT.github.io，已配置为 `origin`；工作分支为 `dev`，独立初始化历史，保留既有远端 `main` 不动。
 - 与默认六组的差异：无；本地原件目录完整忽略，不纳入本项目版本库。
 - 状态与放行：以 `../state/board.md` 为接续正本；尚未形成网站成品。
 
