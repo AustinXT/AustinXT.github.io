@@ -7,3 +7,4 @@
 
 - [外部评审入口冒烟](20261009-review-entry-smoke.md) — 空模型列表只记未验证；核本机格式、停止重复探测，不盲猜 provider 或扩大权限。
 - [页面检查的上下文边界](20261009-dom-boundary-checks.md) — 不能只看字符串与节点计数；用编码、祖先与正文容器突变复验。
+- [浏览器预览降级](20261009-browser-preview-fallback.md) — 无 DevToolsActivePort 不盲重试；真实 HTTP 冒烟不能冒充视觉、点击或手机验收。

@@ -152,3 +152,15 @@ URL 实验表明三篇均有标题路径和文件名路径；生成物不是线�
 - [S9 · GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 
 框架事实通过 Context7 对官方文档检索，并抽查官网 URL；参考站观察不是视觉验收。以上均为本轮访问证据，不保证未来文档与页面不变。
+
+## 技术修订 · 2026-10-09 · 负责人明确改选
+
+负责人在参照站现网取证后明确说：「我希望采用相同的技术栈（版本可以更新）」。此指令**替代上文当前技术首选**；原先接受 Hugo 的记录保留为历史，不继续据它要求安装或实现 Hugo。
+
+- **当前选择**：Next.js App Router、React、Turbopack、Tailwind CSS、Lucide React；TypeScript 为本项目工程选择，不是参照站已核事实。版本选兼容稳定版，精确锁定正本为 `../../src/site/package.json` 与 `package-lock.json`，Node 版本为同目录 `.node-version`。
+- **实现范围已批准**：独立 `src/site/` 工程壳、项目依赖获取、静态导出、规则与本地构建；既有八页布局原型保留原位。当前无迁入正文，不复制旧原型占位正文，不将临时 preview 路由冻结为生产地址。
+- **此前选择仍有效**：首篇候选、历史复盘边界、旧 URL 保护与未迁旧站不动均保持；换框架不是正文制作、声音、版权、人审或上线许可。
+- **不选**：canary 运行库、默认引入 v0/shadcn/CMS/数据库/统计服务；Cloudflare 源站与实际部署目标未决定。静态导出是当前最小验证目标，不冒充参照站真实构建配置。
+- **保存授权**：负责人另明确允许分组本地提交当前基线，不推送或打标签；该授权不自动包括换栈新增成果的提交。
+
+官方实现依据：Next 安装、static export 与 v16 升级说明（https://nextjs.org/docs/app/getting-started/installation 、https://nextjs.org/docs/app/guides/static-exports 、https://nextjs.org/docs/app/guides/upgrading/version-16 ），Tailwind PostCSS 升级说明（https://tailwindcss.com/docs/upgrade-guide ）。本次先核 npm registry 兼容范围，不以“latest”代替实际锁文件；验证结果、失败与边界见 `../reviews/007_next-stack-bootstrap.md` 和 `../../state/board.md`。

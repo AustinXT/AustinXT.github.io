@@ -96,7 +96,7 @@ echo "  **一个都没有也能干活，但你就少了一双不同来路的眼�
 #   上面那张单子里没有你这套技术栈的编译器/运行时，
 #   就会从头到尾没人发现它压根没被检查过。
 # ══════════════════════════════════════════════════════════════════
-STACK_EMPTY=0   # 当前阶段：初始化验证底座；网站技术栈待 research
+STACK_EMPTY=0   # 初始化底座及已登记的原生工程；技术决策见取舍卡修订
 echo
 echo "▸ 本系统专属"
 check python3 "初始化验证，仅标准库" 'brew install python' '系统包管理器装 python3' 'scoop install python'
@@ -113,12 +113,26 @@ if have python3 && [ -f "$TOOL_ROOT/.python-version" ]; then
     printf '  ✗ Python 精确版本：要求 %s，实际 %s\n' "$EXPECTED" "$ACTUAL"
   fi
 fi
-if have hugo; then
-  printf '  – Hugo 存在，仅作旧项目可选参考；不代表新栈已选定\n'
-else
-  printf '  – Hugo 未安装，当前初始化验证不依赖它；不自动安装\n'
+check node "新工程构建运行时" '按 src/site/.node-version 自行安装' '按 src/site/.node-version 自行安装' '按 src/site/.node-version 自行安装'
+check npm "新工程唯一包管理器" '随 Node 安装' '随 Node 安装' '随 Node 安装'
+NODE_OK=0
+if have node && [ -f "$TOOL_ROOT/src/site/.node-version" ]; then
+  NODE_EXPECTED="$(< "$TOOL_ROOT/src/site/.node-version")"
+  NODE_ACTUAL="$(node --version)"
+  if [ "${NODE_ACTUAL#v}" = "$NODE_EXPECTED" ]; then
+    printf '  ✓ Node 精确版本 %s\n' "$NODE_EXPECTED"
+    NODE_OK=1
+  else
+    printf '  ✗ Node 精确版本：要求 %s，实际 %s\n' "$NODE_EXPECTED" "$NODE_ACTUAL"
+  fi
 fi
-printf '  – 网站框架、构建版本和部署闸门待 research，当前不宣称站点可构建\n'
+if [ -f "$TOOL_ROOT/src/site/package-lock.json" ]; then
+  printf '  ✓ 原生工程锁文件存在；这不证明依赖已安装或构建通过\n'
+else
+  printf '  ✗ 缺新工程 package-lock.json\n'
+  NODE_OK=0
+fi
+printf '  – 构建与导出检查见 src/site/README.md；部署与公开发布仍单独授权\n'
 
 echo
 if [ "$STACK_EMPTY" = 1 ]; then
@@ -157,4 +171,5 @@ fi
 [ "$STACK_EMPTY" = 1 ] && exit 1
 [ -n "$MISSING" ] && exit 1
 [ "$VERSION_OK" != 1 ] && exit 1
+[ "$NODE_OK" != 1 ] && exit 1
 exit 0

@@ -1,11 +1,11 @@
 # 智能时代蛮子 · 博客
 
-独立个人博客工程；方向唯一正本为 [`.42cog/intent.md`](.42cog/intent.md)，当前草稿待负责人过目。实际进度见 [`state/board.md`](state/board.md)。
+独立个人博客工程；方向唯一正本为 [`.42cog/intent.md`](.42cog/intent.md)，方向已确认。实际进度见 [`state/board.md`](state/board.md)，原生工程入口为 [`src/site/README.md`](src/site/README.md)。
 
 ## 从这里开始
 
-1. 看意向书的收敛方向，认可或修改它。
-2. 按 [`skills/README.md`](skills/README.md) 接续四步方法；方法尚待跨谱系对抗性评审，不开始网站成品制作。
+1. 看意向书与状态板，按当前放行范围接续，不重复已确认的选择。
+2. 按 [`skills/README.md`](skills/README.md) 接续四步方法；技术修订见 [取舍卡](docs/research/002_blog-direction-decision.md)，当前只放行最小工程壳，真实正文与人定标另行推进。
 3. 先读 [旧博客来源索引](docs/research/001_reference-source.md)，再按需看原文，不把整个旧库带入上下文。
 
 ## 六组
@@ -15,7 +15,7 @@
 | 开工手册与规约 | `CLAUDE.md`、`.42cog/`、`specs/`、本地 `.git` | 指令、身份与标准 |
 | 真相源与参考 | `vault/`、`notes/`、`resources/` | 自有原件、核验事实与他人参考 |
 | 脚本与扩展 | `scripts/`、`skills/`、两份插件清单 | 方法与确定性验证 |
-| 作品 | `src/` | 新网站模块与获选文章；当前仅说明 |
+| 作品 | `src/` | 阅读布局定标原件与独立原生工程壳；当前无整理正文 |
 | 状态与文档 | `state/`、`docs/` | 接续、来源、取舍与评审 |
 | 过程材料 | `_build/`、`_tmp/`、`_archive/` | 本地忽略，不作为唯一备份 |
 
@@ -36,6 +36,6 @@ python3 -I scripts/check-system.py
 python3 -I scripts/test-check-system.py
 ```
 
-当前只锁初始化验证底座；不安装任何工具，不执行原件中的脚本。网站框架、构建命令、域名与部署目标待研究，当前没有网站构建／上线成功的结论。
+上述命令只验证初始化底座；新工程依赖、lint、类型、构建与导出检查见 [`src/site/README.md`](src/site/README.md)，旧原型规则保留。依赖安装须明确授权，不执行参考原件脚本；本地构建不代表上线。
 
-本地 Git 尚未提交、未配置 remote；被忽略的旧原件尤其是未提交文件需要单独确认异地备份。本项目未自动提交、推送、外发或发布。
+本地 Git 与远端身份见 [`.42cog/meta.md`](.42cog/meta.md)；当前基线已按明确授权本地保存，不推导新增成果提交或发布授权。被忽略旧原件尤其未提交文件的异地备份仍须单独确认。

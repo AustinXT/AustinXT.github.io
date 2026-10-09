@@ -27,6 +27,6 @@
 
 - 本地初始化验证仅依赖 Python 标准库与 Git；精确 Python 版本唯一锁定于 `../.python-version`。
 - 工具清单正本为 `../scripts/check-tools.sh`；脚本存在不等于网站构建通过。
-- 最小 CI 为 `../.github/workflows/validate.yml`，只运行初始化规则与回归，不构建或发布新站。
-- 网站框架、构建工具版本与部署方式待 research 决定，之后采用生态原生配置与锁定文件。
+- CI 为 `../.github/workflows/validate.yml`，包含初始化规则、原型回归及新工程锁定构建与导出检查；没有发布步骤，云端执行结果另取证。
+- 当前网站技术选择见 `../docs/research/002_blog-direction-decision.md` 技术修订节；原生配置、精确依赖与锁文件在 `../src/site/`，Node 版本见其中 `.node-version`。实际托管与公开发布尚未决定。
 - 方法入口为 `../skills/README.md`；跨谱系评审状态与授权在状态板，不继承上游模型配置或厂商授权。
