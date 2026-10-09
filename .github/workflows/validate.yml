@@ -1,4 +1,4 @@
-name: 初始化规则验证
+name: 本地规则与锁定构建
 
 on:
   push:
@@ -24,3 +24,36 @@ jobs:
           python3 -I scripts/check-system.py
       - name: 规则回归
         run: python3 -I scripts/test-check-system.py
+      - name: 定标原件回归
+        run: |
+          python3 -I scripts/check-reading-prototype.py
+          python3 -I scripts/test-reading-prototype.py
+      - name: 导出规则反例
+        run: python3 -I scripts/test-site-export.py
+
+  site:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: src/site/.node-version
+          cache: npm
+          cache-dependency-path: src/site/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version-file: .python-version
+      - name: 锁定依赖、质量与构建
+        working-directory: src/site
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund --registry=https://registry.npmjs.org
+          npm ls --all
+          npm run lint
+          npm run typecheck
+          npm run build
+      - name: 实际导出检查
+        run: python3 -I scripts/check-site-export.py
