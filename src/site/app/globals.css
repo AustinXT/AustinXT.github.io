@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+  --paper: #faf9f6;
+  --ink: #292925;
+  --muted: #686861;
+  --line: #dcd9d1;
+  --accent: #8c4729;
+  --wash: #eeeae2;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-wash: var(--wash);
+  --font-sans: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-serif: "Iowan Old Style", "Songti SC", "STSong", serif;
+}
+
+@layer base {
+  html { scroll-padding-top: 1.5rem; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); line-height: 1.8; }
+  h1, h2, h3 { font-family: var(--font-serif); font-weight: 500; line-height: 1.4; }
+  a { text-underline-offset: .25em; }
+  a:hover { color: var(--accent); }
+  a:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+  [id] { scroll-margin-top: 1.5rem; }
+}
+
+@layer components {
+  .shell { width: min(100%, 1000px); margin-inline: auto; padding-inline: clamp(20px, 5vw, 48px); }
+  .section { padding-block: 1.75rem; border-bottom: 1px solid var(--line); }
+  .section:last-child { border-bottom: 0; }
+  .section-title { font-size: 1.75rem; margin-bottom: 1rem; }
+  .pending { background: var(--wash); color: var(--muted); padding: 1rem 1.25rem; font-size: .875rem; }
+  .skip-link { position: absolute; left: 1rem; top: .5rem; padding: .5rem 1rem; background: var(--paper); transform: translateY(-200%); }
+  .skip-link:focus { transform: translateY(0); }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #22231f; --ink: #eeeae2; --muted: #b1b0a7; --line: #4c4e45; --accent: #e7ac8d; --wash: #30322c; }
+}
