@@ -1,0 +1,217 @@
+# own-scan: 旧 Hugo 博客 Markdown 写法统计（只含计数/键名/标签名/语言名/路径形态）
+# 范围: content/posts=68, content/briefing=1  合计 69 个 .md
+# 口径: 正文=front matter 之后; 『排除代码』=去掉围栏代码块与行内代码; 未注明者已额外去掉 HTML 注释与短代码
+
+## 1 规模
+文件数: 69
+字节(整文件) min/中位/p90/max: 23 / 7562 / 19074 / 50125
+中日韩字符(正文, 汉字+假名+谚文, 不含标点) min/中位/p90/max: 0 / 1505 / 3508 / 5203
+总字节: 681027   总中日韩字符: 119213
+BOM: 0 文件 / 0 次
+CRLF 换行: 0 文件 / 0 次
+
+## 2 front matter
+YAML (---): 69 篇
+draft: true: 0 篇   draft: false: 0 篇
+顶层字段名频次 (篇数):
+  title: 69
+  categories: 68
+  date: 68
+  layout: 68
+  tags: 68
+  description: 18
+  expirydate: 12
+  subtitle: 6
+  mathjax: 2
+嵌套字段 (父.子, 篇数):
+
+## 3 Hugo 短代码 (正文原样, 含围栏代码内)
+短代码定界 {{<: 1 文件 / 2 次
+短代码定界 {{%: 0 文件 / 0 次
+转义短代码 {{</* */>}}: 0 文件 / 0 次
+短代码出现在围栏代码内: 0 文件 / 0 次
+ref/relref 短代码内部链接: 0 文件 / 0 次
+按名称 (开标签):
+  mermaid ({{<): 1 文件 / 1 次
+闭合标签:
+  /mermaid: 1 文件 / 1 次
+
+## 4 原生 HTML (排除代码)
+HTML 注释 <!-- --> (正文, 含 more): 0 文件 / 0 次
+<!--more--> 摘要分隔: 0 文件 / 0 次
+行首 HTML (HTML 块候选): 0 文件 / 0 次
+开标签 (已知 HTML 元素):
+  <br>: 1 文件 / 3 次
+闭标签:
+  (0)
+空元素未自闭合 (<br> 等, JSX 报错): 0 文件 / 0 次
+style="…" 字符串属性 (JSX 需对象): 0 文件 / 0 次
+class= 属性: 0 文件 / 0 次
+HTML <img src>: 0 文件 / 0 次
+
+## 5 MDX 风险点 (排除代码, 已去注释与短代码)
+非 HTML 名的 <标签> (伪标签/占位符):
+  (0)
+裸 < 按后随字符分类:
+  < + 字母//!? 但不成标签: 1 文件 / 8 次
+  < + - 或 =: 1 文件 / 1 次
+  < + 其他符号: 1 文件 / 1 次
+  < + 中日韩字符: 1 文件 / 1 次
+{ (排除代码/短代码/注释): 6 文件 / 158 次
+} (排除代码/短代码/注释): 6 文件 / 158 次
+{ 或 } 所在行数: 6 文件 / 52 次
+尖括号自动链接 <https://…>/<邮箱>: 1 文件 / 2 次
+缩进代码块候选(前空行+4空格/Tab, 非列表上下文): 0 文件 / 0 次
+行首 import/export (MDX 会当 ESM): 0 文件 / 0 次
+
+## 6 扩展语法
+围栏代码块: 19 文件 / 304 次
+围栏信息串带 {属性}: 0 文件 / 0 次
+围栏用 ~~~: 0 文件 / 0 次
+未闭合围栏: 0 文件 / 0 次
+行内代码 `…`: 25 文件 / 1316 次
+围栏语言名:
+  (无语言名): 16 文件 / 108 次
+  shell: 5 文件 / 67 次
+  python: 4 文件 / 44 次
+  bash: 7 文件 / 28 次
+  json: 5 文件 / 23 次
+  javascript: 4 文件 / 9 次
+  js: 1 文件 / 9 次
+  markdown: 1 文件 / 3 次
+  yaml: 1 文件 / 3 次
+  shel: 2 文件 / 2 次
+  swig: 1 文件 / 2 次
+  yml: 1 文件 / 2 次
+  make: 1 文件 / 1 次
+  vue: 1 文件 / 1 次
+  svg: 1 文件 / 1 次
+  scss: 1 文件 / 1 次
+表格(分隔行): 15 文件 / 34 次
+脚注引用 [^x]: 1 文件 / 3 次
+脚注定义 [^x]:: 0 文件 / 0 次
+任务列表项: 0 文件 / 0 次
+删除线 ~~…~~: 0 文件 / 0 次
+同一行 ≥2 个单 ~ (GFM 可能误判删除线): 0 文件 / 0 次
+$$ 出现: 1 文件 / 274 次
+行首 $$ (块公式定界): 0 文件 / 0 次
+\( 出现: 0 文件 / 0 次
+\[ 出现: 2 文件 / 3 次
+行首 \[ (块公式定界): 0 文件 / 0 次
+行内 $…$ (粗略, 可能含货币): 2 文件 / 3 次
+$ 单字符总数: 4 文件 / 11 次
+定义列表候选(: 开头行): 0 文件 / 0 次
+标题锚点 {#id}: 0 文件 / 0 次
+标题属性 {.class}: 0 文件 / 0 次
+GitHub 式提示块 > [!TYPE]: 0 文件 / 0 次
+:emoji: 代码 (enableEmoji): 0 文件 / 0 次
+裸 URL (linkify 依赖): 1 文件 / 2 次
+裸 URL 紧贴中日韩字符/全角标点 (自动链接边界风险): 0 文件 / 0 次
+直引号 " (typographer 会转弯引号): 8 文件 / 116 次
+-- 或 ... (typographer 会转破折/省略号): 4 文件 / 9 次
+** 总数: 32 文件 / 666 次
+** 前为标点后为文字 (CommonMark 不能闭合): 19 文件 / 82 次
+** 后为标点前为文字 (CommonMark 不能开启): 23 文件 / 178 次
+mermaid (围栏语言): 0 文件 / 0 次
+
+## 7 图片与链接
+图片 ![](…): 36 文件 / 141 次
+引用式图片 ![..][..]: 0 文件 / 0 次
+HTML <img src>: 0 文件 / 0 次
+链接 [](…): 48 文件 / 573 次
+链接引用定义 [x]: url: 0 文件 / 0 次
+图片路径形态:
+  http(s) 外链: 36 文件 / 141 次
+链接目标形态:
+  http(s) 外链: 48 文件 / 573 次
+
+## 9 补充核查
+9A front matter 形态 (篇数, 不报值):
+  categories 写法: 行内数组 [..]: 68
+  date 形态 9999-99-99: 68
+  date 早于 2026-10-10: 68
+  expirydate 形态 9999-99-99: 12
+  expirydate 早于 2026-10-10: 12
+  tags 写法: 行内数组 [..]: 68
+  title 含中日韩字符: 69
+  title 含空格/标点(urlize 会改写): 43
+  无 slug 也无 url (/:slug/ 回落到 title): 69
+  layout 取值种类数: 1
+9B 数学区内外 (排除代码/注释/短代码):
+  数学区段 ($$…$$ 与 $…$): 4 文件 / 141 次
+    其中 $$…$$ 单行内联(行内不独占): 1 文件 / 76 次
+    含 $$ 的表格行: 1 文件 / 76 次
+    表格单元 $ 数为奇数 (数学内含 | 被切断): 1 文件 / 2 次
+    { } 在数学内: 2 文件 / 178 次
+    < 在数学内: 1 文件 / 4 次
+    \+ASCII 标点 在数学内 (goldmark 会反转义, remark-math 不会): 1 文件 / 30 次
+    * 或 _ 在数学内 (goldmark 可能当强调): 2 文件 / 12 次
+  { } 在数学外: 5 文件 / 138 次
+  < (非标签) 在数学外: 4 文件 / 7 次
+    数学外 {} 所在行: 列表项: 3 文件 / 7 次
+    数学外 {} 所在行: 段落: 1 文件 / 4 次
+    数学外 {} 所在行: 表格行: 2 文件 / 25 次
+    数学外 {} 行含双花括号: 1 文件 / 3 次
+    数学外 {} 行含反斜杠 (疑似未包 $ 的 LaTeX): 2 文件 / 21 次
+    数学外裸 < 后随: - 或 =: 1 文件 / 1 次
+    数学外裸 < 后随: 中日韩: 1 文件 / 1 次
+    数学外裸 < 后随: 其他符号: 1 文件 / 1 次
+    数学外裸 < 后随: 字母: 1 文件 / 4 次
+  数学内 \+标点 记号分布: \\=22, \|=7, \!=1
+9E MDX 硬错误候选 (数学外 { }、数学外裸 <、<自动链接>、短代码) 文件并集:
+  并集文件数: 8 / 69
+  { } + 裸 <: 3 文件
+  { }: 2 文件
+  裸 <: 1 文件
+  短代码: 1 文件
+  <自动链接>: 1 文件
+9C 粗体 ** 依序配对模拟:
+  ** 成对(依序配对): 32 文件 / 333 次
+  ** 成对但 CommonMark 不成粗体 (中日韩标点邻接): 3 文件 / 26 次
+9D 图片主机 (不报主机名):
+  图片外链主机种类数: 3   最多主机占比: 98%   是否本站域名: 否
+  图片 https://: 35 文件 / 140 次
+  图片 http:// (非 https): 1 文件 / 1 次
+  本站域名出现次数 (正文全文, 含代码): 2 文件 / 3 次
+
+## 8 config.toml (只摘 markup/highlight/math/goldmark/permalinks 相关键)
+  theme = "FixIt"
+  enableEmoji = true
+  hasCJKLanguage = true
+[markup]
+[markup.highlight]
+  markup.highlight.codeFences = true
+  markup.highlight.guessSyntax = true
+  markup.highlight.lineNos = true
+  markup.highlight.lineNumbersInTable = true
+  markup.highlight.noClasses = false
+[markup.goldmark]
+[markup.goldmark.extensions]
+  markup.goldmark.extensions.definitionList = true
+  markup.goldmark.extensions.footnote = true
+  markup.goldmark.extensions.linkify = true
+  markup.goldmark.extensions.strikethrough = true
+  markup.goldmark.extensions.table = true
+  markup.goldmark.extensions.taskList = true
+  markup.goldmark.extensions.typographer = true
+[markup.goldmark.renderer]
+  markup.goldmark.renderer.unsafe = true
+[markup.tableOfContents]
+  markup.tableOfContents.startLevel = 2
+  markup.tableOfContents.endLevel = 5
+[Permalinks]
+  Permalinks.posts = "/:slug/"
+[params.page.code]
+  params.page.code.copy = true
+  params.page.code.maxShownLines = 10
+[params.page.code.render]
+  params.page.code.render.mermaid = true
+  params.page.code.render.goat = true
+[params.page.math]
+  params.page.math.enable = true
+  params.page.math.blockLeftDelimiter = ""
+  params.page.math.blockRightDelimiter = ""
+  params.page.math.inlineLeftDelimiter = ""
+  params.page.math.inlineRightDelimiter = ""
+  params.page.math.copyTex = true
+  params.page.math.mhchem = true

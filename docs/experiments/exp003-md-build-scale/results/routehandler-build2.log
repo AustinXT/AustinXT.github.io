@@ -1,0 +1,50 @@
+▲ Next.js 16.4.0 (Turbopack)
+✓ Running next.config.ts took 16ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 647ms
+  Running TypeScript ...
+  Finished TypeScript in 1196ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/214) ...
+  Generating static pages using 9 workers (53/214) 
+  Generating static pages using 9 workers (106/214) 
+  Generating static pages using 9 workers (160/214) 
+✓ Generating static pages using 9 workers (214/214) in 404ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /essays
+├   /essays/[slug]
+│ ├ ● /essays/essay-00041
+│ ├ ● /essays/essay-00075
+│ ├ ● /essays/essay-00093
+│ └ ● [+96 more paths]
+├ ○ /essays/all
+├ ○ /essays/categories
+├   /essays/page/[n]
+│ ├ ● /essays/page/1
+│ ├ ● /essays/page/2
+│ ├ ● /essays/page/3
+│ └ ● [+2 more paths]
+├ ○ /essays/preview
+├ ○ /essays/tags
+├   /plain/[slug]/index.html
+│ ├ ● /plain/essay-00041/index.html
+│ ├ ● /plain/essay-00075/index.html
+│ ├ ● /plain/essay-00093/index.html
+│ └ ● [+96 more paths]
+├ ○ /works
+└ ○ /works/preview
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+real 3.26
+user 8.49
+sys 1.81
+exit=0

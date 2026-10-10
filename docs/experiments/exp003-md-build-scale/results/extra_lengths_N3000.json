@@ -1,0 +1,68 @@
+{
+ "essay-00094": {
+  "html": {
+   "raw": 22970,
+   "gzip6": 6701,
+   "br11": 5645,
+   "br5": 6086
+  },
+  "fragment": {
+   "raw": 5656,
+   "gzip6": 2989,
+   "br11": 2760,
+   "br5": 2868
+  },
+  "inline_rsc_share_raw": 0.6187,
+  "inline_rsc_cost_pct_vs_stripped": {
+   "raw": 162.3,
+   "gzip6": 47.6,
+   "br11": 46.2,
+   "br5": 47.1
+  },
+  "body_dup_repaid_pct_of_fragment_alone": {
+   "raw": 106.3,
+   "gzip6": 8.5,
+   "br11": 6.0,
+   "br5": 6.7
+  },
+  "body_dup_cost_pct_of_page": {
+   "raw": 36.1,
+   "gzip6": 3.9,
+   "br11": 3.0,
+   "br5": 3.3
+  }
+ },
+ "essay-00088": {
+  "html": {
+   "raw": 46770,
+   "gzip6": 12494,
+   "br11": 10491,
+   "br5": 11332
+  },
+  "fragment": {
+   "raw": 17003,
+   "gzip6": 7807,
+   "br11": 7197,
+   "br5": 7540
+  },
+  "inline_rsc_share_raw": 0.5701,
+  "inline_rsc_cost_pct_vs_stripped": {
+   "raw": 132.6,
+   "gzip6": 32.1,
+   "br11": 26.5,
+   "br5": 28.6
+  },
+  "body_dup_repaid_pct_of_fragment_alone": {
+   "raw": 108.5,
+   "gzip6": 13.5,
+   "br11": 7.7,
+   "br5": 9.6
+  },
+  "body_dup_cost_pct_of_page": {
+   "raw": 65.9,
+   "gzip6": 9.2,
+   "br11": 5.6,
+   "br5": 6.8
+  }
+ }
+}

@@ -8,3 +8,4 @@
 | 编号 | 假设 | 结论 |
 |------|------|------|
 | [exp001-url-evidence](exp001-url-evidence/readme.md) | 文件名不足以确定旧 URL | 三篇均有标题与文件名两种本地生成路径；不能推定线上或发布状态 |
+| [exp003-md-build-scale](exp003-md-build-scale/readme.md) | 构建时编译加静态导出到 3000 篇仍可接受 | 详情页大小与篇数无关，3000 篇构建 12 秒；全量列表线性变重，分页大小恒定；页面路由的正文存两份，Route Handler 直出可消除，但不能复用 React 布局 |

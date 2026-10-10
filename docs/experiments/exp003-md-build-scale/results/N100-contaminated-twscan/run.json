@@ -1,0 +1,28 @@
+{
+ "N": 100,
+ "exit_code": 0,
+ "timed_out": false,
+ "wall_secs_python": 9.63,
+ "time_real_secs": 9.59,
+ "time_maxrss_bytes_single_process": 1233256448,
+ "sampled_tree_rss_peak_bytes": 2712305664,
+ "sampled_tree_peak_procs": 12,
+ "rss_samples": 18,
+ "gen_secs": 0.19,
+ "gen": {
+  "N": 100,
+  "length_buckets": {
+   "2000": 21,
+   "5000": 55,
+   "15000": 23,
+   "fixed": 1
+  },
+  "total_chars": 684228,
+  "total_fragment_bytes": 2236189,
+  "fixed_chars": 8236,
+  "longest": {
+   "slug": "essay-00030",
+   "chars": 17174
+  }
+ }
+}

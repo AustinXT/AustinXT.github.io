@@ -1,0 +1,32 @@
+{
+ "N3000_articles": 3000,
+ "page_segment_gzip6": {
+  "mean": 11478,
+  "p50": 10051,
+  "p90": 23418,
+  "max": 27064,
+  "min": 5166
+ },
+ "index_html_raw": {
+  "mean": 52892,
+  "p50": 45041,
+  "p90": 113463,
+  "max": 132424,
+  "min": 22057
+ },
+ "index_html_gzip6": {
+  "mean": 17233,
+  "p50": 12227,
+  "p90": 45397,
+  "max": 52660,
+  "min": 6451
+ },
+ "js_identical_across_N": true,
+ "css_identical_across_N": true,
+ "fixed_html_raw_by_N": {
+  "100": 65760,
+  "1000": 65760,
+  "3000": 65760,
+  "6000": 65760
+ }
+}

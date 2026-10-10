@@ -1,0 +1,455 @@
+# 参照站核查原始测量  (resources/md-render-yang-20261010/)
+## 0. 请求日志 (curl-log.tsv: N, UTC, dir, http, ttfb, total, wire_bytes, redirects, url_effective, rc, url)
+  1 | 07:17:49 | list-essays | 200 | 0.921115 | 0.941986 | 18386 | 0 | https://yangzhiping.com/essays/ | rc=0 | https://yangzhiping.com/essays/
+  2 | 07:17:50 | list-tags | 200 | 0.761369 | 0.786828 | 11171 | 0 | https://yangzhiping.com/essays/tags/ | rc=0 | https://yangzhiping.com/essays/tags/
+  3 | 07:17:50 | list-tag-letters | 200 | 0.779636 | 0.781256 | 5986 | 0 | https://yangzhiping.com/essays/tag/letters/ | rc=0 | https://yangzhiping.com/essays/tag/letters/
+  4 | 07:17:52 | detail-20260214 | 200 | 1.024954 | 1.232323 | 28809 | 0 | https://yangzhiping.com/essays/20260214/ | rc=0 | https://yangzhiping.com/essays/20260214/
+  5 | 07:17:53 | detail-20260602 | 200 | 0.776303 | 0.953922 | 23772 | 0 | https://yangzhiping.com/essays/20260602/ | rc=0 | https://yangzhiping.com/essays/20260602/
+  6 | 07:17:54 | list-books | 200 | 0.695296 | 0.697014 | 8054 | 0 | https://yangzhiping.com/books/ | rc=0 | https://yangzhiping.com/books/
+  7 | 07:18:06 | detail-book-9787111509271 | 200 | 1.527339 | 1.528219 | 7896 | 0 | https://yangzhiping.com/books/9787111509271/ | rc=0 | https://yangzhiping.com/books/9787111509271/
+  8 | 07:18:14 | t2-list-essays | 200 | 1.703617 | 2.128323 | 18384 | 0 | https://yangzhiping.com/essays/ | rc=0 | https://yangzhiping.com/essays/
+  9 | 07:18:16 | t2-list-tags | 200 | 2.151680 | 2.171251 | 11169 | 0 | https://yangzhiping.com/essays/tags/ | rc=0 | https://yangzhiping.com/essays/tags/
+  10 | 07:18:17 | t2-list-tag-letters | 200 | 0.726597 | 0.727437 | 5983 | 0 | https://yangzhiping.com/essays/tag/letters/ | rc=0 | https://yangzhiping.com/essays/tag/letters/
+  11 | 07:18:18 | t2-detail-20260214 | 200 | 0.768948 | 0.941652 | 28813 | 0 | https://yangzhiping.com/essays/20260214/ | rc=0 | https://yangzhiping.com/essays/20260214/
+  12 | 07:18:19 | t2-detail-20260602 | 200 | 0.751720 | 0.921713 | 23769 | 0 | https://yangzhiping.com/essays/20260602/ | rc=0 | https://yangzhiping.com/essays/20260602/
+  13 | 07:18:19 | t2-list-books | 200 | 0.696927 | 0.697947 | 8053 | 0 | https://yangzhiping.com/books/ | rc=0 | https://yangzhiping.com/books/
+  14 | 07:18:20 | t2-detail-book-9787111509271 | 200 | 0.721348 | 0.728270 | 7896 | 0 | https://yangzhiping.com/books/9787111509271/ | rc=0 | https://yangzhiping.com/books/9787111509271/
+  15 | 07:19:19 | chunk-01-45535c4da7d835d0 | 200 | 0.693184 | 1.051239 | 25555 | 0 | https://yangzhiping.com/_next/static/chunks/45535c4da7d835d0.js | rc=0 | https://yangzhiping.com/_next/static/chunks/45535c4da7d835d0.js
+  16 | 07:19:21 | chunk-02-5944084dd90310d5 | 200 | 0.690218 | 1.012034 | 22597 | 0 | https://yangzhiping.com/_next/static/chunks/5944084dd90310d5.js | rc=0 | https://yangzhiping.com/_next/static/chunks/5944084dd90310d5.js
+  17 | 07:19:22 | chunk-03-023d923a37d494fc | 200 | 0.719096 | 1.085068 | 67398 | 0 | https://yangzhiping.com/_next/static/chunks/023d923a37d494fc.js | rc=0 | https://yangzhiping.com/_next/static/chunks/023d923a37d494fc.js
+  18 | 07:19:23 | chunk-04-turbopack-fa7716599204bcc7 | 200 | 0.705493 | 0.706920 | 3886 | 0 | https://yangzhiping.com/_next/static/chunks/turbopack-fa7716599204bcc7.js | rc=0 | https://yangzhiping.com/_next/static/chunks/turbopack-fa7716599204bcc7.js
+  19 | 07:19:23 | chunk-05-ff1a16fafef87110 | 200 | 0.683802 | 0.684420 | 225 | 0 | https://yangzhiping.com/_next/static/chunks/ff1a16fafef87110.js | rc=0 | https://yangzhiping.com/_next/static/chunks/ff1a16fafef87110.js
+  20 | 07:19:24 | chunk-06-247eb132b7f7b574 | 200 | 0.745664 | 0.819801 | 6898 | 0 | https://yangzhiping.com/_next/static/chunks/247eb132b7f7b574.js | rc=0 | https://yangzhiping.com/_next/static/chunks/247eb132b7f7b574.js
+  21 | 07:19:26 | chunk-07-17df2d113f03491f | 200 | 1.584538 | 1.630955 | 11594 | 0 | https://yangzhiping.com/_next/static/chunks/17df2d113f03491f.js | rc=0 | https://yangzhiping.com/_next/static/chunks/17df2d113f03491f.js
+  22 | 07:19:28 | chunk-08-a6dad97d9634a72d | 200 | 1.810756 | 2.039994 | 39401 | 0 | https://yangzhiping.com/_next/static/chunks/a6dad97d9634a72d.js | rc=0 | https://yangzhiping.com/_next/static/chunks/a6dad97d9634a72d.js
+  23 | 07:19:29 | chunk-09-945fab894dcb74b9 | 200 | 0.656534 | 0.657125 | 2181 | 0 | https://yangzhiping.com/_next/static/chunks/945fab894dcb74b9.js | rc=0 | https://yangzhiping.com/_next/static/chunks/945fab894dcb74b9.js
+  24 | 07:19:29 | chunk-10-3ef7ad905581e75a | 200 | 0.732513 | 0.733622 | 5265 | 0 | https://yangzhiping.com/_next/static/chunks/3ef7ad905581e75a.js | rc=0 | https://yangzhiping.com/_next/static/chunks/3ef7ad905581e75a.js
+  25 | 07:19:34 | t2-detail-20260822 | 200 | 0.704138 | 0.932066 | 37932 | 0 | https://yangzhiping.com/essays/20260822/ | rc=0 | https://yangzhiping.com/essays/20260822/
+  HTTP 请求合计 = 25 (另有任务前已存在的 smoke-detail 1 次，不计入本轮)
+
+## 0b. 文件清单: dir | url | file | bytes | sha256
+  chunk-01-45535c4da7d835d0 | https://yangzhiping.com/_next/static/chunks/45535c4da7d835d0.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-01-45535c4da7d835d0/body.txt | 98906 | a26bf3b40a3d027e584e158cb75b95e24da7b180bc9ee3a5f7a2429c0878dc09
+  chunk-01-45535c4da7d835d0 | https://yangzhiping.com/_next/static/chunks/45535c4da7d835d0.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-01-45535c4da7d835d0/headers.txt | 853 | 20636f67d860ec8003b744ca9241a1f7196685f941ca972f5a993ccea9cb4b57
+  chunk-02-5944084dd90310d5 | https://yangzhiping.com/_next/static/chunks/5944084dd90310d5.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-02-5944084dd90310d5/body.txt | 84129 | 65713951f7df853dd27a36f4d3a6c78d2f837b76276382b43980e07d9e4e45a1
+  chunk-02-5944084dd90310d5 | https://yangzhiping.com/_next/static/chunks/5944084dd90310d5.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-02-5944084dd90310d5/headers.txt | 849 | 83d5f7c0552fc767a2e401cb677b439158375363ecf5bd506656f4fe27f3f363
+  chunk-03-023d923a37d494fc | https://yangzhiping.com/_next/static/chunks/023d923a37d494fc.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-03-023d923a37d494fc/body.txt | 214812 | 2afe1c11e3fa149b52cee186a4c83e80a403e07ee3d1e6ba98a74c23f6043f39
+  chunk-03-023d923a37d494fc | https://yangzhiping.com/_next/static/chunks/023d923a37d494fc.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-03-023d923a37d494fc/headers.txt | 835 | c508756cfc4415983e806d43fb9499e9a22c2e6e171b178cdf409678fd584f59
+  chunk-04-turbopack-fa7716599204bcc7 | https://yangzhiping.com/_next/static/chunks/turbopack-fa7716599204bcc7.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-04-turbopack-fa7716599204bcc7/body.txt | 9909 | d4c6ca4c74ef25d85bed8c2137c6efd0e6037261c10b0f4a5cddad98dab675fd
+  chunk-04-turbopack-fa7716599204bcc7 | https://yangzhiping.com/_next/static/chunks/turbopack-fa7716599204bcc7.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-04-turbopack-fa7716599204bcc7/headers.txt | 823 | 9ece98399216129fcdd5f72c7f69b31041b93a03bcb6401bcd7fd4666bab5017
+  chunk-05-ff1a16fafef87110 | https://yangzhiping.com/_next/static/chunks/ff1a16fafef87110.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-05-ff1a16fafef87110/body.txt | 282 | e9786b1305894e4119bb9811a816dac9cf576755596dd989ee15b455749fc35e
+  chunk-05-ff1a16fafef87110 | https://yangzhiping.com/_next/static/chunks/ff1a16fafef87110.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-05-ff1a16fafef87110/headers.txt | 837 | 1ef91fd6c80b7b55837f98fd1694354d4a8f7bab292f7f74686f02e71d63cc6b
+  chunk-06-247eb132b7f7b574 | https://yangzhiping.com/_next/static/chunks/247eb132b7f7b574.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-06-247eb132b7f7b574/body.txt | 27854 | 75b8ed049ee5d3ecc63ab1c7652fb1c5548c5b88528beb954538c9219d303d80
+  chunk-06-247eb132b7f7b574 | https://yangzhiping.com/_next/static/chunks/247eb132b7f7b574.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-06-247eb132b7f7b574/headers.txt | 823 | e97fbd0b1ef57f7e20b044ae683802125ccd00528a43a499af81979e044b7df1
+  chunk-07-17df2d113f03491f | https://yangzhiping.com/_next/static/chunks/17df2d113f03491f.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-07-17df2d113f03491f/body.txt | 33145 | 6fb4301f5020e8cd860abe842a1a00745ff87dc9f277580a4d58430bd432faf9
+  chunk-07-17df2d113f03491f | https://yangzhiping.com/_next/static/chunks/17df2d113f03491f.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-07-17df2d113f03491f/headers.txt | 825 | f5c94b7ed6290994f3be1cc09a1fd4f83147d94743f09ca55e77d61ec94484e5
+  chunk-08-a6dad97d9634a72d | https://yangzhiping.com/_next/static/chunks/a6dad97d9634a72d.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-08-a6dad97d9634a72d/body.txt | 112594 | 0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683
+  chunk-08-a6dad97d9634a72d | https://yangzhiping.com/_next/static/chunks/a6dad97d9634a72d.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-08-a6dad97d9634a72d/headers.txt | 814 | bac149b8c2eefc76049c95b9cea148ccb29c1b1929163d2eea388c1f11941378
+  chunk-09-945fab894dcb74b9 | https://yangzhiping.com/_next/static/chunks/945fab894dcb74b9.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-09-945fab894dcb74b9/body.txt | 5781 | ac30dffae432cf67086f09773aae89bc131cd7745a179e7c34f051598d6e8e66
+  chunk-09-945fab894dcb74b9 | https://yangzhiping.com/_next/static/chunks/945fab894dcb74b9.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-09-945fab894dcb74b9/headers.txt | 821 | 9847095752ecb03ac66f0ea24765b34b765a51f9c19da27fb00c0f520a826279
+  chunk-10-3ef7ad905581e75a | https://yangzhiping.com/_next/static/chunks/3ef7ad905581e75a.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-10-3ef7ad905581e75a/body.txt | 14085 | d0818a9a90bd82d03a856ea85bf63280c4a441fa71efd47dfe97eadc74463743
+  chunk-10-3ef7ad905581e75a | https://yangzhiping.com/_next/static/chunks/3ef7ad905581e75a.js | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/chunk-10-3ef7ad905581e75a/headers.txt | 814 | c63f1065ef0e321416bddb985b413a193868402b4411aee7386bb0b5b15e57ed
+  detail-20260214 | https://yangzhiping.com/essays/20260214/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-20260214/body.txt | 98918 | 0389e8784ad04211a3f0b23f2cf1ef018540446a908211f60b47819f49a6d1b2
+  detail-20260214 | https://yangzhiping.com/essays/20260214/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-20260214/headers.txt | 781 | f566577b186bbab1464ce26c1709d0c5dac8ded984da72debf3e3c2196266863
+  detail-20260602 | https://yangzhiping.com/essays/20260602/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-20260602/body.txt | 79930 | ee127eb3445255231f35027c3dd34d2e362cf802ef4157695ba741b20363edc5
+  detail-20260602 | https://yangzhiping.com/essays/20260602/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-20260602/headers.txt | 773 | 2eef00578d775c757c89a1f24a7b0090e402fadcd6b8974de9e07d4148904a4d
+  detail-book-9787111509271 | https://yangzhiping.com/books/9787111509271/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-book-9787111509271/body.txt | 35285 | d0a2e5d24b9dface3d93cd9dad905a62dbc6966ce81e2d5adee84f3e7f59ab11
+  detail-book-9787111509271 | https://yangzhiping.com/books/9787111509271/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-book-9787111509271/headers.txt | 773 | 9098d86f814e1037549f65f10b7c216d04470de3825e1a41315eb41a14b3d219
+  list-books | https://yangzhiping.com/books/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/list-books/body.txt | 51469 | 2369b192f895062076606b6fa01e612afd9098de8974acc8e87a684cdb547aea
+  list-books | https://yangzhiping.com/books/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/list-books/headers.txt | 769 | 6297c245f5b30019811bc57a1ad9624d798fd3cf1e72eebf163d634d5a69ec55
+  list-essays | https://yangzhiping.com/essays/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/list-essays/body.txt | 96165 | f2ad89b143771db2c8f210e492ccd310b948f62917b3f329e2600fa7ee6e4943
+  list-essays | https://yangzhiping.com/essays/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/list-essays/headers.txt | 777 | 0aa6b1a626b1a0dc822260a726384e09b5f56b37e4091f9b3256989fb832c434
+  list-tag-letters | https://yangzhiping.com/essays/tag/letters/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/list-tag-letters/body.txt | 32128 | 9fd57213f9ad4acb9e2ce28ca3af4e8ce966d7b8b3dbb5bbe645987730b92763
+  list-tag-letters | https://yangzhiping.com/essays/tag/letters/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/list-tag-letters/headers.txt | 771 | e50bfb491136c3163381043e0efcb873a0036ff23345279a05e3ef7544c74139
+  list-tags | https://yangzhiping.com/essays/tags/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/list-tags/body.txt | 120006 | 7974ea512bbe8c7bc4196c6be55fbdd2810698f87e126a0a827ce15707cff6b4
+  list-tags | https://yangzhiping.com/essays/tags/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/list-tags/headers.txt | 773 | 560f57a7db5eccf067d292522bb068af695742acdd5bcbe4456a36ad874fb713
+  smoke-detail | https://yangzhiping.com/essays/20260822/ (任务前已下载) | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/smoke-detail/body.txt | 128825 | 728f6fe5140cce5881ea1ec9385eaa56d733c48de48ccab73fbaf14dfbc3478c
+  smoke-detail | https://yangzhiping.com/essays/20260822/ (任务前已下载) | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/smoke-detail/headers.txt | 779 | 1decd8137236fe767db825402a749a49424bfecbc629edffe138e591be0d04f1
+  t2-detail-20260214 | https://yangzhiping.com/essays/20260214/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-detail-20260214/body.txt | 98918 | 8d5aa0270dc402ff02c5deff9da5192c590d948442647b95dbcde7a19d5f339e
+  t2-detail-20260214 | https://yangzhiping.com/essays/20260214/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-detail-20260214/headers.txt | 775 | e19d0b6eb00ae790cb0389f60cd656b0ce9d6f3c75287c75cadee876366097f7
+  t2-detail-20260602 | https://yangzhiping.com/essays/20260602/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-detail-20260602/body.txt | 79930 | 84a32f8507cc224a10fd6b1e0c4c28753b664c5a007452b2f3d7f65d7503faf4
+  t2-detail-20260602 | https://yangzhiping.com/essays/20260602/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-detail-20260602/headers.txt | 771 | 2678ea6170b8e70167db7aa3adf98bc970684f8c7804506d384fcd920c0eaae6
+  t2-detail-20260822 | https://yangzhiping.com/essays/20260822/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-detail-20260822/body.txt | 128825 | 7b61baeef360ba0b962160716bbd9f35263ed1e5dc2a74024cdc9d858dcaf96b
+  t2-detail-20260822 | https://yangzhiping.com/essays/20260822/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-detail-20260822/headers.txt | 779 | dc64c8411a3c9b93779367bb5887bcbab7523d406a73e527a71aa84433954945
+  t2-detail-book-9787111509271 | https://yangzhiping.com/books/9787111509271/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-detail-book-9787111509271/body.txt | 35287 | f8aaf0d513c8ee7a46a4566292fb2e479f3521f9bd7968c0526fd4ab5c75112a
+  t2-detail-book-9787111509271 | https://yangzhiping.com/books/9787111509271/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-detail-book-9787111509271/headers.txt | 845 | 7f8909374d06e4cf69f3e32b762792cf5da7a7095db356528a678cb8b786db9f
+  t2-list-books | https://yangzhiping.com/books/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-list-books/body.txt | 51468 | cd0b5596f029ade2510d195ec57f240a037ff3c00265500784620ffbbb5341f7
+  t2-list-books | https://yangzhiping.com/books/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-list-books/headers.txt | 781 | 910a5c8c77780fb613e4823e95883723fd45c93a73938ed0bbd940ba856f580f
+  t2-list-essays | https://yangzhiping.com/essays/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-list-essays/body.txt | 96165 | b20e633e2b4ffba9eb672e18cd9b650bce317dc7e7defb49b714987176ac0b30
+  t2-list-essays | https://yangzhiping.com/essays/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-list-essays/headers.txt | 773 | ac47bfc7d4da1d93399cdaa992deea868f6219e7c5c4329fabc96fbfbd078fae
+  t2-list-tag-letters | https://yangzhiping.com/essays/tag/letters/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-list-tag-letters/body.txt | 32127 | 7d5153c29424d05a4ca8d0d0f2ca685a048051e31601f7a78268f56e52057fdb
+  t2-list-tag-letters | https://yangzhiping.com/essays/tag/letters/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-list-tag-letters/headers.txt | 779 | d0d8b49e15460cabd03394ef92c4c0b681bb32fdefe18e117e4c9aece7f2c1f4
+  t2-list-tags | https://yangzhiping.com/essays/tags/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-list-tags/body.txt | 120006 | 16c121b53095a77c8662bd44e3a5759f3f09b2e17a0f2909dfb6324f9cb03b19
+  t2-list-tags | https://yangzhiping.com/essays/tags/ | /Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/t2-list-tags/headers.txt | 779 | 89c0fe604e38886195c28134d1c6dcd20a4909d7e3700977dd23e754cc617179
+
+## 8. 计时 (秒) run1 / run2
+  list-essays: ttfb=0.921115 total=0.941986 ; ttfb=1.703617 total=2.128323
+  list-tags: ttfb=0.761369 total=0.786828 ; ttfb=2.151680 total=2.171251
+  list-tag-letters: ttfb=0.779636 total=0.781256 ; ttfb=0.726597 total=0.727437
+  detail-20260214: ttfb=1.024954 total=1.232323 ; ttfb=0.768948 total=0.941652
+  detail-20260602: ttfb=0.776303 total=0.953922 ; ttfb=0.751720 total=0.921713
+  list-books: ttfb=0.695296 total=0.697014 ; ttfb=0.696927 total=0.697947
+  detail-book-9787111509271: ttfb=1.527339 total=1.528219 ; ttfb=0.721348 total=0.728270
+  detail-20260822: ttfb=0.704138 total=0.932066
+
+## 1/2/4/7. 详情页
+
+### 20260214 (/Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-20260214/body.txt)
+  bytes=98918 chars=73423 cf_injected_anchor=1 cf_challenge_script=1
+  tags(whole page, scripts removed)={'article': 1, 'h1': 1, 'h2': 0, 'h3': 5, 'h4': 24, 'p': 113, 'strong': 45, 'a': 16, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  <article> span in no-script html: [4505,23652) ; article-content div present=True
+  tags(inside <article>)={'article': 1, 'h1': 1, 'h2': 0, 'h3': 5, 'h4': 24, 'p': 110, 'strong': 45, 'a': 2, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  tags(inside .article-content)={'article': 0, 'h1': 0, 'h2': 0, 'h3': 5, 'h4': 24, 'p': 109, 'strong': 45, 'a': 2, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  visible chars .article-content: non-whitespace=6206 cjk=5394
+  visible chars <article>: non-whitespace=6290 cjk=5457
+  raw byte offset <article>=5943 </article>=37409 first_flight_script=39324
+  flight scripts=17 bytes(incl <script> tags)=58642 share=59.3% decoded_rsc_bytes=52494
+  RSC element counts: p=117 h3=5 h4=24 strong=45 img=0 client_module_rows(I)=9
+  client module exports: ['', 'IconMark', 'MetadataBoundary', 'Navigation', 'OutletBoundary', 'ViewportBoundary', 'default']
+  article-content subtree: inline bytes=4731 lazy rows reachable=128 -> kinds {'host:p': 102, 'host:h4': 21, 'host:h3': 4, 'host:strong': 1}
+  RSC (element,key-prefix) pairs with key pattern name-N: {('script', 'script'): 2, ('h3', 'h2'): 5, ('h4', 'h3'): 24, ('p', 'p'): 109, ('strong', 'strong'): 45, ('br', 'br'): 2}
+  raw markdown marks in RSC: '\n## '=0 '**'=0 md-link=0 ; html-string '<p'=0 '\u003cp'=0
+  dangerouslySetInnerHTML in RSC: [{'offset_in_decoded': 1764, 'element': 'style', 'type_attr': '-', 'html_len': 221, 'kind': 'CSS (@media,body)'}, {'offset_in_decoded': 7405, 'element': 'script', 'type_attr': 'application/ld+json', 'html_len': 449, 'kind': 'JSON-LD @type=BlogPosting'}]
+  inline <script type=application/ld+json> in HTML: 1
+  streaming markers: $RC=0 id="S:=0 <template=0
+  images whole page=0 inside article=0
+  dup: blocks(p/h3/h4/li/blockquote with text)=129 fully_in_RSC=129 ; text chars=6269 found_in_RSC=6269 (100.0%)
+  dup distance HTML->RSC copy (bytes): n=141 min=44268 median=50902 max=55981 over_32KiB=141
+[compress] 20260214: raw full=98918 no_flight=40276 flight_only=58642 flight_share_raw=59.3%
+  gzip6: full=28953 no_flight=13681 flight_standalone=16039 | marginal(full-no_flight)=15272 = 52.7% of full, +111.6% over no_flight; marginal/standalone=95.2%
+  br11: full=14950 no_flight=10956 flight_standalone=12269 | marginal(full-no_flight)=3994 = 26.7% of full, +36.5% over no_flight; marginal/standalone=32.6%
+  br5: full=16490 no_flight=11935 flight_standalone=13461 | marginal(full-no_flight)=4555 = 27.6% of full, +38.2% over no_flight; marginal/standalone=33.8%
+[compress] 20260214 (cf-stripped): raw full=97680 no_flight=39038 flight_only=58642 flight_share_raw=60.0%
+  gzip6: full=28244 no_flight=12935 flight_standalone=16039 | marginal(full-no_flight)=15309 = 54.2% of full, +118.4% over no_flight; marginal/standalone=95.4%
+  br11: full=14498 no_flight=10471 flight_standalone=12269 | marginal(full-no_flight)=4027 = 27.8% of full, +38.5% over no_flight; marginal/standalone=32.8%
+  br5: full=15891 no_flight=11339 flight_standalone=13461 | marginal(full-no_flight)=4552 = 28.6% of full, +40.1% over no_flight; marginal/standalone=33.8%
+
+### 20260602 (/Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-20260602/body.txt)
+  bytes=79930 chars=59761 cf_injected_anchor=1 cf_challenge_script=1
+  tags(whole page, scripts removed)={'article': 1, 'h1': 1, 'h2': 0, 'h3': 5, 'h4': 12, 'p': 60, 'strong': 44, 'a': 18, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  <article> span in no-script html: [4523,18848) ; article-content div present=True
+  tags(inside <article>)={'article': 1, 'h1': 1, 'h2': 0, 'h3': 5, 'h4': 12, 'p': 57, 'strong': 44, 'a': 4, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  tags(inside .article-content)={'article': 0, 'h1': 0, 'h2': 0, 'h3': 5, 'h4': 12, 'p': 56, 'strong': 44, 'a': 4, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  visible chars .article-content: non-whitespace=5343 cjk=4166
+  visible chars <article>: non-whitespace=5440 cjk=4236
+  raw byte offset <article>=6039 </article>=29971 first_flight_script=31886
+  flight scripts=16 bytes(incl <script> tags)=47092 share=58.9% decoded_rsc_bytes=42195
+  RSC element counts: p=64 h3=5 h4=12 strong=44 img=0 client_module_rows(I)=9
+  client module exports: ['', 'IconMark', 'MetadataBoundary', 'Navigation', 'OutletBoundary', 'ViewportBoundary', 'default']
+  article-content subtree: inline bytes=4061 lazy rows reachable=64 -> kinds {'host:p': 48, 'host:h4': 11, 'host:h3': 4, 'host:strong': 1}
+  RSC (element,key-prefix) pairs with key pattern name-N: {('script', 'script'): 2, ('p', 'p'): 56, ('strong', 'strong'): 44, ('h3', 'h2'): 5, ('h4', 'h3'): 12, ('review', 'review'): 1, ('br', 'br'): 4}
+  raw markdown marks in RSC: '\n## '=0 '**'=0 md-link=0 ; html-string '<p'=0 '\u003cp'=0
+  dangerouslySetInnerHTML in RSC: [{'offset_in_decoded': 1764, 'element': 'style', 'type_attr': '-', 'html_len': 221, 'kind': 'CSS (@media,body)'}, {'offset_in_decoded': 7405, 'element': 'script', 'type_attr': 'application/ld+json', 'html_len': 481, 'kind': 'JSON-LD @type=BlogPosting'}]
+  inline <script type=application/ld+json> in HTML: 1
+  streaming markers: $RC=0 id="S:=0 <template=0
+  images whole page=0 inside article=0
+  dup: blocks(p/h3/h4/li/blockquote with text)=73 fully_in_RSC=73 ; text chars=5592 found_in_RSC=5592 (100.0%)
+  dup distance HTML->RSC copy (bytes): n=117 min=36686 median=40821 max=44391 over_32KiB=117
+[compress] 20260602: raw full=79930 no_flight=32838 flight_only=47092 flight_share_raw=58.9%
+  gzip6: full=23894 no_flight=11456 flight_standalone=13492 | marginal(full-no_flight)=12438 = 52.1% of full, +108.6% over no_flight; marginal/standalone=92.2%
+  br11: full=13082 no_flight=9503 flight_standalone=10531 | marginal(full-no_flight)=3579 = 27.4% of full, +37.7% over no_flight; marginal/standalone=34.0%
+  br5: full=14384 no_flight=10388 flight_standalone=11496 | marginal(full-no_flight)=3996 = 27.8% of full, +38.5% over no_flight; marginal/standalone=34.8%
+[compress] 20260602 (cf-stripped): raw full=78692 no_flight=31600 flight_only=47092 flight_share_raw=59.8%
+  gzip6: full=23139 no_flight=10744 flight_standalone=13492 | marginal(full-no_flight)=12395 = 53.6% of full, +115.4% over no_flight; marginal/standalone=91.9%
+  br11: full=12592 no_flight=9021 flight_standalone=10531 | marginal(full-no_flight)=3571 = 28.4% of full, +39.6% over no_flight; marginal/standalone=33.9%
+  br5: full=13808 no_flight=9803 flight_standalone=11496 | marginal(full-no_flight)=4005 = 29.0% of full, +40.9% over no_flight; marginal/standalone=34.8%
+
+### 20260822 (/Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/smoke-detail/body.txt)
+  bytes=128825 chars=90928 cf_injected_anchor=1 cf_challenge_script=1
+  tags(whole page, scripts removed)={'article': 1, 'h1': 1, 'h2': 0, 'h3': 5, 'h4': 24, 'p': 157, 'strong': 50, 'a': 16, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 1, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  <article> span in no-script html: [4526,30708) ; article-content div present=True
+  tags(inside <article>)={'article': 1, 'h1': 1, 'h2': 0, 'h3': 5, 'h4': 24, 'p': 154, 'strong': 50, 'a': 2, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 1, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  tags(inside .article-content)={'article': 0, 'h1': 0, 'h2': 0, 'h3': 5, 'h4': 24, 'p': 153, 'strong': 50, 'a': 2, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 1, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  visible chars .article-content: non-whitespace=9555 cjk=8050
+  visible chars <article>: non-whitespace=9656 cjk=8125
+  raw byte offset <article>=6033 </article>=50687 first_flight_script=52602
+  flight scripts=21 bytes(incl <script> tags)=75271 share=58.4% decoded_rsc_bytes=68003
+  RSC element counts: p=161 h3=5 h4=24 strong=50 img=0 client_module_rows(I)=9
+  client module exports: ['', 'IconMark', 'MetadataBoundary', 'Navigation', 'OutletBoundary', 'ViewportBoundary', 'default']
+  article-content subtree: inline bytes=4931 lazy rows reachable=170 -> kinds {'host:p': 144, 'host:blockquote': 1, 'host:h3': 4, 'host:h4': 21}
+  RSC (element,key-prefix) pairs with key pattern name-N: {('script', 'script'): 2, ('h3', 'h2'): 5, ('h4', 'h3'): 24, ('p', 'p'): 153, ('strong', 'strong'): 50, ('blockquote', 'blockquote'): 1, ('br', 'br'): 2}
+  raw markdown marks in RSC: '\n## '=0 '**'=0 md-link=0 ; html-string '<p'=0 '\u003cp'=0
+  dangerouslySetInnerHTML in RSC: [{'offset_in_decoded': 1764, 'element': 'style', 'type_attr': '-', 'html_len': 221, 'kind': 'CSS (@media,body)'}, {'offset_in_decoded': 7405, 'element': 'script', 'type_attr': 'application/ld+json', 'html_len': 470, 'kind': 'JSON-LD @type=BlogPosting'}]
+  inline <script type=application/ld+json> in HTML: 1
+  streaming markers: $RC=0 id="S:=0 <template=0
+  images whole page=0 inside article=0
+  dup: blocks(p/h3/h4/li/blockquote with text)=173 fully_in_RSC=173 ; text chars=9737 found_in_RSC=9737 (100.0%)
+  dup distance HTML->RSC copy (bytes): n=171 min=57501 median=66100 max=72565 over_32KiB=171
+[compress] 20260822: raw full=128825 no_flight=53554 flight_only=75271 flight_share_raw=58.4%
+  gzip6: full=38137 no_flight=18037 flight_standalone=20905 | marginal(full-no_flight)=20100 = 52.7% of full, +111.4% over no_flight; marginal/standalone=96.1%
+  br11: full=19150 no_flight=14624 flight_standalone=16276 | marginal(full-no_flight)=4526 = 23.6% of full, +30.9% over no_flight; marginal/standalone=27.8%
+  br5: full=21140 no_flight=15920 flight_standalone=17875 | marginal(full-no_flight)=5220 = 24.7% of full, +32.8% over no_flight; marginal/standalone=29.2%
+[compress] 20260822 (cf-stripped): raw full=127587 no_flight=52316 flight_only=75271 flight_share_raw=59.0%
+  gzip6: full=37376 no_flight=17274 flight_standalone=20905 | marginal(full-no_flight)=20102 = 53.8% of full, +116.4% over no_flight; marginal/standalone=96.2%
+  br11: full=18609 no_flight=14130 flight_standalone=16276 | marginal(full-no_flight)=4479 = 24.1% of full, +31.7% over no_flight; marginal/standalone=27.5%
+  br5: full=20530 no_flight=15336 flight_standalone=17875 | marginal(full-no_flight)=5194 = 25.3% of full, +33.9% over no_flight; marginal/standalone=29.1%
+
+### book-9787111509271 (/Users/nv/proj.xt.com/manzi-blog/resources/md-render-yang-20261010/detail-book-9787111509271/body.txt)
+  bytes=35285 chars=32061 cf_injected_anchor=1 cf_challenge_script=1
+  tags(whole page, scripts removed)={'article': 1, 'h1': 1, 'h2': 1, 'h3': 5, 'h4': 0, 'p': 26, 'strong': 0, 'a': 14, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 1, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  <article> span in no-script html: [6789,9377) ; article-content div present=False
+  tags(inside <article>)={'article': 1, 'h1': 0, 'h2': 0, 'h3': 5, 'h4': 0, 'p': 22, 'strong': 0, 'a': 0, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0}
+  visible chars <article>: non-whitespace=696 cjk=588
+  raw byte offset <article>=8157 </article>=12036 first_flight_script=13963
+  flight scripts=10 bytes(incl <script> tags)=20370 share=57.7% decoded_rsc_bytes=17637
+  RSC element counts: p=26 h3=5 h4=0 strong=0 img=0 client_module_rows(I)=10
+  client module exports: ['', 'IconMark', 'Image', 'MetadataBoundary', 'Navigation', 'OutletBoundary', 'ViewportBoundary', 'default']
+  RSC (element,key-prefix) pairs with key pattern name-N: {('script', 'script'): 2}
+  raw markdown marks in RSC: '\n## '=0 '**'=3 md-link=0 ; html-string '<p'=0 '\u003cp'=0
+  dangerouslySetInnerHTML in RSC: [{'offset_in_decoded': 1931, 'element': 'style', 'type_attr': '-', 'html_len': 221, 'kind': 'CSS (@media,body)'}, {'offset_in_decoded': 4541, 'element': 'script', 'type_attr': 'application/ld+json', 'html_len': 352, 'kind': 'JSON-LD @type=Book'}]
+  inline <script type=application/ld+json> in HTML: 1
+  streaming markers: $RC=0 id="S:=0 <template=0
+  images whole page=1 inside article=0
+    img {'src_kind': 'images', 'ext': 'webp', 'loading': '-', 'width': False, 'height': False, 'srcset': False, 'decoding': 'async', 'fetchpriority': '-', 'data-nimg': True}
+[compress] book-9787111509271: raw full=35285 no_flight=14915 flight_only=20370 flight_share_raw=57.7%
+  gzip6: full=7929 no_flight=4918 flight_standalone=5317 | marginal(full-no_flight)=3011 = 38.0% of full, +61.2% over no_flight; marginal/standalone=56.6%
+  br11: full=6400 no_flight=3868 flight_standalone=4293 | marginal(full-no_flight)=2532 = 39.6% of full, +65.5% over no_flight; marginal/standalone=59.0%
+  br5: full=7290 no_flight=4504 flight_standalone=4950 | marginal(full-no_flight)=2786 = 38.2% of full, +61.9% over no_flight; marginal/standalone=56.3%
+[compress] book-9787111509271 (cf-stripped): raw full=34050 no_flight=13680 flight_only=20370 flight_share_raw=59.8%
+  gzip6: full=7249 no_flight=4276 flight_standalone=5317 | marginal(full-no_flight)=2973 = 41.0% of full, +69.5% over no_flight; marginal/standalone=55.9%
+  br11: full=5892 no_flight=3387 flight_standalone=4293 | marginal(full-no_flight)=2505 = 42.5% of full, +74.0% over no_flight; marginal/standalone=58.4%
+  br5: full=6522 no_flight=3747 flight_standalone=4950 | marginal(full-no_flight)=2775 = 42.5% of full, +74.1% over no_flight; marginal/standalone=56.1%
+
+## 3. 外部 JS
+  detail-20260214: script src = ['/_next/static/chunks/45535c4da7d835d0.js', '/_next/static/chunks/5944084dd90310d5.js', '/_next/static/chunks/023d923a37d494fc.js', '/_next/static/chunks/turbopack-fa7716599204bcc7.js', '/_next/static/chunks/ff1a16fafef87110.js', '/_next/static/chunks/247eb132b7f7b574.js', '/_next/static/chunks/17df2d113f03491f.js', '/_next/static/chunks/a6dad97d9634a72d.js', '/_next/static/chunks/945fab894dcb74b9.js']
+  detail-20260602: script src = ['/_next/static/chunks/45535c4da7d835d0.js', '/_next/static/chunks/5944084dd90310d5.js', '/_next/static/chunks/023d923a37d494fc.js', '/_next/static/chunks/turbopack-fa7716599204bcc7.js', '/_next/static/chunks/ff1a16fafef87110.js', '/_next/static/chunks/247eb132b7f7b574.js', '/_next/static/chunks/17df2d113f03491f.js', '/_next/static/chunks/a6dad97d9634a72d.js', '/_next/static/chunks/945fab894dcb74b9.js']
+  smoke-detail: script src = ['/_next/static/chunks/45535c4da7d835d0.js', '/_next/static/chunks/5944084dd90310d5.js', '/_next/static/chunks/023d923a37d494fc.js', '/_next/static/chunks/turbopack-fa7716599204bcc7.js', '/_next/static/chunks/ff1a16fafef87110.js', '/_next/static/chunks/247eb132b7f7b574.js', '/_next/static/chunks/17df2d113f03491f.js', '/_next/static/chunks/a6dad97d9634a72d.js', '/_next/static/chunks/945fab894dcb74b9.js']
+  detail-book-9787111509271: script src = ['/_next/static/chunks/45535c4da7d835d0.js', '/_next/static/chunks/5944084dd90310d5.js', '/_next/static/chunks/023d923a37d494fc.js', '/_next/static/chunks/turbopack-fa7716599204bcc7.js', '/_next/static/chunks/ff1a16fafef87110.js', '/_next/static/chunks/247eb132b7f7b574.js', '/_next/static/chunks/3ef7ad905581e75a.js', '/_next/static/chunks/17df2d113f03491f.js', '/_next/static/chunks/a6dad97d9634a72d.js', '/_next/static/chunks/945fab894dcb74b9.js']
+  list-essays: script src = ['/_next/static/chunks/45535c4da7d835d0.js', '/_next/static/chunks/5944084dd90310d5.js', '/_next/static/chunks/023d923a37d494fc.js', '/_next/static/chunks/turbopack-fa7716599204bcc7.js', '/_next/static/chunks/ff1a16fafef87110.js', '/_next/static/chunks/247eb132b7f7b574.js', '/_next/static/chunks/dcc1e9bf19c5ec3d.js', '/_next/static/chunks/17df2d113f03491f.js', '/_next/static/chunks/a6dad97d9634a72d.js', '/_next/static/chunks/945fab894dcb74b9.js']
+  list-tags: script src = ['/_next/static/chunks/45535c4da7d835d0.js', '/_next/static/chunks/5944084dd90310d5.js', '/_next/static/chunks/023d923a37d494fc.js', '/_next/static/chunks/turbopack-fa7716599204bcc7.js', '/_next/static/chunks/ff1a16fafef87110.js', '/_next/static/chunks/247eb132b7f7b574.js', '/_next/static/chunks/17df2d113f03491f.js', '/_next/static/chunks/a6dad97d9634a72d.js', '/_next/static/chunks/945fab894dcb74b9.js']
+  list-tag-letters: script src = ['/_next/static/chunks/45535c4da7d835d0.js', '/_next/static/chunks/5944084dd90310d5.js', '/_next/static/chunks/023d923a37d494fc.js', '/_next/static/chunks/turbopack-fa7716599204bcc7.js', '/_next/static/chunks/ff1a16fafef87110.js', '/_next/static/chunks/247eb132b7f7b574.js', '/_next/static/chunks/17df2d113f03491f.js', '/_next/static/chunks/a6dad97d9634a72d.js', '/_next/static/chunks/945fab894dcb74b9.js']
+  list-books: script src = ['/_next/static/chunks/45535c4da7d835d0.js', '/_next/static/chunks/5944084dd90310d5.js', '/_next/static/chunks/023d923a37d494fc.js', '/_next/static/chunks/turbopack-fa7716599204bcc7.js', '/_next/static/chunks/ff1a16fafef87110.js', '/_next/static/chunks/247eb132b7f7b574.js', '/_next/static/chunks/3ef7ad905581e75a.js', '/_next/static/chunks/17df2d113f03491f.js', '/_next/static/chunks/a6dad97d9634a72d.js', '/_next/static/chunks/945fab894dcb74b9.js']
+  三篇随笔详情 JS 列表完全相同: True
+
+  chunk-01-45535c4da7d835d0: bytes=98906 sha256=a26bf3b40a3d027e584e158cb75b95e24da7b180bc9ee3a5f7a2429c0878dc09
+    version strings: ['19.3.0-canary-52684925-20251110']
+
+  chunk-02-5944084dd90310d5: bytes=84129 sha256=65713951f7df853dd27a36f4d3a6c78d2f837b76276382b43980e07d9e4e45a1
+    term 'dangerouslySetInnerHTML': 1 hits
+      @61455: …t)),e)?(0,a.jsx)("html",{ref:this.htmlRef,suppressHydrationWarning:!0,dangerouslySetInnerHTML:{__html:this.rootHtml}}):this.props.children}}let i=o;("function"==ty…
+
+  chunk-03-023d923a37d494fc: bytes=214812 sha256=2afe1c11e3fa149b52cee186a4c83e80a403e07ee3d1e6ba98a74c23f6043f39
+    term 'dangerouslySetInnerHTML': 13 hits
+      @1377: …r",httpEquiv:"http-equiv",noModule:"noModule"},l=["onLoad","onReady","dangerouslySetInnerHTML","children","onError","strategy","stylesheets"];function a(e){return[…
+      @104330: …break;case"defaultValue":m!==d&&(tr=!0),i=m;break;case"children":case"dangerouslySetInnerHTML":if(null!=m)throw Error(u(137,t));break;default:m!==d&&cn(e,t,p,m,r,d…
+      @105297: …case"defaultValue":l!==a&&(tr=!0),m=l;break;case"children":break;case"dangerouslySetInnerHTML":if(null!=l)throw Error(u(91));break;default:l!==a&&cn(e,t,o,l,r,a)}t…
+      @106095: …nProperty(c)&&p!==m&&(null!=p||null!=m))switch(c){case"children":case"dangerouslySetInnerHTML":if(null!=p)throw Error(u(137,t));break;default:cn(e,t,c,p,r,m)}retur…
+      @170258: …l",e);return;case"onScrollEnd":null!=r&&sZ("scrollend",e);return;case"dangerouslySetInnerHTML":if(null!=r){if("object"!=typeof r||!("__html"in r))throw Error(u(61)…
+      @173132: …}function cr(e,t,n,r,l,a){switch(n){case"style":tx(e,r,a);return;case"dangerouslySetInnerHTML":if(null!=r){if("object"!=typeof r||!("__html"in r))throw Error(u(61)…
+    version strings: ['16.0.10', '19.3.0-canary-52684925-20251110']
+
+  chunk-04-turbopack-fa7716599204bcc7: bytes=9909 sha256=d4c6ca4c74ef25d85bed8c2137c6efd0e6037261c10b0f4a5cddad98dab675fd
+
+  chunk-05-ff1a16fafef87110: bytes=282 sha256=e9786b1305894e4119bb9811a816dac9cf576755596dd989ee15b455749fc35e
+
+  chunk-06-247eb132b7f7b574: bytes=27854 sha256=75b8ed049ee5d3ecc63ab1c7652fb1c5548c5b88528beb954538c9219d303d80
+
+  chunk-07-17df2d113f03491f: bytes=33145 sha256=6fb4301f5020e8cd860abe842a1a00745ff87dc9f277580a4d58430bd432faf9
+
+  chunk-08-a6dad97d9634a72d: bytes=112594 sha256=0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683
+
+  chunk-09-945fab894dcb74b9: bytes=5781 sha256=ac30dffae432cf67086f09773aae89bc131cd7745a179e7c34f051598d6e8e66
+
+  chunk-10-3ef7ad905581e75a: bytes=14085 sha256=d0818a9a90bd82d03a856ea85bf63280c4a441fa71efd47dfe97eadc74463743
+
+  随笔详情 9 个 JS 合计 bytes(解压后)=587412
+
+## 6. 目录页
+
+### list-essays: bytes=96165 flight_share=69.7%
+  distinct essay detail links (HTML)=13 ; non-date-slug essay links=['/essays/categories/', '/essays/category/ai/', '/essays/category/cogsci/', '/essays/category/life/', '/essays/category/reading/']
+  essay ids in RSC=0 ; ids in RSC not in HTML=0
+  years of linked essays={'2026': 8}
+  tag links=6 ; book links=0
+  pagination markers (HTML)=none
+  pagination markers (RSC)=none
+  year headings h1-h4=[] ; archive-like hrefs=[]
+  tags={'article': 8, 'h1': 1, 'h2': 3, 'h3': 18, 'h4': 0, 'p': 14, 'strong': 0, 'a': 32, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0} imgs=0
+  buttons=26 details=0
+  union of essay ids across /essays/, /essays/tags/, /essays/tag/letters/ = 14
+  20260214 linked from /essays/: True ; 20260602: True ; 20260822: True
+
+### list-tags: bytes=120006 flight_share=58.0%
+  distinct essay detail links (HTML)=12 ; non-date-slug essay links=['/essays/category/ai/', '/essays/category/books/', '/essays/category/cogsci/', '/essays/category/education/', '/essays/category/life/', '/essays/category/notes/', '/essays/category/preface/', '/essays/category/reading/', '/essays/category/research/', '/essays/category/tech/']
+  essay ids in RSC=0 ; ids in RSC not in HTML=0
+  years of linked essays={}
+  tag links=62 ; book links=0
+  pagination markers (HTML)=none
+  pagination markers (RSC)=none
+  year headings h1-h4=[] ; archive-like hrefs=[]
+  tags={'article': 0, 'h1': 1, 'h2': 0, 'h3': 62, 'h4': 0, 'p': 66, 'strong': 0, 'a': 87, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0} imgs=0
+  buttons=1 details=0
+    tag advice: numbers_in_anchor=['2']
+    tag aiwriter: numbers_in_anchor=['9']
+    tag anniversaries: numbers_in_anchor=['6']
+    tag annual: numbers_in_anchor=['6']
+    tag annualreading: numbers_in_anchor=['7']
+    tag anrenmind: numbers_in_anchor=['0']
+    tag booklists: numbers_in_anchor=['10']
+    tag capital: numbers_in_anchor=['3']
+    tag cogpoetics: numbers_in_anchor=['1']
+    tag cogwriting: numbers_in_anchor=['4']
+    tag conference: numbers_in_anchor=['5']
+    tag consulting: numbers_in_anchor=['7']
+    tag development: numbers_in_anchor=['1']
+    tag domestic: numbers_in_anchor=['7']
+    tag edited: numbers_in_anchor=['3']
+    tag efficiency: numbers_in_anchor=['3']
+    tag elegies: numbers_in_anchor=['3']
+    tag emotion: numbers_in_anchor=['2']
+    tag essays: numbers_in_anchor=['4']
+    tag foreign: numbers_in_anchor=['7']
+    tag fourbooks: numbers_in_anchor=['20']
+    tag frontier: numbers_in_anchor=['2']
+    tag futureself: numbers_in_anchor=['1']
+    tag github: numbers_in_anchor=['9']
+    tag growthmind: numbers_in_anchor=['4']
+    tag hybrid: numbers_in_anchor=['2']
+    tag insights: numbers_in_anchor=['20']
+    tag keywords: numbers_in_anchor=['4']
+    tag letters: numbers_in_anchor=['6']
+    tag life: numbers_in_anchor=['2']
+    tag llm: numbers_in_anchor=['10']
+    tag mac: numbers_in_anchor=['12']
+    tag markdown: numbers_in_anchor=['7']
+    tag measurement: numbers_in_anchor=['1']
+    tag methods: numbers_in_anchor=['5']
+    tag nature: numbers_in_anchor=['1']
+    tag notes: numbers_in_anchor=['17']
+    tag opensource: numbers_in_anchor=['5']
+    tag papers: numbers_in_anchor=['1']
+    tag parenting: numbers_in_anchor=['4']
+    tag patterns: numbers_in_anchor=['7']
+    tag psychology: numbers_in_anchor=['1']
+    tag readingmind: numbers_in_anchor=['1']
+    tag reflections: numbers_in_anchor=['1']
+    tag related: numbers_in_anchor=['3']
+    tag relationship: numbers_in_anchor=['4']
+    tag rlang: numbers_in_anchor=['7']
+    tag school: numbers_in_anchor=['6']
+    tag scientists: numbers_in_anchor=['3']
+    tag series: numbers_in_anchor=['2']
+    tag smartreader: numbers_in_anchor=['6']
+    tag sna: numbers_in_anchor=['4']
+    tag social: numbers_in_anchor=['9']
+    tag speeches: numbers_in_anchor=['2']
+    tag startup: numbers_in_anchor=['10']
+    tag systematic: numbers_in_anchor=['6']
+    tag thinking: numbers_in_anchor=['1']
+    tag thoughts: numbers_in_anchor=['11']
+    tag translated: numbers_in_anchor=['2']
+    tag wenxin: numbers_in_anchor=['13']
+    tag workmind: numbers_in_anchor=['3']
+    tag zotero: numbers_in_anchor=['7']
+
+### list-tag-letters: bytes=32128 flight_share=58.3%
+  distinct essay detail links (HTML)=6 ; non-date-slug essay links=[]
+  essay ids in RSC=0 ; ids in RSC not in HTML=0
+  years of linked essays={'2020': 1, '2021': 1, '2022': 1, '2024': 1, '2025': 2}
+  tag links=0 ; book links=0
+  pagination markers (HTML)=none
+  pagination markers (RSC)=none
+  year headings h1-h4=[] ; archive-like hrefs=[]
+  tags={'article': 6, 'h1': 1, 'h2': 6, 'h3': 0, 'h4': 0, 'p': 11, 'strong': 0, 'a': 22, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 0, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0} imgs=0
+  buttons=1 details=0
+
+### list-books: bytes=51469 flight_share=56.0%
+  distinct essay detail links (HTML)=0 ; non-date-slug essay links=[]
+  essay ids in RSC=0 ; ids in RSC not in HTML=0
+  years of linked essays={}
+  tag links=0 ; book links=17
+  pagination markers (HTML)=none
+  pagination markers (RSC)=none
+  year headings h1-h4=[] ; archive-like hrefs=[]
+  tags={'article': 5, 'h1': 1, 'h2': 2, 'h3': 7, 'h4': 0, 'p': 25, 'strong': 0, 'a': 29, 'ul': 0, 'ol': 0, 'li': 0, 'blockquote': 0, 'img': 17, 'pre': 0, 'code': 0, 'table': 0, 'figure': 0, 'hr': 0} imgs=17
+  buttons=1 details=0
+  book ids=['9787111509271', '9787111531166', '9787111596158', '9787111710837', '9787111731931', '9787115232632', '9787121371219', '9787121425356', '9787121461194', '9787121475016', '9787121491610', '9787208116092', '9787212032951', '9787501941414', '9787508663616', '9787508698144', '9787521748536']
+  img info sample=[{'src_kind': 'images', 'ext': 'webp', 'loading': 'lazy', 'width': False, 'height': False, 'srcset': False, 'decoding': 'async', 'fetchpriority': '-', 'data-nimg': True}, {'src_kind': 'images', 'ext': 'webp', 'loading': 'lazy', 'width': False, 'height': False, 'srcset': False, 'decoding': 'async', 'fetchpriority': '-', 'data-nimg': True}, {'src_kind': 'images', 'ext': 'webp', 'loading': 'lazy', 'width': False, 'height': False, 'srcset': False, 'decoding': 'async', 'fetchpriority': '-', 'data-nimg': True}]
+  img ext={'webp': 17} loading={'lazy': 17} wh=Counter({(False, False): 17})
+
+## 5. 响应头关键字段 (最后一跳)
+  chunk-01-45535c4da7d835d0: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=REVALIDATED | etag=W/"9a4c5f85d41c7eac3d9670bc4a2659de" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-02-5944084dd90310d5: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=REVALIDATED | etag=W/"7d740d80cf61640c20c49e79a6cef71f" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-03-023d923a37d494fc: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=REVALIDATED | etag=W/"15552917118deba2b5d72688ac78a49e" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-04-turbopack-fa7716599204bcc7: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=REVALIDATED | etag=W/"f604511ae99c24d593676b25258f86ee" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-05-ff1a16fafef87110: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=REVALIDATED | etag=W/"2038ef7fdff6285995df4060ca9711ac" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-06-247eb132b7f7b574: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=REVALIDATED | etag=W/"f42808861011dea1003e21be0947c2a8" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-07-17df2d113f03491f: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=REVALIDATED | etag=W/"ada5926d0c63ee283f667699223ee095" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-08-a6dad97d9634a72d: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=MISS | etag=W/"ffcb815f2cb3d53f8f0cd145af8e6864" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-09-945fab894dcb74b9: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=REVALIDATED | etag=W/"2cd26a9f7f334e5604e0e8368ae6af9f" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  chunk-10-3ef7ad905581e75a: HTTP/2 200  | cache-control=public, max-age=14400, must-revalidate | cf-cache-status=MISS | etag=W/"b877ae4c8dcc53e4fb481594b1cc853d" | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  detail-20260214: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  detail-20260602: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  detail-book-9787111509271: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  list-books: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  list-essays: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  list-tag-letters: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  list-tags: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  smoke-detail: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  t2-detail-20260214: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  t2-detail-20260602: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  t2-detail-20260822: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  t2-detail-book-9787111509271: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | link=</images/img9787111509271.webp>; rel="preload"; as=image | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  t2-list-books: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  t2-list-essays: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  t2-list-tag-letters: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+  t2-list-tags: HTTP/2 200  | cache-control=public, max-age=0, must-revalidate | cf-cache-status=DYNAMIC | server=cloudflare | content-encoding=gzip | vary=accept-encoding | x-nextjs*/x-vercel* = none
+
+## 附. 两次请求去掉 Cloudflare 注入后是否逐字节相同
+  list-essays: identical_after_strip=True (cf anchors 1/1, cf scripts 1/1)
+  list-tags: identical_after_strip=True (cf anchors 1/1, cf scripts 1/1)
+  list-tag-letters: identical_after_strip=True (cf anchors 1/1, cf scripts 1/1)
+  detail-20260214: identical_after_strip=True (cf anchors 1/1, cf scripts 1/1)
+  detail-20260602: identical_after_strip=True (cf anchors 1/1, cf scripts 1/1)
+  list-books: identical_after_strip=True (cf anchors 1/1, cf scripts 1/1)
+  detail-book-9787111509271: identical_after_strip=True (cf anchors 1/1, cf scripts 1/1)
+  20260822 (smoke 07:13Z vs t2): identical_after_strip=True (cf anchors 1/1, cf scripts 1/1)
+
+## 补充 A. /essays/ 内嵌的全量索引 (RSC 里的客户端组件 props)
+  client ref row d module 13474 export 'Navigation' chunks ['dcc1e9bf19c5ec3d', '17df2d113f03491f']
+  client ref row e module 22016 export '' chunks ['dcc1e9bf19c5ec3d', '17df2d113f03491f']
+  client ref row 17 module 28629 export 'EssaysClient' chunks ['dcc1e9bf19c5ec3d', '17df2d113f03491f']
+  essaysByYear @decoded_offset=11324: json_bytes=43056 years=25 entries=361 distinct_slugs=361 entry_keys=['category', 'date', 'slug', 'title']
+  per-year={'2000': 1, '2002': 4, '2003': 2, '2005': 2, '2006': 12, '2007': 2, '2008': 5, '2009': 11, '2010': 2, '2011': 12, '2012': 13, '2013': 49, '2014': 25, '2015': 7, '2016': 27, '2017': 11, '2018': 9, '2019': 15, '2020': 21, '2021': 14, '2022': 28, '2023': 37, '2024': 20, '2025': 24, '2026': 8}
+  next prop after essaysByYear: ['allYears']
+  HTML year buttons=25 ; date-slug links rendered in HTML=8
+  /essays/ 页独有 JS: ['/_next/static/chunks/dcc1e9bf19c5ec3d.js'] (预算用尽，未下载)
+
+## 补充 B. 正文文本节点在 RSC 中出现次数 (>=10 字的文本节点)
+  detail-20260214: nodes=141 occurrences_in_RSC={1: 141}
+  detail-20260602: nodes=116 occurrences_in_RSC={1: 116}
+  smoke-detail: nodes=167 occurrences_in_RSC={1: 167}
+
+## 补充 C. 正文渲染器的类名/客户端组件名是否出现在客户端 JS
+  'article-content': total_hits=0
+  '1.0625rem': total_hits=0
+  'leading-[1.9]': total_hits=0
+  'essaysByYear': total_hits=0
+  'EssaysClient': total_hits=0
+
+## 补充 D. 作品详情页
+  literal '**' in visible HTML (no scripts)=6 ; inside <p> context ; in JSON-LD=0 expected
+  <link rel=preload as=image> in HTML=1
+  img {'src_kind': 'images', 'ext': 'webp', 'loading': '-', 'width': False, 'height': False, 'srcset': False, 'decoding': 'async', 'fetchpriority': '-', 'data-nimg': True}
+  data-nimg values (books index)=Counter({'fill': 17})
+
+## 补充 E. JS 线上字节、与昨日存档比对、RSC 第 0 行标志
+  随笔详情 9 个 JS: wire(gzip)=179735 decoded=587412 ; 其中 noModule a6dad97d9634a72d: wire=39401 decoded=112594
+  chunk-01-45535c4da7d835d0: old_archive=asset-1 sha_equal=True
+  chunk-02-5944084dd90310d5: old_archive=asset-2 sha_equal=True
+  chunk-03-023d923a37d494fc: old_archive=asset-3 sha_equal=True
+  chunk-04-turbopack-fa7716599204bcc7: old_archive=asset-4 sha_equal=True
+  chunk-05-ff1a16fafef87110: old_archive=asset-5 sha_equal=True
+  chunk-06-247eb132b7f7b574: old_archive=asset-6 sha_equal=True
+  chunk-07-17df2d113f03491f: old_archive=asset-8 sha_equal=True
+  chunk-08-a6dad97d9634a72d: old_archive=asset-10 sha_equal=True
+  chunk-09-945fab894dcb74b9: old_archive=asset-11 sha_equal=True
+  chunk-10-3ef7ad905581e75a: old_archive=asset-7 sha_equal=True
+  detail-20260214: buildId=BzYyKsK7M9UXQ_xrBPWSM row0_flags=[('S', 'true')]
+  detail-20260602: buildId=BzYyKsK7M9UXQ_xrBPWSM row0_flags=[('S', 'true')]
+  smoke-detail: buildId=BzYyKsK7M9UXQ_xrBPWSM row0_flags=[('S', 'true')]
+  detail-book-9787111509271: buildId=BzYyKsK7M9UXQ_xrBPWSM row0_flags=[('S', 'true')]
+  list-essays: buildId=BzYyKsK7M9UXQ_xrBPWSM row0_flags=[('S', 'true')]
+  list-tags: buildId=BzYyKsK7M9UXQ_xrBPWSM row0_flags=[('S', 'true')]
+  list-tag-letters: buildId=BzYyKsK7M9UXQ_xrBPWSM row0_flags=[('S', 'true')]
+  list-books: buildId=BzYyKsK7M9UXQ_xrBPWSM row0_flags=[('S', 'true')]
+  注: 本地 src/site/node_modules/next (16.4.0) dist/server/app-render/app-render.js:393/1259/1360 写 S: ctx.renderCapabilities.supportsPerSegmentPrefetching；1883 行(动态渲染路径)取 renderOpts.cacheComponents，1894 行(预渲染路径)恒为 true。参照站 JS 内版本串为 16.0.10，二者语义是否一致未核实。

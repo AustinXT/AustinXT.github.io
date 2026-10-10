@@ -1,0 +1,15 @@
+1c1,12
+< @import "tailwindcss";
+---
+> @import "tailwindcss" source(none);
+> /* 实验克隆专用：克隆位于被忽略的 _tmp/ 下，自动源检测会扫 node_modules 与 content/；
+>    这里显式复刻原工程实际扫描的文件集（app/ components/ 与根目录配置文件），另加实验新增的 lib/ */
+> @source "../app";
+> @source "../components";
+> @source "../lib";
+> @source "../README.md";
+> @source "../package.json";
+> @source "../tsconfig.json";
+> @source "../next.config.ts";
+> @source "../postcss.config.mjs";
+> @source "../eslint.config.mjs";

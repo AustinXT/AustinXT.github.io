@@ -1,0 +1,473 @@
+{
+ "N": 100,
+ "build": {
+  "N": 100,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_secs_python": 3.99,
+  "time_real_secs": 3.93,
+  "time_maxrss_bytes_single_process": 851689472,
+  "sampled_tree_rss_peak_bytes": 1946288128,
+  "sampled_tree_peak_procs": 12,
+  "rss_samples": 8,
+  "gen_secs": 0.16,
+  "gen": {
+   "N": 100,
+   "length_buckets": {
+    "2000": 21,
+    "5000": 55,
+    "15000": 23,
+    "fixed": 1
+   },
+   "total_chars": 684228,
+   "total_fragment_bytes": 2236189,
+   "fixed_chars": 8236,
+   "longest": {
+    "slug": "essay-00030",
+    "chars": 17174
+   }
+  }
+ },
+ "log": {
+  "compile_secs": 1.377,
+  "typescript_secs": 1.137,
+  "workers": 9,
+  "static_pages": 116,
+  "generate_secs": 0.318,
+  "warnings": []
+ },
+ "out_total_bytes": 15806886,
+ "out_file_count": 590,
+ "out_by_kind": {
+  "__PAGE__.txt": {
+   "files": 115,
+   "bytes": 2950866
+  },
+  "__next._full.txt": {
+   "files": 115,
+   "bytes": 3071777
+  },
+  "__next._tree.txt": {
+   "files": 115,
+   "bytes": 39268
+  },
+  "_next/static": {
+   "files": 13,
+   "bytes": 596231
+  },
+  "index.html": {
+   "files": 116,
+   "bytes": 6068806
+  },
+  "index.txt": {
+   "files": 115,
+   "bytes": 3071777
+  },
+  "other": {
+   "files": 1,
+   "bytes": 8161
+  }
+ },
+ "fixed": {
+  "route": "/essays/fixed-0001/",
+  "sha256": "f34f582b4278c8b0",
+  "html": {
+   "raw": 65760,
+   "gzip6": 25247,
+   "br11": 14142,
+   "br5": 15342
+  },
+  "inline_rsc_script_count": 8,
+  "inline_rsc_bytes": 36363,
+  "inline_rsc_share_raw": 0.553,
+  "html_without_inline_rsc": {
+   "raw": 29397,
+   "gzip6": 13383,
+   "br11": 11794,
+   "br5": 12570
+  },
+  "inline_rsc_cost_pct_vs_stripped": {
+   "raw": 123.7,
+   "gzip6": 88.6,
+   "br11": 19.9,
+   "br5": 22.1
+  },
+  "a_tag_count": 14,
+  "js_modern_srcs": [
+   "/_next/static/chunks/0umf92h1sb77c.js",
+   "/_next/static/chunks/1ar3ax_-2xzvy.js",
+   "/_next/static/chunks/1x6obpmlu1_c2.js",
+   "/_next/static/chunks/29017sj3i6d24.js",
+   "/_next/static/chunks/2r4s4h5xul1n-.js",
+   "/_next/static/chunks/3dmm3v_fq28gc.js",
+   "/_next/static/chunks/turbopack-3-ry682tkyiqk.js"
+  ],
+  "js_preload_only": [],
+  "js_nomodule_srcs": [
+   "/_next/static/chunks/0cz1d0mv5g_q7.js"
+  ],
+  "js_modern_plus_preload": {
+   "raw": 466680,
+   "gzip6": 139770
+  },
+  "js_nomodule": {
+   "raw": 112594,
+   "gzip6": 39473
+  },
+  "css": {
+   "raw": 8682,
+   "gzip6": 2766
+  },
+  "route_files": {
+   "__next._full.txt": {
+    "raw": 33051,
+    "gzip6": 14374,
+    "br11": 12641
+   },
+   "__next._tree.txt": {
+    "raw": 351,
+    "gzip6": 252,
+    "br11": 211
+   },
+   "__next.essays.$d$slug.__PAGE__.txt": {
+    "raw": 31994,
+    "gzip6": 14204,
+    "br11": 12562
+   },
+   "index.html": {
+    "raw": 65760,
+    "gzip6": 25247,
+    "br11": 14142
+   },
+   "index.txt": {
+    "raw": 33051,
+    "gzip6": 14374,
+    "br11": 12641
+   }
+  },
+  "prefetch_per_link_tree_plus_page": {
+   "raw": 32345,
+   "gzip6": 14456,
+   "br11": 12773
+  },
+  "fragment": {
+   "raw": 26301,
+   "gzip6": 11683,
+   "br11": 10696,
+   "br5": 11274
+  },
+  "body_in_html_markup": true,
+  "body_in_inline_rsc_text": true,
+  "body_in_index_txt": true,
+  "body_in_page_segment_txt": true,
+  "inline_rsc_text_chars": 16113,
+  "attr_with_body_in_rsc": {
+   "raw": 65459,
+   "gzip6": 24544,
+   "br11": 14111,
+   "br5": 15322
+  },
+  "attr_without_body_in_rsc": {
+   "raw": 37301,
+   "gzip6": 15640,
+   "br11": 13439,
+   "br5": 14441
+  },
+  "body_dup_repaid_pct_of_fragment_alone": {
+   "raw": 107.1,
+   "gzip6": 76.2,
+   "br11": 6.3,
+   "br5": 7.8
+  },
+  "body_dup_cost_pct_of_page": {
+   "raw": 75.5,
+   "gzip6": 56.9,
+   "br11": 5.0,
+   "br5": 6.1
+  }
+ },
+ "longest_first100": {
+  "route": "/essays/essay-00030/",
+  "sha256": "b98cef7252803280",
+  "html": {
+   "raw": 126840,
+   "gzip6": 50752,
+   "br11": 25481,
+   "br5": 27951
+  },
+  "inline_rsc_script_count": 8,
+  "inline_rsc_bytes": 68121,
+  "inline_rsc_share_raw": 0.5371,
+  "html_without_inline_rsc": {
+   "raw": 58719,
+   "gzip6": 25347,
+   "br11": 22267,
+   "br5": 23976
+  },
+  "inline_rsc_cost_pct_vs_stripped": {
+   "raw": 116.0,
+   "gzip6": 100.2,
+   "br11": 14.4,
+   "br5": 16.6
+  },
+  "a_tag_count": 37,
+  "js_modern_srcs": [
+   "/_next/static/chunks/0umf92h1sb77c.js",
+   "/_next/static/chunks/1ar3ax_-2xzvy.js",
+   "/_next/static/chunks/1x6obpmlu1_c2.js",
+   "/_next/static/chunks/29017sj3i6d24.js",
+   "/_next/static/chunks/2r4s4h5xul1n-.js",
+   "/_next/static/chunks/3dmm3v_fq28gc.js",
+   "/_next/static/chunks/turbopack-3-ry682tkyiqk.js"
+  ],
+  "js_preload_only": [],
+  "js_nomodule_srcs": [
+   "/_next/static/chunks/0cz1d0mv5g_q7.js"
+  ],
+  "js_modern_plus_preload": {
+   "raw": 466680,
+   "gzip6": 139770
+  },
+  "js_nomodule": {
+   "raw": 112594,
+   "gzip6": 39473
+  },
+  "css": {
+   "raw": 8682,
+   "gzip6": 2766
+  },
+  "route_files": {
+   "__next._full.txt": {
+    "raw": 62375,
+    "gzip6": 26328,
+    "br11": 23133
+   },
+   "__next._tree.txt": {
+    "raw": 352,
+    "gzip6": 250,
+    "br11": 216
+   },
+   "__next.essays.$d$slug.__PAGE__.txt": {
+    "raw": 61317,
+    "gzip6": 26107,
+    "br11": 23034
+   },
+   "index.html": {
+    "raw": 126840,
+    "gzip6": 50752,
+    "br11": 25481
+   },
+   "index.txt": {
+    "raw": 62375,
+    "gzip6": 26328,
+    "br11": 23133
+   }
+  },
+  "prefetch_per_link_tree_plus_page": {
+   "raw": 61669,
+   "gzip6": 26357,
+   "br11": 23250
+  },
+  "fragment": {
+   "raw": 55635,
+   "gzip6": 23416,
+   "br11": 21190,
+   "br5": 22712
+  },
+  "body_in_html_markup": true,
+  "body_in_inline_rsc_text": true,
+  "body_in_index_txt": true,
+  "body_in_page_segment_txt": true,
+  "inline_rsc_text_chars": 27399,
+  "attr_with_body_in_rsc": {
+   "raw": 126539,
+   "gzip6": 50702,
+   "br11": 25457,
+   "br5": 27931
+  },
+  "attr_without_body_in_rsc": {
+   "raw": 66613,
+   "gzip6": 27738,
+   "br11": 23904,
+   "br5": 25831
+  },
+  "body_dup_repaid_pct_of_fragment_alone": {
+   "raw": 107.7,
+   "gzip6": 98.1,
+   "br11": 7.3,
+   "br5": 9.2
+  },
+  "body_dup_cost_pct_of_page": {
+   "raw": 90.0,
+   "gzip6": 82.8,
+   "br11": 6.5,
+   "br5": 8.1
+  }
+ },
+ "all": {
+  "route": "/essays/all/",
+  "sha256": "ceec790db669a560",
+  "html": {
+   "raw": 62531,
+   "gzip6": 9512,
+   "br11": 6452,
+   "br5": 7565
+  },
+  "inline_rsc_script_count": 13,
+  "inline_rsc_bytes": 41134,
+  "inline_rsc_share_raw": 0.6578,
+  "html_without_inline_rsc": {
+   "raw": 21397,
+   "gzip6": 4060,
+   "br11": 3163,
+   "br5": 3552
+  },
+  "inline_rsc_cost_pct_vs_stripped": {
+   "raw": 192.2,
+   "gzip6": 134.3,
+   "br11": 104.0,
+   "br5": 113.0
+  },
+  "a_tag_count": 106,
+  "js_modern_srcs": [
+   "/_next/static/chunks/0umf92h1sb77c.js",
+   "/_next/static/chunks/1ar3ax_-2xzvy.js",
+   "/_next/static/chunks/1x6obpmlu1_c2.js",
+   "/_next/static/chunks/2n5qeheznvl4u.js",
+   "/_next/static/chunks/2r4s4h5xul1n-.js",
+   "/_next/static/chunks/3dmm3v_fq28gc.js",
+   "/_next/static/chunks/turbopack-3-ry682tkyiqk.js"
+  ],
+  "js_preload_only": [],
+  "js_nomodule_srcs": [
+   "/_next/static/chunks/0cz1d0mv5g_q7.js"
+  ],
+  "js_modern_plus_preload": {
+   "raw": 464296,
+   "gzip6": 138763
+  },
+  "js_nomodule": {
+   "raw": 112594,
+   "gzip6": 39473
+  },
+  "css": {
+   "raw": 8682,
+   "gzip6": 2766
+  },
+  "route_files": {
+   "__next._full.txt": {
+    "raw": 35273,
+    "gzip6": 6096,
+    "br11": 4514
+   },
+   "__next._tree.txt": {
+    "raw": 259,
+    "gzip6": 191,
+    "br11": 166
+   },
+   "__next.essays.all.__PAGE__.txt": {
+    "raw": 34229,
+    "gzip6": 5891,
+    "br11": 4421
+   },
+   "index.html": {
+    "raw": 62531,
+    "gzip6": 9512,
+    "br11": 6452
+   },
+   "index.txt": {
+    "raw": 35273,
+    "gzip6": 6096,
+    "br11": 4514
+   }
+  },
+  "prefetch_per_link_tree_plus_page": {
+   "raw": 34488,
+   "gzip6": 6082,
+   "br11": 4587
+  }
+ },
+ "page1": {
+  "route": "/essays/page/1/",
+  "sha256": "670b1ad2327aa2a3",
+  "html": {
+   "raw": 21420,
+   "gzip6": 4284,
+   "br11": 3482,
+   "br5": 3904
+  },
+  "inline_rsc_script_count": 7,
+  "inline_rsc_bytes": 14849,
+  "inline_rsc_share_raw": 0.6932,
+  "html_without_inline_rsc": {
+   "raw": 6571,
+   "gzip6": 1989,
+   "br11": 1524,
+   "br5": 1676
+  },
+  "inline_rsc_cost_pct_vs_stripped": {
+   "raw": 226.0,
+   "gzip6": 115.4,
+   "br11": 128.5,
+   "br5": 132.9
+  },
+  "a_tag_count": 27,
+  "js_modern_srcs": [
+   "/_next/static/chunks/0umf92h1sb77c.js",
+   "/_next/static/chunks/1ar3ax_-2xzvy.js",
+   "/_next/static/chunks/1x6obpmlu1_c2.js",
+   "/_next/static/chunks/2n5qeheznvl4u.js",
+   "/_next/static/chunks/2r4s4h5xul1n-.js",
+   "/_next/static/chunks/3dmm3v_fq28gc.js",
+   "/_next/static/chunks/turbopack-3-ry682tkyiqk.js"
+  ],
+  "js_preload_only": [],
+  "js_nomodule_srcs": [
+   "/_next/static/chunks/0cz1d0mv5g_q7.js"
+  ],
+  "js_modern_plus_preload": {
+   "raw": 464296,
+   "gzip6": 138763
+  },
+  "js_nomodule": {
+   "raw": 112594,
+   "gzip6": 39473
+  },
+  "css": {
+   "raw": 8682,
+   "gzip6": 2766
+  },
+  "route_files": {
+   "__next._full.txt": {
+    "raw": 12589,
+    "gzip6": 3060,
+    "br11": 2471
+   },
+   "__next._tree.txt": {
+    "raw": 348,
+    "gzip6": 227,
+    "br11": 196
+   },
+   "__next.essays.page.$d$n.__PAGE__.txt": {
+    "raw": 11456,
+    "gzip6": 3011,
+    "br11": 2396
+   },
+   "index.html": {
+    "raw": 21420,
+    "gzip6": 4284,
+    "br11": 3482
+   },
+   "index.txt": {
+    "raw": 12589,
+    "gzip6": 3060,
+    "br11": 2471
+   }
+  },
+  "prefetch_per_link_tree_plus_page": {
+   "raw": 11804,
+   "gzip6": 3238,
+   "br11": 2592
+  }
+ }
+}
