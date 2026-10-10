@@ -29,7 +29,14 @@ jobs:
           python3 -I scripts/check-reading-prototype.py
           python3 -I scripts/test-reading-prototype.py
       - name: 导出规则反例
-        run: python3 -I scripts/test-site-export.py
+        run: |
+          python3 -I scripts/test-site-export.py
+          python3 -I scripts/test-content-export.py
+      - name: 迁移台账
+        # 原件不入库，CI 上只做登记对账；逐字比对只在有原件的本机发生
+        run: |
+          python3 -I scripts/test-migration.py
+          python3 -I scripts/check-migration.py
 
   site:
     runs-on: ubuntu-latest
@@ -55,5 +62,9 @@ jobs:
           npm run lint
           npm run typecheck
           npm run build
+      - name: 正文管线规则
+        run: node --test scripts/test-content-loader.mjs
       - name: 实际导出检查
-        run: python3 -I scripts/check-site-export.py
+        run: |
+          python3 -I scripts/check-site-export.py
+          python3 -I scripts/check-content-export.py

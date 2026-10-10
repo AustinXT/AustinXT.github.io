@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* 正文目录不是样式源码：不扫，免得文章里的词被当成类名 */
+@source not "../content";
 
 :root {
   color-scheme: light dark;
@@ -39,6 +41,24 @@
   .pending { background: var(--wash); color: var(--muted); padding: 1rem 1.25rem; font-size: .875rem; }
   .skip-link { position: absolute; left: 1rem; top: .5rem; padding: .5rem 1rem; background: var(--paper); transform: translateY(-200%); }
   .skip-link:focus { transform: translateY(0); }
+  .essay-items li { display: flex; gap: 1rem; padding-block: .35rem; }
+  .essay-items time { flex: none; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .year-index { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+  .essay-toc { margin-bottom: 2rem; padding: 1rem 1.25rem; background: var(--wash); font-size: .9375rem; }
+  .essay-toc p { color: var(--muted); font-size: .875rem; }
+  .essay-toc ol { list-style: decimal; padding-left: 1.5em; }
+  .essay-body > * + * { margin-top: 1.1em; }
+  .essay-body h2 { font-size: 1.5rem; margin-top: 2em; }
+  .essay-body h3 { font-size: 1.25rem; margin-top: 1.6em; }
+  .essay-body ul { list-style: disc; padding-left: 1.5em; }
+  .essay-body ol { list-style: decimal; padding-left: 1.5em; }
+  .essay-body blockquote { border-left: 3px solid var(--line); padding-left: 1em; color: var(--muted); }
+  .essay-body a { text-decoration: underline; }
+  .essay-body code { background: var(--wash); padding: .1em .3em; font-size: .9em; }
+  .essay-body pre { background: var(--wash); padding: 1rem; overflow-x: auto; font-size: .875rem; line-height: 1.6; }
+  .essay-body pre code { background: none; padding: 0; }
+  .essay-body table { border-collapse: collapse; display: block; overflow-x: auto; }
+  .essay-body th, .essay-body td { border: 1px solid var(--line); padding: .4em .8em; text-align: left; }
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""固定八路由静态 DOM 契约；不执行 JS，不沿 href 读文件，不是完整 JS/CSS 安全审计。
+"""静态 DOM 契约：固定七路由，加上由正文派生的文章页与年份页；不执行 JS，不沿 href 读文件，不是完整 JS/CSS 安全审计。
 
 check(pages, assets=None) 返回错误列表；assets 为已安全枚举的 URL 路径集合。
-load(root) 返回 (pages, assets)，只读八个 index.html，枚举 _next 与 favicon.ico。
+load(root) 返回 (pages, assets)：读固定路由与 essays/ 下全部 index.html，枚举 _next 与 favicon.ico。
 """
 import os
 import re
@@ -13,8 +13,13 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
-ROUTES = ('/', '/essays/', '/works/', '/about/', '/essays/preview/',
+ROUTES = ('/', '/essays/', '/works/', '/about/',
           '/essays/categories/', '/essays/tags/', '/works/preview/')
+# 正文派生的路由只许这两种形状：文章 slug 必须含字母，纯数字是年份；分页从第 2 页起
+ESSAY = re.compile(r'^/essays/(?=[a-z0-9-]*[a-z])[a-z0-9]+(?:-[a-z0-9]+)*/$')
+YEAR = re.compile(r'^/essays/(\d{4})/(?:page/([2-9]|[1-9]\d+)/)?$')
+# 命门 3：目录页条目有上界；与 src/site/lib/content.ts 的 YEAR_PAGE_SIZE、HOME_RECENT 保持一致
+YEAR_PAGE_SIZE, HOME_RECENT = 100, 5
 MENU = (('/', '首页'), ('/essays/', '随笔'), ('/works/', '作品'), ('/about/', '简介'))
 VOID = set('area base br col embed hr img input link meta param source track wbr'.split())
 # SVG 定义与辅助说明不作为可见文案；普通图标形状与引用仍允许。
@@ -177,9 +182,10 @@ def check(pages, assets=None):
     def fail(route, message):
         errors.append(f'{route}：{message}')
 
-    if set(pages) != set(ROUTES):
-        return ['固定八路由不完整或包含额外路由']
-    docs = {route: Document(pages[route]) for route in ROUTES}
+    if not set(ROUTES) <= set(pages) or any(not (ESSAY.match(r) or YEAR.match(r)) for r in set(pages) - set(ROUTES)):
+        return ['固定路由不完整，或含未登记形状的路由']
+    docs = {route: Document(pages[route]) for route in sorted(pages)}
+    essay_routes = sorted(r for r in pages if r not in ROUTES and ESSAY.match(r))
 
     def resource(value):
         path, fragment = url(value)
@@ -190,7 +196,7 @@ def check(pages, assets=None):
         path, fragment = url(value)
         target = path or route
         if target not in docs:
-            raise ValueError('href 不属于固定八路由')
+            raise ValueError('href 不属于已导出路由')
         if fragment:
             node = docs[target].ids.get(fragment)
             if node is None or not node.visible():
@@ -200,6 +206,21 @@ def check(pages, assets=None):
     def link(container, href):
         return container is not None and any(n.tag == 'a' and n.visible() and text(n)
                 and 'download' not in n.attrs and n.attrs.get('href') == href for n in container.walk())
+
+    def entries(route, container, where):
+        """文章条目：可见、链到已导出文章、带一个 YYYY-MM-DD 日期，按日期倒序。"""
+        found = []
+        for node in (n for n in container.walk() if 'data-article' in n.attrs) if container else ():
+            href = node.attrs['data-article']
+            dates = [n.attrs.get('datetime', '') for n in node.walk() if n.tag == 'time']
+            if not (href in essay_routes and node.visible() and link(node, href)
+                    and len(dates) == 1 and re.fullmatch(r'\d{4}-\d{2}-\d{2}', dates[0])):
+                fail(route, where + '条目须可见、链到已导出文章并带日期')
+                continue
+            found.append((dates[0], href))
+        if [d for d, _ in found] != sorted((d for d, _ in found), reverse=True):
+            fail(route, where + '条目须按日期倒序')
+        return found
 
     def empty(container):
         return container is not None and any('data-index-empty' in n.attrs and n.visible()
@@ -288,29 +309,65 @@ def check(pages, assets=None):
         node = docs['/essays/'].ids.get(key)
         if not (essays and node and essays.contains(node) and empty(node) and link(node, href)):
             fail('/essays/', '分类/标签缺诚实空态或目录入口')
-    if any('data-year' in n.attrs or 'data-article' in n.attrs for n in docs['/essays/'].nodes):
-        fail('/essays/', '正文未迁入，不编造年份或文章索引')
-    if not empty(docs['/essays/'].ids.get('timeline')):
-        fail('/essays/', '时间线须保留可见诚实空态')
-    for route in ('/essays/categories/', '/essays/tags/'):
-        if not empty(mains[route]):
-            fail(route, '完整目录须保留诚实空态')
-    for route in ('/essays/', '/essays/categories/', '/essays/tags/'):
-        container = mains[route]
+    # 分类与专题名称未确认：这两处及其完整目录只许空态
+    containers = [('/essays/', docs['/essays/'].ids.get(key)) for key in ('featured-categories', 'featured-tags')]
+    containers += [(route, mains[route]) for route in ('/essays/categories/', '/essays/tags/')]
+    for route, container in containers:
         if container and any(n.tag in {'ul', 'ol', 'li', 'article', 'time'}
                 or any(key in n.attrs for key in ('data-article', 'data-year', 'data-category', 'data-tag', 'data-index-title'))
                 for n in container.walk()):
-            fail(route, '当前无正文阶段只允许空态，不夹带目录条目')
+            fail(route, '分类与专题未确认，只允许空态，不夹带目录条目')
+    for route in ('/essays/categories/', '/essays/tags/'):
+        if not empty(mains[route]):
+            fail(route, '完整目录须保留诚实空态')
+    # 时间线列全部非空年份，各链到年份页；文章条目只放在年份页，随笔首页大小不随篇数增长
+    timeline = docs['/essays/'].ids.get('timeline')
+    listed = [n for n in docs['/essays/'].nodes if 'data-year' in n.attrs]
+    years = sorted({YEAR.match(r).group(1) for r in pages if YEAR.match(r)}, reverse=True)
+    if not essay_routes:
+        if listed or not empty(timeline):
+            fail('/essays/', '没有文章时，时间线须保留可见诚实空态，不编造年份')
+    elif ([n.attrs['data-year'] for n in listed] != years
+          or not all(timeline and timeline.contains(n) and link(n, f'/essays/{n.attrs["data-year"]}/') for n in listed)):
+        fail('/essays/', '时间线须倒序列出全部非空年份，并各自链到年份页')
+    if any('data-article' in n.attrs for n in docs['/essays/'].nodes):
+        fail('/essays/', '文章条目只放在年份页')
+    covered = []
+    for year in years:
+        numbered = sorted((int(YEAR.match(r).group(2) or 1), r) for r in pages if YEAR.match(r) and YEAR.match(r).group(1) == year)
+        if [k for k, _ in numbered] != list(range(1, len(numbered) + 1)):
+            fail(f'/essays/{year}/', '年份分页须从第 1 页起连续')
+        for k, route in numbered:
+            found = entries(route, mains[route], '年份页')
+            if not 1 <= len(found) <= YEAR_PAGE_SIZE:
+                fail(route, f'年份页须列 1–{YEAR_PAGE_SIZE} 篇')
+            if k < len(numbered) and len(found) != YEAR_PAGE_SIZE:
+                fail(route, '未满上限不得分页')
+            if any(d[:4] != year for d, _ in found):
+                fail(route, '条目日期不属于该年')
+            if not link(mains[route], '/essays/'):
+                fail(route, '年份页缺返回随笔链接')
+            covered += found
+    if sorted(h for _, h in covered) != essay_routes:
+        fail('/essays/', '每篇文章须在年份页出现且只出现一次')
+    # 首页到文章：首页随笔速览是最新的至多 HOME_RECENT 篇；同日按网址升序，与构建端排序一致
+    recent = entries('/', docs['/'].ids.get('overview-essays'), '首页随笔')
+    latest = sorted(sorted(covered, key=lambda e: e[1]), key=lambda e: e[0], reverse=True)[:HOME_RECENT]
+    if recent != latest:
+        fail('/', f'首页随笔速览须为最新的 {HOME_RECENT} 篇以内，且与年份页一致')
     contact = docs['/about/'].ids.get('contact')
     if not (contact and mains['/about/'] and mains['/about/'].contains(contact) and contact.visible() and text(contact)):
         fail('/about/', '联系须位于正文且可见')
     for route, doc in docs.items():
-        previews = [n for n in doc.nodes if 'data-article-preview' in n.attrs]
-        if route == '/essays/preview/':
-            if len(previews) != 1 or [n for n in doc.nodes if n.tag == 'article'] != previews or not (mains[route] and mains[route].contains(previews[0])) or '尚未迁入正文' not in text(previews[0]) or not link(previews[0], '/essays/'):
-                fail(route, '须有唯一正文内 article、可见未迁入声明及返回随笔链接')
-        elif previews or any(n.tag == 'article' for n in doc.nodes):
-            fail(route, '其他页面不得复制预览正文')
+        articles = [n for n in doc.nodes if n.tag == 'article']
+        if route in essay_routes:
+            if (len(articles) != 1 or 'data-essay-body' not in articles[0].attrs
+                    or not (mains[route] and mains[route].contains(articles[0]))):
+                fail(route, '文章页须有唯一位于正文内的 article[data-essay-body]')
+            if not link(mains[route], '/essays/'):
+                fail(route, '文章页缺返回随笔链接')
+        elif articles:
+            fail(route, '非文章页不得出现 article')
         works = [n for n in doc.nodes if 'data-work-preview' in n.attrs]
         if route == '/works/preview/':
             if len(works) != 1 or not (mains[route] and mains[route].contains(works[0])) or '非实际作品' not in text(works[0]) or not link(works[0], '/works/'):
@@ -342,6 +399,15 @@ def load(root):
     if not root.is_dir():
         raise ValueError('root 必须是导出目录')
     paths = {route: root / route.lstrip('/') / 'index.html' for route in ROUTES}
+    # essays/ 下的其余 index.html 都读进来，由 check 判形状；不读其他目录
+    essays = root / 'essays'
+    safe(essays)
+    for directory, subdirs, files in os.walk(essays):
+        for name in subdirs:
+            safe(Path(directory, name))
+        route = '/' + Path(directory).relative_to(root).as_posix() + '/'
+        if 'index.html' in files and route not in paths:
+            paths[route] = Path(directory, 'index.html')
     # 先验证全部目标，再读取，缺失不降级为部分通过。
     for path in paths.values():
         safe(path)
@@ -380,7 +446,8 @@ def main(argv=None):
         return 2
     root = argv[0] if argv else Path(__file__).absolute().parent.parent / 'src/site/out'
     try:
-        errors = check(*load(root))
+        pages, assets = load(root)
+        errors = check(pages, assets)
     except (OSError, ValueError, UnicodeError) as exc:
         print('检查无法完成：' + str(exc), file=sys.stderr)
         return 2
@@ -388,7 +455,7 @@ def main(argv=None):
         print(error, file=sys.stderr)
     if errors:
         return 1
-    print('八路由 DOM 契约与已枚举本地资源检查通过；不代表完整 JS 安全审计或浏览器绘制验收。')
+    print(f'{len(pages)} 个页面的 DOM 契约与已枚举本地资源检查通过；不代表完整 JS 安全审计或浏览器绘制验收。')
     return 0
 
 

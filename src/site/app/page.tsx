@@ -1,7 +1,10 @@
+import { EssayItems } from "@/components/essay-list";
 import { MoreLink } from "@/components/more-link";
 import { SiteFrame } from "@/components/site-frame";
+import { getEssays, HOME_RECENT } from "@/lib/content";
 
 export default function HomePage() {
+  const recent = getEssays().slice(0, HOME_RECENT);
   return (
     <SiteFrame current="/">
       <section id="overview-about" aria-labelledby="intro-title" className="section pt-0!">
@@ -11,7 +14,7 @@ export default function HomePage() {
       </section>
       <section id="overview-essays" aria-labelledby="essays-title" className="section">
         <h2 id="essays-title" className="section-title">随笔</h2>
-        <p className="text-muted">文章尚未迁入；专栏、专题与时间索引将从同一份正文元数据派生。</p>
+        {recent.length ? <EssayItems essays={recent} full /> : <p className="text-muted">文章尚未迁入。</p>}
         <MoreLink href="/essays/">进入随笔</MoreLink>
       </section>
       <section id="overview-works" aria-labelledby="works-title" className="section">
