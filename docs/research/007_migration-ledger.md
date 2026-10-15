@@ -7,14 +7,24 @@
 
 | 新正文 | 原件 | 保留方式 | 旧网址与证据 | 新网址（候选，未冻结） | 状态 |
 |---|---|---|---|---|---|
-| `src/site/content/essays/card-method.md` | `vault/raw/05blog/content/posts/2019-12-23-卡片学习心得.md` | 原样 | `/卡片大法/`：2026-10-10 10:06 UTC 线上 200，canonical 指向自身；`/2019-12-23-卡片学习心得/`：同时 404（本地 sitemap 的两条路径见 `002_blog-direction-decision.md:97`） | `/essays/card-method/` | AI 整理稿，待负责人核对；网址未冻结，未发布 |
+| `src/site/content/essays/card-method.md` | `vault/raw/05blog/content/posts/2019-12-23-卡片学习心得.md` | 改写 | `/卡片大法/`：2026-10-10 10:06 UTC 线上 200，canonical 指向自身；`/2019-12-23-卡片学习心得/`：同时 404（本地 sitemap 的两条路径见 `002_blog-direction-decision.md:97`） | `/essays/card-method/`（负责人 2026-10-11 定 slug） | AI 改写稿，待负责人核对；网址未冻结，未发布 |
 
 ## 列的含义
 
 - **原件**：被 Git 忽略的只读原件，路径相对仓库根。原始日期取原件的 front matter，不取文件名或最近提交。
 - **保留方式**：
   - **原样**：正文与原件逐字一致，只允许一种排版差异——标题整体上提一级，因为页面标题已占 h1。`check-migration.py` 在本机有原件时逐字比对。
-  - **改写**：独立改写的历史内容，要另附依据段落与省略说明（迁移规约第五节）。目前没有。
+  - **改写**：历史复盘式改写，要另附逐条改动与省略说明（迁移规约第五节）。`check-migration.py` 只比对原始日期，不比正文。
 - **旧网址与证据**：只记有界只读访问的结果和日期；原始响应头没有入库。
 - **新网址**：形状 `/essays/<slug>/` 已确认（`005_md-rendering/decision.md` 第 7 项）；具体网址的冻结、旧网址的 301 跳转都要等托管选定后单独放行。
 - **状态**：AI 整理稿 → 负责人核对 → 允许发布，三步分开记。
+
+## 取舍与省略
+
+- `card-method.md`：原件 front matter 的 `layout: post`、分类「方法技巧」、标签「卡片」「写作」没有带过来。`layout` 是旧主题字段；分类与标签由负责人日后统一改成专栏、专题的形式。正文 20 处改动逐条列在 `../reviews/010_card-method-rewrite.md`，依据负责人 2026-10-11 的决定：修错字、匿名第三方个人信息、不公开课程来源；没有删段落。三条说法的核实见 `008_card-method-claims.md`。
+
+## 2026-10-15 · 旧文全部以草稿迁入
+
+负责人明确要求先迁入原博客全部文章，默认元数据后逐篇校对；此授权覆盖此前逐篇选文的批量限制。旧 `posts/` 68 篇与 `draft/` 66 篇，共 134 篇；其中《卡片大法》保留本表已有改写记录，其余 133 篇正文逐字迁入，全部 `draft: true`。空的简报栏目索引不作为文章。
+
+批量来源与初始元数据的唯一正本为 [`content/legacy-index.json`](../../src/site/content/legacy-index.json)，人工操作入口为 [`旧文校对清单`](../../src/site/content/legacy-review.md)。不在本表重复 134 行。`migrate-legacy-content.mjs --verify-initial` 在有原件的本机核对全部来源与正文；`--check-index` 在 CI 核对目标唯一、文件存在和显式上下架字段，允许用户以后直接在 content 校对正文与元数据。原件不改，未公开发布。

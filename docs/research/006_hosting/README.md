@@ -12,9 +12,9 @@
 |---|---|---|---|
 | 1 | [must-know.md](must-know.md) | **决策点**：不可妥协的 3 条与排除项 | ☑ AI 草稿，待负责人确认 |
 | 2 | [sources.md](sources.md) | 来源登记：自有积累、官方文档、实测 | ☑ |
-| 3 | 派活 | 本次照 `../005_md-rendering/assign.md` 的做法分三路取文档，不另写模板 | ☑ 三路：Cloudflare 与 GitHub Pages ／ Netlify 与 Vercel ／ EdgeOne 与国内对象存储 |
-| 4 | [gap.md](gap.md) | **核查矩阵**：6 个候选 × 8 个核查项 | ☑ |
-| 5 | [decision.md](decision.md) | **取舍卡**：首选、备选、风险、哪里要你拍板 | ☑ 待拍板 |
+| 3 | 派活 | 本次照 `../005_md-rendering/assign.md` 的做法分三路取文档，不另写模板 | ☑ 三路：Cloudflare 与 GitHub Pages ／ Netlify 与 Vercel ／ EdgeOne 与国内对象存储。第三路中途被 API 额度打断，余下部分由我补完（见 `sources.md` 第四节） |
+| 4 | [gap.md](gap.md) | **核查矩阵**：6 个候选 × 8 个核查项，外加对负责人猜测的判定 | ☑ |
+| 5 | [decision.md](decision.md) | **取舍卡**：首选 Cloudflare Pages，备选 Netlify；8 个拍板项 | ☑ 待拍板（全部 ☐） |
 
 原始证据都在 `../../../resources/hosting-20261010/`（被 Git 忽略，只在本机）：
 - 响应头：`<候选>/*.headers.txt`，路由测试在 `<候选>/routing/`；
@@ -36,5 +36,9 @@
 
 ## 验证记录（2026-10-10）
 
-- **规则核对**：`gap.md` 每一格都能追到 `sources.md` 的 ID；`decision.md` 正文字数已数过，见文末。
+- **规则核对**：
+  - `gap.md` 每一格都标了 `sources.md` 的 ID。
+  - `decision.md` 拍板表以上的正文共 471 个汉字（脚本计数），在 1500 字限内。
+  - 实测计数复核过一遍，修正了 2 处：GitHub Pages + Cloudflare 是 9 个站，不是 8 个；EdgeOne 静态站是 12 个响应，不是 9 个。
+- **引文抽查**：D1、D6、D10 的关键句和 D11–D13 的全部行号，都对照本地原件查过。其余文档引文由分身摘录，未抽查。
 - **对抗视角**：本次未做独立子代理审查，也未外发评审。负责人要的话，可照 005 的做法补一轮。

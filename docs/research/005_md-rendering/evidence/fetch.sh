@@ -4,7 +4,8 @@
 set -u
 ROOT=/Users/nv/proj.xt.com/manzi-blog
 OUT="$ROOT/resources/md-render-yang-20261010/$2"
-LOG="$ROOT/_tmp/20261010-md-rendering/yang/curl-log.tsv"
+# 原日志位置 _tmp/20261010-md-rendering/ 已删；重跑时须用 LOG 环境变量显式指定新位置
+LOG="${LOG:?请设置 LOG 为日志文件路径}"
 case "$1" in https://yangzhiping.com/*) ;; *) echo "拒绝：非 yangzhiping.com URL"; exit 2;; esac
 if [ -e "$OUT" ]; then echo "拒绝：$OUT 已存在"; exit 3; fi
 mkdir -p "$OUT"

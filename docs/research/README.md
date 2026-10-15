@@ -10,4 +10,6 @@
 | 003 | 2026-10-09 | [三站对照：归档、主题与合辑](003_blog-navigation-reference.md) |
 | 004 | 2026-10-09 | [阳志平网站现网技术栈取证](004_yangzhiping-stack/decision.md) |
 | 005 | 2026-10-10 | [正文 MD：浏览器解析还是发布前编译，及文章增多时的加载](005_md-rendering/decision.md) |
+| 006 | 2026-10-10 | [托管选型：必须支持 brotli](006_hosting/decision.md) |
 | 007 | 2026-10-10 | [迁移台账](007_migration-ledger.md) |
+| 008 | 2026-10-11 | [《卡片大法》三条说法的文献核实](008_card-method-claims.md) |
