@@ -6,9 +6,13 @@
 - **合并方案**：`dev` 起点 `fed46c3` 与旧 `origin/main` 的 `7440334` 没有共同祖先。以当前工程树为准连接两条历史，旧站保留在合并父提交及 `backup/main-before-next-20261015`；无需重写远端 main 历史。
 - **发布配置**：复用 `.github/workflows/validate.yml`，仅 main 的 push／手动运行在两组检查通过后上传 `src/site/out/` 并发布 Pages；其余分支仍只验证。
 - **双域名补充**：负责人要求 blog 也指向根域名。主站仍用 Pages；`src/domain-redirect/` 是 Vercel 静态跳转项目，blog 经 HTTPS 308 转到主域名，保留路径与查询。两个域名的证书分别由对应平台自动管理。
-- **上线前现状**：Pages 仍绑定 `blog.nightvoyager.top`；根域名无 A／AAAA，HTTPS 不通。GitHub 浏览器已登录，CLI 凭据失效；阿里云 DNS 控制台待负责人登录。验证、推送、Pages 发布与 HTTPS 结果在本轮完成后补充，不提前宣称成功。
+- **上线前现状**：Pages 原绑定 `blog.nightvoyager.top`；根域名无 A／AAAA，HTTPS 不通。GitHub 浏览器已登录，CLI 凭据失效；负责人已完成阿里云 DNS 登录。
 - **验证范围**：worker 只接收选定项目文件，不传旧原件与凭据；本机保留依赖 Git 真实历史／原件的结构及迁移比对检查。GitHub Pages 的压缩能力不因本次上线改变，先前 brotli 要求的满足情况仍须按线上响应确认。
 - **构建回执**：`mac-offload` job `20261015-233058-a751f3ae25` 已完成，退出 0；精确 Node 26.10.0、npm 11.20.0、Python 3.14.7，锁定安装、lint、类型、构建、全部现有回归及 9 页／正文导出检查通过。本机结构检查及原件迁移对账也通过；worker 明确跳过未传输的旧原件逐字比对。产物在全局 job 目录，未覆盖本机源码。
+- **合并与远端回执**：`7ff36b9` 已推送到 `origin/main`，双亲为发布配置提交 `0ec3a1e` 与旧 main `7440334`；`backup/main-before-next-20261015` 已推送并指向 `7440334`。未 force push；本机工作分支已切到 main。
+- **云端回执**：[Actions #7](https://github.com/AustinXT/AustinXT.github.io/actions/runs/38761595243) 的 validate、site、deploy 全部成功，发布 commit `7ff36b9`。通过显式指定 GitHub Pages IP 的普通 HTTP 请求，主机名 `nightvoyager.top` 返回 200、新 Next 首页与 `/_next/static/` 资源引用；这只证明源站已更新，不证明公开 DNS／HTTPS 已完成。
+- **域名实际状态与阻塞**：Pages 的自定义域名已保存为 `nightvoyager.top`。根域名 A 记录尚未添加，HTTPS 仍不可用；`src/domain-redirect/` 尚未导入 Vercel，blog DNS 尚未切换，跳转与证书均未验证。Chrome 被并行任务持续切换，负责人确认「仍有其他浏览器任务在运行」，本轮停止 UI 写操作，避免修改其他仓库；待浏览器可独占后继续，不宣称双域名上线完成。
+- **接续动作**：在阿里云为 `@` 添加四条 A：`185.199.108.153`、`185.199.109.153`、`185.199.110.153`、`185.199.111.153`；等待 Pages DNS 校验与证书签发后启用 Enforce HTTPS。将本仓库的 `src/domain-redirect/` 导入现有 Vercel 账户，绑定 blog，按 Domains 页实际 CNAME 更新 blog 记录；最后验证两域名证书、HTTP→HTTPS、文章路径与查询参数跳转。不得把其他项目的域名设置套用到本仓库。
 
 ## 2026-10-10 · 本轮安全分组提交与推送计划
 

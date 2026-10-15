@@ -72,4 +72,12 @@ python3 -I -m http.server 4173 --bind 127.0.0.1 --directory src/site/out
 
 导出检查只读固定路由、`essays/` 下的派生页与指定本地资源，框架自身 `/_next/` 脚本和 RSC 产物允许；这不是任意 JavaScript 审计。构建、静态规则、浏览器行为、真实正文与人验收分层记录。实际失败、兼容性修正、评审和未验证项见 [本轮验证记录](../../docs/reviews/007_next-stack-bootstrap.md)，接续见 [状态板](../../state/board.md)。
 
-禁止从本工程的存在推导域名、Cloudflare／Vercel、公开发布、旧站替换或未迁 URL 处置授权。首篇已整理，待负责人核对内容、声音与排版；生产 URL 冻结与旧链接跳转等托管选定后再定。
+2026-10-15 负责人明确要求当前工程合入 main、部署到 `nightvoyager.top` 并带 HTTPS，随后要求 `blog.nightvoyager.top` 跳到根域名。本轮指令覆盖当前站点的上线；内容核对记录仍按原台账保留，不虚构人审结论。
+
+## 发布与双域名
+
+主站通过 `.github/workflows/validate.yml` 发布：main 的 push／手动运行在 validate 与 site 两组检查通过后，将静态导出 `out/` 交给 GitHub Pages；其他分支与 PR 只验证。Pages 自定义域名设为 `nightvoyager.top`，证书由 Pages 管理，签发后启用 Enforce HTTPS。
+
+blog 的 HTTPS 永久跳转采用独立 Vercel 静态项目，输入为 [`../domain-redirect/`](../domain-redirect/)，无需复制主站正文或构建产物。它把路径与查询参数带到主域名，证书由 Vercel 管理。
+
+实际已完成及尚未完成的 DNS、证书、跳转与发布回执，只看 [`../../state/board.md`](../../state/board.md) 的 2026-10-15 记录。
