@@ -17,7 +17,7 @@ SPEC.loader.exec_module(CHECK)
 NEW = 'src/site/content/essays/one.md'
 OLD = 'vault/raw/blog/posts/2019-01-01-one.md'
 ORIGIN = '---\ntitle: 旧题\ndate: 2019-01-01\ntags: [x]\n---\n\n开头一段。\n\n### 小节\n\n#### 细目\n\n正文一段。\n'
-ESSAY = '---\ntitle: 新题\ndate: 2019-01-01\nslug: one\n---\n\n开头一段。\n\n## 小节\n\n### 细目\n\n正文一段。\n'
+ESSAY = '---\ntitle: 旧题\ndate: 2019-01-01\nslug: one\n---\n\n开头一段。\n\n## 小节\n\n### 细目\n\n正文一段。\n'
 
 
 def ledger(*rows):
@@ -44,7 +44,8 @@ class MigrationTest(unittest.TestCase):
         self.assertEqual([e['new'] for e in CHECK.rows(ledger())], [NEW])
 
     def test_unregistered_essay(self):
-        self.assertFails(run(sources={NEW: ESSAY, 'src/site/content/essays/two.md': ESSAY}), '须在台账登记')
+        # 新写文章只需放进 content，迁移台账仅约束已登记的旧文。
+        self.assertEqual(run(sources={NEW: ESSAY, 'src/site/content/essays/two.md': ESSAY}), ([], []))
 
     def test_registered_twice(self):
         row = f'| `{NEW}` | `{OLD}` | 原样 | x | x | x |'
@@ -72,6 +73,19 @@ class MigrationTest(unittest.TestCase):
 
     def test_heading_not_lifted(self):
         self.assertFails(run(sources={NEW: ESSAY.replace('## 小节', '### 小节').replace('### 细目', '#### 细目')}), '与原件不同')
+
+    def test_title_changed_under_verbatim(self):
+        self.assertFails(run(sources={NEW: ESSAY.replace('title: 旧题', 'title: 另一个')}, origins={OLD: ORIGIN}), 'title')
+
+    def test_trailing_spaces_matter(self):
+        origin = ORIGIN.replace('开头一段。\n', '开头一段。  \n')
+        self.assertFails(run(origins={OLD: origin}), '与原件不同')
+
+    def test_code_fence_headings_not_lifted(self):
+        fence = '\n```sh\n### 注释\n```\n'
+        origin = ORIGIN + fence
+        self.assertEqual(run(sources={NEW: ESSAY + fence}, origins={OLD: origin}), ([], []))
+        self.assertFails(run(sources={NEW: ESSAY + fence.replace('### 注释', '## 注释')}, origins={OLD: origin}), '与原件不同')
 
     def test_rewrite_mode_skips_body_compare(self):
         row = f'| `{NEW}` | `{OLD}` | 改写 | x | x | x |'
@@ -110,6 +124,16 @@ class CliTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as root:
             self.assertEqual(self.cli(Path(root, 'nope')).returncode, 2)
             self.assertEqual(self.cli('a', 'b').returncode, 2)
+
+    def test_origin_outside_repo_not_read(self):
+        with tempfile.TemporaryDirectory() as root:
+            root = self.tree(root)
+            outside = Path(tempfile.mkdtemp()).resolve() / 'secret.md'
+            outside.write_text(ORIGIN, encoding='utf-8')
+            (root / CHECK.LEDGER).write_text(ledger(f'| `{NEW}` | `{outside}` | 原样 | x | x | x |'), encoding='utf-8')
+            _, _, origins = CHECK.load(root)
+            self.assertEqual(origins, {})
+            outside.unlink(); outside.parent.rmdir()
 
     def test_symlinked_origin_refused(self):
         with tempfile.TemporaryDirectory() as root:

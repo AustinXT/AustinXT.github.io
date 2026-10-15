@@ -1,21 +1,31 @@
-import type { Metadata } from "next";
 import { PageHeading } from "@/components/page-heading";
 import { SiteFrame } from "@/components/site-frame";
+import { ArrowUpRight, Rss } from "lucide-react";
+import { renderMarkdown } from "@/lib/content";
+import { getAboutPage, getSiteConfig, pageMetadata } from "@/lib/site";
 
-export const metadata: Metadata = { title: "简介" };
+export function generateMetadata() { return pageMetadata(getAboutPage().title, "/about/"); }
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const about = getAboutPage();
+  const site = getSiteConfig();
+  const { html } = await renderMarkdown(about.body);
   return (
     <SiteFrame current="/about/">
-      <PageHeading title="简介" note="公开介绍待确认；当前只建立页面与联系入口，不代写个人经历。" />
-      <section aria-labelledby="about-title" className="section">
-        <h2 id="about-title" className="section-title">关于我</h2>
-        <p className="pending">拟公开的身份与介绍待你提供。</p>
-      </section>
-      <section id="contact" aria-labelledby="contact-title" className="section">
-        <h2 id="contact-title" className="section-title">联系</h2>
-        <p className="pending">联系方式与公开范围待确认；当前无外发入口或表单。</p>
-      </section>
+      <div className="about-page">
+        <PageHeading title={about.title} />
+        <article data-page-body className="essay-body" dangerouslySetInnerHTML={{ __html: html }} />
+        <section id="contact" aria-labelledby="contact-title" className="section about-contact">
+          <h2 id="contact-title" className="section-title">保持联系</h2>
+          {site.contact.length > 0 && (
+            <ul className="contact-links">
+              {site.contact.map((contact) => <li key={contact.url}><a href={contact.url}>{contact.label}<ArrowUpRight aria-hidden="true" size={14} /></a></li>)}
+            </ul>
+          )}
+          <p className="text-muted">{site.url ? "喜欢这里的文字，可以通过 RSS 订阅更新。" : "更多记录，随写作陆续更新。"}</p>
+          {site.url && <a href="/feed.xml" className="subscribe-link"><Rss aria-hidden="true" size={16} />订阅更新</a>}
+        </section>
+      </div>
     </SiteFrame>
   );
 }

@@ -45,3 +45,9 @@ node_modules/
 /src/site/next-env.d.ts
 /src/site/*.tsbuildinfo
 .venv/
+
+# 本地自主开发队列与日志（不包含技能源码）
+/.ai/
+
+# content/media 的可再生公开副本
+/src/site/public/media/

@@ -63,8 +63,18 @@ jobs:
           npm run typecheck
           npm run build
       - name: 正文管线规则
-        run: node --test scripts/test-content-loader.mjs
+        run: |
+          node --test scripts/test-content-loader.mjs scripts/test-search.mjs scripts/test-legacy-migration.mjs
+          node scripts/migrate-legacy-content.mjs --check-index
       - name: 实际导出检查
         run: |
           python3 -I scripts/check-site-export.py
           python3 -I scripts/check-content-export.py
+      - name: 内容上下架、中文分页与生产元数据
+        run: node scripts/test-blog-lifecycle.mjs --snapshot
+      - name: 保存可预览静态产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: blog-static-site
+          path: src/site/out
+          retention-days: 7

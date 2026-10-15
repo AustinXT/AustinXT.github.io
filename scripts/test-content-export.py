@@ -46,6 +46,14 @@ class ContentExportTest(unittest.TestCase):
         draft = SOURCE.replace('slug: one\n', 'slug: one\ndraft: true\n')
         self.assertFails(run(sources={'one.md': draft}), '草稿被导出')
 
+    def test_full_published_collection_is_reconciled(self):
+        two = SOURCE.replace('slug: one', 'slug: two')
+        self.assertFails(run(sources={'one.md': SOURCE, 'two.md': two}), '/essays/two/')
+        self.assertEqual(run(sources={'one.md': SOURCE, 'two.md': two}, pages={'one': page(), 'two': page()}), [])
+
+    def test_empty_published_collection_is_valid(self):
+        self.assertEqual(run(sources={}, pages={}), [])
+
     def test_draft_not_exported_passes(self):
         draft = SOURCE.replace('slug: one\n', 'slug: one\ndraft: true\n')
         self.assertEqual(run(sources={'one.md': draft}, pages={}), [])
@@ -102,11 +110,12 @@ class CliTest(unittest.TestCase):
         content, essays = root / 'content', root / 'out' / 'essays'
         content.mkdir(parents=True)
         (content / 'one.md').write_text(SOURCE, encoding='utf-8')
-        for name in ('one', 'categories', '2026'):
+        for name in ('one', 'categories', 'archive', '2026'):
             (essays / name).mkdir(parents=True)
         (essays / 'one' / 'index.html').write_text(page() if html is None else html, encoding='utf-8')
         # 静态路由与年份页都不算文章
         (essays / 'categories' / 'index.html').write_text('<p>静态路由不算文章</p>', encoding='utf-8')
+        (essays / 'archive' / 'index.html').write_text('<p>归档不算文章</p>', encoding='utf-8')
         (essays / '2026' / 'index.html').write_text('<p>年份页不算文章</p>', encoding='utf-8')
         return content, Path(root, 'out')
 
@@ -132,6 +141,21 @@ class CliTest(unittest.TestCase):
             target = out / 'essays' / 'one' / 'index.html'
             target.unlink()
             os.symlink(real, target)
+            self.assertEqual(self.cli(content, out), 2)
+
+    def test_archive_is_reserved_and_all_sources_are_loaded(self):
+        with tempfile.TemporaryDirectory() as root:
+            content, out = self.tree(root)
+            sources, pages, exported = CHECK.load(content, out)
+            self.assertEqual(set(pages), {'one'})
+            self.assertEqual(exported, {'one'})
+            (content / 'two.md').write_text(SOURCE.replace('slug: one', 'slug: two'), encoding='utf-8')
+            self.assertEqual(self.cli(content, out), 1)
+
+    def test_symlinked_essay_directory_refused(self):
+        with tempfile.TemporaryDirectory() as root:
+            content, out = self.tree(root)
+            (out / 'essays' / 'hidden').symlink_to(content, target_is_directory=True)
             self.assertEqual(self.cli(content, out), 2)
 
     def test_symlinked_content_dir_refused(self):

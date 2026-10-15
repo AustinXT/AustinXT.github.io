@@ -12,7 +12,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
-STATIC = {'categories', 'tags'}
+STATIC = {'categories', 'tags', 'archive'}
 # 纯数字目录是年份页（/essays/<年>/），不是文章
 YEAR = re.compile(r'^\d{4}$')
 FRONT = re.compile(r'\A---\r?\n(.*?)\r?\n---\r?\n(.*)\Z', re.S)
@@ -172,8 +172,9 @@ def load(content_dir, out_dir):
     sources = {p.name: read(p) for p in sorted(content_dir.glob('*.md'))}
     exported, pages = set(), {}
     for entry in sorted(essays.iterdir()):
+        safe(entry)
         page = entry / 'index.html'
-        if entry.name in STATIC or YEAR.match(entry.name) or not entry.is_dir() or entry.is_symlink() or not page.exists():
+        if entry.name in STATIC or YEAR.match(entry.name) or not entry.is_dir() or not page.exists():
             continue
         exported.add(entry.name)
         pages[entry.name] = read(page)

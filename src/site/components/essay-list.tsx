@@ -1,16 +1,24 @@
 import Link from "next/link";
-import type { Essay, YearPage } from "@/lib/content";
+import { excerpt, readingMinutes, type Essay, type YearPage } from "@/lib/content";
 import { MoreLink } from "./more-link";
 import { PageHeading } from "./page-heading";
 
 // 目录类链接一律不预取：页面再多，预取量也不随篇数增长（005 取舍卡的默认做法）。
 export function EssayItems({ essays, full = false }: { essays: Essay[]; full?: boolean }) {
   return (
-    <ul className="essay-items">
+    <ul className={`essay-items${full ? " essay-items-full" : ""}`}>
       {essays.map((essay) => (
         <li key={essay.slug} data-article={`/essays/${essay.slug}/`}>
           <time dateTime={essay.date}>{full ? essay.date : essay.date.slice(5)}</time>
-          <Link href={`/essays/${essay.slug}/`} prefetch={false} data-index-title>{essay.title}</Link>
+          <div className="essay-item-content">
+            <Link href={`/essays/${essay.slug}/`} prefetch={false} data-index-title>{essay.title}</Link>
+            {full && (
+              <>
+                <p className="essay-excerpt">{excerpt(essay, 130)}</p>
+                <p className="essay-reading">约 {readingMinutes(essay.body)} 分钟阅读</p>
+              </>
+            )}
+          </div>
         </li>
       ))}
     </ul>
@@ -28,8 +36,9 @@ export function YearListing({ item }: { item: YearPage }) {
         <EssayItems essays={essays} />
       </section>
       {pages > 1 && (
-        <nav aria-label="分页" className="mt-6 flex gap-6 text-sm">
+        <nav aria-label="分页" className="pagination">
           {page > 1 && <Link href={pageHref(year, page - 1)} prefetch={false}>上一页</Link>}
+          <span className="text-muted">第 {page} / {pages} 页</span>
           {page < pages && <Link href={pageHref(year, page + 1)} prefetch={false}>下一页</Link>}
         </nav>
       )}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""迁移台账对账：每篇正文都在台账登记且只登记一次；声明「原样」的，与原件逐字比对。
+"""迁移台账对账：已登记的旧文只登记一次；声明「原样」的，与原件逐字比对。
 
 只读台账、src/site/content/essays/*.md 与台账指向的原件。原件在被 Git 忽略的 vault/raw/ 下，
 本机没有时（例如 CI）只做登记对账，并明说没有比对。不判语义、版权或本人声音。
@@ -43,14 +43,22 @@ def split(text):
 
 
 def lift(body):
-    """声明过的唯一排版差异：标题整体上提一级，使最高一级成为 h2。"""
-    levels = [len(mark) for mark in HEADING.findall(body)]
+    """声明过的唯一排版差异：标题整体上提一级，使最高一级成为 h2。围栏代码块里的 # 不是标题，不动。"""
+    out, fenced = [], False
+    for line in body.split('\n'):
+        if line.lstrip().startswith(('```', '~~~')):
+            fenced = not fenced
+        out.append((fenced, line))
+    levels = [len(m.group(1)) for f, line in out if not f and (m := HEADING.match(line))]
     shift = min(levels) - 2 if levels else 0
-    return HEADING.sub(lambda m: m.group(1)[shift:] + ' ', body) if shift > 0 else body
+    if shift <= 0:
+        return body
+    return '\n'.join(line if f or not HEADING.match(line) else line[shift:] for f, line in out)
 
 
 def lines(body):
-    return [line.rstrip() for line in body.strip('\n').splitlines()]
+    """只去掉首尾空行；行尾空白（如硬换行的两个空格）也要逐字一致。"""
+    return body.strip('\n').split('\n')
 
 
 def check(ledger, sources, origins):
@@ -62,7 +70,7 @@ def check(ledger, sources, origins):
     for entry in entries:
         counts[entry['new']] = counts.get(entry['new'], 0) + 1
     for path in sorted(sources):
-        if counts.get(path) != 1:
+        if counts.get(path, 0) > 1:
             errors.append(f'{path}：须在台账登记且只登记一次')
     for entry in entries:
         new, origin, mode = entry['new'], entry['origin'], entry['mode']
@@ -85,6 +93,8 @@ def check(ledger, sources, origins):
             continue
         if meta_new.get('date') != meta_old.get('date'):
             errors.append(f'{new}：date 须等于原件的原始日期 {meta_old.get("date")}')
+        if mode == '原样' and meta_new.get('title') != meta_old.get('title'):
+            errors.append(f'{new}：声明原样，但 title 与原件不同')
         if mode == '原样':
             want, got = lines(lift(body_old)), lines(body_new)
             if want != got:
@@ -114,9 +124,13 @@ def load(root):
     sources = {f'{CONTENT}/{p.name}': read(p) for p in sorted(content.glob('*.md'))}
     origins = {}
     for entry in rows(ledger):
-        path = root / entry['origin']
-        if '..' not in Path(entry['origin']).parts and path.is_file():
-            origins[entry['origin']] = read(path)
+        origin = entry['origin']
+        # 先校验路径形状再读，台账里写了仓库外的路径也不去碰
+        if not origin.startswith('vault/raw/') or '..' in Path(origin).parts:
+            continue
+        path = root / origin
+        if path.is_file() or path.is_symlink():
+            origins[origin] = read(path)
     return ledger, sources, origins
 
 
@@ -137,7 +151,7 @@ def main(argv=None):
     if errors:
         return 1
     note = f'；{len(unchecked)} 篇的原件不在本机，没有逐字比对' if unchecked else ''
-    print(f'迁移台账对账通过：{len(sources)} 篇正文均已登记{note}。不代表语义保真、版权或本人声音。')
+    print(f'迁移台账对账通过：{len(rows(ledger))} 篇已登记旧文；新写文章无需迁移登记{note}。不代表语义保真、版权或本人声音。')
     return 0
 
 

@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { getSiteConfig } from "@/lib/site";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: {
-    default: "智能时代蛮子 · 工程预览",
-    template: "%s · 智能时代蛮子",
-  },
-  description: "本地博客工程预览；内容与排版待确认，未公开发布。",
-  robots: { index: false, follow: false },
-};
-
+export function generateMetadata(): Metadata {
+  const site = getSiteConfig();
+  return {
+    title: { default: site.title, template: `%s · ${site.title}` },
+    description: site.description,
+    authors: [{ name: site.author }],
+    applicationName: site.title,
+    ...(site.url ? { metadataBase: new URL(site.url) } : {}),
+    robots: { index: Boolean(site.url), follow: Boolean(site.url) },
+    ...(site.url ? { alternates: { types: { "application/rss+xml": `${site.url}/feed.xml` } } } : {}),
+    icons: { icon: "/icon.svg" },
+    twitter: { card: "summary" },
+  };
+}
 export default function RootLayout({ children }: { children: ReactNode }) {
-  return (
-    <html lang="zh-CN">
-      <body>{children}</body>
-    </html>
-  );
+  return <html lang="zh-CN"><body>{children}</body></html>;
 }
