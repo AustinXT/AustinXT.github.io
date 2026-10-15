@@ -177,8 +177,15 @@ def text(node):
     return re.sub(r'\s+', ' ', node.text()).strip() if node else ''
 
 
+def ancestors(node):
+    parent = node.parent
+    while parent is not None:
+        yield parent
+        parent = parent.parent
+
+
 def external(value):
-    """仅导航/元数据可用外链；脚本、样式、图片仍须是安全枚举的本地文件。"""
+    """导航、元数据与正文图片可用 HTTP(S) 外链；其余资源仍须是安全枚举的本地文件。"""
     value = decode(value)
     parsed = urlsplit(value)
     if parsed.scheme.lower() in {'http', 'https'}:
@@ -376,7 +383,13 @@ def check(pages, assets=None):
                         else:
                             raise ValueError('未批准的 href 资源入口')
                     elif key in {'src', 'poster'}:
-                        resource(value)
+                        content_image = (node.tag == 'img' and key == 'src'
+                                         and any('data-essay-body' in parent.attrs or 'data-work-body' in parent.attrs
+                                                 for parent in ancestors(node)))
+                        if content_image and external(value) and urlsplit(decode(value)).scheme.lower() in {'http', 'https'}:
+                            pass
+                        else:
+                            resource(value)
                     elif key == 'srcset':
                         for item in value.split(','):
                             resource(item.strip().split()[0])
@@ -583,7 +596,7 @@ def main(argv=None):
     if len(argv) > 1:
         print('用法：check-site-export.py [out 目录]', file=sys.stderr)
         return 2
-    root = argv[0] if argv else Path(__file__).absolute().parent.parent / 'src/site/out'
+    root = argv[0] if argv else Path(__file__).absolute().parent.parent / 'src/out'
     try:
         pages, assets = load(root)
         errors = check(pages, assets)

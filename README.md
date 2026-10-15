@@ -1,11 +1,11 @@
 # 智能时代蛮子 · 博客
 
-独立个人博客工程；方向唯一正本为 [`.42cog/intent.md`](.42cog/intent.md)，方向已确认。实际进度见 [`state/board.md`](state/board.md)，原生工程入口为 [`src/site/README.md`](src/site/README.md)。
+独立个人博客工程；方向唯一正本为 [`.42cog/intent.md`](.42cog/intent.md)，方向已确认。实际进度见 [`state/board.md`](state/board.md)，原生工程入口为 [`src/README.md`](src/README.md)。
 
 ## 从这里开始
 
 1. 看意向书与状态板，按当前放行范围接续，不重复已确认的选择。
-2. 按 [`skills/README.md`](skills/README.md) 接续四步方法；技术修订见 [取舍卡](docs/research/002_blog-direction-decision.md)，当前已完成可由 `content/` 维护的博客工程，内容操作见 [`content/README.md`](src/site/content/README.md)。
+2. 按 [`skills/README.md`](skills/README.md) 接续四步方法；技术修订见 [取舍卡](docs/research/002_blog-direction-decision.md)，当前已完成可由 `content/` 维护的博客工程，内容操作见 [`content/README.md`](src/content/README.md)。
 3. 先读 [旧博客来源索引](docs/research/001_reference-source.md)，再按需看原文，不把整个旧库带入上下文。
 
 ## 六组
@@ -36,6 +36,6 @@ python3 -I scripts/check-system.py
 python3 -I scripts/test-check-system.py
 ```
 
-上述命令只验证初始化底座；新工程依赖、lint、类型、构建与导出检查见 [`src/site/README.md`](src/site/README.md)，旧原型规则保留。依赖安装须明确授权，不执行参考原件脚本；本地构建不代表上线。
+上述命令只验证初始化底座；新工程依赖、lint、类型、构建与导出检查见 [`src/README.md`](src/README.md)，旧原型规则保留。依赖安装须明确授权，不执行参考原件脚本；本地构建不代表上线。
 
 本地 Git 与远端身份见 [`.42cog/meta.md`](.42cog/meta.md)；当前基线已按明确授权本地保存，不推导新增成果提交或发布授权。被忽略旧原件尤其未提交文件的异地备份仍须单独确认。

@@ -4,7 +4,7 @@
 
 ## 这次要决定的
 
-新站的静态产物 `src/site/out/` 放在哪里托管。「GitHub Pages + 前置 CDN」这类组合也算候选。前提已定：托管必须以 brotli（或 zstd）下发 HTML、JS、CSS（`../005_md-rendering/decision.md` 拍板第 6 项）。
+新站的静态产物 `src/out/` 放在哪里托管。「GitHub Pages + 前置 CDN」这类组合也算候选。前提已定：托管必须以 brotli（或 zstd）下发 HTML、JS、CSS（`../005_md-rendering/decision.md` 拍板第 6 项）。
 
 ## 五份文件，按这个顺序走
 

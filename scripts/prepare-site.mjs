@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-const site = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../src/site");
+const site = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../src");
 const source = path.join(site, "content/media"), target = path.join(site, "public/media");
 const allowed = new Set([".png", ".jpg", ".jpeg", ".gif", ".webp", ".avif", ".svg", ".ico", ".pdf", ".mp3", ".mp4", ".webm", ".ogg"]);
 const copies = [];

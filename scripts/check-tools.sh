@@ -113,11 +113,11 @@ if have python3 && [ -f "$TOOL_ROOT/.python-version" ]; then
     printf '  ✗ Python 精确版本：要求 %s，实际 %s\n' "$EXPECTED" "$ACTUAL"
   fi
 fi
-check node "新工程构建运行时" '按 src/site/.node-version 自行安装' '按 src/site/.node-version 自行安装' '按 src/site/.node-version 自行安装'
+check node "新工程构建运行时" '按 src/.node-version 自行安装' '按 src/.node-version 自行安装' '按 src/.node-version 自行安装'
 check npm "新工程唯一包管理器" '随 Node 安装' '随 Node 安装' '随 Node 安装'
 NODE_OK=0
-if have node && [ -f "$TOOL_ROOT/src/site/.node-version" ]; then
-  NODE_EXPECTED="$(< "$TOOL_ROOT/src/site/.node-version")"
+if have node && [ -f "$TOOL_ROOT/src/.node-version" ]; then
+  NODE_EXPECTED="$(< "$TOOL_ROOT/src/.node-version")"
   NODE_ACTUAL="$(node --version)"
   if [ "${NODE_ACTUAL#v}" = "$NODE_EXPECTED" ]; then
     printf '  ✓ Node 精确版本 %s\n' "$NODE_EXPECTED"
@@ -126,13 +126,13 @@ if have node && [ -f "$TOOL_ROOT/src/site/.node-version" ]; then
     printf '  ✗ Node 精确版本：要求 %s，实际 %s\n' "$NODE_EXPECTED" "$NODE_ACTUAL"
   fi
 fi
-if [ -f "$TOOL_ROOT/src/site/package-lock.json" ]; then
+if [ -f "$TOOL_ROOT/src/package-lock.json" ]; then
   printf '  ✓ 原生工程锁文件存在；这不证明依赖已安装或构建通过\n'
 else
   printf '  ✗ 缺新工程 package-lock.json\n'
   NODE_OK=0
 fi
-printf '  – 构建与导出检查见 src/site/README.md；部署与公开发布仍单独授权\n'
+printf '  – 构建与导出检查见 src/README.md；部署与公开发布仍单独授权\n'
 
 echo
 if [ "$STACK_EMPTY" = 1 ]; then

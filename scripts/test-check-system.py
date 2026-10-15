@@ -87,23 +87,29 @@ class StructureTests(unittest.TestCase):
                         "160000," + "1" * 40 + ",vault/raw/05blog"], check=True)
         self.assertTrue(any("原件被跟踪" in error for error in self.errors()))
 
+    def test_ignored_build_directory(self):
+        self.write(".gitignore", (self.root / ".gitignore").read_text() + "/src/.next/\n/src/out/\nnode_modules/\n")
+        for name in (".next", "out", "node_modules"):
+            (self.root / "src" / name).mkdir()
+        self.assertEqual([], self.errors())
+
     def test_module_unregistered(self):
-        (self.root / "src/site").mkdir()
+        (self.root / "src/module").mkdir()
         self.assertTrue(any("作品子目录应唯一登记" in error for error in self.errors()))
 
     def test_module_exact_registered(self):
-        (self.root / "src/site").mkdir()
-        self.write(".42cog/cog.md", "| 网站 | 阅读模块 | `../src/site/` | AI | 构建输入 |\n")
+        (self.root / "src/module").mkdir()
+        self.write(".42cog/cog.md", "| 网站 | 阅读模块 | `../src/module/` | AI | 构建输入 |\n")
         self.assertEqual([], self.errors())
 
     def test_module_duplicate_registration(self):
-        (self.root / "src/site").mkdir()
-        row = "| 网站 | 阅读模块 | `../src/site/` | AI | 构建输入 |\n"
+        (self.root / "src/module").mkdir()
+        row = "| 网站 | 阅读模块 | `../src/module/` | AI | 构建输入 |\n"
         self.write(".42cog/cog.md", row + row)
         self.assertTrue(any("实际 2 行" in error for error in self.errors()))
 
     def test_entity_empty_field(self):
-        self.write(".42cog/cog.md", "| 网站 | 阅读模块 | `../src/site/` | | 构建输入 |\n")
+        self.write(".42cog/cog.md", "| 网站 | 阅读模块 | `../src/module/` | | 构建输入 |\n")
         self.assertTrue(any("空字段" in error for error in self.errors()))
 
     def test_symlink_required_file(self):
@@ -113,7 +119,7 @@ class StructureTests(unittest.TestCase):
         self.assertTrue(any("软链接：README.md" in error for error in self.errors()))
 
     def test_symlink_module(self):
-        (self.root / "src/site").symlink_to(self.root / "vault/raw", target_is_directory=True)
+        (self.root / "src/module").symlink_to(self.root / "vault/raw", target_is_directory=True)
         self.assertTrue(any("作品区不接受软链接" in error for error in self.errors()))
 
     def test_symlink_method_parent(self):

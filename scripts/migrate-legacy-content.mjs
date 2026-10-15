@@ -6,10 +6,10 @@ import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 
 const project = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const require = createRequire(path.join(project, "src/site/package.json"));
+const require = createRequire(path.join(project, "src/package.json"));
 const matter = require("gray-matter");
 const sourceRoot = "vault/raw/05blog/content";
-const contentRoot = "src/site/content";
+const contentRoot = "src/content";
 const indexFile = `${contentRoot}/legacy-index.json`;
 export const hash = (value) => crypto.createHash("sha256").update(value).digest("hex");
 const SLUG = /^(?=.{1,40}$)(?=[a-z0-9-]*[a-z])[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -86,7 +86,7 @@ export function validateIndex(index, readTarget) {
   if (!index || index.version !== 1 || !Array.isArray(index.entries)) return ["迁入索引格式错误"];
   for (const entry of index.entries) {
     if (typeof entry.source !== "string" || !/^vault\/raw\/05blog\/content\/(?:posts|draft)\/[^/]+\.md$/.test(entry.source)) errors.push("来源路径不在原博客文章目录");
-    if (typeof entry.target !== "string" || !/^src\/site\/content\/essays\/[a-z0-9]+(?:-[a-z0-9]+)*\.md$/.test(entry.target)) { errors.push("目标路径不在新随笔目录"); continue; }
+    if (typeof entry.target !== "string" || !/^src\/content\/essays\/[a-z0-9]+(?:-[a-z0-9]+)*\.md$/.test(entry.target)) { errors.push("目标路径不在新随笔目录"); continue; }
     if (sources.has(entry.source)) errors.push(`重复来源：${entry.source}`);
     if (targets.has(entry.target)) errors.push(`重复目标：${entry.target}`);
     sources.add(entry.source); targets.add(entry.target);

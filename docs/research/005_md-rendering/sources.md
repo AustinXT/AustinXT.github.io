@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | S1 | 旧博客 69 篇非草稿（posts 68 + briefing 1）的写法统计：只有计数，没有正文 | `evidence/own-scan.txt`（217 行；脚本 `scan_own.py`、`inspect_shape.py` 在同目录） | **算**：这就是将来要迁的那批 MD 的写法 | 抽查 4 项与独立 `grep` 一致：69 篇、12 篇有 `expirydate`、0 篇写 slug/url；公式行 `$$` 在代码外只有 1 篇（第 96 行），「4 篇用公式」口径偏宽，含疑似货币 `$`（第 101、141 行） |
 | S2 | 旧 Hugo 的 markup 配置：goldmark `unsafe=true`、七项扩展、KaTeX、mermaid、`/:slug/` | `vault/raw/05blog/config.toml`，摘要见 S1 第 177–217 行 | **作为事实算，作为标准不算** | 证明旧站多年来一直是「发布前编译」，读者端不解析 MD；具体开关是旧实践，不自动成为新标准 |
-| S3 | 本项目工程：Next 16.4.0 App Router、`output: 'export'`、`trailingSlash` | `../../../src/site/next.config.ts`、`package.json` | **算** | 当前技术正本见 `../002_blog-direction-decision.md:156` 起的修订节 |
+| S3 | 本项目工程：Next 16.4.0 App Router、`output: 'export'`、`trailingSlash` | `../../../src/next.config.ts`、`package.json` | **算** | 当前技术正本见 `../002_blog-direction-decision.md:156` 起的修订节 |
 
 ## 二、他人积累：只读借鉴，先查协议
 

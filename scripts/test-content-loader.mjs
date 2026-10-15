@@ -1,5 +1,5 @@
-// 正文管线（src/site/lib/content.ts）的规则回归：每条校验都有一个应被拒绝的反例。
-// 用法（项目根）：node --test scripts/test-content-loader.mjs ；依赖 Node 原生类型剥离与 src/site 已装依赖。
+// 正文管线（src/lib/content.ts）的规则回归：每条校验都有一个应被拒绝的反例。
+// 用法（项目根）：node --test scripts/test-content-loader.mjs ；依赖 Node 原生类型剥离与 src 已装依赖。
 import assert from "node:assert/strict";
 import test from "node:test";
 import fs from "node:fs";
@@ -8,7 +8,7 @@ import path from "node:path";
 import {
   excerpt, getEssay, getEssays, getTaxonomyPage, getWork, getWorks, parseEssay, parseWork,
   publishable, readEssays, readingMinutes, renderMarkdown, taxonomyHref, taxonomyPages, taxonomyTerms, yearPages,
-} from "../src/site/lib/content.ts";
+} from "../src/lib/content.ts";
 
 const doc = (front, body = "正文一段。\n") => `---\n${front}\n---\n\n${body}`;
 const good = "title: 样本\ndate: 2026-10-10\nslug: good-one";
@@ -314,4 +314,12 @@ test("作品排序：order 为非负安全整数，省略时排在已指定顺�
     }
     assert.deepEqual(getWorks().map((work) => work.slug), ["github-explore", "ai-first", "ai-weekly", "unordered-new", "unordered-old"]);
   });
+});
+
+
+test("旧笔记缺失的 Joplin 图片显示文字提示，远程图片正常保留", async () => {
+  const { html } = await renderMarkdown("![旧图](:/08cdd9fec0e84603b04ab905ff4bd4db)\n\n![在线图](https://example.com/image.png?v=1)");
+  assert.match(html, /原图缺失：旧图/);
+  assert.doesNotMatch(html, /src=":\//);
+  assert.match(html, /src="https:\/\/example.com\/image.png\?v=1"/);
 });

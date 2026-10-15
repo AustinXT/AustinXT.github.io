@@ -1,4 +1,4 @@
-name: 本地规则与锁定构建
+name: 规则检查、锁定构建与 Pages 发布
 
 on:
   push:
@@ -40,6 +40,9 @@ jobs:
 
   site:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
     env:
       NEXT_TELEMETRY_DISABLED: '1'
     steps:
@@ -48,14 +51,14 @@ jobs:
           submodules: false
       - uses: actions/setup-node@v4
         with:
-          node-version-file: src/site/.node-version
+          node-version-file: src/.node-version
           cache: npm
-          cache-dependency-path: src/site/package-lock.json
+          cache-dependency-path: src/package-lock.json
       - uses: actions/setup-python@v5
         with:
           python-version-file: .python-version
       - name: 锁定依赖、质量与构建
-        working-directory: src/site
+        working-directory: src
         run: |
           npm ci --ignore-scripts --no-audit --no-fund --registry=https://registry.npmjs.org
           npm ls --all
@@ -76,5 +79,31 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: blog-static-site
-          path: src/site/out
+          path: src/out
           retention-days: 7
+      - name: 配置 Pages
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+        uses: actions/configure-pages@v5
+      - name: 上传已验证的静态站点
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: src/out
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    needs: [validate, site]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 发布到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

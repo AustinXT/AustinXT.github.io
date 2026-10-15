@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """迁移台账对账：已登记的旧文只登记一次；声明「原样」的，与原件逐字比对。
 
-只读台账、src/site/content/essays/*.md 与台账指向的原件。原件在被 Git 忽略的 vault/raw/ 下，
+只读台账、src/content/essays/*.md 与台账指向的原件。原件在被 Git 忽略的 vault/raw/ 下，
 本机没有时（例如 CI）只做登记对账，并明说没有比对。不判语义、版权或本人声音。
 check(ledger, sources, origins) 为纯函数，便于反例回归。用法：check-migration.py [仓库根]
 """
@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 LEDGER = 'docs/research/007_migration-ledger.md'
-CONTENT = 'src/site/content/essays'
+CONTENT = 'src/content/essays'
 FRONT = re.compile(r'\A---\r?\n(.*?)\r?\n---\r?\n(.*)\Z', re.S)
 HEADING = re.compile(r'^(#{1,6}) ', re.M)
 MODES = ('原样', '改写')

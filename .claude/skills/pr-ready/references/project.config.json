@@ -12,9 +12,9 @@
     "python3 -I scripts/test-migration.py",
     "python3 -I scripts/check-migration.py",
     "node --test scripts/test-content-loader.mjs",
-    "npm --prefix src/site run lint",
-    "npm --prefix src/site run typecheck",
-    "NEXT_TELEMETRY_DISABLED=1 npm --prefix src/site run build",
+    "npm --prefix src run lint",
+    "npm --prefix src run typecheck",
+    "NEXT_TELEMETRY_DISABLED=1 npm --prefix src run build",
     "python3 -I scripts/check-site-export.py",
     "python3 -I scripts/check-content-export.py"
   ],

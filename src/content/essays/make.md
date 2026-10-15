@@ -94,7 +94,7 @@ $make
 make: 'paper.pdf' is up to date.
 ```
 
-什么事情都没做！为什么？好吧，因为它什么都不需要做。**make 回去检查之前的构建是因其依赖改变而需要被更新。**让我们试试修改 `paper.tex` 在重新执行 `make`：
+什么事情都没做！为什么？好吧，因为它什么都不需要做。 **make 回去检查之前的构建是因其依赖改变而需要被更新。** 让我们试试修改 `paper.tex` 在重新执行 `make`：
 
 ```bash
 $vim paper.tex # edit

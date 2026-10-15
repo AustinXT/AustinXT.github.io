@@ -77,6 +77,15 @@ class ContentExportTest(unittest.TestCase):
     def test_source_line_missing(self):
         self.assertFails(run(pages={'one': page(body=BODY.replace('必须出现', '被改写'))}), '行源文纯文本不在正文里')
 
+    def test_indented_list_markers_are_not_plain_prose(self):
+        source = SOURCE + '\n  - 嵌套项目文本。\n   1. 编号项目文本。\n'
+        body = BODY + '<ul><li>嵌套项目文本。</li></ul><ol><li>编号项目文本。</li></ol>'
+        self.assertEqual(run(sources={'one.md': source}, pages={'one': page(body=body)}), [])
+
+    def test_literal_sound_tildes_are_not_strikethrough(self):
+        self.assertEqual(run(pages={'one': page(body=BODY + '<p>呜呜~~</p>')}), [])
+        self.assertFails(run(pages={'one': page(body=BODY + '<p>~~删除线~~</p>')}), '未编译的 Markdown')
+
     def test_raw_markdown_leak(self):
         self.assertFails(run(pages={'one': page(body=BODY.replace('<strong>加粗</strong>', '**加粗**'))}), '未编译的 Markdown')
 

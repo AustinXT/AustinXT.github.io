@@ -8,7 +8,7 @@
 | ID | 是什么 | 在哪 | 日期 | 还算数吗 |
 |---|---|---|---|---|
 | S1 | brotli 必要的拍板与依据；GitHub Pages 只回 gzip | `../005_md-rendering/decision.md` 拍板第 6 项；`../005_md-rendering/sources.md` O9 | 2026-10-10 | **算**，本题前提 |
-| S2 | 本工程产物形态：`output: 'export'`、`trailingSlash: true`；每页 `index.html` + `index.txt` + 3 个 `__next.*.txt`；文件名里有 `$`（如 `__next.essays.$d$slug.__PAGE__.txt`） | `../../../src/site/next.config.ts`；`../../../src/site/out/essays/pipeline-sample/` | 2026-10-10 | **算**，部署前要确认各平台对 `$` 文件名无异常（未测） |
+| S2 | 本工程产物形态：`output: 'export'`、`trailingSlash: true`；每页 `index.html` + `index.txt` + 3 个 `__next.*.txt`；文件名里有 `$`（如 `__next.essays.$d$slug.__PAGE__.txt`） | `../../../src/next.config.ts`；`../../../src/out/essays/pipeline-sample/` | 2026-10-10 | **算**，部署前要确认各平台对 `$` 文件名无异常（未测） |
 | S3 | 现网与 DNS：`nightvoyager.top` 的 NS 是 `dns1/dns2.hichina.com`（阿里云解析）；`blog.nightvoyager.top` CNAME 到 `austinxt.github.io`；旧文网址是百分号编码的中文 slug，如 `/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%85%A5%E9%97%A8/` | `dig +short NS nightvoyager.top`；`dig +short CNAME blog.nightvoyager.top`；首页链接取自 `R/_bodies/blog.nightvoyager.top.html` | 2026-10-10 | **算**。说明换 DNS 托管商不是切换的必要前提，看平台 |
 | S4 | 受众地域、预算、ICP 意愿都未提供 | `../../../.42cog/real.md:28` | 2026-10-10 | **算**：这是拍板项，不是调研能填的 |
 

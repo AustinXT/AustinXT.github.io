@@ -6,7 +6,7 @@ import { execFileSync, spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
 if (!process.argv.includes("--snapshot")) throw new Error("只在一次性快照运行，并显式传 --snapshot");
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const site = path.join(root, "src/site"), content = path.join(site, "content"), out = path.join(site, "out");
+const site = path.join(root, "src"), content = path.join(site, "content"), out = path.join(site, "out");
 const original = new Map();
 for (const kind of ["essays", "works"]) for (const name of fs.readdirSync(path.join(content, kind))) {
   if (name.endsWith(".md")) original.set(`${kind}/${name}`, fs.readFileSync(path.join(content, kind, name)));

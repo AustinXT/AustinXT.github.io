@@ -10,7 +10,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-MODULE = ROOT / "src/reading"
+MODULE = ROOT / "_archive/20261016-reading-delisted"
 SCRIPT = ROOT / "scripts/check-reading-prototype.py"
 SPEC = importlib.util.spec_from_file_location("reading_checker", SCRIPT)
 CHECKER = importlib.util.module_from_spec(SPEC)

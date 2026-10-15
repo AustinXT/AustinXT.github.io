@@ -40,14 +40,14 @@ __pycache__/
 node_modules/
 
 # Next 原生工程的可再生产物与类型检查缓存
-/src/site/.next/
-/src/site/out/
-/src/site/next-env.d.ts
-/src/site/*.tsbuildinfo
+/src/.next/
+/src/out/
+/src/next-env.d.ts
+/src/*.tsbuildinfo
 .venv/
 
 # 本地自主开发队列与日志（不包含技能源码）
 /.ai/
 
 # content/media 的可再生公开副本
-/src/site/public/media/
+/src/public/media/

@@ -7,8 +7,8 @@
     "build": "next build",
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit",
-    "prebuild": "node ../../scripts/prepare-site.mjs --build",
-    "predev": "node ../../scripts/prepare-site.mjs"
+    "prebuild": "node ../scripts/prepare-site.mjs --build",
+    "predev": "node ../scripts/prepare-site.mjs"
   },
   "engines": {
     "node": ">=20.9.0"

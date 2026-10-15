@@ -74,15 +74,15 @@ order: 1
 在项目根运行：
 
 ```bash
-npm --prefix src/site run dev
+npm --prefix src run dev
 # 浏览 http://127.0.0.1:3000
 ```
 
 静态产物预览：
 
 ```bash
-npm --prefix src/site run build
-python3 -I -m http.server 4173 --bind 127.0.0.1 --directory src/site/out
+npm --prefix src run build
+python3 -I -m http.server 4173 --bind 127.0.0.1 --directory src/out
 ```
 
 项目遵循全局 mac-offload 约定：完整构建和批量验证优先交给 worker。工程命令与 CI 入口见上一级 README。

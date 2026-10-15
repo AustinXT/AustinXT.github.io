@@ -348,7 +348,7 @@ def main():
     if len(sys.argv) > 2:
         print("用法：check-reading-prototype.py [模块目录]", file=sys.stderr)
         return 2
-    root = Path(sys.argv[1]) if len(sys.argv) == 2 else Path(__file__).resolve().parent.parent / "src/reading"
+    root = Path(sys.argv[1]) if len(sys.argv) == 2 else Path(__file__).resolve().parent.parent / "_archive/20261016-reading-delisted"
     try:
         errors = check(load(root))
     except (OSError, ValueError) as exc:

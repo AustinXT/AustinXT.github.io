@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "^/(.*)$",
+      "dest": "https://nightvoyager.top/$1",
+      "status": 308
+    }
+  ]
+}

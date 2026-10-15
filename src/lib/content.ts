@@ -295,6 +295,13 @@ function safeUrl(value: unknown, image: boolean): boolean {
 
 function safeLinks(tree: Hast) {
   const visit = (node: Hast) => {
+    if (node.type === "element" && node.tagName === "img" && typeof node.properties?.src === "string"
+        && /^:\/[a-f0-9]{32}$/i.test(node.properties.src)) {
+      node.tagName = "span";
+      const alt = String(node.properties.alt || "未命名图片");
+      node.properties = { className: ["missing-image"] };
+      node.children = [{ type: "text", value: `原图缺失：${alt}（旧笔记附件未保存）` }];
+    }
     if (node.type === "element" && node.properties) {
       for (const key of ["href", "src"]) {
         if (key in node.properties && !safeUrl(node.properties[key], key === "src")) delete node.properties[key];

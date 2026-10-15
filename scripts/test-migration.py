@@ -14,7 +14,7 @@ SPEC = importlib.util.spec_from_file_location('migration', SCRIPT)
 CHECK = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(CHECK)
 
-NEW = 'src/site/content/essays/one.md'
+NEW = 'src/content/essays/one.md'
 OLD = 'vault/raw/blog/posts/2019-01-01-one.md'
 ORIGIN = '---\ntitle: 旧题\ndate: 2019-01-01\ntags: [x]\n---\n\n开头一段。\n\n### 小节\n\n#### 细目\n\n正文一段。\n'
 ESSAY = '---\ntitle: 旧题\ndate: 2019-01-01\nslug: one\n---\n\n开头一段。\n\n## 小节\n\n### 细目\n\n正文一段。\n'
@@ -45,7 +45,7 @@ class MigrationTest(unittest.TestCase):
 
     def test_unregistered_essay(self):
         # 新写文章只需放进 content，迁移台账仅约束已登记的旧文。
-        self.assertEqual(run(sources={NEW: ESSAY, 'src/site/content/essays/two.md': ESSAY}), ([], []))
+        self.assertEqual(run(sources={NEW: ESSAY, 'src/content/essays/two.md': ESSAY}), ([], []))
 
     def test_registered_twice(self):
         row = f'| `{NEW}` | `{OLD}` | 原样 | x | x | x |'

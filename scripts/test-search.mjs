@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { searchEntries } from "../src/site/lib/search.ts";
+import { searchEntries } from "../src/lib/search.ts";
 const entry = (title, extra = {}) => ({ title, href: `/essays/${title}/`, description: "", date: "2026-10-15", categories: [], tags: [], kind: "essay", ...extra });
 test("中文、多词、大小写与全角归一；跨字段匹配", () => {
   const all = [entry("卡片大法", { tags: ["写作", "AI"] }), entry("ai工具", { description: "卡片与阅读" })];

@@ -77,7 +77,7 @@ A/B/C 是上一轮比较入口优先级的试稿；负责人随后给出四块�
 项目根运行：
 
 ```bash
-bash src/reading/check.sh src/reading/prototype.html src/reading/essays.html src/reading/works.html src/reading/about.html src/reading/article.html src/reading/categories.html src/reading/tags.html src/reading/work-preview.html src/reading/prototype.css
+bash _archive/20261016-reading-delisted/check.sh _archive/20261016-reading-delisted/prototype.html _archive/20261016-reading-delisted/essays.html _archive/20261016-reading-delisted/works.html _archive/20261016-reading-delisted/about.html _archive/20261016-reading-delisted/article.html _archive/20261016-reading-delisted/categories.html _archive/20261016-reading-delisted/tags.html _archive/20261016-reading-delisted/work-preview.html _archive/20261016-reading-delisted/prototype.css
 python3 -I scripts/check-reading-prototype.py
 python3 -I scripts/test-reading-prototype.py
 ```

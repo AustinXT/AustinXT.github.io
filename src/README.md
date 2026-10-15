@@ -1,13 +1,61 @@
-# src — 新博客作品区
+# 博客工程
 
-作品单位与实际目录语义见 `../.42cog/cog.md`；合格线唯一正本见 `../.42cog/intent.md`。
+基于 Next.js、React、Tailwind 的静态博客。文章和作品以 Markdown 为正本，构建时生成 HTML；阅读正文、年份归档、专栏与专题浏览不依赖客户端解析 Markdown。技术与依赖版本以 `package.json`、锁文件和 `.node-version` 为准。
 
-当前已有 [reading/](reading/) 阅读布局定标模块：入口为 [prototype.html](reading/prototype.html)，首页保留四块速览，菜单跳独立 [随笔页](reading/essays.html)、[作品页](reading/works.html)、[简介页](reading/about.html)；联系在简介页内，唯一占位正文在 [文章详情](reading/article.html)，共享 `prototype.css` 一份。随笔三段从详情元数据派生；[全部专栏](reading/categories.html)、[全部专题](reading/tags.html) 当前为空态，[作品详情排版预览](reading/work-preview.html) 明确非实际作品；[standard.md](reading/standard.md) 与 [negatives.md](reading/negatives.md) 跟随模块。它是待负责人挑改的纯 HTML 候选，不是 Hugo 成品、迁移正文或已通过的人审样本。
+已将旧库 134 篇文章与草稿迁入；负责人于 2026-10-16 确认全部保持上架；文章入口见 [校对清单](content/legacy-review.md)。
 
-新增 [site/](site/README.md) 独立博客工程；当前技术修订见 [取舍卡](../docs/research/002_blog-direction-decision.md)。它保持四菜单、栏目顺序、分类／专题完整入口及作品详情边界，不复制原型占位正文。原型的无脚本离线约束不作为新框架构建要求；两者不共享构建输入或成品正文。
+日常维护从 [content/README.md](content/README.md) 开始：上下架、专栏、专题、作品排序、简介和站点信息都在 `content/`，无需改页面代码。
 
-旧库 134 篇文章与草稿、两个作品入口已进入 `site/content/`；当前博客支持内容上下架、专栏、专题、归档、搜索和订阅。后续内容维护见 [content/README.md](site/content/README.md)，完整进度见状态板。每创建一个作品子目录同时登记实体。
+早期 HTML 原型与布局修改记录已归档至 [阅读原型归档](../_archive/20261016-reading-delisted/README.md)，不参与网站构建。
 
-旧博客是参考原件，不从参考目录直接构建或上线。未来获选文章先单篇整理、人审定标，再扩大；正文只保留一份成品正本，其他项目使用指针。
+## 已有能力
 
-`hi.md` 由负责人想写时自行创建，AI 不代建模板，不修改已有手稿。
+- 首页、随笔、作品、简介四菜单；移动端、暗色模式、键盘焦点、跳到正文与打印样式。
+- 随笔 Markdown、自动摘要与阅读时间、章节目录、锚点、相邻文章和同主题阅读。
+- 自动专栏与专题索引/详情、按年份归档、每页 100 篇的静态分页；无文章、全部草稿也能构建。
+- 作品介绍、直接外链、指定排序及 24 件分页。首两项是 github-explore 和 AI 周报入口，周报改造另行进行。
+- 本地关键词搜索：标题、摘要、专栏、专题，支持多词及随笔/作品过滤；索引按需加载，每批显示 20 条。全文检索未启用。
+- 配置正式 URL 后自动生成 canonical、Open Graph、文章结构化数据、RSS（最新 50 篇）与 sitemap。未配置 URL 时禁止索引并隐藏订阅入口。
+- 自定义 404、内容媒体同步、静态导出 DOM/链接/草稿检查和 CI；不依赖数据库或 CMS。
+
+## 运行
+
+从项目根执行。已有依赖使用锁文件重建，不引入新依赖：
+
+```bash
+npm --prefix src ci --ignore-scripts --no-audit --no-fund --registry=https://registry.npmjs.org
+npm --prefix src run dev
+```
+
+预览仅绑定 `127.0.0.1:3000`。依赖安装授权沿用既有工程约定。
+
+```bash
+NEXT_TELEMETRY_DISABLED=1 npm --prefix src run build
+python3 -I -m http.server 4173 --bind 127.0.0.1 --directory src/out
+```
+
+`predev` / `prebuild` 同步 `content/media/`。构建前清除旧导出，避免已经下架的页面残留。`out/`、`.next/`、`public/media/` 和类型缓存是可再生产物，不入 Git。
+
+## 验证
+
+完整验证脚本：`sh scripts/verify-blog.sh`，包括精确 Node、锁文件安装、依赖树、lint、内容和搜索测试、导出反例、迁移对账、构建、类型和真实静态导出检查。
+
+按全局约定优先执行 `mac-offload`。worker 需使用 `.node-version` 与 `.python-version` 锁定版本；系统默认版本不一定匹配。本轮入口：
+
+```bash
+mac-offload run --output src/out --timeout 900 -- uv run --python 3.14.7 --no-project -- npm exec --yes --package=node@26.10.0 -- sh scripts/verify-blog.sh
+```
+
+`scripts/test-blog-lifecycle.mjs` 在**一次性 worker 快照**上实际构建全部下架与中文分类/分页/生产 SEO 场景，并在 finally 中恢复内容、重建真实站点。不要在有人同时编辑的工作区运行。
+
+历史文章核验继续使用迁移台账，但新写文章无需登记。原件 `vault/raw/05blog/` 只读且不作为构建输入；worker 不传原件，所以迁移检查会明确报告未逐字比对。
+
+2026-10-15 负责人明确要求当前工程合入 main、部署到 `nightvoyager.top` 并带 HTTPS，随后要求 `blog.nightvoyager.top` 跳到根域名。本轮指令覆盖当前站点的上线；内容核对记录仍按原台账保留，不虚构人审结论。
+
+## 发布与双域名
+
+主站通过 `.github/workflows/validate.yml` 发布：main 的 push／手动运行在 validate 与 site 两组检查通过后，将静态导出 `out/` 交给 GitHub Pages；其他分支与 PR 只验证。Pages 自定义域名设为 `nightvoyager.top`，证书由 Pages 管理，签发后启用 Enforce HTTPS。
+
+blog 的 HTTPS 永久跳转采用独立 Vercel 静态项目，输入为 [`domain-redirect/`](domain-redirect/)，无需复制主站正文或构建产物。它把路径与查询参数带到主域名，证书由 Vercel 管理。
+
+实际已完成及尚未完成的 DNS、证书、跳转与发布回执，只看 [`../state/board.md`](../state/board.md) 的 2026-10-16 及 2026-10-15 记录。

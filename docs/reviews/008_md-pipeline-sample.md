@@ -1,6 +1,6 @@
 # 正文 MD 管线：占位样本实施与验证记录
 
-日期：2026-10-10。取舍与拍板的正本见 `../research/005_md-rendering/decision.md`。编译规则见 `../../src/site/README.md` 的「正文管线」一节。精确依赖以 `../../src/site/package.json` 和 `package-lock.json` 为准，本文不另存版本副本。
+日期：2026-10-10。取舍与拍板的正本见 `../research/005_md-rendering/decision.md`。编译规则见 `../../src/README.md` 的「正文管线」一节。精确依赖以 `../../src/package.json` 和 `package-lock.json` 为准，本文不另存版本副本。
 
 ## 授权与范围
 

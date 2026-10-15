@@ -153,6 +153,19 @@ class Contract(unittest.TestCase):
             bad['/essays/one/'] = bad['/essays/one/'].replace(toc, toc.replace('href="#intro"', replacement))
             self.assertTrue(CHECK.check(bad, ASSETS))
 
+    def test_remote_images_are_limited_to_article_content(self):
+        pages = fixtures()
+        image = '<img src="https://example.com/image.png?v=1&amp;size=2" alt="旧图">'
+        pages['/essays/one/'] = pages['/essays/one/'].replace('</article>', image + '</article>')
+        self.assertEqual(CHECK.check(pages, ASSETS), [])
+        for value in ('javascript:alert(1)', 'data:image/svg+xml,bad', 'https://user:pass@example.com/a', '//example.com/a'):
+            bad = dict(pages)
+            bad['/essays/one/'] = pages['/essays/one/'].replace('https://example.com/image.png?v=1&amp;size=2', value)
+            self.assertTrue(CHECK.check(bad, ASSETS), value)
+        outside = fixtures()
+        outside['/'] = outside['/'].replace('</main>', image + '</main>')
+        self.assertTrue(CHECK.check(outside, ASSETS))
+
     def test_dom_mutations(self):
         cases = [
             ('lang', '/', 'lang="zh-CN"', 'lang="en"'),

@@ -15,9 +15,9 @@
 
 | # | 命门 | 状态 | 差距 | 修起来要什么 | 分级 |
 |---|---|---|---|---|---|
-| 1 | MD 唯一正本 | **完全没有** | `src/site/` 还没有正文目录、front matter 读取和编译管线 | **接一根线**：gray-matter 加 unified 链，共 6 个 MIT 包，需授权安装；正文目录位置待拍板 | P1 |
+| 1 | MD 唯一正本 | **完全没有** | `src/` 还没有正文目录、front matter 读取和编译管线 | **接一根线**：gray-matter 加 unified 链，共 6 个 MIT 包，需授权安装；正文目录位置待拍板 | P1 |
 | 2 | 首个 HTML 里有正文 | **已实现（机制层）** | 静态导出与 Server Component 已就位；正文双份是页面路由固有的 | 托管提供 brotli 时代价可接受；只有 gzip 时改用 A2-R | P2 |
-| 3 | 规模无关、目录有上界 | **部分** | 目录还没有按年份或分页的拆法；正文放进 `src/site/` 会被 Tailwind 当源码扫描 | **接线**：①按年份静态页，单页设上限；②在 `globals.css` 中用 `@source not` 排除正文目录；③可选：目录链接 `prefetch={false}`（O2 `prefetching.mdx:317-326`） | P1 |
+| 3 | 规模无关、目录有上界 | **部分** | 目录还没有按年份或分页的拆法；正文放进 `src/` 会被 Tailwind 当源码扫描 | **接线**：①按年份静态页，单页设上限；②在 `globals.css` 中用 `@source not` 排除正文目录；③可选：目录链接 `prefetch={false}`（O2 `prefetching.mdx:317-326`） | P1 |
 
 ## 二、它们没做的
 

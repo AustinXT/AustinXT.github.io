@@ -39,7 +39,7 @@
 
 ## 当前定标入口
 
-- [阅读布局标准](../../src/reading/standard.md) · [负例护栏](../../src/reading/negatives.md) · [首页原件](../../src/reading/prototype.html)。
+- [阅读布局标准](../../_archive/20261016-reading-delisted/standard.md) · [负例护栏](../../_archive/20261016-reading-delisted/negatives.md) · [首页原件](../../_archive/20261016-reading-delisted/prototype.html)。
 - 标准跟随阅读模块，本目录只留指针；不另存第二份 HTML 或正文。已据实记录两条用户结构修改指令及原则，AI 代落到本地多页原型；不是用户直接编辑源码或完整排版验收，具体内容与体验仍待确认。
 
 ## 铁律

@@ -7,7 +7,7 @@
 
 | 新正文 | 原件 | 保留方式 | 旧网址与证据 | 新网址（候选，未冻结） | 状态 |
 |---|---|---|---|---|---|
-| `src/site/content/essays/card-method.md` | `vault/raw/05blog/content/posts/2019-12-23-卡片学习心得.md` | 改写 | `/卡片大法/`：2026-10-10 10:06 UTC 线上 200，canonical 指向自身；`/2019-12-23-卡片学习心得/`：同时 404（本地 sitemap 的两条路径见 `002_blog-direction-decision.md:97`） | `/essays/card-method/`（负责人 2026-10-11 定 slug） | AI 改写稿，待负责人核对；网址未冻结，未发布 |
+| `src/content/essays/card-method.md` | `vault/raw/05blog/content/posts/2019-12-23-卡片学习心得.md` | 改写 | `/卡片大法/`：2026-10-10 10:06 UTC 线上 200，canonical 指向自身；`/2019-12-23-卡片学习心得/`：同时 404（本地 sitemap 的两条路径见 `002_blog-direction-decision.md:97`） | `/essays/card-method/`（负责人 2026-10-11 定 slug） | AI 改写稿，待负责人核对；网址未冻结，未发布 |
 
 ## 列的含义
 
@@ -27,4 +27,4 @@
 
 负责人明确要求先迁入原博客全部文章，默认元数据后逐篇校对；此授权覆盖此前逐篇选文的批量限制。旧 `posts/` 68 篇与 `draft/` 66 篇，共 134 篇；其中《卡片大法》保留本表已有改写记录，其余 133 篇正文逐字迁入，全部 `draft: true`。空的简报栏目索引不作为文章。
 
-批量来源与初始元数据的唯一正本为 [`content/legacy-index.json`](../../src/site/content/legacy-index.json)，人工操作入口为 [`旧文校对清单`](../../src/site/content/legacy-review.md)。不在本表重复 134 行。`migrate-legacy-content.mjs --verify-initial` 在有原件的本机核对全部来源与正文；`--check-index` 在 CI 核对目标唯一、文件存在和显式上下架字段，允许用户以后直接在 content 校对正文与元数据。原件不改，未公开发布。
+批量来源与初始元数据的唯一正本为 [`content/legacy-index.json`](../../src/content/legacy-index.json)，人工操作入口为 [`旧文校对清单`](../../src/content/legacy-review.md)。不在本表重复 134 行。`migrate-legacy-content.mjs --verify-initial` 在有原件的本机核对全部来源与正文；`--check-index` 在 CI 核对目标唯一、文件存在和显式上下架字段，允许用户以后直接在 content 校对正文与元数据。原件不改，未公开发布。

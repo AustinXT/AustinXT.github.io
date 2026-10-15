@@ -86,17 +86,17 @@ tags: ["英语","学习"]
 
 #### 高阶技巧
 
-| 对象               | 要点（**_以上斜黑体为省略音节_** ）                                                                                                                                                                              |
+| 对象               | 要点（***以上斜黑体为省略音节*** ）                                                                                                                                                                              |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 单词轻读           | 代词、介词、冠词和助动词常轻读，e.g. **a**s **o**n **a**t t**o** f**o**r **o**r **ou**t **ou**r > /ə/，**and** > /n/ PS: or … that，清楚知道接下来说什么，则削弱元音，还在思考，没想到说什么，可以发原音。       |
-| 省略音节           | 完全不发音，e.g. /a/ basic**_a_**lly acts**_a_**lly，veg**_e_**table diff**_e_**rent，choc**_o_**late comf**_o_**rtable（rt 变成 tr)                                                                             |
-| 常见错误发音       | b clim**_b_** de**_b_**t, ch ya**_ch_**t，d a**_d_**just a**_d_**jective,，l wa**_l_**k ha**_l_**f，t balle**_t_** bouque**_t_**，th clo**_th_**es，p recei**_p_**t，s i**_s_**land debri**_s_**，w ans**_w_**er |
+| 省略音节           | 完全不发音，e.g. /a/ basic***a***lly acts***a***lly，veg***e***table diff***e***rent，choc***o***late comf***o***rtable（rt 变成 tr)                                                                             |
+| 常见错误发音       | b clim***b*** de***b***t, ch ya***ch***t，d a***d***just a***d***jective,，l wa***l***k ha***l***f，t balle***t*** bouque***t***，th clo***th***es，p recei***p***t，s i***s***land debri***s***，w ans***w***er |
 | 辅音丛             | 不能省略，e.g. maths months                                                                                                                                                                                      |
 | s 音后的清辅音浊化 | e.g. sport sky star                                                                                                                                                                                              |
 | 辅、元连读         | 前一单词辅音结尾接后一单词元音开头，连读并不意味着语速快，而是平滑的，原来重读的地方还是要重读，分组间不连读，**切记不要急着去学连读**e.g. what if > whadif                                                     |
 | 两辅连续           | 两个辅音一样或有相同的发音点时，只发一个音，e.g. likes swimming，five friends                                                                                                                                    |
 | 两元连续           | 前一单词结尾是/i/ /oɪ/ /aɪ/ /eɪ/，则后接单词前加一个轻轻的/j/，e.g. see it /’sijɪt/；前一单词结尾是/u:/ /oʊ/，则后接单词前加一个轻轻的/w/，e.g. no answer /noʊ‘wʌnsə:r/                                          |
-| 代词的轻读         | e.g. did **_h_**e，call **_hi_**m，drive her > driver，them > em 当在句首或强调时，则不能省略                                                                                                                    |
+| 代词的轻读         | e.g. did ***h***e，call ***hi***m，drive her > driver，them > em 当在句首或强调时，则不能省略                                                                                                                    |
 | 缩写               | 强调的时候，不会用缩写，e.g. it’ll > id’ll，I would > I’d，they are > they're /ə:r/，we have > we've                                                                                                             |
 | 难懂的缩写         | could have > couldəve，could not have > couldnəv，would you have > wouldjuəv                                                                                                                                     |
 | 非正式场合         | kind of a > kind a，let me > lemme，give me > gimme                                                                                                                                                              |

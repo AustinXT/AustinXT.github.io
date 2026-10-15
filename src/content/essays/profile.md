@@ -42,7 +42,7 @@ time.sleep(n/1000)
 # 0.5713930130004883
 ```
 
-也可以用 [`timeit`]([timeit --- 测量小代码片段的执行时间 — Python 3.11.2 文档](https://docs.python.org/zh-cn/3/library/timeit.html)) 计算一小段 Python 代码的耗时，它有   命令行接口以及一个   可调用方法。
+也可以用 [`timeit`](https://docs.python.org/zh-cn/3/library/timeit.html) 计算一小段 Python 代码的耗时，它有   命令行接口以及一个   可调用方法。
 
 ```bash
 python -m timeit -r 10 -vp -n 1000 -s 'flag="-"' 'l=[str(i) for i in range(100)]' 'flag.join(l)'

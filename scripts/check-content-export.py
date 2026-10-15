@@ -2,7 +2,7 @@
 """正文导出契约：每篇非草稿 .md 都导出为 /essays/<slug>/index.html，且正文在首个 HTML 的脚本之外。
 
 只读 content/essays/*.md 的简单 front matter 行（slug、title、draft）与对应导出页。
-严格的 front matter 校验在构建端（src/site/lib/content.ts）；这里用另一套读法交叉对账，不一致即失败。
+严格的 front matter 校验在构建端（src/lib/content.ts）；这里用另一套读法交叉对账，不一致即失败。
 不执行 JS，不判排版、人审或线上；check(sources, pages, exported) 为纯函数，便于反例回归。
 """
 import os
@@ -19,7 +19,7 @@ FRONT = re.compile(r'\A---\r?\n(.*?)\r?\n---\r?\n(.*)\Z', re.S)
 # 含这些字符的行可能被 Markdown 改写，不拿来做逐字核对
 MARKUP = re.compile(r'[*_`\[\]()<>|~#!\\&]')
 BLOCK = re.compile(r'^(?:[-+>]\s|\d+[.)]\s|```|~~~|\s{4})')
-LEAK = re.compile(r'\*\*|\]\(|~~|^#{1,6}\s|\|\s*-{3}', re.M)
+LEAK = re.compile(r'\*\*|\]\(|~~\S[^\n]*?\S~~|^#{1,6}\s|\|\s*-{3}', re.M)
 DANGER = {'script', 'style', 'iframe', 'object', 'embed', 'form', 'base', 'meta', 'link'}
 SKIP = {'script', 'style', 'template', 'noscript'}
 
@@ -43,7 +43,7 @@ def plain_lines(body):
             fenced = not fenced
             continue
         line = raw.strip()
-        if fenced or len(line) < 4 or BLOCK.match(raw) or MARKUP.search(line):
+        if fenced or len(line) < 4 or BLOCK.match(raw.lstrip()) or MARKUP.search(line):
             continue
         lines.append(line)
     return lines
@@ -186,7 +186,7 @@ def main(argv=None):
     if len(argv) not in (0, 2):
         print('用法：check-content-export.py [content/essays 目录 out 目录]', file=sys.stderr)
         return 2
-    site = Path(__file__).absolute().parent.parent / 'src/site'
+    site = Path(__file__).absolute().parent.parent / 'src'
     content_dir, out_dir = argv if argv else (site / 'content/essays', site / 'out')
     try:
         sources, pages, exported = load(content_dir, out_dir)

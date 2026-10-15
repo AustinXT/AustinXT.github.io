@@ -51,39 +51,39 @@ function fixture(run) {
   try {
     put("vault/raw/05blog/content/posts/2019-12-23-one.md", raw);
     put("vault/raw/05blog/content/draft/2020-05-12.md", "---\ndate: 2020-05-12\n---\n正文");
-    put("src/site/content/essays/card-method.md", "保留无关的人工稿");
+    put("src/content/essays/card-method.md", "保留无关的人工稿");
     run(dir, put);
   } finally { fs.rmSync(dir, { recursive: true, force: true }); }
 }
 const mapping = { "posts/2019-12-23-one.md": "one", "draft/2020-05-12.md": "note-20200512" };
 test("dry-run不写文件，首次写入完整且再次执行不覆盖校对稿", () => fixture((dir, put) => {
   assert.equal(migrate(dir, mapping).newFiles, 2);
-  assert.ok(!fs.existsSync(path.join(dir, "src/site/content/essays/one.md")));
+  assert.ok(!fs.existsSync(path.join(dir, "src/content/essays/one.md")));
   const first = migrate(dir, mapping, true);
   assert.equal(first.total, 2);
   const manual = "---\ntitle: 本人已校对\ndate: 2019-12-23\nslug: one\ndraft: false\n---\n\n本人改写。\n";
-  put("src/site/content/essays/one.md", manual);
+  put("src/content/essays/one.md", manual);
   assert.equal(migrate(dir, mapping, true).newFiles, 0);
-  assert.equal(fs.readFileSync(path.join(dir, "src/site/content/essays/one.md"), "utf8"), manual);
-  assert.equal(fs.readFileSync(path.join(dir, "src/site/content/essays/card-method.md"), "utf8"), "保留无关的人工稿");
+  assert.equal(fs.readFileSync(path.join(dir, "src/content/essays/one.md"), "utf8"), manual);
+  assert.equal(fs.readFileSync(path.join(dir, "src/content/essays/card-method.md"), "utf8"), "保留无关的人工稿");
   assert.equal(fs.readFileSync(path.join(dir, "vault/raw/05blog/content/posts/2019-12-23-one.md"), "utf8"), raw);
   assert.deepEqual(validateIndex(first.index, (file) => fs.readFileSync(path.join(dir, file), "utf8")), []);
 }));
 test("同名已有成品、源变化、重名映射和软链接均拒绝，规划失败不产生半套输出", () => fixture((dir, put) => {
   assert.throws(() => migrate(dir, { ...mapping, "draft/2020-05-12.md": "one" }, true), /重名目标/);
-  assert.ok(!fs.existsSync(path.join(dir, "src/site/content/essays/one.md")));
-  put("src/site/content/essays/one.md", "人工稿");
+  assert.ok(!fs.existsSync(path.join(dir, "src/content/essays/one.md")));
+  put("src/content/essays/one.md", "人工稿");
   assert.throws(() => migrate(dir, mapping, true), /不会覆盖/);
-  fs.unlinkSync(path.join(dir, "src/site/content/essays/one.md"));
+  fs.unlinkSync(path.join(dir, "src/content/essays/one.md"));
   migrate(dir, mapping, true);
   put("vault/raw/05blog/content/posts/2019-12-23-one.md", raw + "源变化");
   assert.throws(() => migrate(dir, mapping, true), /原件.*已变化/);
   fs.unlinkSync(path.join(dir, "vault/raw/05blog/content/posts/2019-12-23-one.md"));
-  fs.symlinkSync(path.join(dir, "src/site/content/essays/one.md"), path.join(dir, "vault/raw/05blog/content/posts/2019-12-23-one.md"));
+  fs.symlinkSync(path.join(dir, "src/content/essays/one.md"), path.join(dir, "vault/raw/05blog/content/posts/2019-12-23-one.md"));
   assert.throws(() => migrate(dir, mapping, true), /软链接/);
 }));
 test("索引后续允许校对和上架，但仍拒绝漏文件、重复和越界", () => {
-  const entry = { source: "vault/raw/05blog/content/posts/2019-12-23-one.md", target: "src/site/content/essays/one.md", sourceSha256: hash(raw), initialBodySha256: hash("body") };
+  const entry = { source: "vault/raw/05blog/content/posts/2019-12-23-one.md", target: "src/content/essays/one.md", sourceSha256: hash(raw), initialBodySha256: hash("body") };
   const index = { version: 1, entries: [entry] };
   const edited = () => "---\ntitle: 我改过的标题\ndate: 2020-01-01\nslug: one\ndraft: false\n---\n\n新正文。";
   assert.deepEqual(validateIndex(index, edited), []);

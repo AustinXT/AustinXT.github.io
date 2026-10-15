@@ -72,6 +72,8 @@ def check(root):
         if path.is_symlink():
             errors.append(f"作品区不接受软链接：{path.name}")
         elif path.is_dir():
+            if git(root, "check-ignore", "--no-index", str(path.relative_to(root)) + "/").returncode == 0:
+                continue
             location = f"`../src/{path.name}/`"
             count = sum(row[2] == location for row in rows)
             if count != 1:

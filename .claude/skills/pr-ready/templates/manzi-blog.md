@@ -7,8 +7,8 @@
 ## §invariant 触发表
 
 - 开工手册与授权：`CLAUDE.md`；当前阶段：`state/board.md`；按概念加载 `state/memory/MEMORY.md` 的实际链接。
-- 领域与作品：Next／React 静态导出工程在 src/site/，八页定标原件在 src/reading/；根目录没有 npm 应用。
-- 本项目直接参考：`CLAUDE.md` · `specs/proto-checklist.md` · `src/site/README.md` · `docs/research/007_migration-ledger.md` · `state/memory/20261009-dom-boundary-checks.md` · `state/memory/20261009-browser-preview-fallback.md`。
+- 领域与作品：Next／React 静态导出工程在 src/，八页定标原件在 _archive/20261016-reading-delisted/；根目录没有 npm 应用。
+- 本项目直接参考：`CLAUDE.md` · `specs/proto-checklist.md` · `src/README.md` · `docs/research/007_migration-ledger.md` · `state/memory/20261009-dom-boundary-checks.md` · `state/memory/20261009-browser-preview-fallback.md`。
 - 文档命名／索引：`specs/README.md` 与所写目录的 README；没有 specs/ledger.md 或 check-ledger.py，不套用源项目编号锚点。
 
 ## §评审维度
