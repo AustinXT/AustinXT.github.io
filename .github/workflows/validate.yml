@@ -1,4 +1,4 @@
-name: 本地规则与锁定构建
+name: 规则检查、锁定构建与 Pages 发布
 
 on:
   push:
@@ -40,6 +40,9 @@ jobs:
 
   site:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
     env:
       NEXT_TELEMETRY_DISABLED: '1'
     steps:
@@ -68,3 +71,29 @@ jobs:
         run: |
           python3 -I scripts/check-site-export.py
           python3 -I scripts/check-content-export.py
+      - name: 配置 Pages
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+        uses: actions/configure-pages@v5
+      - name: 上传已验证的静态站点
+        if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: src/site/out
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    needs: [validate, site]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 发布到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

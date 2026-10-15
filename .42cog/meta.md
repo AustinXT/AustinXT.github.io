@@ -8,7 +8,7 @@
 - 本地目录：`/Users/nv/proj.xt.com/manzi-blog`。
 - 作品区：`src/`；作品单位与实体关系见 `cog.md`。
 - 方向唯一正本：`intent.md`；确认状态见该文件，不在此另记副本。
-- 本项目远程仓库：用户于 2026-10-09 明确指定 https://github.com/AustinXT/AustinXT.github.io，已配置为 `origin`；工作分支为 `dev`，独立初始化历史，保留既有远端 `main` 不动。
+- 本项目远程仓库：用户于 2026-10-09 明确指定 https://github.com/AustinXT/AustinXT.github.io，已配置为 `origin`；新工程从 `dev` 独立初始化。2026-10-15 用户要求将当前工程合入 `main` 并上线，旧 main 历史保留，执行回执见状态板。
 - 与默认六组的差异：无；本地原件目录完整忽略，不纳入本项目版本库。
 - 状态与放行：以 `../state/board.md` 为接续正本；尚未形成网站成品。
 
@@ -19,7 +19,7 @@
 | 自有旧博客 | 原位置 `/Users/nv/proj.xt.com/05Blog`；当前位置 `../vault/raw/05blog/`；用户提供的仓库标识 https://github.com/AustinXT/AustinXT.github.io | 整体移动的只读参考原件，未来选择部分文章重新整理；旧仓库不是新项目 remote |
 | 阅读与组织参考 | https://yangzhiping.com | 用户希望类似的参照站；初始化时未核查、未复制素材 |
 | 上游品牌协同 | `../../manzi/`；https://github.com/AustinXT/NVoyager | 品牌、选题及渠道协同的输入，不嵌入本项目代码 |
-| 下游 | 新博客及其读者；域名与部署目标未确定 | 接收经核验内容与经授权上线的网站 |
+| 下游 | 新博客及其读者；主域名 `https://nightvoyager.top`，`https://blog.nightvoyager.top` 跳到主域名 | 接收本轮明确授权上线的网站；发布及证书回执见状态板 |
 
 完整移动与来源索引证据见 `../docs/research/001_reference-source.md`；文章权利、公开范围和在线站点可用性不因登记而视为已验证。
 
@@ -27,6 +27,6 @@
 
 - 本地初始化验证仅依赖 Python 标准库与 Git；精确 Python 版本唯一锁定于 `../.python-version`。
 - 工具清单正本为 `../scripts/check-tools.sh`；脚本存在不等于网站构建通过。
-- CI 为 `../.github/workflows/validate.yml`，包含初始化规则、原型回归及新工程锁定构建与导出检查；没有发布步骤，云端执行结果另取证。
+- CI 为 `../.github/workflows/validate.yml`，包含初始化规则、原型回归及新工程锁定构建与导出检查；main 的 push／手动运行在检查通过后发布 Pages，云端执行结果另取证。
 - 当前网站技术选择见 `../docs/research/002_blog-direction-decision.md` 技术修订节；原生配置、精确依赖与锁文件在 `../src/site/`，Node 版本见其中 `.node-version`。实际托管与公开发布尚未决定。
 - 方法入口为 `../skills/README.md`；跨谱系评审状态与授权在状态板，不继承上游模型配置或厂商授权。

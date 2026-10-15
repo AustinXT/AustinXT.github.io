@@ -1,5 +1,15 @@
 # 智能时代蛮子 · 博客 · 状态板
 
+## 2026-10-15 · 当前工程合入 main，并发布到 HTTPS 根域名
+
+- **本轮授权**：负责人明确要求「将当前代码强行合入到 main，并部署到 nightvoyager.top」，并补充必须带 HTTPS；本轮授权覆盖当前站点内容、提交推送、替换旧站部署与必要的域名配置，不改只读旧原件。
+- **合并方案**：`dev` 起点 `fed46c3` 与旧 `origin/main` 的 `7440334` 没有共同祖先。以当前工程树为准连接两条历史，旧站保留在合并父提交及 `backup/main-before-next-20261015`；无需重写远端 main 历史。
+- **发布配置**：复用 `.github/workflows/validate.yml`，仅 main 的 push／手动运行在两组检查通过后上传 `src/site/out/` 并发布 Pages；其余分支仍只验证。
+- **双域名补充**：负责人要求 blog 也指向根域名。主站仍用 Pages；`src/domain-redirect/` 是 Vercel 静态跳转项目，blog 经 HTTPS 308 转到主域名，保留路径与查询。两个域名的证书分别由对应平台自动管理。
+- **上线前现状**：Pages 仍绑定 `blog.nightvoyager.top`；根域名无 A／AAAA，HTTPS 不通。GitHub 浏览器已登录，CLI 凭据失效；阿里云 DNS 控制台待负责人登录。验证、推送、Pages 发布与 HTTPS 结果在本轮完成后补充，不提前宣称成功。
+- **验证范围**：worker 只接收选定项目文件，不传旧原件与凭据；本机保留依赖 Git 真实历史／原件的结构及迁移比对检查。GitHub Pages 的压缩能力不因本次上线改变，先前 brotli 要求的满足情况仍须按线上响应确认。
+- **构建回执**：`mac-offload` job `20261015-233058-a751f3ae25` 已完成，退出 0；精确 Node 26.10.0、npm 11.20.0、Python 3.14.7，锁定安装、lint、类型、构建、全部现有回归及 9 页／正文导出检查通过。本机结构检查及原件迁移对账也通过；worker 明确跳过未传输的旧原件逐字比对。产物在全局 job 目录，未覆盖本机源码。
+
 ## 2026-10-10 · 本轮安全分组提交与推送计划
 
 - 负责人通过 `$smart-commit auto` 授权分组提交、基-42 annotated tags 与推送至 `origin/dev`。
