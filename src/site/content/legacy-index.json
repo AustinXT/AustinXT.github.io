@@ -1,0 +1,4178 @@
+{
+  "version": 1,
+  "importedOn": "2026-10-15",
+  "sourceRoot": "vault/raw/05blog/content",
+  "skipped": [
+    {
+      "source": "vault/raw/05blog/content/briefing/_index.md",
+      "reason": "仅栏目标题，无日期或正文，不是文章"
+    }
+  ],
+  "entries": [
+    {
+      "source": "vault/raw/05blog/content/posts/2016-02-16-1587.md",
+      "target": "src/site/content/essays/institutional-beneficiaries.md",
+      "group": "posts",
+      "sourceSha256": "8df6a28c88451b27d524baa4f75dcc97d479aed9950de1e3baa96e22f698c3e4",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "制度的得利益者",
+        "subtitle": "《万历十五年》读书笔记",
+        "date": "2016-02-16T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "历史"
+        ]
+      },
+      "initialMetadata": {
+        "title": "制度的得利益者",
+        "date": "2016-02-16",
+        "slug": "institutional-beneficiaries",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "历史"
+        ]
+      },
+      "initialBodySha256": "f8dd37f1f50bf6cd8bf81ce2063d0af6f9c9c7b925f2b54da201c069cd1f52d6",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2016-09-11-minto-pyramid-principle.md",
+      "target": "src/site/content/essays/minto-pyramid-principle.md",
+      "group": "posts",
+      "sourceSha256": "6837013d80b48fbb511f1a08718c5d200965df73d79f6582ef9101cdfcbbcb6d",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "明托金字塔原理",
+        "subtitle": "《金字塔原理》读书笔记",
+        "date": "2016-09-11T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "笛卡尔信徒"
+        ]
+      },
+      "initialMetadata": {
+        "title": "明托金字塔原理",
+        "date": "2016-09-11",
+        "slug": "minto-pyramid-principle",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "笛卡尔信徒"
+        ]
+      },
+      "initialBodySha256": "d6ce9b51e2278e070e712e273280c7943dcdfe397425da100a6c604f35ec4b32",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2016-12-28-3-idiots.md",
+      "target": "src/site/content/essays/3-idiots.md",
+      "group": "posts",
+      "sourceSha256": "66abf477e9ee38a1f6a07e4ae5784899974901a7e07ebf01e2439cb7df056b82",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "看了五遍 3 Idiots",
+        "date": "2016-12-28T00:00:00.000Z",
+        "categories": [
+          "开心一刻"
+        ],
+        "tags": [
+          "电影"
+        ],
+        "description": "《3 Idiots》的大陆版翻译是《三傻大闹宝莱坞》，这个俗了点的译名破坏了影片的良好形象（小小吐槽一下，但确实让大陆的很多观众错过了它）。《3 idiots》看了五遍，是该写一篇影评。"
+      },
+      "initialMetadata": {
+        "title": "看了五遍 3 Idiots",
+        "date": "2016-12-28",
+        "slug": "3-idiots",
+        "description": "《3 Idiots》的大陆版翻译是《三傻大闹宝莱坞》，这个俗了点的译名破坏了影片的良好形象（小小吐槽一下，但确实让大陆的很多观众错过了它）。《3 idiots》看了五遍，是该写一篇影评。",
+        "draft": true,
+        "categories": [
+          "开心一刻"
+        ],
+        "tags": [
+          "电影"
+        ]
+      },
+      "initialBodySha256": "cfb2d12dd8f2992e7aa7bb14b9cda39a1755a90aa9b5ed76328bd0cecd8db663",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-02-06-reading-history-1.md",
+      "target": "src/site/content/essays/reading-history-1.md",
+      "group": "posts",
+      "sourceSha256": "47e30e1228cd6ba67968c6ee81657ff8a638c9994c6cd82251a8dcc55940c157",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "一个人的阅读史（一）",
+        "date": "2017-02-06T00:00:00.000Z",
+        "categories": [
+          "成长记录"
+        ],
+        "tags": [
+          "阅读"
+        ],
+        "description": "小学到大二的阅读记录"
+      },
+      "initialMetadata": {
+        "title": "一个人的阅读史（一）",
+        "date": "2017-02-06",
+        "slug": "reading-history-1",
+        "description": "小学到大二的阅读记录",
+        "draft": true,
+        "categories": [
+          "成长记录"
+        ],
+        "tags": [
+          "阅读"
+        ]
+      },
+      "initialBodySha256": "5b60b84df8672106ab11eb3489dfce292fc57bd2c965fa579dd5dd4440d63e17",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-02-26-shengluo.md",
+      "target": "src/site/content/essays/sound-conch.md",
+      "group": "posts",
+      "sourceSha256": "894e258d5722d540be78eb78f69a98f605dd215e888385966e7910f52002fd31",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "声螺",
+        "date": "2017-02-26T00:00:00.000Z",
+        "categories": [
+          "创作作品"
+        ],
+        "tags": [
+          "小说"
+        ],
+        "expirydate": "2021-01-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "声螺",
+        "date": "2017-02-26",
+        "slug": "sound-conch",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "创作作品"
+        ],
+        "tags": [
+          "小说"
+        ]
+      },
+      "initialBodySha256": "1633635b06c7b3f0579e3a5fbddd8ee1aa32ed059608719ee9586b5cf16141aa",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-03-06-half-year-in-NTU.md",
+      "target": "src/site/content/essays/half-year-in-ntu.md",
+      "group": "posts",
+      "sourceSha256": "5a7865ff6eef9587e7ceafb08f5e5a48a2c7d4d2219360a55290ce7d0cfe4e11",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "台大半年",
+        "date": "2017-03-06T00:00:00.000Z",
+        "categories": [
+          "旅行游记"
+        ],
+        "tags": [
+          "台湾"
+        ]
+      },
+      "initialMetadata": {
+        "title": "台大半年",
+        "date": "2017-03-06",
+        "slug": "half-year-in-ntu",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "旅行游记"
+        ],
+        "tags": [
+          "台湾"
+        ]
+      },
+      "initialBodySha256": "37a43a2d5babe34e8925ba8bcf4b086473e29ff8e085e7cafe060b0f1bd95c34",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-04-03-learning-American-english-1.md",
+      "target": "src/site/content/essays/learning-american-english-1.md",
+      "group": "posts",
+      "sourceSha256": "8b7c05c500095b4946afba86650dca2012653f41bc860527df58b90b03abf544",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "学美语（一）：音标的音",
+        "date": "2017-04-03T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialMetadata": {
+        "title": "学美语（一）：音标的音",
+        "date": "2017-04-03",
+        "slug": "learning-american-english-1",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialBodySha256": "cfe9362a83bf472e32049f74168972497fb9013ee4015e541477e8848e5db8d1",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-04-03-learning-American-english-2.md",
+      "target": "src/site/content/essays/learning-american-english-2.md",
+      "group": "posts",
+      "sourceSha256": "4c477cd449f2b6cab02d10f07445421d8d39619b55180b943b64b30f797abbf3",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "学美语（二）：语块的音",
+        "date": "2017-04-04T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialMetadata": {
+        "title": "学美语（二）：语块的音",
+        "date": "2017-04-04",
+        "slug": "learning-american-english-2",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialBodySha256": "ef585239f27d050f94841844527eb300078b5c9083ec28df2d2f9326d21df2d7",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-04-03-learning-American-english-3.md",
+      "target": "src/site/content/essays/learning-american-english-3.md",
+      "group": "posts",
+      "sourceSha256": "393ae5343185acb27e65d58140fa0a28b10ca98e48badfc3045db2e92bbcf127",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "学美语（三）：进阶",
+        "date": "2017-04-05T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialMetadata": {
+        "title": "学美语（三）：进阶",
+        "date": "2017-04-05",
+        "slug": "learning-american-english-3",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialBodySha256": "031ac8f17b07aef7bff3aa9ad8c3c2d08ee840e56d5dd2b001f74f161b69e27a",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-05-20-network-data-analysis-introduction.md",
+      "target": "src/site/content/essays/network-data-analysis-introduction.md",
+      "group": "posts",
+      "sourceSha256": "ccf49d65e8255ff5041da16b38dc021f8b93724f34477ddae85f4146c11acb80",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "讲座记录：零基础网络数据分析入门",
+        "date": "2017-05-20T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "网络科学",
+          "讲座"
+        ],
+        "description": "数据在当下可谓越来越重要了，工作中老板谈要注意数据思维，买书的时候网站会利用大数据给你推荐可能喜欢的书，新闻里会用帅帅的图表来和你解释究竟发生了什么……数据已经深入我们生活的方方面面，已掌握大量数据的我们应该如何面对这些数据呢？"
+      },
+      "initialMetadata": {
+        "title": "讲座记录：零基础网络数据分析入门",
+        "date": "2017-05-20",
+        "slug": "network-data-analysis-introduction",
+        "description": "数据在当下可谓越来越重要了，工作中老板谈要注意数据思维，买书的时候网站会利用大数据给你推荐可能喜欢的书，新闻里会用帅帅的图表来和你解释究竟发生了什么……数据已经深入我们生活的方方面面，已掌握大量数据的我们应该如何面对这些数据呢？",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "网络科学",
+          "讲座"
+        ]
+      },
+      "initialBodySha256": "173efa95a0d8c65380bbce3079c8658b6e36e1f4c55c37e0f3377b7516380a11",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-06-11-learning-words-1.md",
+      "target": "src/site/content/essays/learning-words-1.md",
+      "group": "posts",
+      "sourceSha256": "5139697102c3f705055ad185dd779e7cab6b3bd8d67c7ecfbcdabc19f33c0ccd",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "学单词（一）",
+        "date": "2017-06-11T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialMetadata": {
+        "title": "学单词（一）",
+        "date": "2017-06-11",
+        "slug": "learning-words-1",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialBodySha256": "5973dffe5168f38233c1bab69af0e896b7ba11854a27e67bc8071d054391ecfb",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-06-11-learning-words-2.md",
+      "target": "src/site/content/essays/learning-words-2.md",
+      "group": "posts",
+      "sourceSha256": "9f7126889c4ad30eef2f6d29f14e13e73c0d3c1dfd555ba30cc3c372730a5ca3",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "学单词（二）",
+        "date": "2017-06-12T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialMetadata": {
+        "title": "学单词（二）",
+        "date": "2017-06-12",
+        "slug": "learning-words-2",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialBodySha256": "ae45c4aa5a31b87de30df45c3fae596fe157404d87d8092fe8516bf47a633181",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-06-11-learning-words-3.md",
+      "target": "src/site/content/essays/learning-words-3.md",
+      "group": "posts",
+      "sourceSha256": "804bc315697f27a34ac2dd80fe17d2cbff620b377faadb734a94707f0086114b",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "学单词（三）",
+        "date": "2017-06-13T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialMetadata": {
+        "title": "学单词（三）",
+        "date": "2017-06-13",
+        "slug": "learning-words-3",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialBodySha256": "cd74d1caf8354fe67ddc5b807ee7c9114afaa5490ffc18f317049c695f3768f8",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-06-11-learning-words-4.md",
+      "target": "src/site/content/essays/learning-words-4.md",
+      "group": "posts",
+      "sourceSha256": "c119c0cc68cc93c4d89fdcfba452f84419a54052cec11f0e020d50fd4d6b7b9e",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "单词（四）",
+        "date": "2017-06-14T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialMetadata": {
+        "title": "单词（四）",
+        "date": "2017-06-14",
+        "slug": "learning-words-4",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "英语",
+          "学习"
+        ]
+      },
+      "initialBodySha256": "512bfe150eaa1495f1610024fded2d46a7fed88e54a48524993cfd29a034eb81",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-07-25-What-Intelligence-Tests-Miss.md",
+      "target": "src/site/content/essays/what-intelligence-tests-miss.md",
+      "group": "posts",
+      "sourceSha256": "82abb5af8a22cc51e87c8817341bf55a86ef094933520afb4bad4e8c5796fee8",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "《超越智商》读书笔记",
+        "date": "2017-07-25T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "认知心理学"
+        ],
+        "mathjax": true
+      },
+      "initialMetadata": {
+        "title": "《超越智商》读书笔记",
+        "date": "2017-07-25",
+        "slug": "what-intelligence-tests-miss",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "认知心理学"
+        ]
+      },
+      "initialBodySha256": "56c40f4862263c9f150e9668864a559f7116f5005bbef42c5d973172de4e323e",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "含数学公式，原 mathjax 设置保留在索引，发布前检查显示"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-11-30-latex-math.md",
+      "target": "src/site/content/essays/latex-math.md",
+      "group": "posts",
+      "sourceSha256": "2367670333d07191041bbe8f1491d3f76ae9cb21aa9df530a1399a2c3fdcc2ce",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "LaTeX 常用数学符号",
+        "date": "2017-11-30T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "LaTeX",
+          "速查"
+        ],
+        "description": null,
+        "mathjax": true
+      },
+      "initialMetadata": {
+        "title": "LaTeX 常用数学符号",
+        "date": "2017-11-30",
+        "slug": "latex-math",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "LaTeX",
+          "速查"
+        ]
+      },
+      "initialBodySha256": "877be99576d4cf6e888969e172ca019b4d129a541773196340ec90fe715cd2a9",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "含数学公式，原 mathjax 设置保留在索引，发布前检查显示"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2017-12-14-mastery.md",
+      "target": "src/site/content/essays/mastery.md",
+      "group": "posts",
+      "sourceSha256": "f9f714f1aee73c407beaab60ee14917334ba917a303bde285507c06403db8bf0",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "登峰造极之路",
+        "date": "2017-12-14T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "达尔文信徒",
+          "专业主义"
+        ],
+        "description": null
+      },
+      "initialMetadata": {
+        "title": "登峰造极之路",
+        "date": "2017-12-14",
+        "slug": "mastery",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "达尔文信徒",
+          "专业主义"
+        ]
+      },
+      "initialBodySha256": "bb41416090033da72b4732c98341b39f06e29dfa25ccb8371dfdaf146cb1d9b1",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2018-01-01-reading-history-2.md",
+      "target": "src/site/content/essays/reading-history-2.md",
+      "group": "posts",
+      "sourceSha256": "734eaf1cd25712526569328f81a3fbd34d0c341730de8f0f7c230f542c9c07a8",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "一个人的阅读史（二）",
+        "date": "2018-01-01T00:00:00.000Z",
+        "categories": [
+          "成长记录"
+        ],
+        "tags": [
+          "阅读"
+        ]
+      },
+      "initialMetadata": {
+        "title": "一个人的阅读史（二）",
+        "date": "2018-01-01",
+        "slug": "reading-history-2",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "成长记录"
+        ],
+        "tags": [
+          "阅读"
+        ]
+      },
+      "initialBodySha256": "52e51281db35385725a8619a57591627197d5cfe7fd5b809ff6f1cfee298975c",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2018-01-07-quickenter-new-academic-realm.md",
+      "target": "src/site/content/essays/quickenter-new-academic-realm.md",
+      "group": "posts",
+      "sourceSha256": "3093af0ef5a9070dea957ca73e491d1e87c6c600c26bffbbfc38d1b89416b773",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "如何快速了解一个学术领域",
+        "date": "2018-01-07T00:00:00.000Z",
+        "categories": [
+          "方法技巧"
+        ],
+        "tags": [
+          "学术"
+        ]
+      },
+      "initialMetadata": {
+        "title": "如何快速了解一个学术领域",
+        "date": "2018-01-07",
+        "slug": "quickenter-new-academic-realm",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "方法技巧"
+        ],
+        "tags": [
+          "学术"
+        ]
+      },
+      "initialBodySha256": "96f4d3252b8883ecfd28a103722e419bc4737992f965b900354d7bba350468f3",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2018-03-15-good-chinese-bad-chinese.md",
+      "target": "src/site/content/essays/good-chinese-bad-chinese.md",
+      "group": "posts",
+      "sourceSha256": "c3ef78eb1be912fe734c5424dba8ec20e6945863ab1b8074838ac0c1b34c45bf",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "中文的常态与病态",
+        "date": "2018-03-15T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "写作",
+          "速查"
+        ]
+      },
+      "initialMetadata": {
+        "title": "中文的常态与病态",
+        "date": "2018-03-15",
+        "slug": "good-chinese-bad-chinese",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "写作",
+          "速查"
+        ]
+      },
+      "initialBodySha256": "1189fd80452fb51022f47e1dab110aaeedf79d8f0770adee7877fce9b411a78d",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2019-03-10-regular-expressions-quicklook.md",
+      "target": "src/site/content/essays/regular-expressions-quicklook.md",
+      "group": "posts",
+      "sourceSha256": "1c0e237d2868db65adbec3465dbdc12029effdd893f323085df6d06557a3efe0",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "正则表达式常用速查",
+        "date": "2019-03-10T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "正则表达式",
+          "速查"
+        ],
+        "description": null
+      },
+      "initialMetadata": {
+        "title": "正则表达式常用速查",
+        "date": "2019-03-10",
+        "slug": "regular-expressions-quicklook",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "正则表达式",
+          "速查"
+        ]
+      },
+      "initialBodySha256": "626df9c23da80881b7385fd87b32e6cc64aaf5cd59deabd426428e5218577e56",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2019-03-26-git.md",
+      "target": "src/site/content/essays/git.md",
+      "group": "posts",
+      "sourceSha256": "26cc86e0ef4ce2443175d4763de19d66814f5f74ed62cab22175de9154d295df",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "Git 使用指南",
+        "date": "2019-04-06T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Git"
+        ],
+        "description": null
+      },
+      "initialMetadata": {
+        "title": "Git 使用指南",
+        "date": "2019-04-06",
+        "slug": "git",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Git"
+        ]
+      },
+      "initialBodySha256": "2f627a9c5666826b83eebb443f3d9f51d17b7847ba61dbf5c04b80f558056bb9",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2019-04-06-deploy-django.md",
+      "target": "src/site/content/essays/deploy-django.md",
+      "group": "posts",
+      "sourceSha256": "946142b077f4e173893d77a659559c7b69b22ece84728ae5bbb2b41377dacb4e",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "阿里云从零部署 Django",
+        "date": "2019-04-06T00:00:00.000Z",
+        "categories": [
+          "实操记录"
+        ],
+        "tags": [
+          "服务器",
+          "Python"
+        ]
+      },
+      "initialMetadata": {
+        "title": "阿里云从零部署 Django",
+        "date": "2019-04-06",
+        "slug": "deploy-django",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "实操记录"
+        ],
+        "tags": [
+          "服务器",
+          "Python"
+        ]
+      },
+      "initialBodySha256": "46fce40e3b4392089c4d5de6a4556d46e3cd6aa6c292a5a4a0a29c03ab55d5f8",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2019-07-15-cancer-history.md",
+      "target": "src/site/content/essays/cancer-history.md",
+      "group": "posts",
+      "sourceSha256": "cf18b2ad16f194d44dfe1e6e65c5d5e6f270d506036fd81e4a18efe05cc9b46b",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "一窥癌症：人类扭曲态",
+        "date": "2019-07-15T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "疾病"
+        ],
+        "description": "这篇文章是《众病之王—癌症传》的读书笔记，讲述癌症往事、治疗与预防。"
+      },
+      "initialMetadata": {
+        "title": "一窥癌症：人类扭曲态",
+        "date": "2019-07-15",
+        "slug": "cancer-history",
+        "description": "这篇文章是《众病之王—癌症传》的读书笔记，讲述癌症往事、治疗与预防。",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "疾病"
+        ]
+      },
+      "initialBodySha256": "e83ff2b29239ae1933b4a61429ee505a847493a4326bef72588a4c6f621865d5",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2019-07-27-decoding-personality-mysteries.md",
+      "target": "src/site/content/essays/decoding-personality-mysteries.md",
+      "group": "posts",
+      "sourceSha256": "325162b085ee4d55c3e9c049a6f8fada1d6fd78ac6db31f4919d07f36c60fe71",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "如何形成人格全景？",
+        "date": "2019-07-27T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "人格心理学"
+        ],
+        "description": "这篇文章是《人格解码》的读书笔记，讲述了一种形成人格全景的实践策略。可能有部分读者跟在下一样，容易在闲言碎语的公共场合感到尴尬，无所适从，该书提供的一个可供诸位在聚会上消磨时光的游戏--捕捉酒杯后面众生的人格全景。"
+      },
+      "initialMetadata": {
+        "title": "如何形成人格全景？",
+        "date": "2019-07-27",
+        "slug": "decoding-personality-mysteries",
+        "description": "这篇文章是《人格解码》的读书笔记，讲述了一种形成人格全景的实践策略。可能有部分读者跟在下一样，容易在闲言碎语的公共场合感到尴尬，无所适从，该书提供的一个可供诸位在聚会上消磨时光的游戏--捕捉酒杯后面众生的人格全景。",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "人格心理学"
+        ]
+      },
+      "initialBodySha256": "77211f428f4f1ed6d5a6dce6839058c1cf5d8a8de8c0992fdb96817d64521cf8",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2019-08-04-解读统计数字四步骤.md",
+      "target": "src/site/content/essays/interpreting-statistics.md",
+      "group": "posts",
+      "sourceSha256": "6afabf9c13da5eaf289347158fce4eaa185082f9bd26b79c074bd84fb1ec9b24",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "解读统计数字的行动清单",
+        "subtitle": "《统计数字会撒谎》读书笔记",
+        "date": "2019-08-04T00:00:00.000Z",
+        "categories": [
+          "阅读"
+        ],
+        "tags": [
+          "速查",
+          "统计"
+        ]
+      },
+      "initialMetadata": {
+        "title": "解读统计数字的行动清单",
+        "date": "2019-08-04",
+        "slug": "interpreting-statistics",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "阅读"
+        ],
+        "tags": [
+          "速查",
+          "统计"
+        ]
+      },
+      "initialBodySha256": "f7cbfd6402a0ab1705e26fbf9a2d75acde2fc64310fc39cd1d16f17df1670e6b",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2019-12-22-如何教聪明人学会学习？.md",
+      "target": "src/site/content/essays/teaching-smart-people-to-learn.md",
+      "group": "posts",
+      "sourceSha256": "6314366bd28f2e5a1f3bd54c0a8d1ebff262050936a5990b65b281bd41d8d383",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "《如何教聪明人学会学习？》笔记",
+        "date": "2019-12-23T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "学习"
+        ]
+      },
+      "initialMetadata": {
+        "title": "《如何教聪明人学会学习？》笔记",
+        "date": "2019-12-23",
+        "slug": "teaching-smart-people-to-learn",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "学习"
+        ]
+      },
+      "initialBodySha256": "5907d1dfbf1372ce742f252380b269f6abb0728f15143418f79df7c2f1bfc627",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2019-12-23-卡片学习心得.md",
+      "target": "src/site/content/essays/card-method.md",
+      "group": "posts",
+      "sourceSha256": "d46aeff6144873cccf35a0dd7ae052a0792351193aa07760fa0dd7deb43f01df",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "卡片大法",
+        "date": "2019-12-23T00:00:00.000Z",
+        "categories": [
+          "方法技巧"
+        ],
+        "tags": [
+          "卡片",
+          "写作"
+        ]
+      },
+      "initialMetadata": {
+        "title": "卡片大法",
+        "date": "2019-12-23",
+        "revised": "2026-10-11T00:00:00.000Z",
+        "slug": "card-method",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "c4f11f4fc78a6350536b84bd37c1e16a88ee0921d2ad9cbbee5fd16f4e34542a",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "preserved-edited",
+      "issues": [
+        "保留此前整理稿，仍待逐篇校对"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2020-04-04-如何做情报分析.md",
+      "target": "src/site/content/essays/intelligence-analysis.md",
+      "group": "posts",
+      "sourceSha256": "73b21ca28fa4cd007d4d631bcae7bbae21ca6b49ab89635c30418e3aeac1f35c",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "如何做情报分析？",
+        "subtitle": "《情报分析心理学》读书笔记",
+        "date": "2020-04-04T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "情报分析"
+        ]
+      },
+      "initialMetadata": {
+        "title": "如何做情报分析？",
+        "date": "2020-04-04",
+        "slug": "intelligence-analysis",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "情报分析"
+        ]
+      },
+      "initialBodySha256": "fa4e3f8ef3e1603acfbe811edead72710b1f3bec3222057e13b1b934caca7ef0",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2020-04-11-初识积极心理学.md",
+      "target": "src/site/content/essays/positive-psychology.md",
+      "group": "posts",
+      "sourceSha256": "197c399dfcc2bbe8838a304190c3079c386b5d6f19c23cf1064881702265359e",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "初识积极心理学",
+        "subtitle": "《打开积极心理学之门》读书笔记",
+        "date": "2020-04-11T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "积极心理学"
+        ],
+        "description": "本书 1905 次引用，核心章节 5、6"
+      },
+      "initialMetadata": {
+        "title": "初识积极心理学",
+        "date": "2020-04-11",
+        "slug": "positive-psychology",
+        "description": "本书 1905 次引用，核心章节 5、6",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "积极心理学"
+        ]
+      },
+      "initialBodySha256": "418e18ec431e7a346816825065ba944ef1b503eb6f5384003f6d04323998de98",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2020-09-20-data-for-story.md",
+      "target": "src/site/content/essays/data-for-story.md",
+      "group": "posts",
+      "sourceSha256": "e2c559367f458be58528ed0f452bacad4d16f00bf8d3e6b7051ccfb0bbd4c19c",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "《用数据讲故事》读书笔记",
+        "date": "2020-09-20T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "数据",
+          "故事"
+        ],
+        "description": "本书最精彩的地方就是书里面提供的案例，循序渐进的一步步优化一个杂乱的图表。"
+      },
+      "initialMetadata": {
+        "title": "《用数据讲故事》读书笔记",
+        "date": "2020-09-20",
+        "slug": "data-for-story",
+        "description": "本书最精彩的地方就是书里面提供的案例，循序渐进的一步步优化一个杂乱的图表。",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "数据",
+          "故事"
+        ]
+      },
+      "initialBodySha256": "79c383e68dac6bc53c35b97c682e4ab31a6b23bbbd3a0c38f9fbbd0ad641ff22",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-03-14-the-myth-of-sisyphus.md",
+      "target": "src/site/content/essays/the-myth-of-sisyphus.md",
+      "group": "posts",
+      "sourceSha256": "83257a95f8160e77c0d273af7752132b0071c2f756370c29d493851f5c8ce8c3",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "你认为最大的荒谬是什么",
+        "subtitle": "《西西弗神话》读后感",
+        "date": "2020-09-20T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "人性"
+        ]
+      },
+      "initialMetadata": {
+        "title": "你认为最大的荒谬是什么",
+        "date": "2020-09-20",
+        "slug": "the-myth-of-sisyphus",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "人性"
+        ]
+      },
+      "initialBodySha256": "beb5451063a0f1137cee6b3caab7ce9eeeb62d3c240b152b4fbec16460cf3ce1",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-04-11-不知思念.md",
+      "target": "src/site/content/essays/unaware-of-longing.md",
+      "group": "posts",
+      "sourceSha256": "507b71717447aa16a7ff0b1fb9bab19dd98c909d1962c3b38ef0edd746b11957",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "不知思念",
+        "date": "2021-04-11T00:00:00.000Z",
+        "categories": [
+          "创作作品"
+        ],
+        "expirydate": "2024-08-14T00:00:00.000Z",
+        "tags": [
+          "诗歌"
+        ]
+      },
+      "initialMetadata": {
+        "title": "不知思念",
+        "date": "2021-04-11",
+        "slug": "unaware-of-longing",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "创作作品"
+        ],
+        "tags": [
+          "诗歌"
+        ]
+      },
+      "initialBodySha256": "fb52132a7ed1acb1e16d3aeffb9f076f5456dc2113e53a5a19f16c89bf305d92",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-04-21-初识社会学.md",
+      "target": "src/site/content/essays/introduction-to-sociology.md",
+      "group": "posts",
+      "sourceSha256": "908d79803dd9c68744afc60323ff3874d880c305b64497f5798f36b55b7f2e4e",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "初识社会学",
+        "date": "2021-04-21T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "社会学"
+        ],
+        "description": "《社会学的邀请》读书笔记"
+      },
+      "initialMetadata": {
+        "title": "初识社会学",
+        "date": "2021-04-21",
+        "slug": "introduction-to-sociology",
+        "description": "《社会学的邀请》读书笔记",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "社会学"
+        ]
+      },
+      "initialBodySha256": "57285863dc71ff7a226b75fd3c53de5201a887f6797197bf81aba20fce4713b9",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-04-23-区块链30分钟检索报告.md",
+      "target": "src/site/content/essays/blockchain-search-report.md",
+      "group": "posts",
+      "sourceSha256": "08093fb23e8c2bc170cd91bced5b61ce275f55a717e5373efd08019934453227",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "「区块链」30 分钟检索报告",
+        "date": "2021-04-23T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "区块链"
+        ]
+      },
+      "initialMetadata": {
+        "title": "「区块链」30 分钟检索报告",
+        "date": "2021-04-23",
+        "slug": "blockchain-search-report",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "区块链"
+        ]
+      },
+      "initialBodySha256": "fcbf20393e578e3fc6ac01e3702e14d2bd0b475d7f227b1e6b78aa6cad2f8ca8",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-04-23-寻找建筑师.md",
+      "target": "src/site/content/essays/finding-architects.md",
+      "group": "posts",
+      "sourceSha256": "ef1f0c93b06bb8a7e908c6d4c1bad814d6fc9bbed903535fd863dcb5bdb8c537",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "信息检索：寻找建筑师",
+        "date": "2021-04-23T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "信息检索"
+        ]
+      },
+      "initialMetadata": {
+        "title": "信息检索：寻找建筑师",
+        "date": "2021-04-23",
+        "slug": "finding-architects",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "信息检索"
+        ]
+      },
+      "initialBodySha256": "52cd3ba182744ab7864d31d51f92cd201b80c7dc0a79324df82c76111a2ecc5f",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-05-23-算法工程师和前端工程师的求职分析【玩具版】.md",
+      "target": "src/site/content/essays/engineering-job-search.md",
+      "group": "posts",
+      "sourceSha256": "e95c9ba5b2fb362659ca1e0224fa5ea3b08f0573dfd909c4eabfd15d4419873a",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "算法工程师和前端工程师的社招求职分析",
+        "date": "2021-05-23T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "求职"
+        ]
+      },
+      "initialMetadata": {
+        "title": "算法工程师和前端工程师的社招求职分析",
+        "date": "2021-05-23",
+        "slug": "engineering-job-search",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "求职"
+        ]
+      },
+      "initialBodySha256": "2cf12cc292d824a1c67f7fafbea2273fd64bdd49eeea9f065a3b60baaf9d3707",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-06-23-法律检索工具分析.md",
+      "target": "src/site/content/essays/legal-research-tools.md",
+      "group": "posts",
+      "sourceSha256": "9d356fa23e7651b5d183a03b2ad5a88c1b9ed8ba6db68fa4353e534b2e5e38ce",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "法律检索调研",
+        "date": "2021-06-23T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "法律",
+          "产品"
+        ]
+      },
+      "initialMetadata": {
+        "title": "法律检索调研",
+        "date": "2021-06-23",
+        "slug": "legal-research-tools",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "法律",
+          "产品"
+        ]
+      },
+      "initialBodySha256": "65af723acb68d2c0c779c515c636738629f9ca53d3fe643d322634f2b52ebb5a",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-08-10-1993年国际大专辩论赛决赛.md",
+      "target": "src/site/content/essays/1993-debate-analysis.md",
+      "group": "posts",
+      "sourceSha256": "1a9e5c04c99171047fa7a9a227101933b7272c584948e3f37e7fe31d520ef9db",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "《1993 年国际大专辩论赛决赛》论证分析",
+        "date": "2021-08-10T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "论证分析"
+        ]
+      },
+      "initialMetadata": {
+        "title": "《1993 年国际大专辩论赛决赛》论证分析",
+        "date": "2021-08-10",
+        "slug": "1993-debate-analysis",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "论证分析"
+        ]
+      },
+      "initialBodySha256": "09caa652124e4e8fa628082dc8e505cdb07576960d1f9d73f4e3e7bd1bc39029",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-08-10-2012讨论男女薪酬不平等现象.md",
+      "target": "src/site/content/essays/gender-pay-gap-biases.md",
+      "group": "posts",
+      "sourceSha256": "d88dff5ef44c8a71c5f3f9df1f6bfccc9c98e7b24458e7fefa6f987dc1922fef",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "《2012 讨论男女薪酬不平等现象》认知偏差",
+        "date": "2021-08-10T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "认知偏差"
+        ]
+      },
+      "initialMetadata": {
+        "title": "《2012 讨论男女薪酬不平等现象》认知偏差",
+        "date": "2021-08-10",
+        "slug": "gender-pay-gap-biases",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "认知偏差"
+        ]
+      },
+      "initialBodySha256": "6ecf66e4c3d227ee938fd3c3637bb376d96f3ecea99ee0a22370498518230571",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-08-14-婚姻制度会消亡吗.md",
+      "target": "src/site/content/essays/future-of-marriage.md",
+      "group": "posts",
+      "sourceSha256": "64b2bcffbfeac926e276c1467334b963dfa25f94407589c9cda329effe468e84",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "《婚姻制度会消亡吗》推理树分析",
+        "date": "2021-08-14T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "论证分析",
+          "推理树"
+        ]
+      },
+      "initialMetadata": {
+        "title": "《婚姻制度会消亡吗》推理树分析",
+        "date": "2021-08-14",
+        "slug": "future-of-marriage",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "论证分析",
+          "推理树"
+        ]
+      },
+      "initialBodySha256": "c9cf68bbe9fc9d3cc7e3d20351caa5dbdbd57b363e17371901af8e07e9484ef3",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2021-09-11-论证分析-Ch4-进阶作业.md",
+      "target": "src/site/content/essays/toulmin-gender-communication.md",
+      "group": "posts",
+      "sourceSha256": "38ff92e9d1563046a6e80d8bd2987982fdb50a4455aabc14ba901d9a8077d024",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "图尔敏模型分析两性沟通异同",
+        "date": "2021-09-11T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "图尔敏模型"
+        ]
+      },
+      "initialMetadata": {
+        "title": "图尔敏模型分析两性沟通异同",
+        "date": "2021-09-11",
+        "slug": "toulmin-gender-communication",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "图尔敏模型"
+        ]
+      },
+      "initialBodySha256": "ab8e88e7e1135056f6f76a5d31446ee34baafd4c40ff78116e83f8304cd474b2",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2022-02-16-13f.md",
+      "target": "src/site/content/essays/13f.md",
+      "group": "posts",
+      "sourceSha256": "17fc38f105f620227e21453ef99e39c7fe4163ded08e9068c2f825a04919c5a8",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "13F 数据分析",
+        "date": "2022-02-16T00:00:00.000Z",
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "金融"
+        ]
+      },
+      "initialMetadata": {
+        "title": "13F 数据分析",
+        "date": "2022-02-16",
+        "slug": "13f",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "分析报告"
+        ],
+        "tags": [
+          "金融"
+        ]
+      },
+      "initialBodySha256": "8a1809521ee2ca89711da7d0e7d46e5dbdc78466225c96fbc04d4aa962f898f9",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2022-03-23-TCP-UDP.md",
+      "target": "src/site/content/essays/tcp-udp.md",
+      "group": "posts",
+      "sourceSha256": "83966b7e4c1c91d6ad332dbe69c3695081dacad775d3ff9671139ddeb67c7862",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "TCP 和 UDP 的区别？",
+        "date": "2022-03-23T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "计算机网络"
+        ]
+      },
+      "initialMetadata": {
+        "title": "TCP 和 UDP 的区别？",
+        "date": "2022-03-23",
+        "slug": "tcp-udp",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "计算机网络"
+        ]
+      },
+      "initialBodySha256": "fbf2abbc82160f8667bb903daf98d46d8e5972273c75c71cc05bd365fdbe7f42",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2022-07-30-cross-border-e-commerce.md",
+      "target": "src/site/content/essays/cross-border-e-commerce.md",
+      "group": "posts",
+      "sourceSha256": "9efd6782662dae515929e894ad6858cac6e541ccbd145526b5b88915533fc1c1",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "从四个问题理解跨境电商",
+        "date": "2022-07-30T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "电商"
+        ]
+      },
+      "initialMetadata": {
+        "title": "从四个问题理解跨境电商",
+        "date": "2022-07-30",
+        "slug": "cross-border-e-commerce",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "电商"
+        ]
+      },
+      "initialBodySha256": "9888ce430b65d3cc5e8d8b3137398c73c05548cbd5cef39d9d4146979c8b234b",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2022-08-22-letter2lover.md",
+      "target": "src/site/content/essays/letter2lover.md",
+      "group": "posts",
+      "sourceSha256": "02aa7f6516cd113dc2d6e2633a955022502a5ec05cb1ac0b2d4102eb153732d0",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "致恋人的一封信",
+        "date": "2022-08-22T00:00:00.000Z",
+        "categories": [
+          "成长记录"
+        ],
+        "expirydate": "2024-08-14T00:00:00.000Z",
+        "tags": [
+          "情书"
+        ]
+      },
+      "initialMetadata": {
+        "title": "致恋人的一封信",
+        "date": "2022-08-22",
+        "slug": "letter2lover",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "成长记录"
+        ],
+        "tags": [
+          "情书"
+        ]
+      },
+      "initialBodySha256": "11da68c85d564509eb74d53336c0d874054514104b13f8d6f86c4cc2257fd0b8",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2022-09-13-硬派健身要点.md",
+      "target": "src/site/content/essays/fitness-essentials.md",
+      "group": "posts",
+      "sourceSha256": "9d10425665f6682cd1f40ac89fc735b9256da031775e3b8823e77d5d66465ec2",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "硬派健身要点",
+        "date": "2022-09-13T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "健身"
+        ]
+      },
+      "initialMetadata": {
+        "title": "硬派健身要点",
+        "date": "2022-09-13",
+        "slug": "fitness-essentials",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "健身"
+        ]
+      },
+      "initialBodySha256": "8a7a394c941c88de1d6cf62bbd1b79e123f6fdc78a36e605d802abd6a1b4dbae",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2022-11-12-shell.md",
+      "target": "src/site/content/essays/shell.md",
+      "group": "posts",
+      "sourceSha256": "a17045e5db314112012b4b46ece6c68bea7e577449bfa1dd679c1e8714432344",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "Shell 工具和脚本入门",
+        "date": "2022-11-12T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Shell"
+        ]
+      },
+      "initialMetadata": {
+        "title": "Shell 工具和脚本入门",
+        "date": "2022-11-12",
+        "slug": "shell",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Shell"
+        ]
+      },
+      "initialBodySha256": "c9b87f9414d07fae2f29a31119cbdc2940c774079f13b17a8da53f3235f8031a",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2022-12-10-profile.md",
+      "target": "src/site/content/essays/profile.md",
+      "group": "posts",
+      "sourceSha256": "8ba2f929e7d8dabd2ee96a39ecc1af97e1bf0a6083c8b8c6ef09bdbe6ff474bd",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "常用性能分析工具",
+        "date": "2022-12-10T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "性能分析"
+        ]
+      },
+      "initialMetadata": {
+        "title": "常用性能分析工具",
+        "date": "2022-12-10",
+        "slug": "profile",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "性能分析"
+        ]
+      },
+      "initialBodySha256": "fd7fb35bcd53c4b1e8444543c8c1c5e2afd3677262ec1b20485fa2b11eab5334",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2023-01-11-data-analysis.md",
+      "target": "src/site/content/essays/data-analysis.md",
+      "group": "posts",
+      "sourceSha256": "502b3f06112cb017b8c28ee972d4de129bfbb545ea037edd979f654270a25d6a",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "Shell 命令行数据处理",
+        "date": "2023-01-11T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Shell",
+          "数据处理"
+        ]
+      },
+      "initialMetadata": {
+        "title": "Shell 命令行数据处理",
+        "date": "2023-01-11",
+        "slug": "data-analysis",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Shell",
+          "数据处理"
+        ]
+      },
+      "initialBodySha256": "e372c2e9ef851a3fa25ea98e24661bccf62943dcff2022071b4d56ee49a34c25",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2023-05-27-cmd-env.md",
+      "target": "src/site/content/essays/cmd-env.md",
+      "group": "posts",
+      "sourceSha256": "ab5d416585988fc898cc92a5b5746052df47c4e7720b5bd0859f31fc536d06da",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "命令行环境使用指南",
+        "date": "2023-05-27T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "命令行"
+        ]
+      },
+      "initialMetadata": {
+        "title": "命令行环境使用指南",
+        "date": "2023-05-27",
+        "slug": "cmd-env",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "命令行"
+        ]
+      },
+      "initialBodySha256": "80e35b1c378d80ffaa327cdae1ee3ec2221d3a08cba11efb68b26c743323c3c0",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2023-05-31-make.md",
+      "target": "src/site/content/essays/make.md",
+      "group": "posts",
+      "sourceSha256": "a22adba455eac054d6aa7fa4a3a54ea5c3b2405db98877e9e124e1ec7b8b35da",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "make 构建工具介绍",
+        "date": "2023-05-31T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "make"
+        ]
+      },
+      "initialMetadata": {
+        "title": "make 构建工具介绍",
+        "date": "2023-05-31",
+        "slug": "make",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "make"
+        ]
+      },
+      "initialBodySha256": "1c58986bd47f22435ff0b178e008c539d4f0350a256b97e55c973cd36263e94c",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2023-06-13-debug.md",
+      "target": "src/site/content/essays/debug.md",
+      "group": "posts",
+      "sourceSha256": "5daa23c0939d9b3314afaf17f7b6da66e3c8a1123bfd77318384a27f6442bbeb",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "调试代码常用方法",
+        "date": "2023-06-13T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "debug"
+        ]
+      },
+      "initialMetadata": {
+        "title": "调试代码常用方法",
+        "date": "2023-06-13",
+        "slug": "debug",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "debug"
+        ]
+      },
+      "initialBodySha256": "20ed72d0220aaa43eabb79ab04abb065af9f17f609b7062460425cf97c665db4",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2023-07-22-vim.md",
+      "target": "src/site/content/essays/vim.md",
+      "group": "posts",
+      "sourceSha256": "542765c32f8451808cdc91adce11bddb9dbb0c1bebdd444e1cdf39375692d577",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "Vim 学习指南",
+        "date": "2023-07-22T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Vim"
+        ]
+      },
+      "initialMetadata": {
+        "title": "Vim 学习指南",
+        "date": "2023-07-22",
+        "slug": "vim",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Vim"
+        ]
+      },
+      "initialBodySha256": "91f62e8fd0e5f32e7a5a2a6bbea5ff0dc0a389f5f1a0d0825fe694647d52bde4",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2023-09-09-encrypt.md",
+      "target": "src/site/content/essays/encrypt.md",
+      "group": "posts",
+      "sourceSha256": "a774bde00a501efec80d50ba8269e1740e189729f4d4fbc7b271fefff07b0df6",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "密码学入门",
+        "date": "2023-09-09T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "密码学"
+        ]
+      },
+      "initialMetadata": {
+        "title": "密码学入门",
+        "date": "2023-09-09",
+        "slug": "encrypt",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "密码学"
+        ]
+      },
+      "initialBodySha256": "927534e74fce34a5351d04e32e03df78869753cb6aaec749b75e0cf07e179973",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2023-09-10-git.md",
+      "target": "src/site/content/essays/git-data-model.md",
+      "group": "posts",
+      "sourceSha256": "886d4c4e19d30c04510ef0f209a4f37d32d9a19d03330c8afa1d0f320a089031",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "Git 数据模型与命令行",
+        "date": "2023-09-10T00:00:00.000Z",
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Git"
+        ]
+      },
+      "initialMetadata": {
+        "title": "Git 数据模型与命令行",
+        "date": "2023-09-10",
+        "slug": "git-data-model",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "知识整理"
+        ],
+        "tags": [
+          "Git"
+        ]
+      },
+      "initialBodySha256": "e43b3cbb024a5b4945a81a318518ab5b25320b83ff650218edd19334c629bea4",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2024-08-08-friend-xh.md",
+      "target": "src/site/content/essays/friend-xh.md",
+      "group": "posts",
+      "sourceSha256": "a71f43964ddb4cddef68d247de6614a90debd612defff92134f254a978bec7d4",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "和一个跟自己很不一样的人，吃饭聊天",
+        "date": "2024-08-08T00:00:00.000Z",
+        "categories": [
+          "成长记录"
+        ],
+        "tags": [
+          "朋友",
+          "聊天"
+        ]
+      },
+      "initialMetadata": {
+        "title": "和一个跟自己很不一样的人，吃饭聊天",
+        "date": "2024-08-08",
+        "slug": "friend-xh",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "成长记录"
+        ],
+        "tags": [
+          "朋友",
+          "聊天"
+        ]
+      },
+      "initialBodySha256": "ac021aae4ca3255c429a28965a56cd74cb6d55fb6060115bac8e741395dfcd67",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2024-10-30-install-window11-in-utm.md",
+      "target": "src/site/content/essays/install-window11-in-utm.md",
+      "group": "posts",
+      "sourceSha256": "91173aa893b0bcfcc8a08838577f8c447fd66652821ccbaf33e7a47858d599fa",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "在 Mac（M2）上，使用 UTM 安装 Windows11 虚拟机",
+        "date": "2024-10-30T00:00:00.000Z",
+        "categories": [
+          "实操记录"
+        ],
+        "tags": [
+          "虚拟机"
+        ]
+      },
+      "initialMetadata": {
+        "title": "在 Mac（M2）上，使用 UTM 安装 Windows11 虚拟机",
+        "date": "2024-10-30",
+        "slug": "install-window11-in-utm",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "实操记录"
+        ],
+        "tags": [
+          "虚拟机"
+        ]
+      },
+      "initialBodySha256": "32a78cc3a24586d61e9d1ed3c46cbc2b6100adcca1518e01f4280fe9c8e9dbea",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/2025-08-01-big-understandings.md",
+      "target": "src/site/content/essays/big-understandings.md",
+      "group": "posts",
+      "sourceSha256": "73cd37f1f06dc3e891084f711ba708fbaff1e99b2d9b473879ed69a695e49a22",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "什么知识值得学习？",
+        "date": "2025-08-01T00:00:00.000Z",
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "学习，全局认识"
+        ]
+      },
+      "initialMetadata": {
+        "title": "什么知识值得学习？",
+        "date": "2025-08-01",
+        "slug": "big-understandings",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "读书笔记"
+        ],
+        "tags": [
+          "学习，全局认识"
+        ]
+      },
+      "initialBodySha256": "9cc60cacbc615566b98481af7ecf93a3d6f28852808b3bfbfe7add95956d5fc2",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "旧 Mermaid shortcode 保留，发布前需转换"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2017-07-11-chrome.md",
+      "target": "src/site/content/essays/chrome.md",
+      "group": "posts",
+      "sourceSha256": "412da04666c20508e6b387990004df1542a503842fa379023ddf82867f6ed2e1",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "「速查清单」Chrome 使用技巧",
+        "date": "2017-07-11T00:00:00.000Z",
+        "categories": [
+          "info"
+        ],
+        "tags": [
+          "工具，清单"
+        ],
+        "description": null,
+        "expirydate": "2021-01-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "「速查清单」Chrome 使用技巧",
+        "date": "2017-07-11",
+        "slug": "chrome",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "info"
+        ],
+        "tags": [
+          "工具，清单"
+        ]
+      },
+      "initialBodySha256": "bea079e7df87bd14fca940900ed0a09312dda24198c11ec1b32c27aa24362fb9",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2017-12-06-anki-for-vocabulary.md",
+      "target": "src/site/content/essays/anki-for-vocabulary.md",
+      "group": "posts",
+      "sourceSha256": "e055f4f9ecef6361e00a9ea69e22a73e59324deb54b5a5567ad5b2dcb34afce7",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "「效率工具」借助 Anki 增加词汇广度和深度",
+        "date": "2017-12-06T00:00:00.000Z",
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "工具，英语"
+        ],
+        "expirydate": "2021-01-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "「效率工具」借助 Anki 增加词汇广度和深度",
+        "date": "2017-12-06",
+        "slug": "anki-for-vocabulary",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "工具，英语"
+        ]
+      },
+      "initialBodySha256": "c870fc0b4c65e80bbb08425ca153dda737cca44d3bf787d8a2810e4d26be4414",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2018-07-28-gitbook-1.md",
+      "target": "src/site/content/essays/gitbook-1.md",
+      "group": "posts",
+      "sourceSha256": "a3b8a248890b15e91c0bd37a795e1fe5636ceefb440485facb8bbe905e0011c2",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "「效率工具」GitBook（1）：快速入门",
+        "date": "2018-07-28T00:00:00.000Z",
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "工具"
+        ],
+        "description": null,
+        "expirydate": "2021-01-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "「效率工具」GitBook（1）：快速入门",
+        "date": "2018-07-28",
+        "slug": "gitbook-1",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "工具"
+        ]
+      },
+      "initialBodySha256": "86f9e3d7ff8e20f1d695cfee5f1bb8c48fbf0b077cf0a21a8d1e03268598c247",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2018-07-28-gitbook-2.md",
+      "target": "src/site/content/essays/gitbook-2.md",
+      "group": "posts",
+      "sourceSha256": "39a0538dffb7ddf8d3c76eadc99a0e91d315ec5982c464d22ef15c5b74084f48",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "「效率工具」GitBook（2）：book.json 配置",
+        "date": "2018-07-28T00:00:00.000Z",
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "工具"
+        ],
+        "description": null,
+        "expirydate": "2021-01-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "「效率工具」GitBook（2）：book.json 配置",
+        "date": "2018-07-28",
+        "slug": "gitbook-2",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "工具"
+        ]
+      },
+      "initialBodySha256": "c2559eaf6df8257decf5d2a9e82a3e158d0ff0a68a32a5a6520f15916f31a741",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2018-07-28-gitbook-3.md",
+      "target": "src/site/content/essays/gitbook-3.md",
+      "group": "posts",
+      "sourceSha256": "3b03ac33715d99949888ced3e0d2dbfe35e0ba9dfb3acd81b3a03501194790e8",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "「效率工具」GitBook（3）：插件与命令行工具",
+        "date": "2018-07-28T00:00:00.000Z",
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "工具"
+        ],
+        "expirydate": "2021-01-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "「效率工具」GitBook（3）：插件与命令行工具",
+        "date": "2018-07-28",
+        "slug": "gitbook-3",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "工具"
+        ]
+      },
+      "initialBodySha256": "0bba80576ccdfe840190cab11180b61d8d64c1f5d3f3b1701b11894ac56d1b66",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2019-04-11-django-REST-framework.md",
+      "target": "src/site/content/essays/django-rest-framework.md",
+      "group": "posts",
+      "sourceSha256": "7c06684dc7bf064f9fd3ed59bc788d3063c164a7bacaf67f9c89664a1b0d9c0a",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "Django REST framework 搭建后端 API 接口记录",
+        "date": "2019-04-11T00:00:00.000Z",
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "技术，Python"
+        ],
+        "expirydate": "2024-10-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "Django REST framework 搭建后端 API 接口记录",
+        "date": "2019-04-11",
+        "slug": "django-rest-framework",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "技术，Python"
+        ]
+      },
+      "initialBodySha256": "b403615da22acb51950f1b5942e06ce4a5318e463b945cdded3437687b010be9",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2019-05-18-webpack-vue-eslint-stylelint-project-config.md",
+      "target": "src/site/content/essays/vue-webpack-project-config.md",
+      "group": "posts",
+      "sourceSha256": "5fa6cad7ed2b55ec33278879f60557da496b5d6618c8f54ec6a4f21528821831",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "vue+webpack+eslint+stylelint 项目工程配置",
+        "date": "2019-05-18T00:00:00.000Z",
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "技术",
+          "前端",
+          "工具"
+        ],
+        "description": "Vue 项目的打包配置和项目代码规范。",
+        "expirydate": "2021-01-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "vue+webpack+eslint+stylelint 项目工程配置",
+        "date": "2019-05-18",
+        "slug": "vue-webpack-project-config",
+        "description": "Vue 项目的打包配置和项目代码规范。",
+        "draft": true,
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "技术",
+          "前端",
+          "工具"
+        ]
+      },
+      "initialBodySha256": "11878d4d5b71fb255b4dc6e8b95b2e478e124dc3c85220e67a892b8670964bbf",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2019-05-24-hexo-blog.md",
+      "target": "src/site/content/essays/hexo-blog.md",
+      "group": "posts",
+      "sourceSha256": "bf425faed3963da72f71733bf33248644e231ac9dfbd186a8817c2876870a418",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "Hexo Blog 搭建",
+        "date": "2019-05-24T00:00:00.000Z",
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "技术",
+          "工具"
+        ],
+        "description": "Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。",
+        "expirydate": "2021-01-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "Hexo Blog 搭建",
+        "date": "2019-05-24",
+        "slug": "hexo-blog",
+        "description": "Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。",
+        "draft": true,
+        "categories": [
+          "tech"
+        ],
+        "tags": [
+          "技术",
+          "工具"
+        ]
+      },
+      "initialBodySha256": "d67d5bce29b095d5229e55f43e3d3266d4697373aa55cfff3fa6cc6608eb9f4a",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/posts/_2022-07-25-fe-knowledge.md",
+      "target": "src/site/content/essays/fe-knowledge.md",
+      "group": "posts",
+      "sourceSha256": "f75fa0f61c4b49fc8e4980ade951749061178eb807b09b08aea8239cc971e9d7",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "金融工程知识体系",
+        "date": "2022-07-25T00:00:00.000Z",
+        "categories": [
+          "finacial engineering"
+        ],
+        "tags": [
+          "信息整理"
+        ],
+        "description": "金融工程知识体系",
+        "expirydate": "2024-10-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "金融工程知识体系",
+        "date": "2022-07-25",
+        "slug": "fe-knowledge",
+        "description": "金融工程知识体系",
+        "draft": true,
+        "categories": [
+          "finacial engineering"
+        ],
+        "tags": [
+          "信息整理"
+        ]
+      },
+      "initialBodySha256": "ac9206046efa058bbb651c85bb9f6af5fc359070a34901f3dc935311ca98ec3e",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2017-07-30-《如何高效学习》读后感.md",
+      "target": "src/site/content/essays/holistic-learning.md",
+      "group": "draft",
+      "sourceSha256": "a19da8381b3fdedd4dd7770c319ccb960578a2f9e9dfdf35437e76e4b055a99d",
+      "originalMetadata": {
+        "draft": true,
+        "title": "整体性学习有 5 个步骤",
+        "date": "2017-07-30T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "整体性学习有 5 个步骤",
+        "date": "2017-07-30",
+        "slug": "holistic-learning",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "16fd156658aa79b6f0f28faf6b18733eca76e9c3eb1113075b930baf906e548b",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2018-03-10-《奇特的一生》读后感.md",
+      "target": "src/site/content/essays/lyubishchev-time-tracking.md",
+      "group": "draft",
+      "sourceSha256": "b167f19388e7c1d73c16316ed956d28834113baec5828cebf5eea19cb48b82a5",
+      "originalMetadata": {
+        "draft": true,
+        "title": "柳比歇夫的时间统计方法与时间管理有本质区别",
+        "date": "2018-03-10T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "柳比歇夫的时间统计方法与时间管理有本质区别",
+        "date": "2018-03-10",
+        "slug": "lyubishchev-time-tracking",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "df0143b3eec6d1bb4041defaf01a922e6f9c538a7f8c759bc6bc52f8b8878e92",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2018-05-29-infomation-analysis-toolbox.md",
+      "target": "src/site/content/essays/infomation-analysis-toolbox.md",
+      "group": "draft",
+      "sourceSha256": "98ac805e982cf3e70a8f3067c56af5e9a695a27cf2698699bcae983d227e4b38",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "「实践策略」信息分析工具箱",
+        "date": "2018-05-29T00:00:00.000Z",
+        "draft": true
+      },
+      "initialMetadata": {
+        "title": "「实践策略」信息分析工具箱",
+        "date": "2018-05-29",
+        "slug": "infomation-analysis-toolbox",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "2368cd073793bc87d3c4807d2f0a3585014e4af6f70fe2ccf6e1b22fb13fcd98",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2018-05-29-smart-gadget.md",
+      "target": "src/site/content/essays/smart-gadget.md",
+      "group": "draft",
+      "sourceSha256": "124a2e185629dcaa6cf8f64101b35091614c56084a44218bf808f872e0436e7f",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "「实践策略」效率工具箱",
+        "date": "2018-05-29T00:00:00.000Z",
+        "description": null,
+        "draft": true
+      },
+      "initialMetadata": {
+        "title": "「实践策略」效率工具箱",
+        "date": "2018-05-29",
+        "slug": "smart-gadget",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "ae32a4a80cfe98f69de7a2af0123b560c6348596ec9242cae57dab576fbbb4d0",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2018-10-28-霍兰德职业兴趣理论.md",
+      "target": "src/site/content/essays/holland-career-interests.md",
+      "group": "draft",
+      "sourceSha256": "3e1ae7ab52b487eb21da0251fed5fe4db24fddd0714bdc13b2b7843428bcc01b",
+      "originalMetadata": {
+        "draft": true,
+        "title": "霍兰德职业兴趣理论",
+        "date": "2018-10-28T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "霍兰德职业兴趣理论",
+        "date": "2018-10-28",
+        "slug": "holland-career-interests",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "a7fc338ed3fc28867c3de6c91b330dd7e4c7744d3a3c4e7d9a4209db5b3466a7",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2018-12-27-重塑职业身份的策略.md",
+      "target": "src/site/content/essays/reinventing-career-identity.md",
+      "group": "draft",
+      "sourceSha256": "0479db4387796004377db994879b69f2ca89880cb9f791fd3a7787840009077a",
+      "originalMetadata": {
+        "draft": true,
+        "title": "重塑职业身份的策略",
+        "date": "2018-12-27T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "重塑职业身份的策略",
+        "date": "2018-12-27",
+        "slug": "reinventing-career-identity",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "61577f944a03bf230b61b883071d3ab1a263d37af40c4528a27972114394cfd0",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2019-01-06-The-Selfish-Gene.md",
+      "target": "src/site/content/essays/the-selfish-gene.md",
+      "group": "draft",
+      "sourceSha256": "1b588347b0ae00c67f876986fde1bced05c14a9f6bcf8238c7600cbf9d5b884e",
+      "originalMetadata": {
+        "draft": true,
+        "title": "《自私的基因》主要内容",
+        "date": "2019-01-06T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "《自私的基因》主要内容",
+        "date": "2019-01-06",
+        "slug": "the-selfish-gene",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "f309ac324802d164520dcdd8c49a16d149782b748c60a174ecbd0a6d6a96e191",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2019-05-19-合理引用与抄袭的区别.md",
+      "target": "src/site/content/essays/proper-citation.md",
+      "group": "draft",
+      "sourceSha256": "4bfd0e60ec6dfac85334d65624d535b36fcd8c2b1177e11a1e0df369e3d9a0d4",
+      "originalMetadata": {
+        "draft": true,
+        "title": "合理引用的规范",
+        "date": "2019-05-19T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "合理引用的规范",
+        "date": "2019-05-19",
+        "slug": "proper-citation",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "59645acb29d85e99a8e9a45f0ac7b04729a55150c969bc03457a9d854f53227b",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2019-05-19-提问模板.md",
+      "target": "src/site/content/essays/question-template.md",
+      "group": "draft",
+      "sourceSha256": "5b3771619484b17cc93b825e96add83c772358ffa89085fd3ded404fb22e7f52",
+      "originalMetadata": {
+        "draft": true,
+        "title": "提问模板",
+        "date": "2019-05-19T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "提问模板",
+        "date": "2019-05-19",
+        "slug": "question-template",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "8060cf3fd835a74cba4a2d7de6b2d5e96eaae4370eae558c25fc4e7e9c2f081d",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2019-06-28-正确站立和走路.md",
+      "target": "src/site/content/essays/standing-and-walking.md",
+      "group": "draft",
+      "sourceSha256": "99aa609f5e8f6e64efbfb32d53e99ac88a2e6bca9baa16539c5800c8e810d7f9",
+      "originalMetadata": {
+        "draft": true,
+        "title": "正确站立和走路",
+        "date": "2019-06-28T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "正确站立和走路",
+        "date": "2019-06-28",
+        "slug": "standing-and-walking",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "0e763de5f39a61848243a15dd4fc5502dfb71bd78f0f0826c4935196eaff4065",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-01-27-PQ4R学习法.md",
+      "target": "src/site/content/essays/pq4r-learning.md",
+      "group": "draft",
+      "sourceSha256": "48001d5acab94880141e410a52ff635fe43b8e7e12d8a1157cc0364d605925ab",
+      "originalMetadata": {
+        "draft": true,
+        "title": "PQ4R 学习法",
+        "date": "2020-01-27T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "PQ4R 学习法",
+        "date": "2020-01-27",
+        "slug": "pq4r-learning",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "b9706dccaf402f8980e24e750daf45a30ecd6dd86fe33555790694c1a3eb0b55",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-02-07-elaborative-processing.md",
+      "target": "src/site/content/essays/elaborative-processing.md",
+      "group": "draft",
+      "sourceSha256": "6d31d924aeb11e264af6df3022fc00ae24d870845167b66cdfbeb0717a09a232",
+      "originalMetadata": {
+        "draft": true,
+        "title": "增细加工",
+        "date": "2020-02-07T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "增细加工",
+        "date": "2020-02-07",
+        "slug": "elaborative-processing",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "272cfc97e9440758ef578ffde4135d1170a66cd49266fa3d6785a5ff451983b9",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-05-10-如何应对黑天鹅事件？.md",
+      "target": "src/site/content/essays/black-swan-events.md",
+      "group": "draft",
+      "sourceSha256": "ffdfd1b6b7dc6f7fa52c5e7b34d80bb2dd473200c19c62ea22b082be9618ffb9",
+      "originalMetadata": {
+        "draft": true,
+        "title": "如何应对黑天鹅事件",
+        "date": "2020-05-10T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "如何应对黑天鹅事件",
+        "date": "2020-05-10",
+        "slug": "black-swan-events",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "c22bf9d610aa152fad2168cd42a84915026fc7762ced1d41d82bcb4ef8d20075",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-05-11-《自控力》读后感.md",
+      "target": "src/site/content/essays/willpower-practices.md",
+      "group": "draft",
+      "sourceSha256": "67146a47a5888b3fb8ee0b1e57cadd97969b7ccc3f187d827ec74bce8d8d78a0",
+      "originalMetadata": {
+        "draft": true,
+        "title": "《自控力》实操技巧",
+        "date": "2020-05-11T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "《自控力》实操技巧",
+        "date": "2020-05-11",
+        "slug": "willpower-practices",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "a148049408833a9834eacc53c9e17a7f9f0e5f349850d75404e702b7f59c626f",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-05-12-非暴力沟通四要素.md",
+      "target": "src/site/content/essays/nonviolent-communication.md",
+      "group": "draft",
+      "sourceSha256": "7e8df5a399482d8dbcc87e6b41592ae0122fcb12412a4b2f4dc69e44a98c6f23",
+      "originalMetadata": {
+        "draft": true,
+        "title": "非暴力沟通四要素",
+        "date": "2020-05-12T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "非暴力沟通四要素",
+        "date": "2020-05-12",
+        "slug": "nonviolent-communication",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "20e03c50d3f398091e57a5c2e7307433f1a4dc11649d42cbad2987b27a2cc121",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-05-12.md",
+      "target": "src/site/content/essays/note-20200512.md",
+      "group": "draft",
+      "sourceSha256": "d0536024b624c633ca9d1fa1e63d3d327bc4e4f12a1f858bee78438a0d020b6a",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2020-05-12T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "未命名草稿 · 2020-05-12",
+        "date": "2020-05-12",
+        "slug": "note-20200512",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "59c54494a07d03b8a6a3909130098ff450942ad75098c822c9b5b118c6ee4626",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-06-16-iran.md",
+      "target": "src/site/content/essays/iran.md",
+      "group": "draft",
+      "sourceSha256": "f043143c143d8ee139a7a40aec66c43e5856f058775a05b77b846027bd8fa3d0",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2020-06-16T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "iran",
+        "date": "2020-06-16",
+        "slug": "iran",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "11093e90420c13ee6e9dc339c4453cf7c04209ecf73f7211758e0375920dcc83",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-06-17-happiness.md",
+      "target": "src/site/content/essays/happiness.md",
+      "group": "draft",
+      "sourceSha256": "f483c1cbb01c2999e1e6e969c50cdc47dda5f5b49671f2f4beb0f93ce17bbff1",
+      "originalMetadata": {
+        "draft": true,
+        "title": "什么是幸福",
+        "date": "2020-06-17T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "什么是幸福",
+        "date": "2020-06-17",
+        "slug": "happiness",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "7075a9d977ab5bd59c8f0b144ea8979d9b8ed90c0532b7da2f16670104ff4daa",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-07-03-no-fiction.md",
+      "target": "src/site/content/essays/no-fiction.md",
+      "group": "draft",
+      "sourceSha256": "30fbf8c78acae9702a06456d108463e9c65cef30877bada749c13c2316caeb0b",
+      "originalMetadata": {
+        "draft": true,
+        "title": "非虚构类读物的阅读方法",
+        "date": "2020-07-03T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "非虚构类读物的阅读方法",
+        "date": "2020-07-03",
+        "slug": "no-fiction",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "db3d53abc0078c41084d2bef0911aae1f3cd72c779f48ea445edaddc403e8c41",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-07-12-learn-chinese.md",
+      "target": "src/site/content/essays/learn-chinese.md",
+      "group": "draft",
+      "sourceSha256": "6da3c2146471f3c9143803b26ab2be1bcf3f944e88ca297405aed71627114fab",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2020-07-12T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "learn chinese",
+        "date": "2020-07-12",
+        "slug": "learn-chinese",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "ff07ecc862f2428e39f3e6e1886f11d9e63c258f8c7f600861cd111bc354644e",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-07-28-know-iran.md",
+      "target": "src/site/content/essays/know-iran.md",
+      "group": "draft",
+      "sourceSha256": "b862b79c1040ac7d952abf02198844167cebaef211af075999d0361101a937b9",
+      "originalMetadata": {
+        "draft": true,
+        "title": "了解伊朗的一个书单",
+        "date": "2020-07-28T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "了解伊朗的一个书单",
+        "date": "2020-07-28",
+        "slug": "know-iran",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "0354ec9aebb5734e72403a6809d5988f90fd25ff5347d9895edd9738ce8dd5b0",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-07-30-wen.md",
+      "target": "src/site/content/essays/wen.md",
+      "group": "draft",
+      "sourceSha256": "4bd1d329d11a5c2da451e579a57eacd28595d6107534dba44e98b33c46062c45",
+      "originalMetadata": {
+        "draft": true,
+        "title": "《温铁军：中国要如何克服当下的全球化危机》观后感",
+        "date": "2020-07-30T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "《温铁军：中国要如何克服当下的全球化危机》观后感",
+        "date": "2020-07-30",
+        "slug": "wen",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "79a024312f9b29eedd18ce32b896a8f85feb9c789180ec93c5bc887217f18cc2",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-08-08-zhouyijun.md",
+      "target": "src/site/content/essays/zhouyijun.md",
+      "group": "draft",
+      "sourceSha256": "60d78f4a34834545bb027bd2c3b59d60112d73ea572ccdd372d4ad9812a3aea1",
+      "originalMetadata": {
+        "draft": true,
+        "title": "《走出中东》读后感",
+        "date": "2020-08-08T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "《走出中东》读后感",
+        "date": "2020-08-08",
+        "slug": "zhouyijun",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "e3ad25c5304b2e0a9d4ad132ad03884939208dbbc83f9aaffb6c1f2825ed0c72",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-08-22-huaqiangbei.md",
+      "target": "src/site/content/essays/huaqiangbei.md",
+      "group": "draft",
+      "sourceSha256": "2cd337bb267485ece62c7d9eb7bcf943ec2c30c1b62aa9d06b872cc9ea22b2f8",
+      "originalMetadata": {
+        "draft": true,
+        "title": "华强北游记",
+        "date": "2020-08-22T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "华强北游记",
+        "date": "2020-08-22",
+        "slug": "huaqiangbei",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "485fd623b95ea8ae630ce3e79860b218ddd886056c549301d4bc76fb0ad0981b",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-09-03-dev.md",
+      "target": "src/site/content/essays/dev.md",
+      "group": "draft",
+      "sourceSha256": "968301a31410e24fcdc8096cc252b995df93047dbeb4ff6437776215a89ec7a6",
+      "originalMetadata": {
+        "draft": true,
+        "title": "开发四件事情",
+        "date": "2020-09-03T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "开发四件事情",
+        "date": "2020-09-03",
+        "slug": "dev",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "4b9472a2e4ae875ca49e6596af9214d7670e0974c457bbb736d13b8c1bcf6faa",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-10-12-reduce-city.md",
+      "target": "src/site/content/essays/reduce-city.md",
+      "group": "draft",
+      "sourceSha256": "a325963871c949f29f9258a300750790e495265a9ef09bb71beccd1692c933a4",
+      "originalMetadata": {
+        "draft": true,
+        "title": "《收缩的城市》读书笔记",
+        "date": "2020-10-12T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "《收缩的城市》读书笔记",
+        "date": "2020-10-12",
+        "slug": "reduce-city",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "e04827d2993fff20e0ee923a430781f89c592626cf2e9e229cfb72cd7ec4859f",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-11-17-外贸货物编码.md",
+      "target": "src/site/content/essays/trade-goods-codes.md",
+      "group": "draft",
+      "sourceSha256": "3798f2a141bb9ffabedb8a49033d8559a8f61b736b5891b2a41e7ae7db0df036",
+      "originalMetadata": {
+        "draft": true,
+        "title": "外贸货物编码",
+        "date": "2020-11-17T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "外贸货物编码",
+        "date": "2020-11-17",
+        "slug": "trade-goods-codes",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "35a738cb8f563a2e6e166e73d519fb49918d2a85096bf99402550ab4a9397405",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-11-18-iPad-游戏精选.md",
+      "target": "src/site/content/essays/ipad-games.md",
+      "group": "draft",
+      "sourceSha256": "d8b355c61cd36b666c09baf5606ca8999e33d8ab22ac9f86755989781c455002",
+      "originalMetadata": {
+        "draft": true,
+        "title": "iPad 游戏精选",
+        "date": "2020-11-18T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "iPad 游戏精选",
+        "date": "2020-11-18",
+        "slug": "ipad-games",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "041666c319af21b6455f760999c0f909fb403f36794f0b6d960d417e771ef31c",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2020-11-20-伟大程序员.md",
+      "target": "src/site/content/essays/great-programmers.md",
+      "group": "draft",
+      "sourceSha256": "6efbb240f104508ed462c9435c2613f9e67f72595cca43a9907609fd4c95f848",
+      "originalMetadata": {
+        "draft": true,
+        "title": "伟大程序员",
+        "date": "2020-11-20T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "伟大程序员",
+        "date": "2020-11-20",
+        "slug": "great-programmers",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "b42a1779d5eae6468b13d132bfdf45c9027e23c5a3a947fe0cf2b8eb45223136",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-01-27-fat.md",
+      "target": "src/site/content/essays/fat.md",
+      "group": "draft",
+      "sourceSha256": "6ae0c1e050ba828bea156625878f4d6c61b8cc15c56449a3a2e780c2d8bfaf32",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2021-01-27T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "fat",
+        "date": "2021-01-27",
+        "slug": "fat",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "07c22446e04fff53a7ea91849464bd47492ac01778afe6aa30c474ce2e0d0767",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-01-28-earth-story.md",
+      "target": "src/site/content/essays/earth-story.md",
+      "group": "draft",
+      "sourceSha256": "3953c2da76e5e9af6d1c51c3fe68e0aa3a530e201a3a91877a2f3ba77a367998",
+      "originalMetadata": {
+        "draft": true,
+        "title": "地球往事",
+        "date": "2021-01-28T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "地球往事",
+        "date": "2021-01-28",
+        "slug": "earth-story",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "ce71b81b7ccef12399f017983a0efa47e2f5f9cb626432e1fd201ed5913798e5",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-01-28-fat-heat.md",
+      "target": "src/site/content/essays/fat-heat.md",
+      "group": "draft",
+      "sourceSha256": "a15bdee80c85f8bcbf85c7d9ff0a99fe441f4d1c3f20ccae6aba67b746f723d6",
+      "originalMetadata": {
+        "draft": true,
+        "title": "如何预防减肥过程中导致的身体损伤？",
+        "date": "2021-01-28T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "如何预防减肥过程中导致的身体损伤？",
+        "date": "2021-01-28",
+        "slug": "fat-heat",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "a8ce80c41fc9245e8cc4d73274918057263aaa99e0bc44c7b69e6fe5d682aa20",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-02-05-subway.md",
+      "target": "src/site/content/essays/subway.md",
+      "group": "draft",
+      "sourceSha256": "07f1c77a29385483aa0bfe6104dd5417467fb994763286c181bb21cd87445d1a",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2021-02-05T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "subway",
+        "date": "2021-02-05",
+        "slug": "subway",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "00e7be83d4312ca846062fe434a98f00da8516eb0bf1e5ccb9c734234813dc2d",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-04-05-社会资本理论模型.md",
+      "target": "src/site/content/essays/social-capital-models.md",
+      "group": "draft",
+      "sourceSha256": "9770c9d1731a46dd9ec6ad677d6fdf17dfcedf0d06c3c02139c2fb2fb756738e",
+      "originalMetadata": {
+        "draft": true,
+        "title": "社会资本理论模型",
+        "date": "2021-04-05T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "社会资本理论模型",
+        "date": "2021-04-05",
+        "slug": "social-capital-models",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "e62d32b9d7abedad81981a0c8795fbffbf4bed2e7ec6f833b340d4f7a88bd22c",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-04-21-《牛津通识读本：社会学的意识》.md",
+      "target": "src/site/content/essays/sociological-awareness.md",
+      "group": "draft",
+      "sourceSha256": "2c42e79e4925ea5b8814361db80549277ee5a1c980ce6c5bde14a830a251a367",
+      "originalMetadata": {
+        "draft": true,
+        "title": "《牛津通识读本：社会学的意识》笔记",
+        "date": "2021-04-21T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "《牛津通识读本：社会学的意识》笔记",
+        "date": "2021-04-21",
+        "slug": "sociological-awareness",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "427ec44b36ed23c121211f6fe1970baebe3d6bb327f748de427eae4c6cab562b",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-05-09-10条创业者需要避免的数据圈套.md",
+      "target": "src/site/content/essays/entrepreneur-data-traps.md",
+      "group": "draft",
+      "sourceSha256": "d3c41bf7b257a1868383feaab989abd23f751e8e33d2be1c55b57af71e6d0bad",
+      "originalMetadata": {
+        "draft": true,
+        "title": "10 条创业者需要避免的数据圈套",
+        "date": "2021-05-09T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "10 条创业者需要避免的数据圈套",
+        "date": "2021-05-09",
+        "slug": "entrepreneur-data-traps",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "7cdd0a4d08c80e5ab707a6f4c17675cab28c5bd58d5a62dbe4c1dcd4c04130b6",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-05-19-学习的实用策略.md",
+      "target": "src/site/content/essays/practical-learning-strategies.md",
+      "group": "draft",
+      "sourceSha256": "c873e34bf4f9b136b223302f38845c952b1f6d9bfc80defc13f305b27a4d8514",
+      "originalMetadata": {
+        "draft": true,
+        "title": "认知心理学中，关于学习的实用策略就只有这几条",
+        "date": "2021-05-19T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "认知心理学中，关于学习的实用策略就只有这几条",
+        "date": "2021-05-19",
+        "slug": "practical-learning-strategies",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "9e2bc69e73b1f128d293cd7ad745569be07fac22382682106f222ba714f23870",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-09-08-fiction.md",
+      "target": "src/site/content/essays/fiction.md",
+      "group": "draft",
+      "sourceSha256": "6ea35e1d9ac6c3c27445a07d3ba586f48b794aeba0efa63be747d9140c6d1c3b",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2021-09-08T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "fiction",
+        "date": "2021-09-08",
+        "slug": "fiction",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "b620c2dd06604a668d8234f26a8c760046b6bc060f11454c44eb498c5951707a",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-09-10-测量的信效度.md",
+      "target": "src/site/content/essays/measurement-reliability-validity.md",
+      "group": "draft",
+      "sourceSha256": "5f01e1ad8d8a5212c28746d8a89e3fc2806dee85bff2912573b2d9b53fe515af",
+      "originalMetadata": {
+        "draft": true,
+        "title": "测量的信效度",
+        "date": "2021-09-10T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "测量的信效度",
+        "date": "2021-09-10",
+        "slug": "measurement-reliability-validity",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "f7f23dfbebe342f835e507be3af3535cd1a113811c8a667b59ac88ef1ed1584a",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-11-16-finacial-report.md",
+      "target": "src/site/content/essays/financial-report.md",
+      "group": "draft",
+      "sourceSha256": "1839158dc223d8a662fbbbb6fdea202a9435f98eaffa12c7a88efa267aa53bd7",
+      "originalMetadata": {
+        "draft": true,
+        "title": "银行财报阅读流程",
+        "date": "2021-11-16T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "银行财报阅读流程",
+        "date": "2021-11-16",
+        "slug": "financial-report",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "cf73ef0fe0342466979d21ab2f6a2ffddd3a27a6150de6900cb153c17d089f72",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-11-16-predict.md",
+      "target": "src/site/content/essays/predict.md",
+      "group": "draft",
+      "sourceSha256": "401c1b860009ad9fcdce119ebe160a52ee6af9fad9ceb23c424ba01d9c53fe28",
+      "originalMetadata": {
+        "draft": true,
+        "title": "预测指标：银行利润/产业利润",
+        "date": "2021-11-16T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "预测指标：银行利润/产业利润",
+        "date": "2021-11-16",
+        "slug": "predict",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "32223997e709239fadd37e65af9b74b21505e42765ab0c41fef0a66fbf544ee1",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-11-16.md",
+      "target": "src/site/content/essays/note-20211116.md",
+      "group": "draft",
+      "sourceSha256": "dee610c7993a3e23ba39b4a4be505c3fbac22ca8584fc09495e9c9285affa790",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2021-11-16T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "未命名草稿 · 2021-11-16",
+        "date": "2021-11-16",
+        "slug": "note-20211116",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "c72d456d881cd8009e344691668f0c3d0f79c2573be1d839512944d445d09eca",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2021-12-30-design.md",
+      "target": "src/site/content/essays/design.md",
+      "group": "draft",
+      "sourceSha256": "ca55b70fea2a75a4ad05f05241c6d3d41e288ca29dc24d468a39d1212539ee7f",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2021-12-30T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "design",
+        "date": "2021-12-30",
+        "slug": "design",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "f58845c5ee4fef42dee3c6bb2e5cfff4b61b275057b7a438e4815be61cdf712b",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2022-01-01.md",
+      "target": "src/site/content/essays/wechat-publishing.md",
+      "group": "draft",
+      "sourceSha256": "01f83752ff09ef057c162a836ff931dd12051821cc1af9e87e0996667cd8a483",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2022-01-01T00:00:00.000Z",
+        "title": "公众号发布流程"
+      },
+      "initialMetadata": {
+        "title": "公众号发布流程",
+        "date": "2022-01-01",
+        "slug": "wechat-publishing",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "7d80e0d42153f264e02c094646be28814a22988abe8660614781704638577da8",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "旧 Mermaid shortcode 保留，发布前需转换"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2022-05-12-usa-lawyer.md",
+      "target": "src/site/content/essays/usa-lawyer.md",
+      "group": "draft",
+      "sourceSha256": "395845f2ae52d5f10974071ca22cbe5328e140e823744b4f2285fa8debe413b1",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2022-05-12T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "usa lawyer",
+        "date": "2022-05-12",
+        "slug": "usa-lawyer",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "d4254b8a56734f410b2d71df7c06138844a74fac14aa4dc5540bc77fc5338f71",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2022-05-16.md",
+      "target": "src/site/content/essays/note-20220516.md",
+      "group": "draft",
+      "sourceSha256": "c7c2d2eef29014d1d0c03e6a7e411f6b0c638aa4cf1a1d97ee5deb1a23c008ab",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2022-05-16T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "未命名草稿 · 2022-05-16",
+        "date": "2022-05-16",
+        "slug": "note-20220516",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "3664967f586ef3ae76ddb9f5fe6fb44522844451d0d1d69f05a6e7355485fd12",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2022-06-13-rpa.md",
+      "target": "src/site/content/essays/rpa.md",
+      "group": "draft",
+      "sourceSha256": "184be1942168708691bb447b1b1d18e041483ec3dc95e9402f448a703ab6e012",
+      "originalMetadata": {
+        "draft": true,
+        "title": "RPA 机器人流程自动化",
+        "date": "2022-06-13T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "RPA 机器人流程自动化",
+        "date": "2022-06-13",
+        "slug": "rpa",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "b9abc39ac1232d86c296da181e6fa7edefb40d316352b88b7ea4c41d25089bd5",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2022-07-05-商业模式画布.md",
+      "target": "src/site/content/essays/business-model-canvas.md",
+      "group": "draft",
+      "sourceSha256": "2f28ada37d7bfb415b24aa62c1dae5a1f0066c264a68f7abad400e6cac696129",
+      "originalMetadata": {
+        "draft": true,
+        "title": "商业模式画布",
+        "date": "2022-07-05T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "商业模式画布",
+        "date": "2022-07-05",
+        "slug": "business-model-canvas",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "6e3ea227cd28ce31ded5f45a877ea6d92960232e0e4b88ac6340804ca024661d",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2023-02-08.md",
+      "target": "src/site/content/essays/hu-xueyan-social-skills.md",
+      "group": "draft",
+      "sourceSha256": "e1019f76943c11bea74b75235f53ed892a9ca49bd84492b967526a634574b374",
+      "originalMetadata": {
+        "draft": true,
+        "title": "红顶商人胡雪岩的交际之道",
+        "date": "2023-02-08T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "红顶商人胡雪岩的交际之道",
+        "date": "2023-02-08",
+        "slug": "hu-xueyan-social-skills",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "edd6c748f08f960e54ef17e62c54e88e5c15070803b5eb6e4f46b16aa5bcbb66",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2023-11-02-独立开发者最简洁的赚钱路径是什么.md",
+      "target": "src/site/content/essays/indie-developer-income.md",
+      "group": "draft",
+      "sourceSha256": "5352b868725c57649fc8257f4b43b9c14bdd0431e8949bf90fdd2351714a99af",
+      "originalMetadata": {
+        "draft": true,
+        "title": "独立开发者最简洁的赚钱路径是什么？",
+        "date": "2023-11-02T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "独立开发者最简洁的赚钱路径是什么？",
+        "date": "2023-11-02",
+        "slug": "indie-developer-income",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "99738fcb04ee4eeecb7caa90b1129a0fe7911901031d84c38e025ed431286bee",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2023-11-30-客户粘度思考.md",
+      "target": "src/site/content/essays/customer-retention.md",
+      "group": "draft",
+      "sourceSha256": "b8bf21bf9064c5be25b5d1cf899fc83af5d3959e2cc1f8c5722ebc09b50687bf",
+      "originalMetadata": {
+        "draft": true,
+        "title": "客户粘度思考",
+        "date": "2023-11-30T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "客户粘度思考",
+        "date": "2023-11-30",
+        "slug": "customer-retention",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "62be6a28f814e15ea0d362fde56518115eb5f1502f21142269ec97df200e99b3",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-01-21-诗人与精神病患者.md",
+      "target": "src/site/content/essays/poets-and-mental-illness.md",
+      "group": "draft",
+      "sourceSha256": "31eed3dd4f3a0fc5deae4d509cc976cfc791071fc60449c1c678c1109aebc9dd",
+      "originalMetadata": {
+        "draft": true,
+        "title": "诗人与精神病患者",
+        "date": "2024-01-21T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "诗人与精神病患者",
+        "date": "2024-01-21",
+        "slug": "poets-and-mental-illness",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "44f5da2c21b560b0aeb475ff65c467697639338a1b47e8d51acc8049dae6e607",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-01-23.md",
+      "target": "src/site/content/essays/note-20240123.md",
+      "group": "draft",
+      "sourceSha256": "aaceabacb12961546203aaa27d9ec1b59eea7bf68908e0cb6abea781ea129e3b",
+      "originalMetadata": {
+        "draft": true,
+        "date": "2024-01-23T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "未命名草稿 · 2024-01-23",
+        "date": "2024-01-23",
+        "slug": "note-20240123",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "ce3748c954de68557ffbc25de747fefbe09c88a51c21bd50a269e2a849ac24d5",
+      "titleSource": "filename",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺标题，暂用文件名或日期"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-02-20-谈判小技巧.md",
+      "target": "src/site/content/essays/negotiation-tips.md",
+      "group": "draft",
+      "sourceSha256": "a96f0da75900521b9c3f7445c6f6a871640b3c08471cba3f583a16029cc2bd31",
+      "originalMetadata": {
+        "draft": true,
+        "title": "谈判小技巧",
+        "date": "2024-02-20T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "谈判小技巧",
+        "date": "2024-02-20",
+        "slug": "negotiation-tips",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "2858aa1b5d913f2fe850e4186b8e03b52641d799bb57116f0ceb10b71bb6cd45",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-02-29-mao.md",
+      "target": "src/site/content/essays/mao.md",
+      "group": "draft",
+      "sourceSha256": "bd75f8321c769087401f03c93921dc89460f16eccad6916f2fe21810c55d9990",
+      "originalMetadata": {
+        "draft": true,
+        "title": "毛真是一个战略大家",
+        "date": "2024-02-19T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "毛真是一个战略大家",
+        "date": "2024-02-19",
+        "slug": "mao",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "3f8bec71e5d62cb244e2520e93a2868003177ae9d772e0c3901386c5c3ba9bec",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-03-16-CRM软件各个价格段的产品都有哪些?.md",
+      "target": "src/site/content/essays/crm-price-ranges.md",
+      "group": "draft",
+      "sourceSha256": "27c532e7589584fcf125d058d33c7e2406808e41e1ee9947c7b33c5c9457b7a7",
+      "originalMetadata": {
+        "draft": true,
+        "title": "CRM软件各个价格段的产品都有哪些?",
+        "date": "2024-03-16T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "CRM软件各个价格段的产品都有哪些?",
+        "date": "2024-03-16",
+        "slug": "crm-price-ranges",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "ca6d07681adce4ce0e29cae3c058165aeee0f3d5419d3d396e10d61ce2261bbe",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-03-16-独立开发者和专业厂商有什么区别?.md",
+      "target": "src/site/content/essays/indie-developers-and-vendors.md",
+      "group": "draft",
+      "sourceSha256": "f3d35cccb1527f2f26d0fe9823f5e5f0e4732c86f31c665c08de277c8afd0e06",
+      "originalMetadata": {
+        "draft": true,
+        "title": "独立开发者和专业厂商有什么区别?",
+        "date": "2024-03-16T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "独立开发者和专业厂商有什么区别?",
+        "date": "2024-03-16",
+        "slug": "indie-developers-and-vendors",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "ed90c1a8589a21b026b55001f5e6c5904a7e81d462d9b45de4d3262f5fd59a71",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-04-01-openai-args.md",
+      "target": "src/site/content/essays/openai-args.md",
+      "group": "draft",
+      "sourceSha256": "1aedbef49804e6d434859cac7bf07dc81b960501404d3a2d137c73b9f845d567",
+      "originalMetadata": {
+        "draft": true,
+        "title": "Open AI Args",
+        "date": "2024-04-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "Open AI Args",
+        "date": "2024-04-01",
+        "slug": "openai-args",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "87b35aa95d50ffb7f1b7667073712b796be053c7bd37534131e741a034ce1072",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-04-18-诉讼过程到底遵循什么逻辑.md",
+      "target": "src/site/content/essays/litigation-logic.md",
+      "group": "draft",
+      "sourceSha256": "fcb5f19afa68bab6cdd9c88b095c17e780fe4dedc4ffe5cd393f054a08f09eee",
+      "originalMetadata": {
+        "draft": true,
+        "title": "诉讼过程到底遵循什么逻辑",
+        "date": "2024-04-18T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "诉讼过程到底遵循什么逻辑",
+        "date": "2024-04-18",
+        "slug": "litigation-logic",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "8aa00ba689d247a4320f8a9988003a3a0ba7fe9c6341763bd4669b9f8a74e1f2",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-06-06-xiaohongshu.md",
+      "target": "src/site/content/essays/xiaohongshu.md",
+      "group": "draft",
+      "sourceSha256": "81a037683c543d7cebbf84ee52059331861d0e696dfd1ec1a33656f6f042fcad",
+      "originalMetadata": {
+        "layout": "post",
+        "title": "小红书运营",
+        "date": "2018-05-29T00:00:00.000Z",
+        "description": null,
+        "draft": true
+      },
+      "initialMetadata": {
+        "title": "小红书运营",
+        "date": "2018-05-29",
+        "slug": "xiaohongshu",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "13f15420ebf5929941c9c66498738c959cc1b86aafcfb2ed92f8c4081c3d67b1",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "含缺失的 Joplin 本地图片引用，需补素材"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-07-30-《秀出你的工作》读书笔记.md",
+      "target": "src/site/content/essays/show-your-work.md",
+      "group": "draft",
+      "sourceSha256": "292a56d5bacb561b2aabfce5e0843c33d03eb05d87881912637b910c3ecd690f",
+      "originalMetadata": {
+        "draft": true,
+        "title": "《秀出你的工作》读书笔记",
+        "date": "2024-07-30T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "《秀出你的工作》读书笔记",
+        "date": "2024-07-30",
+        "slug": "show-your-work",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "0adeeea56f17eaafeb70bc5d10fc5b556c711726c5f321df865ec353cbe19885",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-08-01-为什么要时不时认识些新朋友？.md",
+      "target": "src/site/content/essays/meeting-new-friends.md",
+      "group": "draft",
+      "sourceSha256": "89ac28e208d87bd42398d0f1465a1c83df651f9ba843a710836375867ecba081",
+      "originalMetadata": {
+        "draft": true,
+        "title": "为什么要时不时认识些新朋友？",
+        "date": "2024-08-01T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "为什么要时不时认识些新朋友？",
+        "date": "2024-08-01",
+        "slug": "meeting-new-friends",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "d830c691997f1e82e7f50c292efc8cd8c65f5388b866c32eb76d3aa3438d8382",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-08-24-rag.md",
+      "target": "src/site/content/essays/rag.md",
+      "group": "draft",
+      "sourceSha256": "2ecd1a794f250807fd214ca2be8331bbeb4d9dd98282d2efb68fcb99083cd068",
+      "originalMetadata": {
+        "draft": true,
+        "title": "rag 流程和优化点",
+        "date": "2024-08-24T00:00:00.000Z"
+      },
+      "initialMetadata": {
+        "title": "rag 流程和优化点",
+        "date": "2024-08-24",
+        "slug": "rag",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "e1a9b289f05ad2ee6818b5a048feed44c7adc551ff102a6d74c20f09a07e1b1c",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": []
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2024-11-03-知识工作者如何创业.md",
+      "target": "src/site/content/essays/knowledge-worker-entrepreneurship.md",
+      "group": "draft",
+      "sourceSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "originalMetadata": {},
+      "initialMetadata": {
+        "title": "知识工作者如何创业",
+        "date": "2024-11-03",
+        "slug": "knowledge-worker-entrepreneurship",
+        "description": "",
+        "draft": true,
+        "categories": [],
+        "tags": []
+      },
+      "initialBodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "titleSource": "filename",
+      "dateSource": "filename",
+      "preservation": "verbatim-body",
+      "issues": [
+        "原文缺日期，暂用文件名日期",
+        "原文缺标题，暂用文件名或日期",
+        "原文为空，保持空草稿，补正文后才能上架"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2025-01-13-audio-test-1.md",
+      "target": "src/site/content/essays/audio-test-1.md",
+      "group": "draft",
+      "sourceSha256": "82cd5766997159961d8d9c21aa5853ba7980781550e149f475a384c4e57abcad",
+      "originalMetadata": {
+        "title": "音频播放器测试文章一",
+        "subtitle": "测试 TTS 音频播放功能",
+        "date": "2024-01-13T00:00:00.000Z",
+        "slug": "audio-test-1",
+        "categories": [
+          "测试"
+        ],
+        "tags": [
+          "音频测试"
+        ],
+        "ttsAudio": "/audio/test-audio-1.mp3"
+      },
+      "initialMetadata": {
+        "title": "音频播放器测试文章一",
+        "date": "2024-01-13",
+        "slug": "audio-test-1",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "测试"
+        ],
+        "tags": [
+          "音频测试"
+        ]
+      },
+      "initialBodySha256": "9ff208389eeed7d499186dc80407d310d122b36dc30b4f300a9a1e92281da287",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "旧音频路径保留在索引，尚未作为公开媒体迁入"
+      ]
+    },
+    {
+      "source": "vault/raw/05blog/content/draft/2025-01-13-audio-test-2.md",
+      "target": "src/site/content/essays/audio-test-2.md",
+      "group": "draft",
+      "sourceSha256": "0dd84916ebfc01661c8f3fb576ac9506cb718032fff64d0a60f3355e84c293ec",
+      "originalMetadata": {
+        "title": "音频播放器测试文章二",
+        "subtitle": "测试连续播放功能",
+        "date": "2024-01-14T00:00:00.000Z",
+        "slug": "audio-test-2",
+        "categories": [
+          "测试"
+        ],
+        "tags": [
+          "音频测试"
+        ],
+        "ttsAudio": "/audio/test-audio-2.mp3"
+      },
+      "initialMetadata": {
+        "title": "音频播放器测试文章二",
+        "date": "2024-01-14",
+        "slug": "audio-test-2",
+        "description": "",
+        "draft": true,
+        "categories": [
+          "测试"
+        ],
+        "tags": [
+          "音频测试"
+        ]
+      },
+      "initialBodySha256": "3b40019db019bd2603997e35a473fb88e4ea71c4fbc225e8ed0592f016be9ff0",
+      "titleSource": "front-matter",
+      "dateSource": "front-matter",
+      "preservation": "verbatim-body",
+      "issues": [
+        "旧音频路径保留在索引，尚未作为公开媒体迁入"
+      ]
+    }
+  ]
+}
