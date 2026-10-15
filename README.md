@@ -5,7 +5,7 @@
 ## 从这里开始
 
 1. 看意向书与状态板，按当前放行范围接续，不重复已确认的选择。
-2. 按 [`skills/README.md`](skills/README.md) 接续四步方法；技术修订见 [取舍卡](docs/research/002_blog-direction-decision.md)，当前只放行最小工程壳，真实正文与人定标另行推进。
+2. 按 [`skills/README.md`](skills/README.md) 接续四步方法；技术修订见 [取舍卡](docs/research/002_blog-direction-decision.md)，当前已完成可由 `content/` 维护的博客工程，内容操作见 [`content/README.md`](src/site/content/README.md)。
 3. 先读 [旧博客来源索引](docs/research/001_reference-source.md)，再按需看原文，不把整个旧库带入上下文。
 
 ## 六组
@@ -15,7 +15,7 @@
 | 开工手册与规约 | `CLAUDE.md`、`.42cog/`、`specs/`、本地 `.git` | 指令、身份与标准 |
 | 真相源与参考 | `vault/`、`notes/`、`resources/` | 自有原件、核验事实与他人参考 |
 | 脚本与扩展 | `scripts/`、`skills/`、两份插件清单 | 方法与确定性验证 |
-| 作品 | `src/` | 阅读布局定标原件与独立原生工程壳；当前无整理正文 |
+| 作品 | `src/` | 阅读布局定标原件与博客工程；已有 134 篇待校对草稿及两个作品入口 |
 | 状态与文档 | `state/`、`docs/` | 接续、来源、取舍与评审 |
 | 过程材料 | `_build/`、`_tmp/`、`_archive/` | 本地忽略，不作为唯一备份 |
 
