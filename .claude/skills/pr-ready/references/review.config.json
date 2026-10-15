@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "timeoutMs": 600000,
+  "maxInputBytes": 3145728,
+  "maxInputChars": 1048576,
+  "reviewers": [
+    {
+      "id": "codex",
+      "harness": "codex",
+      "model": "gpt-6.1-sol",
+      "lineage": "openai",
+      "reasoning": "high",
+      "serviceTier": "fast",
+      "fastMode": true
+    },
+    {
+      "id": "glm",
+      "harness": "opencode",
+      "model": "zhipuai-coding-plan/glm-5.3[1m]",
+      "lineage": "zhipu",
+      "variant": "high",
+      "contextWindow": 1000000,
+      "maxOutputTokens": 131072
+    }
+  ]
+}
