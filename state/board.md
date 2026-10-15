@@ -1,5 +1,16 @@
 # 智能时代蛮子 · 博客 · 状态板
 
+## 2026-10-16 · 双域名 HTTPS 上线完成
+
+- **授权延续**：负责人要求「继续配置域名」，并完成 Safari 的阿里云、Vercel 与 AustinXT GitHub 登录。使用 Safari 避免与 Chrome 并行任务争用；未复制或导出登录凭据。
+- **主域名**：复查时四条 Pages A 记录已存在，未重复添加；Cloudflare 公共 DNS over HTTPS 已返回四个正确地址、TTL 600。Pages 自定义域名为 `nightvoyager.top`，Enforce HTTPS 已启用；`https://nightvoyager.top/` 返回 200，普通 HTTP 以 301 跳到 HTTPS。
+- **blog**：已在现有 Vercel Hobby 工作区建立 `nightvoyager-blog-redirect`，通过 Drop 上传独立跳转目录；只绑定 blog。阿里云现有 blog CNAME 从 `austinxt.github.io` 改为 `cb13ab7b32e6a5f6.vercel-dns-017.com`，TTL 保持 10 分钟，公共 DoH 已确认，Vercel 显示 Valid Configuration。
+- **跳转**：CDN 规则 `blog-to-nightvoyager` 已发布，以 Regex `^/(.*)$` 捕获完整路径，目标 `https://nightvoyager.top/$1`，状态 308；根域名不绑定 Vercel。配置快照及实际部署方式见 `src/domain-redirect/README.md`，不把 Drop 上传误记为自动读取 vercel.json。
+- **线上验收**：5 项公开域名检查全部通过：主域名 HTTPS 200、HTTP→HTTPS 301、blog HTTPS 首页→主域名 308、blog 文章及双查询参数完整保留、blog HTTP→自身 HTTPS 308。跟随 blog 的真实 GET 最终到主域名文章页 200，并核对《卡片大法》页面标题；两个域名均通过正常 TLS 校验，未使用 `-k`。此前九页源站 HTTP 检查也全部 200。
+- **实际失败及修正**：Drop 不应用上传的 vercel.json，先以项目域名实测发现文章路径 404，改为项目级 CDN 规则；Pattern 目标残留 `*` 且丢失尾斜杠，再以 Regex 修正并复测通过，之后才切 blog DNS。未增加付费项或授权 GitHub provider。
+- **接续与分支**：主站仍是已通过云端构建并发布的 `7ff36b9` 内容；本轮只保存域名、跳转配置与回执，不重建相同主站。检测到共享工作区已切回 dev，收尾使用独立 `release/domain-notes-20261016` 工作副本，保持其他任务的分支与改动。旧 main 的回退分支仍保留。
+- **完成范围**：此前阻塞的 DNS、两域名证书、强制 HTTPS 与 blog 跳转现已完成；本次验收不代替内容人审、手机体验或先前 brotli 条件的验证。
+
 ## 2026-10-15 · 当前工程合入 main，并发布到 HTTPS 根域名
 
 - **本轮授权**：负责人明确要求「将当前代码强行合入到 main，并部署到 nightvoyager.top」，并补充必须带 HTTPS；本轮授权覆盖当前站点内容、提交推送、替换旧站部署与必要的域名配置，不改只读旧原件。

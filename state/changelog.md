@@ -1,5 +1,13 @@
 # 智能时代蛮子 · 博客 · 演化记录
 
+## 2026-10-16 · 主域名与 blog 的 HTTPS 验收通过
+
+**变了什么**：`https://nightvoyager.top` 已正常提供新站，HTTP 强制跳到 HTTPS；`https://blog.nightvoyager.top` 通过 Vercel 308 跳到主域名，保留文章路径、尾斜杠和查询参数，两个域名的证书均校验通过。
+
+**为什么变**：按负责人继续配置域名的指令完成 DNS 与平台设置；以线上请求验证实际结果，修正 Drop 不读取 vercel.json 与 Pattern 替换不完整的问题后才切换 blog DNS。
+
+**对你意味着什么**：现在可以直接使用两个域名，文章链接最终落到同一主域名；主站随 main 自动发布，跳转项目目前由 Vercel CDN 独立管理，维护入口和回执见 `../src/domain-redirect/README.md` 与 `board.md`。
+
 ## 2026-10-15 · 放行当前工程替换旧站，发布到 HTTPS 根域名
 
 **变了什么**：负责人明确要求当前代码合入 `main` 并部署到 `https://nightvoyager.top`；新增 main 专用 Pages 发布步骤，沿用锁定构建及导出检查，两组检查通过才发布。

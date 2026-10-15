@@ -3,11 +3,11 @@
   "framework": null,
   "buildCommand": "",
   "outputDirectory": ".",
-  "redirects": [
+  "routes": [
     {
-      "source": "/:path*",
-      "destination": "https://nightvoyager.top/:path*",
-      "permanent": true
+      "src": "^/(.*)$",
+      "dest": "https://nightvoyager.top/$1",
+      "status": 308
     }
   ]
 }
