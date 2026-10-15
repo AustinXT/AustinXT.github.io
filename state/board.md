@@ -8,7 +8,7 @@
 - worker job `20261016-001435-923f987e26`：锁定 Node 26.10.0 / npm 11.20.0 / Python 3.14.7；lint、79 项 Node 测试、31 项页面导出／27 项正文导出／20 项迁移回归、构建、类型检查、134 篇正文导出及 234 个内容页面 DOM 检查通过；三个生命周期场景全部通过并恢复真实内容；21 项结构回归通过。该 job 最后因默认不传 _archive，原型检查无法取得输入而退出 2；不能将整个 job 记为退出 0。
 - 归档原型独立验证沿用目录迁移任务的 worker job `20261016-001223-308acd0011`（21 项结构、79 项原型回归通过），本机实际路径原型检查与真实 Git 结构检查通过。worker 不含只读原件，原件迁移对账采用本机核验；暂存安全扫描未发现泄漏。
 - 外部图片的 URL 兼容与导出通过不证明所有第三方图片服务器持续在线；5 个缺失附件仍无可恢复原件，页面已明确提示。源码整合不等同于内容事实校对或手机阅读验收。
-- 最终回执：整合提交 `c450978` 已先推送 dev，再将 dev 快进合入并推送 main；两分支及远端内容一致，`git branch -a --no-merged dev` 无输出。dev 的 [Actions #9](https://github.com/AustinXT/AustinXT.github.io/actions/runs/38767604158) 与 main 的 [Actions #10](https://github.com/AustinXT/AustinXT.github.io/actions/runs/38767629120) 均成功，main 的 validate/site/deploy 全部完成。线上新文章 `/essays/xiaohongshu/` 返回成功，含缺图提示和正式 canonical；blog 的 profile 路径及双查询参数经 308 完整保留。未强推或移动标签，本次回执仅文档收尾，以 `[skip ci]` 保存并同步两分支。
+- 最终回执：整合提交 `c450978` 已先推送 dev，再将 dev 快进合入并推送 main；两分支及远端内容一致，`git branch -a --no-merged dev` 无输出。dev 的 [dev Actions](https://github.com/AustinXT/AustinXT.github.io/actions/runs/38767604158) 与 main 的 [main Actions](https://github.com/AustinXT/AustinXT.github.io/actions/runs/38767629120) 均成功，main 的 validate/site/deploy 全部完成。线上新文章 `/essays/xiaohongshu/` 返回成功，含缺图提示和正式 canonical；blog 的 profile 路径及双查询参数经 308 完整保留。未强推或移动标签，本次回执仅文档收尾，以 `[skip ci]` 保存并同步两分支。
 
 ## 2026-10-16 · 网站工程上移与阅读原型归档
 
